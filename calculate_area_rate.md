@@ -10,7 +10,7 @@ $`Ratio_i = \frac{Area_{bbox\_i}}{\sum_{j=1}^{n} Area_{bbox\_j}}`$
 
 其中：
 
-- $`Area_bbox\_i`$：第 i 個食物物件 Bounding Box 的像素面積（寬 × 高）。
+- $`Area_{bbox\_i}`$：第 i 個食物物件 Bounding Box 的像素面積（寬 × 高）。
 
 - $`\sum_{j=1}^{n} Area_{bbox\_j}`$：所有被辨識物件之 Bounding Box 面積的總和。
 
