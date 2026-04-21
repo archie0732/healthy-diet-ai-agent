@@ -10,9 +10,9 @@ $`Ratio_i = \frac{Area_{bbox\_i}}{\sum_{j=1}^{n} Area_{bbox\_j}}`$
 
 其中：
 
-    $`Area_bbox\_i$`：第 i 個食物物件 Bounding Box 的像素面積（寬 × 高）。
+- $`Area_bbox\_i`$：第 i 個食物物件 Bounding Box 的像素面積（寬 × 高）。
 
-    $`\sum_{j=1}^{n} Area_{bbox\_j}$`：所有被辨識物件之 Bounding Box 面積的總和。
+- $`\sum_{j=1}^{n} Area_{bbox\_j}`$：所有被辨識物件之 Bounding Box 面積的總和。
 
 ## 3. 設計哲學與優勢 (Design Philosophy & Advantages)
 ### 3.1 解決「肉蓋飯」的堆疊問題 (Handling Food Overlap)
