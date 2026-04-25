@@ -1,0 +1,18 @@
+services:
+  n8n:
+    build: .
+    container_name: n8n_2
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - NODE_FUNCTION_ALLOW_EXTERNAL=@supabase/supabase-js
+      - SUPABASE_URL=https://xziaacogjfnwagownfil.supabase.co
+      - SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh6aWFhY29namZud2Fnb3duZmlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwNzcwODIsImV4cCI6MjA2MTY1MzA4Mn0.yu2KtUCQim8hVTLfH2sXktSSPniPwKtNRJ_VDpc_KA0
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
+    external: true
