@@ -24,7 +24,7 @@
 ---
     **語言模型本體 (GGUF 格式)：**
 
-    1. 檔案名稱：gemma-4-E4B-it-Q3_K_M.gguf
+    1. 檔案名稱：[gemma-4-E4B-it-Q3_K_M.gguf](https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF/tree/main)
 
     - 用途：負責文字推論與 AI Agent 邏輯。
 
