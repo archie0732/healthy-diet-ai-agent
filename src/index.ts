@@ -193,3 +193,26 @@ app.listen(PORT, () => {
 });
 
 app.use('/images', express.static(path.resolve('./users_images')));
+
+app.post("/api/generate_title", async (req, res) => {
+  try {
+    const { message } = req.body;
+    if (!message) return res.status(400).json({ error: "No message provided" });
+
+    const response = await llm.invoke([
+      {
+        role: "system",
+        content: "你是一個專業的標題生成器。請將使用者的提問，濃縮成一個代表核心意圖的簡短標題。規則：最長不可超過 8 個字，不需要標點符號，不需要任何解釋。例如使用者輸入『推薦重訓完的宵夜』，你只需回傳『重訓宵夜推薦』。"
+      },
+      {
+        role: "user",
+        content: message
+      }
+    ]);
+
+    res.json({ title: response.content });
+  } catch (error) {
+    console.error("標題生成失敗:", error);
+    res.status(500).json({ title: "新對話" });
+  }
+});
