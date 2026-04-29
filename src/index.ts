@@ -12,7 +12,8 @@ import { AIMessage } from '@langchain/core/messages';
 import { readKnowledgeTool, updateKnowledgeTool } from '../agent_skills/admin_knowledge/file_tools';
 import { visionAnalyzerTool } from '../agent_skills/vision_analyzer/vision_model';
 import { calculateNutritionTool } from '../agent_skills/calorie_calculator/calc_tools';
-import { logDietTool } from '../agent_skills/supabase_logger/db_tools';
+import { logDietTool, getChatHistoryTool, getUserProfileTool } from '../agent_skills/supabase_logger/db_tools';
+import { updateUserProfileTool } from '../agent_skills/memory_summarizer/summarizer_tools';
 
 const app = express();
 app.use(cors());
@@ -28,11 +29,11 @@ const RULES_FILE = path.join(KNOWLEDGE_BASE_DIR, 'NUTRITION_RULES.md');
 
 app.use('/images', express.static(USERS_IMAGES_DIR));
 
-const PORT = process.env.PORT || 8001;
+const PORT = Number(process.env.PORT) || 8001;
 const AI_API_URL = process.env.AI_API_URL || "http://localhost:8080/v1";
 
 // 引入工具
-const tools = [readKnowledgeTool, updateKnowledgeTool, visionAnalyzerTool, calculateNutritionTool, logDietTool];
+const tools = [readKnowledgeTool, updateKnowledgeTool, visionAnalyzerTool, calculateNutritionTool, logDietTool, getChatHistoryTool, getUserProfileTool, updateUserProfileTool];
 const toolNode = new ToolNode(tools);
 
 const llm = new ChatOpenAI({
@@ -42,6 +43,7 @@ const llm = new ChatOpenAI({
   apiKey: "dummy",
 });
 
+// 🌟 移除了 user_context，保持乾淨
 const AgentState = Annotation.Root({
   ...MessagesAnnotation.spec,
   user_id: Annotation<string>(),
@@ -55,16 +57,23 @@ const callModel = async (state: typeof AgentState.State) => {
 
   const currentUser = state.user_id ? `\n目前服務的使用者 ID: ${state.user_id}` : '';
 
+  // 🌟 加入絕對指令，逼迫 Agent 自己用工具查資料和寫資料
   const prompt = `
   ${agentInstructions}
   ${currentUser}
+
+  ⚠️ 系統核心指令：
+  1. 你具備讀取與寫入資料庫的能力。
+  2. 絕對不要告訴使用者「我不知道你的名字或資料」。當你需要了解使用者的基本資料、目標或習慣時，請主動呼叫對應的工具 (例如 readKnowledgeTool) 並傳入 user_id 進行查詢。
+  3. 結束指令時，請自動整理好熱量與營養素，並呼叫 logDietTool 將資料寫入資料庫。
 
   --- 系統技能與工具索引 ---
   ${skillsIndex}
 
   --- 目前的營養學指導原則 (知識庫) ---
   ${nutritionRules}
-    `;
+  `;
+
   const systemMessage = { role: "system", content: prompt };
 
   const MAX_HISTORY_MESSAGES = 10;
@@ -101,6 +110,7 @@ const sendSSE = (res: Response, data: object) => {
 
 // --- API Router ---
 app.post('/api/chat', async (req: Request, res: Response) => {
+  // 🌟 這裡修正了：乾淨的解構，不再依賴前端的 user_context
   const { message, thread_id, user_id } = req.body;
   if (!thread_id) return res.status(400).send("Missing thread_id");
 
@@ -138,12 +148,10 @@ app.post('/api/chat', async (req: Request, res: Response) => {
       stepCount++;
 
       const lastMsg = state.values.messages[state.values.messages.length - 1] as AIMessage;
-      const needsApproval = lastMsg.tool_calls?.some(tc => tc.name === "update_knowledge_tool");
       const isKnowledgeUpdate = lastMsg.tool_calls?.some(tc => tc.name === "update_knowledge_tool");
       const isProfileUpdate = lastMsg.tool_calls?.some(tc => tc.name === "update_user_profile");
 
       if (isKnowledgeUpdate || isProfileUpdate) {
-
         const alertMessage = isKnowledgeUpdate ? '寫入系統知識庫' : '更新用戶資料';
         sendSSE(res, {
           type: "interrupt",
@@ -153,9 +161,7 @@ app.post('/api/chat', async (req: Request, res: Response) => {
         break;
       } else {
         sendSSE(res, { type: "status", content: "AI 正在思考中..." });
-
         await runAgentStream(null);
-
         state = await agentApp.getState(config);
       }
     }
@@ -185,7 +191,7 @@ app.post('/api/approve', async (req: Request, res: Response) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n🥦 Diet Manager Agent Server 啟動`);
   console.log(`📍 Thread-based Memory: 啟用 (Supabase Ready)`);
   console.log(`📍 Breakpoints: 啟用 (write_file)`);
@@ -215,4 +221,12 @@ app.post("/api/generate_title", async (req, res) => {
     console.error("標題生成失敗:", error);
     res.status(500).json({ title: "新對話" });
   }
+});
+
+app.get('/ping', (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+    message: 'Pong! Node.js Agent 大腦運作中 🧠',
+    timestamp: new Date().toISOString()
+  });
 });

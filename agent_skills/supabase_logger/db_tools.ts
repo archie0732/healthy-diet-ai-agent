@@ -37,7 +37,7 @@ export const logDietTool = tool(
   },
   {
     name: "log_diet_history",
-    description: "當你完成食物的熱量計算與分析總結後，『必須』呼叫此工具將所有結果寫入資料庫永久保存。",
+    description: "當你完成對話或分析後，『必須』呼叫此工具將所有結果寫入資料庫永久保存。",
     schema: z.object({
       room_id: z.string().describe("目前的對話群組 ID (通常對應 thread_id)"),
       user_message: z.string().describe("使用者最初的詢問內容"),
