@@ -17,7 +17,6 @@ const NUTRITION_DB: Record<string, { kcal: number, protein: number, fat: number,
   "豬肉": { kcal: 240, protein: 18, fat: 18, carbs: 0 },
   "豆腐": { kcal: 88, protein: 8.5, fat: 5.2, carbs: 2.0 },
   "蛋": { kcal: 140, protein: 12, fat: 10, carbs: 1.5 },
-  // 預設值 (如果找不到對應的食材)
   "default": { kcal: 100, protein: 5, fat: 5, carbs: 10 }
 };
 
@@ -32,7 +31,6 @@ export const calculateNutritionTool = tool(
     for (const item of ingredients) {
       let dbItem = NUTRITION_DB["default"]!;
 
-      // 簡易模糊比對：看食材名稱有沒有包含資料庫的關鍵字
       for (const key in NUTRITION_DB) {
         if (item.name.includes(key)) {
           dbItem = NUTRITION_DB[key]!;
@@ -40,7 +38,6 @@ export const calculateNutritionTool = tool(
         }
       }
 
-      // 依照重量比例計算
       const ratio = item.weight_g / 100;
       const kcal = Math.round(dbItem.kcal * ratio);
       const protein = Math.round(dbItem.protein * ratio * 10) / 10;
@@ -52,11 +49,9 @@ export const calculateNutritionTool = tool(
       totalFat += fat;
       totalCarbs += carbs;
 
-      // 為了配合我們在 index.ts 設定的 Markdown 表格，我們把結果格式化
       details.push(`| ${item.name} | ${item.weight_g}g | ${kcal} 大卡 | ${protein}g | ${fat}g | ${carbs}g |`);
     }
 
-    // 將四捨五入的總和回傳給 Agent
     const report = `
 以下是精算後的營養數據，請直接使用此數據回答使用者：
 

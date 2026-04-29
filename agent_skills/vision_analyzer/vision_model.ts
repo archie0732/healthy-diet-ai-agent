@@ -31,7 +31,7 @@ export const visionAnalyzerTool = tool(
       const visionLlm = new ChatOpenAI({
         modelName: "gemma-4-e4b",
         temperature: 0.1,
-        maxTokens: 2048,
+        maxTokens: 3096,
         apiKey: process.env.AI_API_KEY || "dummy",
         configuration: { baseURL: process.env.AI_API_URL || "http://localhost:8080/v1" }
       });

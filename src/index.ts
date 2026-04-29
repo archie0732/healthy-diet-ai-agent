@@ -5,38 +5,34 @@ import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { ChatOpenAI } from '@langchain/openai';
-import { MemorySaver, StateGraph, START, END, MessagesAnnotation } from '@langchain/langgraph';
+import { MemorySaver, StateGraph, START, END, MessagesAnnotation, Annotation } from '@langchain/langgraph';
 import { ToolNode } from '@langchain/langgraph/prebuilt';
 import { AIMessage } from '@langchain/core/messages';
 
 import { readKnowledgeTool, updateKnowledgeTool } from '../agent_skills/admin_knowledge/file_tools';
 import { visionAnalyzerTool } from '../agent_skills/vision_analyzer/vision_model';
 import { calculateNutritionTool } from '../agent_skills/calorie_calculator/calc_tools';
+import { logDietTool } from '../agent_skills/supabase_logger/db_tools';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// --- 📂 路徑修正區 (精確定位根目錄) ---
 const ROOT_DIR = path.resolve(__dirname, '..');
 const USERS_IMAGES_DIR = path.join(ROOT_DIR, 'users_images');
-const KNOWLEDGE_BASE_DIR = path.join(ROOT_DIR, 'knowledge_base'); // 建議將 skill 放在此統一管理
+const KNOWLEDGE_BASE_DIR = path.join(ROOT_DIR, 'knowledge_base');
 
-// 這裡是原本的 prompts 路徑，若你也想移到根目錄請比照辦理
 const AGENT_FILE = path.join(KNOWLEDGE_BASE_DIR, 'AGENT.md');
 const INDEX_FILE = path.join(KNOWLEDGE_BASE_DIR, 'SKILLS_INDEX.md');
 const RULES_FILE = path.join(KNOWLEDGE_BASE_DIR, 'NUTRITION_RULES.md');
 
-// 靜態檔案服務：現在前端可以透過 http://localhost:8001/images/user_123/test3.jpg 存取
 app.use('/images', express.static(USERS_IMAGES_DIR));
-
-
 
 const PORT = process.env.PORT || 8001;
 const AI_API_URL = process.env.AI_API_URL || "http://localhost:8080/v1";
 
 // 引入工具
-const tools = [readKnowledgeTool, updateKnowledgeTool, visionAnalyzerTool, calculateNutritionTool];
+const tools = [readKnowledgeTool, updateKnowledgeTool, visionAnalyzerTool, calculateNutritionTool, logDietTool];
 const toolNode = new ToolNode(tools);
 
 const llm = new ChatOpenAI({
@@ -46,14 +42,22 @@ const llm = new ChatOpenAI({
   apiKey: "dummy",
 });
 
-const callModel = async (state: typeof MessagesAnnotation.State) => {
-  // 讀取最新的指示與技能
+const AgentState = Annotation.Root({
+  ...MessagesAnnotation.spec,
+  user_id: Annotation<string>(),
+  room_id: Annotation<string>(),
+});
+
+const callModel = async (state: typeof AgentState.State) => {
   const agentInstructions = fs.existsSync(AGENT_FILE) ? fs.readFileSync(AGENT_FILE, 'utf-8') : '';
   const skillsIndex = fs.existsSync(INDEX_FILE) ? fs.readFileSync(INDEX_FILE, 'utf-8') : '';
   const nutritionRules = fs.existsSync(RULES_FILE) ? fs.readFileSync(RULES_FILE, 'utf-8') : '';
 
+  const currentUser = state.user_id ? `\n目前服務的使用者 ID: ${state.user_id}` : '';
+
   const prompt = `
   ${agentInstructions}
+  ${currentUser}
 
   --- 系統技能與工具索引 ---
   ${skillsIndex}
@@ -63,11 +67,18 @@ const callModel = async (state: typeof MessagesAnnotation.State) => {
     `;
   const systemMessage = { role: "system", content: prompt };
 
-  const response = await llm.bindTools(tools).invoke([systemMessage, ...state.messages]);
+  const MAX_HISTORY_MESSAGES = 10;
+
+  let recentMessages = state.messages;
+  if (state.messages.length > MAX_HISTORY_MESSAGES) {
+    recentMessages = state.messages.slice(-MAX_HISTORY_MESSAGES);
+  }
+  const response = await llm.bindTools(tools).invoke([systemMessage, ...recentMessages]);
+
   return { messages: [response] };
 };
 
-const workflow = new StateGraph(MessagesAnnotation)
+const workflow = new StateGraph(AgentState)
   .addNode("agent", callModel)
   .addNode("tools", toolNode)
   .addEdge(START, "agent")
@@ -90,7 +101,7 @@ const sendSSE = (res: Response, data: object) => {
 
 // --- API Router ---
 app.post('/api/chat', async (req: Request, res: Response) => {
-  const { message, thread_id } = req.body;
+  const { message, thread_id, user_id } = req.body;
   if (!thread_id) return res.status(400).send("Missing thread_id");
 
   res.setHeader('Content-Type', 'text/event-stream');
@@ -111,7 +122,12 @@ app.post('/api/chat', async (req: Request, res: Response) => {
         }
       }
     };
-    await runAgentStream({ messages: [{ role: "user", content: message }] });
+
+    await runAgentStream({
+      messages: [{ role: "user", content: message }],
+      user_id: user_id || "guest_user",
+      room_id: thread_id
+    });
 
     let state = await agentApp.getState(config);
 
@@ -123,11 +139,15 @@ app.post('/api/chat', async (req: Request, res: Response) => {
 
       const lastMsg = state.values.messages[state.values.messages.length - 1] as AIMessage;
       const needsApproval = lastMsg.tool_calls?.some(tc => tc.name === "update_knowledge_tool");
+      const isKnowledgeUpdate = lastMsg.tool_calls?.some(tc => tc.name === "update_knowledge_tool");
+      const isProfileUpdate = lastMsg.tool_calls?.some(tc => tc.name === "update_user_profile");
 
-      if (needsApproval) {
+      if (isKnowledgeUpdate || isProfileUpdate) {
+
+        const alertMessage = isKnowledgeUpdate ? '寫入系統知識庫' : '更新用戶資料';
         sendSSE(res, {
           type: "interrupt",
-          content: "偵測到敏感操作：寫入系統知識庫，請進行審核。",
+          content: alertMessage,
           pending_tools: state.next
         });
         break;
@@ -150,7 +170,7 @@ app.post('/api/chat', async (req: Request, res: Response) => {
 });
 
 app.post('/api/approve', async (req: Request, res: Response) => {
-  const { thread_id, action } = req.body; // action: "approve" | "reject"
+  const { thread_id, action } = req.body;
   const config = { configurable: { thread_id } };
 
   if (action === "approve") {
