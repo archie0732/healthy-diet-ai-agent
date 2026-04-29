@@ -50,22 +50,22 @@ const AgentState = Annotation.Root({
   room_id: Annotation<string>(),
 });
 
-const callModel = async (state: typeof AgentState.State) => {
+callconst callModel = async (state: typeof AgentState.State) => {
   const agentInstructions = fs.existsSync(AGENT_FILE) ? fs.readFileSync(AGENT_FILE, 'utf-8') : '';
   const skillsIndex = fs.existsSync(INDEX_FILE) ? fs.readFileSync(INDEX_FILE, 'utf-8') : '';
   const nutritionRules = fs.existsSync(RULES_FILE) ? fs.readFileSync(RULES_FILE, 'utf-8') : '';
 
-  const currentUser = state.user_id ? `\n目前服務的使用者 ID: ${state.user_id}` : '';
+  // 🌟 關鍵修復：把 user_id 和 room_id 都明確告訴 AI！
+  // 否則它在呼叫 logDietTool 時，會因為不知道 room_id 而失敗！
+  const userInfo = state.user_id ? `目前服務的使用者 ID (user_id): ${state.user_id}` : '目前使用者: 訪客 (無 user_id)';
+  const roomInfo = state.room_id ? `目前的對話群組 ID (room_id): ${state.room_id}` : '';
 
-  // 🌟 加入絕對指令，逼迫 Agent 自己用工具查資料和寫資料
   const prompt = `
   ${agentInstructions}
-  ${currentUser}
 
-  ⚠️ 系統核心指令：
-  1. 你具備讀取與寫入資料庫的能力。
-  2. 絕對不要告訴使用者「我不知道你的名字或資料」。當你需要了解使用者的基本資料、目標或習慣時，請主動呼叫對應的工具 (例如 readKnowledgeTool) 並傳入 user_id 進行查詢。
-  3. 結束指令時，請自動整理好熱量與營養素，並呼叫 logDietTool 將資料寫入資料庫。
+  --- 系統環境變數 (呼叫工具時請使用) ---
+  ${userInfo}
+  ${roomInfo}
 
   --- 系統技能與工具索引 ---
   ${skillsIndex}
