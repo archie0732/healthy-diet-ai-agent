@@ -50,7 +50,7 @@ const AgentState = Annotation.Root({
   room_id: Annotation<string>(),
 });
 
-callconst callModel = async (state: typeof AgentState.State) => {
+const callModel = async (state: typeof AgentState.State) => {
   const agentInstructions = fs.existsSync(AGENT_FILE) ? fs.readFileSync(AGENT_FILE, 'utf-8') : '';
   const skillsIndex = fs.existsSync(INDEX_FILE) ? fs.readFileSync(INDEX_FILE, 'utf-8') : '';
   const nutritionRules = fs.existsSync(RULES_FILE) ? fs.readFileSync(RULES_FILE, 'utf-8') : '';
@@ -73,6 +73,7 @@ callconst callModel = async (state: typeof AgentState.State) => {
   --- 目前的營養學指導原則 (知識庫) ---
   ${nutritionRules}
   `;
+
 
   const systemMessage = { role: "system", content: prompt };
 
