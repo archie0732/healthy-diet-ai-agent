@@ -6,6 +6,7 @@
     "@langchain/tavily": "^1.2.0",
     "@supabase/supabase-js": "^2.105.1",
     "body-parser": "^2.2.2",
+    "cheerio": "^1.2.0",
     "cors": "^2.8.6",
     "deepagents": "^1.8.8",
     "dotenv": "^17.4.2",

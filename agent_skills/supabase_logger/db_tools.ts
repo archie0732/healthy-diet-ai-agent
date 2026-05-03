@@ -7,6 +7,22 @@ const supabaseKey = process.env.SUPABASE_SERVICE_KEY || '';
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+type HistoryRow = {
+  id: string;
+  created_at: string;
+  title: string | null;
+  user_message: string | null;
+  ai_analysis_report: string | null;
+  summary: string | null;
+  diet_report: unknown;
+};
+
+const shorten = (text: string, max = 120): string => {
+  const normalized = text.replace(/\s+/g, ' ').trim();
+  if (normalized.length <= max) return normalized;
+  return `${normalized.slice(0, max - 1)}…`;
+};
+
 export const logDietTool = tool(
   async ({
     room_id,
@@ -68,10 +84,9 @@ export const logDietTool = tool(
         insertData.summary = summary_text;
       }
 
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('diet_chat_history')
-        .insert([insertData])
-        .select();
+        .insert([insertData]);
 
       if (error) {
         console.error("Supabase 寫入錯誤:", error);
@@ -100,30 +115,64 @@ export const logDietTool = tool(
   }
 );
 
-
-
 export const getChatHistoryTool = tool(
-  async ({ room_id, limit = 5 }) => {
+  async ({ room_id, limit = 8, format = 'compact', include_diet_report = false }) => {
     const { data, error } = await supabase
       .from('diet_chat_history')
-      .select('*')
+      .select('id, created_at, title, user_message, ai_analysis_report, summary, diet_report')
       .eq('room_id', room_id)
       .order('created_at', { ascending: false })
       .limit(limit);
 
     if (error) return `讀取歷史失敗: ${error.message}`;
-    return JSON.stringify(data);
+
+    const rows = ((data ?? []) as HistoryRow[]).slice().reverse();
+
+    if (format === 'raw') {
+      return JSON.stringify(rows);
+    }
+
+    if (rows.length === 0) {
+      return '此聊天室目前沒有歷史紀錄。';
+    }
+
+    const lines: string[] = [];
+    for (const row of rows) {
+      const time = row.created_at ? new Date(row.created_at).toISOString() : 'unknown_time';
+      const header = row.title?.trim() ? `[${time}] ${row.title.trim()}` : `[${time}] 對話紀錄`;
+      lines.push(header);
+
+      if (row.summary?.trim()) {
+        lines.push(`- 摘要: ${shorten(row.summary, 260)}`);
+      } else {
+        if (row.user_message?.trim()) {
+          lines.push(`- 使用者: ${shorten(row.user_message, 140)}`);
+        }
+        if (row.ai_analysis_report?.trim()) {
+          lines.push(`- 助理: ${shorten(row.ai_analysis_report, 200)}`);
+        }
+      }
+
+      if (include_diet_report && row.diet_report != null) {
+        lines.push(`- diet_report: ${shorten(JSON.stringify(row.diet_report), 180)}`);
+      }
+
+      lines.push('');
+    }
+
+    return lines.join('\n').trim();
   },
   {
     name: "get_chat_history",
-    description: "讀取目前聊天室過去的飲食紀錄與分析。在給予建議前，先了解使用者今天已經攝取了多少熱量。",
+    description: "讀取聊天室近期紀錄。預設回傳 compact 文本摘要，方便快速理解上下文；需要原始資料時可切到 raw。",
     schema: z.object({
-      room_id: z.string(),
-      limit: z.number().optional().default(5)
+      room_id: z.string().describe('聊天室 ID'),
+      limit: z.number().int().min(1).max(50).optional().default(8).describe('最多讀取幾筆紀錄'),
+      format: z.enum(['compact', 'raw']).optional().default('compact').describe('compact=文字摘要, raw=原始 JSON 字串'),
+      include_diet_report: z.boolean().optional().default(false).describe('是否在 compact 模式附帶 diet_report 的短摘要')
     })
   }
 );
-
 
 export const getUserProfileTool = tool(
   async ({ user_id }) => {
@@ -141,6 +190,50 @@ export const getUserProfileTool = tool(
     description: "讀取使用者的健康背景，包含體徵、忌口項目 (taboo) 與疾病史 (disease)。",
     schema: z.object({
       user_id: z.string()
+    })
+  }
+);
+
+export const updateUserProfileTool = tool(
+  async ({ user_id, taboo_to_add, disease_to_add }) => {
+    try {
+      const { data: user, error: fetchErr } = await supabase
+        .from('users')
+        .select('taboo, disease')
+        .eq('id', user_id)
+        .single();
+
+      if (fetchErr) return `讀取使用者資料失敗: ${fetchErr.message}`;
+
+      const currentTaboo = Array.isArray(user.taboo) ? [...user.taboo] : [];
+      const currentDisease = Array.isArray(user.disease) ? [...user.disease] : [];
+
+      if (taboo_to_add && !currentTaboo.includes(taboo_to_add)) {
+        currentTaboo.push(taboo_to_add);
+      }
+      if (disease_to_add && !currentDisease.includes(disease_to_add)) {
+        currentDisease.push(disease_to_add);
+      }
+
+      const { error: updateErr } = await supabase
+        .from('users')
+        .update({ taboo: currentTaboo, disease: currentDisease })
+        .eq('id', user_id);
+
+      if (updateErr) return `更新失敗: ${updateErr.message}`;
+
+      return `✅ 成功更新使用者個人檔案！目前忌口: ${currentTaboo.join(', ') || '無'} / 疾病史: ${currentDisease.join(', ') || '無'}`;
+    } catch (error: any) {
+      return `系統錯誤: ${error.message}`;
+    }
+  },
+  {
+    name: "update_user_profile",
+    description: "當在對話中發現使用者提到新的飲食禁忌或疾病史時，立刻呼叫此工具更新資料庫，讓後續建議更精準。",
+    schema: z.object({
+      user_id: z.string().describe("使用者的 UUID"),
+      taboo_to_add: z.string().optional().describe("要新增的忌口項目，例如 '花生', '全素'"),
+      disease_to_add: z.string().optional().describe("要新增的疾病或體徵，例如 '高血壓', '糖尿病'")
     })
   }
 );

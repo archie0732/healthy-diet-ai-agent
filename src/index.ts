@@ -12,8 +12,8 @@ import { ToolNode } from '@langchain/langgraph/prebuilt';
 import { readKnowledgeTool, updateKnowledgeTool } from '../agent_skills/admin_knowledge/file_tools';
 import { visionAnalyzerTool } from '../agent_skills/vision_analyzer/vision_model';
 import { calculateNutritionTool } from '../agent_skills/calorie_calculator/calc_tools';
-import { logDietTool, getChatHistoryTool, getUserProfileTool } from '../agent_skills/supabase_logger/db_tools';
-import { updateUserProfileTool } from '../agent_skills/memory_summarizer/summarizer_tools';
+import { logDietTool, getChatHistoryTool, getUserProfileTool, updateUserProfileTool } from '../agent_skills/supabase_logger/db_tools';
+import { compressChatHistoryTool } from '../agent_skills/memory_summarizer/summarizer_tools';
 
 const app = express();
 app.use(cors());
@@ -39,7 +39,8 @@ const agentTools = [
   visionAnalyzerTool,
   calculateNutritionTool,
   getChatHistoryTool,
-  updateUserProfileTool
+  updateUserProfileTool,
+  compressChatHistoryTool
 ];
 const toolNode = new ToolNode(agentTools);
 
