@@ -4,7 +4,35 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = process.env.SUPABASE_URL || '';
 const supabaseKey = process.env.SUPABASE_SERVICE_KEY || '';
-const supabase = createClient(supabaseUrl, supabaseKey);
+const isSupabaseConfigured = Boolean(supabaseUrl && supabaseKey);
+const supabase = isSupabaseConfigured ? createClient(supabaseUrl, supabaseKey) : null;
+const SUPABASE_QUERY_TIMEOUT_MS = Number(process.env.SUPABASE_QUERY_TIMEOUT_MS || 8000);
+
+const withTimeout = async <T>(promise: PromiseLike<T>, timeoutMs: number, label: string): Promise<T> => {
+  let timeoutHandle: NodeJS.Timeout | undefined;
+  try {
+    return await Promise.race([
+      Promise.resolve(promise),
+      new Promise<T>((_, reject) => {
+        timeoutHandle = setTimeout(() => {
+          reject(new Error(`${label} timeout after ${timeoutMs}ms`));
+        }, timeoutMs);
+      }),
+    ]);
+  } finally {
+    if (timeoutHandle) clearTimeout(timeoutHandle);
+  }
+};
+
+const getSupabaseOrError = (): { client: typeof supabase; error: string | null } => {
+  if (!supabase) {
+    return {
+      client: null,
+      error: 'Supabase is not configured. Missing SUPABASE_URL or SUPABASE_SERVICE_KEY.',
+    };
+  }
+  return { client: supabase, error: null };
+};
 
 type HistoryRow = {
   id: string;
@@ -35,6 +63,9 @@ export const logDietTool = tool(
     summary_text,
   }) => {
     try {
+      const { client, error: configError } = getSupabaseOrError();
+      if (configError || !client) return configError || 'Supabase is not configured.';
+
       const summaryColumnEnabled = process.env.ENABLE_SUMMARY_COLUMN === 'true';
 
       if (record_type === 'summary') {
@@ -54,7 +85,11 @@ export const logDietTool = tool(
         };
         if (user_id) summaryInsertData.user_id = user_id;
 
-        const { error } = await supabase.from('diet_chat_history').insert([summaryInsertData]);
+        const { error } = await withTimeout(
+          client.from('diet_chat_history').insert([summaryInsertData]),
+          SUPABASE_QUERY_TIMEOUT_MS,
+          'insert summary row'
+        );
         if (error) return `Failed to insert summary row: ${error.message}`;
         return 'Summary row inserted.';
       }
@@ -75,7 +110,11 @@ export const logDietTool = tool(
       if (user_id) insertData.user_id = user_id;
       if (summary_text && summaryColumnEnabled) insertData.summary = summary_text;
 
-      const { error } = await supabase.from('diet_chat_history').insert([insertData]);
+      const { error } = await withTimeout(
+        client.from('diet_chat_history').insert([insertData]),
+        SUPABASE_QUERY_TIMEOUT_MS,
+        'insert chat row'
+      );
       if (error) return `Failed to insert chat row: ${error.message}`;
 
       return 'Chat row inserted.';
@@ -103,12 +142,19 @@ export const logDietTool = tool(
 
 export const getChatHistoryTool = tool(
   async ({ room_id, limit = 8, format = 'compact', include_diet_report = false }) => {
-    const { data, error } = await supabase
-      .from('diet_chat_history')
-      .select('id, created_at, title, user_message, ai_analysis_report, summary, diet_report')
-      .eq('room_id', room_id)
-      .order('created_at', { ascending: false })
-      .limit(limit);
+    const { client, error: configError } = getSupabaseOrError();
+    if (configError || !client) return configError || 'Supabase is not configured.';
+
+    const { data, error } = await withTimeout(
+      client
+        .from('diet_chat_history')
+        .select('id, created_at, title, user_message, ai_analysis_report, summary, diet_report')
+        .eq('room_id', room_id)
+        .order('created_at', { ascending: false })
+        .limit(limit),
+      SUPABASE_QUERY_TIMEOUT_MS,
+      'get chat history'
+    );
 
     if (error) return `Failed to read history: ${error.message}`;
 
@@ -153,11 +199,18 @@ export const getChatHistoryTool = tool(
 
 export const getUserProfileTool = tool(
   async ({ user_id }) => {
-    const { data, error } = await supabase
-      .from('users')
-      .select('nickname, height, weight, age, gender, taboo, disease')
-      .eq('id', user_id)
-      .single();
+    const { client, error: configError } = getSupabaseOrError();
+    if (configError || !client) return configError || 'Supabase is not configured.';
+
+    const { data, error } = await withTimeout(
+      client
+        .from('users')
+        .select('nickname, height, weight, age, gender, taboo, disease')
+        .eq('id', user_id)
+        .single(),
+      SUPABASE_QUERY_TIMEOUT_MS,
+      'get user profile'
+    );
 
     if (error) return `Failed to read user profile: ${error.message}`;
     return JSON.stringify(data);
@@ -184,11 +237,18 @@ export const updateUserProfileTool = tool(
     disease_to_add,
   }) => {
     try {
-      const { data: user, error: fetchErr } = await supabase
-        .from('users')
-        .select('nickname, avatar_url, height, weight, age, gender, taboo, disease')
-        .eq('id', user_id)
-        .single();
+      const { client, error: configError } = getSupabaseOrError();
+      if (configError || !client) return configError || 'Supabase is not configured.';
+
+      const { data: user, error: fetchErr } = await withTimeout(
+        client
+          .from('users')
+          .select('nickname, avatar_url, height, weight, age, gender, taboo, disease')
+          .eq('id', user_id)
+          .single(),
+        SUPABASE_QUERY_TIMEOUT_MS,
+        'fetch user profile for update'
+      );
 
       if (fetchErr) return `Failed to fetch user profile: ${fetchErr.message}`;
 
@@ -216,7 +276,11 @@ export const updateUserProfileTool = tool(
 
       if (Object.keys(updatePayload).length === 0) return 'No profile fields provided to update.';
 
-      const { error: updateErr } = await supabase.from('users').update(updatePayload).eq('id', user_id);
+      const { error: updateErr } = await withTimeout(
+        client.from('users').update(updatePayload).eq('id', user_id),
+        SUPABASE_QUERY_TIMEOUT_MS,
+        'update user profile'
+      );
       if (updateErr) return `Failed to update profile: ${updateErr.message}`;
 
       const nextNickname = (updatePayload.nickname as string | undefined) ?? user.nickname ?? 'unknown';
