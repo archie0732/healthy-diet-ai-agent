@@ -13,9 +13,3 @@ knowledge_base/ingested_markdown/
 knowledge_base/graph/
 uploads/
 docs/*
-!docs/deployment-self-hosted-ghcr.md
-!docs/superpowers/
-docs/superpowers/*
-!docs/superpowers/plans/
-docs/superpowers/plans/*
-!docs/superpowers/plans/2026-07-01-ghcr-self-hosted-deploy.md
