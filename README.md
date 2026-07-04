@@ -7,8 +7,8 @@ This repository now supports two deployment modes:
 - Standalone mode: runs independently with SQLite, Docker, HTTP API, and terminal CLI
 - Integration mode: connects to Supabase and can stay compatible with the existing `health-diet-api` ecosystem
 
-[日本語の技術文書](/README_jp.md)
-[中文文檔](/README_zh.md)
+- [日本語の技術文書](/README_jp.md)
+- [中文文檔](/README_zh.md)
 
 ## Project Background
 
@@ -334,5 +334,4 @@ bun test
 
 - Chinese README: `README_zh.md`
 - Japanese README: `README_jp.md`
-- Agent maintenance rules: `AGENT.md`
-- Codex change log: `CHANGELOG_CODEX.md`
+- Change log: `CHANGELOG_CODEX.md`
