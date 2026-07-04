@@ -297,5 +297,4 @@ bun test
 
 - English README: `README.md`
 - Chinese README: `README_zh.md`
-- Agent ルール: `AGENT.md`
-- Codex changelog: `CHANGELOG_CODEX.md`
+- changelog: `CHANGELOG.md`
