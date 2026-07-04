@@ -297,8 +297,7 @@ bun test
 
 - English README：`README.md`
 - Japanese README：`README_jp.md`
-- Agent 維護規則：`AGENT.md`
-- Codex 變更紀錄：`CHANGELOG_CODEX.md`
+- 變更紀錄：`CHANGELOG_CODEX.md`
 ## Security And Failure Notes
 
 - RAG 文件管理 API 現在必須帶 `X-Admin-User-Id` 與 `X-Admin-Role`（`admin` 或 `nutritionist`）
