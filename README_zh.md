@@ -332,7 +332,9 @@ bun test
 
 - English README：`README.md`
 - Japanese README：`README_jp.md`
-- 變更紀錄：`CHANGELOG.md`
+- 技術文件資料夾：`technical_docs/`
+- 變更紀錄：`technical_docs/CHANGELOG.md`
+- RAG 分析文件：`technical_docs/RAG_AGENT_ANALYSIS_ZH.md`
 
 ## License
 

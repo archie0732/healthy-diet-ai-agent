@@ -1,4 +1,4 @@
-# CHANGELOG_CODEX
+# CHANGELOG
 
 ## 2026-07-01 12:55 Asia/Taipei
 
@@ -15,7 +15,7 @@
   - `src/server/serverHandlers.test.ts`
   - `README.md`
   - `README_zh.md`
-  - `CHANGELOG_CODEX.md`
+  - `technical_docs/CHANGELOG.md`
 - API:
   - Added: `none`
   - Changed: `RAG document admin routes now require forwarded admin identity headers`
@@ -43,10 +43,10 @@
   - `agent_skills/db_tools.ts`
   - `src/server/serverHandlers.test.ts`
   - `src/server/dbTools.test.ts`
-  - `Doc/supabase/2026-06-22-chat-room-summary-index-migration.sql`
+  - `docs/supabase/2026-06-22-chat-room-summary-index-migration.sql`
   - `README.md`
   - `README_zh.md`
-  - `CHANGELOG_CODEX.md`
+  - `technical_docs/CHANGELOG.md`
 - API:
   - Added: `none`
   - Changed: `chat_rooms.summary` payload shape now supports structured summary index entries
@@ -71,7 +71,7 @@
   - `.env.example`
   - `README.md`
   - `README_zh.md`
-  - `CHANGELOG_CODEX.md`
+  - `technical_docs/CHANGELOG.md`
 - API:
   - Added: `none`
   - Changed: `none`
@@ -94,7 +94,7 @@
   - `README.md`
   - `README_zh.md`
   - `AGENT.md`
-  - `CHANGELOG_CODEX.md`
+  - `technical_docs/CHANGELOG.md`
 - API:
   - Added: `none`
   - Changed: `none`
@@ -148,7 +148,7 @@
   - `README.md`
   - `README_zh.md`
   - `README_jp.md`
-  - `CHANGELOG_CODEX.md`
+  - `technical_docs/CHANGELOG.md`
 - API:
   - Added: `none`
   - Changed: `none`

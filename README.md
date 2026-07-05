@@ -369,7 +369,9 @@ bun test
 
 - Chinese README: `README_zh.md`
 - Japanese README: `README_jp.md`
-- Change log: `CHANGELOG_CODEX.md`
+- Technical docs: `technical_docs/`
+- Change log: `technical_docs/CHANGELOG.md`
+- RAG analysis (ZH): `technical_docs/RAG_AGENT_ANALYSIS_ZH.md`
 
 ## License
 

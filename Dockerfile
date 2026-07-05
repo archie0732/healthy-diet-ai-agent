@@ -12,11 +12,11 @@ COPY agent_skills ./agent_skills
 COPY agent_config.json ./agent_config.json
 COPY knowledge_base ./knowledge_base
 COPY docs ./docs
+COPY technical_docs ./technical_docs
 COPY AGENT.md ./AGENT.md
 COPY README.md ./README.md
 COPY README_zh.md ./README_zh.md
 COPY README_jp.md ./README_jp.md
-COPY CHANGELOG_CODEX.md ./CHANGELOG_CODEX.md
 
 RUN mkdir -p users_images knowledge_base/uploads knowledge_base/ingested_markdown data
 
