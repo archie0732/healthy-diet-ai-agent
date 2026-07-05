@@ -46,6 +46,26 @@ describe("summarizeQueryResult", () => {
     const result = summarizeQueryResult("q-001", "demo", topK, judgment);
     expect(result.is_stale_retrieved).toBe(true);
   });
+
+  test("top1 unsafe metric only fails when the highest-ranked chunk is citation-unsafe", () => {
+    const topK = [
+      { chunk: { chunk_id: "safe-top1" }, score: 5 },
+      { chunk: { chunk_id: "unsafe-top2" }, score: 4 },
+      { chunk: { chunk_id: "unsafe-top3" }, score: 3 }
+    ] as any;
+
+    const judgment = {
+      query_id: "q-metric",
+      acceptable_chunk_ids: ["safe-top1"],
+      preferred_chunk_ids: ["safe-top1"],
+      stale_chunk_ids: [],
+      forbidden_chunk_ids: [],
+      citation_safe_chunk_ids: ["safe-top1"]
+    };
+
+    const result = summarizeQueryResult("q-metric", "demo", topK, judgment);
+    expect(result.top1_is_citation_safe).toBe(true);
+  });
 });
 
 describe("proposed mode", () => {

@@ -51,15 +51,17 @@ export interface QueryEvalResult {
   retrieved_chunk_ids: string[];
   is_stale_retrieved: boolean;
   is_current_retrieved: boolean;
-  has_unsafe_retrieval: boolean;
-  simulated_citation: string;
+  top1_is_citation_safe: boolean;
+  unsafe_chunk_count_at_k: number;
+  citation_measurement: "not_measured";
 }
 
 export interface ModeEvalSummary {
   mode: string;
   staleRetrievalRate: number;
   currentVersionHitRate: number;
-  unsafeRetrievalRate: number;
+  top1CitationUnsafeRate: number;
+  avgUnsafeChunkCountAtK: number;
   queries: QueryEvalResult[];
 }
 
@@ -132,7 +134,8 @@ export function summarizeQueryResult(
   const retrievedIds = topK.map(r => r.chunk.chunk_id);
   const hasStale = retrievedIds.some(id => judgment.stale_chunk_ids.includes(id));
   const hasCurrent = retrievedIds.some(id => judgment.acceptable_chunk_ids.includes(id));
-  const hasUnsafeCitation = retrievedIds.some(id => !judgment.citation_safe_chunk_ids.includes(id));
+  const top1IsCitationSafe = retrievedIds.length > 0 && judgment.citation_safe_chunk_ids.includes(retrievedIds[0]);
+  const unsafeChunkCountAtK = retrievedIds.filter(id => !judgment.citation_safe_chunk_ids.includes(id)).length;
 
   return {
     query_id: queryId,
@@ -140,8 +143,9 @@ export function summarizeQueryResult(
     retrieved_chunk_ids: retrievedIds,
     is_stale_retrieved: hasStale,
     is_current_retrieved: hasCurrent,
-    has_unsafe_retrieval: hasUnsafeCitation,
-    simulated_citation: 'not_measured'
+    top1_is_citation_safe: top1IsCitationSafe,
+    unsafe_chunk_count_at_k: unsafeChunkCountAtK,
+    citation_measurement: 'not_measured'
   };
 }
 
@@ -155,7 +159,8 @@ function evaluateMode(
   const queryResults: QueryEvalResult[] = [];
   let staleRetrievalCount = 0;
   let currentHitCount = 0;
-  let unsafeRetrievalCount = 0;
+  let top1UnsafeCount = 0;
+  let totalUnsafeChunks = 0;
 
   for (const query of queries) {
     const judgment = judgmentsMap.get(query.query_id);
@@ -168,7 +173,8 @@ function evaluateMode(
 
     if (result.is_stale_retrieved) staleRetrievalCount++;
     if (result.is_current_retrieved) currentHitCount++;
-    if (result.has_unsafe_retrieval) unsafeRetrievalCount++;
+    if (!result.top1_is_citation_safe) top1UnsafeCount++;
+    totalUnsafeChunks += result.unsafe_chunk_count_at_k;
 
     queryResults.push(result);
   }
@@ -179,7 +185,8 @@ function evaluateMode(
           'Proposed (Version-Aware RAG)',
     staleRetrievalRate: parseFloat((staleRetrievalCount / queries.length).toFixed(2)),
     currentVersionHitRate: parseFloat((currentHitCount / queries.length).toFixed(2)),
-    unsafeRetrievalRate: parseFloat((unsafeRetrievalCount / queries.length).toFixed(2)),
+    top1CitationUnsafeRate: parseFloat((top1UnsafeCount / queries.length).toFixed(2)),
+    avgUnsafeChunkCountAtK: parseFloat((totalUnsafeChunks / queries.length).toFixed(2)),
     queries: queryResults
   };
 }
@@ -227,31 +234,33 @@ function main() {
 
   const summaries = [appendOnlySummary, recencySummary, proposedSummary];
 
-  console.log('\n==========================================================================================');
-  console.log('                                RAG RETRIEVAL EVALUATION SUMMARY                          ');
-  console.log('==========================================================================================');
-  console.log(`${String('Retrieval Mode').padEnd(30)} | ${String('Stale Retrieval Rate').padEnd(20)} | ${String('Current Hit Rate').padEnd(18)} | ${String('Unsafe Retrieval Rate').padEnd(20)}`);
-  console.log('------------------------------------------------------------------------------------------');
+  console.log('\n=========================================================================================================================');
+  console.log('                                          RAG RETRIEVAL EVALUATION SUMMARY                                               ');
+  console.log('=========================================================================================================================');
+  console.log(`${String('Retrieval Mode').padEnd(30)} | ${String('Stale Retrieval Rate').padEnd(20)} | ${String('Current Hit Rate').padEnd(18)} | ${String('Top-1 Citation Unsafe Rate').padEnd(28)} | ${String('Avg Unsafe Chunks@3').padEnd(20)}`);
+  console.log('-------------------------------------------------------------------------------------------------------------------------');
   for (const sum of summaries) {
     const staleRet = (sum.staleRetrievalRate * 100).toFixed(0) + '%';
     const currHit = (sum.currentVersionHitRate * 100).toFixed(0) + '%';
-    const unsafeRet = (sum.unsafeRetrievalRate * 100).toFixed(0) + '%';
-    console.log(`${sum.mode.padEnd(30)} | ${staleRet.padEnd(20)} | ${currHit.padEnd(18)} | ${unsafeRet.padEnd(20)}`);
+    const top1Unsafe = (sum.top1CitationUnsafeRate * 100).toFixed(0) + '%';
+    const avgUnsafe = sum.avgUnsafeChunkCountAtK.toFixed(1);
+    console.log(`${sum.mode.padEnd(30)} | ${staleRet.padEnd(20)} | ${currHit.padEnd(18)} | ${top1Unsafe.padEnd(28)} | ${avgUnsafe.padEnd(20)}`);
   }
-  console.log('==========================================================================================\n');
+  console.log('=========================================================================================================================\n');
 
   const outJsonPath = path.join(resultsDir, 'evaluation_summary.json');
   fs.writeFileSync(outJsonPath, JSON.stringify(summaries, null, 2), 'utf-8');
   console.log(`Saved evaluation results to ${outJsonPath}`);
 
   let md = `# RAG Retrieval Evaluation Results Summary\n\n`;
-  md += `| Retrieval Mode | Stale Retrieval Rate | Current Hit Rate | Unsafe Retrieval Rate |\n`;
-  md += `| :--- | :---: | :---: | :---: |\n`;
+  md += `| Retrieval Mode | Stale Retrieval Rate | Current Hit Rate | Top-1 Citation Unsafe Rate | Avg Unsafe Chunks@3 |\n`;
+  md += `| :--- | :---: | :---: | :---: | :---: |\n`;
   for (const sum of summaries) {
     const staleRet = (sum.staleRetrievalRate * 100).toFixed(0) + '%';
     const currHit = (sum.currentVersionHitRate * 100).toFixed(0) + '%';
-    const unsafeRet = (sum.unsafeRetrievalRate * 100).toFixed(0) + '%';
-    md += `| ${sum.mode} | ${staleRet} | ${currHit} | ${unsafeRet} |\n`;
+    const top1Unsafe = (sum.top1CitationUnsafeRate * 100).toFixed(0) + '%';
+    const avgUnsafe = sum.avgUnsafeChunkCountAtK.toFixed(1);
+    md += `| ${sum.mode} | ${staleRet} | ${currHit} | ${top1Unsafe} | ${avgUnsafe} |\n`;
   }
   md += `\n\n*Evaluation queries count: ${queries.length} queries across 10 distinct guideline lineages.*\n`;
 
