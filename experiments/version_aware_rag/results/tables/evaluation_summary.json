@@ -1,0 +1,416 @@
+[
+  {
+    "mode": "Baseline A (Append-Only)",
+    "staleRetrievalRate": 0.2,
+    "currentVersionHitRate": 0.5,
+    "unsafeRetrievalRate": 1,
+    "queries": [
+      {
+        "query_id": "q-001",
+        "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+        "retrieved_chunk_ids": [
+          "dga-2015-page-15-lineage-dairy",
+          "dga-2015-page-15-lineage-protein",
+          "dga-2015-page-15-lineage-sugars"
+        ],
+        "is_stale_retrieved": true,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-002",
+        "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-3-lineage-dairy",
+          "dga-2025-page-3-lineage-protein",
+          "dga-2025-page-3-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-003",
+        "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-3-lineage-dairy",
+          "dga-2025-page-3-lineage-protein",
+          "dga-2025-page-3-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-004",
+        "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-5-lineage-dairy",
+          "dga-2025-page-5-lineage-sugars",
+          "dga-2025-page-5-lineage-sweeteners"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-005",
+        "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+        "retrieved_chunk_ids": [
+          "dga-2020-page-8-lineage-sugars",
+          "dga-2020-page-8-lineage-cholesterol",
+          "dga-2020-page-8-lineage-alcohol"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-006",
+        "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+        "retrieved_chunk_ids": [
+          "dga-2020-page-8-lineage-sugars",
+          "dga-2020-page-8-lineage-cholesterol",
+          "dga-2020-page-8-lineage-alcohol"
+        ],
+        "is_stale_retrieved": true,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-007",
+        "question": "How many daily servings of fiber-rich whole grains are recommended?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-008",
+        "question": "What is the sodium intake limit recommendation for highly active individuals?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-6-lineage-alcohol",
+          "dga-2025-page-6-lineage-sodium",
+          "dga-2025-page-6-lineage-processed-foods"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-009",
+        "question": "How should highly processed packaged foods be treated in a healthy diet?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-5-lineage-dairy",
+          "dga-2025-page-5-lineage-sugars",
+          "dga-2025-page-5-lineage-sweeteners"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-010",
+        "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      }
+    ]
+  },
+  {
+    "mode": "Baseline B (Recency-Only)",
+    "staleRetrievalRate": 0,
+    "currentVersionHitRate": 0.6,
+    "unsafeRetrievalRate": 1,
+    "queries": [
+      {
+        "query_id": "q-001",
+        "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-9-lineage-dairy",
+          "dga-2025-page-9-lineage-protein",
+          "dga-2025-page-9-lineage-whole-grains"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-002",
+        "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-3-lineage-dairy",
+          "dga-2025-page-3-lineage-protein",
+          "dga-2025-page-3-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-003",
+        "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-3-lineage-dairy",
+          "dga-2025-page-3-lineage-protein",
+          "dga-2025-page-3-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-004",
+        "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-5-lineage-dairy",
+          "dga-2025-page-5-lineage-sugars",
+          "dga-2025-page-5-lineage-sweeteners"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-005",
+        "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-006",
+        "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-6-lineage-alcohol",
+          "dga-2025-page-6-lineage-sodium",
+          "dga-2025-page-6-lineage-processed-foods"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-007",
+        "question": "How many daily servings of fiber-rich whole grains are recommended?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-008",
+        "question": "What is the sodium intake limit recommendation for highly active individuals?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-6-lineage-alcohol",
+          "dga-2025-page-6-lineage-sodium",
+          "dga-2025-page-6-lineage-processed-foods"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-009",
+        "question": "How should highly processed packaged foods be treated in a healthy diet?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-5-lineage-dairy",
+          "dga-2025-page-5-lineage-sugars",
+          "dga-2025-page-5-lineage-sweeteners"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-010",
+        "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      }
+    ]
+  },
+  {
+    "mode": "Proposed (Version-Aware RAG)",
+    "staleRetrievalRate": 0,
+    "currentVersionHitRate": 0.5,
+    "unsafeRetrievalRate": 1,
+    "queries": [
+      {
+        "query_id": "q-001",
+        "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+        "retrieved_chunk_ids": [
+          "dga-2015-page-15-lineage-sodium",
+          "dga-2015-page-34-lineage-sodium",
+          "dga-2015-page-101-lineage-sodium"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-002",
+        "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-3-lineage-dairy",
+          "dga-2025-page-3-lineage-protein",
+          "dga-2025-page-3-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-003",
+        "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-3-lineage-dairy",
+          "dga-2025-page-3-lineage-protein",
+          "dga-2025-page-3-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-004",
+        "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-5-lineage-dairy",
+          "dga-2025-page-5-lineage-sugars",
+          "dga-2025-page-5-lineage-sweeteners"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-005",
+        "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+        "retrieved_chunk_ids": [
+          "dga-2020-page-8-lineage-cholesterol",
+          "dga-2020-page-8-lineage-sodium",
+          "dga-2015-page-53-lineage-cholesterol"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-006",
+        "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+        "retrieved_chunk_ids": [
+          "dga-2020-page-8-lineage-cholesterol",
+          "dga-2020-page-8-lineage-sodium",
+          "dga-2015-page-15-lineage-sodium"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-007",
+        "question": "How many daily servings of fiber-rich whole grains are recommended?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-008",
+        "question": "What is the sodium intake limit recommendation for highly active individuals?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-6-lineage-alcohol",
+          "dga-2025-page-6-lineage-sodium",
+          "dga-2025-page-6-lineage-processed-foods"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": true,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-009",
+        "question": "How should highly processed packaged foods be treated in a healthy diet?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-5-lineage-dairy",
+          "dga-2025-page-5-lineage-sugars",
+          "dga-2025-page-5-lineage-sweeteners"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      },
+      {
+        "query_id": "q-010",
+        "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+        "retrieved_chunk_ids": [
+          "dga-2025-page-4-lineage-dairy",
+          "dga-2025-page-4-lineage-protein",
+          "dga-2025-page-4-lineage-sugars"
+        ],
+        "is_stale_retrieved": false,
+        "is_current_retrieved": false,
+        "has_unsafe_retrieval": true,
+        "simulated_citation": "not_measured"
+      }
+    ]
+  }
+]
