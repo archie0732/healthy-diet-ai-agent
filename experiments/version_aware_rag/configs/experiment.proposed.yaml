@@ -1,0 +1,14 @@
+experiment:
+  name: "proposed-version-aware-rag"
+  description: "Proposed version-aware RAG with active semantic conflict detection and deprecation policy."
+  ingestion:
+    version_aware: true
+    conflict_detection: true
+    deprecation_policy: "deprecate_superseded"
+    eviction_policy: "evict_identical_lineage"
+  retrieval:
+    filter_deprecated: true
+    filter_label: "active"
+    boost_recency: false
+  evaluation:
+    run_queries: true

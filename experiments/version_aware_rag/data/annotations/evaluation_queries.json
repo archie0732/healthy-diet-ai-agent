@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "target_lineage_id": "lineage-dairy",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-3-lineage-dairy"],
+    "stale_chunk_ids": ["dga-2020-page-7-lineage-dairy", "dga-2015-page-50-lineage-dairy"],
+    "answer_key": "Include full-fat dairy with no added sugars, 3 servings per day."
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "target_lineage_id": "lineage-protein",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-3-lineage-protein"],
+    "stale_chunk_ids": ["dga-2020-page-7-lineage-protein"],
+    "answer_key": "1.2-1.6 grams of protein per kilogram of body weight per day."
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "target_lineage_id": "lineage-sugars",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-5-lineage-sugars"],
+    "stale_chunk_ids": ["dga-2020-page-8-lineage-sugars"],
+    "answer_key": "No more than 10 grams of added sugars per meal."
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "target_lineage_id": "lineage-sweeteners",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-5-lineage-sweeteners"],
+    "stale_chunk_ids": ["dga-2015-page-50-lineage-sweeteners"],
+    "answer_key": "No, they should be limited/avoided, and no amount is recommended as part of a healthy diet."
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "target_lineage_id": "lineage-cholesterol",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-4-lineage-cholesterol", "dga-2020-page-8-lineage-cholesterol"],
+    "stale_chunk_ids": [],
+    "answer_key": "No quantitative limit is established, but emphasis is placed on prioritizing whole foods containing healthy fats."
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "target_lineage_id": "lineage-alcohol",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-6-lineage-alcohol"],
+    "stale_chunk_ids": ["dga-2020-page-8-lineage-alcohol"],
+    "answer_key": "Consume less alcohol for better overall health, avoiding quantitative moderation rules."
+  },
+  {
+    "query_id": "q-007",
+    "question": "How many daily servings of fiber-rich whole grains are recommended?",
+    "target_lineage_id": "lineage-whole-grains",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-4-lineage-whole-grains"],
+    "stale_chunk_ids": ["dga-2020-page-7-lineage-whole-grains"],
+    "answer_key": "2-4 servings of whole grains per day."
+  },
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "target_lineage_id": "lineage-sodium",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-6-lineage-sodium"],
+    "stale_chunk_ids": ["dga-2020-page-8-lineage-sodium"],
+    "answer_key": "While general population limit is <2300 mg/day, highly active individuals may benefit from more sodium to offset sweat losses."
+  },
+  {
+    "query_id": "q-009",
+    "question": "How should highly processed packaged foods be treated in a healthy diet?",
+    "target_lineage_id": "lineage-processed-foods",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-5-lineage-processed-foods"],
+    "stale_chunk_ids": ["dga-2020-page-4-lineage-processed-foods"],
+    "answer_key": "Avoid highly processed packaged, prepared, or ready-to-eat foods; focus on home-prepared whole foods."
+  },
+  {
+    "query_id": "q-0010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "target_lineage_id": "lineage-veg-fruits",
+    "expected_current_version": "2025-2030",
+    "acceptable_chunk_ids": ["dga-2025-page-4-lineage-veg-fruits"],
+    "stale_chunk_ids": ["dga-2020-page-7-lineage-veg-fruits"],
+    "answer_key": "3 servings of vegetables and 2 servings of fruits per day."
+  }
+]

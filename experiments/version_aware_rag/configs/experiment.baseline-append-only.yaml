@@ -1,0 +1,13 @@
+experiment:
+  name: "baseline-append-only"
+  description: "Standard RAG where all document versions are ingested and searched without version awareness."
+  ingestion:
+    version_aware: false
+    conflict_detection: false
+    deprecation_policy: "none"
+  retrieval:
+    filter_deprecated: false
+    boost_recency: false
+  evaluation:
+    run_queries: true
+    metric_stale_citation_threshold: 0.0

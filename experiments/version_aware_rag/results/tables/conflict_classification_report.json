@@ -1,0 +1,77 @@
+{
+  "total_pairs": 10,
+  "correct_classifications": 10,
+  "accuracy": 1,
+  "details": [
+    {
+      "sample_id": "pair-001",
+      "topic": "Dairy Fat Recommendation",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-002",
+      "topic": "Protein Intake Goals",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-003",
+      "topic": "Added Sugars Limit",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-004",
+      "topic": "Non-Nutritive Sweeteners",
+      "gold_relation_label": "conflicting",
+      "predicted_relation_label": "conflicting",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-005",
+      "topic": "Dietary Cholesterol Limit",
+      "gold_relation_label": "complementary",
+      "predicted_relation_label": "complementary",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-006",
+      "topic": "Alcohol Consumption Limit",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-007",
+      "topic": "Whole Grains Recommendation",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-008",
+      "topic": "Sodium Intake Limit",
+      "gold_relation_label": "conditional_difference",
+      "predicted_relation_label": "conditional_difference",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-009",
+      "topic": "Processed Foods Intake",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-010",
+      "topic": "Vegetables and Fruits Consumption",
+      "gold_relation_label": "superseded",
+      "predicted_relation_label": "superseded",
+      "is_correct": true
+    }
+  ]
+}

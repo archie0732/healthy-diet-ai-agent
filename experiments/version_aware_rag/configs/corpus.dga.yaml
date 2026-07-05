@@ -1,0 +1,36 @@
+corpus:
+  name: "Dietary Guidelines for Americans (DGA)"
+  description: "Evolving authoritative nutrition guidelines published by USDA and HHS."
+  documents:
+    - id: "dga-2015"
+      version: "2015-2020"
+      published_year: 2015
+      effective_version_start: 2015
+      effective_version_end: 2020
+      raw_path: "data/raw/Dietary-Guidelines-for-Americans-2015-2020.pdf"
+      normalized_path: "data/normalized/Dietary-Guidelines-for-Americans-2015-2020.md"
+    - id: "dga-2020"
+      version: "2020-2025"
+      published_year: 2020
+      effective_version_start: 2020
+      effective_version_end: 2025
+      raw_path: "data/raw/Dietary-Guidelines-for-Americans-2020-2025.pdf"
+      normalized_path: "data/normalized/Dietary-Guidelines-for-Americans-2020-2025.md"
+    - id: "dga-2025"
+      version: "2025-2030"
+      published_year: 2026
+      effective_version_start: 2025
+      effective_version_end: 2030
+      raw_path: "data/raw/Dietary-Guidelines-for-Americans-2025-2030.pdf"
+      normalized_path: "data/normalized/Dietary-Guidelines-for-Americans-2025-2030.md"
+  shared_topics:
+    - lineage-dairy
+    - lineage-protein
+    - lineage-sugars
+    - lineage-sweeteners
+    - lineage-cholesterol
+    - lineage-alcohol
+    - lineage-whole-grains
+    - lineage-sodium
+    - lineage-processed-foods
+    - lineage-veg-fruits

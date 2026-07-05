@@ -1,0 +1,13 @@
+experiment:
+  name: "baseline-recency"
+  description: "RAG using metadata publish dates to down-rank or filter out older chunks based on recency alone."
+  ingestion:
+    version_aware: true
+    conflict_detection: false
+    deprecation_policy: "none"
+  retrieval:
+    filter_deprecated: false
+    boost_recency: true
+    recency_boost_factor: 1.5
+  evaluation:
+    run_queries: true

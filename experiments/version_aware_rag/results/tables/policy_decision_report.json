@@ -1,0 +1,87 @@
+{
+  "total_pairs": 10,
+  "correct_policies": 10,
+  "accuracy": 1,
+  "details": [
+    {
+      "sample_id": "pair-001",
+      "topic": "Dairy Fat Recommendation",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-002",
+      "topic": "Protein Intake Goals",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-003",
+      "topic": "Added Sugars Limit",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-004",
+      "topic": "Non-Nutritive Sweeteners",
+      "relation_label": "conflicting",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-005",
+      "topic": "Dietary Cholesterol Limit",
+      "relation_label": "complementary",
+      "gold_policy_label": "retain",
+      "predicted_policy_label": "retain",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-006",
+      "topic": "Alcohol Consumption Limit",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-007",
+      "topic": "Whole Grains Recommendation",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-008",
+      "topic": "Sodium Intake Limit",
+      "relation_label": "conditional_difference",
+      "gold_policy_label": "retain",
+      "predicted_policy_label": "retain",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-009",
+      "topic": "Processed Foods Intake",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    },
+    {
+      "sample_id": "pair-010",
+      "topic": "Vegetables and Fruits Consumption",
+      "relation_label": "superseded",
+      "gold_policy_label": "deprecate",
+      "predicted_policy_label": "deprecate",
+      "is_correct": true
+    }
+  ]
+}
