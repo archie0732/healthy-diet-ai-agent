@@ -27,7 +27,7 @@ graph TD
 
 ### 1.1 PDF 轉譯與格式清洗
 我們使用 Python 腳本對 PDF 進行文字與表格的結構化提取，並進行以下清洗：
-- **移除雜訊**：去除運行頁首（Running Headers）、物理頁碼與目錄（TOC）點點導線，防止這些與主題無關 Graves 的文字干擾向量檢索。
+- **移除雜訊**：去除運行頁首（Running Headers）、物理頁碼與目錄（TOC）點點導線，防止這些與主題無關的文字干擾向量檢索。
 - **表格文字化**：將 PDF 中的數據表格轉換為標準 Markdown 表格，並自動生成**逐行自然語言描述（Prose Description）**，大幅提升數值型健康數據的語意檢索能力。
 - **Cholesterol 數據補齊**：針對原轉譯檔案中部分缺失的膽固醇（Cholesterol）官方段落，我們手動追溯官方原文並補回對應頁面中，確保評估資料的可驗證性。
 
@@ -54,13 +54,13 @@ graph LR
 ### 2.1 關係檢測分類規格 (Conflict Detection Taxonomy)
 當新版本的 Chunk 進入系統時，系統會自動在資料庫中檢索同主題（相同 `lineage_id`）的舊 Chunk，並使用 LLM 判斷兩者之間的**語意衝突關係**，分為五類：
 1. **duplicate (重複)**：內容完全相同。
-2. **superseded (取代)**：新指南明示更新、修正或替換了舊指南 of 觀點。
+2. **superseded (取代)**：新指南明示更新、修正或替換了舊指南觀點。
 3. **conflicting (衝突)**：兩者在相同條件下給出完全矛盾的建議（如甜味劑從中性轉為限制）。
 4. **conditional_difference (條件差異)**：兩者不矛盾，但新版針對特定族群（如高運動量者、孕婦）做出了條件限制。
 5. **complementary (互補)**：新版在舊版基礎上增加了補充說明。
 
 ### 2.2 知識生命周期管理政策 (Policy Engine)
-根據偵測出的關係，決策引擎會為舊 Chunk 指派生命周期標籤（Policy Label）：
+根據偵測出的關係，決策引擎會為舊 Chunk指派生命周期標籤（Policy Label）：
 - **deprecate (廢棄)**：標記舊 Chunk 已失效。系統會將其保留在歷史歸檔中以供追溯，但**不再將其加入下游 active 檢索索引**。應用於 `superseded` 與 `conflicting`。
 - **evict (驅逐)**：直接自資料庫中移除。
 - **retain (保留)**：新舊並存。特別適用於 `conditional_difference` 與 `complementary`，以防系統遺漏特定族群的適用指引。
@@ -97,20 +97,19 @@ graph LR
 
 ### 4.1 Stale Retrieval Rate (SRR, 過時知識取回率)
 * **定義**：在系統檢索出的 Top-3 個 Chunks 中，包含「已被廢棄/過時的舊知識（即在 `stale_chunk_ids` 中）」的比例。
-* **計算公式**：
-  $$\text{SRR} = \frac{\sum_{q=1}^{Q} \mathbb{I}(\text{Top-3 Retrieved Chunks} \cap \text{Stale Chunks}_q \neq \emptyset)}{Q}$$
 * **量化目標**：SRR 越低越好，最好為 **0%**。
 
 ### 4.2 Current Hit Rate (CHR, 最新知識命中率)
 * **定義**：系統取回的 Top-3 個 Chunks 中，包含「當前有效最新知識（即在 `acceptable_chunk_ids` 中）」的比例。
-* **計算公式**：
-  $$\text{CHR} = \frac{\sum_{q=1}^{Q} \mathbb{I}(\text{Top-3 Retrieved Chunks} \cap \text{Acceptable Chunks}_q \neq \emptyset)}{Q}$$
 * **量化目標**：CHR 越高越好，代表系統沒有漏掉正確知識。
 
-### 4.3 Unsafe Retrieval Rate (URR, 非安全知識取回率)
-* **定義**：系統檢索出的 Top-3 個 Chunks 中，含有未被判定為安全引用的 Chunks 的比例。若取回結果中包含非該主題金標認可的安全 Chunk，則該題計為非安全檢索。
+### 4.3 Top-1 Citation Unsafe Rate (首位非安全引用率)
+* **定義**：系統檢索出的最相關 Chunk（Top-1）不在該主題金標認可的安全 Chunk 清單中的比例。
 
-### 4.4 模組準確度 (Classification & Policy Accuracy)
+### 4.4 Avg Unsafe Chunks@3 (平均非安全分塊數)
+* **定義**：在系統檢索出的 Top-3 個 Chunks 中，平均包含多少個不在該主題金標認可安全清單中的 Chunk。
+
+### 4.5 模組準確度 (Classification & Policy Accuracy)
 * **Conflict Detector Accuracy** (關係分類準確度)：
   $$\text{Acc}_{\text{detect}} = \frac{\text{分類正確的主題對數}}{\text{總評估主題對數 (10)}} \times 100\%$$
 * **Policy Engine Accuracy** (生命周期決策準確度)：
@@ -124,25 +123,23 @@ graph LR
 
 | 評估指標 | Baseline A (Append-Only) | Baseline B (Recency-Only) | Proposed (我們的系統) |
 | :--- | :---: | :---: | :---: |
-| **Stale Retrieval Rate (過時取回率)** | **20%** | **0%** | **0%** |
-| **Current Hit Rate (最新命中率)** | **50%** | **60%** | **50%** |
-| **Unsafe Retrieval Rate (非安全取回率)** | **100%** | **100%** | **100%** |
-| **分類器 / 決策引擎準確度** | N/A | N/A | **100% / 100%** |
+| **Stale Retrieval Rate** (過時知識取回率) | 80% | 0% | 10% |
+| **Current Hit Rate** (最新知識命中率) | 80% | 100% | 100% |
+| **Top-1 Citation Unsafe Rate** | 20% | 0% | 0% |
+| **Avg Unsafe Chunks@3** | 1.6 | 0.4 | 0.4 |
 
-### 📊 結果深度解讀
-1. **過時檢索風險顯著**：傳統 RAG (Baseline A) 有 **20%** 的提問（如糖限制、酒精、甜味劑）會取回已廢棄的舊建議。
-2. **Proposed 與 Baseline B 均達到 0% 過時率**：這證明時間加權（Recency）與廢棄過濾（Proposed）均能成功打壓舊版 Chunks。
-3. **最新命中率的真實差距**：在不使用 Lineage Oracle 進行檢索的分數加分下，純 Lexical 檢索的命中率介於 50% 至 60%。Baseline B (Recency-Only) 因為對 2026 年新版 Chunks 給予了強力的年份加權，在部分提問中將新版 Chunk 擠進了 Top-3（命中率 60%）；而 Proposed 在缺乏年份加權下，僅依賴關鍵字匹配，部分新版 Chunk 未能進入 Top-3。這說明了純 Lexical 檢索在缺乏語意理解時的局限性，也是本次 Credibility Repair 帶來的客觀誠實指標。
-4. **當前結論**：在移除了 Oracle 標籤輔助檢索以及模擬引用的指標後，本評估應被視為對檢索系統「可信度第一」的審計，而非最終優越性宣示。
+## Credibility Repair v2 Results
 
-### 報告能支持的結論：
-- Proposed 能在公平的檢索環境下，有效過濾並減少已被廢棄的 Chunk 被取回的風險。
-- Recency-Only 在命中率上仍與 Proposed 相當或略高。
-- 哪些主題存在語意 mismatch，未來需要更強的檢索器或更好的 Chunking。
+After removing oracle lineage routing and simulated citation metrics, the repaired evaluation shows that:
 
-### 報告不能支持的結論：
-- 無法支持任何關於下游 LLM 最終回答生成行為的強烈結論，因為目前未跑端到端生成評估。
-- 無法宣稱 Proposed 在檢索命中率上超越了 Recency-Only。
+- Append-Only still retrieves stale material on some queries.
+- Recency-Only currently outperforms Proposed on current-hit rate under the repaired scorer.
+- Proposed has not yet demonstrated superiority under the credibility-repaired setup.
+
+## What This Stage Establishes
+
+This stage establishes that the evaluation protocol is more trustworthy than the original version.
+It does not yet establish that Version-Aware RAG is better than Recency-Only RAG.
 
 ---
 
@@ -154,12 +151,12 @@ graph LR
 - **2020 指引**：建議飲用「無脂或低脂」乳製品，限制飽和脂肪。
 - **2025 指引**：修正為建議攝取「全脂（full-fat）」乳製品，因為其營養素更豐富。
 - **我們的系統運作**：檢測到新舊 Chunk 屬於 `superseded`（取代），決策引擎將 2020 年的低脂 Chunk 標記為 `deprecate`。檢索時，2020 年 Chunk 被過濾，系統僅取回 2025 年的「全脂」建議。
-- **對照組 (Baseline A)**：同時取回低脂與全脂兩版 Chunks，造成 AI 給出矛盾回答。
+- **對照組 (Baseline A)**：同時取回低脂與全脂雙版 Chunks，造成 AI 給出矛盾回答。
 
 ### 案例 2：甜味劑 (Sweeteners) —— 「衝突」關係
 - **2015 指引**：甜味劑替代糖在短期內可能減少卡路里攝取，唯長期管理效果未明。
 - **2025 指引**：明確指出不推薦任何甜味劑，將其排除在健康飲食之外。
-- **我們的系統運作**：檢測到新舊建議直接矛盾（`conflicting`），引擎廢棄 2015 年對甜味劑中性偏積極的 Chunk。檢索時僅取回 2025 年最新限制指南，防止 AI 給出不安全的減重代糖建議。
+- **我們的系統運作**：檢測到新舊建議直接矛盾（`conflicting`），引擎廢棄 2015 年對甜味劑中性偏積極的 Chunk. 檢索時僅取回 2025 年最新限制指南，防止 AI 給出不安全的減重代糖建議。
 
 ### 案例 3：鈉攝取限制 (Sodium) —— 「條件差異」關係
 - **2020 指引**：每日鈉攝取量應小於 2,300 毫克。
@@ -175,4 +172,4 @@ graph LR
 3. 檢索機制僅為詞彙重合度匹配（Lexical），可能低估或高估了真實嵌入向量（Embedding）檢索的性能。
 4. 本次修復週期未包含端到端的回答生成評估。
 
-Next phase: design a superiority-focused evaluation only after the credibility-repair protocol is stable and repeatable.
+Readiness decision: proceed to superiority experiments only after v2.1 metrics and retrieval quality checks pass.
