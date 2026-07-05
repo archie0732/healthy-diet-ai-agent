@@ -84,8 +84,26 @@ export function scoreChunkForQuery(
 ): number {
   const queryTokens = tokenize(query.question);
   const chunkTokens = tokenize(chunk.text);
-  const overlap = queryTokens.filter(t => chunkTokens.includes(t)).length;
-  let score = overlap;
+  const topicTokens = tokenize(chunk.topic);
+
+  const textOverlap = queryTokens.filter(t => chunkTokens.includes(t)).length;
+  const topicOverlap = queryTokens.filter(t => topicTokens.includes(t)).length * 2;
+
+  const queryNums = (query.question.match(/\d+(\.\d+)?/g) || []);
+  const chunkNums = (chunk.text.match(/\d+(\.\d+)?/g) || []);
+  const numericOverlap = queryNums.filter(n => chunkNums.includes(n)).length * 3;
+
+  let phraseBonus = 0;
+  const qLower = query.question.toLowerCase();
+  const topicLower = chunk.topic.toLowerCase();
+  const keywords = ['protein', 'sodium', 'cholesterol', 'sweetener', 'sugar', 'alcohol', 'grain', 'dairy', 'milk', 'fruit', 'vegetable'];
+  for (const kw of keywords) {
+    if (qLower.includes(kw) && topicLower.includes(kw)) {
+      phraseBonus += 2;
+    }
+  }
+
+  let score = textOverlap + topicOverlap + numericOverlap + phraseBonus;
 
   if (mode === 'recency-only') {
     score += (chunk.published_year - 2015) * 1.5;

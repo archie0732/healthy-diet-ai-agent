@@ -25,6 +25,41 @@ describe("scoreChunkForQuery", () => {
     expect(Number.isFinite(score)).toBe(true);
     expect(score).toBeGreaterThan(0);
   });
+
+  test("relevance scoring separates same-page multi-lineage collisions", () => {
+    const query = {
+      query_id: "q-protein",
+      question: "recommended daily protein intake per kilogram",
+      expected_answer_scope: "current_only",
+      notes: ""
+    };
+
+    const proteinChunk = {
+      chunk_id: "protein-chunk",
+      doc_id: "dga-2025",
+      version: "2025-2030",
+      published_year: 2025,
+      topic: "protein intake goals",
+      applicable_population: "general",
+      lineage_id: "lineage-protein",
+      text: "Page 3 text has protein serving goals: 1.2-1.6 g/kg, and dairy serving goals: 3 servings."
+    };
+
+    const dairyChunk = {
+      chunk_id: "dairy-chunk",
+      doc_id: "dga-2025",
+      version: "2025-2030",
+      published_year: 2025,
+      topic: "dairy fat recommendation",
+      applicable_population: "general",
+      lineage_id: "lineage-dairy",
+      text: "Page 3 text has protein serving goals: 1.2-1.6 g/kg, and dairy serving goals: 3 servings."
+    };
+
+    expect(scoreChunkForQuery(query, proteinChunk, "append-only")).toBeGreaterThan(
+      scoreChunkForQuery(query, dairyChunk, "append-only")
+    );
+  });
 });
 
 describe("summarizeQueryResult", () => {
