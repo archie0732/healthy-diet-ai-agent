@@ -14,3 +14,4 @@ uploads/
 docs/
 plans/
 raw_data/
+/experiments/version_aware_rag/data/raw/

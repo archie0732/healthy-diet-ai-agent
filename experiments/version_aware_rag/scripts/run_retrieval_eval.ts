@@ -189,14 +189,14 @@ function main() {
   const chunksPath = path.join(__dirname, '..', 'data', 'chunks', 'rag_chunks.json');
   const queriesPath = path.join(annotationsDir, 'evaluation_queries_v2.json');
   const judgmentsPath = path.join(annotationsDir, 'evaluation_query_judgments_v2.json');
-  const pairsPath = path.join(annotationsDir, 'final_evaluation_pairs.json');
+  const deprecatedKeysPath = path.join(annotationsDir, 'deprecated_keys.json');
   const resultsDir = path.join(__dirname, '..', 'results', 'tables');
 
   if (!fs.existsSync(resultsDir)) {
     fs.mkdirSync(resultsDir, { recursive: true });
   }
 
-  if (!fs.existsSync(chunksPath) || !fs.existsSync(queriesPath) || !fs.existsSync(judgmentsPath) || !fs.existsSync(pairsPath)) {
+  if (!fs.existsSync(chunksPath) || !fs.existsSync(queriesPath) || !fs.existsSync(judgmentsPath) || !fs.existsSync(deprecatedKeysPath)) {
     console.error('Required data files not found. Please ensure you have run previous pipeline scripts.');
     process.exit(1);
   }
@@ -204,20 +204,18 @@ function main() {
   const chunks: RAGChunk[] = JSON.parse(fs.readFileSync(chunksPath, 'utf-8'));
   const queries: EvaluationQueryV2[] = JSON.parse(fs.readFileSync(queriesPath, 'utf-8'));
   const judgments: EvaluationJudgmentV2[] = JSON.parse(fs.readFileSync(judgmentsPath, 'utf-8'));
-  const pairs: EvaluationPair[] = JSON.parse(fs.readFileSync(pairsPath, 'utf-8'));
+  const deprecatedKeysData = JSON.parse(fs.readFileSync(deprecatedKeysPath, 'utf-8'));
 
   const judgmentsMap = new Map<string, EvaluationJudgmentV2>();
   for (const j of judgments) {
     judgmentsMap.set(j.query_id, j);
   }
 
-  const deprecatedKeys = new Set<string>();
-  for (const pair of pairs) {
-    if (pair.policy_label === 'deprecate' || pair.policy_label === 'evict') {
-      deprecatedKeys.add(`${pair.lineage_id}-${pair.old_version}`);
-      if (pair.old_version === '2020-2025') {
-        deprecatedKeys.add(`${pair.lineage_id}-2015-2020`);
-      }
+  const deprecatedKeys = new Set<string>(deprecatedKeysData.deprecated_keys);
+  for (const key of Array.from(deprecatedKeys)) {
+    if (key.endsWith('-2020-2025')) {
+      const prefix = key.replace('-2020-2025', '');
+      deprecatedKeys.add(`${prefix}-2015-2020`);
     }
   }
 
