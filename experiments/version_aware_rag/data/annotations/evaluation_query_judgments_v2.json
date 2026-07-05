@@ -1,0 +1,126 @@
+[
+  {
+    "query_id": "q-001",
+    "acceptable_chunk_ids": ["dga-2025-page-3-lineage-dairy", "dga-2025-page-9-lineage-dairy", "dga-2025-page-1-lineage-dairy", "dga-2025-page-2-lineage-dairy"],
+    "preferred_chunk_ids": ["dga-2025-page-3-lineage-dairy"],
+    "stale_chunk_ids": [
+      "dga-2020-page-7-lineage-dairy",
+      "dga-2015-page-15-lineage-dairy",
+      "dga-2015-page-34-lineage-dairy",
+      "dga-2015-page-50-lineage-dairy",
+      "dga-2015-page-63-lineage-dairy"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-3-lineage-dairy", "dga-2025-page-9-lineage-dairy", "dga-2025-page-1-lineage-dairy", "dga-2025-page-2-lineage-dairy"]
+  },
+  {
+    "query_id": "q-002",
+    "acceptable_chunk_ids": ["dga-2025-page-3-lineage-protein", "dga-2025-page-2-lineage-protein", "dga-2025-page-4-lineage-protein"],
+    "preferred_chunk_ids": ["dga-2025-page-3-lineage-protein"],
+    "stale_chunk_ids": [
+      "dga-2020-page-7-lineage-protein",
+      "dga-2015-page-15-lineage-protein",
+      "dga-2015-page-6-lineage-protein"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-3-lineage-protein", "dga-2025-page-2-lineage-protein", "dga-2025-page-4-lineage-protein"]
+  },
+  {
+    "query_id": "q-003",
+    "acceptable_chunk_ids": ["dga-2025-page-5-lineage-sugars", "dga-2025-page-3-lineage-sugars", "dga-2025-page-4-lineage-sugars"],
+    "preferred_chunk_ids": ["dga-2025-page-5-lineage-sugars"],
+    "stale_chunk_ids": [
+      "dga-2020-page-8-lineage-sugars"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-5-lineage-sugars", "dga-2025-page-3-lineage-sugars", "dga-2025-page-4-lineage-sugars"]
+  },
+  {
+    "query_id": "q-004",
+    "acceptable_chunk_ids": ["dga-2025-page-5-lineage-sweeteners"],
+    "preferred_chunk_ids": ["dga-2025-page-5-lineage-sweeteners"],
+    "stale_chunk_ids": [
+      "dga-2015-page-50-lineage-sweeteners",
+      "dga-2015-page-80-lineage-sweeteners"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-5-lineage-sweeteners"]
+  },
+  {
+    "query_id": "q-005",
+    "acceptable_chunk_ids": [
+      "dga-2025-page-4-lineage-cholesterol",
+      "dga-2020-page-8-lineage-cholesterol",
+      "dga-2020-page-10-lineage-cholesterol",
+      "dga-2015-page-53-lineage-cholesterol",
+      "dga-2015-page-47-lineage-cholesterol"
+    ],
+    "preferred_chunk_ids": ["dga-2025-page-4-lineage-cholesterol"],
+    "stale_chunk_ids": [],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": [
+      "dga-2025-page-4-lineage-cholesterol",
+      "dga-2020-page-8-lineage-cholesterol",
+      "dga-2020-page-10-lineage-cholesterol",
+      "dga-2015-page-53-lineage-cholesterol",
+      "dga-2015-page-47-lineage-cholesterol"
+    ]
+  },
+  {
+    "query_id": "q-006",
+    "acceptable_chunk_ids": ["dga-2025-page-6-lineage-alcohol", "dga-2025-page-5-lineage-alcohol", "dga-2025-page-8-lineage-alcohol"],
+    "preferred_chunk_ids": ["dga-2025-page-6-lineage-alcohol"],
+    "stale_chunk_ids": [
+      "dga-2020-page-8-lineage-alcohol",
+      "dga-2015-page-15-lineage-alcohol",
+      "dga-2015-page-31-lineage-alcohol"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-6-lineage-alcohol", "dga-2025-page-5-lineage-alcohol", "dga-2025-page-8-lineage-alcohol"]
+  },
+  {
+    "query_id": "q-007",
+    "acceptable_chunk_ids": ["dga-2025-page-4-lineage-whole-grains", "dga-2025-page-8-lineage-whole-grains", "dga-2025-page-9-lineage-whole-grains"],
+    "preferred_chunk_ids": ["dga-2025-page-4-lineage-whole-grains"],
+    "stale_chunk_ids": [
+      "dga-2020-page-7-lineage-whole-grains",
+      "dga-2015-page-41-lineage-whole-grains"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-4-lineage-whole-grains", "dga-2025-page-8-lineage-whole-grains", "dga-2025-page-9-lineage-whole-grains"]
+  },
+  {
+    "query_id": "q-008",
+    "acceptable_chunk_ids": ["dga-2025-page-6-lineage-sodium", "dga-2025-page-2-lineage-sodium", "dga-2025-page-5-lineage-sodium"],
+    "preferred_chunk_ids": ["dga-2025-page-6-lineage-sodium"],
+    "stale_chunk_ids": [
+      "dga-2020-page-8-lineage-sodium",
+      "dga-2015-page-53-lineage-sodium",
+      "dga-2015-page-85-lineage-sodium"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-6-lineage-sodium", "dga-2025-page-2-lineage-sodium", "dga-2025-page-5-lineage-sodium"]
+  },
+  {
+    "query_id": "q-009",
+    "acceptable_chunk_ids": ["dga-2025-page-5-lineage-processed-foods", "dga-2025-page-2-lineage-processed-foods", "dga-2025-page-3-lineage-processed-foods"],
+    "preferred_chunk_ids": ["dga-2025-page-5-lineage-processed-foods"],
+    "stale_chunk_ids": [
+      "dga-2020-page-4-lineage-processed-foods"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-5-lineage-processed-foods", "dga-2025-page-2-lineage-processed-foods", "dga-2025-page-3-lineage-processed-foods"]
+  },
+  {
+    "query_id": "q-010",
+    "acceptable_chunk_ids": ["dga-2025-page-4-lineage-veg-fruits", "dga-2025-page-1-lineage-veg-fruits", "dga-2025-page-2-lineage-veg-fruits"],
+    "preferred_chunk_ids": ["dga-2025-page-4-lineage-veg-fruits"],
+    "stale_chunk_ids": [
+      "dga-2020-page-7-lineage-veg-fruits",
+      "dga-2015-page-15-lineage-veg-fruits",
+      "dga-2015-page-16-lineage-veg-fruits"
+    ],
+    "forbidden_chunk_ids": [],
+    "citation_safe_chunk_ids": ["dga-2025-page-4-lineage-veg-fruits", "dga-2025-page-1-lineage-veg-fruits", "dga-2025-page-2-lineage-veg-fruits"]
+  }
+]

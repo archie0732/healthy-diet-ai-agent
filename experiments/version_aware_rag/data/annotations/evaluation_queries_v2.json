@@ -1,0 +1,62 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "expected_answer_scope": "current_only",
+    "notes": "The 2025-2030 dairy guidance supersedes older low-fat framing."
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "expected_answer_scope": "current_only",
+    "notes": "Specific g/kg target introduced in 2025-2030 supersedes general 2020 categories."
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "expected_answer_scope": "current_only",
+    "notes": "The 10g per-meal limit in 2025-2030 supersedes the 10% daily limit from 2020."
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "expected_answer_scope": "current_only",
+    "notes": "The active avoidance recommended in 2025-2030 conflicts with the 2015 neutral/short-term stance."
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "expected_answer_scope": "current_plus_compatible_history",
+    "notes": "Both 2020 and 2025-2030 guidelines agree on no quantitative limit, with 2025 stressing whole foods."
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "expected_answer_scope": "current_only",
+    "notes": "The 2025-2030 shift to a general 'consume less' message supersedes the drink-count moderation limits from 2020."
+  },
+  {
+    "query_id": "q-007",
+    "question": "How many daily servings of fiber-rich whole grains are recommended?",
+    "expected_answer_scope": "current_only",
+    "notes": "Serving goals in 2025-2030 supersede general proportional guidance from 2020."
+  },
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "expected_answer_scope": "conditional_merge",
+    "notes": "2025-2030 adds an exception for highly active people, creating a conditional difference from the general population rule."
+  },
+  {
+    "query_id": "q-009",
+    "question": "How should highly processed packaged foods be treated in a healthy diet?",
+    "expected_answer_scope": "current_only",
+    "notes": "Avoidance of highly processed foods in 2025-2030 supersedes the limit recommendation from 2020."
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "expected_answer_scope": "current_only",
+    "notes": "Exact serving goals in 2025-2030 supersede general food group description from 2020."
+  }
+]
