@@ -29,6 +29,22 @@ This repository now supports two deployment modes:
 - AI integration: OpenAI-compatible API routing plus optional Google Gemini route
 - Deployment: `Docker Compose`
 
+## Core Features
+
+- Nutrition chat assistant for dietary guidance, meal suggestions, and question answering
+- Food image analysis workflow for meal understanding and nutrition-oriented interaction
+- RAG document search and document management for curated nutrition knowledge
+- Knowledge graph extraction and search for structured health and diet relationships
+- MOHW data sync pipeline for importing public clarification and reference content
+- Flexible standalone or integration deployment with `SQLite`, `Supabase`, HTTP API, and CLI
+
+## Planned Features
+
+- More personalized diet coaching based on user profile, preferences, and history
+- Stronger multimodal meal analysis, including richer food context and better response grounding
+- Expanded admin and ingestion tooling for knowledge curation, review, and operations
+- More advanced multi-step agent workflows for retrieval, reasoning, and task automation
+
 ## Project Background
 
 This project was originally built to work with:

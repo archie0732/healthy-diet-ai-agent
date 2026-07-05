@@ -26,6 +26,22 @@ Healthy Diet AI Agent は、Bun + TypeScript で構築された栄養・食事�
 - AI integration: OpenAI-compatible API routing with optional Google Gemini routing
 - Deployment: `Docker Compose`
 
+## Core Features
+
+- Nutrition chat assistant for dietary guidance, meal planning, and nutrition-focused Q&A
+- Food image analysis workflow for meal understanding and nutrition-oriented interaction
+- RAG document search and document management for curated nutrition knowledge
+- Knowledge graph extraction and search for structured health and diet relationships
+- MOHW data sync pipeline for importing public clarification and reference content
+- Flexible deployment with `SQLite`, `Supabase`, HTTP API, and CLI support
+
+## Planned Features
+
+- More personalized diet coaching based on user profile, preferences, and history
+- Stronger multimodal meal analysis with richer food context and better grounded responses
+- Expanded admin and ingestion tooling for knowledge curation, review, and operations
+- More advanced multi-step agent workflows for retrieval, reasoning, and task automation
+
 ## プロジェクト背景
 
 このプロジェクトは、もともと次の 2 つのプロジェクトと組み合わせて使うことを想定して作られました。
