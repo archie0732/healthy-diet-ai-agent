@@ -9,98 +9,124 @@
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ed?style=flat-square&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-Healthy Diet AI Agent is a Bun + TypeScript backend for nutrition chat, food-image analysis, RAG document ingestion, and knowledge-grounded diet guidance.
+English | [日本語](README_jp.md) | [繁體中文](README_zh.md)
+
+Healthy Diet AI Agent is a Bun + TypeScript backend for nutrition and healthy diet support. It features chat, food image analysis, RAG document knowledge retrieval, knowledge graph, and MOHW (Ministry of Health and Welfare) data synchronization.
 
 This repository now supports two deployment modes:
 
-- Standalone mode: runs independently with SQLite, Docker, HTTP API, and terminal CLI
-- Integration mode: connects to Supabase and can stay compatible with the existing `health-diet-api` ecosystem
-
-- [日本語の技術文書](/README_jp.md)
-- [中文文檔](/README_zh.md)
+- Standalone mode: uses SQLite, runs independently via Docker, HTTP API, or terminal CLI
+- Integration mode: uses Supabase, maintaining the ability to integrate with the existing `health-diet-api` ecosystem
 
 ## Tech Stack
 
 - Runtime: `Bun`
 - Language: `TypeScript`
-- HTTP server: `Express`
-- Agent framework: `LangChain`, `LangGraph`, `DeepAgents`
+- HTTP Server: `Express`
+- Agent Framework: `LangChain`, `LangGraph`, `DeepAgents`
 - Storage: `SQLite` or `Supabase`
-- AI integration: OpenAI-compatible API routing plus optional Google Gemini route
+- AI Integration: OpenAI-compatible API routing, with optional Google Gemini routing
 - Deployment: `Docker Compose`
 
 ## Core Features
 
-- Nutrition chat assistant for dietary guidance, meal suggestions, and question answering
-- Food image analysis workflow for meal understanding and nutrition-oriented interaction
-- RAG document search and document management for curated nutrition knowledge
-- Knowledge graph extraction and search for structured health and diet relationships
+- Nutrition chat assistant for dietary advice, meal planning, and nutrition Q&A
+- Food image analysis workflow supporting meal understanding and nutrition-guided interactions
+- RAG document search and document management to organize and query nutrition knowledge documents
+- Knowledge graph extraction and search to establish structured health and diet knowledge relations
 - MOHW data sync pipeline for importing public clarification and reference content
-- Flexible standalone or integration deployment with `SQLite`, `Supabase`, HTTP API, and CLI
+- Flexible deployment modes supporting SQLite, Supabase, HTTP API, and CLI
 
 ## Planned Features
 
-- More personalized diet coaching based on user profile, preferences, and history
-- Stronger multimodal meal analysis, including richer food context and better response grounding
+- Personalized dietary suggestions based on user profiles, preferences, and historical records
+- Enhanced multimodal meal analysis for richer food context understanding and grounded responses
 - Expanded admin and ingestion tooling for knowledge curation, review, and operations
-- More advanced multi-step agent workflows for retrieval, reasoning, and task automation
+- Advanced multi-step agent workflows to improve retrieval, reasoning, and task automation
 
 ## Project Background
 
-This project was originally built to work with:
+This project was originally built to complement the following two projects:
 
 - [`PU-Hub/healthy-diet`](https://github.com/PU-Hub/healthy-diet) as the API-side project
-- [`archie0732/healthy-diet-web`](https://github.com/archie0732/healthy-diet-web) as the web frontend
+- [`archie0732/healthy-diet-web`](https://github.com/archie0732/healthy-diet-web) as the frontend Web project
 
-As more people started watching and using this repository directly, the project direction changed. Instead of keeping it only as an internal backend tied to the original stack, this repository is now being shaped as an independent deployable agent service that can still integrate with the original projects when needed.
+As this repository started receiving more attention and views, the project's direction was adjusted. While keeping the ability to integrate with the original stack, we are gradually refactoring this repository into a standalone, independently deployable AI agent service.
 
 ## Highlights
 
-- Dual storage backend: `sqlite` or `supabase`
-- HTTP API for chat, RAG search, document management, knowledge ingestion, and MOHW sync
-- Terminal CLI for direct local usage
-- Docker-first standalone deployment
-- Local knowledge base plus uploaded knowledge documents
-- Optional Supabase-backed persistence for chat history, user profiles, and document metadata
+- Switchable storage backend: `sqlite` or `supabase`
+- Directly deployable independently, without relying on `health-diet-api`
+- Provides both HTTP API and terminal CLI
+- Docker default is standalone SQLite mode
+- Supports local knowledge base and uploaded document ingestion
+- Retains Supabase integration, suitable for reconnecting to the original project
 
 ## Project Structure
 
-- Server entry: `src/index.ts`
-- CLI entry: `src/cli.ts`
-- Chat handlers: `src/serverHandlers.ts`
-- Agent runtime: `src/server/agentRuntime.ts`
-- Storage facade: `src/storage/runtime.ts`
-- SQLite backend: `src/storage/sqlite/adapter.ts`
-- Supabase backend: `src/storage/supabase/adapter.ts`
-- RAG document routes: `src/server/ragDocuments.ts`
-- Knowledge ingestion routes: `src/server/knowledgeIngestion.ts`
-- Knowledge graph routes: `src/server/knowledgeGraph.ts`
-- MOHW sync logic: `src/server/mohwNews.ts`
+```
+.
+├── .agents/                    # Custom agent behavior rules / agent configuration
+├── agent_skills/               # Customized tool/skill modules for the agent
+├── data/                       # Local database files (SQLite DB stored here in Standalone mode)
+├── docs/                       # DB schemas and supplementary documents
+│   ├── sqlite/                 # SQLite database schema and sample data
+│   └── supabase/               # Supabase database configuration and scripts
+├── knowledge_base/             # Ingested documents and RAG data source directories
+│   ├── ingested_markdown/      # Parsed markdown documents used for RAG
+│   ├── mohw_clarifications/    # Sync target for MOHW (Ministry of Health and Welfare) data
+│   ├── uploads/                # Temporary directory for uploaded source files
+│   └── NUTRITION_RULES.md      # Ground-truth guidelines for dietary analysis
+├── raw_data/                   # Raw data files or scripts
+├── scripts/                    # Utility scripts (e.g. data preprocessing, backup)
+├── src/                        # Main source code directory
+│   ├── config/                 # App configurations (logger, env validators)
+│   ├── server/                 # Business logic handlers and Agent implementation
+│   │   ├── agentRuntime.ts     # Core LangChain/LangGraph agent runtime setup
+│   │   ├── httpRuntime.ts      # HTTP server runtime bootstrap
+│   │   ├── knowledgeGraph.ts   # Knowledge Graph extraction and search engine
+│   │   ├── knowledgeIngestion.ts # Handles files uploading, parsing and embedding ingestion
+│   │   ├── mohwNews.ts         # MOHW data synchronization task
+│   │   └── ragDocuments.ts     # Document database crud and indexer routes
+│   ├── storage/                # Database abstraction layer (SQLite and Supabase adapters)
+│   │   ├── sqlite/             # SQLite connection and adapter logic
+│   │   └── supabase/           # Supabase client and database adapter logic
+│   ├── cli.ts                  # Entry point for the Command Line Interface
+│   ├── index.ts                # Entry point for the HTTP Express Server
+│   └── serverHandlers.ts       # Router controller handlers for server endpoints
+├── technical_docs/             # Architectural, design, and changelog documents
+├── agent_config.json           # Declarative behavior controls and default parameters for the agent
+├── compose.yml                 # Docker Compose configuration file
+└── package.json                # Project dependencies and runner script configurations
+```
 
 ## Deployment Modes
 
-### 1. Standalone mode with SQLite
+### 1. Standalone SQLite Mode
 
-Use this when you want to run the agent by itself on your own machine or inside Docker.
-
-Characteristics:
-
-- no Supabase credentials required
-- automatic SQLite schema bootstrap on startup
-- local DB file path controlled by `SQLITE_DB_PATH`
-- suitable for single-host deployment, local demos, and terminal usage
-
-### 2. Integration mode with Supabase
-
-Use this when you want to connect the agent to an existing Supabase-backed stack or keep compatibility with the original project flow around `health-diet-api`.
+Suitable for:
+- Self-hosting locally
+- Running directly with Docker
+- Using terminal prompts
+- Avoiding setting up Supabase upfront
 
 Characteristics:
+- `SUPABASE_URL` and `SUPABASE_SERVICE_KEY` are not required
+- SQLite schema is automatically bootstrapped on startup
+- Database path is configured via `SQLITE_DB_PATH`
 
-- keeps current API routes
-- uses Supabase for chat history, user profile, knowledge documents, and ingestion jobs
-- useful when this agent is one service inside a larger application
+### 2. Supabase Integration Mode
 
-## Quick Start
+Suitable for:
+- Having an existing Supabase schema
+- Keeping the integration path with the original system
+- Using this agent as a service inside the existing system
+
+Characteristics:
+- Preserves existing API routes
+- Chat history, user profiles, and document metadata are stored in Supabase
+
+## Installation
 
 ### Prerequisites
 
@@ -158,12 +184,12 @@ Background sync variables:
 Config precedence:
 
 - `agent_config.json` provides the repository default behavior
-- environment variables override those defaults for a specific deployment
+- Environment variables override those defaults for a specific deployment
 - `MOHW_NEWS_SYNC_ENABLED` overrides `agent_config.json` `features.mohw_enabled` when explicitly set
 
 ## Standalone Local Usage
 
-Recommended `.env` values:
+Recommended `.env` configuration:
 
 ```env
 PORT=8001
@@ -180,73 +206,69 @@ Start the HTTP server:
 bun run start
 ```
 
-The server listens on:
+Default URLs:
 
 - `http://localhost:8001`
-- chat endpoint: `POST /api/chat`
-- health check: `GET /ping`
+- Chat endpoint: `POST /api/chat`
+- Health check: `GET /ping`
 
-### Terminal CLI
+## Terminal CLI Usage
 
-Run a direct prompt in the terminal:
+Send a prompt directly in the terminal:
 
 ```bash
 bun run cli -- --message "Analyze my lunch"
 ```
 
-Optional CLI arguments:
+You can also specify user, thread, and model source:
 
 ```bash
-bun run cli -- --message "Give me a low sodium dinner idea" --user-id demo-user --thread-id demo-thread --model-source auto
+bun run cli -- --message "Give me a low sugar dinner idea" --user-id demo-user --thread-id demo-thread --model-source auto
 ```
 
-### Optional manual SQLite initialization
+## Optional: Manual SQLite Initialization
 
-The app auto-bootstraps the SQLite schema on startup, so manual setup is usually not required.
+In general, manual schema setup is not required because the app automatically bootstraps the SQLite schema upon startup.
 
-If you want to inspect or pre-seed a local database yourself, use:
+If you want to manually create the database or pre-seed local testing data, you can use:
 
-- schema: `docs/sqlite/schema.sql`
-- sample seed: `docs/sqlite/seed.sample.sql`
+- Schema: `docs/sqlite/schema.sql`
+- Sample Seed: `docs/sqlite/seed.sample.sql`
 
-Example with `sqlite3`:
+If you have `sqlite3` installed in your environment:
 
 ```bash
 sqlite3 ./data/healthy-diet-agent.db < docs/sqlite/schema.sql
 sqlite3 ./data/healthy-diet-agent.db < docs/sqlite/seed.sample.sql
 ```
 
-The seed file is only an example for local development. You can edit the sample user, room, and chat rows before importing it.
+`seed.sample.sql` is only a local development example. You can modify the user, chatroom, and dialogue data inside it before importing.
 
 ## Docker Deployment
 
-The default Docker setup is designed for standalone SQLite mode.
-
-Build and run:
+The default Docker setup runs in standalone SQLite mode.
 
 ```bash
 docker compose up --build
 ```
 
-Default container behavior:
-
+Default behavior:
 - `STORAGE_BACKEND=sqlite`
 - `SQLITE_DB_PATH=/app/data/healthy-diet-agent.db`
-- database files persisted through `./data:/app/data`
+- Persists SQLite data via `./data:/app/data`
 
-Useful mounted directories:
-
+Common mounts:
 - `./data`
 - `./knowledge_base`
 - `./users_images`
 
-For automated production deployment with GitHub Actions, GHCR, and a self-hosted runner, see:
+For automated production deployment using GitHub Actions, GHCR, and a self-hosted runner, see:
 
-- `docs/deployment-self-hosted-ghcr.md`
+- [docs/deployment-self-hosted-ghcr.md](docs/deployment-self-hosted-ghcr.md)
 
 ## Integration with Supabase or Existing Projects
 
-Set:
+To connect to an existing system, set:
 
 ```env
 STORAGE_BACKEND=supabase
@@ -255,35 +277,35 @@ SUPABASE_SERVICE_KEY=your-service-role-key
 ```
 
 Notes:
+- Existing API routes are preserved
+- Actual storage writes are routed through the shared storage layer
+- Suitable for integration with the existing `health-diet-api` or other Supabase-based architectures
 
-- existing HTTP routes remain available
-- storage writes are routed through the shared storage layer
-- this mode is intended for existing stacks that already use Supabase tables for chat and knowledge metadata
+## Forking and Customizing for Other Advisors
 
-## Repurpose This Repo Into Another Advisor
+For common customization of agent roles and retrieval behaviors, you can do so without modifying the core runtime code.
 
-Fork authors can now customize the agent without editing core runtime code for the common role and retrieval cases.
-
-Start here:
+Recommended customization steps:
 
 1. Edit `agent_config.json`
 2. Replace `knowledge_base/AGENT.md`
 3. Replace or remove `knowledge_base/NUTRITION_RULES.md`
 4. Enable or disable `mohw_news` in `agent_config.json`
-5. Add your own uploaded or curated knowledge files
+5. Add your own custom knowledge files
 
-What `agent_config.json` controls:
+`agent_config.json` currently controls:
 
-- agent prompt file locations
-- response style defaults
-- RAG enabled sources
-- RAG search tuning
-- MOHW default enablement
+- Agent prompt file locations
+- Default response styles
+- Enabled RAG sources
+- RAG search parameters
+- Default enablement of MOHW sync features
 
-Practical note:
+Config precedence:
 
-- use `agent_config.json` for repo-level defaults
-- use `.env` only for deployment-specific overrides
+- `agent_config.json` provides the repository default behavior
+- Environment variables override those defaults for a specific deployment
+- `MOHW_NEWS_SYNC_ENABLED` overrides `agent_config.json` `features.mohw_enabled` when explicitly set
 
 ## API Overview
 
@@ -294,7 +316,7 @@ Practical note:
 - `POST /api/generate_title`
 - `GET /ping`
 
-### RAG and knowledge
+### RAG and Knowledge
 
 - `GET /api/rag/search`
 - `POST /api/rag/search`
@@ -308,13 +330,13 @@ Practical note:
 - `GET /api/rag/sources/:document_id/file`
 - `GET /api/rag/sources/:document_id/preview`
 
-### Knowledge ingestion
+### Knowledge Ingestion
 
 - `POST /api/admin/knowledge/upload`
 - `POST /api/admin/knowledge/ingest/:id`
 - `GET /api/admin/knowledge/jobs/:jobId`
 
-### Knowledge graph
+### Knowledge Graph
 
 - `POST /api/graph/extract-all`
 - `GET /api/graph/status`
@@ -325,7 +347,7 @@ Practical note:
 - `GET /api/graph/nodes/:node_id`
 - `GET /api/graph/relations/:relation_id/evidence`
 
-### MOHW sync
+### MOHW Sync
 
 - `POST /api/news/sync`
 - `GET /api/news`
@@ -335,11 +357,11 @@ Practical note:
 ## Local Data and Knowledge Paths
 
 - SQLite file: `data/healthy-diet-agent.db` or `SQLITE_DB_PATH`
-- Uploaded images: `users_images/`
+- User uploaded images: `users_images/`
 - Uploaded source files: `knowledge_base/uploads/`
 - Parsed markdown: `knowledge_base/ingested_markdown/`
 - Nutrition rules: `knowledge_base/NUTRITION_RULES.md`
-- MOHW knowledge: `knowledge_base/mohw_clarifications/`
+- MOHW data: `knowledge_base/mohw_clarifications/`
 
 ## Testing
 
@@ -349,7 +371,7 @@ Run focused tests:
 bun test src/server/httpRuntime.test.ts src/storage/runtime.test.ts src/server/serverHandlers.test.ts src/server/dbTools.test.ts src/server/ragDocuments.test.ts src/cli.test.ts
 ```
 
-Run the whole Bun test suite:
+Run all tests:
 
 ```bash
 bun test
@@ -357,22 +379,26 @@ bun test
 
 ## Notes
 
-- SQLite mode is the recommended default for self-hosting
-- Supabase mode remains supported for integration scenarios
-- standalone mode does not require `health-diet-api`
-- the app still expects a working model endpoint through `AI_API_URL` or the configured Google route
-- RAG document admin routes now require forwarded admin headers: `X-Admin-User-Id` and `X-Admin-Role` (`admin` or `nutritionist`)
-- A bare `Authorization` header is no longer treated as admin access for document management routes
-- When `/api/chat` fails after creating the initial history row, the placeholder reply is rewritten from `__PENDING__` to a `[FAILED] ...` marker
+- SQLite mode is the recommended default for self-hosting.
+- Supabase mode remains supported for integration scenarios.
+- Standalone mode does not require `health-diet-api`.
+- Regardless of the mode, the app still expects a working model endpoint through `AI_API_URL` or the configured Google route.
+
+## Security and Failure Notes
+
+- The RAG document management API now requires `X-Admin-User-Id` and `X-Admin-Role` (`admin` or `nutritionist`) headers.
+- A bare `Authorization` header is no longer considered sufficient for administrator privileges.
+- If `/api/chat` fails after creating the initial chat history row, the placeholder reply will be updated from `__PENDING__` to a `[FAILED] ...` marker.
 
 ## Related Docs
 
-- Chinese README: `README_zh.md`
-- Japanese README: `README_jp.md`
-- Technical docs: `technical_docs/`
-- Change log: `technical_docs/CHANGELOG.md`
-- RAG analysis (ZH): `technical_docs/RAG_AGENT_ANALYSIS_ZH.md`
+- Chinese README: [README_zh.md](README_zh.md)
+- Japanese README: [README_jp.md](README_jp.md)
+- Technical Docs Directory: [technical_docs/](technical_docs/)
+- Change Log: [technical_docs/CHANGELOG.md](technical_docs/CHANGELOG.md)
+- Daily Planning Log: [technical_docs/DAILY_PLANNING_LOG.md](technical_docs/DAILY_PLANNING_LOG.md)
+- RAG Analysis Document (ZH): [technical_docs/RAG_AGENT_ANALYSIS_ZH.md](technical_docs/RAG_AGENT_ANALYSIS_ZH.md)
 
 ## License
 
-This project is licensed under the terms of the `MIT` license. See `LICENSE`.
+This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.

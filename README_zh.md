@@ -9,6 +9,8 @@
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ed?style=flat-square&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
+[English](README.md) | [日本語](README_jp.md) | 繁體中文
+
 Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲食後端，支援聊天、食物圖片分析、RAG 文件知識檢索、知識圖譜與衛福部資料同步。
 
 目前這個 repo 已經支援兩種部署模式：
@@ -60,17 +62,43 @@ Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲�
 - 支援本地 knowledge base 與上傳文件 ingestion
 - 保留 Supabase 整合能力，適合接回原本專案
 
-## 主要路徑
+## 專案結構
 
-- Server 入口：`src/index.ts`
-- CLI 入口：`src/cli.ts`
-- Chat handler：`src/serverHandlers.ts`
-- Agent runtime：`src/server/agentRuntime.ts`
-- Storage facade：`src/storage/runtime.ts`
-- SQLite backend：`src/storage/sqlite/adapter.ts`
-- Supabase backend：`src/storage/supabase/adapter.ts`
-- 文件管理 API：`src/server/ragDocuments.ts`
-- 知識 ingestion API：`src/server/knowledgeIngestion.ts`
+```
+.
+├── .agents/                    # 代理自訂規則 / 代理設定檔
+├── agent_skills/               # 代理自訂工具/技能模組
+├── data/                       # 本地資料庫目錄 (Standalone 模式下 SQLite DB 存放於此)
+├── docs/                       # 資料庫 Schema 與補充說明文件
+│   ├── sqlite/                 # SQLite 資料庫 Schema 及範例測試資料
+│   └── supabase/               # Supabase 資料庫設定與腳本
+├── knowledge_base/             # 已匯入文件與 RAG 資料來源目錄
+│   ├── ingested_markdown/      # 已解析的 RAG 專用 Markdown 文件
+│   ├── mohw_clarifications/    # 衛福部 (MOHW) 同步資料存放目錄
+│   ├── uploads/                # 上傳原始檔案的暫存目錄
+│   └── NUTRITION_RULES.md      # 飲食分析的核心導引規則 (Ground-truth)
+├── raw_data/                   # 原始資料檔案或腳本
+├── scripts/                    # 工具腳本 (如資料預處理、備份等)
+├── src/                        # 主要原始碼目錄
+│   ├── config/                 # 應用程式設定 (Logger、環境變數驗證)
+│   ├── server/                 # 業務邏輯處理與 Agent 實作
+│   │   ├── agentRuntime.ts     # 核心 LangChain/LangGraph 代理執行期設定
+│   │   ├── httpRuntime.ts      # HTTP 伺服器執行期引導 (Bootstrap)
+│   │   ├── knowledgeGraph.ts   # 知識圖譜抽取與搜尋引擎
+│   │   ├── knowledgeIngestion.ts # 處理檔案上傳、解析與向量嵌入匯入
+│   │   ├── mohwNews.ts         # 衛福部資料同步任務
+│   │   └── ragDocuments.ts     # 文件資料庫 CRUD 與索引器路由
+│   ├── storage/                # 資料庫抽象層 (SQLite 與 Supabase 配接器)
+│   │   ├── sqlite/             # SQLite 連線與配接器邏輯
+│   │   └── supabase/           # Supabase 客戶端與配接器邏輯
+│   ├── cli.ts                  # 命令列介面 (CLI) 入口點
+│   ├── index.ts                # HTTP Express 伺服器入口點
+│   └── serverHandlers.ts       # 伺服器端點的路由控制器處理器
+├── technical_docs/             # 架構設計文件與變更紀錄 (Changelog)
+├── agent_config.json           # 代理的宣告式行為控制與預設參數
+├── compose.yml                 # Docker Compose 設定檔
+└── package.json                # 專案依賴與執行指令腳本設定
+```
 
 ## 部署模式
 
@@ -104,14 +132,29 @@ Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲�
 
 ## 安裝
 
+### 先決條件
+
+- Bun 1.2+
+- 與 Bun 相容之 Node 環境
+- 可選：Docker / Docker Compose
+- 可選：用於整合模式的 Supabase 專案
+- 與目前 Agent 設定相容的模型端點
+
+### 安裝步驟
+
 ```bash
 bun install
+```
+
+### 建立環境變數設定檔
+
+```bash
 cp .env.example .env
 ```
 
 ## 重要環境變數
 
-核心：
+核心執行期變數：
 
 - `PORT`
 - `AI_API_URL`
@@ -120,17 +163,33 @@ cp .env.example .env
 - `CLI_USER_ID`
 - `CLI_THREAD_ID`
 
-Supabase 整合模式：
+Supabase 整合模式變數：
 
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_KEY`
 
-Google 模型路由：
+Google 模型路由變數：
 
 - `GEMINI_AI_API`
 - `GEMINI_API_KEY`
 - `GOOGLE_CHAT_MODEL`
 - `GOOGLE_BASE_URL`
+
+專案級代理行為設定（位於專案根目錄）：
+
+- `agent_config.json`
+
+背景同步變數：
+
+- `MOHW_NEWS_SYNC_ENABLED`
+- `MOHW_NEWS_SYNC_INTERVAL_MINUTES`
+- `MOHW_NEWS_SYNC_RUN_ON_START`
+
+設定優先權優先順序：
+
+- `agent_config.json` 提供整個專案的預設行為
+- 環境變數（`.env`）會覆蓋特定部署的預設值
+- 當明確設定 `MOHW_NEWS_SYNC_ENABLED` 時，會覆蓋 `agent_config.json` 中的 `features.mohw_enabled`
 
 ## Standalone 本地使用
 
@@ -208,6 +267,10 @@ docker compose up --build
 - `./data`
 - `./knowledge_base`
 - `./users_images`
+
+關於使用 GitHub Actions、GHCR 和自我託管執行器（self-hosted runner）進行自動化生產環境部署，請參閱：
+
+- [docs/deployment-self-hosted-ghcr.md](docs/deployment-self-hosted-ghcr.md)
 
 ## 與原專案 / Supabase 整合
 
@@ -328,19 +391,21 @@ bun test
 - standalone mode 不需要 `health-diet-api`
 - 不論哪種模式，都仍需要可用的模型端點，例如 `AI_API_URL`
 
-## 相關文件
-
-- English README：`README.md`
-- Japanese README：`README_jp.md`
-- 技術文件資料夾：`technical_docs/`
-- 變更紀錄：`technical_docs/CHANGELOG.md`
-- RAG 分析文件：`technical_docs/RAG_AGENT_ANALYSIS_ZH.md`
-
-## License
-
-本專案採用 `MIT` license，詳見 `LICENSE`。
-## Security And Failure Notes
+## 安全與失敗處理說明
 
 - RAG 文件管理 API 現在必須帶 `X-Admin-User-Id` 與 `X-Admin-Role`（`admin` 或 `nutritionist`）
 - 只有 `Authorization` header 已不再視為管理員權限
 - 如果 `/api/chat` 在建立初始聊天紀錄後失敗，原本的 `__PENDING__` 會改寫成 `[FAILED] ...`
+
+## 相關文件
+
+- 英文 README：[README.md](README.md)
+- 日文 README：[README_jp.md](README_jp.md)
+- 技術文件資料夾：[technical_docs/](technical_docs/)
+- 變更紀錄：[technical_docs/CHANGELOG.md](technical_docs/CHANGELOG.md)
+- 每日計劃日誌: [technical_docs/DAILY_PLANNING_LOG.md](technical_docs/DAILY_PLANNING_LOG.md)
+- RAG 分析文件：[technical_docs/RAG_AGENT_ANALYSIS_ZH.md](technical_docs/RAG_AGENT_ANALYSIS_ZH.md)
+
+## License
+
+本專案採用 `MIT` license，詳見 `LICENSE`。

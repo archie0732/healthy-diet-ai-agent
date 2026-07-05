@@ -3,13 +3,14 @@ node_modules/
 bun.lock
 AGENT.md
 .tmp*
-knowledge_base/mohw_clarifications/
 
 AGENT.md
 SKILL.md
 
-Doc/
+knowledge_base/mohw_clarifications/
 knowledge_base/ingested_markdown/
 knowledge_base/graph/
 uploads/
-docs/*
+docs/
+plans/
+raw_data/
