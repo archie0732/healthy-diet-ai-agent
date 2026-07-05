@@ -1,11 +1,30 @@
 # Healthy Diet AI Agent
 
+![Bun](https://img.shields.io/badge/Bun-1.2%2B-f9f1e1?style=flat-square&logo=bun&logoColor=000000)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-blue?style=flat-square&logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/Express-5-222222?style=flat-square&logo=express&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-Agent-green?style=flat-square)
+![SQLite](https://img.shields.io/badge/SQLite-Standalone-0f80cc?style=flat-square&logo=sqlite&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Integration-3ecf8e?style=flat-square&logo=supabase&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ed?style=flat-square&logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+
 Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲食後端，支援聊天、食物圖片分析、RAG 文件知識檢索、知識圖譜與衛福部資料同步。
 
 目前這個 repo 已經支援兩種部署模式：
 
 - Standalone mode：使用 SQLite，能獨立透過 Docker、HTTP API 或 terminal CLI 使用
 - Integration mode：使用 Supabase，保留與既有 `health-diet-api` 生態整合的能力
+
+## 技術棧
+
+- Runtime：`Bun`
+- 語言：`TypeScript`
+- HTTP server：`Express`
+- Agent 框架：`LangChain`、`LangGraph`、`DeepAgents`
+- Storage：`SQLite` 或 `Supabase`
+- AI 串接：OpenAI 相容 API 路由，並可選用 Google Gemini 路由
+- 部署：`Docker Compose`
 
 ## 專案背景
 
@@ -298,6 +317,10 @@ bun test
 - English README：`README.md`
 - Japanese README：`README_jp.md`
 - 變更紀錄：`CHANGELOG.md`
+
+## License
+
+本專案採用 `MIT` license，詳見 `LICENSE`。
 ## Security And Failure Notes
 
 - RAG 文件管理 API 現在必須帶 `X-Admin-User-Id` 與 `X-Admin-Role`（`admin` 或 `nutritionist`）
