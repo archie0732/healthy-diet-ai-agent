@@ -22,7 +22,6 @@
 
 目前的 held-out test split 有 8 題。結果顯示：本研究的 proposed policy 在這個小型測試集上**尚未優於 Recency-Only baseline**；兩者 stale hit rate 同為 12.5%，但 Proposed 的 Recall@3 與 nDCG@3 較低。因此研究目前最有價值的主張不是「已經勝過 baseline」，而是系統性展示：**當 version policy 與 relation detector 尚不夠準確時，安全約束可能帶來 relevance/completeness 損失；這個 safety–relevance trade-off 必須被量化與誠實報告。**
 
-這個研究適合作為資訊工程推甄或與教授討論的作品，因為它不只完成 RAG 原型，也處理了實驗設計、資料版本、評估洩漏、統計檢定、負結果分析與人工評測設計。
 
 ---
 
@@ -303,14 +302,6 @@ Test split 已經打開並產生結果。後續只允許：
 6. **Error Analysis**：policy/retrieval failures、條件過濾過度、oracle/predicted equality 的含義。
 7. **Discussion and Limitations**：n=8 held-out、小樣本、relation detector 限制、領域泛化與臨床外推限制。
 8. **Conclusion**：將 version-aware RAG 定位為可審計的研究框架與 trade-off 分析，而非未被資料支持的 superiority claim。
-
----
-
-## 9. 對教授／潛在合作方的具體邀請
-
-可使用下列精簡說明作為聯絡信附件的摘要：
-
-> 我正在進行一項 Version-Aware RAG 研究，探討當健康指南跨版本更新時，RAG 如何避免引用過時或條件不適用的段落。系統已完成可重現的 corpus freeze、relation graph、policy-aware retrieval、no-oracle evaluation、held-out statistical analysis 與 blind-review pipeline。初步 held-out 結果未顯示 proposed policy 優於較強的 Recency-Only baseline，因此目前以 safety–relevance trade-off 與負結果分析為研究定位。若您願意，我希望請教研究設計、資訊檢索評估，或邀請您／研究生協助一份約 45–75 分鐘的匿名答案盲評，以提升最終論文的評估可信度。
 
 ---
 
