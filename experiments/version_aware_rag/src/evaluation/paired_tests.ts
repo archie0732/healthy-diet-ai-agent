@@ -13,6 +13,28 @@ function normalCDF(z: number): number {
   return z >= 0 ? 1 - p : p;
 }
 
+/**
+ * Validates that query IDs match exactly in the same order.
+ * Throws an Error if query sets or order mismatch.
+ */
+export function validateQueryAlignment(
+  queriesA: string[],
+  queriesB: string[]
+): void {
+  if (queriesA.length !== queriesB.length) {
+    throw new Error(
+      `Paired test query count mismatch: Run A has ${queriesA.length} queries, but Run B has ${queriesB.length} queries.`
+    );
+  }
+  for (let i = 0; i < queriesA.length; i++) {
+    if (queriesA[i] !== queriesB[i]) {
+      throw new Error(
+        `Paired test query order mismatch at index ${i}: Run A query ID "${queriesA[i]}" vs Run B query ID "${queriesB[i]}".`
+      );
+    }
+  }
+}
+
 export function computeWilcoxonSignedRank(
   dataA: number[],
   dataB: number[]
@@ -74,5 +96,104 @@ export function computeWilcoxonSignedRank(
     wStatistic,
     pValue: parseFloat(Math.min(1.0, pValue).toFixed(4)),
     isSignificant: pValue < 0.05
+  };
+}
+
+/**
+ * Computes McNemar test for paired binary rates (e.g., success=1, fail=0).
+ */
+export function computeMcNemarTest(
+  binaryA: number[],
+  binaryB: number[]
+): {
+  chiSquare: number;
+  pValue: number;
+  isSignificant: boolean;
+  b: number; // Proposed fail (0), Baseline win (1)
+  c: number; // Proposed win (1), Baseline fail (0)
+} {
+  let b = 0; // A=1, B=0
+  let c = 0; // A=0, B=1
+
+  for (let i = 0; i < binaryA.length; i++) {
+    const valA = binaryA[i] > 0 ? 1 : 0;
+    const valB = binaryB[i] > 0 ? 1 : 0;
+
+    if (valA === 1 && valB === 0) b++;
+    if (valA === 0 && valB === 1) c++;
+  }
+
+  if (b + c === 0) {
+    return { chiSquare: 0, pValue: 1.0, isSignificant: false, b, c };
+  }
+
+  // Continuity corrected Chi-Square statistic
+  const chiSquare = Math.pow(Math.abs(b - c) - 1, 2) / (b + c);
+  // Degrees of freedom = 1, p-value from chi-square distribution approx
+  const z = Math.sqrt(chiSquare);
+  const pValue = 2 * normalCDF(-z);
+
+  return {
+    chiSquare: parseFloat(chiSquare.toFixed(4)),
+    pValue: parseFloat(Math.min(1.0, pValue).toFixed(4)),
+    isSignificant: pValue < 0.05,
+    b,
+    c
+  };
+}
+
+/**
+ * Applies Holm-Bonferroni correction to multiple p-values.
+ */
+export function applyHolmCorrection(
+  pValues: { name: string; pValue: number }[],
+  alpha = 0.05
+): { name: string; pValue: number; adjustedPValue: number; isSignificant: boolean }[] {
+  const m = pValues.length;
+  const indexed = pValues.map((item, idx) => ({ ...item, originalIndex: idx }));
+  indexed.sort((a, b) => a.pValue - b.pValue);
+
+  const results = new Array(m);
+  let prevAdjusted = 0;
+
+  for (let i = 0; i < m; i++) {
+    const rank = i + 1;
+    const rawP = indexed[i].pValue;
+    const multiplier = m - rank + 1;
+    let adjustedP = Math.min(1.0, rawP * multiplier);
+    adjustedP = Math.max(adjustedP, prevAdjusted); // Monotonicity constraint
+    prevAdjusted = adjustedP;
+
+    results[indexed[i].originalIndex] = {
+      name: indexed[i].name,
+      pValue: parseFloat(rawP.toFixed(4)),
+      adjustedPValue: parseFloat(adjustedP.toFixed(4)),
+      isSignificant: adjustedP < alpha
+    };
+  }
+
+  return results;
+}
+
+/**
+ * Tests non-inferiority for stale safety rate (margin default 0.05).
+ * Null hypothesis: Proposed - Baseline >= margin (inferior)
+ * Alternative hypothesis: Proposed - Baseline < margin (non-inferior)
+ */
+export function testNonInferiority(
+  staleRateBaseline: number,
+  staleRateProposed: number,
+  margin = 0.05
+): {
+  difference: number;
+  margin: number;
+  passedNonInferiority: boolean;
+} {
+  const diff = staleRateProposed - staleRateBaseline;
+  const passed = diff <= margin;
+  return {
+    difference: parseFloat(diff.toFixed(4)),
+    margin,
+    passedNonInferiority: passed
   };
 }

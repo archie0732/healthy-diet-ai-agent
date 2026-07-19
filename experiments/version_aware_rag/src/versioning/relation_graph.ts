@@ -36,13 +36,18 @@ export class RelationGraph {
       const ann = annotationMap.get(pair.pair_id);
       if (!ann) continue;
 
-      // Extract populations/conditions based on relation details
-      const populations: string[] = [];
-      const conditions: string[] = [];
-      if (pair.lineage_id === 'lineage-sodium') {
-        populations.push('highly active');
-        conditions.push('active sweat loss');
+      const populations: string[] = [
+        ...(ann.applies_to_populations || pair.populations || pair.population_tags || [])
+      ];
+      const conditions: string[] = [
+        ...(ann.applies_under_conditions || pair.conditions || pair.condition_tags || [])
+      ];
+
+      if (ann.relation_type === 'conditional_difference') {
+        if (populations.length === 0) populations.push('highly active');
+        if (conditions.length === 0) conditions.push('active sweat loss');
       }
+
 
       const rel: VersionRelation = {
         relationId: pair.pair_id,

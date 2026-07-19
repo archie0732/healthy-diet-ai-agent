@@ -1,0 +1,3 @@
+# Private secret mapping & non-public paper artifacts
+results/v3/private/
+*.secret.json

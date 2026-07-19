@@ -1,0 +1,26 @@
+{
+  "System_A": {
+    "meanCorrectness": 0.375,
+    "meanCompleteness": 0.5,
+    "meanVersionCorrectness": 0.875,
+    "meanBoundaryPreservation": 0.375,
+    "unsupportedClaimRate": 1,
+    "meanCitationEntailment": 0.1666
+  },
+  "System_B": {
+    "meanCorrectness": 0.375,
+    "meanCompleteness": 0.5,
+    "meanVersionCorrectness": 0.875,
+    "meanBoundaryPreservation": 0.375,
+    "unsupportedClaimRate": 1,
+    "meanCitationEntailment": 0.1562
+  },
+  "System_C": {
+    "meanCorrectness": 0.75,
+    "meanCompleteness": 0.75,
+    "meanVersionCorrectness": 0.875,
+    "meanBoundaryPreservation": 0.75,
+    "unsupportedClaimRate": 0.875,
+    "meanCitationEntailment": 0.4167
+  }
+}

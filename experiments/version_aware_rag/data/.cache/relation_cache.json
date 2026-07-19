@@ -1,0 +1,14 @@
+{
+  "5f3be43c0501f4b49bb727f71f803bf93fe2e63abff79c1ddf6cc57c28dee0b5": {
+    "relationType": "conditional_difference",
+    "confidence": 0.85,
+    "rationale": "Guideline introduces conditional population terms not present in the other version.",
+    "modelInfo": {
+      "detector": "llm_zero-shot_fallback",
+      "model": "invalid-model-name",
+      "promptVersion": "v3.0.0",
+      "reason": "No API key configured"
+    },
+    "latencyMs": 0
+  }
+}

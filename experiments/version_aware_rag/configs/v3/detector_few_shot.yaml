@@ -1,0 +1,7 @@
+detector_type: "llm_few_shot"
+model: "gemini-1.5-flash"
+temperature: 0.1
+max_retries: 2
+use_cache: true
+prompt_version: "v3.0.0"
+examples_split: "development"

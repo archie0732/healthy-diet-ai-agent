@@ -1,0 +1,5 @@
+detector_type: "rule_baseline"
+model: "rule_baseline_v1"
+temperature: 0.0
+use_cache: false
+prompt_version: "v3.0.0"

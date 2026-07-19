@@ -1,13 +1,15 @@
 
+% LaTeX Source Tables for Version-Aware RAG Paper
 \begin{table}[htbp]
 \centering
-\caption{Downstream Retrieval performance comparison on Development Split}
+\caption{Section 1: Downstream Retrieval Performance Comparison (Automatic)}
 \label{tab:retrieval_comparison}
 \begin{tabular}{lcccccc}
 \hline
-\textbf{System Configuration} & \textbf{Recall} & \textbf{Precision} & \textbf{MRR} & \textbf{nDCG} & \textbf{Stale Hit} & \textbf{Unsafe Count} \\ \hline
-Append-Only RAG & 28.9\% & 22.2\% & 0.500 & 0.360 & 50.0\% & 2.33 \\
-Recency-Only RAG & 63.3\% & 61.1\% & 1.000 & 0.800 & 16.7\% & 1.17 \\
-Proposed Version-Aware & 31.1\% & 22.2\% & 0.556 & 0.380 & 0.0\% & 2.33 \\ \hline
+\textbf{System Configuration} & \textbf{Recall@3} & \textbf{Precision@3} & \textbf{MRR} & \textbf{nDCG@3} & \textbf{Stale Hit Rate} & \textbf{Unsafe Count} \\ \hline
+Append-Only RAG & 20.8\% & 16.7\% & 0.500 & 0.350 & 12.5\% & 0.00 \\
+Recency-Only RAG & 58.3\% & 41.7\% & 0.750 & 0.670 & 12.5\% & 0.00 \\
+Proposed Oracle Graph & 20.8\% & 16.7\% & 0.500 & 0.350 & 12.5\% & 0.00 \\
+Proposed Predicted Graph & 20.8\% & 16.7\% & 0.500 & 0.350 & 12.5\% & 0.00 \\ \hline
 \end{tabular}
 \end{table}

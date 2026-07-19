@@ -1,0 +1,28 @@
+experiment:
+  id: baseline_append_only
+  seed: 42
+  split: test
+corpus:
+  path: experiments/version_aware_rag/data/corpus_v3/chunks.jsonl
+  checksum: ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7
+retrieval:
+  mode: append_only
+  backend: bm25
+  top_k: 3
+  recency_weight: 0
+version_policy:
+  relation_source: none
+  deprecated_filter: false
+  compatibility_expansion: false
+  confidence_threshold: 0.7
+  retain_relation_boost: 0.1
+  condition_boost: 0.15
+  expansion_seed_threshold: 0.05
+  expansion_min_base_score: 0.01
+  diversification_penalty: 0.9
+evaluation:
+  query_path: experiments/version_aware_rag/data/annotations_v3/queries.jsonl
+  judgment_path: experiments/version_aware_rag/data/annotations_v3/judgments.adjudicated.jsonl
+  strata: true
+output:
+  root: experiments/version_aware_rag/results/v3

@@ -1,0 +1,66 @@
+[
+  {
+    "queryId": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0.3333333333333333,
+    "recencyRecall": 1,
+    "reason": "Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+  },
+  {
+    "queryId": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0.3333333333333333,
+    "recencyRecall": 0.6666666666666666,
+    "reason": "Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+  },
+  {
+    "queryId": "q-032",
+    "question": "What is the daily sodium intake limit for children aged 1 to 3?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0,
+    "recencyRecall": 1,
+    "reason": "Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+  },
+  {
+    "queryId": "q-033",
+    "question": "Is sodium intake limited to less than 2300 mg per day for the general population?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0.5,
+    "recencyRecall": 0.5,
+    "reason": "Both systems failed to achieve full recall for this query"
+  },
+  {
+    "queryId": "q-034",
+    "question": "What was the 2015 sodium limit recommendation?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0,
+    "recencyRecall": 0,
+    "reason": "Both systems failed to achieve full recall for this query"
+  },
+  {
+    "queryId": "q-038",
+    "question": "How many servings of vegetables and fruits are recommended daily?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0.5,
+    "recencyRecall": 0.5,
+    "reason": "Both systems failed to achieve full recall for this query"
+  },
+  {
+    "queryId": "q-039",
+    "question": "Is 100% fruit or vegetable juice recommended?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0,
+    "recencyRecall": 1,
+    "reason": "Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+  },
+  {
+    "queryId": "q-040",
+    "question": "What was the 2015 guidance on vegetable subgroups per week?",
+    "category": "policy_or_retrieval_failure",
+    "proposedRecall": 0,
+    "recencyRecall": 0,
+    "reason": "Both systems failed to achieve full recall for this query"
+  }
+]

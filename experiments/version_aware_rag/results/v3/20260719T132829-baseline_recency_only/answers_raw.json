@@ -1,0 +1,290 @@
+[
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-2-pass-0-a1f391e5], it states that: Message from the Secretaries\r\nWelcome to the Dietary Guidelines for Americans, 2025-2030. These Guidelines mark the most significant reset of federal ...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-2-pass-0-a1f391e5",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-6-pass-0-765dd278",
+        "dga-2025-page-2-pass-0-a1f391e5",
+        "dga-2025-page-5-pass-0-99883976"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1332,
+        "completion_tokens": 201,
+        "total_tokens": 1533
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-1-pass-0-29362a66], it states that: Dietary\r\nGuidelines\r\nFor Americans\r\nProtein, Dairy\r\n Vegetables\r\n& Healthy Fats & Fruits\r\nWhole\r\nGrains\r\nrealfood.gov 2025-2030...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-1-pass-0-29362a66",
+      "dga-2025-page-3-pass-0-ba481231"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2025-page-1-pass-0-29362a66",
+        "dga-2025-page-3-pass-0-ba481231"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1088,
+        "completion_tokens": 195,
+        "total_tokens": 1283
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-032",
+    "question": "What is the daily sodium intake limit for children aged 1 to 3?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2015-page-87-pass-0-efc2119d], it states that: Multi-Component Versus Multi-Level Strategies\r\nTo Influence Food & Physical Activity Choices\r\nEvidence demonstrates that both multi-component and mult...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2015-page-87-pass-0-efc2119d",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-6-pass-0-765dd278",
+        "dga-2015-page-87-pass-0-efc2119d",
+        "dga-2025-page-5-pass-0-99883976"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1360,
+        "completion_tokens": 201,
+        "total_tokens": 1561
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-033",
+    "question": "Is sodium intake limited to less than 2300 mg per day for the general population?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-3-pass-0-ba481231"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-6-pass-0-765dd278",
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2025-page-3-pass-0-ba481231"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1296,
+        "completion_tokens": 201,
+        "total_tokens": 1497
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-034",
+    "question": "What was the 2015 sodium limit recommendation?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\nAccording to the guideline [dga-2015-page-27-pass-2-dc13f4d4], it states that: In addition,\r\nfrom existing data sets was acknowledgment that knowledge about after the Advisory Committee's report\r\nrequested from the appropriate nu...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-5-pass-0-99883976",
+      "dga-2015-page-27-pass-2-dc13f4d4"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-6-pass-0-765dd278",
+        "dga-2025-page-5-pass-0-99883976",
+        "dga-2015-page-27-pass-2-dc13f4d4"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1262,
+        "completion_tokens": 201,
+        "total_tokens": 1463
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-038",
+    "question": "How many servings of vegetables and fruits are recommended daily?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\nAccording to the guideline [dga-2025-page-1-pass-0-29362a66], it states that: Dietary\r\nGuidelines\r\nFor Americans\r\nProtein, Dairy\r\n Vegetables\r\n& Healthy Fats & Fruits\r\nWhole\r\nGrains\r\nrealfood.gov 2025-2030...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-3-pass-0-ba481231",
+      "dga-2025-page-1-pass-0-29362a66"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2025-page-3-pass-0-ba481231",
+        "dga-2025-page-1-pass-0-29362a66"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1085,
+        "completion_tokens": 195,
+        "total_tokens": 1280
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-039",
+    "question": "Is 100% fruit or vegetable juice recommended?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2020-page-19-pass-0-ce63b99c], it states that: Fruits\r\n* Includes whole fruits and 100% fruit juice\r\n» At least half should come from whole fruit (fresh, canned, frozen, and\r\ndried forms)\r\n» Juice ...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2020-page-19-pass-0-ce63b99c",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2020-page-19-pass-0-ce63b99c",
+        "dga-2025-page-5-pass-0-99883976"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 1204,
+        "completion_tokens": 201,
+        "total_tokens": 1405
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-040",
+    "question": "What was the 2015 guidance on vegetable subgroups per week?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2020-page-24-pass-0-8e4b6dd7], it states that: Average Intakes of Vegetable Subgroups Compared to\r\nRecommended Intake Ranges: Ages 19 Through 30\r\nData Source: Average Intakes: Analysis of What We E...\nAccording to the guideline [dga-2020-page-22-pass-0-979f6867], it states that: Average Intakes of Vegetable Subgroups Compared to\r\nRecommended Intake Ranges: Ages 2 Through 4\r\n*Note: Estimates may be less precise than others due ...\nAccording to the guideline [dga-2020-page-17-pass-0-b3291101], it states that: Vegetables\r\n* Healthy dietary patterns include a variety of vegetables from all five\r\nvegetable subgroups\r\n» Include all fresh, frozen, canned, and dr...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2020-page-24-pass-0-8e4b6dd7",
+      "dga-2020-page-22-pass-0-979f6867",
+      "dga-2020-page-17-pass-0-b3291101"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2020-page-24-pass-0-8e4b6dd7",
+        "dga-2020-page-22-pass-0-979f6867",
+        "dga-2020-page-17-pass-0-b3291101"
+      ],
+      "invalid": [],
+      "has_invalid": false,
+      "has_missing": true,
+      "invalid_rate": 0
+    },
+    "model_info": {
+      "prompt_version": "v3.0.0",
+      "model_id": "local_template",
+      "generator": "local_template",
+      "temperature": 0.1,
+      "max_tokens": 500,
+      "latency_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 513,
+        "completion_tokens": 202,
+        "total_tokens": 715
+      },
+      "estimated_cost_usd": 0,
+      "reason": "API key missing or request failed"
+    }
+  }
+]

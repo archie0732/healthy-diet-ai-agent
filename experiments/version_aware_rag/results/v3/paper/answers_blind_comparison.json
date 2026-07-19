@@ -1,0 +1,495 @@
+[
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2015-page-53-pass-3-862b1b27], it states that: 5\r\ndaily nutrient intake level that is likely has demonstrated that adults who would\r\nfluid ounces of 80 proof distilled spirits (40%\r\nto pose no risk...\nAccording to the guideline [dga-2015-page-96-pass-1-db0f45cc], it states that: Within each age and sex category,\r\nphysical activity are provided in Table with online tools such as those available\r\nthe low end of the range is for ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2015-page-53-pass-3-862b1b27",
+      "dga-2015-page-96-pass-1-db0f45cc"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 1,
+      "version_correctness": 0,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2015-page-40-pass-2-6692d799], it states that: Although fruit juice can\r\nnutrients and potential health benefits\r\nIn addition, weekly amounts from each be part of healthy eating patterns, it is\r\nth...\nAccording to the guideline [dga-2015-page-66-pass-2-8722c875], it states that: Starchy Potatoes, Corn, Green Peas,\r\nVegetables Limas (Green, Immature), Plaintains, Cassava\r\nLettuce (Iceberg), Onions, Green Beans, Cucumbers,\r\nOthe...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2015-page-40-pass-2-6692d799",
+      "dga-2015-page-66-pass-2-8722c875"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-032",
+    "question": "What is the daily sodium intake limit for children aged 1 to 3?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-87-pass-0-efc2119d], it states that: Multi-Component Versus Multi-Level Strategies\r\nTo Influence Food & Physical Activity Choices\r\nEvidence demonstrates that both multi-component and mult...\nAccording to the guideline [dga-2015-page-53-pass-1-1f5bf91a], it states that: Because\r\nMultiple strategies should be implemented\r\nchoices within and across the subgroup children have lower calorie needs than\r\nto reduce sodium in...\nAccording to the guideline [dga-2015-page-53-pass-0-44ecc419], it states that: regarding the dose-response relationship linear dose-response relationship between Considerations: As a food ingredient,\r\nbetween dietary cholesterol ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-87-pass-0-efc2119d",
+      "dga-2015-page-53-pass-1-1f5bf91a",
+      "dga-2015-page-53-pass-0-44ecc419"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-033",
+    "question": "Is sodium intake limited to less than 2300 mg per day for the general population?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2015-page-53-pass-3-862b1b27], it states that: 5\r\ndaily nutrient intake level that is likely has demonstrated that adults who would\r\nfluid ounces of 80 proof distilled spirits (40%\r\nto pose no risk...\nAccording to the guideline [dga-2015-page-34-pass-1-14bfc3a3], it states that: A healthy eating pattern includes:[2]\r\n* A variety of vegetables from all of the subgroups-dark green, red and orange, legumes (beans and peas), starc...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2015-page-53-pass-3-862b1b27",
+      "dga-2015-page-34-pass-1-14bfc3a3",
+      "2"
+    ],
+    "invalid_citations": [
+      "2"
+    ],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.25
+    }
+  },
+  {
+    "query_id": "q-034",
+    "question": "What was the 2015 sodium limit recommendation?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-27-pass-2-dc13f4d4], it states that: In addition,\r\nfrom existing data sets was acknowledgment that knowledge about after the Advisory Committee's report\r\nrequested from the appropriate nu...\nAccording to the guideline [dga-2015-page-26-pass-0-98ec2f79], it states that: to review that evidence to inform the * Original Systematic Reviews. development of the 2015-2020 edition. The Advisory Committee used this\r\nThe Advis...\nAccording to the guideline [dga-2015-page-138-pass-2-27ab0499], it states that: If you need a timer\r\npoultry, and eggs) and from people\r\nyou can hum the \"happy birthday\" Foods\r\n(e. g. , cold, flu, and Staph infections). Frequent c...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-27-pass-2-dc13f4d4",
+      "dga-2015-page-26-pass-0-98ec2f79",
+      "dga-2015-page-138-pass-2-27ab0499"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-038",
+    "question": "How many servings of vegetables and fruits are recommended daily?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2015-page-66-pass-2-8722c875], it states that: Starchy Potatoes, Corn, Green Peas,\r\nVegetables Limas (Green, Immature), Plaintains, Cassava\r\nLettuce (Iceberg), Onions, Green Beans, Cucumbers,\r\nOthe...\nAccording to the guideline [dga-2015-page-40-pass-2-6692d799], it states that: Although fruit juice can\r\nnutrients and potential health benefits\r\nIn addition, weekly amounts from each be part of healthy eating patterns, it is\r\nth...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2015-page-66-pass-2-8722c875",
+      "dga-2015-page-40-pass-2-6692d799"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-039",
+    "question": "Is 100% fruit or vegetable juice recommended?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-40-pass-1-76450319], it states that: Green peas are similar to starchy\r\nconsiderations related to the food group. vegetables and are grouped with them. Green beans are\r\ngrouped with the o...\nAccording to the guideline [dga-2015-page-80-pass-1-48842e94], it states that: Other major sources and flavored waters also can be sele cted,\r\nsupplement when recommended by an\r\nof calories from beverages are milk and but calorie...\nAccording to the guideline [dga-2015-page-66-pass-3-2ead8d89], it states that: Children ages 1 to 8 years differ\r\nvegetable intake include choosing more children are within the limits recommended\r\nfrom the rest of the population ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-40-pass-1-76450319",
+      "dga-2015-page-80-pass-1-48842e94",
+      "dga-2015-page-66-pass-3-2ead8d89"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-040",
+    "question": "What was the 2015 guidance on vegetable subgroups per week?",
+    "system_alias": "System_B",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-6-pass-1-2563c791], it states that: Population Ages 1 Year & Older Who Are Below, At, or Above Each Dietary Goal or Limit\r\nFigure 2-2. Empower People To Make Healthy Shifts\r\nFigure 2-3. ...\nAccording to the guideline [dga-2015-page-54-pass-2-759c1026], it states that: [b] Definitions for each food group and subgroup are provided throughout the chapter and are compiled in\r\nAppendix 3. Healthy Mediterranean-\r\n[c] Vege...\nAccording to the guideline [dga-2015-page-64-pass-0-ac62601e], it states that: Figure 2-4.\r\n(continued...)\r\nAverage Vegetable Subgroup Intakes in Cup-\r\nEquivalents per Week by Age-Sex Groups, Compared\r\nto Ranges of Recommended In...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-6-pass-1-2563c791",
+      "dga-2015-page-54-pass-2-759c1026",
+      "b",
+      "c",
+      "dga-2015-page-64-pass-0-ac62601e"
+    ],
+    "invalid_citations": [
+      "b",
+      "c"
+    ],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-2-pass-0-a1f391e5], it states that: Message from the Secretaries\r\nWelcome to the Dietary Guidelines for Americans, 2025-2030. These Guidelines mark the most significant reset of federal ...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-2-pass-0-a1f391e5",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 0,
+      "citation_entailment": 1
+    }
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-1-pass-0-29362a66], it states that: Dietary\r\nGuidelines\r\nFor Americans\r\nProtein, Dairy\r\n Vegetables\r\n& Healthy Fats & Fruits\r\nWhole\r\nGrains\r\nrealfood.gov 2025-2030...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-1-pass-0-29362a66",
+      "dga-2025-page-3-pass-0-ba481231"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.6667
+    }
+  },
+  {
+    "query_id": "q-032",
+    "question": "What is the daily sodium intake limit for children aged 1 to 3?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2015-page-87-pass-0-efc2119d], it states that: Multi-Component Versus Multi-Level Strategies\r\nTo Influence Food & Physical Activity Choices\r\nEvidence demonstrates that both multi-component and mult...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2015-page-87-pass-0-efc2119d",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-033",
+    "question": "Is sodium intake limited to less than 2300 mg per day for the general population?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-3-pass-0-ba481231"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-034",
+    "question": "What was the 2015 sodium limit recommendation?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\nAccording to the guideline [dga-2015-page-27-pass-2-dc13f4d4], it states that: In addition,\r\nfrom existing data sets was acknowledgment that knowledge about after the Advisory Committee's report\r\nrequested from the appropriate nu...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-5-pass-0-99883976",
+      "dga-2015-page-27-pass-2-dc13f4d4"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 0,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-038",
+    "question": "How many servings of vegetables and fruits are recommended daily?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\nAccording to the guideline [dga-2025-page-1-pass-0-29362a66], it states that: Dietary\r\nGuidelines\r\nFor Americans\r\nProtein, Dairy\r\n Vegetables\r\n& Healthy Fats & Fruits\r\nWhole\r\nGrains\r\nrealfood.gov 2025-2030...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-3-pass-0-ba481231",
+      "dga-2025-page-1-pass-0-29362a66"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-039",
+    "question": "Is 100% fruit or vegetable juice recommended?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2020-page-19-pass-0-ce63b99c], it states that: Fruits\r\n* Includes whole fruits and 100% fruit juice\r\n» At least half should come from whole fruit (fresh, canned, frozen, and\r\ndried forms)\r\n» Juice ...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2020-page-19-pass-0-ce63b99c",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.6667
+    }
+  },
+  {
+    "query_id": "q-040",
+    "question": "What was the 2015 guidance on vegetable subgroups per week?",
+    "system_alias": "System_C",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2020-page-24-pass-0-8e4b6dd7], it states that: Average Intakes of Vegetable Subgroups Compared to\r\nRecommended Intake Ranges: Ages 19 Through 30\r\nData Source: Average Intakes: Analysis of What We E...\nAccording to the guideline [dga-2020-page-22-pass-0-979f6867], it states that: Average Intakes of Vegetable Subgroups Compared to\r\nRecommended Intake Ranges: Ages 2 Through 4\r\n*Note: Estimates may be less precise than others due ...\nAccording to the guideline [dga-2020-page-17-pass-0-b3291101], it states that: Vegetables\r\n* Healthy dietary patterns include a variety of vegetables from all five\r\nvegetable subgroups\r\n» Include all fresh, frozen, canned, and dr...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2020-page-24-pass-0-8e4b6dd7",
+      "dga-2020-page-22-pass-0-979f6867",
+      "dga-2020-page-17-pass-0-b3291101"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2015-page-53-pass-3-862b1b27], it states that: 5\r\ndaily nutrient intake level that is likely has demonstrated that adults who would\r\nfluid ounces of 80 proof distilled spirits (40%\r\nto pose no risk...\nAccording to the guideline [dga-2015-page-96-pass-1-db0f45cc], it states that: Within each age and sex category,\r\nphysical activity are provided in Table with online tools such as those available\r\nthe low end of the range is for ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2015-page-53-pass-3-862b1b27",
+      "dga-2015-page-96-pass-1-db0f45cc"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 1,
+      "version_correctness": 0,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2015-page-40-pass-2-6692d799], it states that: Although fruit juice can\r\nnutrients and potential health benefits\r\nIn addition, weekly amounts from each be part of healthy eating patterns, it is\r\nth...\nAccording to the guideline [dga-2015-page-66-pass-2-8722c875], it states that: Starchy Potatoes, Corn, Green Peas,\r\nVegetables Limas (Green, Immature), Plaintains, Cassava\r\nLettuce (Iceberg), Onions, Green Beans, Cucumbers,\r\nOthe...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2015-page-40-pass-2-6692d799",
+      "dga-2015-page-66-pass-2-8722c875"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-032",
+    "question": "What is the daily sodium intake limit for children aged 1 to 3?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-87-pass-0-efc2119d], it states that: Multi-Component Versus Multi-Level Strategies\r\nTo Influence Food & Physical Activity Choices\r\nEvidence demonstrates that both multi-component and mult...\nAccording to the guideline [dga-2015-page-53-pass-1-1f5bf91a], it states that: Because\r\nMultiple strategies should be implemented\r\nchoices within and across the subgroup children have lower calorie needs than\r\nto reduce sodium in...\nAccording to the guideline [dga-2015-page-53-pass-0-44ecc419], it states that: regarding the dose-response relationship linear dose-response relationship between Considerations: As a food ingredient,\r\nbetween dietary cholesterol ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-87-pass-0-efc2119d",
+      "dga-2015-page-53-pass-1-1f5bf91a",
+      "dga-2015-page-53-pass-0-44ecc419"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-033",
+    "question": "Is sodium intake limited to less than 2300 mg per day for the general population?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2015-page-53-pass-3-862b1b27], it states that: 5\r\ndaily nutrient intake level that is likely has demonstrated that adults who would\r\nfluid ounces of 80 proof distilled spirits (40%\r\nto pose no risk...\nAccording to the guideline [dga-2015-page-43-pass-0-573fd6e4], it states that: recommendation for at least 8 ounce- and used to replace other protein foods be accommodated as long as sodium,\r\nequivalents of seafood per week also ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2015-page-53-pass-3-862b1b27",
+      "dga-2015-page-43-pass-0-573fd6e4"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-034",
+    "question": "What was the 2015 sodium limit recommendation?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-27-pass-2-dc13f4d4], it states that: In addition,\r\nfrom existing data sets was acknowledgment that knowledge about after the Advisory Committee's report\r\nrequested from the appropriate nu...\nAccording to the guideline [dga-2015-page-26-pass-0-98ec2f79], it states that: to review that evidence to inform the * Original Systematic Reviews. development of the 2015-2020 edition. The Advisory Committee used this\r\nThe Advis...\nAccording to the guideline [dga-2015-page-52-pass-0-69565dfb], it states that: Dietary Approaches to Stop Hypertension (DASH)\r\nThe DASH dietary pattern is an example of a healthy eating pattern and has many of the same characteri...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-27-pass-2-dc13f4d4",
+      "dga-2015-page-26-pass-0-98ec2f79",
+      "dga-2015-page-52-pass-0-69565dfb"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-038",
+    "question": "How many servings of vegetables and fruits are recommended daily?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2015-page-40-pass-2-6692d799], it states that: Although fruit juice can\r\nnutrients and potential health benefits\r\nIn addition, weekly amounts from each be part of healthy eating patterns, it is\r\nth...\nAccording to the guideline [dga-2015-page-66-pass-2-8722c875], it states that: Starchy Potatoes, Corn, Green Peas,\r\nVegetables Limas (Green, Immature), Plaintains, Cassava\r\nLettuce (Iceberg), Onions, Green Beans, Cucumbers,\r\nOthe...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2015-page-40-pass-2-6692d799",
+      "dga-2015-page-66-pass-2-8722c875"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 1,
+      "completeness": 1,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 1,
+      "unsupported_claim": 1,
+      "citation_entailment": 0.3333
+    }
+  },
+  {
+    "query_id": "q-039",
+    "question": "Is 100% fruit or vegetable juice recommended?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-40-pass-1-76450319], it states that: Green peas are similar to starchy\r\nconsiderations related to the food group. vegetables and are grouped with them. Green beans are\r\ngrouped with the o...\nAccording to the guideline [dga-2015-page-80-pass-1-48842e94], it states that: Other major sources and flavored waters also can be sele cted,\r\nsupplement when recommended by an\r\nof calories from beverages are milk and but calorie...\nAccording to the guideline [dga-2015-page-66-pass-3-2ead8d89], it states that: Children ages 1 to 8 years differ\r\nvegetable intake include choosing more children are within the limits recommended\r\nfrom the rest of the population ...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-40-pass-1-76450319",
+      "dga-2015-page-80-pass-1-48842e94",
+      "dga-2015-page-66-pass-3-2ead8d89"
+    ],
+    "invalid_citations": [],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  },
+  {
+    "query_id": "q-040",
+    "question": "What was the 2015 guidance on vegetable subgroups per week?",
+    "system_alias": "System_A",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-6-pass-1-2563c791], it states that: Population Ages 1 Year & Older Who Are Below, At, or Above Each Dietary Goal or Limit\r\nFigure 2-2. Empower People To Make Healthy Shifts\r\nFigure 2-3. ...\nAccording to the guideline [dga-2015-page-54-pass-2-759c1026], it states that: [b] Definitions for each food group and subgroup are provided throughout the chapter and are compiled in\r\nAppendix 3. Healthy Mediterranean-\r\n[c] Vege...\nAccording to the guideline [dga-2015-page-64-pass-0-ac62601e], it states that: Figure 2-4.\r\n(continued...)\r\nAverage Vegetable Subgroup Intakes in Cup-\r\nEquivalents per Week by Age-Sex Groups, Compared\r\nto Ranges of Recommended In...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-6-pass-1-2563c791",
+      "dga-2015-page-54-pass-2-759c1026",
+      "b",
+      "c",
+      "dga-2015-page-64-pass-0-ac62601e"
+    ],
+    "invalid_citations": [
+      "b",
+      "c"
+    ],
+    "judgments": {
+      "answer_correctness": 0,
+      "completeness": 0,
+      "version_correctness": 1,
+      "conditional_boundary_preservation": 0,
+      "unsupported_claim": 1,
+      "citation_entailment": 0
+    }
+  }
+]

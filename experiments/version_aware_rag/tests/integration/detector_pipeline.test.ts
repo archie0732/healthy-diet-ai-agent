@@ -1,8 +1,12 @@
 import { describe, expect, test } from "bun:test";
 import { RuleBaselineDetector } from "../../src/versioning/detectors/rule_baseline";
+import { PolicyEngine } from "../../src/versioning/policy_engine";
+import { RelationGraph } from "../../src/versioning/relation_graph";
 import { CorpusChunk } from "../../src/corpus/types";
+import * as path from "path";
+import * as fs from "fs";
 
-describe("detector lineage independence", () => {
+describe("detector & policy pipeline integration", () => {
   const oldChunk: CorpusChunk = {
     chunk_id: "c-old",
     document_id: "doc-1",
@@ -57,4 +61,49 @@ describe("detector lineage independence", () => {
     // Predictions must be identical since prediction depends on text features, not ID names!
     expect(res1.relationType).toBe(res2.relationType);
   });
+
+  test("end-to-end detector -> policy engine -> relation graph pipeline", async () => {
+    const detector = new RuleBaselineDetector();
+    const prediction = await detector.classify({ oldChunk, newChunk });
+
+    // 1. Resolve Policy
+    const decision = PolicyEngine.resolve(prediction.relationType, "pair-dairy-1", {
+      mode: "predicted_relation",
+      oldEdition: oldChunk.edition,
+      newEdition: newChunk.edition
+    });
+
+    expect(decision.state).toBeDefined();
+
+    // 2. Construct Relation Graph via temporary JSONL files
+    const tempPairs = path.resolve(process.cwd(), "temp_pipeline_pairs.jsonl");
+    const tempRelations = path.resolve(process.cwd(), "temp_pipeline_relations.jsonl");
+
+    const pair = {
+      pair_id: "pair-dairy-1",
+      old_chunk_id: oldChunk.chunk_id,
+      new_chunk_id: newChunk.chunk_id
+    };
+
+    const annotation = {
+      pair_id: "pair-dairy-1",
+      relation_type: prediction.relationType,
+      policy_label: decision.state,
+      confidence: prediction.confidence
+    };
+
+    fs.writeFileSync(tempPairs, JSON.stringify(pair) + "\n", "utf8");
+    fs.writeFileSync(tempRelations, JSON.stringify(annotation) + "\n", "utf8");
+
+    try {
+      const graph = new RelationGraph(tempPairs, tempRelations);
+      const isOldActive = graph.isChunkActive(oldChunk.chunk_id);
+      expect(isOldActive).toBe(decision.state !== "deprecated" && decision.state !== "evicted");
+    } finally {
+      if (fs.existsSync(tempPairs)) fs.unlinkSync(tempPairs);
+      if (fs.existsSync(tempRelations)) fs.unlinkSync(tempRelations);
+    }
+  });
 });
+
+

@@ -1,0 +1,58 @@
+{
+  "run_id": "20260719T134649-proposed_predicted_relations",
+  "timestamp": "2026-07-19T13:46:50.067Z",
+  "git": {
+    "commit": "b1bf1b7e3aec047ead8702f545a0ffeaa7a64250",
+    "dirty": true
+  },
+  "config": {
+    "experiment": {
+      "id": "proposed_predicted_relations",
+      "seed": 42,
+      "split": "test"
+    },
+    "corpus": {
+      "path": "experiments/version_aware_rag/data/corpus_v3/chunks.jsonl",
+      "checksum": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7"
+    },
+    "retrieval": {
+      "mode": "proposed",
+      "backend": "bm25",
+      "top_k": 3,
+      "recency_weight": 0
+    },
+    "version_policy": {
+      "relation_source": "predicted",
+      "deprecated_filter": true,
+      "compatibility_expansion": true,
+      "confidence_threshold": 0.7,
+      "retain_relation_boost": 0.1,
+      "condition_boost": 0.15,
+      "expansion_seed_threshold": 0.05,
+      "expansion_min_base_score": 0.01,
+      "diversification_penalty": 0.9
+    },
+    "evaluation": {
+      "query_path": "experiments/version_aware_rag/data/annotations_v3/queries.jsonl",
+      "judgment_path": "experiments/version_aware_rag/data/annotations_v3/judgments.adjudicated.jsonl",
+      "strata": true
+    },
+    "output": {
+      "root": "experiments/version_aware_rag/results/v3"
+    }
+  },
+  "input_checksums": {
+    "corpus": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+    "query": "72af4d7a8eeeb1eb2ca24b30a764de3a07ebb0b6ead7b74a6a597527bf27774f",
+    "relation_pairs": "9af814a2d582af94a984caadff0d944c067974834dd9f71cc7ec6166076da2b3",
+    "relations": "861fef0840bfb922e1e0ffa4ca6d97c556848f0ade617cdf3c7f5212c8498b3c",
+    "judgment": "61f1f4531f6ace040e8f2a4a1c81728585d188dc32b3b49264e5e6d3a2654efd"
+  },
+  "runtime": {
+    "bun_version": "1.2.12",
+    "node_version": "22.6.0"
+  },
+  "seed": 42,
+  "duration_ms": 151,
+  "held_out": true
+}

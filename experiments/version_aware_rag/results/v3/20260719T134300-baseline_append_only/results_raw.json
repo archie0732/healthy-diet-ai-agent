@@ -1,0 +1,378 @@
+[
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-6-pass-0-765dd278",
+        "baseScore": 14.559979875553275,
+        "finalScore": 14.559979875553275,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 14.559979875553275
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-3-862b1b27",
+        "baseScore": 12.60347839012477,
+        "finalScore": 12.60347839012477,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 12.60347839012477
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-96-pass-1-db0f45cc",
+        "baseScore": 7.720331374320188,
+        "finalScore": 7.720331374320188,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 7.720331374320188
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.3333333333333333,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.638787886479598,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 1,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-4-pass-0-567ec170",
+        "baseScore": 18.30665646464183,
+        "finalScore": 18.30665646464183,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 18.30665646464183
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-40-pass-2-6692d799",
+        "baseScore": 11.872641698088632,
+        "finalScore": 11.872641698088632,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.872641698088632
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-66-pass-2-8722c875",
+        "baseScore": 10.102936286069287,
+        "finalScore": 10.102936286069287,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 10.102936286069287
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.3333333333333333,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.638787886479598,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-032",
+    "question": "What is the daily sodium intake limit for children aged 1 to 3?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-87-pass-0-efc2119d",
+        "baseScore": 9.717390253117863,
+        "finalScore": 9.717390253117863,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 9.717390253117863
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-1-1f5bf91a",
+        "baseScore": 6.881551215196685,
+        "finalScore": 6.881551215196685,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 6.881551215196685
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-0-44ecc419",
+        "baseScore": 6.127536288199368,
+        "finalScore": 6.127536288199368,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 6.127536288199368
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-033",
+    "question": "Is sodium intake limited to less than 2300 mg per day for the general population?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-6-pass-0-765dd278",
+        "baseScore": 20.347799318619046,
+        "finalScore": 20.347799318619046,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 20.347799318619046
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-3-862b1b27",
+        "baseScore": 14.915154677697185,
+        "finalScore": 14.915154677697185,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 14.915154677697185
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-34-pass-1-14bfc3a3",
+        "baseScore": 14.79127579193209,
+        "finalScore": 14.79127579193209,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 14.79127579193209
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.7601875334318686,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-034",
+    "question": "What was the 2015 sodium limit recommendation?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-27-pass-2-dc13f4d4",
+        "baseScore": 6.781523070563562,
+        "finalScore": 6.781523070563562,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 6.781523070563562
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-26-pass-0-98ec2f79",
+        "baseScore": 6.727655771036722,
+        "finalScore": 6.727655771036722,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 6.727655771036722
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-138-pass-2-27ab0499",
+        "baseScore": 5.826800606858496,
+        "finalScore": 5.826800606858496,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 5.826800606858496
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-038",
+    "question": "How many servings of vegetables and fruits are recommended daily?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-4-pass-0-567ec170",
+        "baseScore": 13.967017019427567,
+        "finalScore": 13.967017019427567,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 13.967017019427567
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-66-pass-2-8722c875",
+        "baseScore": 8.181863790708196,
+        "finalScore": 8.181863790708196,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 8.181863790708196
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-40-pass-2-6692d799",
+        "baseScore": 8.15732076857512,
+        "finalScore": 8.15732076857512,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.15732076857512
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.7601875334318686,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-039",
+    "question": "Is 100% fruit or vegetable juice recommended?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-40-pass-1-76450319",
+        "baseScore": 15.52287927423106,
+        "finalScore": 15.52287927423106,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 15.52287927423106
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-80-pass-1-48842e94",
+        "baseScore": 14.325491527108381,
+        "finalScore": 14.325491527108381,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 14.325491527108381
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-66-pass-3-2ead8d89",
+        "baseScore": 14.166044656595647,
+        "finalScore": 14.166044656595647,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 14.166044656595647
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-040",
+    "question": "What was the 2015 guidance on vegetable subgroups per week?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-6-pass-1-2563c791",
+        "baseScore": 11.240318222201543,
+        "finalScore": 11.240318222201543,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 11.240318222201543
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-54-pass-2-759c1026",
+        "baseScore": 11.209792088156117,
+        "finalScore": 11.209792088156117,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.209792088156117
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-64-pass-0-ac62601e",
+        "baseScore": 10.73218734771849,
+        "finalScore": 10.73218734771849,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 10.73218734771849
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  }
+]

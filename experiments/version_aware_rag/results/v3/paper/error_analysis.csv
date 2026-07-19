@@ -1,0 +1,9 @@
+query_id,category,proposed_recall,recency_recall,question,reason
+"q-008","policy_or_retrieval_failure",0.333,1.000,"What is the sodium intake limit recommendation for highly active individuals?","Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+"q-010","policy_or_retrieval_failure",0.333,0.667,"How many servings of whole vegetables and fruits should be consumed daily?","Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+"q-032","policy_or_retrieval_failure",0.000,1.000,"What is the daily sodium intake limit for children aged 1 to 3?","Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+"q-033","policy_or_retrieval_failure",0.500,0.500,"Is sodium intake limited to less than 2300 mg per day for the general population?","Both systems failed to achieve full recall for this query"
+"q-034","policy_or_retrieval_failure",0.000,0.000,"What was the 2015 sodium limit recommendation?","Both systems failed to achieve full recall for this query"
+"q-038","policy_or_retrieval_failure",0.500,0.500,"How many servings of vegetables and fruits are recommended daily?","Both systems failed to achieve full recall for this query"
+"q-039","policy_or_retrieval_failure",0.000,1.000,"Is 100% fruit or vegetable juice recommended?","Policy filtering or base retrieval ranker failed to retain required evidence chunks"
+"q-040","policy_or_retrieval_failure",0.000,0.000,"What was the 2015 guidance on vegetable subgroups per week?","Both systems failed to achieve full recall for this query"

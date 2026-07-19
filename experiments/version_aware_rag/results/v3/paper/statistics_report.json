@@ -1,0 +1,186 @@
+{
+  "recall": {
+    "type": "continuous",
+    "baseline": {
+      "mean": 0.5833,
+      "ciLow": 0.3125,
+      "ciHigh": 0.8333
+    },
+    "proposed": {
+      "mean": 0.2083,
+      "ciLow": 0.0417,
+      "ciHigh": 0.3542
+    },
+    "difference": {
+      "mean": -0.375,
+      "ciLow": -0.6667,
+      "ciHigh": -0.125
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.1003,
+      "isSignificant": false
+    },
+    "holmAdjustedPValue": 0.7021,
+    "isSignificantHolm": false
+  },
+  "precision": {
+    "type": "continuous",
+    "baseline": {
+      "mean": 0.4167,
+      "ciLow": 0.2083,
+      "ciHigh": 0.625
+    },
+    "proposed": {
+      "mean": 0.1667,
+      "ciLow": 0.0417,
+      "ciHigh": 0.2917
+    },
+    "difference": {
+      "mean": -0.25,
+      "ciLow": -0.4583,
+      "ciHigh": -0.0833
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.1003,
+      "isSignificant": false
+    },
+    "holmAdjustedPValue": 0.7021,
+    "isSignificantHolm": false
+  },
+  "mrr": {
+    "type": "continuous",
+    "baseline": {
+      "mean": 0.75,
+      "ciLow": 0.375,
+      "ciHigh": 1
+    },
+    "proposed": {
+      "mean": 0.5,
+      "ciLow": 0.125,
+      "ciHigh": 0.875
+    },
+    "difference": {
+      "mean": -0.25,
+      "ciLow": -0.5,
+      "ciHigh": 0
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.3711,
+      "isSignificant": false
+    },
+    "holmAdjustedPValue": 1,
+    "isSignificantHolm": false
+  },
+  "ndcg": {
+    "type": "continuous",
+    "baseline": {
+      "mean": 0.6701,
+      "ciLow": 0.345,
+      "ciHigh": 0.9201
+    },
+    "proposed": {
+      "mean": 0.3497,
+      "ciLow": 0.0798,
+      "ciHigh": 0.6045
+    },
+    "difference": {
+      "mean": -0.3203,
+      "ciLow": -0.625,
+      "ciHigh": -0.0703
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.1003,
+      "isSignificant": false
+    },
+    "holmAdjustedPValue": 0.7021,
+    "isSignificantHolm": false
+  },
+  "required_recall": {
+    "type": "continuous",
+    "baseline": {
+      "mean": 0.75,
+      "ciLow": 0.375,
+      "ciHigh": 1
+    },
+    "proposed": {
+      "mean": 0.5,
+      "ciLow": 0.125,
+      "ciHigh": 0.875
+    },
+    "difference": {
+      "mean": -0.25,
+      "ciLow": -0.5,
+      "ciHigh": 0
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.3711,
+      "isSignificant": false
+    },
+    "holmAdjustedPValue": 1,
+    "isSignificantHolm": false
+  },
+  "stale_hit": {
+    "type": "binary_rate",
+    "baseline": {
+      "mean": 0.125,
+      "ciLow": 0,
+      "ciHigh": 0.375
+    },
+    "proposed": {
+      "mean": 0.125,
+      "ciLow": 0,
+      "ciHigh": 0.375
+    },
+    "difference": {
+      "mean": 0,
+      "ciLow": -0.375,
+      "ciHigh": 0.375
+    },
+    "mcNemar": {
+      "chiSquare": 0.5,
+      "pValue": 0.4795,
+      "isSignificant": false,
+      "b": 1,
+      "c": 1
+    },
+    "holmAdjustedPValue": 1,
+    "isSignificantHolm": false
+  },
+  "exact_match_success": {
+    "type": "binary_rate",
+    "baseline": {
+      "mean": 0.375,
+      "ciLow": 0.125,
+      "ciHigh": 0.75
+    },
+    "proposed": {
+      "mean": 0,
+      "ciLow": 0,
+      "ciHigh": 0
+    },
+    "difference": {
+      "mean": -0.375,
+      "ciLow": -0.75,
+      "ciHigh": -0.125
+    },
+    "mcNemar": {
+      "chiSquare": 1.3333,
+      "pValue": 0.2482,
+      "isSignificant": false,
+      "b": 3,
+      "c": 0
+    },
+    "holmAdjustedPValue": 0.9928,
+    "isSignificantHolm": false
+  },
+  "stale_safety_non_inferiority": {
+    "difference": 0,
+    "margin": 0.05,
+    "passedNonInferiority": true
+  }
+}

@@ -44,7 +44,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Generating and evaluating answers for run: ${resolvedRunDir}...`);
+  console.log(`Generating answers for run: ${resolvedRunDir}...`);
 
   try {
     const rawResults = JSON.parse(fs.readFileSync(rawResultsPath, 'utf8'));
@@ -70,29 +70,40 @@ async function main() {
       const gen = await generator.generateAnswer(question, retrievedChunks);
 
       // Parse and validate citations
-      const citations = CitationParser.extractCitations(gen.answer);
-      const validation = CitationParser.validateCitations(citations, retrievedChunkIds);
+      const sentenceCitations = CitationParser.parseSentenceCitations(gen.answer, retrievedChunkIds);
 
       answerResults.push({
         query_id: queryId,
         question,
         answer: gen.answer,
-        citations,
-        citation_validation: validation,
+        citations: sentenceCitations.allCitations,
+        citation_validation: {
+          valid: sentenceCitations.valid,
+          invalid: sentenceCitations.invalid,
+          has_invalid: sentenceCitations.hasInvalidCitations,
+          has_missing: sentenceCitations.hasMissingCitations
+        },
+        sentence_mappings: sentenceCitations.sentenceMappings,
         model_info: gen.modelInfo
       });
     }
 
-    // Write outputs
+    // Write raw answer output
     const answersRawPath = path.join(resolvedRunDir, 'answers_raw.json');
     fs.writeFileSync(answersRawPath, JSON.stringify(answerResults, null, 2), 'utf8');
 
-    let md = `# Generated Answers Report\n\n`;
+    // Write human readable report
+    let md = `# Generated Answers & Citation Report\n\n`;
+    md += `**Run Directory:** \`${path.basename(resolvedRunDir)}\`\n`;
+    md += `**Model:** \`${answerResults[0]?.model_info?.model_id || 'unknown'}\`\n`;
+    md += `**Prompt Version:** \`${answerResults[0]?.model_info?.prompt_version || 'v3'}\`\n\n`;
+
     for (const item of answerResults) {
       md += `### Query: ${item.query_id} - ${item.question}\n\n`;
       md += `**Answer:**\n${item.answer}\n\n`;
       md += `**Citations:** ${item.citations.join(', ') || 'None'}\n`;
-      md += `**Invalid Citations:** ${item.citation_validation.invalid.join(', ') || 'None'}\n\n`;
+      md += `**Invalid Citations:** ${item.citation_validation.invalid.join(', ') || 'None'}\n`;
+      md += `**Latency:** ${item.model_info.latency_ms} ms | **Tokens:** ${item.model_info.token_usage?.total_tokens || 0}\n\n`;
       md += `---\n\n`;
     }
 

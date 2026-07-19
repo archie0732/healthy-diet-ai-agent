@@ -1,12 +1,14 @@
 import { CorpusChunk } from '../corpus/types';
 
+export const PROMPT_VERSION_V3 = 'v3.0.0';
+
 export const SYSTEM_ANSWER_PROMPT = `
 You are an expert nutrition AI assistant. Answer the user's question accurately using ONLY the provided evidence.
 
-Rules:
+Strict Rules:
 1. Cite your sources using the format "[chunk_id]" at the end of each sentence or claim.
-2. If the guidelines mention exceptions or target group conditions (e.g. highly active vs general), explain them clearly.
-3. If the evidence contains conflicting guidelines from different editions, note the differences explicitly.
+2. If the guidelines mention exceptions or target group conditions (e.g. highly active individuals vs general population), explain those applicable conditions clearly.
+3. If the evidence contains conflicting guidelines from different editions that cannot be resolved by version policies, explicitly disclose the uncertainty.
 4. Do NOT make any claims that cannot be directly supported by the provided evidence.
 `;
 
@@ -26,3 +28,4 @@ Question: ${question}
 Provide a concise answer citing the relevant chunk IDs.
 `;
 }
+
