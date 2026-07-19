@@ -1,0 +1,472 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-9-lineage-dairy",
+        "baseScore": 7,
+        "finalScore": 7,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 7
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-1-lineage-dairy",
+        "baseScore": 6,
+        "finalScore": 6,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 6
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-2-lineage-dairy",
+        "baseScore": 6,
+        "finalScore": 6,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 6
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.75,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 0.6806060567602009,
+      "preferred_hit": 0,
+      "required_recall": 0.75,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0.75,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-3-lineage-protein",
+        "baseScore": 9,
+        "finalScore": 9,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 9
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-2-lineage-protein",
+        "baseScore": 6,
+        "finalScore": 6,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 6
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-4-lineage-protein",
+        "baseScore": 6,
+        "finalScore": 6,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 6
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": 1,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-3-lineage-sugars",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-4-lineage-sugars",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-5-lineage-sugars",
+        "baseScore": 10,
+        "finalScore": 10,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 10
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 0.8403030283801005,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": 1,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-5-lineage-sweeteners",
+        "baseScore": 15,
+        "finalScore": 15,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 15
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-5-lineage-dairy",
+        "baseScore": 7,
+        "finalScore": 7,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 7
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-5-lineage-sugars",
+        "baseScore": 7,
+        "finalScore": 7,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 7
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2020-page-8-lineage-cholesterol",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-lineage-cholesterol",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-47-lineage-cholesterol",
+        "baseScore": 10,
+        "finalScore": 10,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 10
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.6,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 0.6806060567602009,
+      "preferred_hit": 0,
+      "required_recall": 0.6,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0.6,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-6-lineage-alcohol",
+        "baseScore": 8,
+        "finalScore": 8,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 8
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-5-lineage-alcohol",
+        "baseScore": 7,
+        "finalScore": 7,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 7
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-8-lineage-alcohol",
+        "baseScore": 7,
+        "finalScore": 7,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 7
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": 1,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "question": "How many daily servings of fiber-rich whole grains are recommended?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-4-lineage-whole-grains",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-8-lineage-whole-grains",
+        "baseScore": 10,
+        "finalScore": 10,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 10
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-9-lineage-whole-grains",
+        "baseScore": 9,
+        "finalScore": 9,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 9
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": 1,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-008",
+    "question": "What is the sodium intake limit recommendation for highly active individuals?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-6-lineage-sodium",
+        "baseScore": 8,
+        "finalScore": 8,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 8
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-lineage-sodium",
+        "baseScore": 8,
+        "finalScore": 8,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 8
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-85-lineage-sodium",
+        "baseScore": 7,
+        "finalScore": 7,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 7
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.3333333333333333,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.638787886479598,
+      "preferred_hit": 1,
+      "required_recall": 0.3333333333333333,
+      "both_evidence_coverage": 0,
+      "stale_hit": 1,
+      "compatible_recall": null,
+      "conditional_completeness": 0.3333333333333333,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-009",
+    "question": "How should highly processed packaged foods be treated in a healthy diet?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-5-lineage-processed-foods",
+        "baseScore": 10,
+        "finalScore": 10,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 10
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-2-lineage-processed-foods",
+        "baseScore": 9,
+        "finalScore": 9,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 9
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-3-lineage-processed-foods",
+        "baseScore": 9,
+        "finalScore": 9,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 9
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": 1,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  },
+  {
+    "query_id": "q-010",
+    "question": "How many servings of whole vegetables and fruits should be consumed daily?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-4-lineage-veg-fruits",
+        "baseScore": 13,
+        "finalScore": 13,
+        "rank": 1,
+        "scoreComponents": {
+          "heuristic": 13
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-1-lineage-veg-fruits",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 2,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-2-lineage-veg-fruits",
+        "baseScore": 11,
+        "finalScore": 11,
+        "rank": 3,
+        "scoreComponents": {
+          "heuristic": 11
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 1,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": 1,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 0
+    }
+  }
+]

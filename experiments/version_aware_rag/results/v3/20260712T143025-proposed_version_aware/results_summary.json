@@ -1,0 +1,7 @@
+{
+  "mode": "proposed",
+  "staleRetrievalRate": 0.1,
+  "currentVersionHitRate": 1,
+  "top1CitationUnsafeRate": 0,
+  "avgUnsafeChunkCountAtK": 0.4
+}

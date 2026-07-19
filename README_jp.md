@@ -33,6 +33,8 @@ Healthy Diet AI Agent は、Bun + TypeScript で構築された栄養・食事�
 - 栄養チャットアシスタント: 食事のアドバイス、献立計画、栄養に関するQ&Aに対応
 - 食事画像解析ワークフロー: メニューの理解と栄養指向のインタラクションをサポート
 - RAG ドキュメント検索と管理: 栄養知識ドキュメントの整理と検索に対応
+- バージョン認識・ポリシー認識 RAG (Version-Aware & Policy-Aware RAG) 評価エンジン: 複数バージョンの食事ガイドラインにおける時間的コンフリクトを解決
+- PDF 変換・整形ツール (`src/rag_clean/pdf_to_clean_markdown.py`): 公式ガイドライン PDF を表形式の解説文章を含む構造化 Markdown へ変換
 - 知識グラフの抽出と検索: 健康と食事に関する構造化された関連性の構築に対応
 - 台湾衛生福利部 (MOHW) 同期: 公開されている事実確認データや参考情報のインポートに対応
 - 柔軟なデプロイモード: SQLite、Supabase、HTTP API、CLI への対応
@@ -56,6 +58,8 @@ Healthy Diet AI Agent は、Bun + TypeScript で構築された栄養・食事�
 ## 特徴
 
 - 切り替え可能なストレージバックエンド: `sqlite` または `supabase`
+- パラメータ化可能な検索ポリシーとルールを標準装備した Policy-Aware / Version-Aware RAG 構成
+- 表の文脈を維持する自動 PDF-to-Markdown 変換ツール
 - `health-diet-api` に依存せず、直接単独でデプロイ可能
 - HTTP API とターミナル CLI の両方を提供
 - Docker 既定では standalone SQLite モードを使用
@@ -72,15 +76,19 @@ Healthy Diet AI Agent は、Bun + TypeScript で構築された栄養・食事�
 ├── docs/                       # DB スキーマおよび補足ドキュメント
 │   ├── sqlite/                 # SQLite データベーススキーマおよびサンプルデータ
 │   └── supabase/               # Supabase データベース設定およびスクリプト
+├── experiments/                # 実験フレームワークおよびベンチマーク評価セット
+│   └── version_aware_rag/      # バージョン認識・ポリシー認識 RAG 評価およびパラメータ固定テストセット
 ├── knowledge_base/             # インジェストされたドキュメントおよび RAG データソースディレクトリ
 │   ├── ingested_markdown/      # 解析済みの RAG 用 Markdown ドキュメント
 │   ├── mohw_clarifications/    # 台湾衛生福利部 (MOHW) の同期データ格納先
 │   ├── uploads/                # アップロードされたソースファイルのテンポラリディレクトリ
 │   └── NUTRITION_RULES.md      # 食事分析の基準となるガイドライン (Ground-truth)
+├── plans/                      # 研究・実行計画ドキュメント
 ├── raw_data/                   # 生データファイルまたはスクリプト
 ├── scripts/                    # ユーティリティスクリプト (データ前処理、バックアップなど)
 ├── src/                        # メインソースコードディレクトリ
 │   ├── config/                 # アプリケーション設定 (ロガー、環境変数バリデータ)
+│   ├── rag_clean/              # PDF 解析および Markdown クリーニングツール
 │   ├── server/                 # ビジネスロジックハンドラーおよびエージェントの実装
 │   │   ├── agentRuntime.ts     # コア LangChain/LangGraph エージェントランタイム設定
 │   │   ├── httpRuntime.ts      # HTTP サーバーランタイムの起動処理 (Bootstrap)
@@ -88,6 +96,7 @@ Healthy Diet AI Agent は、Bun + TypeScript で構築された栄養・食事�
 │   │   ├── knowledgeIngestion.ts # ファイルアップロード、解析、埋め込みインジェスト処理
 │   │   ├── mohwNews.ts         # MOHW データ同期タスク
 │   │   └── ragDocuments.ts     # ドキュメントデータベースの CRUD およびインデクサーのルーティング
+│   ├── shared/                 # 共有設定、ハッシュ計算、Manifest モジュール
 │   ├── storage/                # データベース抽象化レイヤー (SQLite および Supabase アダプター)
 │   │   ├── sqlite/             # SQLite 接続およびアダプターロジック
 │   │   └── supabase/           # Supabase クライアントおよびアダプターロジック

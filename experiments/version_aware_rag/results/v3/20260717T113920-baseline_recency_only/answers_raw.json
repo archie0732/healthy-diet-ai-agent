@@ -1,0 +1,134 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-9-pass-0-b67ed68f], it states that: Young Adulthood\r\n+ Following the Dietary Guidelines will support bone health to achieve peak bone mass and peak\r\noptimal health during this period, in...\nAccording to the guideline [dga-2025-page-1-pass-0-29362a66], it states that: Dietary\r\nGuidelines\r\nFor Americans\r\nProtein, Dairy\r\n Vegetables\r\n& Healthy Fats & Fruits\r\nWhole\r\nGrains\r\nrealfood.gov 2025-2030...\nAccording to the guideline [dga-2025-page-8-pass-0-3ed6d8ec], it states that: Introducing Food to Infants & Toddlers\r\n+ Every child is different. Look for these signs that your child is developmentally ready to begin eating food...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-9-pass-0-b67ed68f",
+      "dga-2025-page-1-pass-0-29362a66",
+      "dga-2025-page-8-pass-0-3ed6d8ec"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-9-pass-0-b67ed68f",
+        "dga-2025-page-1-pass-0-29362a66",
+        "dga-2025-page-8-pass-0-3ed6d8ec"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-8-pass-0-3ed6d8ec], it states that: Introducing Food to Infants & Toddlers\r\n+ Every child is different. Look for these signs that your child is developmentally ready to begin eating food...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-3-pass-0-ba481231",
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-8-pass-0-3ed6d8ec"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-3-pass-0-ba481231",
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2025-page-8-pass-0-3ed6d8ec"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-5-pass-0-99883976",
+      "dga-2025-page-3-pass-0-ba481231",
+      "dga-2025-page-4-pass-0-567ec170"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-5-pass-0-99883976",
+        "dga-2025-page-3-pass-0-ba481231",
+        "dga-2025-page-4-pass-0-567ec170"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-2-pass-1-30ccc370], it states that: This crisis is the result of poor policy choices; inadequate nutrition research; and a lack of coordination across\r\nfederal, state, local, and private...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-5-pass-0-99883976",
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-2-pass-1-30ccc370"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-5-pass-0-99883976",
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2025-page-2-pass-1-30ccc370"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2025-page-1-pass-0-29362a66], it states that: Dietary\r\nGuidelines\r\nFor Americans\r\nProtein, Dairy\r\n Vegetables\r\n& Healthy Fats & Fruits\r\nWhole\r\nGrains\r\nrealfood.gov 2025-2030...\nAccording to the guideline [dga-2020-page-8-pass-0-d50d372b], it states that: Guideline 4: Limit foods and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugar...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2025-page-1-pass-0-29362a66",
+      "dga-2020-page-8-pass-0-d50d372b"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2025-page-1-pass-0-29362a66",
+        "dga-2020-page-8-pass-0-d50d372b"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-6-pass-0-765dd278], it states that: Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditi...\nAccording to the guideline [dga-2025-page-4-pass-0-567ec170], it states that: Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and frui...\nAccording to the guideline [dga-2020-page-8-pass-0-d50d372b], it states that: Guideline 4: Limit foods and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugar...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-6-pass-0-765dd278",
+      "dga-2025-page-4-pass-0-567ec170",
+      "dga-2020-page-8-pass-0-d50d372b"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-6-pass-0-765dd278",
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2020-page-8-pass-0-d50d372b"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  }
+]

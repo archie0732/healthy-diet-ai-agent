@@ -1,0 +1,112 @@
+{
+  "recall": {
+    "baseline": {
+      "mean": 0.6333,
+      "ciLow": 0.4222,
+      "ciHigh": 0.8444
+    },
+    "proposed": {
+      "mean": 0.3111,
+      "ciLow": 0.0889,
+      "ciHigh": 0.6222
+    },
+    "difference": {
+      "mean": -0.3222,
+      "ciLow": -0.4889,
+      "ciHigh": -0.1556
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.0591,
+      "isSignificant": false
+    }
+  },
+  "precision": {
+    "baseline": {
+      "mean": 0.6111,
+      "ciLow": 0.4444,
+      "ciHigh": 0.7778
+    },
+    "proposed": {
+      "mean": 0.2222,
+      "ciLow": 0.1111,
+      "ciHigh": 0.3333
+    },
+    "difference": {
+      "mean": -0.3889,
+      "ciLow": -0.5556,
+      "ciHigh": -0.2222
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.0591,
+      "isSignificant": false
+    }
+  },
+  "mrr": {
+    "baseline": {
+      "mean": 1,
+      "ciLow": 1,
+      "ciHigh": 1
+    },
+    "proposed": {
+      "mean": 0.5556,
+      "ciLow": 0.1667,
+      "ciHigh": 0.8889
+    },
+    "difference": {
+      "mean": -0.4444,
+      "ciLow": -0.8333,
+      "ciHigh": -0.1111
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.1814,
+      "isSignificant": false
+    }
+  },
+  "ndcg": {
+    "baseline": {
+      "mean": 0.7997,
+      "ciLow": 0.6597,
+      "ciHigh": 0.9398
+    },
+    "proposed": {
+      "mean": 0.3796,
+      "ciLow": 0.1065,
+      "ciHigh": 0.7129
+    },
+    "difference": {
+      "mean": -0.4202,
+      "ciLow": -0.6065,
+      "ciHigh": -0.1933
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.0591,
+      "isSignificant": false
+    }
+  },
+  "required_recall": {
+    "baseline": {
+      "mean": 0.8333,
+      "ciLow": 0.5,
+      "ciHigh": 1
+    },
+    "proposed": {
+      "mean": 0.5,
+      "ciLow": 0.1667,
+      "ciHigh": 0.8333
+    },
+    "difference": {
+      "mean": -0.3333,
+      "ciLow": -0.6667,
+      "ciHigh": 0
+    },
+    "wilcoxon": {
+      "wStatistic": 0,
+      "pValue": 0.3711,
+      "isSignificant": false
+    }
+  }
+}

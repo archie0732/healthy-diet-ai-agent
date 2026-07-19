@@ -33,6 +33,8 @@ Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲�
 - 營養聊天助理，可用於飲食建議、餐點規劃與營養問答
 - 食物圖片分析流程，可支援餐點理解與營養導向互動
 - RAG 文件搜尋與文件管理，可整理與查詢營養知識文件
+- 版本感知與策略感知 RAG (Version-Aware & Policy-Aware RAG) 評估引擎，用於解決跨版本飲食指南之時間衝突與修訂依據
+- PDF 解析與清洗工具 (`src/rag_clean/pdf_to_clean_markdown.py`)，可將官方飲食指南 PDF 轉換為具表格敘述文字的結構化 Markdown
 - 知識圖譜抽取與搜尋，可建立較結構化的健康與飲食知識關聯
 - 衛福部資料同步流程，可匯入公開澄清資料與參考內容
 - 支援 `SQLite`、`Supabase`、HTTP API 與 CLI 的彈性部署模式
@@ -56,6 +58,8 @@ Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲�
 ## 特色
 
 - 可切換 storage backend：`sqlite` 或 `supabase`
+- 內建策略感知與版本感知 RAG 框架，支援可參數化的檢索加權與懲罰規則
+- 自動化 PDF-to-Markdown 轉換工具，保留完整表格結構與語意敘述
 - 可直接獨立部署，不必依賴 `health-diet-api`
 - 提供 HTTP API 與 terminal CLI
 - Docker 預設走 standalone SQLite 模式
@@ -72,15 +76,19 @@ Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲�
 ├── docs/                       # 資料庫 Schema 與補充說明文件
 │   ├── sqlite/                 # SQLite 資料庫 Schema 及範例測試資料
 │   └── supabase/               # Supabase 資料庫設定與腳本
+├── experiments/                # 實驗框架與 Benchmark 評估集
+│   └── version_aware_rag/      # 版本感知與策略感知 RAG 評估與參數凍結測試集
 ├── knowledge_base/             # 已匯入文件與 RAG 資料來源目錄
 │   ├── ingested_markdown/      # 已解析的 RAG 專用 Markdown 文件
 │   ├── mohw_clarifications/    # 衛福部 (MOHW) 同步資料存放目錄
 │   ├── uploads/                # 上傳原始檔案的暫存目錄
 │   └── NUTRITION_RULES.md      # 飲食分析的核心導引規則 (Ground-truth)
+├── plans/                      # 研究與執行計畫文檔目錄
 ├── raw_data/                   # 原始資料檔案或腳本
 ├── scripts/                    # 工具腳本 (如資料預處理、備份等)
 ├── src/                        # 主要原始碼目錄
 │   ├── config/                 # 應用程式設定 (Logger、環境變數驗證)
+│   ├── rag_clean/              # PDF 解析與 Markdown 清洗工具
 │   ├── server/                 # 業務邏輯處理與 Agent 實作
 │   │   ├── agentRuntime.ts     # 核心 LangChain/LangGraph 代理執行期設定
 │   │   ├── httpRuntime.ts      # HTTP 伺服器執行期引導 (Bootstrap)
@@ -88,6 +96,7 @@ Healthy Diet AI Agent 是一個以 Bun + TypeScript 建立的營養與健康飲�
 │   │   ├── knowledgeIngestion.ts # 處理檔案上傳、解析與向量嵌入匯入
 │   │   ├── mohwNews.ts         # 衛福部資料同步任務
 │   │   └── ragDocuments.ts     # 文件資料庫 CRUD 與索引器路由
+│   ├── shared/                 # 共享設定、雜湊計算與 Manifest 模組
 │   ├── storage/                # 資料庫抽象層 (SQLite 與 Supabase 配接器)
 │   │   ├── sqlite/             # SQLite 連線與配接器邏輯
 │   │   └── supabase/           # Supabase 客戶端與配接器邏輯

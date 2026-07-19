@@ -33,6 +33,8 @@ This repository now supports two deployment modes:
 - Nutrition chat assistant for dietary advice, meal planning, and nutrition Q&A
 - Food image analysis workflow supporting meal understanding and nutrition-guided interactions
 - RAG document search and document management to organize and query nutrition knowledge documents
+- Version-Aware & Policy-Aware RAG evaluation engine for resolving multi-version dietary guideline temporal conflicts
+- PDF processing tool (`src/rag_clean/pdf_to_clean_markdown.py`) for converting official guideline PDFs into structured Markdown with prose tables
 - Knowledge graph extraction and search to establish structured health and diet knowledge relations
 - MOHW data sync pipeline for importing public clarification and reference content
 - Flexible deployment modes supporting SQLite, Supabase, HTTP API, and CLI
@@ -56,6 +58,8 @@ As this repository started receiving more attention and views, the project's dir
 ## Highlights
 
 - Switchable storage backend: `sqlite` or `supabase`
+- Policy-Aware & Version-Aware RAG framework with parameterizable retrieval rules
+- Automated PDF-to-Markdown conversion tool preserving table prose descriptions
 - Directly deployable independently, without relying on `health-diet-api`
 - Provides both HTTP API and terminal CLI
 - Docker default is standalone SQLite mode
@@ -72,15 +76,19 @@ As this repository started receiving more attention and views, the project's dir
 ├── docs/                       # DB schemas and supplementary documents
 │   ├── sqlite/                 # SQLite database schema and sample data
 │   └── supabase/               # Supabase database configuration and scripts
+├── experiments/                # Experimental frameworks and benchmark suites
+│   └── version_aware_rag/      # Version-Aware & Policy-Aware RAG evaluation & config frozen suites
 ├── knowledge_base/             # Ingested documents and RAG data source directories
 │   ├── ingested_markdown/      # Parsed markdown documents used for RAG
 │   ├── mohw_clarifications/    # Sync target for MOHW (Ministry of Health and Welfare) data
 │   ├── uploads/                # Temporary directory for uploaded source files
 │   └── NUTRITION_RULES.md      # Ground-truth guidelines for dietary analysis
+├── plans/                      # Research and execution planning documents
 ├── raw_data/                   # Raw data files or scripts
 ├── scripts/                    # Utility scripts (e.g. data preprocessing, backup)
 ├── src/                        # Main source code directory
 │   ├── config/                 # App configurations (logger, env validators)
+│   ├── rag_clean/              # PDF processing & Markdown sanitization tools
 │   ├── server/                 # Business logic handlers and Agent implementation
 │   │   ├── agentRuntime.ts     # Core LangChain/LangGraph agent runtime setup
 │   │   ├── httpRuntime.ts      # HTTP server runtime bootstrap
@@ -88,6 +96,7 @@ As this repository started receiving more attention and views, the project's dir
 │   │   ├── knowledgeIngestion.ts # Handles files uploading, parsing and embedding ingestion
 │   │   ├── mohwNews.ts         # MOHW data synchronization task
 │   │   └── ragDocuments.ts     # Document database crud and indexer routes
+│   ├── shared/                 # Shared configuration, hashing, and manifest modules
 │   ├── storage/                # Database abstraction layer (SQLite and Supabase adapters)
 │   │   ├── sqlite/             # SQLite connection and adapter logic
 │   │   └── supabase/           # Supabase client and database adapter logic

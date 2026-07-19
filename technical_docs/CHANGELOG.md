@@ -1,5 +1,67 @@
 # CHANGELOG
 
+## 2026-07-19 20:50 Asia/Taipei
+
+- Summary: Parameterized Policy-Aware RAG retrieval rules, froze V3 dataset & experiment contract, and validated dev-split metrics.
+- Author: Codex
+- Scope:
+  - Policy-Aware Retrieval
+  - RAG evaluation v3
+  - Configuration schema & tests
+- Files:
+  - `experiments/version_aware_rag/configs/v3/experiment.schema.ts`
+  - `experiments/version_aware_rag/src/versioning/types.ts`
+  - `experiments/version_aware_rag/src/retrieval/version_aware.ts`
+  - `experiments/version_aware_rag/src/retrieval/result_diversification.ts`
+  - `experiments/version_aware_rag/scripts/v3/run_experiment.ts`
+  - `experiments/version_aware_rag/tests/unit/ablation_control_fixtures.test.ts`
+  - `experiments/version_aware_rag/POLICY_PARAMETER_FREEZE_REPORT_V3.md`
+  - `experiments/version_aware_rag/WALKTHROUGH_V3.md`
+- API:
+  - Added: `none`
+  - Changed: `none`
+  - Removed: `none`
+- Env:
+  - Added: `none`
+  - Changed: `none`
+  - Removed: `none`
+- Notes:
+  - Policy parameters (`retain_relation_boost`, `condition_boost`, `expansion_seed_threshold`, `expansion_min_base_score`, `diversification_penalty`) are now fully configurable via YAML schemas.
+  - Frozen V3 dataset and policy parameter benchmarks (MRR 0.424, nDCG 0.325, Recall 30.0%).
+
+## 2026-07-05 16:30 Asia/Taipei
+
+- Summary: Added Version-Aware RAG experiment framework, PDF guideline parsing tool, shared infrastructure, and updated project documentation.
+- Author: Codex
+- Scope:
+  - Version-Aware RAG evaluation
+  - PDF document processing
+  - Shared infrastructure
+  - Repository documentation & dependencies
+- Files:
+  - `experiments/version_aware_rag/`
+  - `src/rag_clean/pdf_to_clean_markdown.py`
+  - `src/shared/config.ts`
+  - `src/shared/hash.ts`
+  - `src/shared/manifest.ts`
+  - `package.json`
+  - `README.md`
+  - `README_zh.md`
+  - `README_jp.md`
+  - `technical_docs/CHANGELOG.md`
+- API:
+  - Added: `none`
+  - Changed: `none`
+  - Removed: `none`
+- Env:
+  - Added: `none`
+  - Changed: `none`
+  - Removed: `none`
+- Notes:
+  - Added `src/rag_clean/pdf_to_clean_markdown.py` for transforming official PDF guidelines into structured Markdown with tabular prose.
+  - Built the Version-Aware RAG framework to handle multi-version guideline conflicts (Dietary Guidelines for Americans 2015-2030).
+  - Updated dependencies and extended shared TypeScript modules in `src/shared/`.
+
 ## 2026-07-01 12:55 Asia/Taipei
 
 - Summary: Hardened RAG admin route authentication and prevent failed chat turns from leaving `__PENDING__` rows behind.

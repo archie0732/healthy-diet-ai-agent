@@ -1,0 +1,22 @@
+experiment:
+  id: proposed_version_aware
+  seed: 42
+  split: all
+corpus:
+  path: experiments/version_aware_rag/data/chunks/rag_chunks.json
+  checksum: null
+retrieval:
+  mode: proposed
+  backend: heuristic
+  top_k: 3
+  recency_weight: 0
+version_policy:
+  relation_source: gold
+  deprecated_filter: true
+  compatibility_expansion: false
+evaluation:
+  query_path: experiments/version_aware_rag/data/annotations/evaluation_queries_v2.json
+  judgment_path: experiments/version_aware_rag/data/annotations/evaluation_query_judgments_v2.json
+  strata: true
+output:
+  root: experiments/version_aware_rag/results/v3

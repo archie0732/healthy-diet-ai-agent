@@ -1,0 +1,7 @@
+{
+  "mode": "append_only",
+  "staleRetrievalRate": 0.8,
+  "currentVersionHitRate": 0.8,
+  "top1CitationUnsafeRate": 0.2,
+  "avgUnsafeChunkCountAtK": 1.6
+}

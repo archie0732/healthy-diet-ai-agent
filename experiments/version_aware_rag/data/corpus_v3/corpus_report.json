@@ -1,0 +1,96 @@
+{
+  "total_chunks": 583,
+  "version_distribution": {
+    "2015-2020": 514,
+    "2020-2025": 56,
+    "2025-2030": 13
+  },
+  "word_length_stats": {
+    "min": 1,
+    "max": 807,
+    "avg": 216.58
+  },
+  "exact_duplicates": 0,
+  "near_duplicates": 66,
+  "null_lineage_count": 478,
+  "null_lineage_rate": 0.82,
+  "lineage_version_coverage": {
+    "lineage-general": {
+      "2015-2020": 201,
+      "2020-2025": 38,
+      "2025-2030": 1
+    },
+    "lineage-alcohol": {
+      "2015-2020": 80,
+      "2020-2025": 5,
+      "2025-2030": 3
+    },
+    "lineage-veg-fruits": {
+      "2015-2020": 143,
+      "2020-2025": 10,
+      "2025-2030": 10
+    },
+    "lineage-protein": {
+      "2015-2020": 155,
+      "2020-2025": 4,
+      "2025-2030": 10
+    },
+    "lineage-whole-grains": {
+      "2015-2020": 54,
+      "2020-2025": 3,
+      "2025-2030": 8
+    },
+    "lineage-sugars": {
+      "2015-2020": 92,
+      "2020-2025": 6,
+      "2025-2030": 7
+    },
+    "lineage-sodium": {
+      "2015-2020": 70,
+      "2020-2025": 5,
+      "2025-2030": 6
+    },
+    "lineage-processed-foods": {
+      "2015-2020": 40,
+      "2020-2025": 3,
+      "2025-2030": 8
+    },
+    "lineage-dairy": {
+      "2015-2020": 122,
+      "2020-2025": 5,
+      "2025-2030": 11
+    },
+    "lineage-cholesterol": {
+      "2015-2020": 31,
+      "2020-2025": 2,
+      "2025-2030": 1
+    },
+    "lineage-sweeteners": {
+      "2015-2020": 12,
+      "2025-2030": 1
+    }
+  },
+  "page_sequence_audit": {
+    "dga-2015": {
+      "min_page": 1,
+      "max_page": 144,
+      "missing_pages": [
+        8,
+        143
+      ],
+      "duplicate_pages": []
+    },
+    "dga-2020": {
+      "min_page": 2,
+      "max_page": 57,
+      "missing_pages": [],
+      "duplicate_pages": []
+    },
+    "dga-2025": {
+      "min_page": 1,
+      "max_page": 10,
+      "missing_pages": [],
+      "duplicate_pages": []
+    }
+  }
+}

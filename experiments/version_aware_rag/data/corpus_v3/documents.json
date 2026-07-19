@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dga-2015",
+    "edition": "2015-2020",
+    "published_at": "2015-12-01",
+    "source_url": "https://health.gov/our-work/food-nutrition/previous-dietary-guidelines/2015",
+    "source_checksum": "6eedb515bdb4bf307a3a337f32c71fd9fd1edcbace4dc9046c79104b5796ed2d",
+    "normalized_path": "experiments/version_aware_rag/data/normalized/Dietary-Guidelines-for-Americans-2015-2020.md"
+  },
+  {
+    "id": "dga-2020",
+    "edition": "2020-2025",
+    "published_at": "2020-12-01",
+    "source_url": "https://www.dietaryguidelines.gov/sites/default/files/2020-12/Dietary_Guidelines_for_Americans_2020-2025.pdf",
+    "source_checksum": "5c64f2d4b4f2a30254868952e2fd0a3032a50c32cfcbdf2320cdf26826c812ad",
+    "normalized_path": "experiments/version_aware_rag/data/normalized/Dietary-Guidelines-for-Americans-2020-2025.md"
+  },
+  {
+    "id": "dga-2025",
+    "edition": "2025-2030",
+    "published_at": "2026-01-01",
+    "source_url": "https://www.dietaryguidelines.gov/sites/default/files/2026-01/Dietary_Guidelines_for_Americans_2025-2030.pdf",
+    "source_checksum": "1fd2c0153bb10e3e08c0919487af1fb03577f380e76d51d050ae433ecca88114",
+    "normalized_path": "experiments/version_aware_rag/data/normalized/Dietary-Guidelines-for-Americans-2025-2030.md"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "overall": {
+    "recall": null,
+    "precision": null,
+    "mrr": 0,
+    "ndcg": 0,
+    "preferred_hit_rate": 0,
+    "required_recall": null,
+    "both_evidence_coverage": null,
+    "stale_hit_rate": 0,
+    "compatible_recall": null,
+    "conditional_completeness": null,
+    "top1_safety_rate": null,
+    "avg_unsafe_chunks": 0,
+    "query_count": 0
+  },
+  "by_strata": {},
+  "queries": []
+}

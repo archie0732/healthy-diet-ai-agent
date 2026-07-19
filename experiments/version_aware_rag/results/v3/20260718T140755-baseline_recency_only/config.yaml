@@ -1,0 +1,22 @@
+experiment:
+  id: baseline_recency_only
+  seed: 42
+  split: development
+corpus:
+  path: experiments/version_aware_rag/data/corpus_v3/chunks.jsonl
+  checksum: ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7
+retrieval:
+  mode: recency_only
+  backend: bm25
+  top_k: 3
+  recency_weight: 0.75
+version_policy:
+  relation_source: none
+  deprecated_filter: false
+  compatibility_expansion: false
+evaluation:
+  query_path: experiments/version_aware_rag/data/annotations_v3/queries.jsonl
+  judgment_path: experiments/version_aware_rag/data/annotations_v3/judgments.adjudicated.jsonl
+  strata: true
+output:
+  root: experiments/version_aware_rag/results/v3

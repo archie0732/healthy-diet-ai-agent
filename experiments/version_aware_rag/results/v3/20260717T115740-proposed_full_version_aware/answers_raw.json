@@ -1,0 +1,134 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-42-pass-1-cba796aa], it states that: , niacin, vitamin B , vitamin B, and\r\nFat-free or low-fat milk and yogurt, in 12 6\r\nriboflavin), selenium, choline, phosphorus,\r\ncomparison to cheese,...\nAccording to the guideline [dga-2015-page-42-pass-2-946f4c40], it states that: Soy beverages fortified are unable or choose not to consume 12\r\nand vitamin D, in addition to almost all\r\nwith calcium, vitamin A, and vitamin D, dair...\nAccording to the guideline [dga-2015-page-68-pass-2-7502391f], it states that: beneficial if more fat-free or low-fat\r\nsandwiches, tacos, pizza, macaroni and\r\nmilk and yogurt were selected rather\r\ncheese, and spaghetti with meatb...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-42-pass-1-cba796aa",
+      "dga-2015-page-42-pass-2-946f4c40",
+      "dga-2015-page-68-pass-2-7502391f"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2015-page-42-pass-1-cba796aa",
+        "dga-2015-page-42-pass-2-946f4c40",
+        "dga-2015-page-68-pass-2-7502391f"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-3-pass-0-ba481231], it states that: Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and lev...\nAccording to the guideline [dga-2015-page-39-pass-0-5f864b53], it states that: Importance of Calorie Balance\r\nWithin Healthy Eating Patterns\r\nManaging calorie intake is fundamental to achieving and maintaining calorie balance-the...\nAccording to the guideline [dga-2015-page-17-pass-0-98da7a8d], it states that: Figure ES-1.\r\n2015-2020 Dietary Guidelines for Americans at a Glance\r\nThe 2015-2020 Dietary Guidelines focuses on the big picture with recommendations...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-3-pass-0-ba481231",
+      "dga-2015-page-39-pass-0-5f864b53",
+      "dga-2015-page-17-pass-0-98da7a8d"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-3-pass-0-ba481231",
+        "dga-2015-page-39-pass-0-5f864b53",
+        "dga-2015-page-17-pass-0-98da7a8d"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-34-pass-1-14bfc3a3], it states that: A healthy eating pattern includes:[2]\r\n* A variety of vegetables from all of the subgroups-dark green, red and orange, legumes (beans and peas), starc...\nAccording to the guideline [dga-2015-page-15-pass-0-8effd6bb], it states that: Key Recommendations provide further guidance on how individuals can follow the five Guidelines. The Dietary Guidelines' Key\r\nRecommendations for healt...\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-34-pass-1-14bfc3a3",
+      "dga-2015-page-15-pass-0-8effd6bb",
+      "dga-2025-page-5-pass-0-99883976"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2015-page-34-pass-1-14bfc3a3",
+        "dga-2015-page-15-pass-0-8effd6bb",
+        "dga-2025-page-5-pass-0-99883976"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2025-page-5-pass-0-99883976], it states that: Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars o...\nAccording to the guideline [dga-2015-page-112-pass-0-b060c007], it states that: eating behaviors to improve food and/ of high-intensity sweeteners are needed * Poultry-All forms of chicken,\r\nor nutrition choices, and potentially, ...\nAccording to the guideline [dga-2015-page-39-pass-2-9c0c0f07], it states that: In adults who\r\nare overweight or obese, if reduction in total calorie intake is achieved, a variety of eating patterns can\r\nproduce weight loss, parti...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2025-page-5-pass-0-99883976",
+      "dga-2015-page-112-pass-0-b060c007",
+      "dga-2015-page-39-pass-2-9c0c0f07"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2025-page-5-pass-0-99883976",
+        "dga-2015-page-112-pass-0-b060c007",
+        "dga-2015-page-39-pass-2-9c0c0f07"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-53-pass-0-44ecc419], it states that: regarding the dose-response relationship linear dose-response relationship between Considerations: As a food ingredient,\r\nbetween dietary cholesterol ...\nAccording to the guideline [dga-2015-page-109-pass-2-5d4110fa], it states that: If is a component of cell membranes and\r\nnot specified explicitly, references to serves as a precursor for steroid hormones D\r\n\"calories\" refer to \"ki...\nAccording to the guideline [dga-2015-page-34-pass-0-c2271a33], it states that: Key Recommen d ations: The Dietary Guidelines' Key in this chapter, there is more than one\r\nRecommendations for healthy eat ing way to put these Key R...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-53-pass-0-44ecc419",
+      "dga-2015-page-109-pass-2-5d4110fa",
+      "dga-2015-page-34-pass-0-c2271a33"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2015-page-53-pass-0-44ecc419",
+        "dga-2015-page-109-pass-2-5d4110fa",
+        "dga-2015-page-34-pass-0-c2271a33"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "answer": "Based on the provided evidence:\nAccording to the guideline [dga-2015-page-120-pass-0-60d0bb19], it states that: Appendix 9. Alcohol\r\nIf alcohol is consumed, it should be in beer (5% alcohol), 5 fluid ounces of wine Alcoholic Beverages\r\nmoderation-up to one drink...\nAccording to the guideline [dga-2015-page-53-pass-1-1f5bf91a], it states that: Because\r\nMultiple strategies should be implemented\r\nchoices within and across the subgroup children have lower calorie needs than\r\nto reduce sodium in...\nAccording to the guideline [dga-2015-page-122-pass-1-3bb8b5d2], it states that: [13]\r\nfew months of pregnancy, may result\r\nThose Who Should in negative behavioral or neurological\r\nconsequences in the offspring. No safe\r\nNot Consum...\n(Exceptions apply for specific target groups if mentioned in the context).",
+    "citations": [
+      "dga-2015-page-120-pass-0-60d0bb19",
+      "dga-2015-page-53-pass-1-1f5bf91a",
+      "dga-2015-page-122-pass-1-3bb8b5d2"
+    ],
+    "citation_validation": {
+      "valid": [
+        "dga-2015-page-120-pass-0-60d0bb19",
+        "dga-2015-page-53-pass-1-1f5bf91a",
+        "dga-2015-page-122-pass-1-3bb8b5d2"
+      ],
+      "invalid": []
+    },
+    "model_info": {
+      "generator": "local_template",
+      "reason": "API key missing or request failed"
+    }
+  }
+]

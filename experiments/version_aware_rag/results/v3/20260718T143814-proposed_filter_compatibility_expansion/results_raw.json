@@ -1,0 +1,1210 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-42-pass-1-cba796aa",
+        "baseScore": 9.393194327339542,
+        "finalScore": 9.393194327339542,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 9.393194327339542
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-68-pass-2-7502391f",
+        "baseScore": 9.024531472292988,
+        "finalScore": 9.024531472292988,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 9.024531472292988
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-42-pass-2-946f4c40",
+        "baseScore": 8.950214067139061,
+        "finalScore": 8.950214067139061,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.950214067139061
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-3-pass-0-ba481231",
+        "baseScore": 14.305297264159556,
+        "finalScore": 14.305297264159556,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 14.305297264159556
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-39-pass-0-5f864b53",
+        "baseScore": 11.736858169368043,
+        "finalScore": 11.736858169368043,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.736858169368043
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-5-pass-1-d9f953a9",
+        "baseScore": 9.889503428205792,
+        "finalScore": 9.889503428205792,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 9.889503428205792
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.3333333333333333,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.638787886479598,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 11.081429076089389,
+        "finalScore": 11.081429076089389,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 11.081429076089389
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-3-pass-0-ba481231",
+        "baseScore": 10.828093051576403,
+        "finalScore": 10.828093051576403,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 10.828093051576403
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-18-pass-0-305c6857",
+        "baseScore": 10.745591359852217,
+        "finalScore": 10.745591359852217,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 10.745591359852217
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.6666666666666666,
+      "precision": 0.6666666666666666,
+      "mrr": 1,
+      "ndcg": 0.8403030283801005,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0.5,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 1
+    }
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 28.810638727620688,
+        "finalScore": 28.810638727620688,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 28.810638727620688
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-14-pass-0-45535101",
+        "baseScore": 7.784059632404474,
+        "finalScore": 25.92957485485862,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 7.784059632404474,
+          "expanded": 1,
+          "parent_id": "dga-2025-page-5-pass-0-99883976",
+          "parent_score": 28.810638727620688,
+          "expansion_score": 25.92957485485862
+        },
+        "relationReason": "Active version (passed policy filter); Expanded from parent chunk dga-2025-page-5-pass-0-99883976"
+      },
+      {
+        "chunkId": "dga-2015-page-112-pass-0-b060c007",
+        "baseScore": 22.64574873756258,
+        "finalScore": 22.64574873756258,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 22.64574873756258
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-53-pass-0-44ecc419",
+        "baseScore": 9.794301917254927,
+        "finalScore": 9.794301917254927,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 9.794301917254927
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-109-pass-2-5d4110fa",
+        "baseScore": 9.236299366737027,
+        "finalScore": 9.236299366737027,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 9.236299366737027
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-34-pass-0-c2271a33",
+        "baseScore": 9.041437956955875,
+        "finalScore": 9.041437956955875,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 9.041437956955875
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.2,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.319393943239799,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0.25,
+      "conditional_completeness": 0,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-120-pass-0-60d0bb19",
+        "baseScore": 10.961616932493149,
+        "finalScore": 10.961616932493149,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 10.961616932493149
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-1-1f5bf91a",
+        "baseScore": 8.541241620644215,
+        "finalScore": 8.541241620644215,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 8.541241620644215
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-122-pass-1-3bb8b5d2",
+        "baseScore": 8.091614564981956,
+        "finalScore": 8.091614564981956,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.091614564981956
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-011",
+    "question": "Can older adults consume full-fat dairy products like cheese or yogurt?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-42-pass-1-cba796aa",
+        "baseScore": 20.14257632360104,
+        "finalScore": 20.14257632360104,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 20.14257632360104
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-68-pass-0-51f669da",
+        "baseScore": 18.291778368950638,
+        "finalScore": 18.291778368950638,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 18.291778368950638
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-68-pass-2-7502391f",
+        "baseScore": 17.085216868379767,
+        "finalScore": 17.085216868379767,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 17.085216868379767
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-012",
+    "question": "Is full-fat dairy recommended for toddlers and adolescents?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-8-pass-0-3ed6d8ec",
+        "baseScore": 16.222071612178286,
+        "finalScore": 16.222071612178286,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 16.222071612178286
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2020-page-39-pass-0-d794f5e3",
+        "baseScore": 9.396167054954633,
+        "finalScore": 9.396167054954633,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 9.396167054954633
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-42-pass-0-fc0b5bb5",
+        "baseScore": 8.637943981126671,
+        "finalScore": 8.637943981126671,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.637943981126671
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.7601875334318686,
+      "preferred_hit": 1,
+      "required_recall": 0.5,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0.5,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-013",
+    "question": "What are the historical guidelines from 2015 regarding low-fat milk serving amounts?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-51-pass-3-794a856c",
+        "baseScore": 11.820308326582559,
+        "finalScore": 11.820308326582559,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 11.820308326582559
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-129-pass-0-1bb1bd26",
+        "baseScore": 11.368404009391758,
+        "finalScore": 11.368404009391758,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.368404009391758
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-129-pass-1-16755513",
+        "baseScore": 10.960987954509356,
+        "finalScore": 10.960987954509356,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 10.960987954509356
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-014",
+    "question": "Are plant-sourced proteins like beans and lentils recommended for vegetarians?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-105-pass-0-df38e7c6",
+        "baseScore": 12.138835750039053,
+        "finalScore": 12.138835750039053,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 12.138835750039053
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-3-pass-0-ba481231",
+        "baseScore": 12.031720394905484,
+        "finalScore": 12.031720394905484,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 12.031720394905484
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-10-pass-0-bfcc4aa4",
+        "baseScore": 11.550327841728382,
+        "finalScore": 11.550327841728382,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 11.550327841728382
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.3800937667159343,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-015",
+    "question": "What are the protein intake recommendations for pregnant and older adults?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-9-pass-0-b67ed68f",
+        "baseScore": 10.196747618908542,
+        "finalScore": 10.196747618908542,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 10.196747618908542
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-93-pass-5-992edb99",
+        "baseScore": 8.783388200111709,
+        "finalScore": 8.783388200111709,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 8.783388200111709
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-93-pass-4-795329d3",
+        "baseScore": 8.716401648950825,
+        "finalScore": 8.716401648950825,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.716401648950825
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.7601875334318686,
+      "preferred_hit": 1,
+      "required_recall": 0.5,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0.5,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-016",
+    "question": "What was the 2015 guidance on lean meat cholesterol limit?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-112-pass-0-b060c007",
+        "baseScore": 9.86497420527199,
+        "finalScore": 9.86497420527199,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 9.86497420527199
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-109-pass-3-9bd00408",
+        "baseScore": 8.9232770391639,
+        "finalScore": 8.9232770391639,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 8.9232770391639
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-76-pass-1-42a8a69d",
+        "baseScore": 8.918292620376882,
+        "finalScore": 8.918292620376882,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.918292620376882
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-017",
+    "question": "Can honey and molasses be used in moderation as sweeteners?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-108-pass-0-b5256553",
+        "baseScore": 15.977215825406338,
+        "finalScore": 15.977215825406338,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 15.977215825406338
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 13.753535195602229,
+        "finalScore": 13.753535195602229,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 13.753535195602229
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-47-pass-1-81aee9ee",
+        "baseScore": 13.487983404785258,
+        "finalScore": 13.487983404785258,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 13.487983404785258
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 0.5,
+      "ndcg": 0.4796249331362629,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-018",
+    "question": "What is the recommended limit for added sugars in snacks and general dietary patterns?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-74-pass-0-fbb8dffd",
+        "baseScore": 12.728535795898306,
+        "finalScore": 12.728535795898306,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 12.728535795898306
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-74-pass-1-a533e240",
+        "baseScore": 11.322049003068733,
+        "finalScore": 11.322049003068733,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.322049003068733
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 11.166222821197307,
+        "finalScore": 11.166222821197307,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 11.166222821197307
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.3800937667159343,
+      "preferred_hit": 1,
+      "required_recall": 0.5,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0.5,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-019",
+    "question": "What was the 2015 limit on calories per day from added sugars?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-7-pass-0-63bc594f",
+        "baseScore": 12.772992399961327,
+        "finalScore": 12.772992399961327,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 12.772992399961327
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-101-pass-2-3b12aa02",
+        "baseScore": 12.066758798142631,
+        "finalScore": 12.066758798142631,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 12.066758798142631
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-15-pass-2-4f8ad116",
+        "baseScore": 12.012486929348462,
+        "finalScore": 12.012486929348462,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 12.012486929348462
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-020",
+    "question": "What are the common artificial sweeteners approved by the FDA?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-112-pass-0-b060c007",
+        "baseScore": 13.944939154489251,
+        "finalScore": 13.944939154489251,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 13.944939154489251
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 13.765854452831103,
+        "finalScore": 13.765854452831103,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 13.765854452831103
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-51-pass-1-e263007a",
+        "baseScore": 7.0256425299266985,
+        "finalScore": 7.0256425299266985,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 7.0256425299266985
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 0.5,
+      "ndcg": 0.4796249331362629,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-021",
+    "question": "Should high-intensity artificial sweeteners be used for long-term weight management?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-112-pass-0-b060c007",
+        "baseScore": 23.095480648616043,
+        "finalScore": 23.095480648616043,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 23.095480648616043
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-112-pass-3-66eb381d",
+        "baseScore": 16.531287454584376,
+        "finalScore": 16.531287454584376,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 16.531287454584376
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-39-pass-2-9c0c0f07",
+        "baseScore": 16.195043436333766,
+        "finalScore": 16.195043436333766,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 16.195043436333766
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-022",
+    "question": "What were the safety determinations of aspartame and sucralose in 2015?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 8.809600626891084,
+        "finalScore": 8.809600626891084,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 8.809600626891084
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-21-pass-2-b63c6732",
+        "baseScore": 6.308615876803984,
+        "finalScore": 6.308615876803984,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 6.308615876803984
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-26-pass-0-98ec2f79",
+        "baseScore": 6.078983659178215,
+        "finalScore": 6.078983659178215,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 6.078983659178215
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 1,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-023",
+    "question": "What is the current quantitative daily limit for dietary cholesterol intake?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-53-pass-0-44ecc419",
+        "baseScore": 8.952856716963836,
+        "finalScore": 8.952856716963836,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 8.952856716963836
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2025-page-4-pass-0-567ec170",
+        "baseScore": 6.635900940249174,
+        "finalScore": 8.057571045267453,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 6.635900940249174,
+          "expanded": 1,
+          "parent_id": "dga-2015-page-53-pass-0-44ecc419",
+          "parent_score": 8.952856716963836,
+          "expansion_score": 8.057571045267453
+        },
+        "relationReason": "Active version (passed policy filter); Expanded from parent chunk dga-2015-page-53-pass-0-44ecc419"
+      },
+      {
+        "chunkId": "dga-2015-page-57-pass-1-54a8fb80",
+        "baseScore": 7.48147381963772,
+        "finalScore": 7.48147381963772,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 7.48147381963772
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 0.3333333333333333,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714574,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-024",
+    "question": "Are eggs and shellfish recommended despite their cholesterol content?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-53-pass-0-44ecc419",
+        "baseScore": 13.404454283464162,
+        "finalScore": 13.404454283464162,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 13.404454283464162
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-109-pass-0-12b14807",
+        "baseScore": 10.903037392500517,
+        "finalScore": 10.903037392500517,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 10.903037392500517
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-140-pass-1-b098bf69",
+        "baseScore": 10.877731734652102,
+        "finalScore": 10.877731734652102,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 10.877731734652102
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.3800937667159343,
+      "preferred_hit": 0,
+      "required_recall": 0.5,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0.5,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-025",
+    "question": "What was the 2010 dietary cholesterol limit mentioned in the 2015 report?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-27-pass-2-dc13f4d4",
+        "baseScore": 13.581823920285682,
+        "finalScore": 13.581823920285682,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 13.581823920285682
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-27-pass-1-4a74fcd5",
+        "baseScore": 12.895368110724643,
+        "finalScore": 12.895368110724643,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 12.895368110724643
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-26-pass-2-f5786e39",
+        "baseScore": 12.792009288677201,
+        "finalScore": 12.792009288677201,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 12.792009288677201
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-026",
+    "question": "Who should completely avoid alcoholic beverages?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-6-pass-0-765dd278",
+        "baseScore": 18.904037612004878,
+        "finalScore": 18.904037612004878,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 18.904037612004878
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-120-pass-0-60d0bb19",
+        "baseScore": 11.120763281551076,
+        "finalScore": 11.120763281551076,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.120763281551076
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-80-pass-1-48842e94",
+        "baseScore": 8.525926082813799,
+        "finalScore": 8.525926082813799,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.525926082813799
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.7601875334318686,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-027",
+    "question": "What are the moderation limits for alcohol consumption?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-120-pass-0-60d0bb19",
+        "baseScore": 13.361370963985493,
+        "finalScore": 13.361370963985493,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 13.361370963985493
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-78-pass-0-3cd923b7",
+        "baseScore": 9.249238582875268,
+        "finalScore": 9.249238582875268,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 9.249238582875268
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-1-1f5bf91a",
+        "baseScore": 8.907178135310767,
+        "finalScore": 8.907178135310767,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.907178135310767
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": 0,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-028",
+    "question": "What were the specific drink-equivalent limits for men and women in 2015?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-120-pass-0-60d0bb19",
+        "baseScore": 14.852437204676571,
+        "finalScore": 14.852437204676571,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 14.852437204676571
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-121-pass-1-9eb4e00e",
+        "baseScore": 13.550374424549016,
+        "finalScore": 13.550374424549016,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 13.550374424549016
+        },
+        "relationReason": "Active version (passed policy filter)"
+      },
+      {
+        "chunkId": "dga-2015-page-120-pass-2-3763bdd1",
+        "baseScore": 13.060729700573685,
+        "finalScore": 13.060729700573685,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 13.060729700573685
+        },
+        "relationReason": "Active version (passed policy filter)"
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  }
+]

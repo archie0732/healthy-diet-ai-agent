@@ -133,8 +133,8 @@ graph LR
 After removing oracle lineage routing and simulated citation metrics, the repaired evaluation shows that:
 
 - Append-Only still retrieves stale material on some queries.
-- Recency-Only currently outperforms Proposed on current-hit rate under the repaired scorer.
-- Proposed has not yet demonstrated superiority under the credibility-repaired setup.
+- Recency-Only and Proposed tie on current-hit rate under the repaired scorer.
+- Proposed still shows residual stale retrieval exposure (10%), so superiority over Recency-Only is not yet established.
 
 ## What This Stage Establishes
 

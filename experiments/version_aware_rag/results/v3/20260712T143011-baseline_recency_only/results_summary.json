@@ -1,0 +1,7 @@
+{
+  "mode": "recency_only",
+  "staleRetrievalRate": 0,
+  "currentVersionHitRate": 1,
+  "top1CitationUnsafeRate": 0,
+  "avgUnsafeChunkCountAtK": 0.4
+}

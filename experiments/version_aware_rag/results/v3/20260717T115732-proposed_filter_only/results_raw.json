@@ -1,0 +1,284 @@
+[
+  {
+    "query_id": "q-001",
+    "question": "What are the guidelines and daily serving goals for consuming dairy and milk products?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-42-pass-1-cba796aa",
+        "baseScore": 9.393194327339542,
+        "finalScore": 9.393194327339542,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 9.393194327339542
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-68-pass-2-7502391f",
+        "baseScore": 9.024531472292988,
+        "finalScore": 9.024531472292988,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 9.024531472292988
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-42-pass-2-946f4c40",
+        "baseScore": 8.950214067139061,
+        "finalScore": 8.950214067139061,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.950214067139061
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  },
+  {
+    "query_id": "q-002",
+    "question": "What is the recommended daily protein intake goal per kilogram of body weight?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-3-pass-0-ba481231",
+        "baseScore": 14.305297264159556,
+        "finalScore": 14.305297264159556,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 14.305297264159556
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-39-pass-0-5f864b53",
+        "baseScore": 11.736858169368043,
+        "finalScore": 11.736858169368043,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 11.736858169368043
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-5-pass-1-d9f953a9",
+        "baseScore": 9.889503428205792,
+        "finalScore": 9.889503428205792,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 9.889503428205792
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.3333333333333333,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.638787886479598,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-003",
+    "question": "What is the quantitative limit or recommendation for added sugars per meal or day?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-34-pass-1-14bfc3a3",
+        "baseScore": 13.547120588296872,
+        "finalScore": 13.547120588296872,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 13.547120588296872
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-15-pass-0-8effd6bb",
+        "baseScore": 12.04314826145316,
+        "finalScore": 12.04314826145316,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 12.04314826145316
+        }
+      },
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 11.081429076089389,
+        "finalScore": 11.081429076089389,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 11.081429076089389
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.3333333333333333,
+      "precision": 0.3333333333333333,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.319393943239799,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 1,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-004",
+    "question": "Are low-calorie non-nutritive artificial sweeteners recommended for long-term weight management?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2025-page-5-pass-0-99883976",
+        "baseScore": 28.810638727620688,
+        "finalScore": 28.810638727620688,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 28.810638727620688
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-112-pass-0-b060c007",
+        "baseScore": 22.64574873756258,
+        "finalScore": 22.64574873756258,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 22.64574873756258
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-39-pass-2-9c0c0f07",
+        "baseScore": 17.546265091510147,
+        "finalScore": 17.546265091510147,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 17.546265091510147
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 1,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 1,
+      "preferred_hit": 1,
+      "required_recall": 1,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": null,
+      "conditional_completeness": 1,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-005",
+    "question": "Is there a daily quantitative limit for dietary cholesterol in the guidelines?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-53-pass-0-44ecc419",
+        "baseScore": 9.794301917254927,
+        "finalScore": 9.794301917254927,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 9.794301917254927
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-109-pass-2-5d4110fa",
+        "baseScore": 9.236299366737027,
+        "finalScore": 9.236299366737027,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 9.236299366737027
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-34-pass-0-c2271a33",
+        "baseScore": 9.041437956955875,
+        "finalScore": 9.041437956955875,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 9.041437956955875
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0.2,
+      "precision": 0.3333333333333333,
+      "mrr": 1,
+      "ndcg": 0.319393943239799,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0.25,
+      "conditional_completeness": 0,
+      "top1_safety": 1,
+      "unsafe_chunks_count": 2
+    }
+  },
+  {
+    "query_id": "q-006",
+    "question": "What is the recommended limit or moderation rule for alcohol consumption?",
+    "retrieved": [
+      {
+        "chunkId": "dga-2015-page-120-pass-0-60d0bb19",
+        "baseScore": 10.961616932493149,
+        "finalScore": 10.961616932493149,
+        "rank": 1,
+        "scoreComponents": {
+          "bm25": 10.961616932493149
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-53-pass-1-1f5bf91a",
+        "baseScore": 8.541241620644215,
+        "finalScore": 8.541241620644215,
+        "rank": 2,
+        "scoreComponents": {
+          "bm25": 8.541241620644215
+        }
+      },
+      {
+        "chunkId": "dga-2015-page-122-pass-1-3bb8b5d2",
+        "baseScore": 8.091614564981956,
+        "finalScore": 8.091614564981956,
+        "rank": 3,
+        "scoreComponents": {
+          "bm25": 8.091614564981956
+        }
+      }
+    ],
+    "metrics": {
+      "recall": 0,
+      "precision": 0,
+      "mrr": 0,
+      "ndcg": 0,
+      "preferred_hit": 0,
+      "required_recall": 0,
+      "both_evidence_coverage": null,
+      "stale_hit": 0,
+      "compatible_recall": 0,
+      "conditional_completeness": 0,
+      "top1_safety": 0,
+      "unsafe_chunks_count": 3
+    }
+  }
+]

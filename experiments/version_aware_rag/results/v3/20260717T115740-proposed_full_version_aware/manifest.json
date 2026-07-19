@@ -1,0 +1,49 @@
+{
+  "run_id": "20260717T115740-proposed_full_version_aware",
+  "timestamp": "2026-07-17T11:57:41.580Z",
+  "git": {
+    "commit": "6da3816d240876cae4002ad6b8d2b683cb8ff82c",
+    "dirty": true
+  },
+  "config": {
+    "experiment": {
+      "id": "proposed_full_version_aware",
+      "seed": 42,
+      "split": "development"
+    },
+    "corpus": {
+      "path": "experiments/version_aware_rag/data/corpus_v3/chunks.jsonl",
+      "checksum": null
+    },
+    "retrieval": {
+      "mode": "proposed",
+      "backend": "bm25",
+      "top_k": 3,
+      "recency_weight": 0
+    },
+    "version_policy": {
+      "relation_source": "gold",
+      "deprecated_filter": true,
+      "compatibility_expansion": true
+    },
+    "evaluation": {
+      "query_path": "experiments/version_aware_rag/data/annotations_v3/queries.jsonl",
+      "judgment_path": "experiments/version_aware_rag/data/annotations_v3/judgments.adjudicated.jsonl",
+      "strata": true
+    },
+    "output": {
+      "root": "experiments/version_aware_rag/results/v3"
+    }
+  },
+  "input_checksums": {
+    "corpus": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+    "query": "38a0acd74049b6f9e4d3bb8423f75c16137e9a8f8d77a655c35266dbf1518986",
+    "judgment": "ded1bb71a68a84a882c1e23545b435c577a1f55622225fddfa3d1b885d1c0b9d"
+  },
+  "runtime": {
+    "bun_version": "1.2.12",
+    "node_version": "22.6.0"
+  },
+  "seed": 42,
+  "duration_ms": 1062
+}

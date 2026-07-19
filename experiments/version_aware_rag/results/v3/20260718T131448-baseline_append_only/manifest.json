@@ -1,0 +1,50 @@
+{
+  "run_id": "20260718T131448-baseline_append_only",
+  "timestamp": "2026-07-18T13:14:49.054Z",
+  "git": {
+    "commit": "6da3816d240876cae4002ad6b8d2b683cb8ff82c",
+    "dirty": true
+  },
+  "config": {
+    "experiment": {
+      "id": "baseline_append_only",
+      "seed": 42,
+      "split": "all"
+    },
+    "corpus": {
+      "path": "experiments/version_aware_rag/data/chunks/rag_chunks.json",
+      "checksum": null
+    },
+    "retrieval": {
+      "mode": "append_only",
+      "backend": "heuristic",
+      "top_k": 3,
+      "recency_weight": 0
+    },
+    "version_policy": {
+      "relation_source": "none",
+      "deprecated_filter": false,
+      "compatibility_expansion": false
+    },
+    "evaluation": {
+      "query_path": "experiments/version_aware_rag/data/annotations/evaluation_queries_v2.json",
+      "judgment_path": "experiments/version_aware_rag/data/annotations/evaluation_query_judgments_v2.json",
+      "strata": true
+    },
+    "output": {
+      "root": "experiments/version_aware_rag/results/v3"
+    }
+  },
+  "input_checksums": {
+    "corpus": "d1e7bf28b2e6baa2373e7af3db584492af76388a10b47e146e25a3dcffbdf701",
+    "query": "abec1711f28d9ac29c7883cda28fb8e2726aa54f167cb0f027ae52ab3153163b",
+    "judgment": "0b374c4ef710ed2ae8d4cced577e5775859f60775264aceabf10cc9679349c25",
+    "relation_pairs": "366399115e5ce9230e0e79a0e3401fc1b1e20f3a10b6e03acf9d3b9e17f3f226"
+  },
+  "runtime": {
+    "bun_version": "1.2.12",
+    "node_version": "22.6.0"
+  },
+  "seed": 42,
+  "duration_ms": 604
+}
