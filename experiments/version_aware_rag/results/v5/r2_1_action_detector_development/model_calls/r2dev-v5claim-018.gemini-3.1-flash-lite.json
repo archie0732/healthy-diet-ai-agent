@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-018",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "5d687b79d4ce380052c40273a68c02476b4908147d744c0f1a0007cf194a83d0",
+  "response_sha256": "f34f6b8bf0bbed201b44918ecbffd8bbf1eaa6fb2e3a9c4d89917eebf1fc412e",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides a more comprehensive and updated set of guidelines for vegetable and fruit consumption, essentially encompassing the general recommendations found in the OLD passage while adding specific instructions on preparation, processing, and serving targets."
+  },
+  "latency_ms": 868,
+  "usage_metadata": {
+    "promptTokenCount": 544,
+    "candidatesTokenCount": 68,
+    "totalTokenCount": 612,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 544
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

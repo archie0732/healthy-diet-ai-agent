@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-005",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "ded14961d4d9ceebde42e2509e45cafd9d7822e3a5671d3de2ceed80aa1b0d9d",
+    "response_sha256": "e0973ec08daacef8547c1267817101117bf5d3e2356b1a022f1df7a3613a1baa",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 11566,
+    "usage": {
+      "promptTokenCount": 649,
+      "candidatesTokenCount": 289,
+      "totalTokenCount": 2107,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 649
+        }
+      ],
+      "thoughtsTokenCount": 1169,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:23:07.109Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For a paediatric population whose maximum sodium intake must be adjusted downwards from the adult 2 g/day limit based on energy requirements, how do WHO guidelines restrict the applicability of low-sodium salt substitute (LSSS) recommendations when comparing discretionary table-salt use to non-discretionary sources like manufactured or restaurant foods?\",\n  \"target_population\": [\n    \"paediatric population (children)\",\n    \"adults\"\n  ],\n  \"conditions\": [\n    \"dietary sodium reduction\",\n    \"use of low-sodium salt substitutes (LSSS)\",\n    \"discretionary vs non-discretionary salt consumption\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must synthesize information from both passages. From the 2012 sodium guideline, they must identify that the paediatric population's sodium intake is adjusted downwards from the adult 2 g/day limit based on energy requirements relative to adults 20-50 years of age. From the 2025 LSSS guideline, they must identify that LSSS recommendations apply strictly to discretionary use (table salt) and do not apply to non-discretionary sources (manufactured foods, restaurant/cafeteria foods, street vendors) or sodium-containing condiments like soy/fish sauce due to insufficient evidence.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 649,
+      "candidatesTokenCount": 289,
+      "totalTokenCount": 2107,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 649
+        }
+      ],
+      "thoughtsTokenCount": 1169,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "IfReaszBDL-m1e8P58i3gQw"
+  }
+}

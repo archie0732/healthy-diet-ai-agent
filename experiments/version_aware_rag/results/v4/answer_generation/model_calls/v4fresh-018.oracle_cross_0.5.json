@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-018",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "f8fea77b65df23854a96f167fe213d56d0e1bba8c6e0ea6e4de80fdc65a3368a",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-061-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-061-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=s from added sugars do not exceed\r\nexamining eating patterns and health. Strong appropriate AMDR. The human body uses\r\n10 percent per day, total carbohydrate\r\nevidence from mostly prospective cohort some saturated fats for physiological and\r\nintake remains within the AMDR, and\r\nstudies but also randomized controlled structural functions, but it makes more than\r\ntotal calorie intake remains within limits. trials has shown that eating patterns that enough to meet those needs. Individuals\r\ninclude lower intake of sources of added It should be noted that replacing added 2 years and older therefore have no\r\nsugars are associated with reduced risk sugars with high-intensity sweeteners may dietary requirement for saturated fats.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-033-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\nQUESTION\n\nHow do the retained daily added-sugar baseline and the 2025–2030 per-snack limit combine for dairy snacks such as yogurt?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "af6213c7bdffa4c06695830e51745ceaa478bfeb81cd3f670552148bbb48333f",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-061-new",
+    "v4fresh-cand-pair-v4-new-061-old",
+    "v4fresh-cand-pair-v4-new-033-new"
+  ],
+  "answer": "*   Question: How do the retained daily added-sugar baseline and the 2025–2030 per-snack limit combine for dairy snacks such as yogurt?\n    *   Constraints: Answer only from supplied passages, exact [chunk_id] citations, preserve boundaries, no outside knowledge.\n\n    *   Passage 1 (dga-2025):\n        *   Mentions: \"one meal should contain no more than 10 grams of added sugars.\"\n        *   Mentions: \"When selecting snack foods, added sugar limits should follow FDA 'Healthy' claim limits.\"\n        *   Specific for dairy snacks (e.g., yogurt): \"should not exceed 2.5 grams of added sugar per ⅔ cup equivalent.\"\n    *   Passage 2 (dga-2015):\n        *   Mentions: \"calories from added sugars do not exceed 10 percent per day\".\n    *   Passage 3 (dga-2025):\n        *   Repeats the dairy snack limit: \"dairy snacks (e.g., yogurt) should not exceed 2.5 grams of added sugar per ⅔ cup equivalent.\"\n\n    *   Daily baseline: Passage 2 (dga-2015) states calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n    *   Per-snack limit (2025-2030): Passage 1 and 3 (dga-2025) state that dairy snacks, such as yogurt, should not exceed 2.5 grams of added sugar per ⅔ cup equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].\n\n    *   The user asks how they \"combine\". I must present both pieces of evidence.\n    *   Daily baseline: 10 percent per day (from dga-2015).\n    *   Per-snack limit: 2.5 grams per ⅔ cup equivalent for dairy snacks like yogurt (from dga-2025).\n\n    *   Check for \"retained daily added-sugar baseline\". Passage 2 provides the 10% limit.\n    *   Check for \"2025-2030 per-snack limit\". Passages 1 and 3 provide the 2.5g limit for yogurt.\n\n    *   Daily baseline: Calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n    *   Per-snack limit (2025-2030): Dairy snacks, such as yogurt, should not exceed 2.5 grams of added sugar per ⅔ cup equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].For dairy snacks such as yogurt, the 2025–2030 per-snack limit is no more than 2.5 grams of added sugar per ⅔ cup equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new], while the daily baseline is that calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "c328adfd48e6f0bd5bf63375835000a8600ce6354f0492eb1215fb1fcf93ac77",
+    "response_sha256": "bff8dcf54b770c4daa81409dabb494713abc65116b485a234aee0bd45832c5bf",
+    "latency_ms": 23037,
+    "usage_metadata": {
+      "promptTokenCount": 1140,
+      "candidatesTokenCount": 118,
+      "totalTokenCount": 1933,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1140
+        }
+      ],
+      "thoughtsTokenCount": 675,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How do the retained daily added-sugar baseline and the 2025–2030 per-snack limit combine for dairy snacks such as yogurt?\n    *   Constraints: Answer only from supplied passages, exact [chunk_id] citations, preserve boundaries, no outside knowledge.\n\n    *   Passage 1 (dga-2025):\n        *   Mentions: \"one meal should contain no more than 10 grams of added sugars.\"\n        *   Mentions: \"When selecting snack foods, added sugar limits should follow FDA 'Healthy' claim limits.\"\n        *   Specific for dairy snacks (e.g., yogurt): \"should not exceed 2.5 grams of added sugar per ⅔ cup equivalent.\"\n    *   Passage 2 (dga-2015):\n        *   Mentions: \"calories from added sugars do not exceed 10 percent per day\".\n    *   Passage 3 (dga-2025):\n        *   Repeats the dairy snack limit: \"dairy snacks (e.g., yogurt) should not exceed 2.5 grams of added sugar per ⅔ cup equivalent.\"\n\n    *   Daily baseline: Passage 2 (dga-2015) states calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n    *   Per-snack limit (2025-2030): Passage 1 and 3 (dga-2025) state that dairy snacks, such as yogurt, should not exceed 2.5 grams of added sugar per ⅔ cup equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].\n\n    *   The user asks how they \"combine\". I must present both pieces of evidence.\n    *   Daily baseline: 10 percent per day (from dga-2015).\n    *   Per-snack limit: 2.5 grams per ⅔ cup equivalent for dairy snacks like yogurt (from dga-2025).\n\n    *   Check for \"retained daily added-sugar baseline\". Passage 2 provides the 10% limit.\n    *   Check for \"2025-2030 per-snack limit\". Passages 1 and 3 provide the 2.5g limit for yogurt.\n\n    *   Daily baseline: Calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n    *   Per-snack limit (2025-2030): Dairy snacks, such as yogurt, should not exceed 2.5 grams of added sugar per ⅔ cup equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].",
+                "thought": true
+              },
+              {
+                "text": "For dairy snacks such as yogurt, the 2025–2030 per-snack limit is no more than 2.5 grams of added sugar per ⅔ cup equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new], while the daily baseline is that calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1140,
+        "candidatesTokenCount": 118,
+        "totalTokenCount": 1933,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1140
+          }
+        ],
+        "thoughtsTokenCount": 675,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "GX1gauqqCpfR1e8Pg47HmQM"
+    }
+  }
+}

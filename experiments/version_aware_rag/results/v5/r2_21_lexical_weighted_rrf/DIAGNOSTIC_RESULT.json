@@ -1,0 +1,99 @@
+{
+  "schema_version": "v5-r2.21-lexical-weighted-rrf-result-1",
+  "status": "diagnostic_complete_no_eligible_repair",
+  "outcome_exposed_r2_20_data": true,
+  "r2_20_rerun_performed": false,
+  "control_reproduced_exactly": true,
+  "all_embeddings_pools_and_top3_completed_before_judgment_read": true,
+  "judgment_read_count": 1,
+  "summaries": [
+    {
+      "variant": "rrf_lex1_dense1_control",
+      "required_micro_recall_at_20": 0.9807692307692307,
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.75,
+          "both_evidence_coverage": 0.6,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0.3,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.6666666666666666,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0.16666666666666666
+        }
+      },
+      "overall_unsafe_top3_hit_rate": 0.03125,
+      "combined_implicit_both_evidence_coverage": 0.44999999999999996
+    },
+    {
+      "variant": "rrf_lex2_dense1",
+      "required_micro_recall_at_20": 0.9807692307692307,
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.75,
+          "both_evidence_coverage": 0.6,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0.3,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.6666666666666666,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0.16666666666666666
+        }
+      },
+      "overall_unsafe_top3_hit_rate": 0.03125,
+      "combined_implicit_both_evidence_coverage": 0.44999999999999996
+    },
+    {
+      "variant": "rrf_lex3_dense1",
+      "required_micro_recall_at_20": 0.9615384615384616,
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.75,
+          "both_evidence_coverage": 0.6,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.55,
+          "both_evidence_coverage": 0.3,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.6666666666666666,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0.16666666666666666
+        }
+      },
+      "overall_unsafe_top3_hit_rate": 0.03125,
+      "combined_implicit_both_evidence_coverage": 0.44999999999999996
+    }
+  ],
+  "eligible_variants": [],
+  "selected_diagnostic_variant": null,
+  "new_lineage_disjoint_confirmation_required": false,
+  "promotion_evidence": false
+}

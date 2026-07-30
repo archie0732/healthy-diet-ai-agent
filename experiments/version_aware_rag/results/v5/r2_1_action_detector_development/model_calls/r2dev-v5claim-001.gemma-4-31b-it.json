@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-001",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "5746b7d27c1462cd7f8958b1af842b870f3f735ab5808e7431f02cdd8953cc03",
+  "response_sha256": "2e8eb0d2f4ec39133377b1998fca4857f1f4f19ef3756106b2dcbbbaad2944ed",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The passages are identical in meaning, with only a minor grammatical difference ('whole grains' vs 'whole grain')."
+  },
+  "latency_ms": 2439,
+  "usage_metadata": {
+    "promptTokenCount": 344,
+    "candidatesTokenCount": 46,
+    "totalTokenCount": 390,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 344
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

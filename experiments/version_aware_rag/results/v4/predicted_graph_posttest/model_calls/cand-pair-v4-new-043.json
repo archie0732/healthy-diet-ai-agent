@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-043",
+  "input_sha256": "1fe3522a8201081c033d33b81e29382219fef62f9dac64460347582ca4aada25",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nwithout compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnant.\n\nNEW PASSAGE\nLimit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "0bf63841129166747b6bae44d0bb593e526d11acf3061c315958ad5300811eab",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The new passage provides more specific and detailed guidelines for sodium intake by age group and for alcohol consumption, replacing the general limits mentioned in the old passage."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "e9190cddd0afc61f92381b5003b252b5c014c5eb6a6c89f60ed63065c657ed7d",
+    "response_sha256": "ed7ec76326368a82dbbdd6c4bf5018f5b212dd78d47beb577453b1153b5a2d88",
+    "latency_ms": 2609,
+    "usage_metadata": {
+      "promptTokenCount": 495,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 556,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 495
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"superseded\",\n  \"confidence\": 1,\n  \"rationale\": \"The new passage provides more specific and detailed guidelines for sodium intake by age group and for alcohol consumption, replacing the general limits mentioned in the old passage.\"\n}\n```"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 495,
+        "candidatesTokenCount": 61,
+        "totalTokenCount": 556,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 495
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "YnhgareFD-qevr0PmpLs8QM"
+    }
+  }
+}

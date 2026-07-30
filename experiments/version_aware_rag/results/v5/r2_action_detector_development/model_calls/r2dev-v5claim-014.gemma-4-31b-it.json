@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-014",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "5ec8016399a4df1f962eb3213a0f375b47109197f13616b36aa61dd0b7de0ee1",
+  "response_sha256": "6fac11edc5c30e5cd52aef0c0e3d7c3aa2ad8f29173a209e938d4fec3633ec81",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage contains the same instruction as the OLD passage (less than 10% calories from added sugars) and adds specific age-based constraints, making the OLD passage redundant."
+  },
+  "latency_ms": 3081,
+  "usage_metadata": {
+    "promptTokenCount": 263,
+    "candidatesTokenCount": 69,
+    "totalTokenCount": 332,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 263
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

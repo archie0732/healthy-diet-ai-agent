@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-004",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "b582a18b5f270f23e1828c7c3b4c812ac2cc06b7f0849909ff60e2b6cfe8b99b",
+  "response_sha256": "8f1177e9f82b61f7ed55674880663c20b752a333173dfad1dd7f317fe357132a",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage explicitly restates the consumption limits for men and women, rendering the OLD passage redundant as it provides identical guidance."
+  },
+  "latency_ms": 887,
+  "usage_metadata": {
+    "promptTokenCount": 425,
+    "candidatesTokenCount": 59,
+    "totalTokenCount": 484,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 425
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

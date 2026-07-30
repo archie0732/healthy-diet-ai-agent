@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-016",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "1b1c9cfc94317a8b0bd3851df3ba9c20c0832aa616f8130a2aa3f7382f29c6ef",
+  "response_sha256": "af0e7c2f64bf17cff65665f63c75c566300f31539db9e60d9c422b8ef9c5aa7a",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a foundational, universal applicability statement regarding dietary patterns, while the CURRENT passage provides specific clinical guidance for those with chronic diseases; they are complementary rather than conflicting or duplicative."
+  },
+  "latency_ms": 793,
+  "usage_metadata": {
+    "promptTokenCount": 352,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 424,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 352
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

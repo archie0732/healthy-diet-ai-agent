@@ -1,0 +1,36 @@
+{
+  "plan": "Plan 08B-R1: Evaluation Pipeline Repair and Oracle Policy Revalidation",
+  "timestamp": "2026-07-28T10:36:44.382Z",
+  "frozen_v3_checksums": {
+    "corpus": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+    "queries": "72af4d7a8eeeb1eb2ca24b30a764de3a07ebb0b6ead7b74a6a597527bf27774f",
+    "judgments": "61f1f4531f6ace040e8f2a4a1c81728585d188dc32b3b49264e5e6d3a2654efd",
+    "relations": "a336fb1c171c89f82966e927d96baa252a99d32b3883561cc35db44155b36cb5"
+  },
+  "gate_decision": "requires_another_development_repair",
+  "headline_conclusion": "Oracle remains behind Recency-Only on development retrieval recall, so the policy requires another development repair.",
+  "test_split_invocations": 0,
+  "recency_lambda": 0.75,
+  "generated_artifacts": [
+    "REPAIR_MANIFEST.json",
+    "candidate_pool_assignments.jsonl",
+    "raw_retrieval_results.jsonl",
+    "candidate_recall_report.json",
+    "normalization_grid_search.json",
+    "score_component_traces.jsonl",
+    "feature_activation_report.json",
+    "scope_resolution_events.jsonl",
+    "expansion_events.jsonl",
+    "before_after_failure_cases.json",
+    "before_after_failure_cases.csv",
+    "development_retrieval_metrics.json",
+    "validation_retrieval_metrics.json",
+    "per_stratum_metrics.json",
+    "ablation_results.json",
+    "integrity_checks.json",
+    "test_execution_guard.json",
+    "test_results.json",
+    "ORACLE_POLICY_REPAIR_REPORT.md",
+    "ARTIFACT_CHECKSUMS.sha256"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-022",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "f5ab8bc9d0e37627bd31e500f19cb4ab2c428b65ab2618295e4860ed251dedb8",
+  "response_sha256": "e45fc50814fe4dd47265bc2c7b693187bcc273b2e6b7b37193b7e6efaa7ebff9",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The specific recommendation to include foods rich in iron and zinc, particularly for infants fed human milk, and the specific guidance to avoid added sugars and limit sodium.",
+    "confidence": 1,
+    "rationale": "The CURRENT passage covers the introduction of allergenic foods and the need for nutrient-dense foods, but it omits the specific nutrient requirements (iron and zinc) and the specific dietary restrictions (added sugars and sodium) mentioned in the OLD passage.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 4320,
+  "usage_metadata": {
+    "promptTokenCount": 614,
+    "candidatesTokenCount": 123,
+    "totalTokenCount": 737,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 614
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

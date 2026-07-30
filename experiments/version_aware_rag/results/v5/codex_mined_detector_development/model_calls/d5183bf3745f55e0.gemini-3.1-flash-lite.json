@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-003",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "6f6ab1dd0a0dc2acbb417cadd63c895a3cdfa2b4bb6427ba22cb005b211a7cf2",
+  "response_sha256": "9df526ce6a993aff0a669feb370c8f88cc660596a6653323a006f1332b450b14",
+  "prediction": {
+    "relation_type": "duplicate",
+    "confidence": 1,
+    "rationale": "Both passages list essentially identical categories of protein foods; the addition of 'calorie limits' in the new passage is an instructional context rather than a semantic change to the definition of protein food sources."
+  },
+  "latency_ms": 908,
+  "usage_metadata": {
+    "promptTokenCount": 251,
+    "candidatesTokenCount": 68,
+    "totalTokenCount": 319,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 251
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

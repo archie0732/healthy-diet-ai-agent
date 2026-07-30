@@ -1,0 +1,22 @@
+{
+  "status": "codex_primary_review_complete_development_only",
+  "record_count": 22,
+  "distribution": {
+    "duplicate": 6,
+    "superseded": 4,
+    "conflicting": 2,
+    "conditional_difference": 4,
+    "complementary": 6
+  },
+  "independent_human_review": false,
+  "project_owner_signoff": false,
+  "fresh_v5_test_eligible": false,
+  "source_checksums": {
+    "dga2015": "6eedb515bdb4bf307a3a337f32c71fd9fd1edcbace4dc9046c79104b5796ed2d",
+    "dga2020": "5c64f2d4b4f2a30254868952e2fd0a3032a50c32cfcbdf2320cdf26826c812ad",
+    "dga2025": "1fd2c0153bb10e3e08c0919487af1fb03577f380e76d51d050ae433ecca88114"
+  },
+  "reviewed_pairs_sha256": "a2b9a346291fd48baf73b8113310ba280c0bef796b86a8e82c535d3bbc2ce790",
+  "label_balance_was_not_forced": true,
+  "prior_v4_fresh_outcomes_used": false
+}

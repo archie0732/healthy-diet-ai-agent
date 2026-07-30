@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.12-candidate-diagnostic-guard-1",
+  "status": "diagnostic_complete_locked",
+  "manifest_sha256": "331a81adf56e495fbc7a89b937085d20ed6abac640b989f5ad0b5d700b61315d",
+  "diagnostic_execution_count": 1,
+  "judgments_read_allowed_only_after_all_pools": true,
+  "r2_11_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "raw_candidate_pools_sha256": "1dc7f749cfd9d5efd4d9ed4f4a2c3f39475dbc1d49b20c36c8e765cf920c136c",
+  "diagnostic_result_sha256": "2245d373bf5a44e18307753e70c93961f8ca79b0e0ec5adfc98cf2e6ee6bfd44"
+}

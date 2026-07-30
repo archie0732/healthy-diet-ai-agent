@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-009",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "b78843b336dec6e4efeb23dd37cdba071b6bc170495b23a43f26a570a413b6a8",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-061-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-061-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=s from added sugars do not exceed\r\nexamining eating patterns and health. Strong appropriate AMDR. The human body uses\r\n10 percent per day, total carbohydrate\r\nevidence from mostly prospective cohort some saturated fats for physiological and\r\nintake remains within the AMDR, and\r\nstudies but also randomized controlled structural functions, but it makes more than\r\ntotal calorie intake remains within limits. trials has shown that eating patterns that enough to meet those needs. Individuals\r\ninclude lower intake of sources of added It should be noted that replacing added 2 years and older therefore have no\r\nsugars are associated with reduced risk sugars with high-intensity sweeteners may dietary requirement for saturated fats.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-033-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\nQUESTION\n\nWhat position do the 2025-2030 guidelines take regarding petroleum-based dyes and artificial flavors?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "87423ab06615aacb946bd3dd1b40f229aa488d01b815445664e42ba39ea3812b",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-061-new",
+    "v4fresh-cand-pair-v4-new-061-old",
+    "v4fresh-cand-pair-v4-new-033-new"
+  ],
+  "answer": "*   Question: What position do the 2025-2030 guidelines take regarding petroleum-based dyes and artificial flavors?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-061-new, document=dga-2025, edition=2025-2030): Mentions \"Limit foods and beverages that include artificial flavors, petroleum-based dyes, artificial preservatives, and low-calorie non-nutritive sweeteners.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-061-old, document=dga-2015, edition=2015-2020): Not relevant to 2025-2030 guidelines.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-033-new, document=dga-2025, edition=2025-2030): Mentions \"Limit foods and beverages that include artificial flavors, petroleum-based dyes, artificial preservatives, and low-calorie non-nutritive sweeteners.\"\n\n    *   The 2025-2030 guidelines state that foods and beverages containing petroleum-based dyes and artificial flavors (along with artificial preservatives and low-calorie non-nutritive sweeteners) should be limited [v4fresh-cand-pair-v4-new-061-new], [v4fresh-cand-pair-v4-new-033-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes.The 2025-2030 guidelines state that foods and beverages containing artificial flavors and petroleum-based dyes (as well as artificial preservatives and low-calorie non-nutritive sweeteners) should be limited [v4fresh-cand-pair-v4-new-061-new], [v4fresh-cand-pair-v4-new-033-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "f8e826916643bb0552f4f03a99b20d064d3e77d184e50df25f03a6a55b32b04c",
+    "response_sha256": "21ad571e54ced3f1ef2db470bf5d9e1033e0323dd68dd77136a69cb5174e7ee9",
+    "latency_ms": 16059,
+    "usage_metadata": {
+      "promptTokenCount": 1131,
+      "candidatesTokenCount": 85,
+      "totalTokenCount": 1677,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1131
+        }
+      ],
+      "thoughtsTokenCount": 461,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: What position do the 2025-2030 guidelines take regarding petroleum-based dyes and artificial flavors?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-061-new, document=dga-2025, edition=2025-2030): Mentions \"Limit foods and beverages that include artificial flavors, petroleum-based dyes, artificial preservatives, and low-calorie non-nutritive sweeteners.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-061-old, document=dga-2015, edition=2015-2020): Not relevant to 2025-2030 guidelines.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-033-new, document=dga-2025, edition=2025-2030): Mentions \"Limit foods and beverages that include artificial flavors, petroleum-based dyes, artificial preservatives, and low-calorie non-nutritive sweeteners.\"\n\n    *   The 2025-2030 guidelines state that foods and beverages containing petroleum-based dyes and artificial flavors (along with artificial preservatives and low-calorie non-nutritive sweeteners) should be limited [v4fresh-cand-pair-v4-new-061-new], [v4fresh-cand-pair-v4-new-033-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes.",
+                "thought": true
+              },
+              {
+                "text": "The 2025-2030 guidelines state that foods and beverages containing artificial flavors and petroleum-based dyes (as well as artificial preservatives and low-calorie non-nutritive sweeteners) should be limited [v4fresh-cand-pair-v4-new-061-new], [v4fresh-cand-pair-v4-new-033-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1131,
+        "candidatesTokenCount": 85,
+        "totalTokenCount": 1677,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1131
+          }
+        ],
+        "thoughtsTokenCount": 461,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "4Hpgav-uNMD_1e8PhZr7qAQ"
+    }
+  }
+}

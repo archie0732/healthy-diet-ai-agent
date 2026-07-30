@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-014",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "aab8ccabff64f353b0b851ab232167afbd71f6b9b3733a56e56e0a2cb09300f1",
+  "response_sha256": "ab814a043fa3f9ec038079bb1d33d0a0872395a1124500719fb320234eb6d98d",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage explicitly includes the quantitative threshold from the OLD passage while expanding the scope to include age-specific recommendations; therefore, the OLD passage is redundant."
+  },
+  "latency_ms": 718,
+  "usage_metadata": {
+    "promptTokenCount": 379,
+    "candidatesTokenCount": 57,
+    "totalTokenCount": 436,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 379
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

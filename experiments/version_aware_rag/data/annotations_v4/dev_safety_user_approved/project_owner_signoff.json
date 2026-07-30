@@ -1,0 +1,15 @@
+{
+  "status": "project_owner_approved",
+  "owner_statement": "全部同意",
+  "owner_signoff_date": "2026-07-22",
+  "scope": "All 78 Codex-provisional development safety labels without modification.",
+  "limitation": "Project-owner confirmation is not independent blinded or clinical review.",
+  "provisional_ledger_sha256": "0c3b813e65846bb346e6a73f66fe4883824fe12b30377e38e5dd3cad3cab6a1a",
+  "approved_ledger_sha256": "ef454b9d8dedc590d5140c10e9e9e21151fea6347083a59d47b59e280763ee7e",
+  "counts": {
+    "citation_safe": 65,
+    "neither": 13,
+    "stale": 0,
+    "forbidden": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-51-pass-1-e263007a|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "bc5dc5ff9a6017907485e8d8572e78e66a17cd6983c5258c0af223da63fa68f7",
+  "response_sha256": "cf939833f11b96572852ed4e50bdc4e7b75b3b2ee9d4740ed833798044299927",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage recommends that individuals 'should eat as little dietary cholesterol as possible', whereas the NEW passage explicitly states 'No quantitative limits are placed on dietary cholesterol', directly replacing the previous recommendation."
+  },
+  "latency_ms": 2639,
+  "usage_metadata": {
+    "promptTokenCount": 1010,
+    "candidatesTokenCount": 61,
+    "totalTokenCount": 1071,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1010
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

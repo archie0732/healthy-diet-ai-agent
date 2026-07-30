@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-002",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "bbda811bf426cb2eda71703ec62b1f29219911f8be2aec8c127b68c85ac8e38f",
+  "response_sha256": "464da7f13695670333aef5033f921aa9f9121fc3ae5d450c01c403caec6ffabd",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The NEW passage updates the list of dairy options by adding 'lactose-free versions' and expanding the scope to 'nutrient-dense forms of foods', replacing the more restrictive OLD list."
+  },
+  "latency_ms": 2535,
+  "usage_metadata": {
+    "promptTokenCount": 260,
+    "candidatesTokenCount": 61,
+    "totalTokenCount": 321,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 260
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

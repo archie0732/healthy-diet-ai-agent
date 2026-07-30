@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-003",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "538ead65b4be80ea085dda7407dcc95fe2598b337fa2cc1bc15de8288d676e18",
+  "response_sha256": "8efe5fccb24e8e92115b70f0c863a4553661173b6c0d64525070a0e1b1d8645d",
+  "prediction": {
+    "relation_type": "duplicate",
+    "confidence": 1,
+    "rationale": "Both passages list the same categories of protein foods (seafood, lean meats, poultry, eggs, legumes/beans/peas, nuts, seeds, and soy products) with only minor phrasing differences."
+  },
+  "latency_ms": 2826,
+  "usage_metadata": {
+    "promptTokenCount": 251,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 321,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 251
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

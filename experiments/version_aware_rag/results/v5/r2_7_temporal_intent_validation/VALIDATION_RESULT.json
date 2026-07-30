@@ -1,0 +1,82 @@
+{
+  "schema_version": "v5-r2.7-temporal-intent-validation-1",
+  "status": "validation_confirmed_for_explicit_historical_intent_only",
+  "one_shot_validation": true,
+  "validation_execution_count": 1,
+  "external_model_api_used": false,
+  "detector_id": "explicit_temporal_history_intent_v1",
+  "metrics": {
+    "true_preserve": 4,
+    "false_preserve_count": 0,
+    "true_block": 4,
+    "missed_preserve": 0,
+    "accuracy": 1,
+    "pair_preserve_precision": 1,
+    "pair_preserve_recall": 1
+  },
+  "predictions": [
+    {
+      "pair_id": "r2.7-03-total-fat-current-ceiling",
+      "lineage_group": "cross-version-total-fat-current-ceiling",
+      "query": "What current total-fat ceiling and fat quality does WHO recommend for adults?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-06-sugars-current-ceiling",
+      "lineage_group": "cross-version-sugars-current-ceiling",
+      "query": "What is the current general WHO free-sugar ceiling?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-10-ratio-current-guidance",
+      "lineage_group": "cross-version-ratio-current-guidance",
+      "query": "How do current WHO sodium and potassium recommendations relate to a one-to-one ratio?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-12-wholegrain-current-source-quality",
+      "lineage_group": "cross-version-wholegrain-current-source-quality",
+      "query": "Which food groups are the current preferred dietary-fibre sources?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-15-fat-lower-bound-current-caution",
+      "lineage_group": "cross-version-fat-lower-bound-current-caution",
+      "query": "What historical lower bound guarded against too little fat, and what current replacement caution applies when fat is reduced?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-17-sugar-frequency-dental-rationale",
+      "lineage_group": "cross-version-sugar-frequency-dental-rationale",
+      "query": "What historical frequency limit was advised, and what current oral-health rationale supports limiting free sugars?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-21-fibre-adult-child-targets",
+      "lineage_group": "cross-version-fibre-adult-child-targets",
+      "query": "What historical adult-scale fibre amount was expected, and what current approach is used for children?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-23-iodization-monitoring-continuity",
+      "lineage_group": "cross-version-iodization-monitoring-continuity",
+      "query": "What iodization adjustment principle was stated historically, and how does current sodium guidance preserve it?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    }
+  ],
+  "promotion_scope": "explicit_historical_intent_routing_only",
+  "prohibited_claims": [
+    "general semantic conditional-merge detector is validated",
+    "overall Version-Aware retrieval is superior to Recency",
+    "fresh held-out V5 test evidence"
+  ],
+  "limitation": "The Validation set was authored and pre-audited by the same Codex reviewer as Development; it is lineage-disjoint but not independently authored or blinded."
+}

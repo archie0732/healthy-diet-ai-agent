@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-027",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "8effd2ebef425f534f3717b16e4f6cdea47252add26552d2b7a84818bf0fb9d2",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-008-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=d on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-008-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=Guideline 3: Focus on meeting food group needs\r\nwith nutrient-dense foods and beverages,\r\nand stay within calorie limits.\r\nThe core elements that make up a healthy dietary pattern\r\nNutrient-dense foods provide vitamins,\r\ninclude:\r\nminerals, and other health-promoting\r\n* Vegetables of all types-dark green; red and orange;\r\ncomponents and have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-040-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=eats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nQUESTION\n\nHow does prioritizing olive oil for essential fatty acids build upon 2020 oil guidance?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "252e957f5f92c4e3d21d99a2f175582fd2bdf2d1fbbdbd9b59092aefc719e717",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-008-new",
+    "v4fresh-cand-pair-v4-new-008-old",
+    "v4fresh-cand-pair-v4-new-040-new"
+  ],
+  "answer": "*   Question: How does prioritizing olive oil for essential fatty acids build upon 2020 oil guidance?\n    *   Constraint 1: Answer only from supplied passages.\n    *   Constraint 2: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint 3: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint 4: Do not assume newer evidence supersedes older evidence.\n    *   Constraint 5: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030): Mentions prioritizing oils with essential fatty acids, such as olive oil, when cooking with or adding fats to meals; other options include butter or beef tallow [v4fresh-cand-pair-v4-new-008-new].\n    *   Passage 2 (dga-2020, 2020-2025): Mentions oils, including vegetable oils and oils in food, such as seafood and nuts [v4fresh-cand-pair-v4-new-008-old].\n    *   Passage 3 (dga-2025, 2025-2030): Same as Passage 1 regarding olive oil, butter, and beef tallow [v4fresh-cand-pair-v4-new-040-new].\n\n    *   2020 Guidance: Oils include vegetable oils and oils in food (e.g., seafood and nuts) [v4fresh-cand-pair-v4-new-008-old].\n    *   2025 Guidance: When adding fats to meals or cooking, prioritize oils with essential fatty acids, such as olive oil, though butter or beef tallow are other options [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-040-new].\n\n    *   The 2020 guidance broadly included vegetable oils and oils in food like nuts and seafood [v4fresh-cand-pair-v4-new-008-old].\n    *   The 2025 guidance specifies prioritizing oils with essential fatty acids, such as olive oil, when adding fats to meals or cooking, while also listing butter or beef tallow as other options [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-040-new].The 2020 guidance included oils such as vegetable oils and oils in food, including nuts and seafood [v4fresh-cand-pair-v4-new-008-old]. The 2025 guidance specifies that when adding fats to meals or cooking, oils with essential fatty acids, such as olive oil, should be prioritized, though butter or beef tallow are other options [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-040-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "b63afaaccb9ca4032f5d235a377c1c696e56eb78bff27b6cf6463fa7ac690074",
+    "response_sha256": "064b79a6d60e188e55c2a327936ae3bf94137bc8816d723f18273ac7c32d5d85",
+    "latency_ms": 20010,
+    "usage_metadata": {
+      "promptTokenCount": 1045,
+      "candidatesTokenCount": 121,
+      "totalTokenCount": 1734,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1045
+        }
+      ],
+      "thoughtsTokenCount": 568,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does prioritizing olive oil for essential fatty acids build upon 2020 oil guidance?\n    *   Constraint 1: Answer only from supplied passages.\n    *   Constraint 2: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint 3: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint 4: Do not assume newer evidence supersedes older evidence.\n    *   Constraint 5: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030): Mentions prioritizing oils with essential fatty acids, such as olive oil, when cooking with or adding fats to meals; other options include butter or beef tallow [v4fresh-cand-pair-v4-new-008-new].\n    *   Passage 2 (dga-2020, 2020-2025): Mentions oils, including vegetable oils and oils in food, such as seafood and nuts [v4fresh-cand-pair-v4-new-008-old].\n    *   Passage 3 (dga-2025, 2025-2030): Same as Passage 1 regarding olive oil, butter, and beef tallow [v4fresh-cand-pair-v4-new-040-new].\n\n    *   2020 Guidance: Oils include vegetable oils and oils in food (e.g., seafood and nuts) [v4fresh-cand-pair-v4-new-008-old].\n    *   2025 Guidance: When adding fats to meals or cooking, prioritize oils with essential fatty acids, such as olive oil, though butter or beef tallow are other options [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-040-new].\n\n    *   The 2020 guidance broadly included vegetable oils and oils in food like nuts and seafood [v4fresh-cand-pair-v4-new-008-old].\n    *   The 2025 guidance specifies prioritizing oils with essential fatty acids, such as olive oil, when adding fats to meals or cooking, while also listing butter or beef tallow as other options [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-040-new].",
+                "thought": true
+              },
+              {
+                "text": "The 2020 guidance included oils such as vegetable oils and oils in food, including nuts and seafood [v4fresh-cand-pair-v4-new-008-old]. The 2025 guidance specifies that when adding fats to meals or cooking, oils with essential fatty acids, such as olive oil, should be prioritized, though butter or beef tallow are other options [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-040-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1045,
+        "candidatesTokenCount": 121,
+        "totalTokenCount": 1734,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1045
+          }
+        ],
+        "thoughtsTokenCount": 568,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "OX9gauA7w7e-vQ-w1sbBAQ"
+    }
+  }
+}

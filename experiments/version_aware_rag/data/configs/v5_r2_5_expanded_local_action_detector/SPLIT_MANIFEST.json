@@ -1,0 +1,19 @@
+{
+  "schema_version": "v5-r2.5-official-expansion-1",
+  "status": "expanded_development_frozen_validation_unchanged",
+  "parent_manifest_sha256": "ae2c1509aa9e8177902d0212eb46854c65cae31845aa03242a587902f7ee1c74",
+  "development_sha256": "568ec8c399c9f93355fa41742f0dba5b1715661549b277dd8d6661de36892c55",
+  "validation_sealed_sha256": "cd25941d087c18e7c4e5a9b5fefd10b3f99187b63ea268f0935f006fe5396449",
+  "validation_artifact_changed": false,
+  "development_count": 42,
+  "added_count": 20,
+  "development_distribution": {
+    "PAIR_PRESERVE": 17,
+    "BLOCK_RETAINED": 25
+  },
+  "lineage_group_count": 42,
+  "official_source_expansion": true,
+  "external_model_api_used": false,
+  "validation_execution_count": 0,
+  "fresh_v5_test_created": false
+}

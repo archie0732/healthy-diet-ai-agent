@@ -1,0 +1,253 @@
+{
+  "status": "r2_development_action_detector_selected",
+  "development_only": true,
+  "validation_labels_read": false,
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt": "Decide the retrieval action for an OLD guideline passage when a CURRENT passage is available. Use passage content only; never use IDs, dates, labels, or hidden judgments.\n\nPAIR_PRESERVE: retrieve both passages only when they provide distinct, compatible, currently applicable evidence, or when OLD remains necessary for a population, condition, exception, implementation detail, or safety constraint not displaced by CURRENT.\n\nBLOCK_RETAINED: do not retrieve OLD when CURRENT explicitly replaces or updates it, when OLD materially duplicates the same instruction, when they conflict, or when continued applicability of OLD is uncertain.\n\nSharing a topic is not enough for PAIR_PRESERVE. Safety is fail-closed: if the passages do not clearly justify retaining OLD alongside CURRENT, choose BLOCK_RETAINED. Return JSON only.",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "configs": {
+    "gemma-4-31b-it": {
+      "type": "single_model",
+      "models": [
+        "gemma-4-31b-it"
+      ],
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.6818181818181818,
+        "false_preserve_count": 1,
+        "pair_preserve_precision": 0.8333333333333334,
+        "pair_preserve_recall": 0.45454545454545453,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 5,
+            "BLOCK_RETAINED": 6
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 1,
+            "BLOCK_RETAINED": 10
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "BLOCK_RETAINED",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "PAIR_PRESERVE",
+        "r2dev-v5claim-013": "PAIR_PRESERVE",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "PAIR_PRESERVE",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "PAIR_PRESERVE"
+      }
+    },
+    "gemini-3.1-flash-lite": {
+      "type": "single_model",
+      "models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.5909090909090909,
+        "false_preserve_count": 0,
+        "pair_preserve_precision": 1,
+        "pair_preserve_recall": 0.18181818181818182,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 0,
+            "BLOCK_RETAINED": 11
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "BLOCK_RETAINED",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "BLOCK_RETAINED",
+        "r2dev-v5claim-013": "BLOCK_RETAINED",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "BLOCK_RETAINED",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "BLOCK_RETAINED"
+      }
+    },
+    "fail_closed_consensus_0.7": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.7,
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.5909090909090909,
+        "false_preserve_count": 0,
+        "pair_preserve_precision": 1,
+        "pair_preserve_recall": 0.18181818181818182,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 0,
+            "BLOCK_RETAINED": 11
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "BLOCK_RETAINED",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "BLOCK_RETAINED",
+        "r2dev-v5claim-013": "BLOCK_RETAINED",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "BLOCK_RETAINED",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "BLOCK_RETAINED"
+      }
+    },
+    "fail_closed_consensus_0.8": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.8,
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.5909090909090909,
+        "false_preserve_count": 0,
+        "pair_preserve_precision": 1,
+        "pair_preserve_recall": 0.18181818181818182,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 0,
+            "BLOCK_RETAINED": 11
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "BLOCK_RETAINED",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "BLOCK_RETAINED",
+        "r2dev-v5claim-013": "BLOCK_RETAINED",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "BLOCK_RETAINED",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "BLOCK_RETAINED"
+      }
+    },
+    "fail_closed_consensus_0.9": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.9,
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.5909090909090909,
+        "false_preserve_count": 0,
+        "pair_preserve_precision": 1,
+        "pair_preserve_recall": 0.18181818181818182,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 0,
+            "BLOCK_RETAINED": 11
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "BLOCK_RETAINED",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "BLOCK_RETAINED",
+        "r2dev-v5claim-013": "BLOCK_RETAINED",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "BLOCK_RETAINED",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "BLOCK_RETAINED"
+      }
+    }
+  },
+  "selection_rule": "false_preserve_count=0 and pair_preserve_precision=1; maximize pair-preserve recall, then accuracy",
+  "selected_config": "gemini-3.1-flash-lite"
+}

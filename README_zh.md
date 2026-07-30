@@ -415,6 +415,42 @@ bun test
 - 每日計劃日誌: [technical_docs/DAILY_PLANNING_LOG.md](technical_docs/DAILY_PLANNING_LOG.md)
 - RAG 分析文件：[technical_docs/RAG_AGENT_ANALYSIS_ZH.md](technical_docs/RAG_AGENT_ANALYSIS_ZH.md)
 
+## 版本感知 RAG R2.19
+
+R2.19 Development-only 實驗新增四份經 checksum 驗證的 WHO 官方來源，
+以及可離線執行的 MiniLM q8 候選檢索器。在 outcome-exposed R2.16 資料上，
+凍結的 BM25-MiniLM reciprocal-rank fusion 達到 `0.9615` Recall@20。
+此結果僅能用於診斷選型；仍須建立新的 lineage-disjoint、經專案擁有者核准
+的 confirmation。詳見
+`experiments/version_aware_rag/V5_R2_19_NEURAL_HYBRID_DIAGNOSTIC_RESULT.md`。
+
+## 版本感知 RAG R2.20
+
+R2.20 已完成一次新的 32 筆、lineage-disjoint Development confirmation，
+確認 R2.19 選出的 BM25-MiniLM RRF 候選生成器，以及 R2.16 的 Top-6
+anchored pair reranker。候選 Recall@20 達到 `0.9808`，三項 strict
+improvement 全部通過，但 current-only Recall@3 從 `1.0000` 降至
+`0.8333`，因此 gate failed 並鎖定於一次執行。結果見
+`experiments/version_aware_rag/V5_R2_20_NEURAL_HYBRID_CONFIRMATION_RESULT.md`。
+
+## 版本感知 RAG R2.21
+
+R2.21 在 outcome-exposed R2.20 Development data 上測試 1:1、2:1 與 3:1
+的 lexical:dense RRF 權重，均未修復 current-only noninferiority failure，
+因此沒有選出 repair。後續應將此系列定位為有邊界的 Development
+ablation，而不是已 promotion 的系統。論文交接見
+`experiments/version_aware_rag/PAPER_HANDOFF_AFTER_R2_21.md`。
+
+## Version-Aware RAG R2.22
+
+R2.22 新增一份針對 R2.20 全部 32 題的 GPT-5.6 獨立情境盲審。封包以
+checksum 凍結、A/B 位置盲化，且不提供 gold role、stratum、檢索排名或
+實驗結果。GPT-5.6 完成 32/32 題且無 schema 錯誤；31/32 題判定為可完整
+回答，evidence contract 完全一致率為 19/32，role-compatible 一致率為
+21/32。`current_only` 與 `hard_negative_current` 的 contract 為完全一致，
+但兩個隱含雙證據 strata 的一致率較弱。此結果只能稱為 AI triangulation，
+不能替代獨立真人、臨床或專家審查。
+
 ## License
 
 本專案採用 `MIT` license，詳見 `LICENSE`。

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-021",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "557a9d5426a38be1fbc9e6d87eec6dbd0de99417e5d25c1419698f85d01ec91a",
+  "response_sha256": "152b8e5d7aeea14bc8c9f6b80ecb5113ccae0ef8f5252336c9ca9b9346230672",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "The OLD passage provides essential quantitative limits and age-specific consumption guidance, whereas the CURRENT passage focuses exclusively on identifying ingredients; the two provide distinct, compatible, and currently applicable information."
+  },
+  "latency_ms": 808,
+  "usage_metadata": {
+    "promptTokenCount": 525,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 595,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 525
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

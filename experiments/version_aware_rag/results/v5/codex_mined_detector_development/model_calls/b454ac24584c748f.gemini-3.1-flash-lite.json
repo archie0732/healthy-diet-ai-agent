@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-002",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "5c84b7d9b44d26333695709d292d44707af591e81368c6d0a49c68aa79e8bd61",
+  "response_sha256": "b730b6d3b27f6284bc8b790c62f07abcfaf3ca519b3153b5d60b7b9d793f5903",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The NEW passage expands the definition of dairy to include 'lactose-free versions' and 'fortified soy beverages' in a manner that updates and replaces the previous list, thereby superseding the OLD passage."
+  },
+  "latency_ms": 719,
+  "usage_metadata": {
+    "promptTokenCount": 260,
+    "candidatesTokenCount": 65,
+    "totalTokenCount": 325,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 260
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

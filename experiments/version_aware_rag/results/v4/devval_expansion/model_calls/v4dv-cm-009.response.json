@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-009",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "304ec438822c13f254f77dc8901f7607a6372c9b2a1b1e35dd006278eee3b40d",
+    "response_sha256": "2d81616d97956a199659b68fcf4264590754a69c7c9aaea5b4ea2a914c21900f",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 12580,
+    "usage": {
+      "promptTokenCount": 773,
+      "candidatesTokenCount": 254,
+      "totalTokenCount": 2015,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 773
+        }
+      ],
+      "thoughtsTokenCount": 988,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:24:04.489Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to WHO guidelines, how does the recommendation on non-nutritive sweeteners (NSS) apply to a pregnant woman without pre-existing diabetes, and what are the specific recommended limits for her free sugar intake that this NSS guidance is contextualized within?\",\n  \"target_population\": [\n    \"pregnant women\",\n    \"pregnant women without pre-existing diabetes\"\n  ],\n  \"conditions\": [\n    \"pregnancy\",\n    \"dietary sugar reduction\",\n    \"non-nutritive sweetener (NSS) use\"\n  ],\n  \"draft_rationale\": \"To fully answer this query, the user must synthesize information from both passages. The 2023 NSS guideline (Current Evidence) establishes that the NSS recommendation applies to pregnant women (excluding those with pre-existing diabetes) and is framed in the context of reducing free sugars intake. To define the specific limits of that free sugar intake, the 2015 Sugars guideline (Retained Evidence) must be integrated, which details the recommendation to reduce free sugars to less than 10% of total energy intake, with a further suggested reduction to below 5%.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 773,
+      "candidatesTokenCount": 254,
+      "totalTokenCount": 2015,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 773
+        }
+      ],
+      "thoughtsTokenCount": 988,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "WfReauWYI5Gj9tMPvszNgAs"
+  }
+}

@@ -1,0 +1,16 @@
+{"query_id":"r2.7-01-sodium-current-ceiling","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-01-sodium-current-ceiling::CURRENT"],"deprecated_item_ids":["r2.7-01-sodium-current-ceiling::OLD"]}
+{"query_id":"r2.7-02-potassium-current-food-source","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-02-potassium-current-food-source::CURRENT"],"deprecated_item_ids":["r2.7-02-potassium-current-food-source::OLD"]}
+{"query_id":"r2.7-04-sfa-current-ceiling","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-04-sfa-current-ceiling::CURRENT"],"deprecated_item_ids":["r2.7-04-sfa-current-ceiling::OLD"]}
+{"query_id":"r2.7-05-tfa-current-ceiling","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-05-tfa-current-ceiling::CURRENT"],"deprecated_item_ids":["r2.7-05-tfa-current-ceiling::OLD"]}
+{"query_id":"r2.7-07-fruit-current-adult-target","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-07-fruit-current-adult-target::CURRENT"],"deprecated_item_ids":["r2.7-07-fruit-current-adult-target::OLD"]}
+{"query_id":"r2.7-08-fibre-current-adult-target","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-08-fibre-current-adult-target::CURRENT"],"deprecated_item_ids":["r2.7-08-fibre-current-adult-target::OLD"]}
+{"query_id":"r2.7-09-lsss-current-role","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-09-lsss-current-role::CURRENT"],"deprecated_item_ids":["r2.7-09-lsss-current-role::OLD"]}
+{"query_id":"r2.7-11-free-sugar-current-definition","stratum":"BLOCK_RETAINED","required_item_ids":["r2.7-11-free-sugar-current-definition::CURRENT"],"deprecated_item_ids":["r2.7-11-free-sugar-current-definition::OLD"]}
+{"query_id":"r2.7-13-potassium-target-change","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-13-potassium-target-change::OLD","r2.7-13-potassium-target-change::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-14-carbohydrate-quantity-quality","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-14-carbohydrate-quantity-quality::OLD","r2.7-14-carbohydrate-quantity-quality::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-16-sodium-exception-evolution","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-16-sodium-exception-evolution::OLD","r2.7-16-sodium-exception-evolution::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-18-sfa-limit-replacement","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-18-sfa-limit-replacement::OLD","r2.7-18-sfa-limit-replacement::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-19-tfa-limit-child-evidence","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-19-tfa-limit-child-evidence::OLD","r2.7-19-tfa-limit-child-evidence::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-20-fruit-adult-child-targets","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-20-fruit-adult-child-targets::OLD","r2.7-20-fruit-adult-child-targets::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-22-lsss-option-kidney-safety","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-22-lsss-option-kidney-safety::OLD","r2.7-22-lsss-option-kidney-safety::CURRENT"],"deprecated_item_ids":[]}
+{"query_id":"r2.7-24-free-sugar-versus-nss-definition","stratum":"PAIR_PRESERVE","required_item_ids":["r2.7-24-free-sugar-versus-nss-definition::OLD","r2.7-24-free-sugar-versus-nss-definition::CURRENT"],"deprecated_item_ids":[]}

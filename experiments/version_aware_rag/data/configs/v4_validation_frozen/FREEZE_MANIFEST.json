@@ -1,0 +1,18 @@
+{
+  "status": "validation_unlocked_by_verified_freeze",
+  "frozen_config_sha256": "64920da581dd215d6febfc88b9ddc78f74d4317661386270d3ced6c3e175b2fe",
+  "sealed_validation_sha256": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+  "validation_execution_count_allowed": 1,
+  "validation_execution_count_completed": 1,
+  "fresh_test_read_allowed": false,
+  "validation_execution_status": "completed",
+  "validation_started_at": "2026-07-22T06:32:42.102Z",
+  "protocol_deviation": "One validation record was exposed during a pre-freeze format inspection after development selection; no validation scores were generated and no frozen parameter changed.",
+  "validation_completed_at": "2026-07-22T06:40:42.875Z",
+  "validation_result_sha256": "67465b95315896f0cabca3382130a921ea0c406916511c997439ad7c4cb65c39",
+  "validation_safety_status": "project_owner_approved",
+  "validation_safety_approved_ledger_sha256": "7b3eed864ebeb5fff5cab0375665cec1beff6843c350033c6abdad689be54370",
+  "full_validation_promotion_gate_passed": true,
+  "validation_rerun_allowed": false,
+  "next_required_action": "Freeze the broader policy/model/data/endpoints/prompt package before creating a genuinely fresh V4 test."
+}

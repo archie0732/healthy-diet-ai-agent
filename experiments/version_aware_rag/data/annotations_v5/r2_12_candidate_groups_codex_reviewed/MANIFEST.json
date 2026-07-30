@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.12-candidate-group-review-manifest-1",
+  "status": "codex_semantic_review_complete_not_annotation_gold",
+  "reviewed_group_count": 56,
+  "eligible_group_count": 33,
+  "rejected_group_count": 23,
+  "predeclared_groups_sha256": "b2edcfbcb61418cf38ea8ac6d18e482ac5dfb5512d2a07d20d8af8c4bf23ac24",
+  "predeclared_group_manifest_sha256": "c494b1cd26c5fadcb44cb214bea9332b3439db9ee791fe0e5c6dd646de62beb3",
+  "semantic_review_sha256": "95389a97cde1b31c4fdb22be45e820adfc4dd251dd3e4add7be3af40550ae22f",
+  "project_owner_approval_required_for_future_annotations": true,
+  "retrieval_allowed": false
+}

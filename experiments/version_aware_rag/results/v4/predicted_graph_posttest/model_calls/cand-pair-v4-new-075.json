@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-075",
+  "input_sha256": "9347de565c3b7d15d1110796bfd8f6bbaa4e480daca1c9d9058646fa23a0814b",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nGuideline 4: Limit foods and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugars-Less than 10% of calories per day\r\nstarting at age 2. Avoid foods and beverages with\r\nadded sugars for those younger than age 2.\r\n* Saturated fat-Less than 10% of calories per day\r\nstarting at age 2.\r\n* The National Academies recommends that trans fat and dietary cholesterol consumption to be as low as possible without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsum\n\nNEW PASSAGE\ndications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "82e3edc388a87c1e7d402e12bc59c288bec93904c065f3c9063e7d5709c84a84",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The new passage provides specific, age-stratified sodium limits for children (ages 1-13) and an exception for highly active individuals, whereas the old passage only provided a general limit of 2,300 mg and a vague 'even less' for children under 14."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "9f4904d8308b63082dbb6d8d00aec2a5043e1660e63e1a2692998ae9cdbf18d4",
+    "response_sha256": "16ad8998248886f7a6446af9701ce2bae7311299c2d4a9c4c1ff5b3099b369bf",
+    "latency_ms": 3432,
+    "usage_metadata": {
+      "promptTokenCount": 562,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 653,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 562
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"conditional_difference\",\n  \"confidence\": 1,\n  \"rationale\": \"The new passage provides specific, age-stratified sodium limits for children (ages 1-13) and an exception for highly active individuals, whereas the old passage only provided a general limit of 2,300 mg and a vague 'even less' for children under 14.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 562,
+        "candidatesTokenCount": 91,
+        "totalTokenCount": 653,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 562
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "vHhgatiiL83m1e8PgY2ryAM"
+    }
+  }
+}

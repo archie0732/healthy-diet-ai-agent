@@ -1,0 +1,302 @@
+{
+  "development": {
+    "conditional_merge": {
+      "recency": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.6667,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_focused": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      }
+    },
+    "compatible_history": {
+      "recency": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.8333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_focused": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.3333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 6,
+        "required_micro_recall_at_3": 0.1667,
+        "stale_hit_rate_at_3": 0
+      }
+    },
+    "historical": {
+      "recency": {
+        "query_count": 5,
+        "required_micro_recall_at_3": 0.4,
+        "stale_hit_rate_at_3": 0.2
+      },
+      "oracle_focused": {
+        "query_count": 5,
+        "required_micro_recall_at_3": 0.4,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 5,
+        "required_micro_recall_at_3": 0.4,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 5,
+        "required_micro_recall_at_3": 0.4,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 5,
+        "required_micro_recall_at_3": 0.4,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 5,
+        "required_micro_recall_at_3": 0.2,
+        "stale_hit_rate_at_3": 0
+      }
+    },
+    "all": {
+      "recency": {
+        "query_count": 24,
+        "required_micro_recall_at_3": 0.6667,
+        "stale_hit_rate_at_3": 0.1667
+      },
+      "oracle_focused": {
+        "query_count": 24,
+        "required_micro_recall_at_3": 0.4333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 24,
+        "required_micro_recall_at_3": 0.4333,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 24,
+        "required_micro_recall_at_3": 0.4,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 24,
+        "required_micro_recall_at_3": 0.3667,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 24,
+        "required_micro_recall_at_3": 0.3,
+        "stale_hit_rate_at_3": 0
+      }
+    }
+  },
+  "validation": {
+    "conditional_merge": {
+      "recency": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_focused": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0.75,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      }
+    },
+    "compatible_history": {
+      "recency": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_focused": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0
+      }
+    },
+    "historical": {
+      "recency": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0,
+        "stale_hit_rate_at_3": 0.5
+      },
+      "oracle_focused": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0.5,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 0,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 2,
+        "required_micro_recall_at_3": 1,
+        "stale_hit_rate_at_3": 0.5
+      }
+    },
+    "all": {
+      "recency": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.6,
+        "stale_hit_rate_at_3": 0.125
+      },
+      "oracle_focused": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.9,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.9,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.25": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.9,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.5": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.7,
+        "stale_hit_rate_at_3": 0
+      },
+      "oracle_relevance_0.75": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.8,
+        "stale_hit_rate_at_3": 0.125
+      }
+    }
+  },
+  "relevance_ablation": {
+    "alphas": [
+      0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "eligible_development_modes": [],
+    "selected_mode": null
+  },
+  "historical_candidate_recall_at_20": [
+    {
+      "query_id": "q-013",
+      "candidate_recall_at_20": 0
+    },
+    {
+      "query_id": "q-016",
+      "candidate_recall_at_20": 1
+    },
+    {
+      "query_id": "q-019",
+      "candidate_recall_at_20": 1
+    },
+    {
+      "query_id": "q-022",
+      "candidate_recall_at_20": 1
+    },
+    {
+      "query_id": "q-028",
+      "candidate_recall_at_20": 1
+    },
+    {
+      "query_id": "q-031",
+      "candidate_recall_at_20": 0
+    },
+    {
+      "query_id": "q-037",
+      "candidate_recall_at_20": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-022",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "0aebecce46bf9fd2fabc777503c8444bd7f7b5c1f2b2287c23013dca762e5498",
+  "response_sha256": "807c879af40c6f5eee8d8f645dc2397d8cd9cb53f56ac93f97cb25b71413c02a",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides updated, more specific guidance on allergen introduction and nutritional variety, effectively superseding the general recommendations in the OLD passage."
+  },
+  "latency_ms": 790,
+  "usage_metadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 54,
+    "totalTokenCount": 495,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-002",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "e21fc3bfbaf851892bf3420e3d8567cbead4627f57d9820649b14830d1f971e9",
+    "response_sha256": "7bb98e3151c31409f918760f9de35e7aeb68c69285645a34c596fc7667d03d1a",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 16563,
+    "usage": {
+      "promptTokenCount": 801,
+      "candidatesTokenCount": 312,
+      "totalTokenCount": 1938,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 801
+        }
+      ],
+      "thoughtsTokenCount": 825,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:22:21.267Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to the WHO guidelines on potassium intake and the discretionary use of lower-sodium salt substitutes (LSSS), how do the recommendations for both general potassium intake and LSSS apply to individuals with impaired potassium excretion or kidney impairments, and what specific healthcare setting is required for implementing LSSS to protect individuals with undiagnosed kidney conditions?\",\n  \"target_population\": [\n    \"adults\",\n    \"children\",\n    \"individuals with impaired potassium excretion\",\n    \"individuals with kidney impairments\"\n  ],\n  \"conditions\": [\n    \"impaired potassium excretion\",\n    \"kidney disease\",\n    \"hypertension\"\n  ],\n  \"draft_rationale\": \"To answer this query, both passages are required. The retained 2012 guideline establishes that general potassium intake recommendations apply to all individuals except those with impaired urinary potassium excretion. The current 2025 guideline on LSSS similarly excludes individuals with kidney impairments or other conditions that compromise potassium excretion (such as those taking potassium-sparing diuretics or potassium supplements) from its LSSS recommendations. Furthermore, the 2025 guideline adds the specific implementation requirement that LSSS should be introduced in settings with adequate access to healthcare, ensuring that conditions like kidney disease do not go undiagnosed for a long time. Combining both passages is necessary to address how both general potassium guidelines and LSSS interventions handle the exclusion of individuals with impaired potassium excretion and the healthcare infrastructure required to protect them.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 801,
+      "candidatesTokenCount": 312,
+      "totalTokenCount": 1938,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 801
+        }
+      ],
+      "thoughtsTokenCount": 825,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "7vNeav3OFrCivr0PypWFiQw"
+  }
+}

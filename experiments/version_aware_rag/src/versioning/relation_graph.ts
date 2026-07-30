@@ -43,12 +43,6 @@ export class RelationGraph {
         ...(ann.applies_under_conditions || pair.conditions || pair.condition_tags || [])
       ];
 
-      if (ann.relation_type === 'conditional_difference') {
-        if (populations.length === 0) populations.push('highly active');
-        if (conditions.length === 0) conditions.push('active sweat loss');
-      }
-
-
       const rel: VersionRelation = {
         relationId: pair.pair_id,
         sourceChunkId: pair.old_chunk_id,
@@ -75,6 +69,15 @@ export class RelationGraph {
       }
       this.targetIndex.get(rel.targetChunkId)!.push(rel);
     }
+  }
+
+  /**
+   * Returns all relations associated with a chunkId (either as source or target).
+   */
+  public getRelationsForChunk(chunkId: string): VersionRelation[] {
+    const fromSource = this.sourceIndex.get(chunkId) || [];
+    const fromTarget = this.targetIndex.get(chunkId) || [];
+    return [...fromSource, ...fromTarget];
   }
 
   /**

@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-032",
+  "input_sha256": "4824d0f231d15fad07cadec3134d8cf8bd40173eadc34f3b4403b9e521fcd3e3",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nThe\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\nNEW PASSAGE\nEat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "cdf16578fe127e9d888e902af52368ce56e2f5cd44fb309cd18ba37c196a61b2",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage provides general high-level dietary guidelines (nutrient density, limiting sugars/fats), while the new passage provides specific, actionable implementation details such as protein goals (1.2-1.6g/kg), hydration advice, and specific cooking methods."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "310ada39f7ffe22e4bd9227c528c71b7cf35bf1045356b5dae3d9df8c229c784",
+    "response_sha256": "e6df415a87296bf6f85126ccc10596f380353c0d1f5bae9115cd31dad9b67b4a",
+    "latency_ms": 2998,
+    "usage_metadata": {
+      "promptTokenCount": 527,
+      "candidatesTokenCount": 77,
+      "totalTokenCount": 604,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 527
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.9, \"rationale\": \"The old passage provides general high-level dietary guidelines (nutrient density, limiting sugars/fats), while the new passage provides specific, actionable implementation details such as protein goals (1.2-1.6g/kg), hydration advice, and specific cooking methods.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 527,
+        "candidatesTokenCount": 77,
+        "totalTokenCount": 604,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 527
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "hXhgatSmCMqKvr0P3a6i0QU"
+    }
+  }
+}

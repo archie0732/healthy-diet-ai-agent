@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-009",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "9b2c5c70a55d7b5e29a442033149f484e2e403e764bca8572dd72a4f40a88eb2",
+  "response_sha256": "4633099f004856befd2f0da569d7dc8126cf8ef372b7687f7513d4d56faf693f",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The NEW passage updates the duration of breastfeeding from 'at least the first year' to '2 years or beyond' and specifies that infant formula should be stopped at '12 months of age' to transition to 'whole milk', providing more specific and updated guidance."
+  },
+  "latency_ms": 3010,
+  "usage_metadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 509,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

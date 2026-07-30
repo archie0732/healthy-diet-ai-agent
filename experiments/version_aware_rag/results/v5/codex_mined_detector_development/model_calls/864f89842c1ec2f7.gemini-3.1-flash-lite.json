@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-008",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "c17d5fd3789bef65e36145e86d00aec0fed20c72404e69e08bff9effa06400b9",
+  "response_sha256": "2e8865e43a7b045956fc5dabbf585d49a1e1618014ff3156957bb0402c9a7381",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage maintains the 2,300 mg threshold for the general population but adds specific, differentiated intake recommendations for children aged 1-13 and an exception for highly active individuals."
+  },
+  "latency_ms": 806,
+  "usage_metadata": {
+    "promptTokenCount": 359,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 431,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 359
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

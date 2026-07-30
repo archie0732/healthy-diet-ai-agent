@@ -1,0 +1,20 @@
+{
+  "schema_version": "v5-r2.13-top3-diagnostic-audit-1",
+  "status": "audit_pass",
+  "development_only": true,
+  "outcome_exposed_r2_12_data": true,
+  "promotion_evidence": false,
+  "diagnostic_execution_count": 1,
+  "r2_12_execution_count_preserved": 1,
+  "preregistered_selected_variant": "pair_quota_g0.5",
+  "selection_rule_defect": "The weighted selector preferred pair quota despite a hard-negative noninferiority failure.",
+  "gate_feasible_diagnostic_variant": "pair_score_g2.0",
+  "new_preregistration_required_before_confirmation": true,
+  "artifact_sha256": {
+    "frozen_manifest": "594856e14cc622811fec0ad8315c3d1fc85484c96ce612119fa707cfdfff522a",
+    "execution_guard": "76f163d2f23c74017d90a81723d81767a8d3c559abd35cd6eee477fec744179d",
+    "raw_results": "41f745fc8840089055cabb93abc8903ecd9b2bb67ff6bca8d23a691a80c158b2",
+    "diagnostic_result": "e463209b575106a9031b04e81f293799e091eac468e4a3bbbcf98e70a1a71f5c"
+  },
+  "failures": []
+}

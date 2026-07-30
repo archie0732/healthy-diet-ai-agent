@@ -1,0 +1,13 @@
+{
+  "status": "needs_validation_safety_review",
+  "query_count": 8,
+  "candidate_count": 40,
+  "non_required_candidate_count": 28,
+  "source_raw_sha256": "3ec132a988460373b272edb8f7267ebb374a83db3286e061fb56f92ff4a6fecd",
+  "validation_split_sha256": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+  "ledger_sha256": "3ebc8b09363ee90469482acb341851e85695c9daac656066353401862068d414",
+  "compared_systems_hidden": [
+    "recency",
+    "oracle_cross_0.5"
+  ]
+}

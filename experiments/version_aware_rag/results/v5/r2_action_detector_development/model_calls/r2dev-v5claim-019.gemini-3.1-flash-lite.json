@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-019",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "cb46e59212b641c475189871236af1d81253ae6d9242c50a3d790719942470ac",
+  "response_sha256": "3ac38b2711c113dba8761ec67293c3ea45d564fefe9cd5aadeca7d44e6b84e77",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage fully encompasses and expands upon the requirement for whole grains, rendering the OLD passage redundant."
+  },
+  "latency_ms": 795,
+  "usage_metadata": {
+    "promptTokenCount": 295,
+    "candidatesTokenCount": 54,
+    "totalTokenCount": 349,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 295
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

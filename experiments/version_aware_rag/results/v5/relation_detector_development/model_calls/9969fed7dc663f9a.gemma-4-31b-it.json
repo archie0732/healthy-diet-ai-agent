@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-44-pass-0-b82f56fd|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "99227bac8afdd0acb7b75b0099df8b1ecb162c6eb75940810cdae264ff477cba",
+  "response_sha256": "3670a7460fcccb322be3f283ae2a55ac0488527e4fb041a860693e423acb0e95",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage focuses on the association between lower meat intake and reduced risk of CVD, obesity, and diabetes. The NEW passage replaces this with specific actionable recommendations to 'Prioritize Protein Foods at Every Meal' and provides specific protein serving goals (1.2-1.6 g/kg), shifting from a risk-reduction focus to a prescriptive nutritional goal."
+  },
+  "latency_ms": 3720,
+  "usage_metadata": {
+    "promptTokenCount": 1005,
+    "candidatesTokenCount": 103,
+    "totalTokenCount": 1108,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1005
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

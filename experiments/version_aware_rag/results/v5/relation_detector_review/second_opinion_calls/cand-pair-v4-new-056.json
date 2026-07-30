@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-056",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "1ca8e4ece3c4fdaec951c11486f0bae9a378869fe566159a7f841aa8a283b2ff",
+  "response_sha256": "52dccc99a46b529d345f75767fdd98570228f401a06e31da6f36e88b5ba9320c",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The new excerpt updates the guidance by broadening the population who should avoid alcohol (adding those with family history of alcoholism or specific medical conditions) and replaces the specific drink count thresholds with a more general advisory to consume less."
+  },
+  "latency_ms": 869,
+  "usage_metadata": {
+    "promptTokenCount": 242,
+    "candidatesTokenCount": 82,
+    "totalTokenCount": 324,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 242
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

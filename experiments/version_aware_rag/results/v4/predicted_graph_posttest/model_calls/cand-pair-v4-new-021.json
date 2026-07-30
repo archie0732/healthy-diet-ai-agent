@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-021",
+  "input_sha256": "025bf826f730cecee7227d7280ed21cca543e46bbeb9da9e2a444b9a8eb9ecd7",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nGuideline 4: Limit foods and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugars-Less than 10% of calories per day\r\nstarting at age 2. Avoid foods and beverages with\r\nadded sugars for those younger than age 2.\r\n* Saturated fat-Less than 10% of calories per day\r\nstarting at age 2.\r\n* The National Academies recommends that trans fat and dietary cholesterol consumption to be as low as possible without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnant.\n\nNEW PASSAGE\negetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "d07e7a6ad71a0ec1961d6df2bf43f0713a702c1f5f500a53dd53c0be60eec959",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage focuses on quantitative limits for sugars, saturated fat, sodium, and alcohol. The new passage provides broader dietary guidance including vegetables, fruits, whole grains, and healthy fats, while maintaining the 10% limit for saturated fat and the lack of quantitative limits on cholesterol."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "74501ff4827c0c0b875fd42e75c5c60e98008f1f19950f8aa764c9a1908ce4e4",
+    "response_sha256": "d495e123c866f6039d8bc61dae4a9b4d730533c96ef889b71796e652288c125d",
+    "latency_ms": 3154,
+    "usage_metadata": {
+      "promptTokenCount": 738,
+      "candidatesTokenCount": 80,
+      "totalTokenCount": 818,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 738
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.9, \"rationale\": \"The old passage focuses on quantitative limits for sugars, saturated fat, sodium, and alcohol. The new passage provides broader dietary guidance including vegetables, fruits, whole grains, and healthy fats, while maintaining the 10% limit for saturated fat and the lack of quantitative limits on cholesterol.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 738,
+        "candidatesTokenCount": 80,
+        "totalTokenCount": 818,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 738
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "eXhgatmOKaTy1e8P0dS1oAM"
+    }
+  }
+}

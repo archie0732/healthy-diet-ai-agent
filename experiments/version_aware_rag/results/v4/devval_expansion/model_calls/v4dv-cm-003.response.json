@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-003",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "07c543fbb2bb5bcfe290488934d85d99aea41f35633733603f509760ce60b127",
+    "response_sha256": "fbae64f53f2fbd2f1bdb9059aa960587864db7e18711f27ed1f3717021edabff",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 18445,
+    "usage": {
+      "promptTokenCount": 654,
+      "candidatesTokenCount": 304,
+      "totalTokenCount": 2128,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 654
+        }
+      ],
+      "thoughtsTokenCount": 1170,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:22:39.713Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"How do the WHO guidelines for general sodium reduction and the recommendations for low-sodium sodium substitutes (LSSS) apply to pregnant women, and what are the specific health-related exceptions or conditions for each?\",\n  \"target_population\": [\n    \"pregnant women\"\n  ],\n  \"conditions\": [\n    \"with or without hypertension\",\n    \"excluding individuals with illnesses or drug therapies leading to hyponatraemia or acute build-up of body water\",\n    \"excluding individuals requiring physician-supervised diets (such as heart failure or type I diabetes)\",\n    \"including individuals at risk for hyperkalaemia regarding household meal preparation\"\n  ],\n  \"draft_rationale\": \"To fully answer this query, information must be merged from both provided passages. From the 2012 guideline (retained evidence), the user must extract that general sodium reduction recommendations apply to pregnant women (with or without hypertension), except for those with illnesses or drug therapies leading to hyponatraemia, acute build-up of body water, or those requiring physician-supervised diets (e.g., heart failure or type I diabetes). From the 2025 guideline (current evidence), the user must extract that the LSSS recommendations do not apply to pregnant women due to a lack of data, but LSSS should still not be used to prepare family meals if a pregnant household member is at risk for hyperkalaemia.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 654,
+      "candidatesTokenCount": 304,
+      "totalTokenCount": 2128,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 654
+        }
+      ],
+      "thoughtsTokenCount": 1170,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "_vNeatG8OY-1vr0PkoCPoA8"
+  }
+}

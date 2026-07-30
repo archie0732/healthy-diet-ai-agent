@@ -1,0 +1,13 @@
+{
+  "schema_version": "v5-r2.17-candidate-recall-diagnostic-audit-1",
+  "status": "audit_pass",
+  "diagnostic_execution_count": 1,
+  "r2_16_rerun_performed": false,
+  "top3_reranking_performed": false,
+  "raw_row_count": 128,
+  "best_required_recall_at_20": 0.8461538461538461,
+  "selected_diagnostic_variant": null,
+  "new_confirmation_required": false,
+  "promotion_allowed": false,
+  "failures": []
+}

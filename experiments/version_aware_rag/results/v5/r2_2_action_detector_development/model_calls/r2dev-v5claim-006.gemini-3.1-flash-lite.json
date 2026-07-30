@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-006",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "81796a0e283a2847d37eeb61155c44abadeeaffce61377fd2c19c2618e6bc38f",
+  "response_sha256": "f0db9b1d3bba3a5abf4a616f370a7f2fb67d07dc60d8a088ba0c0d6333b40a5f",
+  "prediction": {
+    "retention_status": "ADDS_SCOPE_OR_EXCEPTION",
+    "old_unique_information": "A general recommendation for saturated fat intake without an age-based population boundary.",
+    "confidence": 1,
+    "rationale": "The CURRENT passage retains the 10% threshold but adds a specific population scope (starting at age 2) that was not present in the OLD passage.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 867,
+  "usage_metadata": {
+    "promptTokenCount": 417,
+    "candidatesTokenCount": 93,
+    "totalTokenCount": 510,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 417
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-020",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "27c05265a97cf3afb2a24eb87e9c9448916a530614d13215b6a4e3b95b1521bd",
+  "response_sha256": "acf019739d7e124b8049aa434bc9ebcb531c3688a9c7fa3cfb06b3ae52de8687",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "OLD provides essential guidance on the duration and priority of human milk and formula feeding, whereas CURRENT focuses specifically on vitamin D dosage and the introduction of complementary foods."
+  },
+  "latency_ms": 5135,
+  "usage_metadata": {
+    "promptTokenCount": 485,
+    "candidatesTokenCount": 55,
+    "totalTokenCount": 540,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 485
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

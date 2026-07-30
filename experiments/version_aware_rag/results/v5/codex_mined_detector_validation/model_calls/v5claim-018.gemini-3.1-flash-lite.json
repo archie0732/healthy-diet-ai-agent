@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-018",
+  "model_id": "gemini-3.1-flash-lite",
+  "request_sha256": "eea3713a8d4d894a38cf31ac046ccae696eb941ae19e005f6b96e207c10b545d",
+  "response_sha256": "b9b8aab216f94c5c92e33b7f63f26d1cb98e780f58c750bccc7b2d22c50a38a9",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The NEW passage adds specific serving goals, preparation advice, and guidance on juice consumption, while the OLD passage provides broad dietary categories that remain compatible with these new additions."
+  },
+  "latency_ms": 951,
+  "usage_metadata": {
+    "promptTokenCount": 408,
+    "candidatesTokenCount": 64,
+    "totalTokenCount": 472,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 408
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

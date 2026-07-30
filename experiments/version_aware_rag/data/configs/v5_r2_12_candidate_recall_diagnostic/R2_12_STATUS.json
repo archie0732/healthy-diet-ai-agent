@@ -1,0 +1,80 @@
+{
+  "schema_version": "v5-r2.12-status-1",
+  "status": "development_confirmation_gate_failed_locked",
+  "recorded_at": "2026-07-26T00:00:00.000+08:00",
+  "development_only": true,
+  "promotion_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_11_rerun_allowed": false,
+  "owner_checkpoint": {
+    "status": "checkpoint_approved",
+    "approval_scope": "diagnostic result, selected repair, predeclared candidate groups, and continuation to annotation authoring",
+    "future_confirmation_annotations_approved": false
+  },
+  "diagnostic": {
+    "execution_count": 1,
+    "execution_guard_status": "diagnostic_complete_locked",
+    "outcome_exposed_r2_11_data": true,
+    "promotion_evidence": false,
+    "selected_variant": "bm25_group_expand_seed14",
+    "baseline_required_recall_at_20": 0.8863636363636364,
+    "selected_required_recall_at_20": 0.9659090909090909,
+    "candidate_failures_before": 10,
+    "candidate_failures_after": 3,
+    "audit_status": "audit_pass",
+    "audit_sha256": "235eb92513e1b36043e2d9061c1a0c7848020eb28b04e91b279cc33da09927b4"
+  },
+  "confirmation_construction": {
+    "minimum_record_count": 32,
+    "minimum_stratum_counts": {
+      "conditional_merge": 10,
+      "compatible_history": 10,
+      "current_only": 6,
+      "hard_negative_current": 6
+    },
+    "predeclared_candidate_group_count": 56,
+    "predeclared_candidate_item_count": 112,
+    "prior_required_evidence_overlap_count": 0,
+    "candidate_group_manifest_sha256": "c494b1cd26c5fadcb44cb214bea9332b3439db9ee791fe0e5c6dd646de62beb3",
+    "semantic_reviewed_group_count": 56,
+    "eligible_group_count": 33,
+    "rejected_group_count": 23,
+    "annotation_count": 32,
+    "project_owner_approved_count": 32,
+    "retrieval_allowed": false,
+    "provisional_annotations_sha256": "b41fd2cac298010ab97d2a60bf8e052e49bd754c882e8bef5815f80f0d8d777f",
+    "owner_review_packet_sha256": "ba6d66752a722b53c662beb4b20458183483a9143adbc36914e385f440122869",
+    "next_required_action": "design a new Development-only Top-3 reranking repair without rerunning R2.12"
+  },
+  "confirmation_execution": {
+    "status": "confirmation_failed_locked",
+    "retrieval_execution_count": 1,
+    "required_candidate_micro_recall_at_20": {
+      "baseline": 0.9615384615384616,
+      "group_expansion": 0.9807692307692307
+    },
+    "conditional_merge_required_recall_at_3": {
+      "baseline": 0.5,
+      "group_expansion": 0.45
+    },
+    "compatible_history_required_recall_at_3": {
+      "baseline": 0.3,
+      "group_expansion": 0.3
+    },
+    "combined_both_evidence_coverage": {
+      "baseline": 0.2,
+      "group_expansion": 0.15
+    },
+    "gate_checks_passed": 5,
+    "gate_checks_failed": 3,
+    "gate_passed": false,
+    "promotion_allowed": false
+  },
+  "locked_cycle_integrity": {
+    "r2_11_retrieval_execution_count": 1,
+    "r2_12_diagnostic_execution_count": 1,
+    "r2_10_rerun_performed": false
+  },
+  "claim_boundary": "R2.12A selected a diagnostic repair only; confirmation evidence does not yet exist."
+}

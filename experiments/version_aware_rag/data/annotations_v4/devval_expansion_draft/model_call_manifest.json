@@ -1,0 +1,583 @@
+{
+  "model_id": "gemini-3.5-flash",
+  "calls": [
+    {
+      "draft_id": "v4dv-cm-001",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "203aac2d8b6bad60f5b96ca1cacda57b9c38e4903fa36a3257cbc0c498531c37",
+      "response_sha256": "006cfca2689a5662d8639e18cdef5288fb95fe65e8a2a5027d62de801224155a",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 19537,
+      "usage": {
+        "promptTokenCount": 620,
+        "candidatesTokenCount": 259,
+        "totalTokenCount": 2525,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 620
+          }
+        ],
+        "thoughtsTokenCount": 1646,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:22:04.696Z"
+    },
+    {
+      "draft_id": "v4dv-cm-002",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "e21fc3bfbaf851892bf3420e3d8567cbead4627f57d9820649b14830d1f971e9",
+      "response_sha256": "7bb98e3151c31409f918760f9de35e7aeb68c69285645a34c596fc7667d03d1a",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 16563,
+      "usage": {
+        "promptTokenCount": 801,
+        "candidatesTokenCount": 312,
+        "totalTokenCount": 1938,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 801
+          }
+        ],
+        "thoughtsTokenCount": 825,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:22:21.267Z"
+    },
+    {
+      "draft_id": "v4dv-cm-003",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "07c543fbb2bb5bcfe290488934d85d99aea41f35633733603f509760ce60b127",
+      "response_sha256": "fbae64f53f2fbd2f1bdb9059aa960587864db7e18711f27ed1f3717021edabff",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 18445,
+      "usage": {
+        "promptTokenCount": 654,
+        "candidatesTokenCount": 304,
+        "totalTokenCount": 2128,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 654
+          }
+        ],
+        "thoughtsTokenCount": 1170,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:22:39.713Z"
+    },
+    {
+      "draft_id": "v4dv-cm-004",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "95341eae79bd0d235d76676a09f1b596c40cf12f9476e48b7ba2b6ba27e2f616",
+      "response_sha256": "66ab52b12f909e7795ec7e685791b5068ef79d1ba2c9b48d44699c05b35e73f6",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 15828,
+      "usage": {
+        "promptTokenCount": 666,
+        "candidatesTokenCount": 271,
+        "totalTokenCount": 2132,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 666
+          }
+        ],
+        "thoughtsTokenCount": 1195,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:22:55.542Z"
+    },
+    {
+      "draft_id": "v4dv-cm-005",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "ded14961d4d9ceebde42e2509e45cafd9d7822e3a5671d3de2ceed80aa1b0d9d",
+      "response_sha256": "e0973ec08daacef8547c1267817101117bf5d3e2356b1a022f1df7a3613a1baa",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 11566,
+      "usage": {
+        "promptTokenCount": 649,
+        "candidatesTokenCount": 289,
+        "totalTokenCount": 2107,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 649
+          }
+        ],
+        "thoughtsTokenCount": 1169,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:23:07.109Z"
+    },
+    {
+      "draft_id": "v4dv-cm-006",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "6987b0433681f9dd53ae0e5afed520fd7877e151dc71708d09b35845db002abc",
+      "response_sha256": "cf2c69d10d04ca7e85425f093317e5598c2e92d93c7c97387debb74d1e685f0a",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 15433,
+      "usage": {
+        "promptTokenCount": 652,
+        "candidatesTokenCount": 273,
+        "totalTokenCount": 2182,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 652
+          }
+        ],
+        "thoughtsTokenCount": 1257,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:23:22.544Z"
+    },
+    {
+      "draft_id": "v4dv-cm-007",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "d0b4519a3ea1186f4816edb2d1130acebe37964efa766c6ce850e1a77ab5006f",
+      "response_sha256": "5be34ee3d5b4f2da85519eff31ac747dbbd1f3096b5f2f278f685551a2d7e65a",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 15051,
+      "usage": {
+        "promptTokenCount": 705,
+        "candidatesTokenCount": 238,
+        "totalTokenCount": 2005,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 705
+          }
+        ],
+        "thoughtsTokenCount": 1062,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:23:37.596Z"
+    },
+    {
+      "draft_id": "v4dv-cm-008",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "04df9f2c1e6a84fd3dadcfba049cd361a3450b7fca1cb6d32cb307c87a1d984b",
+      "response_sha256": "201793790a38970490c07ad0208df5ccd0504447aa3a8a6da6eac59549c020d5",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 14307,
+      "usage": {
+        "promptTokenCount": 879,
+        "candidatesTokenCount": 270,
+        "totalTokenCount": 2107,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 879
+          }
+        ],
+        "thoughtsTokenCount": 958,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:23:51.904Z"
+    },
+    {
+      "draft_id": "v4dv-cm-009",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "304ec438822c13f254f77dc8901f7607a6372c9b2a1b1e35dd006278eee3b40d",
+      "response_sha256": "2d81616d97956a199659b68fcf4264590754a69c7c9aaea5b4ea2a914c21900f",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 12580,
+      "usage": {
+        "promptTokenCount": 773,
+        "candidatesTokenCount": 254,
+        "totalTokenCount": 2015,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 773
+          }
+        ],
+        "thoughtsTokenCount": 988,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:24:04.489Z"
+    },
+    {
+      "draft_id": "v4dv-cm-010",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "02805fef1fe47920a6b66ebb0690c79e3bda528f00c700a97d688eed5cb69de1",
+      "response_sha256": "7b4ec145e801ee981842977b5679c03b949ee403a4ea39f9e23c495fb3d0d047",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 18497,
+      "usage": {
+        "promptTokenCount": 768,
+        "candidatesTokenCount": 246,
+        "totalTokenCount": 2116,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 768
+          }
+        ],
+        "thoughtsTokenCount": 1102,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:25:15.343Z"
+    },
+    {
+      "draft_id": "v4dv-cm-011",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "67502dea4db8ce759c5816c545f94a6b106c791be21b0150b25481bfa894bbda",
+      "response_sha256": "e66bfc0e6c0cd8a22abbe2a04bb86d5367d4b634796594e8338eaea29b45168d",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 9110,
+      "usage": {
+        "promptTokenCount": 809,
+        "candidatesTokenCount": 273,
+        "totalTokenCount": 2163,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 809
+          }
+        ],
+        "thoughtsTokenCount": 1081,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:25:24.455Z"
+    },
+    {
+      "draft_id": "v4dv-cm-012",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "35342009be6f30b0f30eff08d32080e94f743a634572325c1800f6d4f7d2825e",
+      "response_sha256": "5b4f41705fd026f764a3d0b0a99f11351e31c14c209ddc17c79870991a984ab3",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 13953,
+      "usage": {
+        "promptTokenCount": 836,
+        "candidatesTokenCount": 266,
+        "totalTokenCount": 2076,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 836
+          }
+        ],
+        "thoughtsTokenCount": 974,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:25:38.413Z"
+    },
+    {
+      "draft_id": "v4dv-ch-001",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "de32b41a62ceb86c0831402ea62be6346225178ba2bb54f8db95125712ed5679",
+      "response_sha256": "510167ea67ceb5387571a09976827e7a74697c7d63db350a7adfcc5cd4e910a1",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 12631,
+      "usage": {
+        "promptTokenCount": 629,
+        "candidatesTokenCount": 239,
+        "totalTokenCount": 2237,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 629
+          }
+        ],
+        "thoughtsTokenCount": 1369,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:25:51.046Z"
+    },
+    {
+      "draft_id": "v4dv-ch-002",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "7957e4b8c5abc616ee2ef0525a79162caa6fd406459b3680d9037aa3ab604679",
+      "response_sha256": "ad0ae941788482632240ee655844dfce449d8d63c4d2edd4a34b96199e9f81db",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 16770,
+      "usage": {
+        "promptTokenCount": 807,
+        "candidatesTokenCount": 252,
+        "totalTokenCount": 2278,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 807
+          }
+        ],
+        "thoughtsTokenCount": 1219,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:26:07.819Z"
+    },
+    {
+      "draft_id": "v4dv-ch-003",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "3d2c0967044f70016a1dde153304e5239135d9e0a00d58c470b5565cd52b9b8b",
+      "response_sha256": "c94785fa27b2414745ba1ed34471b3873442d2331f116eb2262ce75f54756c3f",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 20028,
+      "usage": {
+        "promptTokenCount": 675,
+        "candidatesTokenCount": 292,
+        "totalTokenCount": 2021,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 675
+          }
+        ],
+        "thoughtsTokenCount": 1054,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:26:27.852Z"
+    },
+    {
+      "draft_id": "v4dv-ch-004",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "c0ea4ebcbff7416929dc5e01f39abb1adf02a8cd8bc50e1a8ea70773e05f2255",
+      "response_sha256": "01fb7c0fa557f4ee6b04adba76c7852bddbec770e8fd147370ceafb97a9bf7cf",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 18069,
+      "usage": {
+        "promptTokenCount": 882,
+        "candidatesTokenCount": 305,
+        "totalTokenCount": 2222,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 882
+          }
+        ],
+        "thoughtsTokenCount": 1035,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:26:45.925Z"
+    },
+    {
+      "draft_id": "v4dv-ch-005",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "2944114af2a9ac7b2b8dfdb5e8408e125a2951ab49501af031f602232bbea3c5",
+      "response_sha256": "54e9ba0511933df2604722c04b72a43a22a83b8a8ff4c86b18f8f71b563a1306",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 10923,
+      "usage": {
+        "promptTokenCount": 686,
+        "candidatesTokenCount": 252,
+        "totalTokenCount": 1705,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 686
+          }
+        ],
+        "thoughtsTokenCount": 767,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T04:26:56.851Z"
+    },
+    {
+      "draft_id": "v4dv-ch-006",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "1373278e3b6612e9d377fdbacf4768c4838f0e6c6aaa678cdb1915506c7f3862",
+      "response_sha256": "b18822fdf4206a467585af0a7dd43f02669877b12525322f2f3695491054a0d6",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 4851,
+      "usage": {
+        "promptTokenCount": 711,
+        "candidatesTokenCount": 252,
+        "totalTokenCount": 1886,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 711
+          }
+        ],
+        "thoughtsTokenCount": 923,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:28:48.791Z"
+    },
+    {
+      "draft_id": "v4dv-ch-007",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "2d29302e0a47097f5fc3f6039f547f0abf7b96cb2249a52d45f659edd0601f04",
+      "response_sha256": "05b38b54cdca4c4ec8b65f3f2ca803bc3578e479f6387897ef9183cc53fd2c93",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 6201,
+      "usage": {
+        "promptTokenCount": 774,
+        "candidatesTokenCount": 238,
+        "totalTokenCount": 2266,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 774
+          }
+        ],
+        "thoughtsTokenCount": 1254,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:28:55.000Z"
+    },
+    {
+      "draft_id": "v4dv-ch-008",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "eeb78f62f5ded0475f1442cb777cade372ba08c486529aef425a622db8c5efea",
+      "response_sha256": "10df73c694e83150ef483cb861489c8ccef102bc6afb579ae78ab35e20359bc6",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 5322,
+      "usage": {
+        "promptTokenCount": 739,
+        "candidatesTokenCount": 293,
+        "totalTokenCount": 1977,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 739
+          }
+        ],
+        "thoughtsTokenCount": 945,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:29:00.323Z"
+    },
+    {
+      "draft_id": "v4dv-ch-009",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "b319a0283a041239bab98ec5e0f570404abe96d16e81e6b961d204e2970548e4",
+      "response_sha256": "b0e15111fd86717b68da94f7e8b38eaa2eeae1b704cec32c36f76adb0b351422",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 5534,
+      "usage": {
+        "promptTokenCount": 840,
+        "candidatesTokenCount": 292,
+        "totalTokenCount": 2404,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 840
+          }
+        ],
+        "thoughtsTokenCount": 1272,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:29:05.858Z"
+    },
+    {
+      "draft_id": "v4dv-ch-010",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "42c69d3738151ad10ce7ced962559812cf16eaee917f80275bd28cab78d7931f",
+      "response_sha256": "7782f0ab1bc258db5d3852092451b4083cde9ca1612d330b80e24d3c4e8a7b09",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 4946,
+      "usage": {
+        "promptTokenCount": 714,
+        "candidatesTokenCount": 250,
+        "totalTokenCount": 1961,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 714
+          }
+        ],
+        "thoughtsTokenCount": 997,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:29:10.807Z"
+    },
+    {
+      "draft_id": "v4dv-ch-011",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "34f5a95e9b560177016454c4e3667440ca4f005a63bb1fba753dfe046e651b1e",
+      "response_sha256": "3aeca291ac00edf03000a82ae64d0bea11acbb29e38abe075c900dbd35a0ccef",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 5354,
+      "usage": {
+        "promptTokenCount": 853,
+        "candidatesTokenCount": 254,
+        "totalTokenCount": 2039,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 853
+          }
+        ],
+        "thoughtsTokenCount": 932,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:29:16.163Z"
+    },
+    {
+      "draft_id": "v4dv-ch-012",
+      "model_id": "gemini-3.5-flash",
+      "endpoint": "v1beta/models/{model}:generateContent",
+      "temperature": 0,
+      "prompt_sha256": "9e35f0b13ce2c72d3b6ccf949af51120610f9778f85e8602dbff35556a0d2e6a",
+      "response_sha256": "6d08a5ba2f82ac111103a69195c66e8651aabb88e2000f715bdb46bc0b4e26eb",
+      "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+      "latency_ms": 6131,
+      "usage": {
+        "promptTokenCount": 725,
+        "candidatesTokenCount": 301,
+        "totalTokenCount": 2203,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 725
+          }
+        ],
+        "thoughtsTokenCount": 1177,
+        "serviceTier": "standard"
+      },
+      "created_at": "2026-07-21T07:29:22.295Z"
+    }
+  ],
+  "call_count": 24,
+  "ledger_sha256": "07a1b763c2dc9e0c4238307ecbc11e1d2dfef095bff63f9e56054a0ef7cf9abb"
+}

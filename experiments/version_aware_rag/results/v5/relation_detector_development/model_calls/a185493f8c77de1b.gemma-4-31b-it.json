@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2020-page-11-pass-0-913a1860|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "6f8832b20ca21dafcd80c4a3fc8a23f073cbf27171ea0063a49225faa7e7699c",
+  "response_sha256": "c4e51ddd76a1b31e1c24bf9a1e1eb4164fdb7ff17ec07819bd8a980382b38f91",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a high-level caloric distribution framework (85% nutrient-dense, 15% other), while the NEW passage provides specific, actionable constraints on processed foods and precise gram limits for added sugars. They are simultaneously applicable as the NEW passage defines the 'other uses' and 'nutrient-dense' categories mentioned in the OLD passage."
+  },
+  "latency_ms": 5030,
+  "usage_metadata": {
+    "promptTokenCount": 752,
+    "candidatesTokenCount": 103,
+    "totalTokenCount": 855,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 752
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

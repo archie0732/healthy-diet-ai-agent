@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-002",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "7a8737184503efbfe7909f43c12d1f2b7f1dcfdea260f1598437b36610b43e91",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-032-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-032-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=The\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-004-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=drates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2,000-calorie dietary pattern,\r\nsource of protein, healthy fats, vitamins, and adjusting as needed based on your\r\nminerals. individual caloric requirements.\r\nGut Health\r\n+ Your gut contains trillions of bacteria and other microorganisms called the microbiome.\r\nA healthy diet supports a well-balanced microbiome and healthy digestion. Highly\r\nprocessed foods can disrupt this balance, while vegetables, fruits, fermented\r\nfoods (e.g., sauerkraut, kimchi, kefir, miso), and high-fiber foods support a diverse\r\nmicrobiome, which may be beneficial for health.\n\nQUESTION\n\nWhat cooking method swaps are recommended for protein foods in 2025-2030?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "6a6442575844376b9036545eb415509a0486ae51b96711ebab65e9be1938fc2c",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-032-new",
+    "v4fresh-cand-pair-v4-new-032-old",
+    "v4fresh-cand-pair-v4-new-004-new"
+  ],
+  "answer": "*   Question: What cooking method swaps are recommended for protein foods in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-032-new, document=dga-2025, edition=2025-2030): Mentions \"Swap deep-fried cooking methods with baked, broiled, roasted, stir-fried, or grilled cooking methods\" under the section \"Prioritize Protein Foods at Every Meal\".\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-032-old, document=dga-2020, edition=2020-2025): General dietary pattern advice. No specific cooking method swaps for protein.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-004-new, document=dga-2025, edition=2025-2030): Also mentions \"Swap deep-fried cooking methods with baked, broiled, roasted, stir-fried, or grilled cooking methods\" under the protein section.\n\n    *   The recommendation for 2025-2030 is to swap deep-fried cooking methods with baked, broiled, roasted, stir-fried, or grilled cooking methods [v4fresh-cand-pair-v4-new-032-new, v4fresh-cand-pair-v4-new-004-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes (specifically for the 2025-2030 edition).For 2025-2030, it is recommended to swap deep-fried cooking methods with grilled, stir-fried, roasted, broiled, or baked cooking methods [v4fresh-cand-pair-v4-new-032-new, v4fresh-cand-pair-v4-new-004-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "f0067ff8bdef68e7f490401d90075513a6894e9f4def0c397317ec68be0245fb",
+    "response_sha256": "aa509aa6f714269fb81967442a5c008eca7e111f5486f0aa21d7fd827c622810",
+    "latency_ms": 16170,
+    "usage_metadata": {
+      "promptTokenCount": 1109,
+      "candidatesTokenCount": 77,
+      "totalTokenCount": 1655,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1109
+        }
+      ],
+      "thoughtsTokenCount": 469,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: What cooking method swaps are recommended for protein foods in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-032-new, document=dga-2025, edition=2025-2030): Mentions \"Swap deep-fried cooking methods with baked, broiled, roasted, stir-fried, or grilled cooking methods\" under the section \"Prioritize Protein Foods at Every Meal\".\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-032-old, document=dga-2020, edition=2020-2025): General dietary pattern advice. No specific cooking method swaps for protein.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-004-new, document=dga-2025, edition=2025-2030): Also mentions \"Swap deep-fried cooking methods with baked, broiled, roasted, stir-fried, or grilled cooking methods\" under the protein section.\n\n    *   The recommendation for 2025-2030 is to swap deep-fried cooking methods with baked, broiled, roasted, stir-fried, or grilled cooking methods [v4fresh-cand-pair-v4-new-032-new, v4fresh-cand-pair-v4-new-004-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes (specifically for the 2025-2030 edition).",
+                "thought": true
+              },
+              {
+                "text": "For 2025-2030, it is recommended to swap deep-fried cooking methods with grilled, stir-fried, roasted, broiled, or baked cooking methods [v4fresh-cand-pair-v4-new-032-new, v4fresh-cand-pair-v4-new-004-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1109,
+        "candidatesTokenCount": 77,
+        "totalTokenCount": 1655,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1109
+          }
+        ],
+        "thoughtsTokenCount": 469,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "hXlgaueeD_2dvr0PqerSoQM"
+    }
+  }
+}

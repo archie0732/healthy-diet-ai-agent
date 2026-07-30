@@ -1,0 +1,16 @@
+{"edge_id":"v4dv-cm-001-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-lsss-2025-page-42-pass-1-c373e2f64f","retained_chunk_id":"who-sodium-2012-page-26-pass-2-b9dbdf82b0"}
+{"edge_id":"v4dv-cm-002-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-lsss-2025-page-42-pass-1-c373e2f64f","retained_chunk_id":"who-potassium-2012-page-24-pass-0-f9a5c41a38"}
+{"edge_id":"v4dv-cm-003-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-lsss-2025-page-43-pass-0-2fa6c205f7","retained_chunk_id":"who-sodium-2012-page-11-pass-0-2f53a84f4c"}
+{"edge_id":"v4dv-cm-004-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-lsss-2025-page-43-pass-0-2fa6c205f7","retained_chunk_id":"who-sodium-2012-page-26-pass-0-79e05e2ed5"}
+{"edge_id":"v4dv-cm-005-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-lsss-2025-page-42-pass-2-6fd11e7cff","retained_chunk_id":"who-sodium-2012-page-27-pass-0-aee1a17991"}
+{"edge_id":"v4dv-cm-006-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-lsss-2025-page-42-pass-0-9add4977a5","retained_chunk_id":"who-sodium-2012-page-26-pass-2-b9dbdf82b0"}
+{"edge_id":"v4dv-cm-007-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-nss-2023-page-34-pass-0-fcf5b1e8c1","retained_chunk_id":"who-sugars-2015-page-12-pass-0-737526a649"}
+{"edge_id":"v4dv-cm-008-edge-1","relation_type":"conditional_merge","current_chunk_id":"who-nss-2023-page-37-pass-0-468b4186e3","retained_chunk_id":"who-sugars-2015-page-12-pass-1-5879bb3805"}
+{"edge_id":"v4dv-ch-001-edge-1","relation_type":"compatible_history","current_chunk_id":"who-lsss-2025-page-43-pass-0-2fa6c205f7","retained_chunk_id":"who-sodium-2012-page-27-pass-0-aee1a17991"}
+{"edge_id":"v4dv-ch-002-edge-1","relation_type":"compatible_history","current_chunk_id":"who-lsss-2025-page-42-pass-1-c373e2f64f","retained_chunk_id":"who-sodium-2012-page-27-pass-0-aee1a17991"}
+{"edge_id":"v4dv-ch-003-edge-1","relation_type":"compatible_history","current_chunk_id":"who-lsss-2025-page-40-pass-0-16cb9713ae","retained_chunk_id":"who-potassium-2012-page-10-pass-2-dfa70d52a4"}
+{"edge_id":"v4dv-ch-004-edge-1","relation_type":"compatible_history","current_chunk_id":"who-lsss-2025-page-42-pass-1-c373e2f64f","retained_chunk_id":"who-potassium-2012-page-13-pass-1-cb5e86171d"}
+{"edge_id":"v4dv-ch-005-edge-1","relation_type":"compatible_history","current_chunk_id":"who-lsss-2025-page-43-pass-0-2fa6c205f7","retained_chunk_id":"who-potassium-2012-page-24-pass-0-f9a5c41a38"}
+{"edge_id":"v4dv-ch-006-edge-1","relation_type":"compatible_history","current_chunk_id":"who-lsss-2025-page-40-pass-0-16cb9713ae","retained_chunk_id":"who-sodium-2012-page-26-pass-2-b9dbdf82b0"}
+{"edge_id":"v4dv-ch-007-edge-1","relation_type":"compatible_history","current_chunk_id":"who-nss-2023-page-37-pass-2-1fbfcd3a19","retained_chunk_id":"who-sugars-2015-page-12-pass-1-5879bb3805"}
+{"edge_id":"v4dv-ch-008-edge-1","relation_type":"compatible_history","current_chunk_id":"who-nss-2023-page-13-pass-1-74f7dfedc2","retained_chunk_id":"who-sugars-2015-page-12-pass-0-737526a649"}

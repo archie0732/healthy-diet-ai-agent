@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-50-pass-1-6bfa09f8|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "d57e7ced3aca4cbc58abb3e75a5fb3a70641b37742a5c2dabffbf97f82be43b6",
+  "response_sha256": "993685a416432a76c61f8308fd5e8a86c5e992ad2a073cb4b9568d56180cd29c",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The OLD passage recommends limiting added sugars to 'no more than 10 percent' of calories, whereas the NEW passage replaces this percentage-based target with a specific weight-based limit: 'one meal should contain no more than 10 grams of added sugars' and specific gram limits for snacks."
+  },
+  "latency_ms": 3139,
+  "usage_metadata": {
+    "promptTokenCount": 1002,
+    "candidatesTokenCount": 82,
+    "totalTokenCount": 1084,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1002
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

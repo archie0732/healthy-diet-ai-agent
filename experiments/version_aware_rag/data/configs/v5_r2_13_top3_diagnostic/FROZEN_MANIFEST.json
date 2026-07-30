@@ -1,0 +1,23 @@
+{
+  "schema_version": "v5-r2.13-top3-diagnostic-manifest-1",
+  "status": "top3_diagnostic_frozen_unlocked",
+  "development_only": true,
+  "outcome_exposed_r2_12_data": true,
+  "promotion_evidence_allowed": false,
+  "variants": [
+    "pair_score_g0.5",
+    "pair_score_g1.0",
+    "pair_score_g2.0",
+    "pair_quota_g0.5",
+    "pair_quota_g1.0"
+  ],
+  "runtime_trace_sha256": "d91f6ecfaf7334e6a75adb8275e2423d51f427788e16f0a7962202e1d4af7e64",
+  "runtime_queries_sha256": "88639b0926a1070e00a7a5b8b38d6e854effb83b3645ba1c3218944f1f6dfd1a",
+  "candidate_corpus_sha256": "0c1de4817eb52143b7c5f9ba118ab162e123ee86066b18b8caeb054cdf4dce99",
+  "protocol_sha256": "5495ffec6ffe8878544fe5cef4cc823b2e5930647f9cd32f2feb5dfd39658317",
+  "runner_sha256": "44803b73cd426ab67574044875982bf4626c91c443f01db1dcce00f904eea030",
+  "r2_12_guard_sha256": "87577f7e28bc86a1da237f931c78051838b7367948c6f06297222f2af40da9c6",
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_12_rerun_allowed": false
+}

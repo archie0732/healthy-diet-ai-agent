@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-011",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "436e7afe0bde0644cdafa005f7132468bcc2548b42e8d11fed78e53bf51adb5a",
+  "response_sha256": "59911f24e11e919ad13081dab45eaae1cee97b9b192ad4376ddf32802c4c2b37",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage lists acceptable dairy types (fat-free, low-fat, soy), while the NEW passage updates the recommendation to 'include full-fat dairy' and adds specific serving goals ('3 servings per day'), replacing the general list with a specific dietary directive."
+  },
+  "latency_ms": 2958,
+  "usage_metadata": {
+    "promptTokenCount": 310,
+    "candidatesTokenCount": 77,
+    "totalTokenCount": 387,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 310
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

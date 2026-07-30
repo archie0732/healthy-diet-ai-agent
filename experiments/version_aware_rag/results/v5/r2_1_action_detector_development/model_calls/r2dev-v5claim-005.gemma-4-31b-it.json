@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-005",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "7663573f97bc7ebd41f5bec94a6b0f320dbc6ccd0aa3bbe1ff96d92e4fd5b4e3",
+  "response_sha256": "d18459f967ce1bc606544fce3c3803e3a16d10815f962b13baba7cc474885a20",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides the same quantitative limit for added sugars as the OLD passage, making the OLD passage redundant."
+  },
+  "latency_ms": 2337,
+  "usage_metadata": {
+    "promptTokenCount": 368,
+    "candidatesTokenCount": 46,
+    "totalTokenCount": 414,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 368
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

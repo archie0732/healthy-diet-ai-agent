@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-021",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "f187ca4cffdfa64743e3e6c544eb90399efa2ac978aae9ff9e2a29c5bd44d98c",
+  "response_sha256": "1d0860f87dd81cc9ae56f8c0de42f6d6cafe92d9f9117fc39a8ac9c3a9373767",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "OLD provides quantitative dietary limits and age-specific restrictions for added sugars, whereas CURRENT provides guidance on how to identify added sugars on labels. They provide distinct, compatible information."
+  },
+  "latency_ms": 2611,
+  "usage_metadata": {
+    "promptTokenCount": 525,
+    "candidatesTokenCount": 66,
+    "totalTokenCount": 591,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 525
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

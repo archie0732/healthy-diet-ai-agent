@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-007",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "6266004e6e5d12224e3fe4951a401f11d563c715f8f64a2ff13f523f69b5a38e",
+  "response_sha256": "75adca79375ca768a262881ed38b824d7c31f4067425dffe52551bb0ba75fd38",
+  "prediction": {
+    "retention_status": "REPLACES_OR_CONFLICTS",
+    "old_unique_information": "The specific quantitative threshold of less than 10% of calories per day for added sugars starting at age 2 and the explicit avoidance mandate for those younger than age 2.",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage shifts the approach to added sugars by introducing new specific gram-based limits per meal and snack-type rather than the caloric percentage limit found in OLD. The CURRENT guidance serves as a comprehensive replacement for how added sugar consumption should be evaluated, rendering the previous percentage-based metric inconsistent with the new standard.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 1092,
+  "usage_metadata": {
+    "promptTokenCount": 669,
+    "candidatesTokenCount": 147,
+    "totalTokenCount": 816,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 669
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-005",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "0d6356ca25df4162fe2e90ec197f5dab88245ce181684528dccc8d3b3d8243bf",
+  "response_sha256": "fcf55bdbc75fb3e5c24c3d3296054a68ed1544327a19ee879eff718b7375df9c",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage explicitly defines the same numerical limit for added sugars, making the OLD passage a material duplication."
+  },
+  "latency_ms": 705,
+  "usage_metadata": {
+    "promptTokenCount": 252,
+    "candidatesTokenCount": 48,
+    "totalTokenCount": 300,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 252
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

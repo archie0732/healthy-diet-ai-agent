@@ -1,0 +1,507 @@
+{
+  "preregistration": {
+    "plan": "V4 expanded development-only model selection",
+    "input_split": "development.jsonl only",
+    "development_split_sha256": "dbc90de18d95ee757e3941305868d133ec7b4233d5ee0386b341ad7eb885a378",
+    "validation_split_read_count": 0,
+    "fresh_test_read_count": 0,
+    "candidate_budget": 20,
+    "top_k": 3,
+    "recency_lambda": 0.75,
+    "oracle_relation_source": "project-owner-approved development annotations; global relation edges only, no query-ID lookup during retrieval",
+    "relation_boost": 0.35,
+    "propagation_factor": 0.9,
+    "semantic_alpha_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "embedding_model": "gemini-embedding-001",
+    "cross_encoder_model": "gemma-4-31b-it",
+    "cross_encoder_thinking_level": "not_applicable",
+    "cross_encoder_output_schema": "scores_only_v1",
+    "cross_encoder_batch_size": 9007199254740991,
+    "cross_encoder_execution_status": "complete",
+    "endpoints": [
+      "conditional_merge_required_micro_recall_at_3",
+      "compatible_history_required_micro_recall_at_3",
+      "retained_required_micro_recall_at_3",
+      "stale_forbidden_hit_rate_at_3"
+    ],
+    "selection_rule": "Both target strata must match/exceed Recency; retained recall must strictly improve; stale/forbidden must not increase.",
+    "safety_label_limitation_declared_before_scoring": "Approved expanded labels contain required current/retained evidence but no query-level stale/forbidden labels. Full gate cannot pass until those labels are independently added."
+  },
+  "metrics": {
+    "recency": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.1875,
+        "required_micro_recall_at_3": 0.1875,
+        "current_required_micro_recall_at_3": 0.375,
+        "retained_required_micro_recall_at_3": 0,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.875,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.125,
+        "required_micro_recall_at_3": 0.125,
+        "current_required_micro_recall_at_3": 0.25,
+        "retained_required_micro_recall_at_3": 0,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.916667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.25,
+        "required_micro_recall_at_3": 0.25,
+        "current_required_micro_recall_at_3": 0.5,
+        "retained_required_micro_recall_at_3": 0,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.833333,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_lineage": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.53125,
+        "required_micro_recall_at_3": 0.53125,
+        "current_required_micro_recall_at_3": 0.4375,
+        "retained_required_micro_recall_at_3": 0.625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.645833,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.375,
+        "retained_required_micro_recall_at_3": 0.75,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5,
+        "required_micro_recall_at_3": 0.5,
+        "current_required_micro_recall_at_3": 0.5,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.666667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_embedding_0.25": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_cross_0.25": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.625,
+        "required_micro_recall_at_3": 0.625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.583333,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.6875,
+        "required_micro_recall_at_3": 0.6875,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.75,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.541667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_embedding_0.5": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.59375,
+        "required_micro_recall_at_3": 0.59375,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.604167,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.625,
+        "required_micro_recall_at_3": 0.625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.583333,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_cross_0.5": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.71875,
+        "required_micro_recall_at_3": 0.71875,
+        "current_required_micro_recall_at_3": 0.75,
+        "retained_required_micro_recall_at_3": 0.6875,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.520833,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.6875,
+        "required_micro_recall_at_3": 0.6875,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.75,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.541667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.75,
+        "required_micro_recall_at_3": 0.75,
+        "current_required_micro_recall_at_3": 0.875,
+        "retained_required_micro_recall_at_3": 0.625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.5,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_embedding_0.75": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.625,
+        "required_micro_recall_at_3": 0.625,
+        "current_required_micro_recall_at_3": 0.75,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.583333,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.75,
+        "retained_required_micro_recall_at_3": 0.375,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.6875,
+        "required_micro_recall_at_3": 0.6875,
+        "current_required_micro_recall_at_3": 0.75,
+        "retained_required_micro_recall_at_3": 0.625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.541667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_cross_0.75": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.71875,
+        "required_micro_recall_at_3": 0.71875,
+        "current_required_micro_recall_at_3": 0.75,
+        "retained_required_micro_recall_at_3": 0.6875,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.520833,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.6875,
+        "required_micro_recall_at_3": 0.6875,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.75,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.541667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.75,
+        "required_micro_recall_at_3": 0.75,
+        "current_required_micro_recall_at_3": 0.875,
+        "retained_required_micro_recall_at_3": 0.625,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.5,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_embedding_1": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.53125,
+        "required_micro_recall_at_3": 0.53125,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.4375,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.645833,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5,
+        "required_micro_recall_at_3": 0.5,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.375,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.666667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5625,
+        "required_micro_recall_at_3": 0.5625,
+        "current_required_micro_recall_at_3": 0.625,
+        "retained_required_micro_recall_at_3": 0.5,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.625,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    },
+    "oracle_cross_1": {
+      "all": {
+        "query_count": 16,
+        "mean_query_recall_at_3": 0.40625,
+        "required_micro_recall_at_3": 0.40625,
+        "current_required_micro_recall_at_3": 0.6875,
+        "retained_required_micro_recall_at_3": 0.125,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.729167,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "conditional_merge": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.3125,
+        "required_micro_recall_at_3": 0.3125,
+        "current_required_micro_recall_at_3": 0.5,
+        "retained_required_micro_recall_at_3": 0.125,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.791667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      },
+      "compatible_history": {
+        "query_count": 8,
+        "mean_query_recall_at_3": 0.5,
+        "required_micro_recall_at_3": 0.5,
+        "current_required_micro_recall_at_3": 0.875,
+        "retained_required_micro_recall_at_3": 0.125,
+        "non_required_hit_rate_at_3_diagnostic_only": 0.666667,
+        "stale_forbidden_hit_rate_at_3": null,
+        "stale_forbidden_status": "not_evaluable_missing_query_level_labels"
+      }
+    }
+  },
+  "candidate_coverage": [
+    {
+      "query_id": "v4dv-cm-001",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0,
+      "oracle_expanded_candidate_recall": 0.5,
+      "expansion_count": 2
+    },
+    {
+      "query_id": "v4dv-cm-002",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-cm-003",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-cm-004",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0,
+      "oracle_expanded_candidate_recall": 0.5,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-cm-005",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 3
+    },
+    {
+      "query_id": "v4dv-cm-006",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-cm-007",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 1
+    },
+    {
+      "query_id": "v4dv-cm-008",
+      "stratum": "conditional_merge",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 2
+    },
+    {
+      "query_id": "v4dv-ch-001",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 4
+    },
+    {
+      "query_id": "v4dv-ch-002",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-ch-003",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-ch-004",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 4
+    },
+    {
+      "query_id": "v4dv-ch-005",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 0.5,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 5
+    },
+    {
+      "query_id": "v4dv-ch-006",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 4
+    },
+    {
+      "query_id": "v4dv-ch-007",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 1
+    },
+    {
+      "query_id": "v4dv-ch-008",
+      "stratum": "compatible_history",
+      "required_count": 2,
+      "base_candidate_recall_at_20": 1,
+      "oracle_expanded_candidate_recall": 1,
+      "expansion_count": 1
+    }
+  ],
+  "eligible_on_available_endpoints": [
+    "oracle_cross_0.5",
+    "oracle_cross_0.75",
+    "oracle_cross_0.25",
+    "oracle_embedding_0.75",
+    "oracle_embedding_0.5",
+    "oracle_embedding_0.25",
+    "oracle_embedding_1",
+    "oracle_lineage",
+    "oracle_cross_1"
+  ],
+  "gate": {
+    "target_strata_noninferiority": true,
+    "retained_history_strict_improvement": true,
+    "stale_forbidden_nonincrease": null,
+    "stale_forbidden_status": "blocked_missing_query_level_stale_and_forbidden_labels",
+    "full_promotion_gate_passed": false,
+    "development_selected_candidate": "oracle_cross_0.5",
+    "validation_execution_allowed": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-007",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "c670bf2d29f7edc8214afc4c2e394cf8c84f5ef9e85f2b4505073f47f121c3ff",
+  "response_sha256": "e80f0d0365fe607cfb07d71eee75525cf10a6087138687795783c8420f6baaca",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides more specific, updated quantitative limits and recommendations for added sugars that supersede the general 10% caloric limit provided in the OLD passage."
+  },
+  "latency_ms": 790,
+  "usage_metadata": {
+    "promptTokenCount": 496,
+    "candidatesTokenCount": 66,
+    "totalTokenCount": 562,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 496
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

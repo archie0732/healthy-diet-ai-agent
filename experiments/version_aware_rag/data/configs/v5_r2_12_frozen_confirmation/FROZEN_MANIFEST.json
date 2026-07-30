@@ -1,0 +1,34 @@
+{
+  "schema_version": "v5-r2.12-frozen-confirmation-manifest-1",
+  "status": "confirmation_frozen_unlocked",
+  "record_count": 32,
+  "candidate_item_count": 112,
+  "approved_ledger_sha256": "5484ebefb38cc4c9fd753a9698f7bfda8d0e18d55ce4253d8d3aed0d03363391",
+  "owner_signoff_sha256": "9e3bdeb6323ac02b43c1d742b10be81e1fc9f677925be6b059faa51e1504bfc7",
+  "candidate_group_manifest_sha256": "c494b1cd26c5fadcb44cb214bea9332b3439db9ee791fe0e5c6dd646de62beb3",
+  "runtime_queries_sha256": "88639b0926a1070e00a7a5b8b38d6e854effb83b3645ba1c3218944f1f6dfd1a",
+  "candidate_corpus_sha256": "0c1de4817eb52143b7c5f9ba118ab162e123ee86066b18b8caeb054cdf4dce99",
+  "judgments_sha256": "c51ba4029bda8ab56a933705cbec9421ef922ac0778c103f2e9d65379a54321d",
+  "runner_sha256": "b8f46f48a331e97e241c1ad4edcdaff558631cde690141f4946bdc1217e45434",
+  "protocol_sha256": "341ee9e8bb925a498579adf9b92cb1d0bfbe76e333ace623531ec7f7a165ef9f",
+  "exclusion_sha256": {
+    "data/annotations_v4/devval_expansion_user_approved/review_ledger.jsonl": "7dbc7db4a4672050e9662c2911059d6535f91a3cd2865ceaaa97ce4c855b7f96",
+    "data/annotations_v4/devval_expansion_user_approved/splits/validation.sealed.jsonl": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+    "data/annotations_v4/fresh_test_user_approved/fresh_test.sealed.jsonl": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+    "data/annotations_v5/r2_10_fresh_test_draft/fresh_test_draft.jsonl": "aebeac135354e3b509a30ac161bfff9fc65208e35c868693c497fa7339d99731",
+    "data/configs/v5_r2_11_frozen_development/development.frozen.jsonl": "7e4e7696d268a833befbf4bb3732f837a7ce9ed7fbcc1c7d15bb056f981cd537"
+  },
+  "parameters": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "pool_size": 20,
+    "group_seed_count": 14,
+    "downstream_recency_weight": 0.2,
+    "downstream_group_boost": 0.5
+  },
+  "validation_errors": [],
+  "retrieval_execution_count": 0,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_11_rerun_allowed": false
+}

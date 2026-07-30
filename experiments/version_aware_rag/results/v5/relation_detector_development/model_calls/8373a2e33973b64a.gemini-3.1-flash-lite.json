@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-51-pass-0-df0a0dd2|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "234efaf818ed417cb423983266ce2521cda2cc08e25008e1869a65521516f3f7",
+  "response_sha256": "2e8fbc3fc4b0c7044fc53ff85efda39c93c9e2dd9e7dde309a7cda6d03abe9d2",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The OLD passage explicitly mentions the 2015 Dietary Guidelines shift regarding the 300 mg daily limit on dietary cholesterol, whereas the NEW passage formalizes this by stating, 'No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.'"
+  },
+  "latency_ms": 788,
+  "usage_metadata": {
+    "promptTokenCount": 1030,
+    "candidatesTokenCount": 85,
+    "totalTokenCount": 1115,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1030
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

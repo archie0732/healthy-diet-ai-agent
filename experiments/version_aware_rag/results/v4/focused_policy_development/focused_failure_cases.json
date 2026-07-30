@@ -1,0 +1,245 @@
+[
+  {
+    "query_id": "q-030",
+    "pool_event": {
+      "query_id": "q-030",
+      "target_year": 0,
+      "applied": false,
+      "inserted_chunk_id": null,
+      "displaced_chunk_id": null,
+      "reason": "not_an_explicit_historical_query"
+    },
+    "recency": {
+      "split": "validation",
+      "mode": "recency",
+      "query_id": "q-030",
+      "stratum": "conditional_merge",
+      "historical": false,
+      "candidate_pool_hash": "aa4f8195abc2dae25faaf07a0a42a02398b443fa38f57f2a14f5ab6b82774c72",
+      "candidate_pool_ids": [
+        "dga-2015-page-67-pass-4-83f71abe",
+        "dga-2015-page-67-pass-0-643be356",
+        "dga-2015-page-67-pass-2-5febc162",
+        "dga-2015-page-67-pass-3-0c7cbef6",
+        "dga-2015-page-67-pass-5-4162c60f",
+        "dga-2020-page-16-pass-0-5be4fdc2",
+        "dga-2015-page-41-pass-0-78bcb82f",
+        "dga-2015-page-67-pass-1-b7f8a970",
+        "dga-2015-page-41-pass-2-834945b4",
+        "dga-2015-page-41-pass-1-fe251e27",
+        "dga-2015-page-67-pass-6-72683721",
+        "dga-2015-page-41-pass-3-87c50a16",
+        "dga-2015-page-68-pass-0-51f669da",
+        "dga-2015-page-61-pass-0-c5371da0",
+        "dga-2015-page-106-pass-1-8a627a09",
+        "dga-2015-page-106-pass-0-bc00f048",
+        "dga-2015-page-103-pass-1-b4147230",
+        "dga-2015-page-99-pass-3-f27a2336",
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2015-page-6-pass-1-2563c791"
+      ],
+      "retrieved_chunk_ids": [
+        "dga-2020-page-16-pass-0-5be4fdc2",
+        "dga-2015-page-67-pass-4-83f71abe",
+        "dga-2015-page-67-pass-0-643be356"
+      ]
+    },
+    "oracle_focused": {
+      "split": "validation",
+      "mode": "oracle_focused",
+      "query_id": "q-030",
+      "stratum": "conditional_merge",
+      "historical": false,
+      "candidate_pool_hash": "aa4f8195abc2dae25faaf07a0a42a02398b443fa38f57f2a14f5ab6b82774c72",
+      "candidate_pool_ids": [
+        "dga-2015-page-67-pass-4-83f71abe",
+        "dga-2015-page-67-pass-0-643be356",
+        "dga-2015-page-67-pass-2-5febc162",
+        "dga-2015-page-67-pass-3-0c7cbef6",
+        "dga-2015-page-67-pass-5-4162c60f",
+        "dga-2020-page-16-pass-0-5be4fdc2",
+        "dga-2015-page-41-pass-0-78bcb82f",
+        "dga-2015-page-67-pass-1-b7f8a970",
+        "dga-2015-page-41-pass-2-834945b4",
+        "dga-2015-page-41-pass-1-fe251e27",
+        "dga-2015-page-67-pass-6-72683721",
+        "dga-2015-page-41-pass-3-87c50a16",
+        "dga-2015-page-68-pass-0-51f669da",
+        "dga-2015-page-61-pass-0-c5371da0",
+        "dga-2015-page-106-pass-1-8a627a09",
+        "dga-2015-page-106-pass-0-bc00f048",
+        "dga-2015-page-103-pass-1-b4147230",
+        "dga-2015-page-99-pass-3-f27a2336",
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2015-page-6-pass-1-2563c791"
+      ],
+      "retrieved_chunk_ids": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2020-page-16-pass-0-5be4fdc2",
+        "dga-2015-page-67-pass-4-83f71abe"
+      ]
+    }
+  },
+  {
+    "query_id": "q-031",
+    "pool_event": {
+      "query_id": "q-031",
+      "target_year": 2015,
+      "applied": false,
+      "inserted_chunk_id": null,
+      "displaced_chunk_id": null,
+      "reason": "target_year_already_covered"
+    },
+    "recency": {
+      "split": "validation",
+      "mode": "recency",
+      "query_id": "q-031",
+      "stratum": "newer_irrelevant",
+      "historical": true,
+      "candidate_pool_hash": "5f6d086095583d2b277c89dcabb9eb1f50e7e28bf37cc1719f20a284955048e4",
+      "candidate_pool_ids": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2015-page-104-pass-12-28a91278",
+        "dga-2015-page-104-pass-14-62c1794b",
+        "dga-2015-page-37-pass-5-131cf7c1",
+        "dga-2015-page-107-pass-4-eeaa337c",
+        "dga-2015-page-103-pass-1-b4147230",
+        "dga-2015-page-103-pass-3-25f5751a",
+        "dga-2015-page-106-pass-5-1ea49cda",
+        "dga-2015-page-103-pass-2-f57ed14b",
+        "dga-2015-page-99-pass-3-f27a2336",
+        "dga-2015-page-99-pass-4-1af2e565",
+        "dga-2015-page-104-pass-13-eee58e19",
+        "dga-2015-page-100-pass-7-2f8074e0",
+        "dga-2015-page-99-pass-5-3b6d0e38",
+        "dga-2015-page-106-pass-4-fd1b387a",
+        "dga-2015-page-100-pass-8-23ef7ea7",
+        "dga-2015-page-107-pass-5-cc1d23f4",
+        "dga-2015-page-106-pass-6-ab574c02",
+        "dga-2015-page-103-pass-4-dc0e325f",
+        "dga-2015-page-99-pass-6-47fd90ac"
+      ],
+      "retrieved_chunk_ids": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2015-page-104-pass-12-28a91278",
+        "dga-2015-page-104-pass-14-62c1794b"
+      ]
+    },
+    "oracle_focused": {
+      "split": "validation",
+      "mode": "oracle_focused",
+      "query_id": "q-031",
+      "stratum": "newer_irrelevant",
+      "historical": true,
+      "candidate_pool_hash": "5f6d086095583d2b277c89dcabb9eb1f50e7e28bf37cc1719f20a284955048e4",
+      "candidate_pool_ids": [
+        "dga-2025-page-4-pass-0-567ec170",
+        "dga-2015-page-104-pass-12-28a91278",
+        "dga-2015-page-104-pass-14-62c1794b",
+        "dga-2015-page-37-pass-5-131cf7c1",
+        "dga-2015-page-107-pass-4-eeaa337c",
+        "dga-2015-page-103-pass-1-b4147230",
+        "dga-2015-page-103-pass-3-25f5751a",
+        "dga-2015-page-106-pass-5-1ea49cda",
+        "dga-2015-page-103-pass-2-f57ed14b",
+        "dga-2015-page-99-pass-3-f27a2336",
+        "dga-2015-page-99-pass-4-1af2e565",
+        "dga-2015-page-104-pass-13-eee58e19",
+        "dga-2015-page-100-pass-7-2f8074e0",
+        "dga-2015-page-99-pass-5-3b6d0e38",
+        "dga-2015-page-106-pass-4-fd1b387a",
+        "dga-2015-page-100-pass-8-23ef7ea7",
+        "dga-2015-page-107-pass-5-cc1d23f4",
+        "dga-2015-page-106-pass-6-ab574c02",
+        "dga-2015-page-103-pass-4-dc0e325f",
+        "dga-2015-page-99-pass-6-47fd90ac"
+      ],
+      "retrieved_chunk_ids": [
+        "dga-2015-page-104-pass-12-28a91278",
+        "dga-2015-page-104-pass-14-62c1794b",
+        "dga-2015-page-15-pass-0-8effd6bb"
+      ]
+    }
+  },
+  {
+    "query_id": "q-037",
+    "pool_event": {
+      "query_id": "q-037",
+      "target_year": 2015,
+      "applied": false,
+      "inserted_chunk_id": null,
+      "displaced_chunk_id": null,
+      "reason": "target_year_already_covered"
+    },
+    "recency": {
+      "split": "validation",
+      "mode": "recency",
+      "query_id": "q-037",
+      "stratum": "newer_irrelevant",
+      "historical": true,
+      "candidate_pool_hash": "1824a085dc77684b8b8213c588eea7c0854861c4bc53d7b10857335483fb5747",
+      "candidate_pool_ids": [
+        "dga-2015-page-22-pass-4-3900b422",
+        "dga-2015-page-44-pass-1-16cf8a28",
+        "dga-2015-page-22-pass-2-f4f27890",
+        "dga-2015-page-36-pass-1-2f829d91",
+        "dga-2015-page-36-pass-0-d9555164",
+        "dga-2015-page-112-pass-1-c7b20f46",
+        "dga-2025-page-10-pass-0-bfcc4aa4",
+        "dga-2015-page-44-pass-0-b82f56fd",
+        "dga-2020-page-10-pass-0-e0735933",
+        "dga-2015-page-21-pass-0-aa762584",
+        "dga-2015-page-22-pass-5-e87a0e8a",
+        "dga-2015-page-109-pass-2-5d4110fa",
+        "dga-2015-page-22-pass-0-12fd87f4",
+        "dga-2015-page-13-pass-0-fe8cd767",
+        "dga-2015-page-76-pass-0-2242e75d",
+        "dga-2015-page-55-pass-0-ea3079cc",
+        "dga-2015-page-69-pass-1-d5be5db7",
+        "dga-2015-page-27-pass-2-dc13f4d4",
+        "dga-2015-page-43-pass-0-573fd6e4",
+        "dga-2015-page-26-pass-0-98ec2f79"
+      ],
+      "retrieved_chunk_ids": [
+        "dga-2025-page-10-pass-0-bfcc4aa4",
+        "dga-2015-page-22-pass-4-3900b422",
+        "dga-2015-page-44-pass-1-16cf8a28"
+      ]
+    },
+    "oracle_focused": {
+      "split": "validation",
+      "mode": "oracle_focused",
+      "query_id": "q-037",
+      "stratum": "newer_irrelevant",
+      "historical": true,
+      "candidate_pool_hash": "1824a085dc77684b8b8213c588eea7c0854861c4bc53d7b10857335483fb5747",
+      "candidate_pool_ids": [
+        "dga-2015-page-22-pass-4-3900b422",
+        "dga-2015-page-44-pass-1-16cf8a28",
+        "dga-2015-page-22-pass-2-f4f27890",
+        "dga-2015-page-36-pass-1-2f829d91",
+        "dga-2015-page-36-pass-0-d9555164",
+        "dga-2015-page-112-pass-1-c7b20f46",
+        "dga-2025-page-10-pass-0-bfcc4aa4",
+        "dga-2015-page-44-pass-0-b82f56fd",
+        "dga-2020-page-10-pass-0-e0735933",
+        "dga-2015-page-21-pass-0-aa762584",
+        "dga-2015-page-22-pass-5-e87a0e8a",
+        "dga-2015-page-109-pass-2-5d4110fa",
+        "dga-2015-page-22-pass-0-12fd87f4",
+        "dga-2015-page-13-pass-0-fe8cd767",
+        "dga-2015-page-76-pass-0-2242e75d",
+        "dga-2015-page-55-pass-0-ea3079cc",
+        "dga-2015-page-69-pass-1-d5be5db7",
+        "dga-2015-page-27-pass-2-dc13f4d4",
+        "dga-2015-page-43-pass-0-573fd6e4",
+        "dga-2015-page-26-pass-0-98ec2f79"
+      ],
+      "retrieved_chunk_ids": [
+        "dga-2015-page-36-pass-0-d9555164",
+        "dga-2015-page-22-pass-4-3900b422",
+        "dga-2015-page-44-pass-1-16cf8a28"
+      ]
+    }
+  }
+]

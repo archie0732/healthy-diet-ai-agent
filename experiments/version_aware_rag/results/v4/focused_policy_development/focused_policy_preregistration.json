@@ -1,0 +1,15 @@
+{
+  "plan": "Plan 08E",
+  "candidate_budget": 20,
+  "recency_lambda": 0.75,
+  "relevance_signal": "offline character n-gram TF-IDF cosine; not a neural embedding",
+  "selection_split": "development only",
+  "test_split_read": false,
+  "endpoints": [
+    "conditional_merge_required_micro_recall_at_3",
+    "compatible_history_required_micro_recall_at_3",
+    "historical_candidate_recall_at_20",
+    "historical_required_micro_recall_at_3",
+    "stale_hit_rate_at_3"
+  ]
+}

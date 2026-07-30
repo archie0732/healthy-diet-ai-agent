@@ -1,0 +1,19 @@
+{
+  "status": "frozen_devval_split",
+  "source_approved_ledger_sha256": "7dbc7db4a4672050e9662c2911059d6535f91a3cd2865ceaaa97ce4c855b7f96",
+  "development": {
+    "path": "development.jsonl",
+    "record_count": 16,
+    "sha256": "dbc90de18d95ee757e3941305868d133ec7b4233d5ee0386b341ad7eb885a378",
+    "model_selection_read_allowed": true
+  },
+  "validation": {
+    "path": "validation.sealed.jsonl",
+    "record_count": 8,
+    "sha256": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+    "sealed": true,
+    "read_allowed_now": false,
+    "unlock_condition": "A single development-selected model, prompt, policy, weights, and artifact manifest are frozen."
+  },
+  "fresh_test_read_allowed": false
+}

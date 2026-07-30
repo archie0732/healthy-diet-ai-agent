@@ -1,0 +1,42 @@
+{
+  "status": "development_promotion_gate_passed",
+  "selected_candidate": "oracle_cross_0.5",
+  "effectiveness": {
+    "conditional_merge": {
+      "recency": 0.125,
+      "selected": 0.6875
+    },
+    "compatible_history": {
+      "recency": 0.25,
+      "selected": 0.75
+    },
+    "retained_history": {
+      "recency": 0,
+      "selected": 0.6875
+    }
+  },
+  "safety": {
+    "recency": {
+      "query_count": 16,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    },
+    "selected": {
+      "query_count": 16,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    }
+  },
+  "gate": {
+    "conditional_merge_noninferiority": true,
+    "compatible_history_noninferiority": true,
+    "retained_history_strict_improvement": true,
+    "stale_forbidden_nonincrease": true
+  },
+  "full_promotion_gate_passed": true,
+  "validation_execution_allowed": true
+}

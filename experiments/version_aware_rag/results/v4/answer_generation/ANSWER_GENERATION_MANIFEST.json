@@ -1,0 +1,16 @@
+{
+  "status": "frozen_answer_generation_complete",
+  "query_count": 40,
+  "systems": [
+    "append_only",
+    "recency",
+    "oracle_cross_0.5"
+  ],
+  "answer_count": 120,
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "answers_sha256": "eadd30298ce39c6d7f9874eccbaebafcab143f25bea1464a3e3ca6e9f3c09314",
+  "blind_mapping_sha256": "bd14f838e8768e4f8dc09a87143b7c2740ca0373d05f2a867680253e453fc1ad",
+  "independent_human_evaluation_complete": false,
+  "predicted_system_omitted_reason": "Frozen retrieval ignores relation type; predicted retrieval would be structurally identical to Oracle."
+}

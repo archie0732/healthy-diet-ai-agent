@@ -1,0 +1,24 @@
+{
+  "status": "posttest_detector_frozen",
+  "model_id": "gemma-4-31b-it",
+  "model_descriptor_sha256": "4541abb7e8b2fc18125b16d39e641d36c0f41d937f10053763706b45311e81bf",
+  "api_version": "v1beta",
+  "temperature": 0,
+  "prompt_version": "relation-zero-shot-posttest-v1",
+  "protocol_sha256": "b03b2669a86b47c996e0e517845524cd9255054865569949f617d787e28827eb",
+  "input_sha256": "9122f11035b7b282328e49abc6f2f53e3aacdd161c7fbd98b7ffc8eac870f754",
+  "input_fields": [
+    "pair_id",
+    "old_chunk",
+    "new_chunk"
+  ],
+  "excluded_fields": [
+    "query",
+    "judgment",
+    "required_ids",
+    "oracle_relation",
+    "retrieval_scores",
+    "test_metrics"
+  ],
+  "claim_status": "post_test_diagnostic_only"
+}

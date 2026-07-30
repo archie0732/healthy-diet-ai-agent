@@ -1,0 +1,8 @@
+{
+  "status": "frozen_pretest_semantic_amendment",
+  "amendment_id": "FRESH_TEST_DESIGN_AMENDMENT_02",
+  "amendment_sha256": "57fb7b67c57894b4dd1ba1c572364586d1b2b03ea4336940df69d34fc59bf1df",
+  "superseded_draft_ledger_sha256": "059441c10d2117465473c6591b8155b6472b344a71b77ccd4d90d8cbcbc73fec",
+  "outcome_data_available_when_recorded": false,
+  "policy_model_prompt_or_endpoint_change": false
+}

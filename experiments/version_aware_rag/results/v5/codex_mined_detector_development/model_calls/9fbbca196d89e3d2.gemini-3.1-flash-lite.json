@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-019",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "bdc1ef49057f4db46e528bd18b08803de80fd789ff852ad60b8c89b591e3607a",
+  "response_sha256": "b480cd01d1ce8c11fedbdb930d61da27806909e8c4dfe8b0dfbe11147cfdbef8",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The NEW passage replaces the general instruction to consume 'at least half' whole grains with specific 'serving goals: 2-4 servings per day' and adds detailed guidance on reducing processed carbohydrates, effectively expanding and refining the original requirement."
+  },
+  "latency_ms": 811,
+  "usage_metadata": {
+    "promptTokenCount": 275,
+    "candidatesTokenCount": 79,
+    "totalTokenCount": 354,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 275
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

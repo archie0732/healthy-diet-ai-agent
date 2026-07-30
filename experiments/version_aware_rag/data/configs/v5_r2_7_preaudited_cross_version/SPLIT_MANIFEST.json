@@ -1,0 +1,36 @@
+{
+  "schema_version": "v5-r2.7-preaudited-cross-version-1",
+  "status": "pre_model_gold_audited_split_frozen",
+  "endpoint": "Preserve OLD only when it contains an operative claim needed to answer QUERY that is not fully supplied, displaced, or contradicted by CURRENT.",
+  "source_documents": [
+    "WHO/FAO TRS 916 (2003)",
+    "WHO guidelines (2012-2025)"
+  ],
+  "total_count": 24,
+  "total_distribution": {
+    "PAIR_PRESERVE": 12,
+    "BLOCK_RETAINED": 12
+  },
+  "development_count": 16,
+  "development_distribution": {
+    "PAIR_PRESERVE": 8,
+    "BLOCK_RETAINED": 8
+  },
+  "validation_count": 8,
+  "validation_distribution": {
+    "PAIR_PRESERVE": 4,
+    "BLOCK_RETAINED": 4
+  },
+  "lineage_overlap_count": 0,
+  "current_chunk_overlap_count": 0,
+  "old_normalized_excerpt_overlap_count": 0,
+  "old_excerpt_locator_precision": "PDF page and printed page; normalized excerpt is not a byte-offset quotation",
+  "prior_r2_current_chunk_collision_count": 0,
+  "gold_audit_completed_before_prediction": true,
+  "development_sha256": "0258f5e54374d366eac2544ed4d52f0904560b9df9442f44203d8a78c582075c",
+  "validation_sealed_sha256": "ecc16d8fcdcabab5d2571a8b306bb39332c7672280b4462b90dc8fcb3d9b2b5a",
+  "audit_ledger_sha256": "77772b821cc06c16c0ce6b5c674b3809b16d68ca5484452152318fa70b114dd9",
+  "external_model_api_used": false,
+  "validation_execution_count": 0,
+  "fresh_v5_test_created": false
+}

@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-009",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "b319a0283a041239bab98ec5e0f570404abe96d16e81e6b961d204e2970548e4",
+    "response_sha256": "b0e15111fd86717b68da94f7e8b38eaa2eeae1b704cec32c36f76adb0b351422",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 5534,
+    "usage": {
+      "promptTokenCount": 840,
+      "candidatesTokenCount": 292,
+      "totalTokenCount": 2404,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 840
+        }
+      ],
+      "thoughtsTokenCount": 1272,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:29:05.858Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to WHO guidelines, what are the specific daily intake recommendations for fruits and vegetables for adults and children of different age groups, and how does consuming these fresh, unrefined foods help prevent cardiovascular conditions and stroke based on their potassium content?\",\n  \"target_population\": [\n    \"adults\",\n    \"children (2-9 years old)\",\n    \"adolescents (10 years and older)\"\n  ],\n  \"conditions\": [\n    \"hypertension\",\n    \"cardiovascular diseases\",\n    \"stroke\"\n  ],\n  \"draft_rationale\": \"To answer the query, the model must synthesize information from both the current 2023 carbohydrate guideline and the 2012 potassium guideline. From the 2023 guideline, it must extract the specific daily fruit and vegetable intake recommendations: at least 400 g for adults and children/adolescents aged 10 or older, at least 350 g for children aged 6-9, and at least 250 g for children aged 2-5. From the 2012 guideline, it must explain that fruits and vegetables are key unrefined sources of potassium (which is reduced by food processing), and that adequate potassium intake is protective against hypertension and cardiovascular diseases, and is inversely associated with the risk of stroke.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 840,
+      "candidatesTokenCount": 292,
+      "totalTokenCount": 2404,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 840
+        }
+      ],
+      "thoughtsTokenCount": 1272,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "vh9farL_LYWkvr0PqISqwA8"
+  }
+}

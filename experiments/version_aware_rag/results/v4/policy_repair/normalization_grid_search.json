@@ -1,0 +1,73 @@
+{
+  "search_space": [
+    "default_weights",
+    "high_retain",
+    "high_condition",
+    "equal_weights"
+  ],
+  "trials": [
+    {
+      "config_name": "default_weights",
+      "weights": {
+        "w_base": 0.5,
+        "w_recency": 0.05,
+        "w_retain": 0.2,
+        "w_condition": 0.15,
+        "w_expansion": 0.1,
+        "w_stale": 0.5,
+        "w_duplicate": 0.2,
+        "expansion_seed_threshold": 0.05,
+        "expansion_min_base_score": 0.01,
+        "diversification_penalty": 0.2
+      },
+      "dev_mean_query_recall_at_3": 0.4583
+    },
+    {
+      "config_name": "high_retain",
+      "weights": {
+        "w_base": 0.5,
+        "w_recency": 0.05,
+        "w_retain": 0.35,
+        "w_condition": 0.15,
+        "w_expansion": 0.1,
+        "w_stale": 0.5,
+        "w_duplicate": 0.2,
+        "expansion_seed_threshold": 0.05,
+        "expansion_min_base_score": 0.01,
+        "diversification_penalty": 0.2
+      },
+      "dev_mean_query_recall_at_3": 0.4583
+    },
+    {
+      "config_name": "high_condition",
+      "weights": {
+        "w_base": 0.5,
+        "w_recency": 0.05,
+        "w_retain": 0.2,
+        "w_condition": 0.3,
+        "w_expansion": 0.1,
+        "w_stale": 0.5,
+        "w_duplicate": 0.2,
+        "expansion_seed_threshold": 0.05,
+        "expansion_min_base_score": 0.01,
+        "diversification_penalty": 0.2
+      },
+      "dev_mean_query_recall_at_3": 0.4167
+    },
+    {
+      "config_name": "equal_weights",
+      "weights": {
+        "w_base": 0.3,
+        "w_recency": 0.1,
+        "w_retain": 0.2,
+        "w_condition": 0.2,
+        "w_expansion": 0.1,
+        "w_stale": 0.4,
+        "w_duplicate": 0.2
+      },
+      "dev_mean_query_recall_at_3": 0.4167
+    }
+  ],
+  "selected_config": "default_weights",
+  "validation_used_for_selection": false
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-019",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "9926faad0879622240202f561b3746ec3d3bbdafcfc24ff31b1a3826340efe80",
+  "response_sha256": "853327499347a532211b03b82670a1881d06951e21e3f2d56eaa29b558dab6b5",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more comprehensive and updated instruction on grain consumption, incorporating specific serving goals and dietary advice that renders the vague instruction in the OLD passage redundant."
+  },
+  "latency_ms": 785,
+  "usage_metadata": {
+    "promptTokenCount": 411,
+    "candidatesTokenCount": 64,
+    "totalTokenCount": 475,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 411
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "v5-r2.3-codex-audited-action-1",
+  "status": "development_audit_complete_validation_still_sealed",
+  "parent_manifest_sha256": "e31a7cff488af87019174ce66c7aee7d1835cfc0c5e05889a3094134239af55f",
+  "parent_development_sha256": "a10132f0776ba809ea45ab3be349c3d8be1ec6a3ab2d45a242665e7e125ab9d9",
+  "audit_ledger_sha256": "9fb98639cef4563fd6b637b5f8a35ff6f5b7753248a04a78149bfd8961b47fd6",
+  "development_sha256": "5a68df58d9df1f1b0491e7b0f32fc5d2312afae6ad87ccffd02bdc19e28bc14f",
+  "validation_sealed_sha256": "cd25941d087c18e7c4e5a9b5fefd10b3f99187b63ea268f0935f006fe5396449",
+  "validation_artifact_changed": false,
+  "validation_execution_count": 0,
+  "development_count": 22,
+  "development_distribution": {
+    "PAIR_PRESERVE": 6,
+    "BLOCK_RETAINED": 16
+  },
+  "revised_count": 5,
+  "accepted_count": 17,
+  "evidence_hash_overlap_count": 0,
+  "endpoint_change": "Relation identity no longer implies retrieval-slot preservation; CURRENT subsumption blocks OLD even when the semantic relation was previously called complementary or conditional.",
+  "reviewer_provenance": "codex-gpt5-primary-reviewer_not_independent_human",
+  "external_model_api_used": false,
+  "fresh_v5_test_created": false
+}

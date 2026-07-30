@@ -1,0 +1,24 @@
+{
+  "schema_version": "v5-r2.12-candidate-diagnostic-audit-1",
+  "status": "audit_pass",
+  "audited_at": "2026-07-26T00:00:00.000+08:00",
+  "development_only": true,
+  "outcome_exposed_r2_11_data": true,
+  "promotion_evidence": false,
+  "diagnostic_execution_count": 1,
+  "r2_11_retrieval_execution_count_preserved": 1,
+  "raw_pool_row_count": 224,
+  "selected_diagnostic_variant": "bm25_group_expand_seed14",
+  "baseline_required_recall_at_20": 0.8863636363636364,
+  "selected_required_recall_at_20": 0.9659090909090909,
+  "failures_before": 10,
+  "failures_after": 3,
+  "confirmation_required": true,
+  "artifact_sha256": {
+    "frozen_manifest": "331a81adf56e495fbc7a89b937085d20ed6abac640b989f5ad0b5d700b61315d",
+    "diagnostic_guard": "425b7ff7267dcaf10aa11c77e96aac705ea55e9104319f70c5cb2505ee472a76",
+    "raw_candidate_pools": "1dc7f749cfd9d5efd4d9ed4f4a2c3f39475dbc1d49b20c36c8e765cf920c136c",
+    "diagnostic_result": "2245d373bf5a44e18307753e70c93961f8ca79b0e0ec5adfc98cf2e6ee6bfd44"
+  },
+  "failures": []
+}

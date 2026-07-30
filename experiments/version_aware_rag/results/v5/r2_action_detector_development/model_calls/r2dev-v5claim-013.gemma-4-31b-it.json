@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-013",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "10f9e0463756c139767b2ebe632043e7fb97662534afc4a991db164ca64a6265",
+  "response_sha256": "fc888238a2534fbf0d6c769fa77d25715949c2c293df300d453b137a4b010474",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "The OLD passage provides a specific sodium limit for children younger than 14, which is not addressed in the CURRENT passage, which only covers the general population ages 14 and above."
+  },
+  "latency_ms": 3860,
+  "usage_metadata": {
+    "promptTokenCount": 296,
+    "candidatesTokenCount": 62,
+    "totalTokenCount": 358,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 296
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

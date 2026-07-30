@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-017",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "64a08ddbb34b29a4f4284f139eab3bf161e1468c5f56003c1515d055154c6ace",
+  "response_sha256": "c8b4f0c5c26ab927248372ec9ad2da467904eb05bf302d70b39b8171dcbd686f",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The current passage lists the same protein sources (lean meats, poultry, eggs, seafood, beans, peas, lentils, nuts, seeds, and soy) as the old passage, effectively subsuming the information.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 2965,
+  "usage_metadata": {
+    "promptTokenCount": 566,
+    "candidatesTokenCount": 75,
+    "totalTokenCount": 641,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 566
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

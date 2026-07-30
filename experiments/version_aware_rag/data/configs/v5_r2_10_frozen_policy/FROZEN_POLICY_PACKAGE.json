@@ -1,0 +1,51 @@
+{
+  "schema_version": "v5-r2.10-frozen-policy-1",
+  "status": "policy_frozen_before_fresh_test_construction",
+  "frozen_at": "2026-07-24T00:00:00.000+08:00",
+  "detector_id": "explicit_temporal_history_intent_v1",
+  "detector_patterns": [
+    "\\b2003\\b",
+    "\\bhistorical(?:ly)?\\b",
+    "\\bprevious(?:ly)?\\b",
+    "\\bearlier\\b",
+    "\\bformerly\\b",
+    "\\bhow did\\b.{0,100}\\bchange\\b",
+    "\\bfrom\\b.{0,100}\\bto (?:the )?current\\b"
+  ],
+  "retrieval": {
+    "corpus_representation": "atomic OLD and CURRENT claims",
+    "base_retriever": "BM25 k1=1.2 b=0.75",
+    "candidate_pool_size": 20,
+    "top_k": 3,
+    "recency_lambda": 0.75,
+    "recency_year_normalization": "(year-2015)/(2026-2015)",
+    "explicit_history_behavior": "disable recency; add 0.75 to highest-BM25 in-pool seed and its declared lineage mate",
+    "history_pair_boost": 0.75,
+    "current_only_behavior": "identical to Recency",
+    "out_of_pool_expansion": false
+  },
+  "primary_endpoints": [
+    "explicit_history required micro Recall@3",
+    "explicit_history both-evidence coverage",
+    "conditional_merge required micro Recall@3",
+    "current_only required micro Recall@3",
+    "deprecated OLD hit rate",
+    "required candidate micro Recall@20"
+  ],
+  "claim_scope": "explicit_historical_intent_retrieval_advantage",
+  "prohibited_claims": [
+    "overall Version-Aware superiority",
+    "implicit semantic conditional-merge superiority"
+  ],
+  "external_model_api_allowed": false,
+  "tuning_after_fresh_test_allowed": false,
+  "fresh_test_execution_count": 0,
+  "artifact_sha256": {
+    "R2_8_SHARED_POOL_RETRIEVAL_PROTOCOL.md": "5ae7a373238a32e355f4c2c869bebf7f0adecdde838634c4a6f32fa26f5a8e51",
+    "R2_9_RETRIEVAL_VALIDATION_PROTOCOL.md": "5a86e1187b98b9004b819d122d7bcb45350132c94e23e94a5c8d5e9c7141c4aa",
+    "results/v5/r2_8_shared_pool_development/DEVELOPMENT_RESULT.json": "d37d67897f4bc5fb16c595832b2b2f24b7933719efd3b893fc4922bc95f3c227",
+    "results/v5/r2_9_retrieval_validation/VALIDATION_RESULT.json": "8e047b0f34a2fb0c051c9fd1bda9280ecdd16eede87bb0b40a6c224b9f778520",
+    "scripts/v5/run_r2_8_shared_pool_development.ts": "1b0180425d9f402ba5752a49d0b579b2fd1af4d2d8278f513666ed45c533784b",
+    "scripts/v5/run_r2_9_retrieval_validation.ts": "a0008f4a06ac6d5991e4a00727d6ad91d81c595e701fd4df8602e8967b613328"
+  }
+}

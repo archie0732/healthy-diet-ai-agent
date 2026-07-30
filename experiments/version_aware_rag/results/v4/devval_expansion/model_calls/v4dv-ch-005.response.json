@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-005",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "2944114af2a9ac7b2b8dfdb5e8408e125a2951ab49501af031f602232bbea3c5",
+    "response_sha256": "54e9ba0511933df2604722c04b72a43a22a83b8a8ff4c86b18f8f71b563a1306",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 10923,
+    "usage": {
+      "promptTokenCount": 686,
+      "candidatesTokenCount": 252,
+      "totalTokenCount": 1705,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 686
+        }
+      ],
+      "thoughtsTokenCount": 767,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:26:56.851Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"How do the WHO guidelines for general potassium intake and the recommendations for low-sodium salt substitutes (LSSS) differ in their applicability to pregnant women, and what specific health conditions or risks exclude pregnant women from these respective recommendations?\",\n  \"target_population\": [\n    \"pregnant women\"\n  ],\n  \"conditions\": [\n    \"pregnancy\",\n    \"impaired urinary potassium excretion\",\n    \"hyperkalaemia\"\n  ],\n  \"draft_rationale\": \"Answering this query requires synthesizing information from both the retained 2012 potassium guideline and the current 2025 LSSS guideline. The 2012 guideline states that general potassium intake recommendations do apply to pregnant women, with the exception of those who have impaired urinary potassium excretion. In contrast, the 2025 LSSS guideline states that LSSS recommendations do not apply to pregnant women due to a lack of data, and explicitly warns that LSSS should not be used to prepare meals for them if they are at risk for hyperkalaemia. Both passages are necessary to contrast the general potassium applicability with the narrower, more cautious LSSS scope for pregnant populations.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 686,
+      "candidatesTokenCount": 252,
+      "totalTokenCount": 1705,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 686
+        }
+      ],
+      "thoughtsTokenCount": 767,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "CfVeaqjQKfm1vr0P2a_OuA8"
+  }
+}

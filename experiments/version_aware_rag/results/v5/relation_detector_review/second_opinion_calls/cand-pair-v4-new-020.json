@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-020",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "6c86038430ad0ee95c98ea2bbf4c036d0c512f87dfe35280ddfccc858514567d",
+  "response_sha256": "1bd5656d62b13584b5fab37a5efb99b02f95e91bc15e3458cf32932d13f2ff8b",
+  "prediction": {
+    "relation_type": "duplicate",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "Both excerpts explicitly state the quantitative limit for saturated fat as 10% of total daily calories and both acknowledge the absence of a specific quantitative limit for dietary cholesterol."
+  },
+  "latency_ms": 779,
+  "usage_metadata": {
+    "promptTokenCount": 352,
+    "candidatesTokenCount": 71,
+    "totalTokenCount": 423,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 352
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

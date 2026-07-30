@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-006",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "1373278e3b6612e9d377fdbacf4768c4838f0e6c6aaa678cdb1915506c7f3862",
+    "response_sha256": "b18822fdf4206a467585af0a7dd43f02669877b12525322f2f3695491054a0d6",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 4851,
+    "usage": {
+      "promptTokenCount": 711,
+      "candidatesTokenCount": 252,
+      "totalTokenCount": 1886,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 711
+        }
+      ],
+      "thoughtsTokenCount": 923,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:28:48.791Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"What are the WHO's recommended limits for free sugars intake as a percentage of total energy intake for adults and children, and what is the WHO's 2023 recommendation regarding the use of non-sugar sweeteners (NSS) for weight control in these same populations?\",\n  \"target_population\": [\n    \"adults\",\n    \"children\"\n  ],\n  \"conditions\": [\n    \"excess body weight\",\n    \"dental caries\",\n    \"type 2 diabetes\",\n    \"cardiovascular diseases\"\n  ],\n  \"draft_rationale\": \"To answer this query, both passages are required. The 2015 guideline passage provides the specific intake limits for free sugars (reducing to less than 10% of total energy intake, with a further suggested reduction to below 5%) for adults and children to manage body weight and dental caries. The 2023 guideline passage provides the recommendation that non-sugar sweeteners (NSS) should not be used as a means of achieving weight control or reducing NCD risk, noting a lack of long-term benefit on body fatness in adults or children.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 711,
+      "candidatesTokenCount": 252,
+      "totalTokenCount": 1886,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 711
+        }
+      ],
+      "thoughtsTokenCount": 923,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "rh9faurWIPLAvr0PwNqlkQo"
+  }
+}

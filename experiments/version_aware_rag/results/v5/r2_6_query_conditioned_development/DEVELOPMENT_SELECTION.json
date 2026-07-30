@@ -1,0 +1,297 @@
+{
+  "schema_version": "v5-r2.6-query-conditioned-development-1",
+  "status": "blocked_no_safe_query_conditioned_detector",
+  "endpoint": "query_plus_atomic_old_plus_atomic_current_to_binary_action",
+  "development_only": true,
+  "validation_file_read": false,
+  "validation_execution_count": 0,
+  "external_model_api_used": false,
+  "feature_contract": "query_text_plus_atomic_old_text_plus_atomic_current_text_only",
+  "forbidden_runtime_features": [
+    "pair_id",
+    "source_pair_id",
+    "lineage_group",
+    "topic",
+    "scope_tags",
+    "relation_type",
+    "action_label",
+    "judgments",
+    "reviewer_rationale",
+    "validation_data"
+  ],
+  "evaluation": "leave_one_lineage_group_out_out_of_fold",
+  "development_count": 30,
+  "lineage_group_count": 30,
+  "positive_count": 11,
+  "negative_count": 19,
+  "gate": {
+    "false_preserve_count": 0,
+    "pair_preserve_precision": 1,
+    "minimum_pair_preserve_recall": 0.5
+  },
+  "candidate_families": [
+    "logistic",
+    "bounded_tree",
+    "query_necessity_rule"
+  ],
+  "selected_config": null,
+  "best_zero_false_preserve_config": {
+    "family": "query_necessity_rule",
+    "score": "old_unique_coverage_times_current_relevance",
+    "threshold": 0.05555555655555555,
+    "metrics": {
+      "true_preserve": 5,
+      "false_preserve_count": 0,
+      "true_block": 19,
+      "missed_preserve": 6,
+      "accuracy": 0.8,
+      "pair_preserve_precision": 1,
+      "pair_preserve_recall": 0.45454545454545453
+    }
+  },
+  "feature_names": [
+    "bias",
+    "query_old_token_jaccard",
+    "query_current_token_jaccard",
+    "query_old_coverage",
+    "query_current_coverage",
+    "query_old_minus_current_relevance",
+    "query_current_minus_old_relevance",
+    "query_old_unique_coverage",
+    "query_current_unique_coverage",
+    "query_old_unique_count",
+    "query_current_unique_count",
+    "query_relevant_old_unique_fraction",
+    "query_relevant_current_unique_fraction",
+    "query_old_char4_jaccard",
+    "query_current_char4_jaccard",
+    "query_old_char_advantage",
+    "query_current_char_advantage",
+    "query_old_numeric_coverage",
+    "query_current_numeric_coverage",
+    "old_current_token_jaccard",
+    "old_covered_by_current",
+    "current_covered_by_old",
+    "old_unique_fraction",
+    "current_unique_fraction",
+    "query_two_part_cues",
+    "query_exception_scope_cues",
+    "query_history_cues",
+    "old_exception_scope_cues",
+    "current_exception_scope_cues",
+    "current_covers_all_query_relevant_old_tokens"
+  ],
+  "frozen_model": null,
+  "out_of_fold_predictions": [
+    {
+      "pair_id": "r2.6-v5claim-001",
+      "lineage_group": "dga-v5claim-001",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-002",
+      "lineage_group": "dga-v5claim-002",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-003",
+      "lineage_group": "dga-v5claim-003",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-004",
+      "lineage_group": "dga-v5claim-004",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-005",
+      "lineage_group": "dga-v5claim-005",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-006",
+      "lineage_group": "dga-v5claim-006",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-007",
+      "lineage_group": "dga-v5claim-007",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-008",
+      "lineage_group": "dga-v5claim-008",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.046875,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-009",
+      "lineage_group": "dga-v5claim-009",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-010",
+      "lineage_group": "dga-v5claim-010",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-011",
+      "lineage_group": "dga-v5claim-011",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.05555555555555555,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-012",
+      "lineage_group": "dga-v5claim-012",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-013",
+      "lineage_group": "dga-v5claim-013",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-014",
+      "lineage_group": "dga-v5claim-014",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-015",
+      "lineage_group": "dga-v5claim-015",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.1111111111111111,
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.6-v5claim-016",
+      "lineage_group": "dga-v5claim-016",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.125,
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.6-v5claim-017",
+      "lineage_group": "dga-v5claim-017",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-018",
+      "lineage_group": "dga-v5claim-018",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-019",
+      "lineage_group": "dga-v5claim-019",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-020",
+      "lineage_group": "dga-v5claim-020",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-021",
+      "lineage_group": "dga-v5claim-021",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-v5claim-022",
+      "lineage_group": "dga-v5claim-022",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-carbohydrate-duplicate",
+      "lineage_group": "who-carbohydrate-duplicate",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-tfa-duplicate",
+      "lineage_group": "who-tfa-duplicate",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-lsss-duplicate",
+      "lineage_group": "who-lsss-duplicate",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-potassium-safety",
+      "lineage_group": "who-potassium-safety",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.08163265306122448,
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.6-sugars-therapeutic",
+      "lineage_group": "who-sugars-therapeutic",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-carb-fibre-age",
+      "lineage_group": "who-carb-fibre-age",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.09375,
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.6-sfa-replacement",
+      "lineage_group": "who-sfa-replacement",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.6-lsss-food-potassium",
+      "lineage_group": "who-lsss-food-potassium",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.09876543209876543,
+      "predicted": "PAIR_PRESERVE"
+    }
+  ]
+}

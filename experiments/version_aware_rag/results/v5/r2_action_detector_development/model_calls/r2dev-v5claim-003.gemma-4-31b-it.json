@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-003",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "b5b0da3b48ace0747f5cee048f2d4a01817d27b984073e087d2d56af3912b560",
+  "response_sha256": "4e2dc0da66b3d1ec935933ce5a27df7e9671bb90115524669d3599a33fb89bdd",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage contains all the protein food categories mentioned in the OLD passage, making the OLD passage a material duplicate."
+  },
+  "latency_ms": 2098,
+  "usage_metadata": {
+    "promptTokenCount": 271,
+    "candidatesTokenCount": 47,
+    "totalTokenCount": 318,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 271
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

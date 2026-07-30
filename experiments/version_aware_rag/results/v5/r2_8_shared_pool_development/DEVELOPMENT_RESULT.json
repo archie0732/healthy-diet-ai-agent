@@ -1,0 +1,72 @@
+{
+  "schema_version": "v5-r2.8-shared-pool-development-result-1",
+  "status": "development_gate_passed_new_retrieval_validation_may_be_constructed",
+  "development_only": true,
+  "validation_file_read": false,
+  "external_model_api_used": false,
+  "retrieval_calls_completed_before_judgment_read": true,
+  "judgment_file_read_count": 1,
+  "candidate_pool_size": 20,
+  "top_k": 3,
+  "recency_lambda": 0.75,
+  "history_pair_boost": 0.75,
+  "summaries": [
+    {
+      "system": "recency_lambda_0.75",
+      "overall_mean_query_recall_at_3": 0.5625,
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "PAIR_PRESERVE": {
+          "query_count": 8,
+          "required_micro_recall_at_3": 0.375,
+          "mean_query_recall_at_3": 0.375,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0
+        },
+        "BLOCK_RETAINED": {
+          "query_count": 8,
+          "required_micro_recall_at_3": 0.75,
+          "mean_query_recall_at_3": 0.75,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0
+        }
+      }
+    },
+    {
+      "system": "version_aware_explicit_history_pair",
+      "overall_mean_query_recall_at_3": 0.84375,
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "PAIR_PRESERVE": {
+          "query_count": 8,
+          "required_micro_recall_at_3": 0.9375,
+          "mean_query_recall_at_3": 0.9375,
+          "both_evidence_coverage": 0.875,
+          "deprecated_old_hit_rate": 0
+        },
+        "BLOCK_RETAINED": {
+          "query_count": 8,
+          "required_micro_recall_at_3": 0.75,
+          "mean_query_recall_at_3": 0.75,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0
+        }
+      }
+    }
+  ],
+  "gate_checks": {
+    "pair_required_micro_recall_strictly_improves": true,
+    "pair_both_evidence_coverage_strictly_improves": true,
+    "block_required_micro_recall_noninferior": true,
+    "block_deprecated_old_hit_rate_not_increased": true,
+    "required_candidate_micro_recall_at_20_at_least_0_90": true,
+    "shared_candidate_pool_identity_100_percent": true
+  },
+  "gate_passed": true,
+  "claim_boundary": "Development evidence for explicit historical-intent retrieval advantage only.",
+  "prohibited_claims": [
+    "overall Version-Aware superiority",
+    "fresh held-out V5 test evidence",
+    "general semantic conditional-merge superiority"
+  ]
+}

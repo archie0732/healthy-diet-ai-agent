@@ -1,0 +1,60 @@
+{
+  "schema_version": "v5-r2.18-candidate-failure-attribution-manifest-1",
+  "status": "diagnostic_frozen_unlocked",
+  "development_only": true,
+  "outcome_exposed_r2_16_data": true,
+  "variants": [
+    "bm25_seed12_control",
+    "bm25_seed12_iterative_closure",
+    "clause_rrf_seed12_iterative_closure",
+    "hybrid_rank_fusion_seed12_iterative_closure"
+  ],
+  "parameters": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "rrf_k": 60,
+    "seed_count": 12,
+    "pool_size": 20
+  },
+  "eligibility": {
+    "minimum_required_micro_recall_at_20": 0.9,
+    "every_stratum_noninferior_to_control": true,
+    "ordered_pool_integrity": 1
+  },
+  "selection_order": [
+    "required_micro_recall_at_20_desc",
+    "minimum_stratum_recall_at_20_desc",
+    "declared_variant_order"
+  ],
+  "inputs": {
+    "protocol": {
+      "path": "R2_18_CANDIDATE_FAILURE_ATTRIBUTION_PROTOCOL.md",
+      "sha256": "b0922092d787a3e06e41094125e0c1c8c1fdef48a79c349a4dc3f32781741767"
+    },
+    "runner": {
+      "path": "scripts/v5/run_r2_18_candidate_failure_attribution.ts",
+      "sha256": "d602e97e5e7874b1c6be87d8ff49ed539d43747fbc555e5318fe46308ed157e7"
+    },
+    "queries": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/runtime_queries.role_neutral.jsonl",
+      "sha256": "748d881a97fff759ad6316f08d24c5c4de48af832f9309be6d0e9186fac7de75"
+    },
+    "corpus": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/candidate_corpus.role_neutral.jsonl",
+      "sha256": "72ccfa113102b1b92a6ced97497f7cbc92bb387b9375ecbdd95b20556142da18"
+    },
+    "judgments": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/judgments.sealed.jsonl",
+      "sha256": "ba3c62f761e92dcbe836eb60ae43849640b44a9858d6adda09f2b62b91988b36"
+    },
+    "r216_guard": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/EXECUTION_GUARD.json",
+      "sha256": "82998939ad1f4ae19b646c62ba1e559dc2ff27f09a64433cd1cfb90a1d973156"
+    }
+  },
+  "r2_16_execution_count_before_diagnostic": 1,
+  "r2_16_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "promotion_allowed": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "v5-r2.15-compatible-selectivity-audit-1",
+  "status": "audit_pass",
+  "development_only": true,
+  "retrieval_rerun_performed": false,
+  "retrieval_calls_performed": 0,
+  "diagnostic_execution_count": 1,
+  "raw_row_count": 160,
+  "control_reproduction_rate": 1,
+  "selected_diagnostic_variant": "pair_score_g2.0_top6_anchor",
+  "control_compatible_history_recall_at_3": 0.3,
+  "selected_compatible_history_recall_at_3": 0.35,
+  "control_conditional_merge_recall_at_3": 0.6,
+  "selected_conditional_merge_recall_at_3": 0.6,
+  "promotion_allowed": false,
+  "new_confirmation_required": true,
+  "r2_14_execution_count_preserved": 1,
+  "artifact_sha256": {
+    "frozen_manifest": "d585670039e4f7e852916770d45cbfddac2a5baab37a5735ef5ec64b63b34275",
+    "execution_guard": "89117890168116bfeb334509ea3491fa0677ebc40e78be16ace6435ef02a539f",
+    "raw_results": "673d3b2b02255da60fc8487d06e39e5876b194aeaf87a2922db7658d67d212e8",
+    "diagnostic_result": "ba9f65ab4ad8f71c0644a8fdbf367681e6e5b2f183253e0b670da98940074f25"
+  },
+  "failures": []
+}

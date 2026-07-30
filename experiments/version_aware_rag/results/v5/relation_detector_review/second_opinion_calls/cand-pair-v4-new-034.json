@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-034",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "ffdf771104e3d0c905c9ca7839434a0da120a11c79cf55e35e332d3ba1595089",
+  "response_sha256": "717530bd1abe01d01d51cfcfebf111a532297a3cb77695dd858779b21373c5e3",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides a broad, high-level recommendation about following healthy dietary patterns, while the NEW excerpt provides specific, actionable guidance for the infant population that expands upon the general principles of nutrient-dense food choices."
+  },
+  "latency_ms": 786,
+  "usage_metadata": {
+    "promptTokenCount": 273,
+    "candidatesTokenCount": 82,
+    "totalTokenCount": 355,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 273
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": "v5-r2.10-independent-raw-recomputation-1",
+  "status": "verified",
+  "raw_row_count": 32,
+  "unique_query_count": 16,
+  "reported_metrics_match_raw_recomputation": true,
+  "shared_pool_hash_and_order_verified": true,
+  "execution_guard_locked_at_one": true,
+  "recomputed": [
+    {
+      "system": "recency_lambda_0.75",
+      "overall_required_micro_recall_at_3": 0.625,
+      "overall_deprecated_old_hit_rate": 0,
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "explicit_history": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 0.375,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "conditional_merge": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "current_only": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "hard_negative_current": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        }
+      }
+    },
+    {
+      "system": "version_aware_explicit_history_pair",
+      "overall_required_micro_recall_at_3": 0.8333333333333334,
+      "overall_deprecated_old_hit_rate": 0,
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "explicit_history": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": 1,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "conditional_merge": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "current_only": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "hard_negative_current": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        }
+      }
+    }
+  ],
+  "paired_query_differences": [
+    {
+      "query_id": "r2.10-01-explicit-n3-tfa-replacement",
+      "stratum": "explicit_history",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0.5
+    },
+    {
+      "query_id": "r2.10-02-explicit-sodium-hot-clinical-exceptions",
+      "stratum": "explicit_history",
+      "recency_required_recall_at_3": 0,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 1
+    },
+    {
+      "query_id": "r2.10-03-explicit-sugar-goal-conditional-policy",
+      "stratum": "explicit_history",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0.5
+    },
+    {
+      "query_id": "r2.10-04-explicit-fat-range-current-threshold",
+      "stratum": "explicit_history",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0.5
+    },
+    {
+      "query_id": "r2.10-05-conditional-sfa-goal-safety",
+      "stratum": "conditional_merge",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 0.5,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-06-conditional-tfa-limit-current-lipid-effect",
+      "stratum": "conditional_merge",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 0.5,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-07-conditional-sugar-energy-dental",
+      "stratum": "conditional_merge",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 0.5,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-08-conditional-fat-minimum-current-effect",
+      "stratum": "conditional_merge",
+      "recency_required_recall_at_3": 0.5,
+      "version_aware_required_recall_at_3": 0.5,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-09-current-potassium-recommendation-strength",
+      "stratum": "current_only",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-10-current-carbohydrate-adult-evidence",
+      "stratum": "current_only",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-11-current-nss-long-term-effects",
+      "stratum": "current_only",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-12-current-lsss-policy-context",
+      "stratum": "current_only",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-13-hard-sfa-below-ten-evidence",
+      "stratum": "hard_negative_current",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-14-hard-carbohydrate-child-evidence",
+      "stratum": "hard_negative_current",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-15-hard-nss-delivery-forms",
+      "stratum": "hard_negative_current",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    },
+    {
+      "query_id": "r2.10-16-hard-lsss-evidence-basis",
+      "stratum": "hard_negative_current",
+      "recency_required_recall_at_3": 1,
+      "version_aware_required_recall_at_3": 1,
+      "difference": 0
+    }
+  ],
+  "explicit_history_exact_sign_test": {
+    "positive_differences": 4,
+    "negative_differences": 0,
+    "ties": 0,
+    "two_sided_exact_p": 0.125,
+    "interpretation": "descriptively strong but not statistically significant at alpha 0.05 because the fresh stratum has only four queries"
+  },
+  "tuning_performed_after_fresh_test": false,
+  "external_model_api_used": false
+}

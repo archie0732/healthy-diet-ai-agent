@@ -1,0 +1,20 @@
+{
+  "status": "codex_review_complete_provisional",
+  "reviewer": "codex-gpt5-primary-review",
+  "reviewer_independence": "not_an_independent_human_reviewer",
+  "counts": {
+    "total": 24,
+    "accepted_without_change": 12,
+    "revised_then_accepted": 12,
+    "rejected": 0,
+    "conditional_merge": 12,
+    "compatible_history": 12,
+    "unique_evidence_signatures": 24
+  },
+  "source_ledger_sha256": "07a1b763c2dc9e0c4238307ecbc11e1d2dfef095bff63f9e56054a0ef7cf9abb",
+  "reviewed_ledger_sha256": "2ad7fba1c446a725b0d375ac8a2b321b7e3f70ffb61fdba499b9f88b1b9b7ffa",
+  "development_exploratory_evaluation_allowed": true,
+  "validation_confirmation_allowed": false,
+  "promotion_allowed": false,
+  "limitation": "Codex is not an independent human annotator. These labels can support development-only exploratory evaluation, but validation confirmation and promotion require user or independent human signoff."
+}

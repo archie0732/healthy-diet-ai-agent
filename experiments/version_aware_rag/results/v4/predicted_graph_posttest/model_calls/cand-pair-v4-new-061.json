@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-061",
+  "input_sha256": "01cc89b02ebba10c54d7ed4b9119d98c3f519868b2f772bbc5d6c413e5bfc82c",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\ns from added sugars do not exceed\r\nexamining eating patterns and health. Strong appropriate AMDR. The human body uses\r\n10 percent per day, total carbohydrate\r\nevidence from mostly prospective cohort some saturated fats for physiological and\r\nintake remains within the AMDR, and\r\nstudies but also randomized controlled structural functions, but it makes more than\r\ntotal calorie intake remains within limits. trials has shown that eating patterns that enough to meet those needs. Individuals\r\ninclude lower intake of sources of added It should be noted that replacing added 2 years and older therefore have no\r\nsugars are associated with reduced risk sugars with high-intensity sweeteners may dietary requirement for saturated fats.\n\nNEW PASSAGE\nLimit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "ec410d36aac8818eeb1b984cce71b303c2951131a847fa7c8eb7384e30e5a10b",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The old passage suggests a general limit on added sugars (implied 10% of calories), while the new passage provides much more specific, prescriptive limits (e.g., 10 grams per meal, specific gram limits for snacks) and explicitly states that no amount of added sugars is recommended for a healthy diet."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "53bc1f2d904120ae297abe534efc2bb41aa1425b741ee4a11206f683b24f8062",
+    "response_sha256": "4451bb49df3a9436139ccea9f12b2970ba4a5e0ccbc7046dd3db80ae2a62cd4e",
+    "latency_ms": 4162,
+    "usage_metadata": {
+      "promptTokenCount": 520,
+      "candidatesTokenCount": 88,
+      "totalTokenCount": 608,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 520
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"superseded\", \"confidence\": 0.9, \"rationale\": \"The old passage suggests a general limit on added sugars (implied 10% of calories), while the new passage provides much more specific, prescriptive limits (e.g., 10 grams per meal, specific gram limits for snacks) and explicitly states that no amount of added sugars is recommended for a healthy diet.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 520,
+        "candidatesTokenCount": 88,
+        "totalTokenCount": 608,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 520
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "onhgarGuMqTO1e8PuM2fyAM"
+    }
+  }
+}

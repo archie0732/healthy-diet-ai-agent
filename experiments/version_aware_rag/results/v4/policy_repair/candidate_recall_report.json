@@ -1,0 +1,14 @@
+{
+  "budget_20": {
+    "development_micro_recall": 0.8,
+    "validation_micro_recall": 0.9
+  },
+  "budget_50": {
+    "development_micro_recall": 0.9,
+    "validation_micro_recall": 0.9
+  },
+  "budget_100": {
+    "development_micro_recall": 0.9667,
+    "validation_micro_recall": 0.9
+  }
+}

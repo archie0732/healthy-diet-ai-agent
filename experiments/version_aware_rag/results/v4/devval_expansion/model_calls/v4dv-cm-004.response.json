@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-004",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "95341eae79bd0d235d76676a09f1b596c40cf12f9476e48b7ba2b6ba27e2f616",
+    "response_sha256": "66ab52b12f909e7795ec7e685791b5068ef79d1ba2c9b48d44699c05b35e73f6",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 15828,
+    "usage": {
+      "promptTokenCount": 666,
+      "candidatesTokenCount": 271,
+      "totalTokenCount": 2132,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 666
+        }
+      ],
+      "thoughtsTokenCount": 1195,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:22:55.542Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to WHO guidelines, how is the child population defined for sodium intake recommendations, and what evidence-based reasons prevent the application of low-sodium salt substitute (LSSS) recommendations to this population?\",\n  \"target_population\": [\n    \"children (aged 2–15 years)\",\n    \"infants (aged 0–24 months)\"\n  ],\n  \"conditions\": [\n    \"sodium reduction\",\n    \"low-sodium salt substitute (LSSS) use\"\n  ],\n  \"draft_rationale\": \"To fully answer this query, information from both passages must be merged. The first passage (who-sodium-2012) defines 'children' for sodium recommendations as individuals aged 2–15 years inclusive, while noting the guidelines do not address infants aged 0–24 months. The second passage (who-lsss-2025) provides the reasons why LSSS recommendations do not apply to children: there is a paucity of data, no studies have examined discretionary LSSS use in children, and the only RCT on non-discretionary LSSS use (in bread) showed very low certainty evidence of little to no effect on blood pressure, meaning no conclusions can be drawn.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 666,
+      "candidatesTokenCount": 271,
+      "totalTokenCount": 2132,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 666
+        }
+      ],
+      "thoughtsTokenCount": 1195,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "EfReasL_F4Wk1e8Pov7XmA8"
+  }
+}

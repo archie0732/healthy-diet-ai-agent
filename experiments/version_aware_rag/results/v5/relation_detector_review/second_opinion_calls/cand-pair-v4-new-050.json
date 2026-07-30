@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-050",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "2d7294352718cc9eaf3146ad5e29f8258e83f98bc5803204af8666cd69181aa3",
+  "response_sha256": "2b7069ac915fb394f8295986189e566f43fe645344e2d3fb8ae0482b607abb1c",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general dietary guidelines for all life stages, while the NEW excerpt introduces specific therapeutic dietary modifications (lower carbohydrate diet) for individuals with chronic diseases, adding distinct but compatible information."
+  },
+  "latency_ms": 795,
+  "usage_metadata": {
+    "promptTokenCount": 238,
+    "candidatesTokenCount": 77,
+    "totalTokenCount": 315,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 238
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

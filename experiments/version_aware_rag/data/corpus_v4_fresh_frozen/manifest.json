@@ -1,0 +1,12 @@
+{
+  "status": "frozen_fresh_test_source_windows",
+  "source_inventory_sha256": "b149db5124d1f5df807f404489f3ecb1afccf3481db550a75a0a01d72b77f7a0",
+  "parent_corpus_sha256": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+  "record_count": 160,
+  "unique_chunk_ids": 160,
+  "unique_normalized_texts": 93,
+  "excerpt_containment_failures": 0,
+  "chunks_sha256": "78f2fb0d3b77514cd8c7c930840b9b3dcd828f07f77b5389ebb8b6a321b2a088",
+  "provenance_sha256": "c12a9d7e7ef7b297da72d04a8e1f5c2c53ba2917e74401a4f9b745a6b61a5b05",
+  "derivation_rule": "For each exact evidence offset: 650 characters before through 950 characters after, clipped to the frozen parent chunk."
+}

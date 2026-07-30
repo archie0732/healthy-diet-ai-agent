@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-010",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "02805fef1fe47920a6b66ebb0690c79e3bda528f00c700a97d688eed5cb69de1",
+    "response_sha256": "7b4ec145e801ee981842977b5679c03b949ee403a4ea39f9e23c495fb3d0d047",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 18497,
+    "usage": {
+      "promptTokenCount": 768,
+      "candidatesTokenCount": 246,
+      "totalTokenCount": 2116,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 768
+        }
+      ],
+      "thoughtsTokenCount": 1102,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:25:15.343Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to WHO guidelines, what is the recommended limit for total fat intake in adults aged 20 years or older, and what specific limits on free sugars must be maintained to prevent undesirable dietary replacement when reducing fat intake?\",\n  \"target_population\": [\n    \"adults aged 20 years or older\"\n  ],\n  \"conditions\": [\n    \"reducing total fat intake to 30% or less of total energy intake\",\n    \"limiting free sugars intake to prevent undesirable dietary replacement\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must combine information from both passages. The first passage (who-total-fat-2023) provides the recommendation for adults aged 20 years or older to limit total fat intake to 30% of total energy intake or less, noting the risk of replacing fat with free sugars. The second passage (who-sugars-2015) provides the specific limits for free sugars (reducing to less than 10% of total energy intake, and ideally below 5%) to address this dietary quality concern.\"\n}",
+              "thoughtSignature": "EuwkCukkARFNMg83v/DNFy+VcoKOeNyl9oDJXCPkAcjr17zwnnQ4lJ6/91N/Z0+0t5AtQnmbIQzRGx0Y3Ip4avipMGFhfXitjf/EqmnKoJvQtI0k8+eM0gxS0ieOoj7yIeQ5zsafUQz3mHr7xF2BWx8Y7/+p8GlUnJmbCvvuUuQCFDaLb1HzTIOJe/Qs8NW8Y0KKyzSKLZe1q2FBJfOM7aovpt3mXnvxlV629tvQJOg00PJf5GhalITtujrDu5k6/4VpIV2SHBflBHu93/u42ivDdQwzRgzyilGnd1lKStJQuPoZHD8EL9J3rUCguxfKlOiVm9TcpD6ISJYmT02Nn8vCePhcdNERc2izDb4OpLVGfImTAKqvyerkLzoY6AooCqFOks6p9U/jJQJr5zYBBSqYTTq7EcTPnyZEXvh/bDqdt/xcLjWC5hXZObb5BTrO9Ss7cZJ6VR5VPBt4s33lsbZ0U4VVPE3WOPMZx/hxNByKmWJnuzLU5qmRQrgN1sWFr6+wVbbJj1NOMzVwmSwHtWNT9lbbFETjgZqJ7y6tUq1y0F4FAWvxOgtpzTp4pwT0MiQozgSCaUMeIkw1GYeA8BDtnS5VSC+mSKkKSv7YhfpddFaglvS4QPd9pxYckW/iEdbOJtnYoUgtUXgWG26UcHntmOOZMoWW0Cg5Dueg9ehAzBrRwEwdziiL0h65Fit7xtXPeeP7DMWIIlj8GdwbiYWj9opKluuhJwKsNgD8y6WnG5vbyuHIaZ2g5X9yl/yc2GWFcMN10Ou04YIMvBeIBnga6MkJ9KQR4BVjNOc69T7f7UWbHzvZ25tCWaQN1h81Yr+cHJtK3SyV7U/07t8VFG3MGc/Bz3S52Dr3g6YXGWmw8Dil605YA19EKi37CXTEVvLIcTQBRbSrTENSL+rtLH+qqMV8t5lew9x5IpWWqh3sVpZqg7DZJp3sxT0fuG8enLiG1EDciT/3eyeey0s8OtFCQykwCncMyuexz5iED6gvdWUIT0uqgpJf3n+ekK+6M1h6BCmGvw0bqczvli5tSLw1/Rz6vfoAaqGuo0SggrXSoShjNnEVB5YDSK+5lxsHmek7o+2Ra0PqjB8qPAgVkpkv5Ktwa6NXwJ1QeZYhP4Hzw9kwB2OTeJHb4P+YKuzCSdmuV86OYaqiDR9lR6bEr8NBPPKyq9wcNoAaZ+ida65z6jP/vrE6R5vifddhO3fmxxb2ddlv/+hEJAGtalzOy9MD40vrHaLkECAMA9jyF/qVX8YM7VUp2K33RjEHO00P6ahlRT0uJzbjbIA08WrPaAX2a6Sm/6afTkwQ6/PeJgsiTCjID04sRaSA1tBwAP5V3dLdxCkab+TNWVc5nKkUVtQMonnGSmDZ68caS6ZOmJNbg0OT0G0puLZbxxw6Sk//80dDRz21MSzPaeSiR7gETqolx/etjNnDMWyGG0l1JB/uUoHhmYm2ivJaY8bkO418MK8gTVfYrURY9WPn5z4wEwHFX5gXGRwzJfvMHq5I5nufZ/9XAEDGBGScGRSj9yBhQfn4hkIPI9qvG/PMmxNjSox5OcTbAMmJhCkgwG/o3BuYSR+jRpjCJ7faWCXOlBmwndY3Rzkbx7yCCXgHNxOw1Kitc9k7PoY17BvNJ0zWSLUvqX+CiEsITOhjloaxwgtvSi9EQ39oTbAGApYeVbg+3x/Q6XQb2PR3Or7+v0iZNcgJfG7MwyoiS79kVcpqfbZmpKoNSkgINTAQHH4pz0rfMjt/I3TbmTVl5S3kORNZpNBoGfvj3+T9JM/ZVWz71kT7hzYNkmm3RvDWpmOgrrH2iK1a29WKyw4Q/jQuspmdQFoarjoI8jy8H9q/oyLhdVRNiIVsKz3HE/mzdOkQBr5Z1quF4dDPzcafy5rylq8tdsM46RmBCnFp1WxlvmWK4s69ZS0XOpl5jI9WK03VOYt3pHzyHU/oEcxCEoAR52/t+VJ2lgiuCdud8Hv13ldVfhXxrLYlqiMqVkhtVNYn8mnR0rNr8CG+yeh9FEA2t0z7b+HDwCm223YlDvRB5OVbPpZienDNcAyAR16QV+1iEQgPfYF64jhow89Uy1WIQPjU9imgfT8Kxr5x/AcLT7elDXgwI/hqJfSAc4bg1mOyCuooT9NUI2UN/eDsipQ7grgvVZoMPB4wYD8iKNcLuTEo5+1V3+SUBdTy26QfRO37espOycpv3dTZtITh/YAI3ycO4m7MWGNcTZ+3/cG2VUP0qV3RGuKSxuHXzUPoQNUQmY8qh2SWAexGnd7rUadq3I/01C0RryOCafu33dALACQtvHzbPQuvrDqS+kBpf8jaxdJKfda7hyRKwPgdtTNz8UrvHu1PQ0LEkD2RW/2BMvjgwwktxoeoIsRjH5P0yVk3J70bEJTy/zgkh3aHLAUNNZMRwxVvbpaLGzx5k7eFHY6ViIf6Tbji5kHmiLvZChtZj45gon3W2bpKR3bd47z5SFfue2GSC8jhJqRSIAW+nBt5Cj6oN5st3tLl2i7VgwtJBAn+4T0/xIRLi3Nr57+BbEl1gh1a8XJ06ZVP3A8QqY/lDiJ38BZXIbxBiZMBH4FF4wuz4fPL1DDLi31y9j9pW5rZzI6xYpcSkfsqyZ9QF0BhqwC8DWM6GjhZOhkNzKiSxcGr882hUu2LgCezmLnFSx37oywS1DhcqTJowrwI39TNQD/bW5BDfYBgQptedQgQ5q9ehvSNNADgV6v0Jlo6Ik1/XbI/mshe07QDqKpPFyFlwfh6ftCqhw1pTPRid3M8awi9I+B1nL/nXUyRcCVPekTxWF+GB44GoMW4sFEFX3OUgSSiQfQOBDQ9PDi842HD+CLucM0MOS90+HhqP+L2hnjv4qvZr8BeWWr9Wq/ibXN5l0t3XmrWFO+5ejWSwPKNMRp+7N2dGGYPhu0V8WjLpSsy3aXLfrX8xLvC2hRY305QgK56n6fYiVEFZeXH+Nw/H5FY3SCulbZJv3GuSLeZHTrnPzIu4hEbsOeJnGJxEMcYUb2Vi1f6mBNnhAA/+GXG9KLPJdLTH+BZU0WrawExp4tIOcFIwG5h11osaMlopUFTYWROqEyB+MaeH2gRz8o6WxZwFC76UAnJp+VuDEgZ8ISHv//fyriBu9Vha9avMnDPWBUfWOKNFxphKX0GIG/Qy9c+9fAp5cWvDxjplDWdXsmtrhL5b2gSX4L3TrDZMQiyf1EDtvW7qyw7PbUOz9iBcUsh2ebIQ2x0+MeWgGePla5ohNLtfG+QsNA2VfFxaRYu+bOpo8kHbO1YpvxVCLMinoS8G//hEf9SqAUTOmphQVwiBaowLZh5Vug55DAfdkHV+kiePI95YheEyH7XqgNNM0//H0Gb3omF+ra2RnfFvP2VGb+XI5KjMHMwkJ8QVLZGG+Daq48q6QQHw7y8hG8RnZt1ESGvo6tuKfvhtOR8JN2UoAGYttBV7XC7U0uNAvB0n+dr4xxLagQGQ0lG9Fvwf+TyARDzNtORon7sUB27s+NWgS8KkPZa81f9fQzXw4xZlVI41sk3DEG0MM2RHb3aenPoGn8f4mQR5fsXnsiPv50ZVLNASoCaQMdPhrJXh9dwgcg5ye2f+ZvVdmEkuYHx29C8xaMto4DGSJjy9ZwHwuARVdH92+/xehOkX8VcaAE5zqw+P3zdO6YCJgh5bAdUBshfCJXASLCtl33nUojs6CdDwlCSx+EQ4IUSVn2uNIxK3ZJERqbtBok1K7XRQhjs+A7rNGfkkzPJVWhd5U05bMHLucbY29z2ngB1NQbkKlsMgDpzxHQ8yDHW/xuJA1Ngi8WnAsk+mRt/Fsghe3gUy81Tnodc3VuXdd19U7Ae4QEr6NR/uGDG3tzRyd62enTBHBt+gr2WCylrUC5oX5jks9bGossJewfeIPH9mzFQAUKDKV33fHBHqveaZqbIH/zZacxXI8D9kbt1xg62JX6pEZlCZuwB8syZqVIRxJ3sfXIpeqy7aeI7ozcyiCUjDRTf6TOwezZYWzmfLyeL5nPOZG1qf6xS3Y8qo05dpkTu3n90PV2h0jIcovDnRHEZ2LwISe8inll3K0G8x67vA5sWeqnbexaTTgnirSBWH2D1vgKEAYFIjVdmC6BZ2PGqkNmhzjpRlPKF8gwVk4Sspu8//xW4QBDJbPmBFUWNlbvl1lT1GvoauVKCaUINjktEPcDzNWA+V8+RmFubWItKNlZdAhtlL7AuoDrV+Uzvy8z5e1wLq3hcmgiwwSP7obYMiV0Fp0p+MHaVZLknCKnBeFu7wbHzl5vAIuPTHtfN89uWdxZj79Ok61kjR6nsIX3PGqOHuP+oS9uQu/VmkiueYwSRlu9kavtj1YD1psQHdPCN643wacino1+Ac0I4EAOWkfQa4MApw2sIxFQpmq3gvKxDrx6F8PwEou2xAMPzh4qXZ0xNRpbj00e/5R+VJ8++XrWgi52QUswM9Uswenao5hd1RlRYaZtGwZw3O9OA9Bdru+tYd3K6e43j03GXy9maj49s0iqxn8FkRI5x7yAmx7tf0f8T2ejGVL3MbqdV23BrOj+U5RQaD2NVz7X5A2l7LTp0btYcf6QW8H5kgsARreqopUIFU5btgw0W1zX5EuEheMXDPokFHKaSbS0SHNkOGtVGIF9dNTuDFmI/DRcsOI02Iu2PNld7PU8BcKNJki49gstzAN3Q9fJWohEvTiTT9kyGThLeb43BE7ckW99vmqLHMVOnWwXIzN+5945lffnqbsHJ+pkua17mBZSZmP/3bcwZnlgVUsJZapOEM1R2PPaTGR24/YlNVzdPa9/9/NSf3J1gSrX5w/NFBW04DSvOawlt9RS+eDiOR8mjLW6T19DXixOgttFL3wXTFi90a5yERKN8Sqp+RTbwcZxbcBg3rwx1TW4E/Xoq4Hama8s4Uehx27BqgqAw/KmNNzTOL+tEpRLSEWi9CYiDe6FRq72i9aPZKphTwWWwzj/DgcWEAR5qj7gNHaGhouIM+7D6toWenw1rDW24DTTTP49trr1KkZRxJy1yltOHpAiFhVHmuvT6pgTSYGQrOFiNyjT6FYcKa9jUGl7clYcrDim7NIfK5SJRP5XeIEFtAUyMaixT3fV4sM7wg0x4MTVk+LEMFEh7nXlIhl8BW6oGOXP0/vavw5siFDc4ZXNe0ybaawcRKWIovxPxjimRJ/l7zDnumAJf+xv0rPDy+4eW9fLkKJs9oYk2N3JmkB+Oh0ZTeQ3kPq3Na0CZp+m6gzenOYNLN/cNmrJ+KnmXXADVcLYopa6HQdXN4vlmt6EcxZii0bPn4ZHlawCM3hfiyFGxW+A7xnzHAlDxHPit0U0dBgMG3TfVGdLYS+GOAlBSMTDCxRzMqJouxBAlUluwnPk4rJslNfyeXWLtSP3t1gYV4L7aBZF/AKrmvuyH4NXQeW0EVQQ8HXMpJcdh6IBnUrDvoeOY1cJqgg6afcKDBa6yN+j5ecsamJUyzIq6tpQjcWiVPHVjOTGbxVutNbG8OAo2anyaPw4+58DTJmElKBC79CqHA01X5rleWVxsTt9Ldgpdpud3WFZXma0yZ7opPNWIsc8KoN8bGM8/1pFvWPeOw3Fuo86ZXDQV61yZjCUFHIxMlhFBY7ZwmVsfT/JbHxzIi9pyvH+hsZ9Y4sI7yBlXoTsCEJYj1MS5kwaEUfNERqIrauLIgAxAlolU9m4vT4uIP+zUu3PMPCVy226Xp0odSZAAMELSAMhSrmZFyXy1I8iGltezVDp2RiG+KFO5Azu9xcyiYB4bpbC10vR9cYBb+nMc5Oazo0xQJiEHUa9TOtvHXR04wnZDVXrOF3CVe7dd4VunN8klZzixmhqmPWUn3TRtVTF8ZmYhiYcqTux/JwqdslZYZ6qov3igCidG3uJgNV7mxswKlRqiuoU10gITH7IB4Ikdtx71JWyNkyMOlMygqOdxoHe0Sf1Z5zFFsTvgEhX/R8zA4UuZR/DKE+HfcPrJi3y+44wAx72lrEDztiiP9UTRFWfNKKh25OmO+J48kaZps6j6k9g6HqvFNOVOS3eGzjX2AziiM+hCl9AhARFfoDIvR3h7Sdp2gnotpf8sMPTZuDZTrPsC+VTY5G8+mcvb3lzKT8eRte4wXGYjDUWRaBz1KiaXKTzC1izqlPwzxvGr2XQQ0vzYm64qmdw4vz0EUi0+bV3lBrrFuqnScdvO+xCO+cHbPCBeg7BadadB2RJsmv2pG5oiDWJXGlIay4epysDbNz3Ho+U674AcJOepFt1wE4i2GjgUlucO/byG4tRDPP2DyxJfJH56Kmwa5tq5wtrGzycuGJVq"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 768,
+      "candidatesTokenCount": 246,
+      "totalTokenCount": 2116,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 768
+        }
+      ],
+      "thoughtsTokenCount": 1102,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "mvReaqLWNc791e8Pr_7yyQ4"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "status": "blocked_no_safe_local_tree",
+  "development_only": true,
+  "external_model_api_used": false,
+  "evaluation": "leave_one_lineage_group_out",
+  "feature_names": [
+    "token_jaccard",
+    "old_coverage",
+    "length_ratio",
+    "numeric_overlap",
+    "old_only_numeric",
+    "current_only_numeric",
+    "scope_cues",
+    "exception_cues",
+    "replacement_cues",
+    "detail_cues",
+    "old_general_cues",
+    "old_quantitative",
+    "current_quantitative",
+    "modal_overlap",
+    "lexical_conflict"
+  ],
+  "forbidden_features": [
+    "pair_id",
+    "topic",
+    "relation_type",
+    "judgments",
+    "validation_data"
+  ],
+  "gate": "false_preserve=0, precision=1, recall>=0.5",
+  "selected_config": null,
+  "best_zero_false_preserve_config": {
+    "max_depth": 2,
+    "min_leaf": 2,
+    "threshold": 0.8888888898888888,
+    "metrics": {
+      "true_preserve": 0,
+      "false_preserve_count": 0,
+      "true_block": 25,
+      "missed_preserve": 17,
+      "accuracy": 0.5952380952380952,
+      "pair_preserve_precision": 0,
+      "pair_preserve_recall": 0
+    }
+  },
+  "frozen_tree": null,
+  "out_of_fold_predictions": [
+    {
+      "pair_id": "r2.4dev-v5claim-001",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-002",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-003",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-004",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-005",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-006",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-007",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8421052631578947,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-008",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-009",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.25,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-010",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8888888888888888,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-011",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8888888888888888,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-012",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8888888888888888,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-013",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-014",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-015",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-016",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-017",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8421052631578947,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-018",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-019",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-020",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8421052631578947,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-021",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-022",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-01",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-02",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-03",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-04",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-05",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-06",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-07",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-08",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-09",
+      "gold": "BLOCK_RETAINED",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-10",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-11",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-12",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-13",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-14",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-15",
+      "gold": "PAIR_PRESERVE",
+      "score": 0,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-16",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-17",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-18",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-19",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.5exp-20",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8333333333333334,
+      "predicted": "BLOCK_RETAINED"
+    }
+  ]
+}

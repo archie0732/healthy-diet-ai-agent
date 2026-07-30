@@ -1,0 +1,18 @@
+{
+  "status": "fresh_test_final_sealed_retrieval_unlocked",
+  "record_count": 40,
+  "sealed_test_sha256": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+  "source_corpus_sha256": "78f2fb0d3b77514cd8c7c930840b9b3dcd828f07f77b5389ebb8b6a321b2a088",
+  "frozen_package_sha256": "c30f464414d70ef816abda548ef8e90e1d7196adc0df3ce51f65ae63eef21917",
+  "source_corpus_addendum_sha256": "8a1f14a8f8a7f9d4e7c01d728ff616c823a470e926ffdf89b4c4598b2bed6411",
+  "amendments": {
+    "amendment_01": "9b0a8bcbb175b8c51d439d13aded0685746f447905f377bc991b7c27d77d6bfe",
+    "amendment_02": "4103ba629323695daa7387c4afcc45d95ae5998e396ff8d401314211abdad6cf",
+    "amendment_03": "814d86a32ea95a7c630498affc4a14e488f592996d501392713f2df6e63f906b"
+  },
+  "test_retrieval_execution_count_allowed": 1,
+  "test_retrieval_execution_count_completed": 0,
+  "tuning_allowed": false,
+  "predicted_graph_created": false,
+  "answer_generation_completed": false
+}

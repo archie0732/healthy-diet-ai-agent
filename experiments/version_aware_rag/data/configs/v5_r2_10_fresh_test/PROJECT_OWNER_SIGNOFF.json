@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.10-owner-signoff-1",
+  "status": "checksum_bound_project_owner_approved",
+  "owner_statement": "同意全部，checksum b3923d62ba18fed6ed70b21cfe80819885768c378ce5afa0e1846c54c7d69ca3",
+  "owner_signoff_date": "2026-07-24",
+  "review_packet_content_sha256": "b3923d62ba18fed6ed70b21cfe80819885768c378ce5afa0e1846c54c7d69ca3",
+  "review_packet_file_sha256": "7415e15733f2cf56109e88a297044c10d2343af277002b78942f4d66f0e485a2",
+  "draft_ledger_sha256": "aebeac135354e3b509a30ac161bfff9fc65208e35c868693c497fa7339d99731",
+  "approved_ledger_sha256": "983a17fe72e1dd7b3cb04a4c767d509f6fdc70d7ac5cd2acafbf334ef530fd02",
+  "record_count": 16,
+  "limitation": "Project-owner review is not independent blinded or clinical review."
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "v5-r2.19-minilm-model-manifest-1",
+  "status": "model_cached_and_smoke_tested",
+  "model_id": "Xenova/all-MiniLM-L6-v2",
+  "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+  "task": "feature-extraction",
+  "dtype": "q8",
+  "pooling": "mean",
+  "normalization": "l2",
+  "dimensions": 384,
+  "device": "native_windows_x64_cpu",
+  "blocked_postinstall_scripts_executed": false,
+  "remote_loading_allowed_during_diagnostic": false,
+  "package": {
+    "name": "@huggingface/transformers",
+    "version": "4.2.0",
+    "package_json_sha256": "9cf12901d934e5a0628c6f163484abade392ab2d3b369d458ed3dfdeaa7f9a39",
+    "bun_lock_sha256": "f2866f896c7640c00c090f062bc4fe078442000c05b664f3a16400aa9cf52130"
+  },
+  "native_runtime": [
+    {
+      "path": "node_modules/onnxruntime-node/bin/napi-v6/win32/x64/onnxruntime.dll",
+      "sha256": "4bc168111012971ae1ffef36c1f29c06b026d17e9063bd17f6390359fbe32a84"
+    },
+    {
+      "path": "node_modules/onnxruntime-node/bin/napi-v6/win32/x64/onnxruntime_binding.node",
+      "sha256": "32a61411861578b3e0988e669e9d9a474cc1436369269df0a4e23765cbe9e75a"
+    }
+  ],
+  "cache_artifacts": [
+    {
+      "path": "cache/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+      "byte_length": 650,
+      "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7"
+    },
+    {
+      "path": "cache/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/onnx/model_quantized.onnx",
+      "byte_length": 22972370,
+      "sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1"
+    },
+    {
+      "path": "cache/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+      "byte_length": 711661,
+      "sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0"
+    },
+    {
+      "path": "cache/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+      "byte_length": 366,
+      "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3"
+    },
+    {
+      "path": "cache/Xenova/all-MiniLM-L6-v2/config.json",
+      "byte_length": 650,
+      "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7"
+    }
+  ],
+  "smoke_test": {
+    "inputs": [
+      "potassium excretion can be impaired in kidney disease",
+      "short-term trials and long-term observational evidence differ"
+    ],
+    "vector_sha256": "9391b51be71e982c73fa30ba1f98ef316ec268b38feb39e81c78cdbc71dc3cdc",
+    "finite_normalized_384d": true
+  }
+}

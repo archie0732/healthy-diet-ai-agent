@@ -1,0 +1,19 @@
+{
+  "status": "fresh_test_draft_needs_project_owner_review",
+  "record_count": 40,
+  "strata": {
+    "current_only": 10,
+    "conditional_merge": 10,
+    "compatible_history": 10,
+    "hard_negative": 10
+  },
+  "unique_lineage_groups": 40,
+  "unique_required_signatures": 40,
+  "unique_normalized_required_text_signatures": 40,
+  "source_inventory_sha256": "b149db5124d1f5df807f404489f3ecb1afccf3481db550a75a0a01d72b77f7a0",
+  "frozen_source_corpus_sha256": "78f2fb0d3b77514cd8c7c930840b9b3dcd828f07f77b5389ebb8b6a321b2a088",
+  "frozen_package_sha256": "c30f464414d70ef816abda548ef8e90e1d7196adc0df3ce51f65ae63eef21917",
+  "source_corpus_addendum_sha256": "8a1f14a8f8a7f9d4e7c01d728ff616c823a470e926ffdf89b4c4598b2bed6411",
+  "draft_ledger_sha256": "ac10c3226cd9e7073ef45de4444f2a02ff26fd741dfbc83280edcea14833a698",
+  "retrieval_execution_count": 0
+}

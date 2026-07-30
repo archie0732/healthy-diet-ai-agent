@@ -1,0 +1,34 @@
+[
+  {
+    "pool_n": "20",
+    "recency_recall_at_3": 0.65625,
+    "oracle_recall_at_3": 0.46875,
+    "delta_recall_at_3": -0.1875,
+    "oracle_stale_rate": 0.09375,
+    "recency_stale_rate": 0.15625
+  },
+  {
+    "pool_n": "50",
+    "recency_recall_at_3": 0.6875,
+    "oracle_recall_at_3": 0.46875,
+    "delta_recall_at_3": -0.21875,
+    "oracle_stale_rate": 0.09375,
+    "recency_stale_rate": 0.125
+  },
+  {
+    "pool_n": "100",
+    "recency_recall_at_3": 0.6875,
+    "oracle_recall_at_3": 0.46875,
+    "delta_recall_at_3": -0.21875,
+    "oracle_stale_rate": 0.09375,
+    "recency_stale_rate": 0.09375
+  },
+  {
+    "pool_n": "All",
+    "recency_recall_at_3": 0.671875,
+    "oracle_recall_at_3": 0.46875,
+    "delta_recall_at_3": -0.203125,
+    "oracle_stale_rate": 0.09375,
+    "recency_stale_rate": 0.1875
+  }
+]

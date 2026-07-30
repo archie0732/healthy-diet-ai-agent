@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-0-8effd6bb|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "9581b3d53bb64231c9ab29062bfc4947bd715c79182b6b700e8d41be25064132",
+  "response_sha256": "3c99ad1b332b29c17b25789150ff5592b56c73f9e7034fdc7cc457ef18e374a2",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.9,
+    "rationale": "The OLD passage explicitly recommends 'Fat-free or low-fat dairy', whereas the NEW passage explicitly recommends 'include full-fat dairy'. These are mutually exclusive recommendations regarding the fat content of dairy products."
+  },
+  "latency_ms": 976,
+  "usage_metadata": {
+    "promptTokenCount": 1008,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 1080,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1008
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

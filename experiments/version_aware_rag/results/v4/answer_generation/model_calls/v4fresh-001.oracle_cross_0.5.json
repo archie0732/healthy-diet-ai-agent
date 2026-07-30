@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-001",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "5ed5e27530ff330f4dde8eeef411a58f24b1570987e5099ce3034e8a5e67433a",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-064-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nan\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-064-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=About Meats & Poultry\r\nMeat, also known as red meat, includes all forms of beef, pork, lamb, veal, goat, and non-\r\nbird game (e. g. , venison, bison, and elk). Poultry includes all forms of chicken, turkey, duck,\r\ngeese, guineas, and game birds (e. g. , quail and pheasant). Meats and poultry vary in fat\r\ncontent and include both fresh and processed forms. Lean meats and poultry contain less\r\nthan 10 g of fat, 4. 5 g or less of saturated fats, and less than 95 mg of cholesterol per 100 g\r\nand per labeled serving size (e. g. , 95% lean ground beef, pork tenderloin, and skinless\r\nchicken or turkey breast). Processed meats and processed poultry (e. g. , sausages, luncheon\r\nmeats, bacon, and beef jerky) are products preserved by smoking, curing, salting, and/or\r\nthe addition of chemical preservatives. Strong evidence from mostly prospective cohort studies but also randomized controlled trials has shown\r\nthat eating patterns that include lower intake of meats as well as processed meats and processed poultry\r\nare associated with reduced risk of CVD in adults. Moderate evidence indicates that these eating patterns\r\nare associated with reduced risk of obesity, type 2 diabetes, and some types of cancer in adults. As\r\ndescribed earlier, eating patterns consist of multiple, interacting food components, and the relationships\r\nto health exist for the\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-005-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements\n\nQUESTION\n\nWhat is the recommended daily protein intake target per kg of body weight in 2025-2030?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "4faa1761c850056f2347c1d55abc02eae6dc98b397d6027fb75146e7ec957cd3",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-064-new",
+    "v4fresh-cand-pair-v4-new-064-old",
+    "v4fresh-cand-pair-v4-new-005-new"
+  ],
+  "answer": "*   Question: What is the recommended daily protein intake target per kg of body weight in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your an\" (text cuts off).\n    *   Passage 2 (dga-2015, edition 2015-2020): Discusses meats & poultry, CVD risk, obesity, etc. No protein intake target per kg.\n    *   Passage 3 (dga-2025, edition 2025-2030): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your individual caloric requirements\".\n\n    *   The target for 2025-2030 is 1.2-1.6 grams of protein per kilogram of body weight per day, which should be adjusted as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-064-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes (individual caloric requirements).For 2025-2030, protein serving goals are 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-064-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "52460687b3093e36c054d3e286869f706b9257b9b2263ac66140b286f7c0cc5f",
+    "response_sha256": "90d713a7a0384021b0cbecdfa88b63a8eb5b2f5a6dea73166e85abbb91c77a7c",
+    "latency_ms": 14587,
+    "usage_metadata": {
+      "promptTokenCount": 1164,
+      "candidatesTokenCount": 82,
+      "totalTokenCount": 1653,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1164
+        }
+      ],
+      "thoughtsTokenCount": 407,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: What is the recommended daily protein intake target per kg of body weight in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your an\" (text cuts off).\n    *   Passage 2 (dga-2015, edition 2015-2020): Discusses meats & poultry, CVD risk, obesity, etc. No protein intake target per kg.\n    *   Passage 3 (dga-2025, edition 2025-2030): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your individual caloric requirements\".\n\n    *   The target for 2025-2030 is 1.2-1.6 grams of protein per kilogram of body weight per day, which should be adjusted as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-064-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes (individual caloric requirements).",
+                "thought": true
+              },
+              {
+                "text": "For 2025-2030, protein serving goals are 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-064-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1164,
+        "candidatesTokenCount": 82,
+        "totalTokenCount": 1653,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1164
+          }
+        ],
+        "thoughtsTokenCount": 407,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "XHlgav7uLMqKvr0P3a6i0QU"
+    }
+  }
+}

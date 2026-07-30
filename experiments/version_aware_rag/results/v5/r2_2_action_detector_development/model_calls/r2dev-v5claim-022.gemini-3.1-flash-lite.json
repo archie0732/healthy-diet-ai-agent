@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-022",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "ad756ade52666b81be356c3b28dd8d3c4fc9c541a95c0ca24178387fcaf5e781",
+  "response_sha256": "694fa85348adc1dfd6447b7bbdab3685c4a0c90cee1c83e8629956f83822e179",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The specific instruction to include foods rich in iron and zinc for infants, particularly those fed human milk, and the specific limitations on added sugars and sodium.",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage focuses on vitamin D, formula cessation, and broader categories of nutrient-poor foods but fails to include the OLD passage's specific dietary requirements for iron/zinc or the explicit prohibitions on added sugars and sodium.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 1000,
+  "usage_metadata": {
+    "promptTokenCount": 614,
+    "candidatesTokenCount": 121,
+    "totalTokenCount": 735,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 614
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

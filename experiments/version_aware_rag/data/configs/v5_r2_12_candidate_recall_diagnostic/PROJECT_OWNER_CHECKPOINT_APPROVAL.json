@@ -1,0 +1,25 @@
+{
+  "schema_version": "v5-r2.12-checkpoint-owner-approval-1",
+  "status": "checkpoint_approved",
+  "recorded_at": "2026-07-26T00:00:00.000+08:00",
+  "owner_statement": "ok，我看過了可以，不過你一樣在幫我核准一下，沒問題就可以繼續下一布了",
+  "approved_scope": [
+    "R2.12A diagnostic result and claim boundary",
+    "selected diagnostic repair bm25_group_expand_seed14",
+    "construction of 56 predeclared role-neutral candidate groups",
+    "continuation to semantic review and confirmation annotation authoring"
+  ],
+  "not_yet_approved_scope": [
+    "future R2.12 confirmation annotations",
+    "future frozen confirmation ledger",
+    "future confirmation retrieval execution",
+    "Validation or fresh-test execution",
+    "promotion claim"
+  ],
+  "diagnostic_result_sha256": "2245d373bf5a44e18307753e70c93961f8ca79b0e0ec5adfc98cf2e6ee6bfd44",
+  "candidate_group_manifest_sha256": "c494b1cd26c5fadcb44cb214bea9332b3439db9ee791fe0e5c6dd646de62beb3",
+  "retrieval_outcomes_observed_for_future_annotations": false,
+  "r2_11_rerun_authorized": false,
+  "validation_authorized": false,
+  "fresh_test_authorized": false
+}

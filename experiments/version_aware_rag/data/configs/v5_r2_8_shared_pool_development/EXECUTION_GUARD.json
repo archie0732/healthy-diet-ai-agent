@@ -1,0 +1,11 @@
+{
+  "status": "r2_8_development_passed_locked_new_validation_construction_allowed",
+  "manifest_sha256": "f46f05b29b2a7d5235b536c2657f5b67548da311ed3446661b2165cfd157b8e0",
+  "retrieval_execution_count": 1,
+  "judgments_may_be_read_only_after_all_retrieval_calls": true,
+  "validation_execution_count": 0,
+  "external_model_api_allowed": false,
+  "fresh_v5_test_created": false,
+  "development_result_sha256": "d37d67897f4bc5fb16c595832b2b2f24b7933719efd3b893fc4922bc95f3c227",
+  "raw_retrieval_sha256": "531492a5d05f76868602546fd852bc51ce35ef308a434e805a7a00b8133917c6"
+}

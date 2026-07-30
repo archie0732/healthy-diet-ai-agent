@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-008",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "0f270a783594878bc71c70175ae3c30a0a68c91b02498eb557cfa332d8976d7f",
+  "response_sha256": "bd88077af944b0246a49304000644cbbfcf331e7c59070ba92e304c24ecc3e9f",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more detailed and specific breakdown of sodium limits for children and adults, explicitly covering and updating the general limit mentioned in the OLD passage."
+  },
+  "latency_ms": 2686,
+  "usage_metadata": {
+    "promptTokenCount": 495,
+    "candidatesTokenCount": 63,
+    "totalTokenCount": 558,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 495
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

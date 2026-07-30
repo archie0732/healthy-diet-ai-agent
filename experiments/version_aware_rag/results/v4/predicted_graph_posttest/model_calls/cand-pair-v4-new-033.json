@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-033",
+  "input_sha256": "57af8b0b18c37fb611e3ae9d51e77466c7e68097142fd09d13ca6fd976387495",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nThe recommendation to limit of added sugars in their eating patterns,\r\nadded sugars to no more than 10 percent of including to improve the palatability of Saturated Fats, Trans Fats,\r\ncalories is a target that applies to all calorie some nutrient-dense foods, such as fruits & Cholesterol\r\nlevels to help individuals move toward and vegetables that are naturally tart (e. g. ,\r\nSaturated Fats\r\nhealthy eating patterns within calorie limits. cranberries and rhubarb). Healthy eating\r\nHealthy Intake: Intake of saturated\r\npatterns can accommodate other nutrient-\r\nAlthough the evidence for added sugars fats should be limited to less than 10\r\ndense foods with small amounts of added\r\nand health outcomes is still developing, percent of calories per day by replacing\r\nsugars, such as whole-grain breakfast\r\nthe recommendation to limit calories from them with unsaturated fats and while\r\ncereals or fat-free yogurt, as long as\r\nadded sugars is consistent with research keeping total dietary fats with\n\nNEW PASSAGE\nsugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "302bcf63f617e75041722c63dc9b53bd1fefabfefb9d3dec71a2bed7538fca6d",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage provides a general caloric percentage limit for added sugars (10%), while the new passage provides specific practical implementation strategies, such as identifying sugar on labels, avoiding specific beverage types, and providing gram-based limits for specific snack categories."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "0e84f6027184bee580f7876e68ed8512084718e0be2e104371d7f8202d19efb8",
+    "response_sha256": "c0025f48e4a43d18ef9974ee45a41e98e04eca002040573122d7dfa274d4550a",
+    "latency_ms": 3295,
+    "usage_metadata": {
+      "promptTokenCount": 647,
+      "candidatesTokenCount": 80,
+      "totalTokenCount": 727,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 647
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"complementary\",\n  \"confidence\": 0.9,\n  \"rationale\": \"The old passage provides a general caloric percentage limit for added sugars (10%), while the new passage provides specific practical implementation strategies, such as identifying sugar on labels, avoiding specific beverage types, and providing gram-based limits for specific snack categories.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 647,
+        "candidatesTokenCount": 80,
+        "totalTokenCount": 727,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 647
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "iHhgapD1CYmyvr0Pm_-GmQM"
+    }
+  }
+}

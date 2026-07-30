@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-002",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "81ab3a27ae4a70389f1a8cb3efcd8037debd471af1740942d42aaa09e381a3d4",
+  "response_sha256": "4efa2f68d1d9096cb8adf65d759e64b14b82f4245cf65178e274156a7a198e1b",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 0.9,
+    "rationale": "The CURRENT passage incorporates the specific examples from the OLD passage (milk, yogurt, cheese, fortified soy beverages) and adds broader categories like lactose-free versions, rendering the OLD information subsumed.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 983,
+  "usage_metadata": {
+    "promptTokenCount": 453,
+    "candidatesTokenCount": 84,
+    "totalTokenCount": 537,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 453
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

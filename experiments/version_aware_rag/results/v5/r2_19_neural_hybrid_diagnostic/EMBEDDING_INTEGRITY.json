@@ -1,0 +1,15 @@
+{
+  "schema_version": "v5-r2.19-embedding-integrity-1",
+  "all_embeddings_completed_before_judgment_read": true,
+  "document_embedding_count": 140,
+  "query_embedding_count": 32,
+  "dimensions": [
+    384
+  ],
+  "all_finite": true,
+  "minimum_norm": 0.9999996476807839,
+  "maximum_norm": 1.0000003089650995,
+  "all_l2_normalized": true,
+  "document_vectors_sha256": "69fa37f63d5922686a4b5a28fa8caf14a066bcb16489e349cb1b7cceb0862f2b",
+  "query_vectors_sha256": "0eb2cf00c7fd3acfdfb8a4f31cea52dcf642885eb7a27ce14c2470d311258670"
+}

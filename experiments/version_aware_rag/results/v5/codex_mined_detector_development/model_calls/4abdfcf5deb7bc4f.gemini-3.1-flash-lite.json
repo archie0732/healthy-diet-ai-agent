@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-011",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "82fc7fd4b91de554649d4af99c9199df6856658fefb67669e386f5c3c5ae2b65",
+  "response_sha256": "848bdb8039fd9b266ad647adc92d834ce606de233db534943c54c8e83a8a40ac",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.95,
+    "rationale": "The OLD passage recommends 'fat-free or low-fat milk, yogurt, and cheese', whereas the NEW passage explicitly directs to 'include full-fat dairy' and restricts 'added sugars'."
+  },
+  "latency_ms": 910,
+  "usage_metadata": {
+    "promptTokenCount": 310,
+    "candidatesTokenCount": 71,
+    "totalTokenCount": 381,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 310
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

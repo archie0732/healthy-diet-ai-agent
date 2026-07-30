@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-028",
+  "system": "recency",
+  "input_sha256": "611964ff3f0057cc4506177e65c386f22d373aa0581d905553340a0370595ad7",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-036-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=king methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2,000-calorie dietary pattern,\r\nsource of protein, healthy fats, vitamins, and adjusting as needed based on your\r\nminerals. individual caloric requirements.\r\nGut Health\r\n+ Your gut contains trillions of bacteria and other microorganisms called the microbiome.\r\nA healthy diet supports a well-balanced microbiome and healthy digestion. Highly\r\nprocessed foods can disrupt this balance, while vegetables, fruits, fermented\r\nfoods (e.g., sauerkraut, kimchi, kefir, miso), and high-fiber foods support a diverse\r\nmicrobiome, which may be beneficial for health.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-002-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=very Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2,000-calorie dietary pattern,\r\nsource of protein, healthy fats, vitamins, and adjusting as needed based on your\r\nminerals. individual caloric requirements.\r\nGut Health\r\n+ Your gut contains trillions of bacteria and other microorganisms called the microbiome.\r\nA healthy diet supports a well-balanced microbiome and healthy digestion. Highly\r\nprocessed foods can disrupt this balance, while vegetables, fruits, fermented\r\nfoods (e.g., sauerkraut, kimchi, kefir, miso), and high-fiber foods support a diverse\r\nmicrobiome, which may be beneficial for health.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-004-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=drates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2,000-calorie dietary pattern,\r\nsource of protein, healthy fats, vitamins, and adjusting as needed based on your\r\nminerals. individual caloric requirements.\r\nGut Health\r\n+ Your gut contains trillions of bacteria and other microorganisms called the microbiome.\r\nA healthy diet supports a well-balanced microbiome and healthy digestion. Highly\r\nprocessed foods can disrupt this balance, while vegetables, fruits, fermented\r\nfoods (e.g., sauerkraut, kimchi, kefir, miso), and high-fiber foods support a diverse\r\nmicrobiome, which may be beneficial for health.\n\nQUESTION\n\nHow does high-fiber intake for microbiome diversity complement whole grain recommendations?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "e83b57c044c4370c1d423105b96492fd9a220fa2bbb12ffdcfdb0a1faec79728",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-036-new",
+    "v4fresh-cand-pair-v4-new-002-new",
+    "v4fresh-cand-pair-v4-new-004-new"
+  ],
+  "answer": "*   Question: \"How does high-fiber intake for microbiome diversity complement whole grain recommendations?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-036-new): Mentions \"high-fiber foods support a diverse microbiome, which may be beneficial for health.\"\n    *   Passage 2 (v4fresh-cand-pair-v4-new-002-new): Mentions \"high-fiber foods support a diverse microbiome, which may be beneficial for health.\"\n    *   Passage 3 (v4fresh-cand-pair-v4-new-004-new): Mentions \"high-fiber foods support a diverse microbiome, which may be beneficial for health.\"\n\n    *   The passages mention that high-fiber foods support a diverse microbiome, which may be beneficial for health [v4fresh-cand-pair-v4-new-036-new, v4fresh-cand-pair-v4-new-002-new, v4fresh-cand-pair-v4-new-004-new].\n    *   The passages *do not* mention \"whole grain recommendations.\"\n\n    *   Since the provided text does not contain information about \"whole grain recommendations,\" I cannot answer how high-fiber intake complements them. I must explicitly qualify or abstain.The provided text does not contain information regarding whole grain recommendations; therefore, it is not possible to determine how high-fiber intake for microbiome diversity complements them. The evidence only states that high-fiber foods, along with fruits, vegetables, and fermented foods (such as miso, kefir, kimchi, and sauerkraut), support a diverse microbiome, which may be beneficial for health [v4fresh-cand-pair-v4-new-036-new, v4fresh-cand-pair-v4-new-002-new, v4fresh-cand-pair-v4-new-004-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "6f6721e8e8f41a673ce34124e879ef1064b13ada1760af02cc08a50aefba25a4",
+    "response_sha256": "a896f93209e8fb77ddd363d084d42b44fbd051c5cf8e249235a11a895c907bce",
+    "latency_ms": 14372,
+    "usage_metadata": {
+      "promptTokenCount": 1189,
+      "candidatesTokenCount": 131,
+      "totalTokenCount": 1670,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1189
+        }
+      ],
+      "thoughtsTokenCount": 350,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: \"How does high-fiber intake for microbiome diversity complement whole grain recommendations?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-036-new): Mentions \"high-fiber foods support a diverse microbiome, which may be beneficial for health.\"\n    *   Passage 2 (v4fresh-cand-pair-v4-new-002-new): Mentions \"high-fiber foods support a diverse microbiome, which may be beneficial for health.\"\n    *   Passage 3 (v4fresh-cand-pair-v4-new-004-new): Mentions \"high-fiber foods support a diverse microbiome, which may be beneficial for health.\"\n\n    *   The passages mention that high-fiber foods support a diverse microbiome, which may be beneficial for health [v4fresh-cand-pair-v4-new-036-new, v4fresh-cand-pair-v4-new-002-new, v4fresh-cand-pair-v4-new-004-new].\n    *   The passages *do not* mention \"whole grain recommendations.\"\n\n    *   Since the provided text does not contain information about \"whole grain recommendations,\" I cannot answer how high-fiber intake complements them. I must explicitly qualify or abstain.",
+                "thought": true
+              },
+              {
+                "text": "The provided text does not contain information regarding whole grain recommendations; therefore, it is not possible to determine how high-fiber intake for microbiome diversity complements them. The evidence only states that high-fiber foods, along with fruits, vegetables, and fermented foods (such as miso, kefir, kimchi, and sauerkraut), support a diverse microbiome, which may be beneficial for health [v4fresh-cand-pair-v4-new-036-new, v4fresh-cand-pair-v4-new-002-new, v4fresh-cand-pair-v4-new-004-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1189,
+        "candidatesTokenCount": 131,
+        "totalTokenCount": 1670,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1189
+          }
+        ],
+        "thoughtsTokenCount": 350,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "W39gap7EFaGU9tMPs7rwoAM"
+    }
+  }
+}

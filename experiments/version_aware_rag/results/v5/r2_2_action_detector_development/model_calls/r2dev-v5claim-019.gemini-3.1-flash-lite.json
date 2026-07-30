@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-019",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "04003aa1ed9395a43951672ab9f294d1804273974c3c2d0b0c839d1d56a9936d",
+  "response_sha256": "bde2c5eebaf48cbe3b72d62fedf417cb55a7a47d2eedd1757f1eb03d00a56858",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 0.9,
+    "rationale": "The current passage subsumes the old guideline by explicitly prioritizing whole grains and adding specific serving recommendations, rendering the older, less specific rule redundant.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 789,
+  "usage_metadata": {
+    "promptTokenCount": 468,
+    "candidatesTokenCount": 73,
+    "totalTokenCount": 541,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 468
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

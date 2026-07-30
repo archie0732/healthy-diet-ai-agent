@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-012",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "1d1ed384983f68f21847f6c6c88994bfaf9be67fc892abc96e8f927e129a1910",
+  "response_sha256": "721482683aacaf3915a07f89cbdeedae280d5a7827698344c2d0ef48ab86d33e",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "Strong and consistent evidence that replacing saturated fats with unsaturated/polyunsaturated fats reduces blood levels of total cholesterol, LDL-cholesterol, and the risk of CVD events.",
+    "confidence": 1,
+    "rationale": "The OLD passage contains significant health evidence regarding the replacement of saturated fats with polyunsaturated fats and its effect on CVD and cholesterol. The CURRENT passage focuses exclusively on processed foods, added sugars, and non-nutritive sweeteners, and does not mention saturated or unsaturated fats at all.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 4298,
+  "usage_metadata": {
+    "promptTokenCount": 1084,
+    "candidatesTokenCount": 122,
+    "totalTokenCount": 1206,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1084
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

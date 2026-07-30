@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-0-8effd6bb|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "9581b3d53bb64231c9ab29062bfc4947bd715c79182b6b700e8d41be25064132",
+  "response_sha256": "9a1914d71ab64a6485a584e1b6b8e149723917d408394503110479ee0f472d7f",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.95,
+    "rationale": "The passages provide directly contradictory quantitative and qualitative guidelines for dietary components. The OLD passage mandates consuming 'Fat-free or low-fat dairy', whereas the NEW passage explicitly directs 'When consuming dairy, include full-fat dairy'. Furthermore, the passages set incompatible requirements for protein intake, where the OLD passage emphasizes limiting fat/calories and the NEW passage sets specific high-protein serving goals ('1.2-1.6 grams of protein per kilogram of body weight per day')."
+  },
+  "latency_ms": 387008,
+  "usage_metadata": {
+    "promptTokenCount": 1008,
+    "candidatesTokenCount": 114,
+    "totalTokenCount": 1122,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1008
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

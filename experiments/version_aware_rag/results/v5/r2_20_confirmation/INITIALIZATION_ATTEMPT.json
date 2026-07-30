@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.20-initialization-attempt-1",
+  "status": "failed_during_javascript_parse",
+  "failure_stage": "before_model_load",
+  "failure_reason": "Unquoted object keys containing decimal points",
+  "embedding_count": 0,
+  "candidate_pool_count": 0,
+  "judgment_read_count": 0,
+  "retrieval_execution_count_after_attempt": 0,
+  "execution_guard_status_after_attempt": "confirmation_frozen_unlocked",
+  "execution_guard_count_after_attempt": 0
+}

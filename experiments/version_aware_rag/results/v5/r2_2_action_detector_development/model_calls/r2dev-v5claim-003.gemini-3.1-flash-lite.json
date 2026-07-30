@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-003",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "a29f23bbb1dc0bea1960bbbfda9f3dea9a59215d5abde786faefa50534478858",
+  "response_sha256": "a1a178052d3e5836a37008434fb55dc53084efe3ec722079970d28db94b56e9b",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "Both passages list substantially the same categories of protein-rich foods; the current passage includes the same items, merely rephrasing the list structure and adding a mention of lentils.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 806,
+  "usage_metadata": {
+    "promptTokenCount": 444,
+    "candidatesTokenCount": 81,
+    "totalTokenCount": 525,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 444
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

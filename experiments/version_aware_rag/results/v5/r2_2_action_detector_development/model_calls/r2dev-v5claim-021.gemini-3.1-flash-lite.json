@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-021",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "2611ff1dd257ac49b955946b6f944dd4d14c251e66f1eb5a1087ef01a32410a8",
+  "response_sha256": "5651f4d79144276b10ddb3f16994ceb2c4238fa9f7041b5998d86af29ee6e192",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The quantitative limit of less than 10% of calories per day for added sugars for individuals aged 2 and older, and the explicit instruction to avoid added sugars entirely for children younger than age 2.",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides guidance on identifying added sugars but does not restate the specific quantitative nutritional limits or the population-based restriction for children under 2 found in the OLD passage.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 971,
+  "usage_metadata": {
+    "promptTokenCount": 582,
+    "candidatesTokenCount": 123,
+    "totalTokenCount": 705,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 582
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

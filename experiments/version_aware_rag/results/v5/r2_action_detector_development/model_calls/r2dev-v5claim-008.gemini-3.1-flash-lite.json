@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-008",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "91e8d279545dd53abd2c258108e697eb55d27288c60c35a34f0c98763dea946e",
+  "response_sha256": "60fcf25072e42c5ae81a4d5bb279ac633d10a1e447cbae9c8d75ecff745d6d22",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The current passage explicitly replaces and expands upon the old guidance by providing specific age-based sodium limits for children, rendering the old general statement redundant."
+  },
+  "latency_ms": 778,
+  "usage_metadata": {
+    "promptTokenCount": 379,
+    "candidatesTokenCount": 63,
+    "totalTokenCount": 442,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 379
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

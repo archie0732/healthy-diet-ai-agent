@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-1-e32ddd46|dga-2025-page-6-pass-0-765dd278",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "14dfa7336e2223952c8b1a38fa007a8cacc366498b948c2feaa1e19a645e4834",
+  "response_sha256": "79ba6294fe3bcd0d262d772379248e8354377ab4e819f9dd8a8cb3471cf25373",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 0.95,
+    "rationale": "The NEW passage adds specific age-based sodium limits for children and an exception for highly active individuals, whereas the OLD passage provided only a single universal limit for all ages."
+  },
+  "latency_ms": 791,
+  "usage_metadata": {
+    "promptTokenCount": 820,
+    "candidatesTokenCount": 67,
+    "totalTokenCount": 887,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 820
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

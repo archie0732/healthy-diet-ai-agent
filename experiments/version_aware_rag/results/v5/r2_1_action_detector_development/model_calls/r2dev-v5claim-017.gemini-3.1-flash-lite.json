@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-017",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "be43f3558855a7945de195c56ceaac8144503494b3b6102350d708cebfb2b766",
+  "response_sha256": "98e487c84b354b665844701263f3dcefca30e3cc067057c430adf2759c85d7d3",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The current passage provides a more comprehensive and updated list of protein sources that fully subsumes the examples provided in the old passage."
+  },
+  "latency_ms": 817,
+  "usage_metadata": {
+    "promptTokenCount": 509,
+    "candidatesTokenCount": 59,
+    "totalTokenCount": 568,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 509
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

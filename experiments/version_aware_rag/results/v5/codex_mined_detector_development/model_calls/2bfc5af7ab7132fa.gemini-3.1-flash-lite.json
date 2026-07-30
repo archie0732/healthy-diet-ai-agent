@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-001",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "f70429163023ea0eb60485093c42cc4fd0bec55fa81617fdac1d7e57c4db1aba",
+  "response_sha256": "4ccd08082628a35b53aa0c459d42b1c5925715b90c49c010ed6236e9de2cd074",
+  "prediction": {
+    "relation_type": "duplicate",
+    "confidence": 1,
+    "rationale": "The change from 'whole grains' to 'whole grain' is a minor grammatical variation that does not alter the semantic meaning or scope of the dietary recommendation."
+  },
+  "latency_ms": 810,
+  "usage_metadata": {
+    "promptTokenCount": 208,
+    "candidatesTokenCount": 51,
+    "totalTokenCount": 259,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 208
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "signoff_id": "v4-devval-project-owner-2026-07-21",
+  "signed_at": "2026-07-21",
+  "reviewer_id": "project_owner_user",
+  "reviewer_type": "human_project_owner",
+  "statement": "我剛剛已經審核過了；我覺得可以。",
+  "interpretation": "The project owner reviewed the Codex report and accepted the current 24-record reviewed ledger without requesting further edits.",
+  "scope": {
+    "record_count": 24,
+    "accepted_codex_revisions": true,
+    "development_records": 16,
+    "validation_records": 8
+  },
+  "source_reviewed_ledger_sha256": "2ad7fba1c446a725b0d375ac8a2b321b7e3f70ffb61fdba499b9f88b1b9b7ffa",
+  "approved_ledger_sha256": "7dbc7db4a4672050e9662c2911059d6535f91a3cd2865ceaaa97ce4c855b7f96",
+  "gates": {
+    "development_evaluation_allowed": true,
+    "validation_labels_eligible": true,
+    "validation_execution_allowed_now": false,
+    "validation_execution_condition": "Select and freeze the model, prompt, policy, and weights using development only; then run validation once.",
+    "promotion_allowed": false,
+    "fresh_test_allowed": false
+  },
+  "provenance_note": "This records project-owner signoff, not independent blinded adjudication or clinical expert review."
+}

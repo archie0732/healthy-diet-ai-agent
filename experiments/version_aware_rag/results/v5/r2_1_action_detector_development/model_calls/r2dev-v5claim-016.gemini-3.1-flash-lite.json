@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-016",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "fdfa76bec2dc55c62f7a7549980b07d054c5ae26644d4afa4cf48283a1b54338",
+  "response_sha256": "e1f4a4a7bc9b3cdfc3c48bf293a40c8278f92ef470facc143938776a3ca47b7b",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a foundational, inclusive principle of the Guidelines' universal applicability across demographics, while the CURRENT passage provides a specific instruction for modifying the Guidelines for chronic disease management; they are complementary rather than duplicative or conflicting."
+  },
+  "latency_ms": 794,
+  "usage_metadata": {
+    "promptTokenCount": 468,
+    "candidatesTokenCount": 71,
+    "totalTokenCount": 539,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 468
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

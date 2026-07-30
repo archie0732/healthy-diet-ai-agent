@@ -1,0 +1,60 @@
+{
+  "schema_version": "v5-r2.19-neural-hybrid-result-1",
+  "status": "diagnostic_complete_repair_selected",
+  "outcome_exposed_r2_16_data": true,
+  "source_expansion_used_in_exposed_diagnostic": false,
+  "r2_16_rerun_performed": false,
+  "top3_reranking_performed": false,
+  "all_embeddings_and_pools_completed_before_judgment_read": true,
+  "judgment_read_count": 1,
+  "summaries": [
+    {
+      "variant": "bm25_seed12_control",
+      "required_micro_recall_at_20": 0.8461538461538461,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.8,
+        "compatible_history": 0.9,
+        "current_only": 0.6666666666666666,
+        "hard_negative_current": 1
+      }
+    },
+    {
+      "variant": "minilm_q8_dense_top20",
+      "required_micro_recall_at_20": 0.9423076923076923,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.95,
+        "compatible_history": 0.9,
+        "current_only": 1,
+        "hard_negative_current": 1
+      }
+    },
+    {
+      "variant": "bm25_minilm_rrf_k60_top20",
+      "required_micro_recall_at_20": 0.9615384615384616,
+      "stratum_recall_at_20": {
+        "conditional_merge": 1,
+        "compatible_history": 0.9,
+        "current_only": 1,
+        "hard_negative_current": 1
+      }
+    },
+    {
+      "variant": "bm25_minilm_rrf_k60_iterative_closure",
+      "required_micro_recall_at_20": 0.9423076923076923,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.9,
+        "compatible_history": 1,
+        "current_only": 0.8333333333333334,
+        "hard_negative_current": 1
+      }
+    }
+  ],
+  "eligible_variants": [
+    "minilm_q8_dense_top20",
+    "bm25_minilm_rrf_k60_top20",
+    "bm25_minilm_rrf_k60_iterative_closure"
+  ],
+  "selected_diagnostic_variant": "bm25_minilm_rrf_k60_top20",
+  "new_lineage_disjoint_confirmation_required": true,
+  "promotion_evidence": false
+}

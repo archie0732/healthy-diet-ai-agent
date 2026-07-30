@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-012",
+  "model_id": "gemma-4-31b-it",
+  "request_sha256": "0acd96bfefb898a98454f7d85a0cf8678f253c4918ebbff1d16ae60335d1518c",
+  "response_sha256": "62566f4b599a2a0c9ae74b0112d6ee8e97d718acdee04b1c71b3ee8871c56560",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides general evidence-based associations between added sugars/sweeteners and health risks, whereas the NEW passage replaces these generalities with specific, actionable quantitative limits (e.g., 'no more than 10 grams of added sugars' per meal) and explicit directives to 'Avoid' or 'Limit' these substances."
+  },
+  "latency_ms": 4472,
+  "usage_metadata": {
+    "promptTokenCount": 891,
+    "candidatesTokenCount": 98,
+    "totalTokenCount": 989,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 891
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

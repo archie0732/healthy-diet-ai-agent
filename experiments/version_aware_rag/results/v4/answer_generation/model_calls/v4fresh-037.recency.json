@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-037",
+  "system": "recency",
+  "input_sha256": "c8c9a2b31ea2956ad140543739f1c97e1c3cfa0b17fcb16fbbc27868ca8714b2",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-018-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=s dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-039-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=ich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-053-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\nQUESTION\n\nIs there a strict quantitative milligram limit on dietary cholesterol in the latest 2025-2030 guidelines?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "1f7b79e10da1dade9d348020024db8a8c0b2a3b1e5e87d98da81c19a61d556ee",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-018-new",
+    "v4fresh-cand-pair-v4-new-039-new",
+    "v4fresh-cand-pair-v4-new-053-new"
+  ],
+  "answer": "*   Question: Is there a strict quantitative milligram limit on dietary cholesterol in the latest 2025-2030 guidelines?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-018-new): Discusses vegetarian/vegan diets, protein sources (dairy, eggs, beans, etc.), nutrient gaps (vitamins D, E, B12, choline, iron, etc.), and limiting processed vegan/vegetarian foods. No mention of cholesterol limits.\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-039-new): Same content as Passage 1. No mention of cholesterol limits.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-053-new): Same content as Passage 1 and 2, with a slight addition about adapting guidelines to health-specific needs. No mention of cholesterol limits.\n\n    *   The provided text does not mention dietary cholesterol or any quantitative milligram limits for it.Based on the provided text, there is no mention of a strict quantitative milligram limit on dietary cholesterol in the 2025-2030 guidelines [v4fresh-cand-pair-v4-new-018-new, v4fresh-cand-pair-v4-new-039-new, v4fresh-cand-pair-v4-new-053-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "7173b0a4cbf29872b8c366c12ba90b73ff6ca196ffcccdf4e4859e2a622eb4d1",
+    "response_sha256": "033f3ad381295214c199a8f80dc6e44503ff7d2989c8b26be44896faddb51e60",
+    "latency_ms": 11650,
+    "usage_metadata": {
+      "promptTokenCount": 1087,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 1475,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1087
+        }
+      ],
+      "thoughtsTokenCount": 297,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: Is there a strict quantitative milligram limit on dietary cholesterol in the latest 2025-2030 guidelines?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-018-new): Discusses vegetarian/vegan diets, protein sources (dairy, eggs, beans, etc.), nutrient gaps (vitamins D, E, B12, choline, iron, etc.), and limiting processed vegan/vegetarian foods. No mention of cholesterol limits.\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-039-new): Same content as Passage 1. No mention of cholesterol limits.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-053-new): Same content as Passage 1 and 2, with a slight addition about adapting guidelines to health-specific needs. No mention of cholesterol limits.\n\n    *   The provided text does not mention dietary cholesterol or any quantitative milligram limits for it.",
+                "thought": true
+              },
+              {
+                "text": "Based on the provided text, there is no mention of a strict quantitative milligram limit on dietary cholesterol in the 2025-2030 guidelines [v4fresh-cand-pair-v4-new-018-new, v4fresh-cand-pair-v4-new-039-new, v4fresh-cand-pair-v4-new-053-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1087,
+        "candidatesTokenCount": 91,
+        "totalTokenCount": 1475,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1087
+          }
+        ],
+        "thoughtsTokenCount": 297,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "mIFgar7yG_Gk1e8PsuLC4QM"
+    }
+  }
+}

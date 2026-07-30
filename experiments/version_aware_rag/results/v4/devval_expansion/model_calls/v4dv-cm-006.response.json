@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-006",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "6987b0433681f9dd53ae0e5afed520fd7877e151dc71708d09b35845db002abc",
+    "response_sha256": "cf2c69d10d04ca7e85425f093317e5598c2e92d93c7c97387debb74d1e685f0a",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 15433,
+    "usage": {
+      "promptTokenCount": 652,
+      "candidatesTokenCount": 273,
+      "totalTokenCount": 2182,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 652
+        }
+      ],
+      "thoughtsTokenCount": 1257,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:23:22.544Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For adults and children aiming to reduce their risk of cardiovascular disease, stroke, coronary heart disease, or to control blood pressure, how should the use of lower-sodium salt substitutes (LSSS) be managed within WHO's overall recommended daily sodium intake limits, and what population-level safety conditions must be considered?\",\n  \"target_population\": [\n    \"adults\",\n    \"children\"\n  ],\n  \"conditions\": [\n    \"high blood pressure\",\n    \"cardiovascular disease\",\n    \"stroke\",\n    \"coronary heart disease\",\n    \"undiagnosed conditions where increased potassium intake is not advisable\"\n  ],\n  \"draft_rationale\": \"Answering this query requires integrating the 2012 WHO recommendations on sodium reduction targets (<2 g/day for adults, adjusted downward for children) and associated health conditions (blood pressure, CVD, stroke, coronary heart disease) with the 2025 WHO guideline on LSSS. Specifically, it requires explaining that LSSS must be used such that the sodium obtained is less than the regular salt replaced to help meet these overall limits, while noting the conditional nature of the LSSS recommendation due to potential harms in settings with undiagnosed conditions where increased potassium is contraindicated.\"\n}",
+              "thoughtSignature": "Et4sCtssARFNMg8WeODuFg5GPBN2nyaGBdkXcmJYiq8/FQIwbIPymoUaL+O7ocsELxDvR4kAqRh6W0EAFVVul+/ZUSFbCtAqaMRl3524aVs1t7hZX2aKhHxCsP7uOuNDKP9KxLG3KdjLz9hvcCJdY0iGltJpLXYwlD+ml4Mg4gznebFHhrS9PCClNswGntfOtWYOQVTYxR4OHEaYByQIoW2tTCeXUTt6a87A4hcSIGDVa0m5XanS77n2ReG0ONsDAawInTGjNqqcRPaFRX00YyjHk8Rs10IxhhNa65DQSgOSYfu/gSo6Lj7TBDj8uUaQz+CIyGnNIEjYSmbgTgm1okvHET5ZXAxgfFJ2jLDOg28lnTLKdjf1ZI30+fBMhpIsAkmZS9dL4+KbTToO/GcEvQTfTXyaGp5Ir0I2MwQ6AEVgOm9iEG0cw+FI8NlRuHpqByZas6CrutAPBChLOUM5Or/i344kdEMGPOelp1AcFDfvAqh2HMnsWd4zq3uyvWFe5jCGuymP7UuuzPSPj3I0WGZa6wMWwZJiJbZ65xc+Z4nmldIx7M1We99fWPC4nKFX9XESdT6KLJ+vTiEuSPpKATFVwdg/6yjtQ/Wu/KYcdlSZK726/8ORdrioVkyvgFGt0NL9Tu6N7BdwssBA9PbDnI71qhSK0wb3DhXtk8abX11vMzlbwiTyS5ZEd6NdFk+UQL1hEiCdoJqSqvve81k66Ooy66hRIKf+0h1YDF8jpfqlHfwHUUtJLJWSUuWn3OwTjTecbMvUah2lVNmLGGQPBVRjOct04X2RPHx2/d7QvLf1PoGk+b2q3nLfovnbxec2WozGDEQ3u7W6dJpQNJd0hsiGnL39EQH6N3HL1Wr/8W40FLAi3GFAHF5u+Z2Xa5eSiDdciYqkDm4ilCJu3wLEzKYmxT4TQYJy6faV+eG36BZXz3dXlqisG9BeTKyAIZyX0zlmvbOPCuwB/sZpWXIbd7bECnkc/rXhKHqIhK3GN8raXu1el4FkYi4rJwAjUSjgWc7hh4b2siVPCZrtIRQkz3RM1KSLFoEQMK0bB3EbSl72oI+57oG9WoQPyb46cY/bPt2rF7uPW08ejot6j5UoKrCrrnjGYX3iMFz2ZrFcYpcN55wTi6AaDVq9jp/8ZiQCBCDi3yMSyIyy+TzomniCMDGZLCi2hEBZv1B8Wo3Zmgliw4OkWc63PFKeUZTQ1h4uMvCXTgPf9w39haPM4IWlXSTHa/XQTLliwFJiCoXEYSZJPFHBiWcAxpsvjAgueOGQWGBMeltW4Pj8nFjuqHQYwlsoErMvi8ySAb3SkKDNrhpRDrhQZSeMiQP4VTUITp//0ozW6WJdWYhFlXowglKdGB0R25FxUQ5t3MGTciXeaGEkH0LxPG4BVoLs1iGNLlayDjl1tt+aghGj6ctOalZoVR8c7kYRq7Gtr76teByRPZJDj9U2BTga2qNJU5+1xnVTvKbl2wrwcjoO/pZ0CL7DgJOesvJ33kzCVgwndWeh8N6ELAo9gHnV91qaUPGip1U5MMum1otlTqwEfTZ+VruN7GvLjD2RE/vALaj68Tc/DBNjtq8CVI1AeOZj2eFKCQVIVV9NCHGZ+FUX1/Dq3Xjn/7PWzaGycoqBNbBm837Z6vub7cTZfSYVsaX6n2oKcrsiDpA7HkjVV7GhGo5jGC2vflP2l+UE2j1wxJnUg20YzlOnYnreFLSlYe5bhCcYE1OaP7VkDr8vqk8VygcRhsFwGMuDNmyvMbMuz0rhRlIY+QcAHIAOD5azpAi11g1CmjBlvHlFwlzFZQE0KvMoXOD6yAMbywttwhjwEh0gNYSMn5KinS224wloZL8eI1D5F+4KRs2AOCBXiJQdtdL6LI2W+YbS+68mjIoQTaxVNCRqXSugzfQSLkLYUtYfQGDZcqKGAhyvMrs+EA+zGNuWN+0qQsPhPkfoWu0Kf17MTnwPP84L6kq37M/Zf6IdPIfnlbwGlAxSy3Urd0CsgflWutwKWSn0du13H+36NVA5MLFkcFsOF0C4JoXHbzgW+9QUt0RK9tbDjuwiNzhaXikBD2WrZdsCRXc/Wg2Yc3ZLG56hWEnuX4AvDreR0M+85pqbzLD79hWnfe0tkUf3skMYQ+PToI3E9k25ZnJehCrgKt09Xo1LTSSRNFpP+sGVwyOyTmZzlS7/e3LitYNfpW+gfvoD4VrgGXXSjf02lXwnSX3cSR4rTyHmVjhs0VU0OsDfAR3w1B5LVkdBYKcu9qarpixVdqMJuHKd7sPR0N42BUVAzgYrve6vTB5i2+2ZNe65qv5PzzDuR/QVRvsj1UO9S1c7W197xTsP7yetSAdlJz6sRO7Myy1AL+twn/vePJTtYQtqQLjnp/ZLDeHqr56nFeqvsPXN4qG1uPj0jDxl9vQyEoRj4J8E7TVFyJ15eNtqzx2k9Ejj2q1+/grrD5FrcwnMe7shc93SMoOgucFyGUKJPMNZuwlg9RfbWJgXJLqH8nOp8TPApzp4+npsoRwmk54AKXH1obI27loRGxBfgusj4geMy7MLwu4Y73klBK0t8vUlF9Cm1slmoojKN21Q1SkzUoAFIZnpmSHoME20XneL9RKRKTl+ZTkORm51yVf8nwRCOCcg+41m1HFdRAnhOOslXcOE26PaLtO2wh8CV9izNEjc+Ok3fjwXuydCZ+4IU/rCD4ypNMtOU3MH3raGmJZyq01twwswvr+lvjqVc1tXT5bzFexbA4ssHCn9kY1ifftfhWLAcOJuGaCf5YTH+koBoHm3IBKkoq+9F9j4m2IDhRytd6fRBfZof6dX2/IOLuTx5qEfSiYQ2Wz0wnFxT/k02Ejk1Y4X7bcpz/Rof8zKvr7ApwpKIDuE1Uh+iql3C3jRaZDMUW9kVh9RmsCDcqbqpxqQpiGJmsBfIoftG1PPvTWrDsBmKmZX6FpTCRus7qHT4P7ra/UcaKyshyjaBaVzx+f8LADUUCKDYFGVmH9LMG5bc8f67QYbGnNQVMt7vVLfkFHjWWTQa1+3UWgmR9KVhDDiL709y7cGifzm/0szqIZpBQ7wK30EjeN8oQDycWZ1ThD5zoDligBz0jf+CM2beWA+ap1TNO4dblABNGLWwvtnSTyn06gVN+OWyJNsvKNOIxLuh7ARs/bINB7WtWWaS6cyAnd7L9uNriJrxQfKgwbCb4rH7HzlAk5jFpwISYvTXLksjTWbDAxn2T3xd9CTko8IbVODGuJXN74/m/qnyOQybs/YI5H2mIcrPK2mHVmgi+kUQLUD12IWJdY4CgppyjIhr+qUlfMZH99UGYaQE1H98oaSFx0drd1xyHOWDr1pLto1QWbjICQVp8WTnhiujthFZWYSEFthCMyGjKw7nqfCSeOx6ZHrvI1ph36q+BrKPFtP6tTwv7IE8xCkaH5HMF+swYUDDsw3OL0uJFLaGotE3CXtq64BExVUjhTfnicRygbSzphbx//G9QPJIKF4peiicNuqhg1Jao7cU3suzMDeLC98e64yYiZk8kYljO/+ayLzXSd5hzuWAbMuH6j6oz8R5bODGGZ7wEzO0nW7IQboHnX0guengaRQBldQxLOr4lLRx7x+30VBj3y8NNHRD5DPsm4iA7w1XzlykX68S7owJR8SsZsTjYlvOArLrCwJcvWDKuYPzh4bZ6/6HKCAJMvPRs5HtKZFI/ZImX/8Xg48MczZBeo43/AC+pWRd9i1aYNuBvkNKFHRdopYsFYdA3b2cMONERAqnFg+049C+havqU2Q9+pXhezaL8GheWbFwAXcc1uhyaFi5lFpDX3TnkR0kGcjmypoza3faFZaL5MvGWywgQcPGwTmGpwW410stD7goMSMJRF6VJbr/9bvBWtCa9kkqVssqV5T4RI7UOgGChxEaWj7hp2uL67PN2MRK2PpCRijap8ilDoqXSnp31Kco2Ihxknohpe4pVg0JYS6a8YCTISPxZt6ZLZ8TBmpz04Y3dWvLliqbtNBqEgBCy044aU1ccEqk6EDiVkT/8r2KqkV3Y/js1Wva8DlZU+v7U0BbYKwAbTYF1tfUGSnzVSQw/WPlmUaGMoXvVvFbvdkIHmqTqCmcKV3Anj1hRDAIaUyrE/mtj/LiE3bTLbAWadOF68Z+t0m7EdZkCvJK0rYeyKu353WJThhU4EGW2kOAN6jt37oJ8y3Kek0yxEAZYmzMlJaLSmPH6zrxfHh0AnrPAt83J8JFDPE9g1QSIRND8YLl7yCRLi95ViVRKsq0OL87o+FhynJDOONSxi88zZqLj038A6x+/nCKp+RUvsIztAWZSWACiYp1iBMi5X7nFNFJd2Y8UxQZEl5UDCbdGpK5XLrvZA65rkOpXFLVaDwC5VJWtU6drCtKqT6JOutsa/LRhhoEufOfEI7YvwVIbre20IMN3dIkgKmSvuk09IGFlMLWJMzCg8EGw23YrWfliVCMolkTZM2tIqloOxymrsoLRQHWM+/KVnMPbBBbJiuBGIA7dE3+tcuyD5s3+RUK+ix88h97bSgjGuJQOXjcJEoNaguhWy09hR7B3VV2dO++wT0pGffCdht1/Cdtb5E+00FbIiG6XREMSg/WFnbPTBES8AZSw77tfJh3e8L1iDcsRqEniA6/LOWUC+KOCGh8zZ3J8Swo6lJL3wS0xZ6qyV9sGXA0ZMOofgJvZhiaSeO9VxH6C2IpRP1CnH7978f98BAZqYBRjhxEpqn9jklHJJZcT0GGfLnyjMUK6r19ZAqSO3n1DbiSOOEwD0Y0Snoq/LkDr7fPX5UuPAXsmR4kPgRf8H9Ue2QwpUckqyFi+zgPaTRbllGXR5D1+ucrL0IbDuwQYr17LDFn2aQ3CB10G8+3E4ZJPR9qBXyIQ3NXIgkdXEzXaCKGS3z/e/kiIdLXpFAIMMZwNOUh5zMnwr15vtZCS/vSRbfXp1DWIGZfsgMNPujVNoTgCebJHNwKrWXpBjQiBI2IJCLL353iuymj8mlp7x4G83gcZ4kAWOoN/Zkunv029PxoyibuoHTTb5Cg5034+lyEoE3vRPoUDgoXUIoh36h6jrnfSGVA7Nnp0gUU+DayVXXhGi0FaM9yC3c6DTKMO1Tc4rL8FR9kgVNPuqM5UpbRwZUXHfZBuDbNtoMDCVMOEOfh7TqHAzkUPU9AevYD5afO7GK43/BBGhhtoBuLdVzsCFFFHtCJ+jx4RxMLlo3gNSm8XZHrKFz9B68LKNxi7l0mirtktSbbxUs5LM/XEXfQjV7jM9FGgkSsv/2I9HXwmylLDjJTgUFepIqyo8cBQPS8lbq0aeNCcmcekPbPbfud1ftj2EO4/BxX7FB76hrcpghf8usOAK0hMjLGtnfHFOuVrIejtQ0aX+y1JfMNnT9djNHIDk1pbBBhYFnsIy6l54YR59HDhqfvWWcgEqbt6fLcxxL/HjOvQHZAhefjdzkYbdbIuTIirMycsbWqo8yEZ1IvXfv90Bk5YHL/EUzGhRTuVL1CX5O60MwmTl1Z8AW1tgKKKcXrcxU6fuP5I6TM7a8PiJXCniCh5fW5nd6v+jTmHVCEc9o4S7fIkwRhOnc5kZ10mC9xu9yE/KNKfRh+gcKzipp4+bMAinVE0oz/b2RtcDHwDqoLsZtl155c1Eqc9+1gLyG8uZEUrhZjh9eY9O48YO0XYCNYpbGlKGhVWni7xhgBJru/OM3hzCSjy5Suear9T1N3F1x9XWBWYODhftmvP0rjDK+cbRJ/DAmSZ+PcNAQo0Z2wJ60j3tN3oUfB46LBTNRahG6J/RPBIM1hCkRb8SsqRHAqK8UCjSPY0T2Hp2OzPVhHPR7kO9zzG5V9F+8W8NYWXPNboonnqo3457k7Cxq3zMreyGuF32z8s0CyGs2w6x1U8YqLR4rrLevruHmqNXNTHAJhkAZ/PJe1IpGcXhbf3G32wKXv0WE+amD+1SpqJKRNS+Ti469QM3PJAW1uerssp7XLZx7Jg5w1antE8sTduLw+ED+OqPg/pq12pgW2k+qBBAgpvmI93IXrKY3tkGnWgbX/3g6N6rMDBaKUg5mdCAtPC5dKhqhISX2YbM8cVm97ZPnwlGeKeVSSpcdgl5OFL2k14+h7u93AzWbzqW8cgZPT9SKngLFRvaaq/IONkQnkxoeRsve1g/vuLCItBXdByP3u8gGcNax98U2MsL2OOKPmKE8+uzImrCJqVqKnCUraS+9XnliWhXtK+2qZ4tbXlMoKoEoX5Bo4A4iB1o7XmkauQVXwN47hCNyuyTv+a7C7cax0oAmVSRnNJEwtysqBYMIU56TmEqPPvDIWgCqTs8oQ8Ufh59KR1HQwkWdEuCfCKTrIrpbFOYv1NBTqcnLmKlwYGZDQO6axAPI5iEhTkUOvYxO6/Ko0hBXPtVAyuPqfaMzfq7wVzLsPYU2rGD4ODIftv3yCcJvIellLT4r39EFafy/Ug51XuPmzhyxULMjoVO6ibDeH3Ng+PX/2HZRDLw9rN+NcpkFkTRyrcue+EqELHMqeb20srQTnT9pwcjOTa5mg9awhqGcuIH9QW3zlOFKonpHySgpQ0+oIBLCvapaDnfoJP67CwKsX/ksamdeSuJ4guDwcv6VzStBuhGjPKtbHsNxoxEaZsag80DlWz2SHwSWMUQtYtvrLqE55aoG7m/KD/V+KOTjEZivACeLdZ61o3vAzQ6NbJjIwMTDA5+juNGjYFP9hxg4VOvuXKDI+46TZ7eb4JaxFjoT7wh57OdsFcYMGSOPlCvJ3olI/VR2X/rWiiq1OwdBE+OMp/5wGDdSTVRbFZxNgYI1bVeMX86BxXo+eMZKDxzHL5n6yYE2xmnsMmn9gsEpwWpkdHT/Y1ehIqh4oXK5UvGviIytojwwxCsK/6LvRkRq5XUnANfH75igiXc+IHopuyYTE+JUZUHSpNysxM3TEQWtS6WXygjjmcaRCqnHjsS/MvjtY5b3dgKY/LB9K28PGYkbeRNDsAxxSLaQaZxynb/8IxdyPHcmyzpjge+GSBerw366uYCS3csA/HWqAfHX8CpHZzlL0ZdKYIhxAaanoRDjhKBAmKrVF9e3vH5NbfuJn99nXHFKOZOIYyo1c3sNBm9g8zY+2YyAGBWI9V8TC783MvI5bw7v741CO7JGQNizObZxJZ6wEWz/2D49p1mxohmoFTeFldH49SmeyMGT2elM4qQyh9HbAwFpAk0xEzy1nG3jhoX/VfLns+vHNRDcJuoLNmbJI6AmN1I+0wihVOYGHfGIOV/ScnwSTq0ylqhbN/bd0czH2bkqkBcxr4aWXCWQZvY2fIKJkkKji534zqfI97VVab1X2qewfmke5If/k+ezJsEiYmFHMb2btfT9ygVMOX9L9DmfZTFeajLsoBNnF06o6KJu0f3rUBBtuM/qv6O6EKXv1dYBm5SvOp5shQwGn49luzBuP+sdFSWzm9jAHH732g9LgGLcMObwDF21JElNpIl912oTLriaz0rvJQ22lG89xY5l4ZtIJLe+x1ckGB15t+/He61bdLmbZOqKcnrhAkWc2R7aOetM/ue8G207QzKp9hH+0wAZZipl6lFMmv3vTVufeXLc/KI/RSZVMhaA06T20bEIXx/AGeSjhxmAPHJmr3RBG8DR7HRCcq1BCRuMFehHXUW1P8yB3kzfgLXzeMEgU6jPI5Q="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 652,
+      "candidatesTokenCount": 273,
+      "totalTokenCount": 2182,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 652
+        }
+      ],
+      "thoughtsTokenCount": 1257,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "LPReao2yMa6dvr0P07atwA8"
+  }
+}

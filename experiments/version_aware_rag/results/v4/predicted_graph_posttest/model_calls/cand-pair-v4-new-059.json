@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-059",
+  "input_sha256": "961ed46a28c9659904b134a9099cd4f310555bf5a6a34dab8d6912d2f6502acb",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nGuideline 4: Limit foods and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugars-Less than 10% of calories per day\r\nstarting at age 2. Avoid foods and beverages with\r\nadded sugars for those younger than age 2.\r\n* Saturated fat-Less than 10% of calories per day\r\nstarting at age 2.\r\n* The National Academies recommends that trans fat and dietary cholesterol consumption to be as low as possible without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnan\n\nNEW PASSAGE\nCarbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring suga\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "1cdbf7b5379f61301dc1eb8a4101fbbee0c5e364cdfe1605cdfb4c2d7b8164a5",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The old passage provides a general daily calorie percentage limit for added sugars (less than 10%), whereas the new passage introduces much more specific, restrictive per-meal limits (no more than 10 grams) and specific snack limits based on FDA claims, effectively replacing the general percentage guideline with more stringent, actionable constraints."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "32036fd58406cd48a131bda80cd33484148954e63b134b0454ac0f37d914c1fe",
+    "response_sha256": "aa3b54da1e3f4b8db571d7a305ec06988401f703b8e9dc1aca0bd3a8b594b6b7",
+    "latency_ms": 3495,
+    "usage_metadata": {
+      "promptTokenCount": 802,
+      "candidatesTokenCount": 96,
+      "totalTokenCount": 898,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 802
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"superseded\",\n  \"confidence\": 0.9,\n  \"rationale\": \"The old passage provides a general daily calorie percentage limit for added sugars (less than 10%), whereas the new passage introduces much more specific, restrictive per-meal limits (no more than 10 grams) and specific snack limits based on FDA claims, effectively replacing the general percentage guideline with more stringent, actionable constraints.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 802,
+        "candidatesTokenCount": 96,
+        "totalTokenCount": 898,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 802
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "c3hgasqfFtOA1e8P3oq0sAM"
+    }
+  }
+}

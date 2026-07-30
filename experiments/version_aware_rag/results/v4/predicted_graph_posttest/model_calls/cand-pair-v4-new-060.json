@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-060",
+  "input_sha256": "9d0c5e01159a0b9035f67765c7813aef230de37c93315cf3090bcc5c27628bf8",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nAppendix 5. USDA Food Patterns:\r\nHealthy Vegetarian Eating Pattern\r\nThe Healthy Vegetarian Pattern other processed soy products), legumes, Healthy Vegetarian Pattern includes\r\nis adapted from the Healthy U. S. ­ nuts and seeds, and whole grains changes in food group composition and\r\nStyle Pattern, modifying amounts were increased, and meat, poultry, and amounts, based on assessing the food\r\nrecommended from some food groups seafood were eliminated. Dairy and choices of vegetarians. The Pattern is\r\nto more closely reflect eating patterns eggs were included because they were similar in meeting nutrient standards\r\nreported by self-identified vegetarians consumed by the majority of these to the Healthy U. S. -Style Pattern,\r\nin the National Health and Nutrition vegetarians. This Pattern can be vegan but somewhat higher in calcium and\r\nExamination Survey (NHANES). This if all dairy choices are comprised of fiber and lower in vitamin D due to\r\nanalysis allowed development of a fortified soy beverages (soymi\n\nNEW PASSAGE\nhydrate diet. Work with\r\nand type 2 diabetes. If you have a chronic disease, your health care professional to identify and adopt\r\ntalk with your health care professional to see if you a diet that is appropriate for you and your health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "f2cff7dd1f6747e62dff36eb552bbb24a540e79020255846fdea34a7a8408f2b",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage describes the composition of the Healthy Vegetarian Eating Pattern based on NHANES data. The new passage provides specific dietary advice and nutrient monitoring recommendations for vegetarians and vegans, adding practical guidance rather than replacing the old definition."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "a38c3692e1c49e7eb2209eaa39e65051d0293b6523e8fb98b71481685c7ae44a",
+    "response_sha256": "7a471c3dbbf096c6f0b181f72117927e6346effcb465858c8662d182b3578ead",
+    "latency_ms": 2707,
+    "usage_metadata": {
+      "promptTokenCount": 623,
+      "candidatesTokenCount": 67,
+      "totalTokenCount": 690,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 623
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.9, \"rationale\": \"The old passage describes the composition of the Healthy Vegetarian Eating Pattern based on NHANES data. The new passage provides specific dietary advice and nutrient monitoring recommendations for vegetarians and vegans, adding practical guidance rather than replacing the old definition.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 623,
+        "candidatesTokenCount": 67,
+        "totalTokenCount": 690,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 623
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "dnhgarKQNIee1e8PiYmCkAM"
+    }
+  }
+}

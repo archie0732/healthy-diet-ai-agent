@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-006",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "99cef1fa7c156fe8251ef86490012ca1a688abd8897283835219a80f20e26ec2",
+  "response_sha256": "19a8000d01f32f2dde7e8bb303493ed5442d040e8774ce6eb4934df7e1fe9604",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides the same dietary restriction as the OLD passage but adds a specific starting age, making the OLD passage redundant."
+  },
+  "latency_ms": 2379,
+  "usage_metadata": {
+    "promptTokenCount": 244,
+    "candidatesTokenCount": 57,
+    "totalTokenCount": 301,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 244
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

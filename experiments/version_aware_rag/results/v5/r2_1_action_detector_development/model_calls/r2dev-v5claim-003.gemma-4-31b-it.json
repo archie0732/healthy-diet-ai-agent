@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-003",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "f57fd321dbb675189546879cc2a0a1995be151d86f87a0c190b005299a8a41cf",
+  "response_sha256": "904306696e9052d8b1a4e5a24e747a8f29e6c97cdf05ae07b8dad22333d7d89b",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage materially duplicates the same list of protein food sources as the OLD passage, with only minor phrasing differences and the addition of lentils."
+  },
+  "latency_ms": 2441,
+  "usage_metadata": {
+    "promptTokenCount": 387,
+    "candidatesTokenCount": 52,
+    "totalTokenCount": 439,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 387
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

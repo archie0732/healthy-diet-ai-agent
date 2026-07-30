@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-006",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "ffad26f3273c6c542d9564a314450dd09f609c650ec0f09af01bcb375de34d5d",
+  "response_sha256": "0f64992c4166e3a9f98143136ffbbf78dfc84b4371f649b37db5634a3eeb5ed9",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides the identical quantitative recommendation while adding an age-based scope (starting at age 2), rendering the OLD passage redundant and less specific."
+  },
+  "latency_ms": 962,
+  "usage_metadata": {
+    "promptTokenCount": 244,
+    "candidatesTokenCount": 63,
+    "totalTokenCount": 307,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 244
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-011",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "de86fc757c95252e4c65a575876ffb5c0d0282caef4ba61fe839a1513071d9f5",
+  "response_sha256": "4c632bb8653331f5276635fda1d4f6f40e06ca9f84724a4b9bc39f13cc464658",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "OLD provides specific alternatives (lactose-free, fortified soy) and types (fat-free, low-fat) that are not mentioned in CURRENT, which focuses on full-fat dairy and serving goals."
+  },
+  "latency_ms": 5157,
+  "usage_metadata": {
+    "promptTokenCount": 446,
+    "candidatesTokenCount": 68,
+    "totalTokenCount": 514,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 446
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

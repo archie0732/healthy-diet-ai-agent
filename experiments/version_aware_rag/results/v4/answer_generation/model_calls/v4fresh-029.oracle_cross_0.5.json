@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-029",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "1b4dbb0ab038a9662b5e476b9eaba850d5970a4abe2380286de7dd13766ea81a",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-078-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-078-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=The\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-048-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium.\n\nQUESTION\n\nHow does nutrient density for older adults complement overall calorie limit principles?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "bbe7bf206b86ac0275ecf577468984c4b83857a36d8e69d3d5ccb2fd89b77816",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-078-new",
+    "v4fresh-cand-pair-v4-new-078-old",
+    "v4fresh-cand-pair-v4-new-048-new"
+  ],
+  "answer": "*   Question: \"How does nutrient density for older adults complement overall calorie limit principles?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-078-new): Mentions \"Older Adults\" - \"Some older adults need fewer calories but still require equal or greater amounts of key nutrients such as protein, vitamin B, vitamin D, and calcium.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-078-old): Mentions \"Focus on meeting food group needs with nutrient-dense foods and beverages, and stay within calorie limits.\" (General guidance for every life stage).\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-048-new): Duplicate of Passage 1.\n\n    *   For some older adults, there is a need for fewer calories while still requiring equal or greater amounts of key nutrients, specifically calcium, vitamin D, vitamin B, and protein [v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-048-new].\n    *   General guidelines suggest staying within calorie limits while meeting food group needs using nutrient-dense foods and beverages [v4fresh-cand-pair-v4-new-078-old].\n\n    *   Combine these points to answer how nutrient density complements calorie limits for older adults.\n    *   Some older adults need fewer calories but still require equal or greater amounts of key nutrients, including vitamin D, vitamin B, calcium, and protein [v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-048-new]. This aligns with the general principle of staying within calorie limits while meeting food group needs through the use of nutrient-dense foods and beverages [v4fresh-cand-pair-v4-new-078-old].For some older adults, nutrient density complements calorie limits because they may need fewer calories while still requiring equal or greater amounts of key nutrients, such as calcium, vitamin D, vitamin B, and protein [v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-048-new]. This aligns with general guidelines to stay within calorie limits while meeting food group needs with nutrient-dense foods and beverages [v4fresh-cand-pair-v4-new-078-old].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "a8f4a57f8d0422c66a5b3d97e5902abd6f50cd448e3e4605448aeb7c3f4f325c",
+    "response_sha256": "e0f1f5b2aba12cc998ee11d7c1259c7f329fb2d19f74063df29eb9af7ab9dc77",
+    "latency_ms": 18406,
+    "usage_metadata": {
+      "promptTokenCount": 1077,
+      "candidatesTokenCount": 120,
+      "totalTokenCount": 1705,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1077
+        }
+      ],
+      "thoughtsTokenCount": 508,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: \"How does nutrient density for older adults complement overall calorie limit principles?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-078-new): Mentions \"Older Adults\" - \"Some older adults need fewer calories but still require equal or greater amounts of key nutrients such as protein, vitamin B, vitamin D, and calcium.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-078-old): Mentions \"Focus on meeting food group needs with nutrient-dense foods and beverages, and stay within calorie limits.\" (General guidance for every life stage).\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-048-new): Duplicate of Passage 1.\n\n    *   For some older adults, there is a need for fewer calories while still requiring equal or greater amounts of key nutrients, specifically calcium, vitamin D, vitamin B, and protein [v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-048-new].\n    *   General guidelines suggest staying within calorie limits while meeting food group needs using nutrient-dense foods and beverages [v4fresh-cand-pair-v4-new-078-old].\n\n    *   Combine these points to answer how nutrient density complements calorie limits for older adults.\n    *   Some older adults need fewer calories but still require equal or greater amounts of key nutrients, including vitamin D, vitamin B, calcium, and protein [v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-048-new]. This aligns with the general principle of staying within calorie limits while meeting food group needs through the use of nutrient-dense foods and beverages [v4fresh-cand-pair-v4-new-078-old].",
+                "thought": true
+              },
+              {
+                "text": "For some older adults, nutrient density complements calorie limits because they may need fewer calories while still requiring equal or greater amounts of key nutrients, such as calcium, vitamin D, vitamin B, and protein [v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-048-new]. This aligns with general guidelines to stay within calorie limits while meeting food group needs with nutrient-dense foods and beverages [v4fresh-cand-pair-v4-new-078-old]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1077,
+        "candidatesTokenCount": 120,
+        "totalTokenCount": 1705,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1077
+          }
+        ],
+        "thoughtsTokenCount": 508,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "kn9gaqrSFO201e8P_ZnGwQQ"
+    }
+  }
+}

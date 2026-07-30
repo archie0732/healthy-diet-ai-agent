@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-007",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "33085587888ccd45c1ce396eda6accec836494aa9cfc266059a291d03fd7463e",
+  "response_sha256": "b3612b8a500a8ccd3c1635f4563ba664b1462cf14b9039677c3b5a4b29a3ea2a",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The new guideline updates and replaces the previous 10% daily limit with specific, more granular constraints, stating 'one meal should contain no more than 10 grams of added sugars' and defining specific snack food thresholds."
+  },
+  "latency_ms": 938,
+  "usage_metadata": {
+    "promptTokenCount": 476,
+    "candidatesTokenCount": 77,
+    "totalTokenCount": 553,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 476
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

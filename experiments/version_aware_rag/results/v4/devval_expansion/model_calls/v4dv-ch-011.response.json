@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-011",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "34f5a95e9b560177016454c4e3667440ca4f005a63bb1fba753dfe046e651b1e",
+    "response_sha256": "3aeca291ac00edf03000a82ae64d0bea11acbb29e38abe075c900dbd35a0ccef",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 5354,
+    "usage": {
+      "promptTokenCount": 853,
+      "candidatesTokenCount": 254,
+      "totalTokenCount": 2039,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 853
+        }
+      ],
+      "thoughtsTokenCount": 932,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:29:16.163Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For adults aged 20 years or older who are limiting their total fat intake to 30% of total energy intake or less, what specific limits on free sugars should be maintained to prevent undesirable dietary replacement, and what health outcomes are these sugar limits intended to address?\",\n  \"target_population\": [\n    \"adults aged 20 years or older\"\n  ],\n  \"conditions\": [\n    \"limiting total fat intake to 30% of total energy intake or less\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must synthesize information from both passages. The 2023 total fat guideline establishes that adults aged 20 or older should limit total fat to 30% or less of total energy intake, but notes this is conditional because individuals might replace fat with undesirable free sugars. To address this risk, the 2015 free sugars guideline must be consulted to provide the specific limits (less than 10% of total energy intake, and further reduction to less than 5%) and the associated health outcomes (preventing dental caries and changes in body weight due to excess energy intake).\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 853,
+      "candidatesTokenCount": 254,
+      "totalTokenCount": 2039,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 853
+        }
+      ],
+      "thoughtsTokenCount": 932,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "yR9favShDrKC1e8P_LXf6Q4"
+  }
+}

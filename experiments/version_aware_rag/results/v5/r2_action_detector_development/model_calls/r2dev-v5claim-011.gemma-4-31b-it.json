@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-011",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "370e2595bfe20a54152eafcf1173ca86500c83f5983cbbb9a342c0fbc5b9a7d1",
+  "response_sha256": "bb700f0ff9850bfa83f2a5618161988ca5f658c2540865036fe0caa2dacc5757",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a new directive to include full-fat dairy, which contradicts the OLD passage's mention of fat-free or low-fat options, and provides specific serving goals."
+  },
+  "latency_ms": 2464,
+  "usage_metadata": {
+    "promptTokenCount": 330,
+    "candidatesTokenCount": 62,
+    "totalTokenCount": 392,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 330
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

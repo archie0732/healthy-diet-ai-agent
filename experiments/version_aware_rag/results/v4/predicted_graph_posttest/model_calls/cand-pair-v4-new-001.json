@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-001",
+  "input_sha256": "0503279b910a4e9ed6cb2056d6d31dd3a03b2ed75c7f79042c8738c6942b5930",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nommendations for healthy eating patterns should be applied in their entirety, given the interconnected relationship that each dietary\r\ncomponent can have with others. Key\r\nRecommendations:\r\nConsume a healthy eating pattern that accounts for all foods and beverages within\r\nan appropriate calorie level. A healthy eating pattern includes:[1]\r\n* A variety of vegetables from all of the subgroups-dark green, red and orange, legumes (beans and peas), starchy,\r\nand other\r\n* Fruits, especially whole fruits\r\n* Grains, at least half of which are whole grains\r\n* Fat-free or low-fat dairy, including milk, yogurt, cheese, and/or fortified soy beverages\r\n* A variety of protein foods, including seafood, lean meats and poultry, eggs, legumes (beans and peas), and nuts,\r\nseeds, and soy products\r\n* Oils\r\nA healthy eating pattern limits:\r\n* Saturated fats and trans fats, added sugars, and sodium\r\nKey Recommendations that are quantitative are provided for several components of the diet that should\r\nbe limited. These components are of particular public health concern in the United States, and the specified\r\nlimits can help individuals achieve healthy eating patterns within calorie limits:\r\n* Consume less than 10 percent of calories per day from added sugars[2]\r\n* Consume less than 10 percent of calories per day from saturated fats[3]\r\n* Consume less than 2,300 milligrams (mg) per day of sodium[4]\r\n* If alcohol is consumed, it should be consumed in moderation-up to one drink per day for women and\r\nup to two drinks per day for men-and only by adults of legal drinking age.\n\nNEW PASSAGE\nhealth.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2,000-calorie dietary pattern,\r\nsource of protein, healthy fats, vitamins, and adjusting as needed based on your\r\nminerals. individual caloric requirements.\r\nGut Health\r\n+ Your gut contains trillions of bacteria and other microorganisms called the microbiome.\r\nA healthy diet supports a well-balanced microbiome and healthy digestion. Highly\r\nprocessed foods can disrupt this balance, while vegetables, fruits, fermented\r\nfoods (e.g., sauerkraut, kimchi, kefir, miso), and high-fiber foods\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "fa5414e3f71f5a4330adfad245c74ae18fa3d4f50673ebdcec0128e5b25039e1",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.95,
+    "rationale": "The old passage recommends fat-free or low-fat dairy, whereas the new passage explicitly recommends including full-fat dairy with no added sugars."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "d293cb5cdcec94b88bb076fb464dffba0266c5944692c98b5658f9755d19daf1",
+    "response_sha256": "d4c8533e5689496cde863c4180addb56a210e129f7bddbda6855e938fbb5c7c7",
+    "latency_ms": 2794,
+    "usage_metadata": {
+      "promptTokenCount": 855,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 916,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 855
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"conflicting\",\n  \"confidence\": 0.95,\n  \"rationale\": \"The old passage recommends fat-free or low-fat dairy, whereas the new passage explicitly recommends including full-fat dairy with no added sugars.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 855,
+        "candidatesTokenCount": 61,
+        "totalTokenCount": 916,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 855
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "PnhgaomHIO_r1e8PvLWpmQM"
+    }
+  }
+}

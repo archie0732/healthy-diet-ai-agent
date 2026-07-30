@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-003",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "6f2f829f9314518b4f36822fa1f462989521957b31c825e20eb4e81becd05b8f",
+  "response_sha256": "16eea05cec80e3dae813ce30622f59291a21242df77df0fa2393d8cefff12e44",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The current passage lists the same protein food groups (seafood, lean meats, poultry, eggs, legumes/beans/peas, nuts, seeds, and soy products) as the old passage, with only minor phrasing differences and the addition of lentils.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 3142,
+  "usage_metadata": {
+    "promptTokenCount": 444,
+    "candidatesTokenCount": 83,
+    "totalTokenCount": 527,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 444
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

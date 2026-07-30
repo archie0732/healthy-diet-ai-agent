@@ -1,0 +1,32 @@
+{
+  "status": "codex_safety_review_complete_provisional",
+  "reviewer_type": "ai_primary_reviewer_not_independent_human",
+  "counts": {
+    "citation_safe": 65,
+    "neither": 13,
+    "stale": 0,
+    "forbidden": 0
+  },
+  "source_ledger_sha256": "b90d605947b36832172f8a01d82ecaabbc42838f63317e29c0bccee66efde6f9",
+  "reviewed_ledger_sha256": "0c3b813e65846bb346e6a73f66fe4883824fe12b30377e38e5dd3cad3cab6a1a",
+  "provisional_safety_metrics": {
+    "recency": {
+      "query_count": 16,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    },
+    "oracle_cross_0.5": {
+      "query_count": 16,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    }
+  },
+  "provisional_gate": {
+    "stale_forbidden_nonincrease": true,
+    "validation_execution_allowed": false,
+    "reason": "Project-owner signoff is still required for the provisional safety labels."
+  },
+  "failures": []
+}

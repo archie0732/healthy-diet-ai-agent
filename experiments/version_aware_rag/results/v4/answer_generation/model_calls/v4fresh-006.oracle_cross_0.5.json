@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-006",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "1472d9f1cd17d70c0614f81dd5001c8b3ff2f117ee59d77b5562fd1b482a807b",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-066-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and fruits. consumed in limited portions or diluted\r\nwith water.\r\n+ Eat whole vegetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-066-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=Guideline 3: Focus on meeting food group needs\r\nwith nutrient-dense foods and beverages,\r\nand stay within calorie limits.\r\nThe core elements that make up a healthy dietary pattern\r\nNutrient-dense foods provide vitamins,\r\ninclude:\r\nminerals, and other health-promoting\r\n* Vegetables of all types-dark green; red and orange;\r\ncomponents and have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, a\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-006-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and fruits. consumed in limited portions or diluted\r\nwith water.\r\n+ Eat whole vegetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\n\nQUESTION\n\nHow does the 2025-2030 guideline recommend consuming 100% fruit or vegetable juice?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "bd72e3db7be1c1ef981f6f21192b7bf52c395eb12019a810977769732b539f38",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-066-new",
+    "v4fresh-cand-pair-v4-new-066-old",
+    "v4fresh-cand-pair-v4-new-006-new"
+  ],
+  "answer": "*   Question: How does the 2025-2030 guideline recommend consuming 100% fruit or vegetable juice?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030): Mentions \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\" [chunk_id=v4fresh-cand-pair-v4-new-066-new]\n    *   Passage 2 (dga-2020, edition 2020-2025): Does not mention 100% fruit or vegetable juice specifically in the provided text.\n    *   Passage 3 (dga-2025, edition 2025-2030): Mentions \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\" [chunk_id=v4fresh-cand-pair-v4-new-006-new]\n\n    *   The 2025-2030 guideline recommends that 100% fruit or vegetable juice be consumed in limited portions or diluted with water [v4fresh-cand-pair-v4-new-066-new], [v4fresh-cand-pair-v4-new-006-new].The 2025-2030 guideline recommends that 100% fruit or vegetable juice be diluted with water or consumed in limited portions [v4fresh-cand-pair-v4-new-066-new], [v4fresh-cand-pair-v4-new-006-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "6009babf5aded7c185a7540f165024da8fab7f5c4b0d2365a8fe6501d0474bcd",
+    "response_sha256": "b7db0517d7aa293b2f654fc036a389d467b5b99c1fc91d093a4d3bda6583c3ff",
+    "latency_ms": 13233,
+    "usage_metadata": {
+      "promptTokenCount": 1111,
+      "candidatesTokenCount": 72,
+      "totalTokenCount": 1552,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1111
+        }
+      ],
+      "thoughtsTokenCount": 369,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the 2025-2030 guideline recommend consuming 100% fruit or vegetable juice?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030): Mentions \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\" [chunk_id=v4fresh-cand-pair-v4-new-066-new]\n    *   Passage 2 (dga-2020, edition 2020-2025): Does not mention 100% fruit or vegetable juice specifically in the provided text.\n    *   Passage 3 (dga-2025, edition 2025-2030): Mentions \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\" [chunk_id=v4fresh-cand-pair-v4-new-006-new]\n\n    *   The 2025-2030 guideline recommends that 100% fruit or vegetable juice be consumed in limited portions or diluted with water [v4fresh-cand-pair-v4-new-066-new], [v4fresh-cand-pair-v4-new-006-new].",
+                "thought": true
+              },
+              {
+                "text": "The 2025-2030 guideline recommends that 100% fruit or vegetable juice be diluted with water or consumed in limited portions [v4fresh-cand-pair-v4-new-066-new], [v4fresh-cand-pair-v4-new-006-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1111,
+        "candidatesTokenCount": 72,
+        "totalTokenCount": 1552,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1111
+          }
+        ],
+        "thoughtsTokenCount": 369,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "QXpgasTiOP6D1e8P5Iap6QM"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-012",
+  "model_id": "gemini-3.1-flash-lite",
+  "request_sha256": "6acb033b319588bcdb20d24a45df2ccbd923ddbf8523f7fe20d24cf7016821b8",
+  "response_sha256": "2434f08af3849a4b61435ccf33eaabb00eb22b348f830fdb64caaf02d6fe5fc9",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.95,
+    "rationale": "The OLD passage states that FDA-approved high-intensity sweeteners 'have been determined to be safe for the general population', whereas the NEW passage explicitly advises to 'Limit foods and beverages that include... low-calorie non-nutritive sweeteners' and asserts that 'no amount of... non-nutritive sweeteners is recommended or considered part of a healthy or nutritious diet'."
+  },
+  "latency_ms": 860,
+  "usage_metadata": {
+    "promptTokenCount": 891,
+    "candidatesTokenCount": 107,
+    "totalTokenCount": 998,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 891
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

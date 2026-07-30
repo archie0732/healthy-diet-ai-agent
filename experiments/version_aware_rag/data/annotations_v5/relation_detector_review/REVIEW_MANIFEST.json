@@ -1,0 +1,21 @@
+{
+  "status": "awaiting_semantic_review",
+  "record_count": 40,
+  "relation_distribution": {
+    "superseded": 10,
+    "conflicting": 10,
+    "conditional_difference": 10,
+    "complementary": 10
+  },
+  "prior_v4_fresh_overlap_count": 0,
+  "prior_v4_fresh_fields_read": [
+    "candidate_pair_id"
+  ],
+  "prior_v4_fresh_outcomes_or_metrics_read": false,
+  "source_inventory_sha256": "b149db5124d1f5df807f404489f3ecb1afccf3481db550a75a0a01d72b77f7a0",
+  "source_corpus_sha256": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+  "prior_test_membership_file_sha256": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+  "review_ledger_sha256": "7ce7cdccd5380610b185b98fb373a583922df7d8ab7a6f689c94c87f8f755752",
+  "review_packet_sha256": "f36b4e1a9e7e8b59037a4216434b345118cbb681b075f435bee7e48acd5cd131",
+  "promotion_allowed": false
+}

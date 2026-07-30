@@ -1,0 +1,66 @@
+{
+  "query_id": "v4fresh-026",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "2e17163c28e7f090861d7284a9cabd529cb0b9fa35abed51aa25b6a70884ea9e",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-033-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-033-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=The recommendation to limit of added sugars in their eating patterns,\r\nadded sugars to no more than 10 percent of including to improve the palatability of Saturated Fats, Trans Fats,\r\ncalories is a target that applies to all calorie some nutrient-dense foods, such as fruits & Cholesterol\r\nlevels to help individuals move toward and vegetables that are naturally tart (e. g. ,\r\nSaturated Fats\r\nhealthy eating patterns within calorie limits. cranberries and rhubarb). Healthy eating\r\nHealthy Intake: Intake of saturated\r\npatterns can accommodate other nutrient-\r\nAlthough the evidence for added sugars fats should be limited to less than 10\r\ndense foods with small amounts of added\r\nand health outcomes is still developing, percent of calories per day by replacing\r\nsugars, such as whole-grain breakfast\r\nthe recommendation to limit calories from them with unsaturated fats and while\r\ncereals or fat-free yogurt, as long as\r\nadded sugars is consistent with research keeping total dietary fats with\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-058-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\nQUESTION\n\nHow does the detailed ingredient label list for added sugars in 2025 complement historical sugar guidance?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "9f296cbcca3d74a89cd1571848765f3f63a322a69f66c792163dbd7cd19cf1e4",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-033-new",
+    "v4fresh-cand-pair-v4-new-033-old",
+    "v4fresh-cand-pair-v4-new-058-new"
+  ],
+  "answer": "*   Question: How does the detailed ingredient label list for added sugars in 2025 complement historical sugar guidance?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030):\n        *   Mentions identifying added sugars by looking for ingredients with \"sugar\", \"syrup\", or ending in \"-ose\" [v4fresh-cand-pair-v4-new-033-new].\n        *   Lists specific names for added sugars: high-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose, dextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit juice concentrate, honey, and molasses [v4fresh-cand-pair-v4-new-033-new].\n        *   Lists non-nutritive sweeteners: aspartame, sucralose, saccharin, xylitol, and acesulfame K [v4fresh-cand-pair-v4-new-033-new].\n        *   Notes that naturally occurring sugars in plain milk and fruits are not considered added sugars [v4fresh-cand-pair-v4-new-033-new].\n        *   Mentions snack food limits based on FDA \"Healthy\" claim limits (e.g., grain snacks $\\le$ 5g added sugar per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g added sugar per 2/3 cup equivalent) [v4fresh-cand-pair-v4-new-033-new].\n\n    *   Passage 2 (dga-2015, 2015-2020):\n        *   Recommends limiting added sugars to no more than 10 percent of calories for all calorie levels [v4fresh-cand-pair-v4-new-033-old].\n        *   Notes that evidence for added sugars and health outcomes is still developing [v4fresh-cand-pair-v4-new-033-old].\n        *   Mentions that healthy eating patterns can accommodate nutrient-dense foods with small amounts of added sugars (e.g., fat-free yogurt or whole-grain breakfast cereals) [v4fresh-cand-pair-v4-new-033-old].\n\n    *   Passage 3 (dga-2025, 2025-2030):\n        *   Similar to Passage 1.\n        *   Adds that for a meal to be considered part of a healthy or nutritious diet, one meal should contain no more than 10 grams of added sugars [v4fresh-cand-pair-v4-new-058-new].\n\n    *   Historical guidance (2015-2020) focused on a general calorie limit (no more than 10 percent of calories) [v4fresh-cand-pair-v4-new-033-old].\n    *   The 2025-2030 guidance provides specific tools for identification and more granular limits.\n    *   Identification: Look for \"sugar\", \"syrup\", or \"-ose\" [v4fresh-cand-pair-v4-new-033-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Specific examples: high-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose, dextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit juice concentrate, honey, and molasses [v4fresh-cand-pair-v4-new-033-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Distinction: Naturally occurring sugars in plain milk and fruits are not added sugars [v4fresh-cand-pair-v4-new-033-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Granular limits: 10 grams per meal [v4fresh-cand-pair-v4-new-058-new], and specific snack limits based on FDA \"Healthy\"",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "99f45f9b392d7dfe3399a4a27daa990eca0b046e03f8e59238f63511257d3f7b",
+    "response_sha256": "0b93d01f9e4496c2f1e8e8af8e0ced4b6b3eb6ecf5ffdf067896d2700dec3ec4",
+    "latency_ms": 29277,
+    "usage_metadata": {
+      "promptTokenCount": 1296,
+      "totalTokenCount": 2317,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1296
+        }
+      ],
+      "thoughtsTokenCount": 1021,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the detailed ingredient label list for added sugars in 2025 complement historical sugar guidance?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030):\n        *   Mentions identifying added sugars by looking for ingredients with \"sugar\", \"syrup\", or ending in \"-ose\" [v4fresh-cand-pair-v4-new-033-new].\n        *   Lists specific names for added sugars: high-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose, dextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit juice concentrate, honey, and molasses [v4fresh-cand-pair-v4-new-033-new].\n        *   Lists non-nutritive sweeteners: aspartame, sucralose, saccharin, xylitol, and acesulfame K [v4fresh-cand-pair-v4-new-033-new].\n        *   Notes that naturally occurring sugars in plain milk and fruits are not considered added sugars [v4fresh-cand-pair-v4-new-033-new].\n        *   Mentions snack food limits based on FDA \"Healthy\" claim limits (e.g., grain snacks $\\le$ 5g added sugar per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g added sugar per 2/3 cup equivalent) [v4fresh-cand-pair-v4-new-033-new].\n\n    *   Passage 2 (dga-2015, 2015-2020):\n        *   Recommends limiting added sugars to no more than 10 percent of calories for all calorie levels [v4fresh-cand-pair-v4-new-033-old].\n        *   Notes that evidence for added sugars and health outcomes is still developing [v4fresh-cand-pair-v4-new-033-old].\n        *   Mentions that healthy eating patterns can accommodate nutrient-dense foods with small amounts of added sugars (e.g., fat-free yogurt or whole-grain breakfast cereals) [v4fresh-cand-pair-v4-new-033-old].\n\n    *   Passage 3 (dga-2025, 2025-2030):\n        *   Similar to Passage 1.\n        *   Adds that for a meal to be considered part of a healthy or nutritious diet, one meal should contain no more than 10 grams of added sugars [v4fresh-cand-pair-v4-new-058-new].\n\n    *   Historical guidance (2015-2020) focused on a general calorie limit (no more than 10 percent of calories) [v4fresh-cand-pair-v4-new-033-old].\n    *   The 2025-2030 guidance provides specific tools for identification and more granular limits.\n    *   Identification: Look for \"sugar\", \"syrup\", or \"-ose\" [v4fresh-cand-pair-v4-new-033-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Specific examples: high-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose, dextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit juice concentrate, honey, and molasses [v4fresh-cand-pair-v4-new-033-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Distinction: Naturally occurring sugars in plain milk and fruits are not added sugars [v4fresh-cand-pair-v4-new-033-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Granular limits: 10 grams per meal [v4fresh-cand-pair-v4-new-058-new], and specific snack limits based on FDA \"Healthy\"",
+                "thought": true
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "MAX_TOKENS",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1296,
+        "totalTokenCount": 2317,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1296
+          }
+        ],
+        "thoughtsTokenCount": 1021,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "_n5gav-fDqXO1e8Pr6qymQU"
+    }
+  }
+}

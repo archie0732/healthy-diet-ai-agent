@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-003",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "3d2c0967044f70016a1dde153304e5239135d9e0a00d58c470b5565cd52b9b8b",
+    "response_sha256": "c94785fa27b2414745ba1ed34471b3873442d2331f116eb2262ce75f54756c3f",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 20028,
+    "usage": {
+      "promptTokenCount": 675,
+      "candidatesTokenCount": 292,
+      "totalTokenCount": 2021,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 675
+        }
+      ],
+      "thoughtsTokenCount": 1054,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:26:27.852Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For non-pregnant adults without kidney impairments or conditions compromising potassium excretion who are considering lower-sodium salt substitutes (LSSS) to reduce sodium intake, what is the recommended daily potassium intake target, and what is the strength of the recommendation for replacing regular table salt with LSSS?\",\n  \"target_population\": [\n    \"non-pregnant adults\",\n    \"adults without kidney impairments\",\n    \"adults without conditions compromising potassium excretion\"\n  ],\n  \"conditions\": [\n    \"hypertension\",\n    \"cardiovascular disease risk\",\n    \"sodium reduction\",\n    \"potassium intake management\"\n  ],\n  \"draft_rationale\": \"To answer this query, the system must synthesize information from both the current and retained guidelines. The current guideline (who-lsss-2025) provides the context for LSSS, stating that WHO conditionally suggests replacing regular table salt with LSSS containing potassium for adults, excluding pregnant women, children, and individuals with kidney impairments or conditions compromising potassium excretion. The retained guideline (who-potassium-2012) provides the specific adult potassium intake target of at least 90 mmol/day (3510 mg/day) as a conditional recommendation. Both pieces of evidence are necessary to address the target population's potassium intake goal alongside the LSSS recommendation details.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 675,
+      "candidatesTokenCount": 292,
+      "totalTokenCount": 2021,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 675
+        }
+      ],
+      "thoughtsTokenCount": 1054,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "4fReavznHqeA1e8PoI-UiA8"
+  }
+}

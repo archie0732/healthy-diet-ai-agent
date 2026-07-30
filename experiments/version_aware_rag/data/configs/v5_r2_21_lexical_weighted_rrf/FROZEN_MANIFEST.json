@@ -1,0 +1,81 @@
+{
+  "schema_version": "v5-r2.21-lexical-weighted-rrf-manifest-1",
+  "status": "diagnostic_frozen_unlocked",
+  "development_only": true,
+  "outcome_exposed_r2_20_data": true,
+  "variants": [
+    "rrf_lex1_dense1_control",
+    "rrf_lex2_dense1",
+    "rrf_lex3_dense1"
+  ],
+  "parameters": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "rrf_k": 60,
+    "pool_size": 20,
+    "recency_weight": 0.2,
+    "pair_signal_weight": 2,
+    "anchor_rank": 6,
+    "lexical_weights": [
+      1,
+      2,
+      3
+    ],
+    "dense_weight": 1
+  },
+  "model": {
+    "dtype": "q8",
+    "dimensions": 384,
+    "cache_root": "data/models/v5_r2_19_minilm/cache",
+    "local_model_directory": "data/models/v5_r2_19_minilm/cache/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9"
+  },
+  "inputs": {
+    "protocol": {
+      "path": "R2_21_LEXICAL_WEIGHTED_RRF_DIAGNOSTIC_PROTOCOL.md",
+      "sha256": "57b9f0e2d4237a087f4d0675799cb464fec99b986dee1f541eb8f5a7a744a778"
+    },
+    "runner": {
+      "path": "scripts/v5/run_r2_21_lexical_weighted_rrf_diagnostic.ts",
+      "sha256": "ee2274b202b0957b2d78686df33f56f19dbd888dc0ed50f4c51b7ccf0e874769"
+    },
+    "queries": {
+      "path": "data/configs/v5_r2_20_frozen_confirmation/runtime_queries.role_neutral.jsonl",
+      "sha256": "017f73c30c95ab1a00b4f7f2174ad71b4e6b791e9027b5ff6f42ba53d66280ea"
+    },
+    "corpus": {
+      "path": "data/configs/v5_r2_20_frozen_confirmation/candidate_corpus.role_neutral.jsonl",
+      "sha256": "dfe37e478983e117dad607c2cb42f1803aec6d1408a5803e3fc5206e6e0e5a6b"
+    },
+    "judgments": {
+      "path": "data/configs/v5_r2_20_frozen_confirmation/judgments.sealed.jsonl",
+      "sha256": "51f83142852c197c9af29487282927747889519ee854d77d741ec25f7c6fa4aa"
+    },
+    "r220_raw": {
+      "path": "results/v5/r2_20_confirmation/raw_retrieval_results.jsonl",
+      "sha256": "d08df7076b5efdd0f96aef1c057e23eb26a378b7367948741af26b588dc47902"
+    },
+    "r220_result": {
+      "path": "results/v5/r2_20_confirmation/CONFIRMATION_RESULT.json",
+      "sha256": "504e2ea2362a2430532a2104ea18f7b103163939c14b941aa6adb2eef85c60f5"
+    },
+    "r220_guard": {
+      "path": "data/configs/v5_r2_20_frozen_confirmation/EXECUTION_GUARD.json",
+      "sha256": "2fcd29eb2314d1a35e5c6cedbb8beee1e39ea7a8a6071b8862a4565e7489e9c5"
+    },
+    "model_manifest": {
+      "path": "data/models/v5_r2_19_minilm/MODEL_MANIFEST.json",
+      "sha256": "af4a4eb13f596b949c07e941cdcbc8c9ffb49a4715ee8354e0901e2f3d20dc11"
+    }
+  },
+  "selection_order": [
+    "current_only_recall_at_3_desc",
+    "candidate_recall_at_20_desc",
+    "combined_implicit_both_evidence_desc",
+    "minimum_implicit_recall_at_3_desc",
+    "declared_variant_order"
+  ],
+  "prior_cycle_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "promotion_allowed": false
+}

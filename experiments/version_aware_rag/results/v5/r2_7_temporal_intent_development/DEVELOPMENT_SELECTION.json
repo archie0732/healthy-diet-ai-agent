@@ -1,0 +1,165 @@
+{
+  "schema_version": "v5-r2.7-temporal-intent-development-1",
+  "status": "development_gate_passed_validation_unlock_eligible",
+  "development_only": true,
+  "validation_file_read": false,
+  "validation_execution_count": 0,
+  "external_model_api_used": false,
+  "detector_id": "explicit_temporal_history_intent_v1",
+  "detector_type": "deterministic_explicit_temporal_intent_router",
+  "runtime_feature_contract": "query_text_only",
+  "forbidden_runtime_features": [
+    "pair_id",
+    "lineage_group",
+    "topic",
+    "relation_type",
+    "action_label",
+    "judgments",
+    "old_evidence",
+    "current_evidence",
+    "validation_data"
+  ],
+  "frozen_patterns": [
+    "\\b2003\\b",
+    "\\bhistorical(?:ly)?\\b",
+    "\\bprevious(?:ly)?\\b",
+    "\\bearlier\\b",
+    "\\bformerly\\b",
+    "\\bhow did\\b.{0,100}\\bchange\\b",
+    "\\bfrom\\b.{0,100}\\bto (?:the )?current\\b"
+  ],
+  "gate": {
+    "false_preserve_count": 0,
+    "pair_preserve_precision": 1,
+    "minimum_pair_preserve_recall": 0.5
+  },
+  "metrics": {
+    "true_preserve": 8,
+    "false_preserve_count": 0,
+    "true_block": 8,
+    "missed_preserve": 0,
+    "accuracy": 1,
+    "pair_preserve_precision": 1,
+    "pair_preserve_recall": 1
+  },
+  "predictions": [
+    {
+      "pair_id": "r2.7-01-sodium-current-ceiling",
+      "lineage_group": "cross-version-sodium-current-ceiling",
+      "query": "What is the current WHO daily sodium and salt ceiling for adults?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-02-potassium-current-food-source",
+      "lineage_group": "cross-version-potassium-current-food-source",
+      "query": "Should most people obtain potassium from foods or from supplements and special products?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-04-sfa-current-ceiling",
+      "lineage_group": "cross-version-sfa-current-ceiling",
+      "query": "What current saturated-fat ceiling does WHO support?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-05-tfa-current-ceiling",
+      "lineage_group": "cross-version-tfa-current-ceiling",
+      "query": "What current trans-fat ceiling does WHO support?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-07-fruit-current-adult-target",
+      "lineage_group": "cross-version-fruit-current-adult-target",
+      "query": "What current minimum daily vegetable-and-fruit target applies to adults?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-08-fibre-current-adult-target",
+      "lineage_group": "cross-version-fibre-current-adult-target",
+      "query": "What current minimum naturally occurring dietary-fibre intake applies to adults?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-09-lsss-current-role",
+      "lineage_group": "cross-version-lsss-current-role",
+      "query": "What role do lower-sodium salt substitutes currently have in an overall sodium-reduction strategy?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-11-free-sugar-current-definition",
+      "lineage_group": "cross-version-free-sugar-current-definition",
+      "query": "What does the current WHO definition of free sugars include?",
+      "gold": "BLOCK_RETAINED",
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.7-13-potassium-target-change",
+      "lineage_group": "cross-version-potassium-target-change",
+      "query": "How did the adult potassium target change from the 2003 value to the current recommendation?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-14-carbohydrate-quantity-quality",
+      "lineage_group": "cross-version-carbohydrate-quantity-quality",
+      "query": "What was the 2003 carbohydrate energy range, and which carbohydrate sources does current evidence favour?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-16-sodium-exception-evolution",
+      "lineage_group": "cross-version-sodium-exception-evolution",
+      "query": "Which special situations were flagged in 2003, and which clinical exclusions appear in current sodium guidance?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-18-sfa-limit-replacement",
+      "lineage_group": "cross-version-sfa-limit-replacement",
+      "query": "What historical saturated-fat ceiling applied, and which current replacement nutrients are preferred?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-19-tfa-limit-child-evidence",
+      "lineage_group": "cross-version-tfa-limit-child-evidence",
+      "query": "What historical trans-fat ceiling applied, and what evidence limitation affects the current child recommendation?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-20-fruit-adult-child-targets",
+      "lineage_group": "cross-version-fruit-adult-child-targets",
+      "query": "What historical population target applied, and how are current child targets determined?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-22-lsss-option-kidney-safety",
+      "lineage_group": "cross-version-lsss-option-kidney-safety",
+      "query": "What historical salt-substitution option was proposed, and what current kidney-safety limitation constrains it?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.7-24-free-sugar-versus-nss-definition",
+      "lineage_group": "cross-version-free-sugar-versus-nss-definition",
+      "query": "How do the historical free-sugar definition and the current non-sugar-sweetener definition differ?",
+      "gold": "PAIR_PRESERVE",
+      "predicted": "PAIR_PRESERVE"
+    }
+  ],
+  "lexical_separation_audit": {
+    "every_development_positive_has_explicit_history_cue": true,
+    "every_development_negative_lacks_explicit_history_cue": true,
+    "perfect_temporal_cue_label_separation": true,
+    "limitation": "This cycle tests explicit historical-intent routing, not general semantic conditional-merge detection."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-002",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "a179abc75ae9d7f1eceb6e9629cb33a56f59bb0af602ded76465852f4158c902",
+  "response_sha256": "d02823451e8e868ceb8822959366dada136e36d347c8364f6c7d30729b0479ee",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage incorporates the food categories mentioned in OLD and expands them with additional options, making OLD redundant."
+  },
+  "latency_ms": 807,
+  "usage_metadata": {
+    "promptTokenCount": 280,
+    "candidatesTokenCount": 56,
+    "totalTokenCount": 336,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 280
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

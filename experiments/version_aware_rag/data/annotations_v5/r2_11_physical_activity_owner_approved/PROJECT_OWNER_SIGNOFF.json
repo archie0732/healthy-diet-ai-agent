@@ -1,0 +1,14 @@
+{
+  "schema_version": "v5-r2.11-physical-activity-owner-signoff-1",
+  "status": "checksum_bound_project_owner_approved",
+  "owner_statement": "OK I finish all",
+  "owner_signoff_date": "2026-07-24",
+  "approval_scope": "all_five_annotations_in_review_packet",
+  "review_packet_sha256": "c86a2df74050f1f450d25898c8e408f9c2aab2323673aa3e51476d5d0dc2a86f",
+  "provisional_annotations_sha256": "addc5ee2b8b7e3d076ee7e7e7932ac6886162d177395bcfd3f2c29e430271267",
+  "approved_annotations_sha256": "f468f043d9caac2afd04f0e5e259d4b72ca05cc78f6519969b42f1bca9b4b3fe",
+  "approved_record_count": 5,
+  "retrieval_outcomes_observed": false,
+  "r2_10_outcomes_used": false,
+  "limitation": "Approval covers five Development annotations only; the R2.11 ledger is not complete or frozen."
+}

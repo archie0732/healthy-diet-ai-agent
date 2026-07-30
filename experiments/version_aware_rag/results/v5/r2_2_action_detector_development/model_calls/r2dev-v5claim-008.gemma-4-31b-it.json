@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-008",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "44dc7d3ab79998d79a0252fdfb55f716b0fa9d6fe3a58decf983f5014c8eaa34",
+  "response_sha256": "071756a10b3295b72a507a2eba36e0026ff101ab2005ae4232ceda2864425bd7",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The CURRENT passage materially subsumes the OLD passage by providing the same 2,300 mg limit for adults/those 14+ and providing specific, more detailed breakdowns for children under 14, which covers the OLD passage's general requirement for children to have 'even less'.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 3298,
+  "usage_metadata": {
+    "promptTokenCount": 552,
+    "candidatesTokenCount": 93,
+    "totalTokenCount": 645,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 552
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

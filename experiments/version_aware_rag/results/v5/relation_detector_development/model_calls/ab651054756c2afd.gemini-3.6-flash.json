@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-16-pass-0-43cd7a56|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "88cda31e0f88c16a4084635b7ae91d63d756a5aadee27bc8359d7b00d7bc6a94",
+  "response_sha256": "c0cefece209d1bad8802aaa2aa7c57b5eca1e40f011d5f5f0cd3c5867680aa19",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The NEW passage updates the dietary recommendations and principles found in the OLD passage; notably, while the OLD passage defines nutrient-dense foods as including \"fat-free and low-fat dairy products\" with little or no solid fats, the NEW passage replaces this with the updated directive to \"include full-fat dairy with no added sugars\" alongside specific serving targets."
+  },
+  "latency_ms": 76753,
+  "usage_metadata": {
+    "promptTokenCount": 1006,
+    "candidatesTokenCount": 103,
+    "totalTokenCount": 1906,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1006
+      }
+    ],
+    "thoughtsTokenCount": 797,
+    "serviceTier": "standard"
+  }
+}

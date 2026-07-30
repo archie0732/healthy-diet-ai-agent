@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-006",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "f5b58e0879d43df5e02df871d418cc89f6da9f7696876aa716a3eac69ed91bbe",
+  "response_sha256": "3056478f4592585959c17f2d12ddfaafa10dd49e922b36a8f921bf5f8d78ca38",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides the same quantitative threshold (less than 10% of calories) as the OLD passage, effectively duplicating the instruction."
+  },
+  "latency_ms": 2615,
+  "usage_metadata": {
+    "promptTokenCount": 360,
+    "candidatesTokenCount": 60,
+    "totalTokenCount": 420,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 360
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

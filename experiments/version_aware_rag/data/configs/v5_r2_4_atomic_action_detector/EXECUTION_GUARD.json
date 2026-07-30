@@ -1,0 +1,11 @@
+{
+  "status": "blocked_no_safe_local_detector",
+  "split_manifest_sha256": "ae2c1509aa9e8177902d0212eb46854c65cae31845aa03242a587902f7ee1c74",
+  "development_selection_complete": true,
+  "validation_execution_count": 0,
+  "external_gemini_or_gemma_calls_allowed": false,
+  "tuning_after_validation_allowed": false,
+  "fresh_v5_test_created": false,
+  "selected_config": null,
+  "development_selection_sha256": "0f67b19d9cc47ccec9b0db5332f80d2b46987fca871173599570c765ec302252"
+}

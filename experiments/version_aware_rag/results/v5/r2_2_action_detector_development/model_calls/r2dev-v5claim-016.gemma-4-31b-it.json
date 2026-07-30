@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-016",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "94ba3000d43b5075b670506f533cf76dd1e451ac5ee6678be8b5ac573e47c813",
+  "response_sha256": "62cb7f1fefe3f3113bb19c90c741de2ffdb6fb9c0448ed543521bef1931d9a2f",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The Dietary Guidelines are intended to be customized to individual needs, preferences, and the foodways of diverse cultures in the United States, and benefit all individuals regardless of age, race, or ethnicity.",
+    "confidence": 1,
+    "rationale": "The OLD passage focuses on the general applicability and cultural customization of the guidelines for the entire population. The CURRENT passage focuses specifically on individuals with chronic diseases and the need to consult healthcare professionals for adaptations. The general principle of universal benefit and cultural inclusivity is not mentioned in the CURRENT passage.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 4431,
+  "usage_metadata": {
+    "promptTokenCount": 525,
+    "candidatesTokenCount": 128,
+    "totalTokenCount": 653,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 525
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

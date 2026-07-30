@@ -1,0 +1,14 @@
+{
+  "schema_version": "v5-r2.15-compatible-selectivity-guard-1",
+  "status": "diagnostic_complete_locked",
+  "manifest_sha256": "d585670039e4f7e852916770d45cbfddac2a5baab37a5735ef5ec64b63b34275",
+  "execution_count": 1,
+  "judgments_read_only_after_all_variant_top3": true,
+  "retrieval_calls_allowed": false,
+  "r2_14_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "raw_results_sha256": "673d3b2b02255da60fc8487d06e39e5876b194aeaf87a2922db7658d67d212e8",
+  "diagnostic_result_sha256": "ba9f65ab4ad8f71c0644a8fdbf367681e6e5b2f183253e0b670da98940074f25",
+  "selected_diagnostic_variant": "pair_score_g2.0_top6_anchor"
+}

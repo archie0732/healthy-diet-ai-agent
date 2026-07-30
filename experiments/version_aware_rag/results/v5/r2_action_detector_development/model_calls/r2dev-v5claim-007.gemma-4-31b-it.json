@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-007",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "62eff9f86feac3163e9f6b74c8c25f085d73e399b76be85a548b9b4f1f87d376",
+  "response_sha256": "808cd04c6219d1aabdd7fa20c5f66bab9c8677afdc768827b3e26f6cc197a06f",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a new, more specific set of guidelines for limiting added sugars (10g per meal and specific snack limits) and explicitly states that no amount of added sugars is recommended, which replaces the OLD guideline of 'less than 10% of calories'."
+  },
+  "latency_ms": 2971,
+  "usage_metadata": {
+    "promptTokenCount": 496,
+    "candidatesTokenCount": 79,
+    "totalTokenCount": 575,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 496
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

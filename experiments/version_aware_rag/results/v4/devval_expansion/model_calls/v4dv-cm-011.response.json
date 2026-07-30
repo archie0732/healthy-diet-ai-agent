@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-011",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "67502dea4db8ce759c5816c545f94a6b106c791be21b0150b25481bfa894bbda",
+    "response_sha256": "e66bfc0e6c0cd8a22abbe2a04bb86d5367d4b634796594e8338eaea29b45168d",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 9110,
+    "usage": {
+      "promptTokenCount": 809,
+      "candidatesTokenCount": 273,
+      "totalTokenCount": 2163,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 809
+        }
+      ],
+      "thoughtsTokenCount": 1081,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:25:24.455Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"What are the WHO recommended daily intake levels (and the strength of these recommendations) for naturally occurring dietary fibre and potassium from food for adults, and what specific health conditions or risks are these dietary targets intended to reduce?\",\n  \"target_population\": [\n    \"adults\"\n  ],\n  \"conditions\": [\n    \"cardiovascular disease\",\n    \"stroke\",\n    \"coronary heart disease\",\n    \"type 2 diabetes\",\n    \"colorectal cancer\",\n    \"high blood pressure\",\n    \"all-cause mortality\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must combine information from both passages. The first passage (current evidence) provides the adult dietary fibre target (at least 25 g per day, strong recommendation) and the associated risk reductions (all-cause mortality, CVDs, coronary heart disease, type 2 diabetes, colorectal cancer, stroke, cancer). The second passage (retained evidence) provides the adult potassium intake guidance (increase potassium intake, strong recommendation; at least 90 mmol/day or 3510 mg/day, conditional recommendation) and its purpose (reduction of blood pressure, cardiovascular disease, stroke, and coronary heart disease).\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 809,
+      "candidatesTokenCount": 273,
+      "totalTokenCount": 2163,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 809
+        }
+      ],
+      "thoughtsTokenCount": 1081,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "rfReaqTFAYyn1e8PlfGagQE"
+  }
+}

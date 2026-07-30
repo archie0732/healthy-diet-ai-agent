@@ -1,0 +1,33 @@
+{
+  "plan": "V4 expanded development-only model selection",
+  "input_split": "development.jsonl only",
+  "development_split_sha256": "dbc90de18d95ee757e3941305868d133ec7b4233d5ee0386b341ad7eb885a378",
+  "validation_split_read_count": 0,
+  "fresh_test_read_count": 0,
+  "candidate_budget": 20,
+  "top_k": 3,
+  "recency_lambda": 0.75,
+  "oracle_relation_source": "project-owner-approved development annotations; global relation edges only, no query-ID lookup during retrieval",
+  "relation_boost": 0.35,
+  "propagation_factor": 0.9,
+  "semantic_alpha_grid": [
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "embedding_model": "gemini-embedding-001",
+  "cross_encoder_model": "gemma-4-31b-it",
+  "cross_encoder_thinking_level": "not_applicable",
+  "cross_encoder_output_schema": "scores_only_v1",
+  "cross_encoder_batch_size": 9007199254740991,
+  "cross_encoder_execution_status": "complete",
+  "endpoints": [
+    "conditional_merge_required_micro_recall_at_3",
+    "compatible_history_required_micro_recall_at_3",
+    "retained_required_micro_recall_at_3",
+    "stale_forbidden_hit_rate_at_3"
+  ],
+  "selection_rule": "Both target strata must match/exceed Recency; retained recall must strictly improve; stale/forbidden must not increase.",
+  "safety_label_limitation_declared_before_scoring": "Approved expanded labels contain required current/retained evidence but no query-level stale/forbidden labels. Full gate cannot pass until those labels are independently added."
+}

@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-14-pass-0-45535101|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "cb79ce5126f91c4f5cb845c25ba61caab994533df17a18f28ed3e90f5c63f7e5",
+  "response_sha256": "ac2f8cc1c7cf86bacd894be97503cf9952ea7e0b78fdbf23a53deef4999ae03d",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a general recommendation to 'Limit calories from added sugars' and 'reduce sodium intake,' whereas the NEW passage replaces these generalities with specific, quantifiable thresholds (e.g., 'one meal should contain no more than 10 grams of added sugars') and detailed lists of foods to avoid."
+  },
+  "latency_ms": 3820,
+  "usage_metadata": {
+    "promptTokenCount": 920,
+    "candidatesTokenCount": 94,
+    "totalTokenCount": 1014,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 920
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "prepared_before_detector_calls",
+  "created_at": "2026-07-22T12:16:20.308Z",
+  "split_unit": "unique_old_new_endpoint_pair",
+  "split_rule": "lexicographically_last_consistent_endpoint_group_per_relation_class_is_validation; all other consistent groups are development",
+  "development_count": 21,
+  "validation_count": 5,
+  "ambiguous_excluded_count": 5,
+  "development_distribution": {
+    "complementary": 10,
+    "conditional_difference": 1,
+    "conflicting": 3,
+    "duplicate": 1,
+    "superseded": 6
+  },
+  "validation_distribution": {
+    "complementary": 1,
+    "conditional_difference": 1,
+    "conflicting": 1,
+    "duplicate": 1,
+    "superseded": 1
+  },
+  "endpoint_overlap_count": 0,
+  "validation_labels_must_not_be_read_during_development_selection": true,
+  "input_checksums": {
+    "corpus_sha256": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+    "pairs_sha256": "9af814a2d582af94a984caadff0d944c067974834dd9f71cc7ec6166076da2b3",
+    "gold_sha256": "a336fb1c171c89f82966e927d96baa252a99d32b3883561cc35db44155b36cb5"
+  },
+  "artifact_checksums": {
+    "development_sha256": "d1fa2d3661a96919cc7e83df2cc1d05daf28f7a5bf3a9f158540183dc51a68a7",
+    "validation_sealed_sha256": "384b9fef304a66ed49ebec5409749fad05c6eadaa2acbb0327e98a2622c5b434",
+    "ambiguous_excluded_sha256": "2d54deb5a5bbf1be64b613055fc7ef2b14977a98a0b3e67ff635979132db82db"
+  }
+}

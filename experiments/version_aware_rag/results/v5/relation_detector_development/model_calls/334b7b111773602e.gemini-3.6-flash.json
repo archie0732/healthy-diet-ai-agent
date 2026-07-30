@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-34-pass-1-14bfc3a3|dga-2025-page-6-pass-0-765dd278",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "3ec61c2b1222911e6c8bedb966a64efe1997d24a217be6ab2a35b8f6d7223aed",
+  "response_sha256": "05408f6987b69c8c7fa3a04d9c265903d9ebf8b5e8116cb4a55c863d234bf156",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 0.85,
+    "rationale": "The new passage modifies the scope and applicability of the general 2,300 mg/day sodium threshold by restricting it to 'ages 14 and above' and introducing specific lower limits for children as well as exceptions for 'highly active individuals'."
+  },
+  "latency_ms": 10186,
+  "usage_metadata": {
+    "promptTokenCount": 843,
+    "candidatesTokenCount": 84,
+    "totalTokenCount": 1629,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 843
+      }
+    ],
+    "thoughtsTokenCount": 702,
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-012",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "f8d89db33a9f7918ab0b0eb214a0853e3957f2fff64acdae468de89887795836",
+  "response_sha256": "9c399995a52c526ad5527fc691489a775d703554219e65eaab6173151c53c08a",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides a more restrictive and specific directive regarding non-nutritive sweeteners and added sugars that essentially updates and supersedes the OLD passage's general safety determination and discussion of evidence."
+  },
+  "latency_ms": 813,
+  "usage_metadata": {
+    "promptTokenCount": 1027,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 1101,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1027
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

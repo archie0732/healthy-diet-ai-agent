@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-046",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "1e44e57b20ec413d2713f478d29e09dad7bccb5b36d81768abd6faa9e7e8f1c2",
+  "response_sha256": "9e13587ad86a185b20076721d3388fda019af0fbb5d4e8ce55f91c6a38680d7a",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.85,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general dietary principles applicable to the population at large, while the NEW excerpt introduces specific nutritional considerations and actionable habits tailored to the growth needs of children and adolescents, acting as an extension rather than a replacement."
+  },
+  "latency_ms": 962,
+  "usage_metadata": {
+    "promptTokenCount": 298,
+    "candidatesTokenCount": 84,
+    "totalTokenCount": 382,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 298
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

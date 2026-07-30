@@ -1,0 +1,5634 @@
+[
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 13,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-001",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-002",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 5
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 6,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 14,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-003",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 5,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-004",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 6,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 11,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-005",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 3
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 1,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 1,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-006",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 1,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 5
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 1,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 1,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 1,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-011",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 1,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 8
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-012",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 1,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-013",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 4
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-014",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 4
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 15,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-015",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-016",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-017",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 13,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 13,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-018",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 13,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-019",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-020",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 10,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-021",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-022",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-023",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-024",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 2,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 13,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-025",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 12,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 4
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-026",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-027",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-028",
+    "split": "development",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 4,
+      "expansion_attempts": 3,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 5
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-007",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 14,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 8
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-009",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 7,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 6,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-029",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 11,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 15,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 15,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 15,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-030",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 2,
+      "condition_boosts_applied": 15,
+      "expansion_attempts": 5,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 1
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 17,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 17,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 17,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-031",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 1,
+      "condition_boosts_applied": 17,
+      "expansion_attempts": 4,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 8
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-035",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 9,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 1,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 4,
+      "condition_boosts_applied": 5,
+      "expansion_attempts": 9,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 5,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 5,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-036",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 3,
+      "condition_boosts_applied": 5,
+      "expansion_attempts": 8,
+      "expansion_acceptances": 2,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "base",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "recency",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": true
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 2
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "filter_only",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "no_filter",
+    "requested_features": {
+      "enableFilter": false,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 0,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "no_boosts",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": false,
+      "enableConditionBoost": false,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 0,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "no_expansion",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": false,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "no_diversification",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": false,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  },
+  {
+    "query_id": "q-037",
+    "split": "validation",
+    "mode": "full_oracle",
+    "requested_features": {
+      "enableFilter": true,
+      "enableRetainBoost": true,
+      "enableConditionBoost": true,
+      "enableCompatibilityExpansion": true,
+      "enableDiversification": true,
+      "enableRecencyComponent": false
+    },
+    "actual_activation_counts": {
+      "filter_decisions": 20,
+      "retain_boosts_applied": 0,
+      "condition_boosts_applied": 8,
+      "expansion_attempts": 0,
+      "expansion_acceptances": 0,
+      "diversification_penalties_applied": 0,
+      "recency_scores_applied": 0
+    }
+  }
+]

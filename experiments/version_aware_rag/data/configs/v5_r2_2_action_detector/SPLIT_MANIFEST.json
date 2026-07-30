@@ -1,0 +1,33 @@
+{
+  "schema_version": "v5-r2-action-detector-1",
+  "status": "r2_split_frozen_before_model_calls",
+  "endpoint": "binary_retrieval_action",
+  "labels": [
+    "PAIR_PRESERVE",
+    "BLOCK_RETAINED"
+  ],
+  "development_count": 22,
+  "validation_count": 12,
+  "development_distribution": {
+    "PAIR_PRESERVE": 11,
+    "BLOCK_RETAINED": 11
+  },
+  "validation_distribution": {
+    "PAIR_PRESERVE": 6,
+    "BLOCK_RETAINED": 6
+  },
+  "development_includes_all_prior_failed_validation": true,
+  "validation_sources": [
+    "WHO",
+    "FAO"
+  ],
+  "evidence_hash_overlap_count": 0,
+  "validation_labels_must_not_be_read_during_development_selection": true,
+  "input_sha256": "a2b9a346291fd48baf73b8113310ba280c0bef796b86a8e82c535d3bbc2ce790",
+  "chunks_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+  "correction_ledger_sha256": "13a2c62bef5446567f296ae5790ef795233ba664a6147dc0f56bd3673c556e0f",
+  "development_sha256": "a10132f0776ba809ea45ab3be349c3d8be1ec6a3ab2d45a242665e7e125ab9d9",
+  "validation_sealed_sha256": "cd25941d087c18e7c4e5a9b5fefd10b3f99187b63ea268f0935f006fe5396449",
+  "reviewer_provenance": "codex-gpt5-primary-reviewer_not_independent_human",
+  "fresh_v5_test_created": false
+}

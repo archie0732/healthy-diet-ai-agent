@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-068",
+  "input_sha256": "197c8cb34d10c5fb6b11374979ed9f414e09a629943e71b160e74d345f4b5c96",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nKey Recommendations provide further guidance on how individuals can follow the five Guidelines. The Dietary Guidelines' Key\r\nRecommendations for healthy eating patterns should be applied in their entirety, given the interconnected relationship that each dietary\r\ncomponent can have with others. Key\r\nRecommendations:\r\nConsume a healthy eating pattern that accounts for all foods and beverages within\r\nan appropriate calorie level. A healthy eating pattern includes:[1]\r\n* A variety of vegetables from all of the subgroups-dark green, red and orange, legumes (beans and peas), starchy,\r\nand other\r\n* Fruits, especially whole fruits\r\n* Grains, at least half of which are whole grains\r\n* Fat-free or low-fat dairy, including milk, yogurt, cheese, and/or fortified soy beverages\r\n* A variety of protein foods, including seafood, lean meats and poultry, eggs, legumes (beans and peas), and nuts,\r\nseeds, and soy products\r\n* Oils\r\nA healthy eating pattern limits:\r\n* Saturated fats and trans fats, added sugars, and sodium\r\nKey Recommendations that are quantitative are provided for several components of the diet that should\r\nbe limited. These components are of particular public health concern in the United States, and the specified\r\nlimits can help individuals achieve healthy eating patterns within calorie limits:\r\n* Consume less than 10 percent of calories per day from added sugars[2]\r\n* Consume less than 10 perc\n\nNEW PASSAGE\negetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "1c60d6de953d397f360afac8fafd97eb7910eb580383ffa45a5a6b4745f799f2",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage provides high-level general guidelines for a healthy eating pattern, while the new passage provides specific, actionable implementation details such as serving goals for vegetables, fruits, and grains, and specific examples of healthy fats."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "e00f9bf633e29bdbde4dfe52aee0fcbb703368166666a436ed2a15589d200895",
+    "response_sha256": "11f78a9b028b79268aa92e3941877b035b379cf0b7067492f6b60e92d4bfb0e8",
+    "latency_ms": 3238,
+    "usage_metadata": {
+      "promptTokenCount": 762,
+      "candidatesTokenCount": 75,
+      "totalTokenCount": 837,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 762
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"complementary\",\n  \"confidence\": 0.9,\n  \"rationale\": \"The old passage provides high-level general guidelines for a healthy eating pattern, while the new passage provides specific, actionable implementation details such as serving goals for vegetables, fruits, and grains, and specific examples of healthy fats.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 762,
+        "candidatesTokenCount": 75,
+        "totalTokenCount": 837,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 762
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "tnhgav2gAaGU9tMPs7rwoAM"
+    }
+  }
+}

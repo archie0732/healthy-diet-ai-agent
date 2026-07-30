@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-009",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "71c524e4be41e9dbe8d6871fe6b0de09b6e21377bcef6e36bf6857825065962a",
+  "response_sha256": "d815bbfccf597207047efb0072f3ee21b04b382f51477caf29c17eb6a2518fe2",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The current passage covers the same core recommendations: exclusive breast milk for the first 6 months, iron-fortified formula as an alternative, and the transition from formula to whole milk at 12 months. The current passage is more detailed regarding breastfeeding duration and allergenic foods, but it subsumes the guidance in the old passage.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 3865,
+  "usage_metadata": {
+    "promptTokenCount": 628,
+    "candidatesTokenCount": 100,
+    "totalTokenCount": 728,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 628
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

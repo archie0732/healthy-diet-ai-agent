@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.21-lexical-weighted-rrf-audit-1",
+  "status": "audit_pass",
+  "retrieval_rerun_performed": false,
+  "execution_count": 1,
+  "raw_row_count": 96,
+  "control_reproduced_exactly": true,
+  "eligible_variant_count": 0,
+  "selected_diagnostic_variant": null,
+  "promotion_allowed": false,
+  "failures": []
+}

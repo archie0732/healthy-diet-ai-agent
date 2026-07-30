@@ -1,0 +1,38 @@
+{
+  "diagnosis_plan": "Plan 08A Revision 4: Oracle Failure Diagnosis",
+  "completed_at": "2026-07-20T08:03:02.844Z",
+  "status": "COMPLETED_REVISION_4_DIAGNOSIS_ONLY",
+  "fixes_implemented": false,
+  "artifact_checksums": {
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/INVALIDATION_NOTICE.json": "785ed2fc94fedb5d21bedc32cfea962921b0bad8435316f9bea29a4576f5f607",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/baseline_reference_v3.json": "eb4e40d84303ad911abc631d32cfad4233403683729b1480371abeed41b7de2d",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/paired_query_comparison.jsonl": "5cf987322b23897c146fa3f92cb5029a91ca85343c36112fe7d22aa5a2631d4b",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/development_stage_traces.jsonl": "914620fa62bbccb2c124990184df38d9dd04e70ec13005408896b79408987e75",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/validation_stage_traces.jsonl": "253977a3c77a708bb0c33d1688b8847c76b5ca8051a1a4dbd7e7cf5e961c420f",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/test_posthoc_traces.jsonl": "d631e09f91efa1719c9e542b8efd336a8712b776ceffa32ead8dd383cb8d4809",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/counterfactual_ablation_results.json": "eb1c0c739006ead60205641fa5ed7168c70ea46f72a01ba24367dd20ca58a07c",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/candidate_pool_sensitivity.json": "74131ad6f8dfa2a546eaec1350dd93841e27be36db8baf92559761bbc9670485",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_attribution.json": "6e6140ad93501c7eb930a22f2887c94afad60335a0e1970c7e0e660525e9316b",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_cases.csv": "27688d32a6a436cab74bed21a9e99c5dce019b8af6587460cdc02b1cd23433e2",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/oracle_failure_summary.json": "3fd212769c2d5445081d9aaa098f2daab8655e93c8dc15c91b2e29572c378256",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/DIAGNOSIS_MANIFEST.json": "d336a892329a4e8e12e1fd1883643de1cc97ad898cfab03910eb20874987f7b9",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/ORACLE_FAILURE_DIAGNOSIS.md": "b445b7967cdd7babc9652bdf8f82a1376a47e75fd07b8e3431a3f2aba5d6e733",
+    "docs/gemini/report/PLAN_08A_REVISION_4_ORACLE_FAILURE_DIAGNOSIS.md": "b445b7967cdd7babc9652bdf8f82a1376a47e75fd07b8e3431a3f2aba5d6e733"
+  },
+  "artifacts_created": [
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/INVALIDATION_NOTICE.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/baseline_reference_v3.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/paired_query_comparison.jsonl",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/development_stage_traces.jsonl",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/validation_stage_traces.jsonl",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/test_posthoc_traces.jsonl",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/counterfactual_ablation_results.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/candidate_pool_sensitivity.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_attribution.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_cases.csv",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/oracle_failure_summary.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/DIAGNOSIS_MANIFEST.json",
+    "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/ORACLE_FAILURE_DIAGNOSIS.md",
+    "docs/gemini/report/PLAN_08A_REVISION_4_ORACLE_FAILURE_DIAGNOSIS.md"
+  ]
+}

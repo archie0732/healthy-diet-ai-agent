@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-013",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "72b385589515ba121cffa6148e5da3f4d875fd5e61428f8ebcbd4ced15e243e9",
+  "response_sha256": "9f7601282fb68006a6238f17e85aedc817bb086dc052082ba99711da7fd255b4",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage explicitly defines the sodium limit for the general population (ages 14 and above), rendering the OLD passage redundant and potentially confusing regarding age thresholds."
+  },
+  "latency_ms": 784,
+  "usage_metadata": {
+    "promptTokenCount": 296,
+    "candidatesTokenCount": 67,
+    "totalTokenCount": 363,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 296
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

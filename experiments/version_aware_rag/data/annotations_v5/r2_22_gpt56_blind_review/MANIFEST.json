@@ -1,0 +1,14 @@
+{
+  "schema_version": "v5-r2.22-gpt56-blind-packet-manifest-1",
+  "status": "frozen_before_review",
+  "record_count": 32,
+  "packet_sha256": "558cd67a947439e834413efdc5515c250cb827a245604ff6e33c70743f5935bc",
+  "instructions_sha256": "ed1ff5416f747dd9be426f3a3df99813ea0c97ce27ec510e3731f2c023b401be",
+  "sealed_mapping_sha256": "43425fc513ada002c5c7e4ec497992530dfe06b674909bfd27bf7cacc34223ba",
+  "source_ledger_sha256": "2edaac8c3b6832fdd2f63f034873ae2b376b2d4bbbc6279860f7b9b0d66d084c",
+  "source_candidate_groups_sha256": "fef31d9560dcf27af73152a0c3df850a1465fa643e9a250388d13ad5ffbd4de7",
+  "candidate_order_rule": "swap iff first SHA-256 byte of blind_item_id is odd",
+  "reviewer_may_access_sealed_mapping": false,
+  "retrieval_outcomes_in_packet": false,
+  "gold_roles_in_packet": false
+}

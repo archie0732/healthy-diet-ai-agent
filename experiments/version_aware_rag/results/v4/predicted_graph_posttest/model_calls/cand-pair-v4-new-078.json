@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-078",
+  "input_sha256": "a1bf33bc1a4db06245e4cfedc1bf1a12d82e8afa6ea6e4a490aa62d7af956297",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nThe\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\nNEW PASSAGE\n. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "01904282d63acb96dbfa4bc124d581b1b952d5ce7b7e61cbb632c615721a271f",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 1,
+    "rationale": "The old passage provides general dietary guidelines for all life stages, while the new passage provides specific, detailed nutrient requirements and food recommendations for specific populations (pregnant women, lactating women, and older adults)."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "cc13215dd0fcc16d2fc6925ee9410cab538c83556e1bc5b2bbaea686ccf29c90",
+    "response_sha256": "fbb916ab95422f53409067b1eb1c4406d6554c2ccd9458e342365807c2e5b077",
+    "latency_ms": 2596,
+    "usage_metadata": {
+      "promptTokenCount": 517,
+      "candidatesTokenCount": 61,
+      "totalTokenCount": 578,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 517
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 1, \"rationale\": \"The old passage provides general dietary guidelines for all life stages, while the new passage provides specific, detailed nutrient requirements and food recommendations for specific populations (pregnant women, lactating women, and older adults).\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 517,
+        "candidatesTokenCount": 61,
+        "totalTokenCount": 578,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 517
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "wHhgaoH7DP6D1e8P5Iap6QM"
+    }
+  }
+}

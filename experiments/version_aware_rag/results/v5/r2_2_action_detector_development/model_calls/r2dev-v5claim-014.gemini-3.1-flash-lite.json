@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-014",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "88d66f6956e65fbfb84176a6f82f26e88206d8bdd1d0faf50d6f3b6a8b8907b1",
+  "response_sha256": "69c2b05ede36effdbb9b483da551278500f515cec8221954e5d01e059ed61c14",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The CURRENT passage restates the less than 10 percent of calories per day limit from the OLD passage and provides additional, specific age-based guidance, meaning the OLD passage is fully subsumed.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 823,
+  "usage_metadata": {
+    "promptTokenCount": 436,
+    "candidatesTokenCount": 83,
+    "totalTokenCount": 519,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 436
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-34-pass-3-392b8763|dga-2025-page-6-pass-0-765dd278",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "0888082910cf5410756c2f9145d28888b730e57d17ab66a92ba9d112801ee765",
+  "response_sha256": "f448eb3c5386b9284a255de2ed4b3a30390632da9ab7fc516734ea4d43ebf0d9",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 0.92,
+    "rationale": "The NEW passage retains the general recommendation of consuming less than 2,300 mg/day of sodium for individuals 14 and older, but explicitly introduces a conditional exception for a specific population, stating that 'Highly active individuals may benefit from increased sodium intake to offset sweat losses.'"
+  },
+  "latency_ms": 3767,
+  "usage_metadata": {
+    "promptTokenCount": 600,
+    "candidatesTokenCount": 91,
+    "totalTokenCount": 1198,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 600
+      }
+    ],
+    "thoughtsTokenCount": 507,
+    "serviceTier": "standard"
+  }
+}

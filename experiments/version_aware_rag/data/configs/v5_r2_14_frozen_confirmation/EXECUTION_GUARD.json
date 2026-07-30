@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.14-confirmation-guard-1",
+  "status": "confirmation_failed_locked",
+  "manifest_sha256": "2deed445868d78805fd4afb9a0e9babddcd538a84cbe037b2576d15b1db1f6c7",
+  "retrieval_execution_count": 1,
+  "judgments_read_only_after_all_retrieval_calls": true,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "prior_cycle_rerun_allowed": false,
+  "raw_retrieval_sha256": "873c5e07ae0370ec4878eee2006e46036278d02a5860122bc36cdd3262b0563b",
+  "confirmation_result_sha256": "2cadd7d37abeb70808acc8583a10ec44d49387ff7e4c05ea4b47072db9ffc2c3"
+}

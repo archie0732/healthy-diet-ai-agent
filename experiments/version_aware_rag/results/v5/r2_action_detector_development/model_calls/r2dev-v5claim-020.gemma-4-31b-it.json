@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-020",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "cc11a639aef36fa0c227402a07ca5a0c1e9fe5097b74837291f316783959c60d",
+  "response_sha256": "b906ff09644e143c1ab4060dd520c9c178f8e44685f9db9ad4a42a923df7b86f",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "OLD provides essential guidance on the primary diet (exclusive human milk for 6 months, then continuing through the first year, and the use of iron-fortified formula), whereas CURRENT focuses specifically on vitamin D supplementation and the introduction of nutrient-dense foods."
+  },
+  "latency_ms": 3000,
+  "usage_metadata": {
+    "promptTokenCount": 369,
+    "candidatesTokenCount": 75,
+    "totalTokenCount": 444,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 369
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

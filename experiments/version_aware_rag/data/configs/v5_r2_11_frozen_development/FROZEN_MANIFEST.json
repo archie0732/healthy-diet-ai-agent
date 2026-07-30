@@ -1,0 +1,105 @@
+{
+  "schema_version": "v5-r2.11-frozen-development-manifest-1",
+  "status": "frozen_development_retrieval_unlocked",
+  "frozen_at": "2026-07-26T00:00:00.000+08:00",
+  "record_count": 56,
+  "stratum_counts": {
+    "conditional_merge": 16,
+    "compatible_history": 16,
+    "current_only": 12,
+    "hard_negative_current": 12
+  },
+  "protocol_sha256": "3d494fb87febb7dde6f04e91ac610e751cfd652e07876eff15a00361e7f95f79",
+  "schema_sha256": "5be1874aab59746f5987219f788895bef65bcc86e3a5afe0d0d4ccfdcffd5d07",
+  "validator_sha256": "ca8a1d0fb590c1be82ff26e76d7191b7f5b5bf11e4bb2bd6831d248f4f63ed80",
+  "runner_sha256": "6b663360bf7dc3d52b645fa88046522501ebe65ef979541926fe7b7caac62861",
+  "existing_five_approved_sha256": "f468f043d9caac2afd04f0e5e259d4b72ca05cc78f6519969b42f1bca9b4b3fe",
+  "remaining_owner_signoff_sha256": "0a00bb463b48fc78d02b8693711d6dfe41adb39763d6501918c0c8a2d1635efd",
+  "approved_remaining_sha256": "0a53709e950b09a61da1b2fa455e4f7d549884181b07afee678f6caeb547af6d",
+  "frozen_ledger_sha256": "7e4e7696d268a833befbf4bb3732f837a7ce9ed7fbcc1c7d15bb056f981cd537",
+  "role_neutral_runtime_queries_sha256": "606633a0cba9d66ebbca3ebf55e057e1930b04914d92b534dadd5f68c608912a",
+  "role_neutral_corpus_sha256": "a84535b3fd06da7c086760d530bb40ad94314e2da017401abb5dca34a4541417",
+  "sealed_judgments_sha256": "5caa216782ad3d4fd88b9d446fd104d5789e68ec596d499f5b36fc69ddd9cb3d",
+  "runtime_query_count": 56,
+  "role_neutral_corpus_item_count": 98,
+  "exclusion_input_sha256": {
+    "data/annotations_v4/devval_expansion_user_approved/splits/validation.sealed.jsonl": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+    "data/annotations_v4/fresh_test_user_approved/fresh_test.sealed.jsonl": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+    "data/annotations_v5/r2_10_fresh_test_draft/fresh_test_draft.jsonl": "aebeac135354e3b509a30ac161bfff9fc65208e35c868693c497fa7339d99731"
+  },
+  "retrieval": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "candidate_pool_size": 20,
+    "top_k": 3,
+    "recency_lambda": 0.75,
+    "explicit_history_pair_boost": 0.75,
+    "implicit_merge_grid": [
+      {
+        "recency_weight": 0.2,
+        "group_boost": 0.25
+      },
+      {
+        "recency_weight": 0.2,
+        "group_boost": 0.5
+      },
+      {
+        "recency_weight": 0.2,
+        "group_boost": 0.75
+      },
+      {
+        "recency_weight": 0.2,
+        "group_boost": 1
+      },
+      {
+        "recency_weight": 0.4,
+        "group_boost": 0.25
+      },
+      {
+        "recency_weight": 0.4,
+        "group_boost": 0.5
+      },
+      {
+        "recency_weight": 0.4,
+        "group_boost": 0.75
+      },
+      {
+        "recency_weight": 0.4,
+        "group_boost": 1
+      }
+    ],
+    "local_embedding": {
+      "model_id": "deterministic-feature-hash-embedding",
+      "revision": "r2.11-v1",
+      "dimensions": 512,
+      "features": [
+        "word_unigram",
+        "word_bigram",
+        "character_trigram"
+      ],
+      "pretrained_semantic_model": false
+    },
+    "local_cross_encoder": {
+      "status": "unavailable_omitted",
+      "reason": "No exact local cross-encoder model revision and file checksum were installed; no network model was substituted."
+    },
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 2112026
+  },
+  "runtime_view_excludes": [
+    "query_id",
+    "stratum",
+    "gold_lineage_id",
+    "required_role",
+    "deprecated_role",
+    "forbidden_role",
+    "annotation_rationale",
+    "review_fields",
+    "prior_outcomes"
+  ],
+  "validation_errors": [],
+  "retrieval_execution_count": 0,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_10_rerun_allowed": false
+}

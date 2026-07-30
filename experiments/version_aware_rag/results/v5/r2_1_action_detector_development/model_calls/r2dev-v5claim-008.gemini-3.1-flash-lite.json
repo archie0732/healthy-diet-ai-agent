@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-008",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "8902bfcc8444b98086567f78ef849a05685fcb5a5a9f832c089efba2ee85b41f",
+  "response_sha256": "8baa3a72f3d1c9263f3da26e5f2bb296f46db4ea02f4963b0703e495e63dd0aa",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more comprehensive and age-specific breakdown of sodium intake requirements that explicitly encompasses and updates the general guideline for children mentioned in the OLD passage."
+  },
+  "latency_ms": 811,
+  "usage_metadata": {
+    "promptTokenCount": 495,
+    "candidatesTokenCount": 66,
+    "totalTokenCount": 561,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 495
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

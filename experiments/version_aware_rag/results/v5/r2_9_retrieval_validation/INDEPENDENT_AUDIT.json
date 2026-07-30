@@ -1,0 +1,57 @@
+{
+  "schema_version": "v5-r2.9-independent-validation-audit-1",
+  "status": "verified",
+  "raw_row_count": 24,
+  "reported_metrics_match_raw_recomputation": true,
+  "shared_pool_hash_and_order_verified": true,
+  "recomputed": [
+    {
+      "system": "recency_lambda_0.75",
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "PAIR_PRESERVE": {
+          "required_micro_recall_at_3": 0.3333333333333333,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0
+        },
+        "BLOCK_RETAINED": {
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0
+        }
+      }
+    },
+    {
+      "system": "version_aware_explicit_history_pair",
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "PAIR_PRESERVE": {
+          "required_micro_recall_at_3": 0.75,
+          "both_evidence_coverage": 0.6666666666666666,
+          "deprecated_old_hit_rate": 0
+        },
+        "BLOCK_RETAINED": {
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0
+        }
+      }
+    }
+  ],
+  "version_aware_incomplete_pair_queries": [
+    {
+      "query_id": "r2.9-02-n6-historical-goal-current-tfa-replacement",
+      "required_recall_at_3": 0,
+      "seed_item_id": "r2.9-12-tfa-current-sub-one-percent-evidence::OLD",
+      "cause": "Highest-BM25 seed selected a competing lineage; the frozen pair boost correctly followed that seed but promoted the wrong pair."
+    },
+    {
+      "query_id": "r2.9-05-sugar-country-target-current-five-percent",
+      "required_recall_at_3": 0.5,
+      "seed_item_id": "r2.9-07-potassium-current-child-adjustment::CURRENT",
+      "cause": "Highest-BM25 seed selected a competing lineage; the frozen pair boost correctly followed that seed but promoted the wrong pair."
+    }
+  ],
+  "tuning_performed_after_validation": false,
+  "external_model_api_used": false
+}

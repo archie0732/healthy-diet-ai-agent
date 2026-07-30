@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-047",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "2638e5484f1c752879056591a531bd960253b62a3b50749ed8e6d31e4cfbbc19",
+  "response_sha256": "4067670537c8b4c7f2e44a79d87157836ffecbfb89fbd82467275cf36acaeda5",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.85,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general high-level guidance for a healthy dietary pattern across all life stages, while the NEW excerpt provides specific, nuanced nutritional recommendations for the distinct life stages of young adulthood and pregnancy."
+  },
+  "latency_ms": 888,
+  "usage_metadata": {
+    "promptTokenCount": 293,
+    "candidatesTokenCount": 80,
+    "totalTokenCount": 373,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 293
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

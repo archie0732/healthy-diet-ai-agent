@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2020-page-14-pass-0-1816571f|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "5f1372e0a77f7e777aaf8302b260ad90178e5a007b2dd0318bf9c37eb4a9d67a",
+  "response_sha256": "e45e917ada47288590cd97d4dae93ccb30798399b3b1c52cce99ee7bd4a16c97",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage identifies specific micronutrients of concern and their food sources, whereas the NEW passage provides broad dietary patterns (caloric intake, protein goals, dairy serving goals, and microbiome health). They address different aspects of nutrition and can be followed simultaneously."
+  },
+  "latency_ms": 795,
+  "usage_metadata": {
+    "promptTokenCount": 711,
+    "candidatesTokenCount": 81,
+    "totalTokenCount": 792,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 711
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-011",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "6e26b9ef18d5a57b43d7b1673e50938dfd0fa19866b07292f0864fb271fe40c9",
+  "response_sha256": "b2f1ae475915e19fa35460f4ae641dd0a3c8301accb68d7b0faf0ba4f1c83920",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general dietary guidance for all life stages, while the NEW excerpt provides specific, actionable recommendations for infant nutrition and vitamin D supplementation that were not present in the OLD excerpt."
+  },
+  "latency_ms": 980,
+  "usage_metadata": {
+    "promptTokenCount": 284,
+    "candidatesTokenCount": 76,
+    "totalTokenCount": 360,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 284
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

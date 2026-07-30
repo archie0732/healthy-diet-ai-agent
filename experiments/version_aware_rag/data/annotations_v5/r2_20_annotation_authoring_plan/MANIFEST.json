@@ -1,0 +1,78 @@
+{
+  "schema_version": "v5-r2.20-annotation-authoring-plan-manifest-1",
+  "status": "authoring_plan_frozen_before_query_authoring",
+  "record_count": 32,
+  "stratum_counts": {
+    "conditional_merge": 10,
+    "compatible_history": 10,
+    "current_only": 6,
+    "hard_negative_current": 6
+  },
+  "source_document_caps": {
+    "conditional_merge": 2,
+    "compatible_history": 2,
+    "current_only": 1,
+    "hard_negative_current": 1
+  },
+  "source_document_counts": {
+    "conditional_merge": {
+      "who-potassium-adverse-effects-review-2012": 2,
+      "who-potassium-2012": 2,
+      "who-nss-systematic-review-2022": 2,
+      "who-nss-2023": 2,
+      "who-sodium-2012": 2,
+      "who-lsss-2025": 2,
+      "who-physical-activity-web-annex-2020": 2,
+      "who-physical-activity-2020": 2,
+      "who-fao-trs-916-2003-part2": 2,
+      "who-total-fat-2023": 2
+    },
+    "compatible_history": {
+      "who-potassium-drinking-water-background-2009": 2,
+      "who-potassium-2012": 2,
+      "who-nss-systematic-review-2022": 2,
+      "who-nss-2023": 2,
+      "who-physical-activity-web-annex-2020": 2,
+      "who-physical-activity-2020": 2,
+      "who-sodium-2012": 2,
+      "who-lsss-2025": 2,
+      "who-fao-trs-916-2003-part2": 2,
+      "who-total-fat-2023": 2
+    },
+    "current_only": {
+      "who-potassium-adverse-effects-review-2012": 1,
+      "who-potassium-2012": 1,
+      "who-nss-systematic-review-2022": 1,
+      "who-nss-2023": 1,
+      "who-physical-activity-web-annex-2020": 1,
+      "who-physical-activity-2020": 1,
+      "who-sodium-2012": 1,
+      "who-lsss-2025": 1,
+      "who-complementary-feeding-2023": 1,
+      "who-carbohydrate-2023": 1,
+      "who-fao-trs-916-2003-part2": 1,
+      "who-total-fat-2023": 1
+    },
+    "hard_negative_current": {
+      "who-potassium-drinking-water-background-2009": 1,
+      "who-potassium-2012": 1,
+      "who-nss-systematic-review-2022": 1,
+      "who-nss-2023": 1,
+      "who-physical-activity-web-annex-2020": 1,
+      "who-physical-activity-2020": 1,
+      "who-sodium-2012": 1,
+      "who-lsss-2025": 1,
+      "who-complementary-feeding-2023": 1,
+      "who-carbohydrate-2023": 1,
+      "who-fao-trs-916-2003-part2": 1,
+      "who-total-fat-2023": 1
+    }
+  },
+  "source_document_caps_satisfied": true,
+  "candidate_groups_sha256": "fef31d9560dcf27af73152a0c3df850a1465fa643e9a250388d13ad5ffbd4de7",
+  "candidate_group_manifest_sha256": "0b55075f90da10874e0f0942d356c4f3043cf490fb99ad05f8d81febb272aee5",
+  "semantic_review_sha256": "904bdde3dd0e78e7880e95a369882a972ee7745deb386ef330b6c127e4922812",
+  "semantic_review_manifest_sha256": "4acc7e343a0c7cfb86a5006ce23bbe5bea9aeb1e1f7ce9f582bacfa249cc8dd9",
+  "authoring_plan_sha256": "98d11f0fa6962b0eb839c276ab7ceb4ab0dde0e99d86d88aa4dc950e38394c88",
+  "retrieval_allowed": false
+}

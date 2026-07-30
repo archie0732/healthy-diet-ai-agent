@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-011",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "86a7f4ed1f59211ef208428cf7cbf13da08cc5b25764d856da4962c18cc9c447",
+  "response_sha256": "473afed19bccc5dea05852a4b93d9be119cd0212e6bee31331e674ee99374cb3",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage explicitly replaces the recommendation for fat-free or low-fat dairy with a requirement for full-fat dairy, creating a conflict in nutritional guidance."
+  },
+  "latency_ms": 783,
+  "usage_metadata": {
+    "promptTokenCount": 330,
+    "candidatesTokenCount": 67,
+    "totalTokenCount": 397,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 330
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

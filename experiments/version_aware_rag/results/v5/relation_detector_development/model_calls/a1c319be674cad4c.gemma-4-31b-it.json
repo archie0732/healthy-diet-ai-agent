@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "bfc50e3d01d52df5216d79bb2f10f12a53ad7cf4d2f7dd768d59fc7314d945f5",
+  "response_sha256": "33aca8fd767479d74905b64af5a5ea6d691f6908b11216e98f7ecd3d12fc3ace",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 1,
+    "rationale": "The OLD passage provides definitions for key terms ('Eating Pattern', 'Nutrient Dense', 'Variety'), while the NEW passage provides specific dietary recommendations and serving goals. They are simultaneously applicable as the definitions in the OLD passage provide the conceptual framework for the terms used in the NEW passage (e.g., 'nutrient-dense', 'variety')."
+  },
+  "latency_ms": 5358,
+  "usage_metadata": {
+    "promptTokenCount": 1025,
+    "candidatesTokenCount": 89,
+    "totalTokenCount": 1114,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1025
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

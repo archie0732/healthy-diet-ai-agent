@@ -1,0 +1,16 @@
+import { createHash } from 'node:crypto';
+import { readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+const EXP = path.join(process.cwd(), 'experiments/version_aware_rag');
+const DIR = path.join(EXP, 'data/configs/v4_fresh_test_frozen');
+const guardPath = path.join(DIR, 'FRESH_TEST_GUARD.json');
+const amendmentPath = path.join(EXP, 'FRESH_TEST_DESIGN_AMENDMENT_01.md');
+const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex');
+const [guardText, amendmentText] = await Promise.all([readFile(guardPath, 'utf8'), readFile(amendmentPath, 'utf8')]);
+const guard = JSON.parse(guardText);
+if (guard.test_inventory_read_count !== 0 || guard.final_test_created || guard.test_retrieval_execution_count_completed !== 0) throw new Error('Design amendment is only allowed before final test creation and execution.');
+const record = { status: 'frozen_pretest_design_amendment', amendment_id: 'FRESH_TEST_DESIGN_AMENDMENT_01', amendment_sha256: sha256(amendmentText), outcome_data_available_when_recorded: false, policy_model_prompt_or_endpoint_change: false };
+const recordText = `${JSON.stringify(record, null, 2)}\n`;
+await writeFile(path.join(DIR, 'FRESH_TEST_DESIGN_AMENDMENT_01.json'), recordText, 'utf8');
+await writeFile(guardPath, `${JSON.stringify({ ...guard, status: 'fresh_source_corpus_and_design_amendment_frozen', design_amendment_sha256: sha256(recordText) }, null, 2)}\n`, 'utf8');
+console.log(JSON.stringify(record, null, 2));

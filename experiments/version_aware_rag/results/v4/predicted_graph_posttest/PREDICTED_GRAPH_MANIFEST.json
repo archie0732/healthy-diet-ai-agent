@@ -1,0 +1,9 @@
+{
+  "status": "predicted_graph_complete_posttest_diagnostic",
+  "record_count": 40,
+  "input_sha256": "9122f11035b7b282328e49abc6f2f53e3aacdd161c7fbd98b7ffc8eac870f754",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "predicted_graph_sha256": "4947bd1028a0b09efddb63aada80ea35000cee8ea0c6ff07179a48acdbc2d5a0",
+  "oracle_or_judgment_fields_read_during_prediction": false,
+  "claim_status": "post_test_diagnostic_only"
+}

@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-038",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "ec637d16d7d8c1ba1e93c94571ad5c1f37a755fd07f168e9b8bb397965770f8d",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-008-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=d on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-008-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=Guideline 3: Focus on meeting food group needs\r\nwith nutrient-dense foods and beverages,\r\nand stay within calorie limits.\r\nThe core elements that make up a healthy dietary pattern\r\nNutrient-dense foods provide vitamins,\r\ninclude:\r\nminerals, and other health-promoting\r\n* Vegetables of all types-dark green; red and orange;\r\ncomponents and have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-069-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nQUESTION\n\nAre butter and beef tallow excluded from recommended cooking fats in 2025-2030 as they were in 2020?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "f7c584119c2d3896101a2104330bf1f4fd8879c959e26986e874dc7fda032491",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-008-new",
+    "v4fresh-cand-pair-v4-new-008-old",
+    "v4fresh-cand-pair-v4-new-069-new"
+  ],
+  "answer": "*   Question: Are butter and beef tallow excluded from recommended cooking fats in 2025-2030 as they were in 2020?\n    *   Constraint: Answer only from supplied passages. Every factual claim must end with [chunk_id]. Preserve boundaries. No outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030): \"When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\" [v4fresh-cand-pair-v4-new-008-new]\n    *   Passage 2 (dga-2020, 2020-2025): \"Oils, including vegetable oils and oils in food, such as seafood and nuts\" [v4fresh-cand-pair-v4-new-008-old]. (Does not explicitly mention butter or beef tallow, but lists vegetable oils and oils in food).\n    *   Passage 3 (dga-2025, 2025-2030): \"When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\" [v4fresh-cand-pair-v4-new-069-new]\n\n    *   For 2025-2030: Butter and beef tallow are listed as \"other options\" when cooking with or adding fats to meals, although oils with essential fatty acids (like olive oil) should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new].\n    *   For 2020-2025: The provided text lists \"Oils, including vegetable oils and oils in food, such as seafood and nuts\" [v4fresh-cand-pair-v4-new-008-old]. It does not explicitly state whether butter and beef tallow were \"excluded,\" only what was included.\n\n    *   The user asks if they are excluded in 2025-2030 *as they were in 2020*.\n    *   In 2025-2030, they are not excluded; they are listed as \"other options\" [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new].\n    *   Regarding 2020, the text provided does not explicitly say they were excluded, only that oils included vegetable oils and oils in food like seafood and nuts [v4fresh-cand-pair-v4-new-008-old].\n\n    *   State that for 2025-2030, butter and beef tallow are listed as \"other options\" for cooking with or adding fats to meals, though oils with essential fatty acids (such as olive oil) are prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new].\n    *   Regarding 2020, the provided evidence lists oils as including \"vegetable oils and oils in food, such as seafood and nuts\" [v4fresh-cand-pair-v4-new-008-old], but does not explicitly state if butter and beef tallow were excluded.In the 2025-2030 guidelines, butter and beef tallow are not excluded; they are listed as \"other options\" when adding fats to meals or cooking, although oils with essential fatty acids, such as olive oil, should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new]. The provided evidence for 2020-2025 lists oils as including \"vegetable oils and oils in food, such as seafood and nuts,\" but does not explicitly state whether butter and beef tallow were excluded [v4fresh-cand-pair-v4-new-008-old].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "7f900d74b9bdb84ac56d4292dc6b463684069e04c2248c6dc6549a3b2fd1fe11",
+    "response_sha256": "43526b770cce06c136db70dda68d7fb07bd2e9c97782565d58c3258a2330f98d",
+    "latency_ms": 27225,
+    "usage_metadata": {
+      "promptTokenCount": 1067,
+      "candidatesTokenCount": 157,
+      "totalTokenCount": 2012,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1067
+        }
+      ],
+      "thoughtsTokenCount": 788,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: Are butter and beef tallow excluded from recommended cooking fats in 2025-2030 as they were in 2020?\n    *   Constraint: Answer only from supplied passages. Every factual claim must end with [chunk_id]. Preserve boundaries. No outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030): \"When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\" [v4fresh-cand-pair-v4-new-008-new]\n    *   Passage 2 (dga-2020, 2020-2025): \"Oils, including vegetable oils and oils in food, such as seafood and nuts\" [v4fresh-cand-pair-v4-new-008-old]. (Does not explicitly mention butter or beef tallow, but lists vegetable oils and oils in food).\n    *   Passage 3 (dga-2025, 2025-2030): \"When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\" [v4fresh-cand-pair-v4-new-069-new]\n\n    *   For 2025-2030: Butter and beef tallow are listed as \"other options\" when cooking with or adding fats to meals, although oils with essential fatty acids (like olive oil) should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new].\n    *   For 2020-2025: The provided text lists \"Oils, including vegetable oils and oils in food, such as seafood and nuts\" [v4fresh-cand-pair-v4-new-008-old]. It does not explicitly state whether butter and beef tallow were \"excluded,\" only what was included.\n\n    *   The user asks if they are excluded in 2025-2030 *as they were in 2020*.\n    *   In 2025-2030, they are not excluded; they are listed as \"other options\" [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new].\n    *   Regarding 2020, the text provided does not explicitly say they were excluded, only that oils included vegetable oils and oils in food like seafood and nuts [v4fresh-cand-pair-v4-new-008-old].\n\n    *   State that for 2025-2030, butter and beef tallow are listed as \"other options\" for cooking with or adding fats to meals, though oils with essential fatty acids (such as olive oil) are prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new].\n    *   Regarding 2020, the provided evidence lists oils as including \"vegetable oils and oils in food, such as seafood and nuts\" [v4fresh-cand-pair-v4-new-008-old], but does not explicitly state if butter and beef tallow were excluded.",
+                "thought": true
+              },
+              {
+                "text": "In the 2025-2030 guidelines, butter and beef tallow are not excluded; they are listed as \"other options\" when adding fats to meals or cooking, although oils with essential fatty acids, such as olive oil, should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-069-new]. The provided evidence for 2020-2025 lists oils as including \"vegetable oils and oils in food, such as seafood and nuts,\" but does not explicitly state whether butter and beef tallow were excluded [v4fresh-cand-pair-v4-new-008-old]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1067,
+        "candidatesTokenCount": 157,
+        "totalTokenCount": 2012,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1067
+          }
+        ],
+        "thoughtsTokenCount": 788,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "4IFgar77EMqmvr0P6LKrwAM"
+    }
+  }
+}

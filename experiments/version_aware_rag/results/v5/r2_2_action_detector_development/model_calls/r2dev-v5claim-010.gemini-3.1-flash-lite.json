@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-010",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "44e20bb190cc6a15d3a25fb9a19e259e0435a7fe097456e06ed6ce80053cf867",
+  "response_sha256": "998d79309ff28e8e6e00553df364017d5f3cab7c08bb34b0f460e08653b554e0",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "Specific daily quantitative limits of 2 drinks or less for men and 1 drink or less for women when alcohol is consumed.",
+    "confidence": 1,
+    "rationale": "The current passage focuses on qualitative guidance and avoidance for specific groups but removes the specific quantitative daily thresholds for moderate consumption provided in the old passage.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 998,
+  "usage_metadata": {
+    "promptTokenCount": 547,
+    "candidatesTokenCount": 98,
+    "totalTokenCount": 645,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 547
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

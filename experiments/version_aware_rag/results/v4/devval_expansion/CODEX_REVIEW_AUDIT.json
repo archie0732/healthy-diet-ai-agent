@@ -1,0 +1,23 @@
+{
+  "status": "codex_review_verified_for_development_only",
+  "generated_at": "2026-07-21T07:46:40.213Z",
+  "counts": {
+    "records": 24,
+    "accepted_without_change": 12,
+    "revised_then_accepted": 12,
+    "unique_lineage_groups": 24,
+    "unique_evidence_signatures": 24,
+    "fresh_test_overlap_chunks": 0
+  },
+  "checksums": {
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "raw_ledger_sha256": "07a1b763c2dc9e0c4238307ecbc11e1d2dfef095bff63f9e56054a0ef7cf9abb",
+    "reviewed_ledger_sha256": "2ad7fba1c446a725b0d375ac8a2b321b7e3f70ffb61fdba499b9f88b1b9b7ffa",
+    "review_report_sha256": "f32471a200a25e52b628ec1bc3586aecd2c12325c3d77de83c2e3bafb1c5eab7"
+  },
+  "development_exploratory_evaluation_allowed": true,
+  "validation_confirmation_allowed": false,
+  "promotion_allowed": false,
+  "gate_reason": "Codex review is not independent human adjudication; validation confirmation and promotion remain blocked pending user or independent human signoff.",
+  "failures": []
+}

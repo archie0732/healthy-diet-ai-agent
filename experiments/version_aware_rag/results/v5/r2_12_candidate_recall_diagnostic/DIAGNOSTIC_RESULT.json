@@ -1,0 +1,77 @@
+{
+  "schema_version": "v5-r2.12-candidate-diagnostic-result-1",
+  "status": "diagnostic_complete_confirmation_required",
+  "development_only": true,
+  "outcome_exposed_r2_11_data": true,
+  "promotion_evidence": false,
+  "all_pools_completed_before_judgment_read": true,
+  "judgment_read_count": 1,
+  "query_count": 56,
+  "corpus_item_count": 98,
+  "variant_count": 4,
+  "selected_diagnostic_variant": "bm25_group_expand_seed14",
+  "summaries": [
+    {
+      "variant": "whole_query_bm25",
+      "required_micro_recall_at_20": 0.8863636363636364,
+      "required_candidate_recall_failure_count": 10,
+      "implicit_required_micro_recall_at_20": 0.859375,
+      "all_required_query_rate": 0.8214285714285714,
+      "changed_pool_position_count": 0,
+      "mean_unsafe_candidate_count": 0.14285714285714285,
+      "by_stratum": {
+        "conditional_merge": 0.90625,
+        "compatible_history": 0.8125,
+        "current_only": 1,
+        "hard_negative_current": 0.9166666666666666
+      }
+    },
+    {
+      "variant": "clause_rrf_k60",
+      "required_micro_recall_at_20": 0.8636363636363636,
+      "required_candidate_recall_failure_count": 12,
+      "implicit_required_micro_recall_at_20": 0.828125,
+      "all_required_query_rate": 0.7857142857142857,
+      "changed_pool_position_count": 647,
+      "mean_unsafe_candidate_count": 0.14285714285714285,
+      "by_stratum": {
+        "conditional_merge": 0.84375,
+        "compatible_history": 0.8125,
+        "current_only": 1,
+        "hard_negative_current": 0.9166666666666666
+      }
+    },
+    {
+      "variant": "bm25_group_expand_seed14",
+      "required_micro_recall_at_20": 0.9659090909090909,
+      "required_candidate_recall_failure_count": 3,
+      "implicit_required_micro_recall_at_20": 0.96875,
+      "all_required_query_rate": 0.9464285714285714,
+      "changed_pool_position_count": 306,
+      "mean_unsafe_candidate_count": 0.17857142857142858,
+      "by_stratum": {
+        "conditional_merge": 0.96875,
+        "compatible_history": 0.96875,
+        "current_only": 1,
+        "hard_negative_current": 0.9166666666666666
+      }
+    },
+    {
+      "variant": "clause_rrf_group_expand_seed14",
+      "required_micro_recall_at_20": 0.9431818181818182,
+      "required_candidate_recall_failure_count": 5,
+      "implicit_required_micro_recall_at_20": 0.953125,
+      "all_required_query_rate": 0.9107142857142857,
+      "changed_pool_position_count": 755,
+      "mean_unsafe_candidate_count": 0.17857142857142858,
+      "by_stratum": {
+        "conditional_merge": 0.96875,
+        "compatible_history": 0.9375,
+        "current_only": 0.9166666666666666,
+        "hard_negative_current": 0.9166666666666666
+      }
+    }
+  ],
+  "confirmation_required": true,
+  "claim_boundary": "Diagnostic repair selection only; a new lineage-disjoint owner-approved Development confirmation set is required."
+}

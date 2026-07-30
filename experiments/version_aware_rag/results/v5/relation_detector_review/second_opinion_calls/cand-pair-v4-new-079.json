@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-079",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "eeb5af3498233822316011a487338ef20d1979930537777ea8a8fb800d5a6af8",
+  "response_sha256": "9a6e3830abb7dc405d95f1a2ce05aebfa29163701fc15e25556a80284adf2842",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general dietary pattern advice, whereas the NEW excerpt offers specific guidance for older adults and breastfeeding individuals, addressing nutrient needs and potential supplementation."
+  },
+  "latency_ms": 811,
+  "usage_metadata": {
+    "promptTokenCount": 288,
+    "candidatesTokenCount": 69,
+    "totalTokenCount": 357,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 288
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

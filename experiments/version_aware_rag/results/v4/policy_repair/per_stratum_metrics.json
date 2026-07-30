@@ -1,0 +1,74 @@
+{
+  "current_only": {
+    "recency_baseline": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 1,
+      "required_chunk_micro_recall_at_3": 1,
+      "mean_query_ndcg_at_3": 1,
+      "query_stale_hit_rate_at_3": 0,
+      "unsafe_chunk_count_at_3": 1
+    },
+    "full_oracle": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 1,
+      "required_chunk_micro_recall_at_3": 1,
+      "mean_query_ndcg_at_3": 0.6309,
+      "query_stale_hit_rate_at_3": 0,
+      "unsafe_chunk_count_at_3": 4
+    }
+  },
+  "compatible_history": {
+    "recency_baseline": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 1,
+      "required_chunk_micro_recall_at_3": 1,
+      "mean_query_ndcg_at_3": 1,
+      "query_stale_hit_rate_at_3": 0,
+      "unsafe_chunk_count_at_3": 4
+    },
+    "full_oracle": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 1,
+      "required_chunk_micro_recall_at_3": 1,
+      "mean_query_ndcg_at_3": 0.8155,
+      "query_stale_hit_rate_at_3": 0,
+      "unsafe_chunk_count_at_3": 4
+    }
+  },
+  "conditional_merge": {
+    "recency_baseline": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 0.5,
+      "required_chunk_micro_recall_at_3": 0.5,
+      "mean_query_ndcg_at_3": 0.6131,
+      "query_stale_hit_rate_at_3": 0,
+      "unsafe_chunk_count_at_3": 4
+    },
+    "full_oracle": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 1,
+      "required_chunk_micro_recall_at_3": 1,
+      "mean_query_ndcg_at_3": 0.8467,
+      "query_stale_hit_rate_at_3": 0,
+      "unsafe_chunk_count_at_3": 2
+    }
+  },
+  "newer_irrelevant": {
+    "recency_baseline": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 0,
+      "required_chunk_micro_recall_at_3": 0,
+      "mean_query_ndcg_at_3": 0,
+      "query_stale_hit_rate_at_3": 0.5,
+      "unsafe_chunk_count_at_3": 6
+    },
+    "full_oracle": {
+      "query_count": 2,
+      "mean_query_recall_at_3": 0,
+      "required_chunk_micro_recall_at_3": 0,
+      "mean_query_ndcg_at_3": 0,
+      "query_stale_hit_rate_at_3": 0.5,
+      "unsafe_chunk_count_at_3": 6
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-018",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "33fe6c1de5d49ea54b93cb3af6165460426aed80364b4c8a64204d4766c4c250",
+  "response_sha256": "4bb2052d750853ca16104d4397222c53579ca62a95dba056b7b30a979e477d75",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more comprehensive and updated set of guidelines for vegetable and fruit consumption, including specific serving goals and preparation methods, which effectively replaces the general categories and recommendations found in the OLD passage."
+  },
+  "latency_ms": 2647,
+  "usage_metadata": {
+    "promptTokenCount": 428,
+    "candidatesTokenCount": 64,
+    "totalTokenCount": 492,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 428
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

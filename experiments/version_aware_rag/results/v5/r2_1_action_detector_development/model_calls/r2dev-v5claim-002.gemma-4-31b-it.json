@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-002",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "0bda4b4d85af479e739409caa1374fbe49fd5b9d5804c87636fef0a23443776b",
+  "response_sha256": "2adfd150de51f1a7b9185cddde5deeea197c00b46b1f81660ce4213b9e53f43c",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage covers all the items listed in the OLD passage (fat-free/low-fat dairy, milk, yogurt, cheese, fortified soy beverages) and expands upon them by adding lactose-free versions. The OLD passage provides no unique information or constraints that are not already present or superseded by the CURRENT passage."
+  },
+  "latency_ms": 3346,
+  "usage_metadata": {
+    "promptTokenCount": 396,
+    "candidatesTokenCount": 88,
+    "totalTokenCount": 484,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 396
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

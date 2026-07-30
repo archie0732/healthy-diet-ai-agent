@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-007",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "d0b4519a3ea1186f4816edb2d1130acebe37964efa766c6ce850e1a77ab5006f",
+    "response_sha256": "5be34ee3d5b4f2da85519eff31ac747dbbd1f3096b5f2f278f685551a2d7e65a",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 15051,
+    "usage": {
+      "promptTokenCount": 705,
+      "candidatesTokenCount": 238,
+      "totalTokenCount": 2005,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 705
+        }
+      ],
+      "thoughtsTokenCount": 1062,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:23:37.596Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to WHO guidelines, what are the specific recommended intake limits for free sugars to manage body weight throughout the lifecourse, and why is using non-sugar sweeteners (NSS) conditionally recommended against as a method to achieve this weight control?\",\n  \"target_population\": [\n    \"adults\",\n    \"children\"\n  ],\n  \"conditions\": [\n    \"weight control\",\n    \"reducing free sugars intake\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must combine information from both passages. The 2015 guideline provides the specific intake limits for free sugars (reducing to less than 10% of total energy intake, and conditionally below 5%) to manage body weight throughout the lifecourse. The 2023 guideline provides the conditional recommendation against using non-sugar sweeteners (NSS) for weight control, explaining that there is no evidence of long-term benefit on body fatness in adults or children, alongside potential long-term risks like type 2 diabetes, CVDs, and mortality in adults.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 705,
+      "candidatesTokenCount": 238,
+      "totalTokenCount": 2005,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 705
+        }
+      ],
+      "thoughtsTokenCount": 1062,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "PPRearnoDMq3vr0P98WZ2A8"
+  }
+}

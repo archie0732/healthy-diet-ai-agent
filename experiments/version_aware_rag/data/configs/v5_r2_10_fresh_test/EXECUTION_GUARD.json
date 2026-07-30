@@ -1,0 +1,12 @@
+{
+  "status": "r2_10_fresh_test_passed_locked_scope_limited",
+  "manifest_sha256": "eca8a089d18fc27123aa1eaacd4f6fcc4bb1fe259f1558ad842c33da96e281d3",
+  "owner_signoff_sha256": "e3e0dcb5666ff317e06053f47fc0816de5461cd239800af8a766d3814c868961",
+  "approved_review_packet_content_sha256": "b3923d62ba18fed6ed70b21cfe80819885768c378ce5afa0e1846c54c7d69ca3",
+  "fresh_test_execution_count": 1,
+  "judgments_may_be_read_only_after_all_retrieval_calls": true,
+  "tuning_after_fresh_test_allowed": false,
+  "external_model_api_allowed": false,
+  "fresh_test_result_sha256": "1c4e4aa7593222437fc7ee28585ccfa6c8a24f3e43e8b9ceabed9020d1618b7a",
+  "raw_retrieval_sha256": "763419ed0c69f3f2aff6a8249b67fc1e14b7bd8264b987632e7a3fb37e2be367"
+}

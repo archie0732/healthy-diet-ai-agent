@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-008",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "0aa5a20fcb6ca35d5caf8c11bb36547df584d9b356b8c5bf26bf837cec1cf89e",
+  "response_sha256": "0a4f2b9f0177d68e93bf1f20fd5237646cbda39a26b70759a98e5c6476c2f2de",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The CURRENT passage explicitly defines the specific age-based sodium limits for children under 14 (Ages 1-3, 4-8, and 9-13) that the OLD passage referenced generally, thereby subsuming the OLD requirement.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 797,
+  "usage_metadata": {
+    "promptTokenCount": 552,
+    "candidatesTokenCount": 95,
+    "totalTokenCount": 647,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 552
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

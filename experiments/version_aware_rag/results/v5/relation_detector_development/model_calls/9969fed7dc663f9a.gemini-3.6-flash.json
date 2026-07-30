@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-44-pass-0-b82f56fd|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "21c806ebe4c3a7e052bc717ccf2e4595541f26c4083db77587dbb45719b9e1c9",
+  "response_sha256": "6657f6c0546d32ef4ebc01e215b95c10c7c49a5b14f8b6c2033110696c316607",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.88,
+    "rationale": "The NEW passage updates dietary guidance on meat and protein intake by advising to 'Prioritize high-quality, nutrient-dense protein foods' including 'poultry, seafood, and red meat' and establishing explicit target protein goals ('1.2-1.6 grams of protein per kilogram of body weight per day'), updating the OLD passage's focus on evidence linking 'lower intake of meats as well as processed meats and processed poultry' to reduced CVD risk."
+  },
+  "latency_ms": 35930,
+  "usage_metadata": {
+    "promptTokenCount": 1005,
+    "candidatesTokenCount": 124,
+    "totalTokenCount": 1845,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1005
+      }
+    ],
+    "thoughtsTokenCount": 716,
+    "serviceTier": "standard"
+  }
+}

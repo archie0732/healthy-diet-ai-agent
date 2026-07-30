@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-019",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "50578a1671af7a4f404e807d733a351eac8e7cbefa248e80b6354a4aed7dc72e",
+  "response_sha256": "57fece627999700c2d9246150bd19a645626bb158f84a67f25af3c304b547872",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage updates the general guideline of 'at least half whole grain' with specific serving goals (2-4 servings) and explicit instructions to reduce refined carbohydrates, effectively replacing the OLD general requirement."
+  },
+  "latency_ms": 3077,
+  "usage_metadata": {
+    "promptTokenCount": 411,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 483,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 411
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

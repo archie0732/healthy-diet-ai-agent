@@ -1,0 +1,7 @@
+{
+  "status": "frozen_pretest_design_amendment",
+  "amendment_id": "FRESH_TEST_DESIGN_AMENDMENT_01",
+  "amendment_sha256": "1d40c94cff34c153f7ac57ddc4bc138a7ad919de86b885fc985f65b792f84fd0",
+  "outcome_data_available_when_recorded": false,
+  "policy_model_prompt_or_endpoint_change": false
+}

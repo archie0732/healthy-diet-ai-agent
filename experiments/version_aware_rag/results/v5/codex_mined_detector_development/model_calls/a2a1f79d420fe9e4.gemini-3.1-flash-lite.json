@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-021",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "057c21e01c7bc938d4b1013499bdb6565241a9e4a6eae06906e6a43e7ac5eaa2",
+  "response_sha256": "e394b16b1e2b245e9e1ac0c039c797a5cb3bd488cd2e5f09c163415cbbf3d24b",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.95,
+    "rationale": "The OLD passage provides quantitative limits for intake, while the NEW passage provides descriptive guidance on how to identify added sugars on labels; they are distinct, non-overlapping, and compatible information."
+  },
+  "latency_ms": 806,
+  "usage_metadata": {
+    "promptTokenCount": 389,
+    "candidatesTokenCount": 69,
+    "totalTokenCount": 458,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 389
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

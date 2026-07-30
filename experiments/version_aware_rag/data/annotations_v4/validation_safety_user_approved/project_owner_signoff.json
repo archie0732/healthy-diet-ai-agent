@@ -1,0 +1,15 @@
+{
+  "status": "project_owner_approved",
+  "owner_statement": "全部同意",
+  "owner_signoff_date": "2026-07-22",
+  "scope": "All 40 Codex-provisional validation safety labels, including seven neither decisions, without modification.",
+  "limitation": "Project-owner confirmation is not independent blinded or clinical review.",
+  "provisional_ledger_sha256": "3ec8447f741cbda28247abb88b9f9cd64caa12187535edb781fc1497b9d6d1bf",
+  "approved_ledger_sha256": "7b3eed864ebeb5fff5cab0375665cec1beff6843c350033c6abdad689be54370",
+  "counts": {
+    "citation_safe": 33,
+    "neither": 7,
+    "stale": 0,
+    "forbidden": 0
+  }
+}

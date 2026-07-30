@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2020-page-16-pass-0-5be4fdc2|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "85a8fc2edb852f0df11e1183081fde62e2b2083bd78555fd98dc1013b99e0de4",
+  "response_sha256": "ca0c11d25b45e9b72069cc6656085c338a1113d6d37bac9672fa9d12446ae97f",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage focuses on the ratio of whole grains to refined grains ('at least half of total grain consumption'), while the NEW passage provides specific daily serving goals ('2-4 servings per day') and lists examples of refined carbohydrates to reduce. Both provide distinct, compatible guidelines for grain intake."
+  },
+  "latency_ms": 7337,
+  "usage_metadata": {
+    "promptTokenCount": 704,
+    "candidatesTokenCount": 81,
+    "totalTokenCount": 785,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 704
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v5-r2.8-shared-pool-development-1",
+  "status": "development_inputs_and_judgments_separated_before_retrieval",
+  "source_r2_7_development_sha256": "0258f5e54374d366eac2544ed4d52f0904560b9df9442f44203d8a78c582075c",
+  "protocol_sha256": "5ae7a373238a32e355f4c2c869bebf7f0adecdde838634c4a6f32fa26f5a8e51",
+  "query_count": 16,
+  "corpus_item_count": 32,
+  "candidate_pool_size": 20,
+  "top_k": 3,
+  "recency_lambda": 0.75,
+  "history_pair_boost": 0.75,
+  "retrieval_inputs_sha256": "727318e46aedce02ad9836ca67fb6d8b282cf9e3cebff9f0af211260260ac286",
+  "judgments_sealed_sha256": "d1caed6c4bc22b6467a240c5c82464e881aa48787ac65cebc95aa6dcf2302dad",
+  "validation_file_read": false,
+  "external_model_api_used": false,
+  "retrieval_execution_count": 0
+}

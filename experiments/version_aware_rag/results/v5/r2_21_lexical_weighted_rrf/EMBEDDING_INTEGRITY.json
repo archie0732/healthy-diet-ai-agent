@@ -1,0 +1,11 @@
+{
+  "schema_version": "v5-r2.21-embedding-integrity-1",
+  "document_embedding_count": 148,
+  "query_embedding_count": 32,
+  "dimensions": [
+    384
+  ],
+  "all_finite": true,
+  "all_l2_normalized": true,
+  "all_embeddings_completed_before_judgment_read": true
+}

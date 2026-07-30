@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-021",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "3a599b8310b3613663eb423de463ecb02112241b0f7c5287bc2ca4461d407e05",
+  "response_sha256": "7ea48cef5d9b149a64f32b69b126e3b4449f389d8fe0b62b05b3d66a510f9a85",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 1,
+    "rationale": "The OLD passage provides quantitative limits on added sugar intake based on age ('Less than 10% of calories per day starting at age 2'), while the NEW passage provides qualitative guidance on how to identify added sugars on labels ('look for ingredients that include the word \"sugar\" or \"syrup\" or end in \"-ose\"'). Both are simultaneously applicable."
+  },
+  "latency_ms": 3652,
+  "usage_metadata": {
+    "promptTokenCount": 389,
+    "candidatesTokenCount": 103,
+    "totalTokenCount": 492,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 389
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

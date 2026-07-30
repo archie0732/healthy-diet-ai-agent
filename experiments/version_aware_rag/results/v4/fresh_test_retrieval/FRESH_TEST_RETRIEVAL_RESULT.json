@@ -1,0 +1,103 @@
+{
+  "status": "fresh_test_retrieval_complete",
+  "execution_count": 1,
+  "tuning_after_test": false,
+  "sealed_test_sha256": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+  "frozen_package_sha256": "c30f464414d70ef816abda548ef8e90e1d7196adc0df3ce51f65ae63eef21917",
+  "source_corpus_sha256": "78f2fb0d3b77514cd8c7c930840b9b3dcd828f07f77b5389ebb8b6a321b2a088",
+  "metrics": {
+    "recency": {
+      "all": {
+        "query_count": 40,
+        "required_micro_recall_at_3": 0.116667,
+        "current_required_micro_recall_at_3": 0.175,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "current_only": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.1,
+        "current_required_micro_recall_at_3": 0.1,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "conditional_merge": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.05,
+        "current_required_micro_recall_at_3": 0.1,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "compatible_history": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.15,
+        "current_required_micro_recall_at_3": 0.3,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "hard_negative": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.2,
+        "current_required_micro_recall_at_3": 0.2,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      }
+    },
+    "oracle_cross_0.5": {
+      "all": {
+        "query_count": 40,
+        "required_micro_recall_at_3": 0.333333,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0.2,
+        "deprecated_hit_rate_at_3": 0.025,
+        "forbidden_hit_rate_at_3": 0.016667
+      },
+      "current_only": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.4,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0.033333,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "conditional_merge": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.3,
+        "current_required_micro_recall_at_3": 0.5,
+        "retained_required_micro_recall_at_3": 0.1,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "compatible_history": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.3,
+        "current_required_micro_recall_at_3": 0.3,
+        "retained_required_micro_recall_at_3": 0.3,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "hard_negative": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.4,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0.066667,
+        "forbidden_hit_rate_at_3": 0.066667
+      }
+    }
+  },
+  "gate": {
+    "conditional_merge_noninferiority": true,
+    "compatible_history_noninferiority": true,
+    "retained_history_strict_improvement": true,
+    "current_only_deprecated_nonincrease": false,
+    "hard_negative_forbidden_nonincrease": false
+  },
+  "full_fresh_retrieval_gate_passed": false,
+  "claim_boundary": "Oracle retrieval results measure attainable policy value, not deployability. Publication-grade answer claims require independent blinded human evaluation."
+}

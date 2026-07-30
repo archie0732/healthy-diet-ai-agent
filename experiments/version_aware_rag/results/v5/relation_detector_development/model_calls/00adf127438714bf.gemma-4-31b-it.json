@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-53-pass-0-44ecc419|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "0f7f86e1537fe2b48cf29df22e436639e18458dbe58dd83f2a7a8b4e1de3a731",
+  "response_sha256": "348a8d731b14e64fe1367af7cf0570d59d8652d56068dd724921b14b9d2171ff",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The OLD passage states 'Adequate evidence is not available for a quantitative limit for dietary cholesterol specific to the Dietary Guidelines,' while the NEW passage explicitly updates this to 'No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.'"
+  },
+  "latency_ms": 2770,
+  "usage_metadata": {
+    "promptTokenCount": 1014,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 1084,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1014
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

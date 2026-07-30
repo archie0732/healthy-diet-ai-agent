@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2020-page-19-pass-0-ce63b99c|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "a63ea531251b5d2d5468a4a7c0bf8c2820da6b61bb36f6e9d2f30c84c4f5b0f9",
+  "response_sha256": "f8d8b5dd5145c0fcf9bca60d7efe07587a06fc39780d50d35c668d4c88adcb6e",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The NEW passage replaces the OLD guidance on fruit consumption by establishing specific serving goals (2 servings per day) and updating recommendations for juice consumption ('limited portions or diluted') compared to the OLD guidance, effectively updating the operational framework for fruit intake."
+  },
+  "latency_ms": 792,
+  "usage_metadata": {
+    "promptTokenCount": 764,
+    "candidatesTokenCount": 80,
+    "totalTokenCount": 844,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 764
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

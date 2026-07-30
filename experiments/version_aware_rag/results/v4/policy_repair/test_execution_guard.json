@@ -1,0 +1,27 @@
+{
+  "test_split_invocation_count": 0,
+  "test_split_file_read": false,
+  "judgments_read_after_retrieval": true,
+  "file_read_events": [
+    {
+      "path": "experiments\\version_aware_rag\\data\\corpus_v3\\chunks.jsonl",
+      "phase": "retrieval"
+    },
+    {
+      "path": "experiments\\version_aware_rag\\data\\annotations_v3\\queries.jsonl",
+      "phase": "retrieval"
+    },
+    {
+      "path": "experiments\\version_aware_rag\\data\\splits_v3\\development.json",
+      "phase": "retrieval"
+    },
+    {
+      "path": "experiments\\version_aware_rag\\data\\splits_v3\\validation.json",
+      "phase": "retrieval"
+    },
+    {
+      "path": "experiments\\version_aware_rag\\data\\annotations_v3\\judgments.adjudicated.jsonl",
+      "phase": "scoring"
+    }
+  ]
+}

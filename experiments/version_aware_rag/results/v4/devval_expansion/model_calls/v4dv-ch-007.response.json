@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-007",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "2d29302e0a47097f5fc3f6039f547f0abf7b96cb2249a52d45f659edd0601f04",
+    "response_sha256": "05b38b54cdca4c4ec8b65f3f2ca803bc3578e479f6387897ef9183cc53fd2c93",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 6201,
+    "usage": {
+      "promptTokenCount": 774,
+      "candidatesTokenCount": 238,
+      "totalTokenCount": 2266,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 774
+        }
+      ],
+      "thoughtsTokenCount": 1254,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:28:55.000Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\"query_text\": \"For individuals aiming to reduce their free sugars intake, what is the scientific basis for the conditional recommendation to limit free sugars to less than 5% of total energy intake, and why is substituting these sugars with non-sugar sweeteners (NSS) discouraged as a means to achieve a healthy diet?\", \"target_population\": [\"individuals aiming to reduce free sugars intake\"], \"conditions\": [\"limiting free sugars to less than 5% of total energy intake\", \"avoiding substitution of free sugars with non-sugar sweeteners (NSS)\"], \"draft_rationale\": \"To answer this query, the user must synthesize information from both documents. The 2015 document provides the basis for the conditional recommendation to limit free sugars to less than 5% of total energy intake (very low quality evidence from ecological studies showing a positive dose-response relationship between free sugars intake and dental caries). The 2023 document explains why this reduction should not be achieved via NSS substitution (simply replacing free sugars with NSS leaves overall diet quality largely unaffected, and instead, naturally occurring sweetness like fruits or minimally processed unsweetened foods should be preferred).\"}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 774,
+      "candidatesTokenCount": 238,
+      "totalTokenCount": 2266,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 774
+        }
+      ],
+      "thoughtsTokenCount": 1254,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "sx9fas2vDprY1e8Px9_igQw"
+  }
+}

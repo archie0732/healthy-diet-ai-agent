@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-019",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "069510900c8e30976ad0dd8f4ced44cd84ec4826a8e7034afd558983ee14d69b",
+  "response_sha256": "87f4faa627f3a31002f8012e04fd24d030af9ffa9e6166add3b0dd4c31768d5c",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The specific requirement that at least half of all grains consumed should be whole grain.",
+    "confidence": 1,
+    "rationale": "The OLD passage provides a quantitative ratio (at least half), whereas the CURRENT passage provides a serving range (2-4 servings) and a general prioritization of whole grains without specifying the minimum proportion of total grain intake.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 3433,
+  "usage_metadata": {
+    "promptTokenCount": 468,
+    "candidatesTokenCount": 92,
+    "totalTokenCount": 560,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 468
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

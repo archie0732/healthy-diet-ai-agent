@@ -408,6 +408,44 @@ bun test
 - Daily Planning Log: [technical_docs/DAILY_PLANNING_LOG.md](technical_docs/DAILY_PLANNING_LOG.md)
 - RAG Analysis Document (ZH): [technical_docs/RAG_AGENT_ANALYSIS_ZH.md](technical_docs/RAG_AGENT_ANALYSIS_ZH.md)
 
+## Version-Aware RAG R2.19
+
+The Development-only R2.19 experiment adds four checksum-verified WHO source
+documents and an offline MiniLM q8 candidate retriever. On outcome-exposed
+R2.16 data, the frozen BM25-MiniLM reciprocal-rank fusion reached required
+Recall@20 of `0.9615`. This is diagnostic model selection only; a new
+lineage-disjoint, owner-approved confirmation is still required. See
+`experiments/version_aware_rag/V5_R2_19_NEURAL_HYBRID_DIAGNOSTIC_RESULT.md`.
+
+## Version-Aware RAG R2.20
+
+R2.20 executed one new 32-record, lineage-disjoint Development confirmation for
+the R2.19-selected BM25-MiniLM RRF candidate generator and the R2.16
+Top-6-anchored pair reranker. Candidate Recall@20 reached `0.9808`, and all
+three strict improvements passed, but current-only Recall@3 decreased from
+`1.0000` to `0.8333`. The gate therefore failed and is locked at one
+execution. See
+`experiments/version_aware_rag/V5_R2_20_NEURAL_HYBRID_CONFIRMATION_RESULT.md`.
+
+## Version-Aware RAG R2.21
+
+R2.21 tested lexical:dense RRF weights of 1:1, 2:1, and 3:1 on the
+outcome-exposed R2.20 Development data. None recovered the current-only
+noninferiority failure, so no repair was selected. Experimental work should
+now be reported as a bounded Development ablation rather than a promoted
+system. See `experiments/version_aware_rag/PAPER_HANDOFF_AFTER_R2_21.md`.
+
+## Version-Aware RAG R2.22
+
+R2.22 adds a checksum-frozen, A/B-order-blinded independent-context GPT-5.6
+review of all 32 R2.20 questions. It completed 32/32 judgments with no schema
+errors: 31/32 pairs were fully answerable, exact evidence-contract agreement
+was 19/32, and role-compatible agreement was 21/32. Agreement was perfect for
+the `current_only` and `hard_negative_current` contract strata but weaker for
+the two implicit dual-evidence strata. This is supplemental AI triangulation,
+not independent human or clinical review. See
+`experiments/version_aware_rag/V5_R2_22_GPT56_BLIND_REVIEW_RESULT.md`.
+
 ## License
 
 This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.

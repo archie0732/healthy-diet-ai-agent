@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-009",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "2b26c3801f4e026eae4920cbfc6b76ce042ecdd488d53c90e1a59d2b52324185",
+  "response_sha256": "eba3cc96b03947ba8f0fe7535869a0d8f20f3bcd3d6d7336544f1dc70c204a7d",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides updated and comprehensive guidance on infant feeding, including duration, formula cessation, and the introduction of allergens, effectively superseding the OLD passage's instructions regarding vitamin D and general feeding timelines."
+  },
+  "latency_ms": 1226,
+  "usage_metadata": {
+    "promptTokenCount": 455,
+    "candidatesTokenCount": 76,
+    "totalTokenCount": 531,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 455
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-015",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "67ebf049c02151f3dd8ea2ff513bab10d84e516237c6cbe92ee716bec75ce07e",
+  "response_sha256": "78351aecd253add730b93065c19c2386246dec1fddbfa6c9724f3d86e836c5ec",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more comprehensive and updated set of guidelines regarding alcohol consumption, effectively replacing the broader and less specific guidance provided in the OLD passage."
+  },
+  "latency_ms": 716,
+  "usage_metadata": {
+    "promptTokenCount": 486,
+    "candidatesTokenCount": 64,
+    "totalTokenCount": 550,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 486
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

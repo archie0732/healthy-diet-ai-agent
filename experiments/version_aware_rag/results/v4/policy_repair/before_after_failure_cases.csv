@@ -1,0 +1,4 @@
+query_id,question,required_chunk_ids,first_failure_stage,fixed
+"q-030","What is the recommended ratio of whole grains to total grains?","dga-2025-page-4-pass-0-567ec170;dga-2020-page-16-pass-0-5be4fdc2",none,true
+"q-031","What was the 2015 guidance on grain servings at the 2,000 calorie level?","dga-2015-page-15-pass-0-8effd6bb",base_candidate_recall_failure,false
+"q-037","What was the 2015 association of processed meats with cardiovascular disease?","dga-2015-page-44-pass-0-b82f56fd",reranking_failed_to_promote,false

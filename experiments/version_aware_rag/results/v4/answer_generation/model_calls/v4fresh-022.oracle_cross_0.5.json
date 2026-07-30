@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-022",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "e5f893a86d95a9f1241e29909d600624588f53ad3693dc9e44a4148ae829a2d6",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-043-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnant.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-043-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-062-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=h\r\nadded sugars for those younger than age 2.\r\n* Saturated fat-Less than 10% of calories per day\r\nstarting at age 2.\r\n* The National Academies recommends that trans fat and dietary cholesterol consumption to be as low as possible without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnant.\n\nQUESTION\n\nHow do 2020 and 2025-2030 guidelines align on the baseline daily sodium limit for adults?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "bd82913327644ff1e064010d5a77c28fdbcf6912d508041eb271d6bab44b72d1",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-043-old",
+    "v4fresh-cand-pair-v4-new-043-new",
+    "v4fresh-cand-pair-v4-new-062-old"
+  ],
+  "answer": "*   Question: How do 2020 and 2025-2030 guidelines align on the baseline daily sodium limit for adults?\n    *   Constraint 1: Answer only from supplied passages.\n    *   Constraint 2: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint 3: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint 4: Do not assume newer evidence supersedes older evidence.\n    *   Constraint 5: No outside knowledge.\n\n    *   Passage 1 (dga-2020): \"Sodium-Less than 2,300 milligrams per day-and even less for children younger than age 14.\" [v4fresh-cand-pair-v4-new-043-old]\n    *   Passage 2 (dga-2025): \"The general population, ages 14 and above, should consume less than 2,300 mg per day of sodium.\" [v4fresh-cand-pair-v4-new-043-new]\n    *   Passage 3 (dga-2020): \"Sodium-Less than 2,300 milligrams per day-and even less for children younger than age 14.\" [v4fresh-cand-pair-v4-new-062-old]\n\n    *   2020 Guidelines: Sodium limit is less than 2,300 milligrams per day (with less for children under 14).\n    *   2025-2030 Guidelines: General population ages 14 and above should consume less than 2,300 mg per day of sodium.\n    *   Alignment: Both specify a limit of less than 2,300 mg per day for the adult/general population (14+).\n\n    *   The 2020 guidelines state sodium should be less than 2,300 milligrams per day, and even less for children younger than age 14 [v4fresh-cand-pair-v4-new-043-old], [v4fresh-cand-pair-v4-new-062-old].\n    *   The 2025-2030 guidelines state that the general population, ages 14 and above, should consume less than 2,300 mg per day of sodium [v4fresh-cand-pair-v4-new-043-new].The 2020 and 2025-2030 guidelines align on a baseline sodium limit of less than 2,300 milligrams per day for adults:\n\n*   **2020 Guidelines:** Sodium should be less than 2,300 milligrams per day, with even less for children younger than age 14 [v4fresh-cand-pair-v4-new-043-old], [v4fresh-cand-pair-v4-new-062-old].\n*   **2025-2030 Guidelines:** The general population, ages 14 and above, should consume less than 2,300 mg per day of sodium [v4fresh-cand-pair-v4-new-043-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "6218032959d0a41bdd3e3eb6a95b6b74eb5aedf97fe0d36628b505a41bc3f3e2",
+    "response_sha256": "36595ecded425f2e4d9a81865e53fc1feb64bb599d704cb09beb286c1a5eb477",
+    "latency_ms": 21633,
+    "usage_metadata": {
+      "promptTokenCount": 987,
+      "candidatesTokenCount": 176,
+      "totalTokenCount": 1727,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 987
+        }
+      ],
+      "thoughtsTokenCount": 564,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How do 2020 and 2025-2030 guidelines align on the baseline daily sodium limit for adults?\n    *   Constraint 1: Answer only from supplied passages.\n    *   Constraint 2: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint 3: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint 4: Do not assume newer evidence supersedes older evidence.\n    *   Constraint 5: No outside knowledge.\n\n    *   Passage 1 (dga-2020): \"Sodium-Less than 2,300 milligrams per day-and even less for children younger than age 14.\" [v4fresh-cand-pair-v4-new-043-old]\n    *   Passage 2 (dga-2025): \"The general population, ages 14 and above, should consume less than 2,300 mg per day of sodium.\" [v4fresh-cand-pair-v4-new-043-new]\n    *   Passage 3 (dga-2020): \"Sodium-Less than 2,300 milligrams per day-and even less for children younger than age 14.\" [v4fresh-cand-pair-v4-new-062-old]\n\n    *   2020 Guidelines: Sodium limit is less than 2,300 milligrams per day (with less for children under 14).\n    *   2025-2030 Guidelines: General population ages 14 and above should consume less than 2,300 mg per day of sodium.\n    *   Alignment: Both specify a limit of less than 2,300 mg per day for the adult/general population (14+).\n\n    *   The 2020 guidelines state sodium should be less than 2,300 milligrams per day, and even less for children younger than age 14 [v4fresh-cand-pair-v4-new-043-old], [v4fresh-cand-pair-v4-new-062-old].\n    *   The 2025-2030 guidelines state that the general population, ages 14 and above, should consume less than 2,300 mg per day of sodium [v4fresh-cand-pair-v4-new-043-new].",
+                "thought": true
+              },
+              {
+                "text": "The 2020 and 2025-2030 guidelines align on a baseline sodium limit of less than 2,300 milligrams per day for adults:\n\n*   **2020 Guidelines:** Sodium should be less than 2,300 milligrams per day, with even less for children younger than age 14 [v4fresh-cand-pair-v4-new-043-old], [v4fresh-cand-pair-v4-new-062-old].\n*   **2025-2030 Guidelines:** The general population, ages 14 and above, should consume less than 2,300 mg per day of sodium [v4fresh-cand-pair-v4-new-043-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 987,
+        "candidatesTokenCount": 176,
+        "totalTokenCount": 1727,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 987
+          }
+        ],
+        "thoughtsTokenCount": 564,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "HX5gapCjJbSl1e8P9Ze88AQ"
+    }
+  }
+}

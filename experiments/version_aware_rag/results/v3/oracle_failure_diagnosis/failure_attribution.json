@@ -1,0 +1,618 @@
+[
+  {
+    "query_id": "q-001",
+    "chunk_id": "dga-2025-page-3-pass-0-ba481231",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-001:dga-2025-page-3-pass-0-ba481231"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2025-page-3-pass-0-ba481231 did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-005",
+    "chunk_id": "dga-2025-page-4-pass-0-567ec170",
+    "primary_cause": "compatibility_expansion_failure",
+    "first_failure_stage": "S7",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-005:dga-2025-page-4-pass-0-567ec170"
+      ],
+      "relation_ids": [
+        "pair-v3-007",
+        "pair-v3-009",
+        "pair-v3-011",
+        "pair-v3-018",
+        "pair-v3-019",
+        "pair-v3-022",
+        "pair-v3-023",
+        "pair-v3-026",
+        "pair-v3-027",
+        "pair-v3-036",
+        "pair-v3-037",
+        "pair-v3-040",
+        "pair-v3-041",
+        "pair-v3-046",
+        "pair-v3-047"
+      ],
+      "before_rank": 7,
+      "after_rank": 4,
+      "filter_reason": "Passed policy filter"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Chunk dga-2025-page-4-pass-0-567ec170 was added by compatibility expansion but score was insufficient for top-3 (rank 4)."
+  },
+  {
+    "query_id": "q-006",
+    "chunk_id": "dga-2025-page-6-pass-0-765dd278",
+    "primary_cause": "boost_misranking",
+    "first_failure_stage": "S6",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-006:dga-2025-page-6-pass-0-765dd278"
+      ],
+      "relation_ids": [
+        "pair-v3-008",
+        "pair-v3-010",
+        "pair-v3-020",
+        "pair-v3-021",
+        "pair-v3-024",
+        "pair-v3-025",
+        "pair-v3-038",
+        "pair-v3-039",
+        "pair-v3-042",
+        "pair-v3-043",
+        "pair-v3-051"
+      ],
+      "before_rank": 9,
+      "after_rank": 8,
+      "filter_reason": "Passed policy filter"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2025-page-6-pass-0-765dd278 passed policy filter (base rank 9) but score was insufficient to elevate into top-3 (final rank 8)."
+  },
+  {
+    "query_id": "q-011",
+    "chunk_id": "dga-2025-page-9-pass-0-b67ed68f",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-011:dga-2025-page-9-pass-0-b67ed68f"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2025-page-9-pass-0-b67ed68f did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-012",
+    "chunk_id": "dga-2020-page-7-pass-0-f9b0e522",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-012:dga-2020-page-7-pass-0-f9b0e522"
+      ],
+      "relation_ids": [
+        "pair-v3-001",
+        "pair-v3-002",
+        "pair-v3-009",
+        "pair-v3-011",
+        "pair-v3-012",
+        "pair-v3-013",
+        "pair-v3-022",
+        "pair-v3-026"
+      ],
+      "before_rank": 18,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2020-page-7-pass-0-f9b0e522: Filtered by scope"
+  },
+  {
+    "query_id": "q-013",
+    "chunk_id": "dga-2015-page-15-pass-0-8effd6bb",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-013:dga-2015-page-15-pass-0-8effd6bb"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2015-page-15-pass-0-8effd6bb did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-015",
+    "chunk_id": "dga-2020-page-7-pass-0-f9b0e522",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-015:dga-2020-page-7-pass-0-f9b0e522"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2020-page-7-pass-0-f9b0e522 did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-016",
+    "chunk_id": "dga-2015-page-44-pass-0-b82f56fd",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-016:dga-2015-page-44-pass-0-b82f56fd"
+      ],
+      "relation_ids": [
+        "pair-v3-014"
+      ],
+      "before_rank": 1,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-44-pass-0-b82f56fd: Filtered by scope"
+  },
+  {
+    "query_id": "q-018",
+    "chunk_id": "dga-2020-page-8-pass-0-d50d372b",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-018:dga-2020-page-8-pass-0-d50d372b"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2020-page-8-pass-0-d50d372b did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-019",
+    "chunk_id": "dga-2015-page-15-pass-0-8effd6bb",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-019:dga-2015-page-15-pass-0-8effd6bb"
+      ],
+      "relation_ids": [
+        "pair-v3-016",
+        "pair-v3-021",
+        "pair-v3-025",
+        "pair-v3-028",
+        "pair-v3-030",
+        "pair-v3-032",
+        "pair-v3-036",
+        "pair-v3-040",
+        "pair-v3-046"
+      ],
+      "before_rank": 20,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-15-pass-0-8effd6bb: Filtered by scope"
+  },
+  {
+    "query_id": "q-021",
+    "chunk_id": "dga-2025-page-5-pass-0-99883976",
+    "primary_cause": "boost_misranking",
+    "first_failure_stage": "S6",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-021:dga-2025-page-5-pass-0-99883976"
+      ],
+      "relation_ids": [
+        "pair-v3-003",
+        "pair-v3-004",
+        "pair-v3-005",
+        "pair-v3-006",
+        "pair-v3-015",
+        "pair-v3-016",
+        "pair-v3-017",
+        "pair-v3-032",
+        "pair-v3-033",
+        "pair-v3-034",
+        "pair-v3-035",
+        "pair-v3-044",
+        "pair-v3-045",
+        "pair-v3-050"
+      ],
+      "before_rank": 6,
+      "after_rank": 4,
+      "filter_reason": "Passed policy filter"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2025-page-5-pass-0-99883976 passed policy filter (base rank 6) but boost weight/score was insufficient to elevate or maintain in top-3 (final rank 4)."
+  },
+  {
+    "query_id": "q-021",
+    "chunk_id": "dga-2015-page-50-pass-2-28e6e56b",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-021:dga-2015-page-50-pass-2-28e6e56b"
+      ],
+      "relation_ids": [
+        "pair-v3-005",
+        "pair-v3-017"
+      ],
+      "before_rank": 1,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-50-pass-2-28e6e56b: Filtered by scope"
+  },
+  {
+    "query_id": "q-022",
+    "chunk_id": "dga-2015-page-50-pass-2-28e6e56b",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-022:dga-2015-page-50-pass-2-28e6e56b"
+      ],
+      "relation_ids": [
+        "pair-v3-005",
+        "pair-v3-017"
+      ],
+      "before_rank": 1,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-50-pass-2-28e6e56b: Filtered by scope"
+  },
+  {
+    "query_id": "q-024",
+    "chunk_id": "dga-2025-page-4-pass-0-567ec170",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-024:dga-2025-page-4-pass-0-567ec170"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2025-page-4-pass-0-567ec170 did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-025",
+    "chunk_id": "dga-2015-page-51-pass-0-df0a0dd2",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-025:dga-2015-page-51-pass-0-df0a0dd2"
+      ],
+      "relation_ids": [
+        "pair-v3-018"
+      ],
+      "before_rank": 12,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-51-pass-0-df0a0dd2: Filtered by scope"
+  },
+  {
+    "query_id": "q-027",
+    "chunk_id": "dga-2025-page-6-pass-0-765dd278",
+    "primary_cause": "boost_misranking",
+    "first_failure_stage": "S6",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-027:dga-2025-page-6-pass-0-765dd278"
+      ],
+      "relation_ids": [
+        "pair-v3-008",
+        "pair-v3-010",
+        "pair-v3-020",
+        "pair-v3-021",
+        "pair-v3-024",
+        "pair-v3-025",
+        "pair-v3-038",
+        "pair-v3-039",
+        "pair-v3-042",
+        "pair-v3-043",
+        "pair-v3-051"
+      ],
+      "before_rank": 14,
+      "after_rank": 11,
+      "filter_reason": "Passed policy filter"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2025-page-6-pass-0-765dd278 passed policy filter (base rank 14) but score was insufficient to elevate into top-3 (final rank 11)."
+  },
+  {
+    "query_id": "q-027",
+    "chunk_id": "dga-2020-page-8-pass-0-d50d372b",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-027:dga-2020-page-8-pass-0-d50d372b"
+      ],
+      "relation_ids": [
+        "pair-v3-003",
+        "pair-v3-007",
+        "pair-v3-008",
+        "pair-v3-010",
+        "pair-v3-015",
+        "pair-v3-020",
+        "pair-v3-024"
+      ],
+      "before_rank": 2,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2020-page-8-pass-0-d50d372b: Filtered by scope"
+  },
+  {
+    "query_id": "q-028",
+    "chunk_id": "dga-2015-page-15-pass-0-8effd6bb",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-028:dga-2015-page-15-pass-0-8effd6bb"
+      ],
+      "relation_ids": [
+        "pair-v3-016",
+        "pair-v3-021",
+        "pair-v3-025",
+        "pair-v3-028",
+        "pair-v3-030",
+        "pair-v3-032",
+        "pair-v3-036",
+        "pair-v3-040",
+        "pair-v3-046"
+      ],
+      "before_rank": 19,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-15-pass-0-8effd6bb: Filtered by scope"
+  },
+  {
+    "query_id": "q-030",
+    "chunk_id": "dga-2025-page-4-pass-0-567ec170",
+    "primary_cause": "compatibility_expansion_failure",
+    "first_failure_stage": "S7",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-030:dga-2025-page-4-pass-0-567ec170"
+      ],
+      "relation_ids": [
+        "pair-v3-007",
+        "pair-v3-009",
+        "pair-v3-011",
+        "pair-v3-018",
+        "pair-v3-019",
+        "pair-v3-022",
+        "pair-v3-023",
+        "pair-v3-026",
+        "pair-v3-027",
+        "pair-v3-036",
+        "pair-v3-037",
+        "pair-v3-040",
+        "pair-v3-041",
+        "pair-v3-046",
+        "pair-v3-047"
+      ],
+      "before_rank": 19,
+      "after_rank": 9,
+      "filter_reason": "Passed policy filter"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Chunk dga-2025-page-4-pass-0-567ec170 was added by compatibility expansion but score was insufficient for top-3 (rank 9)."
+  },
+  {
+    "query_id": "q-030",
+    "chunk_id": "dga-2020-page-16-pass-0-5be4fdc2",
+    "primary_cause": "boost_misranking",
+    "first_failure_stage": "S6",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-030:dga-2020-page-16-pass-0-5be4fdc2"
+      ],
+      "relation_ids": [
+        "pair-v3-023"
+      ],
+      "before_rank": 6,
+      "after_rank": 6,
+      "filter_reason": "Passed policy filter"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2020-page-16-pass-0-5be4fdc2 passed policy filter (base rank 6) but boost weight/score was insufficient to elevate or maintain in top-3 (final rank 6)."
+  },
+  {
+    "query_id": "q-031",
+    "chunk_id": "dga-2015-page-15-pass-0-8effd6bb",
+    "primary_cause": "base_candidate_recall_failure",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [
+        "q-031:dga-2015-page-15-pass-0-8effd6bb"
+      ],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": "Not in S1 candidate pool"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Required chunk dga-2015-page-15-pass-0-8effd6bb did not enter the S1 BM25 candidate retrieval pool."
+  },
+  {
+    "query_id": "q-032",
+    "chunk_id": "dga-2025-page-6-pass-0-765dd278",
+    "primary_cause": "unresolved",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": null
+    },
+    "confidence": "medium",
+    "diagnostic_note": "Test split artifact lacks full S1-S9 stage trace; post-hoc observational analysis only."
+  },
+  {
+    "query_id": "q-034",
+    "chunk_id": "dga-2015-page-15-pass-0-8effd6bb",
+    "primary_cause": "unresolved",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": null
+    },
+    "confidence": "medium",
+    "diagnostic_note": "Test split artifact lacks full S1-S9 stage trace; post-hoc observational analysis only."
+  },
+  {
+    "query_id": "q-037",
+    "chunk_id": "dga-2015-page-44-pass-0-b82f56fd",
+    "primary_cause": "scope_resolution_failure",
+    "first_failure_stage": "S4",
+    "secondary_causes": [
+      "policy_over_filtering"
+    ],
+    "evidence": {
+      "trace_record_ids": [
+        "q-037:dga-2015-page-44-pass-0-b82f56fd"
+      ],
+      "relation_ids": [
+        "pair-v3-014"
+      ],
+      "before_rank": 8,
+      "after_rank": null,
+      "filter_reason": "Filtered out by policy"
+    },
+    "confidence": "high",
+    "diagnostic_note": "Scope resolution failed for chunk dga-2015-page-44-pass-0-b82f56fd: Filtered by scope"
+  },
+  {
+    "query_id": "q-039",
+    "chunk_id": "dga-2025-page-4-pass-0-567ec170",
+    "primary_cause": "unresolved",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": null
+    },
+    "confidence": "medium",
+    "diagnostic_note": "Test split artifact lacks full S1-S9 stage trace; post-hoc observational analysis only."
+  },
+  {
+    "query_id": "q-039",
+    "chunk_id": "dga-2020-page-19-pass-0-ce63b99c",
+    "primary_cause": "unresolved",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": null
+    },
+    "confidence": "medium",
+    "diagnostic_note": "Test split artifact lacks full S1-S9 stage trace; post-hoc observational analysis only."
+  },
+  {
+    "query_id": "q-040",
+    "chunk_id": "dga-2015-page-15-pass-0-8effd6bb",
+    "primary_cause": "unresolved",
+    "first_failure_stage": "S1",
+    "secondary_causes": [],
+    "evidence": {
+      "trace_record_ids": [],
+      "relation_ids": [],
+      "before_rank": null,
+      "after_rank": null,
+      "filter_reason": null
+    },
+    "confidence": "medium",
+    "diagnostic_note": "Test split artifact lacks full S1-S9 stage trace; post-hoc observational analysis only."
+  }
+]

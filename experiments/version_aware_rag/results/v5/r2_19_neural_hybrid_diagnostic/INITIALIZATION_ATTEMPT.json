@@ -1,0 +1,13 @@
+{
+  "schema_version": "v5-r2.19-initialization-attempt-1",
+  "status": "failed_before_model_load",
+  "attempted_at": "2026-07-28",
+  "cause": "Transformers.js rejected the contradictory configuration allowLocalModels=false and allowRemoteModels=false before loading the cached model.",
+  "model_loaded": false,
+  "embedding_count": 0,
+  "candidate_pool_count": 0,
+  "judgment_read_count": 0,
+  "diagnostic_execution_count_after_attempt": 0,
+  "r2_16_rerun_performed": false,
+  "correction": "Use the checksum-bound revision directory as an absolute local model path with local_files_only=true and remote loading disabled."
+}

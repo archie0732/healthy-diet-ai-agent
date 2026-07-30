@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-010",
+  "model_id": "gemma-4-31b-it",
+  "request_sha256": "6bb2528532e3ad721d42d7cc2a222a5f5c04ce56c1e889156ea727e3fed5e6d9",
+  "response_sha256": "092cd86229c81b4bf131f8260491f498d8ef87bb336603c45556c0187c7130a1",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The NEW passage replaces the specific daily drink limits ('2 drinks or less in a day for men and 1 drink or less in a day for women') with a more general recommendation to 'Consume less alcohol for better overall health' and expands the list of people who should avoid alcohol."
+  },
+  "latency_ms": 3333,
+  "usage_metadata": {
+    "promptTokenCount": 354,
+    "candidatesTokenCount": 88,
+    "totalTokenCount": 442,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 354
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

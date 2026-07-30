@@ -1,0 +1,37 @@
+{
+  "schema_version": "v5-r2.14-frozen-confirmation-manifest-1",
+  "status": "confirmation_frozen_unlocked",
+  "record_count": 32,
+  "candidate_item_count": 140,
+  "approved_ledger_sha256": "4faac3c69064801e9a1cd5bb8e8463525a95385e98fbcb2fdfc37e49d36b4663",
+  "owner_signoff_sha256": "a8e11af20132385469f3401d038c9e873c04dc80c00c8057fe89d5558da0d600",
+  "candidate_group_manifest_sha256": "fb19b24da32e3e37653392f7e9050bceed6b20673705cbf240344f8f73c2faf3",
+  "runtime_queries_sha256": "aadf1084d104c1034f6a4c32e72023c51f119e8959d3c075cdf6b6946ee02263",
+  "candidate_corpus_sha256": "d886361cca4037c41946ebf224ebb0bef78220a2ccc213cc5cbef2d78c3ae1ff",
+  "judgments_sha256": "5f03ea8c69896e0ecf17d305c2b6463c049fd0d239d5bdb0d05a981bb1c7cc73",
+  "runner_sha256": "8980f960d586bde491c01b0253b546dd3280f3e6b4a7fde50303210bf28ace30",
+  "protocol_sha256": "e23874eb7854dac4a5c6839afb228df170835259db5d49bf41ccaa2e75391f9a",
+  "exclusion_sha256": {
+    "data/annotations_v4/devval_expansion_user_approved/review_ledger.jsonl": "7dbc7db4a4672050e9662c2911059d6535f91a3cd2865ceaaa97ce4c855b7f96",
+    "data/annotations_v4/devval_expansion_user_approved/splits/validation.sealed.jsonl": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+    "data/annotations_v4/fresh_test_user_approved/fresh_test.sealed.jsonl": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+    "data/annotations_v5/r2_10_fresh_test_draft/fresh_test_draft.jsonl": "aebeac135354e3b509a30ac161bfff9fc65208e35c868693c497fa7339d99731",
+    "data/configs/v5_r2_11_frozen_development/development.frozen.jsonl": "7e4e7696d268a833befbf4bb3732f837a7ce9ed7fbcc1c7d15bb056f981cd537",
+    "data/configs/v5_r2_12_frozen_confirmation/confirmation.approved.frozen.jsonl": "5484ebefb38cc4c9fd753a9698f7bfda8d0e18d55ce4253d8d3aed0d03363391"
+  },
+  "parameters": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "pool_size": 20,
+    "group_seed_count": 14,
+    "recency_weight": 0.2,
+    "baseline_pair_signal_weight": 0.5,
+    "repaired_pair_signal_weight": 2,
+    "forced_pair_quota": false
+  },
+  "validation_errors": [],
+  "retrieval_execution_count": 0,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "prior_cycle_rerun_allowed": false
+}

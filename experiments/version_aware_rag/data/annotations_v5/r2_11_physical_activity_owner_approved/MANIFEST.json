@@ -1,0 +1,19 @@
+{
+  "schema_version": "v5-r2.11-physical-activity-owner-approved-manifest-1",
+  "status": "partial_development_ledger_owner_approved_not_freeze_ready",
+  "approved_annotations_path": "data/annotations_v5/r2_11_physical_activity_owner_approved/approved_annotations.jsonl",
+  "approved_annotations_sha256": "f468f043d9caac2afd04f0e5e259d4b72ca05cc78f6519969b42f1bca9b4b3fe",
+  "owner_signoff_path": "data/annotations_v5/r2_11_physical_activity_owner_approved/PROJECT_OWNER_SIGNOFF.json",
+  "owner_signoff_sha256": "ee6dcd672cb3ac38362b9888fbff16e521234a1d88cacc3bd6c8ff0cb6f2483c",
+  "approved_record_count": 5,
+  "stratum_counts": {
+    "conditional_merge": 4,
+    "compatible_history": 1,
+    "current_only": 0,
+    "hard_negative_current": 0
+  },
+  "validation_error_count": 0,
+  "project_owner_approved": true,
+  "full_ledger_frozen": false,
+  "retrieval_allowed": false
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-008",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "ad538c11779adfb27d349d83ba6a281e0b653fca268b6bee9da06805d7daa5bc",
+  "response_sha256": "cc2a92f8fd161921d5dc159893c7cb5ddfb38ec62d964ba3dcbb4942f90ee208",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more detailed and specific breakdown of sodium limits for children (ages 1-13) and adults, explicitly replacing the vague 'even less for children younger than age 14' in the OLD passage."
+  },
+  "latency_ms": 2979,
+  "usage_metadata": {
+    "promptTokenCount": 379,
+    "candidatesTokenCount": 79,
+    "totalTokenCount": 458,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 379
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

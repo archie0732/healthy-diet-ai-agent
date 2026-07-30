@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-004",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "9d97adcb4c477832c0cad9ae59d11b4b00d1f37bcf3ded1f5b6ce7d86a917e9b",
+  "response_sha256": "fdf500fabbc71f1524806c0298d23e41bb3a210bd6e539e64fe4edc5be082e7a",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "Both passages state the same moderation limits (1 drink/day for women, 2 drinks/day for men) and the requirement that alcohol be consumed only by adults of legal drinking age.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 4295,
+  "usage_metadata": {
+    "promptTokenCount": 482,
+    "candidatesTokenCount": 81,
+    "totalTokenCount": 563,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 482
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

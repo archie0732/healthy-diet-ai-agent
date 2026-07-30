@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-022",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "622610d28877cf24e431b9b6626338762f3c0f07f5b50af04b8cae439e67ddbd",
+  "response_sha256": "633d3dad3a645fc0e0532818923a046f50cdd336799fef17120cfc5b5a150d31",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The NEW passage adds specific clinical advice regarding vitamin D supplementation, specific allergenic food examples, and guidance on transitioning away from infant formula at 12 months, which expands upon rather than replaces or contradicts the OLD passage's general recommendations on complementary feeding."
+  },
+  "latency_ms": 873,
+  "usage_metadata": {
+    "promptTokenCount": 421,
+    "candidatesTokenCount": 82,
+    "totalTokenCount": 503,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 421
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

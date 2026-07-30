@@ -1,0 +1,24 @@
+# Baseline Reference Snapshot (v3 Held-Out)
+
+- **Dataset Version**: v3
+- **Analysis Started At**: 2026-07-20T08:02:33.827Z
+
+## Selected Frozen Test Runs
+
+| System Role | Selected Run ID | Manifest SHA-256 Checksum |
+|---|---|---|
+| **Append-Only** | `20260719T132829-baseline_append_only` | `d28a09f0f0775754c09c90ac529be4e85f584a1d85eac197eedb7f9da5c64128` |
+| **Recency-Only** | `20260719T132829-baseline_recency_only` | `43280f9f74466c8bcf0f50a8eafa1055e8e410f5fe369e6880bc76fabc5f5f26` |
+| **Oracle Version-Aware** | `20260719T132830-proposed_full_version_aware` | `5d6d79b8ba78a1b098880f3a3b597c764050e809e0acb32d171f8ad1cb2e2cb6` |
+| **Predicted Version-Aware** | `20260719T132830-proposed_predicted_relations` | `47520387932c4febefe46aaa00dfd6ee434d58c6adfe78abd14dfff2c041eca2` |
+
+## Verified Input Data Checksums
+
+- **corpus**: `ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7`
+- **queries**: `72af4d7a8eeeb1eb2ca24b30a764de3a07ebb0b6ead7b74a6a597527bf27774f`
+- **judgments**: `61f1f4531f6ace040e8f2a4a1c81728585d188dc32b3b49264e5e6d3a2654efd`
+- **relations**: `a336fb1c171c89f82966e927d96baa252a99d32b3883561cc35db44155b36cb5`
+- **relation_pairs**: `9af814a2d582af94a984caadff0d944c067974834dd9f71cc7ec6166076da2b3`
+- **development_split**: `e1634dd483f6e76361e993489a888b87fe63872f070abe6565ffce23d45c6f91`
+- **validation_split**: `886f872bdd56c0719274da6412f9d0f813731033132d991ad5b1dd201ef7467d`
+- **test_split**: `8913631312d1b48387f88a74772686dc3fa2567806d9571c71021be7a79a8e86`

@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-002",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "7957e4b8c5abc616ee2ef0525a79162caa6fd406459b3680d9037aa3ab604679",
+    "response_sha256": "ad0ae941788482632240ee655844dfce449d8d63c4d2edd4a34b96199e9f81db",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 16770,
+    "usage": {
+      "promptTokenCount": 807,
+      "candidatesTokenCount": 252,
+      "totalTokenCount": 2278,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 807
+        }
+      ],
+      "thoughtsTokenCount": 1219,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:26:07.819Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"Under the WHO guidelines aiming to simultaneously reduce sodium and increase potassium, what is the resulting molar ratio of sodium to potassium if both guidelines are achieved, what are the recommended primary food sources to increase potassium, and which specific health conditions or treatments exclude adults from the general potassium recommendation?\",\n  \"target_population\": [\n    \"Adults in general populations\",\n    \"Children\"\n  ],\n  \"conditions\": [\n    \"Kidney impairments\",\n    \"Conditions compromising potassium excretion\",\n    \"Hypertension\"\n  ],\n  \"draft_rationale\": \"To answer this query, information must be integrated from both passages. The 2012 guideline (Retained) establishes the policy of simultaneously reducing sodium and increasing potassium, stating that achieving both guidelines results in a sodium-to-potassium molar ratio of approximately 1:1. The 2025 guideline (Current) specifies the primary food sources for potassium (beans, peas, nuts, and green vegetables) and details the exclusions for the general adult population, which include individuals with kidney impairments, those with conditions compromising potassium excretion, and those taking potassium-sparing diuretics or potassium supplements.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 807,
+      "candidatesTokenCount": 252,
+      "totalTokenCount": 2278,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 807
+        }
+      ],
+      "thoughtsTokenCount": 1219,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "0PReatrvK97cosUPs5yQ8Q4"
+  }
+}

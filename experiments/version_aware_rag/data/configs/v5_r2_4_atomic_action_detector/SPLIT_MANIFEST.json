@@ -1,0 +1,20 @@
+{
+  "schema_version": "v5-r2.4-atomic-action-1",
+  "status": "atomic_development_frozen_validation_unchanged",
+  "parent_manifest_sha256": "8cf570b68e623c1d687c2880db9040f57970d8a64ea08714ccc7af2a3891ea6d",
+  "parent_development_sha256": "5a68df58d9df1f1b0491e7b0f32fc5d2312afae6ad87ccffd02bdc19e28bc14f",
+  "development_sha256": "589ce0178d61ec473bdf048b69816792335697d83a422a9d2cba2736f10069fb",
+  "validation_sealed_sha256": "cd25941d087c18e7c4e5a9b5fefd10b3f99187b63ea268f0935f006fe5396449",
+  "validation_artifact_changed": false,
+  "development_count": 22,
+  "atomic_claim_count": 44,
+  "development_distribution": {
+    "PAIR_PRESERVE": 6,
+    "BLOCK_RETAINED": 16
+  },
+  "atomic_claim_policy": "Normalized atomic propositions are used for detector input; original source text, URLs, line/page locators, and hashes remain embedded and unchanged.",
+  "reviewer_provenance": "codex-gpt5-primary-reviewer_not_independent_human",
+  "external_model_api_used": false,
+  "validation_execution_count": 0,
+  "fresh_v5_test_created": false
+}

@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-1-e32ddd46|dga-2025-page-6-pass-0-765dd278",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "a4653983f53702a2b745154daa0ef60ee749631674589aa082674c60580557db",
+  "response_sha256": "0026299dee8677c38126e2b05a64f3664dd07ea693d8c476e0e9e4a2e82a0275",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The OLD passage provides a general limit of 'less than 2,300 milligrams (mg) per day of sodium' and a general alcohol moderation guideline. The NEW passage maintains the 2,300 mg sodium limit for 'the general population, ages 14 and above' but explicitly adds different limits for children (ages 1-13) and notes that 'Highly active individuals may benefit from increased sodium intake', creating conditional differences based on age and activity level."
+  },
+  "latency_ms": 4507,
+  "usage_metadata": {
+    "promptTokenCount": 820,
+    "candidatesTokenCount": 129,
+    "totalTokenCount": 949,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 820
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

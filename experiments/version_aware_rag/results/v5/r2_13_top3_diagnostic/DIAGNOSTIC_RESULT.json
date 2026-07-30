@@ -1,0 +1,139 @@
+{
+  "schema_version": "v5-r2.13-top3-diagnostic-result-1",
+  "status": "diagnostic_complete_new_confirmation_required",
+  "development_only": true,
+  "outcome_exposed_r2_12_data": true,
+  "promotion_evidence": false,
+  "all_top3_complete_before_judgment_read": true,
+  "judgment_read_count": 1,
+  "selected_diagnostic_variant": "pair_quota_g0.5",
+  "selection_score": 1.2333333333333332,
+  "summaries": [
+    {
+      "variant": "pair_score_g0.5",
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.45,
+          "both_evidence_coverage": 0.2,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.3,
+          "both_evidence_coverage": 0.1,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    },
+    {
+      "variant": "pair_score_g1.0",
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.45,
+          "both_evidence_coverage": 0.2,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.4,
+          "both_evidence_coverage": 0.2,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    },
+    {
+      "variant": "pair_score_g2.0",
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0.3,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.4,
+          "both_evidence_coverage": 0.2,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    },
+    {
+      "variant": "pair_quota_g0.5",
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.55,
+          "both_evidence_coverage": 0.4,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.45,
+          "both_evidence_coverage": 0.4,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.3333333333333333,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    },
+    {
+      "variant": "pair_quota_g1.0",
+      "strata": {
+        "conditional_merge": {
+          "required_micro_recall_at_3": 0.55,
+          "both_evidence_coverage": 0.4,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "required_micro_recall_at_3": 0.45,
+          "both_evidence_coverage": 0.4,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "required_micro_recall_at_3": 0.3333333333333333,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    }
+  ],
+  "confirmation_required": true
+}

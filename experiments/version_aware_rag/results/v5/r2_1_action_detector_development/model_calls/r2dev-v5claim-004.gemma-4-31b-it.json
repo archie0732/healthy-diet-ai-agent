@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-004",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "bba6d06ff5ba765f1ae09f2214ac2f334ef966c767fad4cd21b1c70c4b5844e2",
+  "response_sha256": "4b474ef044b63ab83b5c322efe49b68c59d8f5c7132a4f8fedfd0e9daf369c8f",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage materially duplicates the same instructions regarding alcohol moderation limits for men and women and the legal drinking age requirement as the OLD passage."
+  },
+  "latency_ms": 2698,
+  "usage_metadata": {
+    "promptTokenCount": 425,
+    "candidatesTokenCount": 51,
+    "totalTokenCount": 476,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 425
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

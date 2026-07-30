@@ -1,0 +1,22 @@
+{
+  "schema_version": "v5-r2.10-fresh-test-draft-1",
+  "status": "draft_constructed_review_required_execution_locked",
+  "frozen_policy_sha256": "4491f19fd3de101022c81e1f5cde8669a4a82ed0d172b11e5627f853a4fd5835",
+  "record_count": 16,
+  "strata_counts": {
+    "explicit_history": 4,
+    "conditional_merge": 4,
+    "current_only": 4,
+    "hard_negative_current": 4
+  },
+  "unique_lineage_count": 16,
+  "unique_current_chunk_count": 16,
+  "prior_current_chunk_collision_count": 0,
+  "draft_ledger_sha256": "aebeac135354e3b509a30ac161bfff9fc65208e35c868693c497fa7339d99731",
+  "review_packet_content_sha256": "b3923d62ba18fed6ed70b21cfe80819885768c378ce5afa0e1846c54c7d69ca3",
+  "review_packet_file_sha256": "7415e15733f2cf56109e88a297044c10d2343af277002b78942f4d66f0e485a2",
+  "project_owner_signoff_recorded": false,
+  "retrieval_result_exists": false,
+  "fresh_test_execution_count": 0,
+  "external_model_api_used": false
+}

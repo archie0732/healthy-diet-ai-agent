@@ -1,0 +1,15 @@
+{
+  "status": "needs_safety_label_review",
+  "development_split_sha256": "dbc90de18d95ee757e3941305868d133ec7b4233d5ee0386b341ad7eb885a378",
+  "source_raw_results_sha256": "66c6735bd676a28431c2525cebf1388af8ec2b4cb3a15584f9578d1d2bc80eaa",
+  "compared_systems_hidden_from_review_packet": [
+    "recency",
+    "oracle_cross_0.5"
+  ],
+  "query_count": 16,
+  "candidate_count": 78,
+  "non_required_candidate_count": 55,
+  "validation_record_count": 0,
+  "fresh_test_record_count": 0,
+  "machine_ledger_sha256": "b90d605947b36832172f8a01d82ecaabbc42838f63317e29c0bccee66efde6f9"
+}

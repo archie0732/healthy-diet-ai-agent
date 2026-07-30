@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-021",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "1b745e7994c9080536c0fec95ce218ec2950553d3df9c2a3b08b427dbd82ed88",
+  "response_sha256": "1f598f53a856b24dae8c18a35a669f43244bebb95d8bed140aad2532da31dfb7",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "The OLD passage provides specific quantitative dietary limits and age-based restrictions for added sugars, whereas the CURRENT passage only provides guidance on how to identify added sugars on labels. They provide distinct, compatible information."
+  },
+  "latency_ms": 2999,
+  "usage_metadata": {
+    "promptTokenCount": 409,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 481,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 409
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

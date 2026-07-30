@@ -1,0 +1,11 @@
+{
+  "schema_version": "v5-r2.11-candidate-mining-manifest-1",
+  "status": "candidate_mining_only_not_annotation_gold",
+  "candidate_count": 8,
+  "unique_evidence_chunk_count": 16,
+  "corpus_path": "experiments/version_aware_rag/data/corpus_v5_r2_11_draft/chunks.jsonl",
+  "corpus_sha256": "d30e3e44b06db37c94481cdd5d2da0546005e41303574a3a25f48da9511e3823",
+  "ledger_path": "experiments/version_aware_rag/data/annotations_v5/r2_11_candidate_mining/physical_activity_candidates.jsonl",
+  "ledger_sha256": "e365b8fe8f9d5bf5277ef105f0a792a1bbb6f7761f0177d9fe9a5cf4d4f89bc3",
+  "retrieval_allowed": false
+}

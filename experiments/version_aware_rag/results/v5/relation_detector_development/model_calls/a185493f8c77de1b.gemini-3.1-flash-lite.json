@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2020-page-11-pass-0-913a1860|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "58b114de3b24bd7ca8a96ab92d29a4f5b62c60825e3d028c8842e4ecb7797d93",
+  "response_sha256": "4e1bea4aa9c1743b882f71801fcaaf6e2be09a675cd2c0f7dad1fa4cff3a17a1",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a general 85-15 caloric budget for 'other uses' including added sugars, whereas the NEW passage supersedes this by providing specific, prescriptive limits on added sugars (e.g., 'no more than 10 grams' per meal, specific snack thresholds) and explicitly advising to 'Avoid' rather than budget for highly processed items."
+  },
+  "latency_ms": 1046,
+  "usage_metadata": {
+    "promptTokenCount": 752,
+    "candidatesTokenCount": 106,
+    "totalTokenCount": 858,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 752
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

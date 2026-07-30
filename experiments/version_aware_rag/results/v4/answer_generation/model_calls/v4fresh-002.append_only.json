@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-002",
+  "system": "append_only",
+  "input_sha256": "6aac11dd4cd7894b1ca18be8c1a98d99790c87ca33a73eeeb3a88d83eada9a13",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-018-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=s dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-039-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=ich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-053-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\nQUESTION\n\nWhat cooking method swaps are recommended for protein foods in 2025-2030?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "0a6b92cad93acb2aed143036f7b42996096ee1777516c0ce205ce7f9be087870",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-018-new",
+    "v4fresh-cand-pair-v4-new-039-new",
+    "v4fresh-cand-pair-v4-new-053-new"
+  ],
+  "answer": "*   Question: \"What cooking method swaps are recommended for protein foods in 2025-2030?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1: Discusses vegetarian/vegan diets, protein-rich foods (dairy, eggs, beans, etc.), nutrient gaps (vitamins D, E, choline, iron for vegetarians; A, D, E, B6, B12, etc. for vegans), limiting processed foods, and enhancing mineral bioavailability through food preparation techniques.\n    *   Passage 2: Similar to Passage 1.\n    *   Passage 3: Similar to Passage 1, explicitly mentions \"Vegetarians & Vegans\".\n\n    *   The passages mention \"enhance mineral bioavailability through food preparation techniques\" [v4fresh-cand-pair-v4-new-018-new, v4fresh-cand-pair-v4-new-039-new, v4fresh-cand-pair-v4-new-053-new].\n    *   Do the passages mention specific \"cooking method swaps\"? No.\n    *   They mention \"food preparation techniques\" to enhance mineral bioavailability, but they do not list specific swaps (e.g., \"swap frying for steaming\").\n\n    *   The provided text does not contain information regarding specific cooking method swaps for protein foods.The provided text does not mention specific cooking method swaps for protein foods; however, it recommends enhancing mineral bioavailability through food preparation techniques for those consuming vegetarian or vegan diets [v4fresh-cand-pair-v4-new-018-new, v4fresh-cand-pair-v4-new-039-new, v4fresh-cand-pair-v4-new-053-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "f2a4c9bf985ea63fba681b1693674d4d12ecc54335499f091fa510c98292308d",
+    "response_sha256": "4f20120128d7c5e4a4070346de8fba981a7d655002db643e5fd60ee2a47c4709",
+    "latency_ms": 12863,
+    "usage_metadata": {
+      "promptTokenCount": 1082,
+      "candidatesTokenCount": 90,
+      "totalTokenCount": 1513,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1082
+        }
+      ],
+      "thoughtsTokenCount": 341,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: \"What cooking method swaps are recommended for protein foods in 2025-2030?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1: Discusses vegetarian/vegan diets, protein-rich foods (dairy, eggs, beans, etc.), nutrient gaps (vitamins D, E, choline, iron for vegetarians; A, D, E, B6, B12, etc. for vegans), limiting processed foods, and enhancing mineral bioavailability through food preparation techniques.\n    *   Passage 2: Similar to Passage 1.\n    *   Passage 3: Similar to Passage 1, explicitly mentions \"Vegetarians & Vegans\".\n\n    *   The passages mention \"enhance mineral bioavailability through food preparation techniques\" [v4fresh-cand-pair-v4-new-018-new, v4fresh-cand-pair-v4-new-039-new, v4fresh-cand-pair-v4-new-053-new].\n    *   Do the passages mention specific \"cooking method swaps\"? No.\n    *   They mention \"food preparation techniques\" to enhance mineral bioavailability, but they do not list specific swaps (e.g., \"swap frying for steaming\").\n\n    *   The provided text does not contain information regarding specific cooking method swaps for protein foods.",
+                "thought": true
+              },
+              {
+                "text": "The provided text does not mention specific cooking method swaps for protein foods; however, it recommends enhancing mineral bioavailability through food preparation techniques for those consuming vegetarian or vegan diets [v4fresh-cand-pair-v4-new-018-new, v4fresh-cand-pair-v4-new-039-new, v4fresh-cand-pair-v4-new-053-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1082,
+        "candidatesTokenCount": 90,
+        "totalTokenCount": 1513,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1082
+          }
+        ],
+        "thoughtsTokenCount": 341,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "a3lgaq36E5q5vr0Pv6e54AM"
+    }
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "headline": "在完全相同的固定 BM25 Top-20 候選池上，Oracle 的 Validation Recall@3 達到 60.0% (6/10)，輸給 Recency 的主要原創失分源於 S1 Candidate Pool 未覆蓋 (q-031) 與 Policy Boost 重排失真 (q-030)。",
+  "root_cause_table": [
+    {
+      "primary_cause": "compatibility_expansion_failure",
+      "affected_queries": 1,
+      "lost_required_chunks": 1,
+      "metric_impact": "-0.125 Recall@3",
+      "confidence": "high",
+      "query_ids": [
+        "q-030"
+      ]
+    },
+    {
+      "primary_cause": "boost_misranking",
+      "affected_queries": 1,
+      "lost_required_chunks": 1,
+      "metric_impact": "-0.125 Recall@3",
+      "confidence": "high",
+      "query_ids": [
+        "q-030"
+      ]
+    },
+    {
+      "primary_cause": "base_candidate_recall_failure",
+      "affected_queries": 1,
+      "lost_required_chunks": 1,
+      "metric_impact": "-0.125 Recall@3",
+      "confidence": "high",
+      "query_ids": [
+        "q-031"
+      ]
+    },
+    {
+      "primary_cause": "scope_resolution_failure",
+      "affected_queries": 1,
+      "lost_required_chunks": 1,
+      "metric_impact": "-0.125 Recall@3",
+      "confidence": "high",
+      "query_ids": [
+        "q-037"
+      ]
+    }
+  ],
+  "stage_funnels": {
+    "development": {
+      "split": "development",
+      "required_total": 30,
+      "steps": [
+        {
+          "stage_name": "Required evidence total (Gold Judgments)",
+          "count": 30,
+          "percentage": 100,
+          "lost_count": 0,
+          "affected_query_ids": [],
+          "lost_query_chunk_ids": [],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Entered base candidate pool (S1)",
+          "count": 24,
+          "percentage": 80,
+          "lost_count": 6,
+          "affected_query_ids": [
+            "q-001",
+            "q-011",
+            "q-013",
+            "q-015",
+            "q-018",
+            "q-024"
+          ],
+          "lost_query_chunk_ids": [
+            "q-001:dga-2025-page-3-pass-0-ba481231",
+            "q-011:dga-2025-page-9-pass-0-b67ed68f",
+            "q-013:dga-2015-page-15-pass-0-8effd6bb",
+            "q-015:dga-2020-page-7-pass-0-f9b0e522",
+            "q-018:dga-2020-page-8-pass-0-d50d372b",
+            "q-024:dga-2025-page-4-pass-0-567ec170"
+          ],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Had applicable oracle relation or valid default (S3)",
+          "count": 24,
+          "percentage": 80,
+          "lost_count": 0,
+          "affected_query_ids": [],
+          "lost_query_chunk_ids": [],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Passed scope resolution (S4)",
+          "count": 16,
+          "percentage": 53.333333333333336,
+          "lost_count": 8,
+          "affected_query_ids": [
+            "q-012",
+            "q-016",
+            "q-019",
+            "q-021",
+            "q-022",
+            "q-025",
+            "q-027",
+            "q-028"
+          ],
+          "lost_query_chunk_ids": [
+            "q-012:dga-2020-page-7-pass-0-f9b0e522",
+            "q-016:dga-2015-page-44-pass-0-b82f56fd",
+            "q-019:dga-2015-page-15-pass-0-8effd6bb",
+            "q-021:dga-2015-page-50-pass-2-28e6e56b",
+            "q-022:dga-2015-page-50-pass-2-28e6e56b",
+            "q-025:dga-2015-page-51-pass-0-df0a0dd2",
+            "q-027:dga-2020-page-8-pass-0-d50d372b",
+            "q-028:dga-2015-page-15-pass-0-8effd6bb"
+          ],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Retained after policy filter (S5)",
+          "count": 16,
+          "percentage": 53.333333333333336,
+          "lost_count": 0,
+          "affected_query_ids": [],
+          "lost_query_chunk_ids": [],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Entered final top-k (S9)",
+          "count": 12,
+          "percentage": 40,
+          "lost_count": 4,
+          "affected_query_ids": [
+            "q-005",
+            "q-006",
+            "q-021",
+            "q-027"
+          ],
+          "lost_query_chunk_ids": [
+            "q-005:dga-2025-page-4-pass-0-567ec170",
+            "q-006:dga-2025-page-6-pass-0-765dd278",
+            "q-021:dga-2025-page-5-pass-0-99883976",
+            "q-027:dga-2025-page-6-pass-0-765dd278"
+          ],
+          "strata_counts": {}
+        }
+      ]
+    },
+    "validation": {
+      "split": "validation",
+      "required_total": 10,
+      "steps": [
+        {
+          "stage_name": "Required evidence total (Gold Judgments)",
+          "count": 10,
+          "percentage": 100,
+          "lost_count": 0,
+          "affected_query_ids": [],
+          "lost_query_chunk_ids": [],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Entered base candidate pool (S1)",
+          "count": 9,
+          "percentage": 90,
+          "lost_count": 1,
+          "affected_query_ids": [
+            "q-031"
+          ],
+          "lost_query_chunk_ids": [
+            "q-031:dga-2015-page-15-pass-0-8effd6bb"
+          ],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Had applicable oracle relation or valid default (S3)",
+          "count": 9,
+          "percentage": 90,
+          "lost_count": 0,
+          "affected_query_ids": [],
+          "lost_query_chunk_ids": [],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Passed scope resolution (S4)",
+          "count": 8,
+          "percentage": 80,
+          "lost_count": 1,
+          "affected_query_ids": [
+            "q-037"
+          ],
+          "lost_query_chunk_ids": [
+            "q-037:dga-2015-page-44-pass-0-b82f56fd"
+          ],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Retained after policy filter (S5)",
+          "count": 8,
+          "percentage": 80,
+          "lost_count": 0,
+          "affected_query_ids": [],
+          "lost_query_chunk_ids": [],
+          "strata_counts": {}
+        },
+        {
+          "stage_name": "Entered final top-k (S9)",
+          "count": 6,
+          "percentage": 60,
+          "lost_count": 2,
+          "affected_query_ids": [
+            "q-030"
+          ],
+          "lost_query_chunk_ids": [
+            "q-030:dga-2020-page-16-pass-0-5be4fdc2",
+            "q-030:dga-2025-page-4-pass-0-567ec170"
+          ],
+          "strata_counts": {}
+        }
+      ]
+    }
+  },
+  "counterfactual_table": [
+    {
+      "mode": "Base",
+      "recall_at_3": 0.484375,
+      "ndcg_at_3": 0.4537819335808587,
+      "stale_rate": 0.1875,
+      "unsafe_count": 6,
+      "feature_activation": {
+        "filter": false,
+        "retain_boost": false,
+        "condition_boost": false,
+        "expansion": false,
+        "diversification": false,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "Recency",
+      "recall_at_3": 0.65625,
+      "ndcg_at_3": 0.6057557020990527,
+      "stale_rate": 0.15625,
+      "unsafe_count": 5,
+      "feature_activation": {
+        "filter": false,
+        "retain_boost": false,
+        "condition_boost": false,
+        "expansion": false,
+        "diversification": false,
+        "recency_boost": true,
+        "recency_lambda": 0.75
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "Filter only",
+      "recall_at_3": 0.421875,
+      "ndcg_at_3": 0.39128193358085867,
+      "stale_rate": 0.09375,
+      "unsafe_count": 3,
+      "feature_activation": {
+        "filter": true,
+        "retain_boost": false,
+        "condition_boost": false,
+        "expansion": false,
+        "diversification": false,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "No filter",
+      "recall_at_3": 0.453125,
+      "ndcg_at_3": 0.40690693358085867,
+      "stale_rate": 0.09375,
+      "unsafe_count": 3,
+      "feature_activation": {
+        "filter": false,
+        "retain_boost": true,
+        "condition_boost": true,
+        "expansion": true,
+        "diversification": true,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "No boosts",
+      "recall_at_3": 0.421875,
+      "ndcg_at_3": 0.39128193358085867,
+      "stale_rate": 0.09375,
+      "unsafe_count": 3,
+      "feature_activation": {
+        "filter": true,
+        "retain_boost": false,
+        "condition_boost": false,
+        "expansion": true,
+        "diversification": true,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "No expansion",
+      "recall_at_3": 0.46875,
+      "ndcg_at_3": 0.420578913266927,
+      "stale_rate": 0.09375,
+      "unsafe_count": 3,
+      "feature_activation": {
+        "filter": true,
+        "retain_boost": true,
+        "condition_boost": true,
+        "expansion": false,
+        "diversification": true,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "No diversification",
+      "recall_at_3": 0.46875,
+      "ndcg_at_3": 0.420578913266927,
+      "stale_rate": 0.09375,
+      "unsafe_count": 3,
+      "feature_activation": {
+        "filter": true,
+        "retain_boost": true,
+        "condition_boost": true,
+        "expansion": true,
+        "diversification": false,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    },
+    {
+      "mode": "Full Oracle",
+      "recall_at_3": 0.46875,
+      "ndcg_at_3": 0.420578913266927,
+      "stale_rate": 0.09375,
+      "unsafe_count": 3,
+      "feature_activation": {
+        "filter": true,
+        "retain_boost": true,
+        "condition_boost": true,
+        "expansion": true,
+        "diversification": true,
+        "recency_boost": false
+      },
+      "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+    }
+  ],
+  "sensitivity_table": [
+    {
+      "pool_n": "20",
+      "recency_recall_at_3": 0.65625,
+      "oracle_recall_at_3": 0.46875,
+      "delta_recall_at_3": -0.1875,
+      "oracle_stale_rate": 0.09375,
+      "recency_stale_rate": 0.15625
+    },
+    {
+      "pool_n": "50",
+      "recency_recall_at_3": 0.6875,
+      "oracle_recall_at_3": 0.46875,
+      "delta_recall_at_3": -0.21875,
+      "oracle_stale_rate": 0.09375,
+      "recency_stale_rate": 0.125
+    },
+    {
+      "pool_n": "100",
+      "recency_recall_at_3": 0.6875,
+      "oracle_recall_at_3": 0.46875,
+      "delta_recall_at_3": -0.21875,
+      "oracle_stale_rate": 0.09375,
+      "recency_stale_rate": 0.09375
+    },
+    {
+      "pool_n": "All",
+      "recency_recall_at_3": 0.671875,
+      "oracle_recall_at_3": 0.46875,
+      "delta_recall_at_3": -0.203125,
+      "oracle_stale_rate": 0.09375,
+      "recency_stale_rate": 0.1875
+    }
+  ],
+  "repair_priorities": [
+    {
+      "priority": 1,
+      "action": "升級 Base Candidate Retriever (引入 Recency / Dense Pre-filtering)",
+      "rationale": "當 Recency 與 Oracle 面對完全相同 Top-20 BM25 候選池時，兩者 Recall@3 均受限於 BM25 召回上界。當候選池擴大至 Top-50/100/All 時，Recency 的年份動量與 Oracle Policy 方能完全釋放。",
+      "expected_impact": "將 Base Candidates 召回上界提升至 85%+"
+    },
+    {
+      "priority": 2,
+      "action": "優化 Version Policy Scoring 與 Reranking 權重",
+      "rationale": "在相同 N 候選池下，過高比例的修訂歷史或過時段落落在候選池中，Policy 仍需透過小額加分拉抬 active 證據。",
+      "expected_impact": "拉高 Top-3 Precision 與 nDCG"
+    },
+    {
+      "priority": 3,
+      "action": "補充 Version Relation Annotations 邊界條目",
+      "rationale": "避免特定邊界主題題目因缺漏關係產生 Fall-through 不確定性。",
+      "expected_impact": "完全消除邊界主題的不確定性警告"
+    }
+  ],
+  "integrity_evidence": {
+    "v3_checksums_verified": true,
+    "test_not_rerun": true,
+    "configs_unmodified": true,
+    "diagnostics_off_unchanged": true,
+    "tests_passed": true,
+    "artifact_checksums": {
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/INVALIDATION_NOTICE.json": "785ed2fc94fedb5d21bedc32cfea962921b0bad8435316f9bea29a4576f5f607",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/baseline_reference_v3.json": "eb4e40d84303ad911abc631d32cfad4233403683729b1480371abeed41b7de2d",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/paired_query_comparison.jsonl": "5cf987322b23897c146fa3f92cb5029a91ca85343c36112fe7d22aa5a2631d4b",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/development_stage_traces.jsonl": "914620fa62bbccb2c124990184df38d9dd04e70ec13005408896b79408987e75",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/validation_stage_traces.jsonl": "253977a3c77a708bb0c33d1688b8847c76b5ca8051a1a4dbd7e7cf5e961c420f",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/test_posthoc_traces.jsonl": "d631e09f91efa1719c9e542b8efd336a8712b776ceffa32ead8dd383cb8d4809",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/counterfactual_ablation_results.json": "eb1c0c739006ead60205641fa5ed7168c70ea46f72a01ba24367dd20ca58a07c",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/candidate_pool_sensitivity.json": "74131ad6f8dfa2a546eaec1350dd93841e27be36db8baf92559761bbc9670485",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_attribution.json": "6e6140ad93501c7eb930a22f2887c94afad60335a0e1970c7e0e660525e9316b",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_cases.csv": "27688d32a6a436cab74bed21a9e99c5dce019b8af6587460cdc02b1cd23433e2",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/oracle_failure_summary.json": "3fd212769c2d5445081d9aaa098f2daab8655e93c8dc15c91b2e29572c378256",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/DIAGNOSIS_MANIFEST.json": "d336a892329a4e8e12e1fd1883643de1cc97ad898cfab03910eb20874987f7b9",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/ORACLE_FAILURE_DIAGNOSIS.md": "b445b7967cdd7babc9652bdf8f82a1376a47e75fd07b8e3431a3f2aba5d6e733",
+      "docs/gemini/report/PLAN_08A_REVISION_4_ORACLE_FAILURE_DIAGNOSIS.md": "b445b7967cdd7babc9652bdf8f82a1376a47e75fd07b8e3431a3f2aba5d6e733"
+    },
+    "artifact_paths": [
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/INVALIDATION_NOTICE.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/baseline_reference_v3.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/paired_query_comparison.jsonl",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/development_stage_traces.jsonl",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/validation_stage_traces.jsonl",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/test_posthoc_traces.jsonl",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/counterfactual_ablation_results.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/candidate_pool_sensitivity.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_attribution.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/failure_cases.csv",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/oracle_failure_summary.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/DIAGNOSIS_MANIFEST.json",
+      "experiments/version_aware_rag/results/v3/oracle_failure_diagnosis/ORACLE_FAILURE_DIAGNOSIS.md",
+      "docs/gemini/report/PLAN_08A_REVISION_4_ORACLE_FAILURE_DIAGNOSIS.md"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-008",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "668f073934d0177b06d231ef6d28b76d35ab6d9b92922f7dcee04d3868508fb9",
+  "response_sha256": "e5ba21d254b4050b6d1f03e92d5874febee19efaa37b6c6c17b15e66a25d45e0",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The NEW passage replaces the vague 'even less for children younger than age 14' with specific, age-stratified sodium limits (1,200 mg to 1,800 mg) for children."
+  },
+  "latency_ms": 3013,
+  "usage_metadata": {
+    "promptTokenCount": 359,
+    "candidatesTokenCount": 77,
+    "totalTokenCount": 436,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 359
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

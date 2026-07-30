@@ -1,0 +1,131 @@
+[
+  {
+    "mode": "Base",
+    "recall_at_3": 0.484375,
+    "ndcg_at_3": 0.4537819335808587,
+    "stale_rate": 0.1875,
+    "unsafe_count": 6,
+    "feature_activation": {
+      "filter": false,
+      "retain_boost": false,
+      "condition_boost": false,
+      "expansion": false,
+      "diversification": false,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "Recency",
+    "recall_at_3": 0.65625,
+    "ndcg_at_3": 0.6057557020990527,
+    "stale_rate": 0.15625,
+    "unsafe_count": 5,
+    "feature_activation": {
+      "filter": false,
+      "retain_boost": false,
+      "condition_boost": false,
+      "expansion": false,
+      "diversification": false,
+      "recency_boost": true,
+      "recency_lambda": 0.75
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "Filter only",
+    "recall_at_3": 0.421875,
+    "ndcg_at_3": 0.39128193358085867,
+    "stale_rate": 0.09375,
+    "unsafe_count": 3,
+    "feature_activation": {
+      "filter": true,
+      "retain_boost": false,
+      "condition_boost": false,
+      "expansion": false,
+      "diversification": false,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "No filter",
+    "recall_at_3": 0.453125,
+    "ndcg_at_3": 0.40690693358085867,
+    "stale_rate": 0.09375,
+    "unsafe_count": 3,
+    "feature_activation": {
+      "filter": false,
+      "retain_boost": true,
+      "condition_boost": true,
+      "expansion": true,
+      "diversification": true,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "No boosts",
+    "recall_at_3": 0.421875,
+    "ndcg_at_3": 0.39128193358085867,
+    "stale_rate": 0.09375,
+    "unsafe_count": 3,
+    "feature_activation": {
+      "filter": true,
+      "retain_boost": false,
+      "condition_boost": false,
+      "expansion": true,
+      "diversification": true,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "No expansion",
+    "recall_at_3": 0.46875,
+    "ndcg_at_3": 0.420578913266927,
+    "stale_rate": 0.09375,
+    "unsafe_count": 3,
+    "feature_activation": {
+      "filter": true,
+      "retain_boost": true,
+      "condition_boost": true,
+      "expansion": false,
+      "diversification": true,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "No diversification",
+    "recall_at_3": 0.46875,
+    "ndcg_at_3": 0.420578913266927,
+    "stale_rate": 0.09375,
+    "unsafe_count": 3,
+    "feature_activation": {
+      "filter": true,
+      "retain_boost": true,
+      "condition_boost": true,
+      "expansion": true,
+      "diversification": false,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  },
+  {
+    "mode": "Full Oracle",
+    "recall_at_3": 0.46875,
+    "ndcg_at_3": 0.420578913266927,
+    "stale_rate": 0.09375,
+    "unsafe_count": 3,
+    "feature_activation": {
+      "filter": true,
+      "retain_boost": true,
+      "condition_boost": true,
+      "expansion": true,
+      "diversification": true,
+      "recency_boost": false
+    },
+    "candidate_pool_hash_sample": "c9f94e6532b99ffe"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "schema_version": "v5-r2.11-remaining-owner-signoff-1",
+  "status": "checksum_bound_project_owner_approved",
+  "owner_statement": "核准全部 51 筆",
+  "owner_signoff_date": "2026-07-26",
+  "approval_scope": "all_51_records_in_remaining_review_packet",
+  "review_packet_sha256": "a55d8c38edef2f4ae3e3d9280d3fb545df6fbaff6d9187083db299a809db3b15",
+  "provisional_annotations_sha256": "71c78ca42be5625dafd9aecd744cba11f9d1119882d76742bf7a0be1901e56e6",
+  "approved_annotations_sha256": "0a53709e950b09a61da1b2fa455e4f7d549884181b07afee678f6caeb547af6d",
+  "approved_record_count": 51,
+  "retrieval_outcomes_observed": false,
+  "r2_10_outcomes_used": false,
+  "limitation": "Project-owner review is not independent blinded or clinical review."
+}

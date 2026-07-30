@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-031",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "85b646e99f9e78a308cf3fb0f28173b0765862200aa9d28f503cf95d9cc26fd7",
+  "response_sha256": "30a900098bc724867a3b1306d4bd00139eb1a85b90c7b698ac4c49c34210d22f",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The NEW excerpt provides specific, actionable quantitative targets (3 servings of vegetables, 2 servings of fruits) and preparation instructions that replace or update the general, broad recommendations provided in the OLD excerpt."
+  },
+  "latency_ms": 960,
+  "usage_metadata": {
+    "promptTokenCount": 354,
+    "candidatesTokenCount": 78,
+    "totalTokenCount": 432,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 354
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

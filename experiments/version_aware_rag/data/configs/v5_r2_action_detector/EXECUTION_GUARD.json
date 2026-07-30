@@ -1,0 +1,11 @@
+{
+  "status": "superseded_by_r2_1_without_validation",
+  "split_manifest_sha256": "e31a7cff488af87019174ce66c7aee7d1835cfc0c5e05889a3094134239af55f",
+  "development_selection_complete": true,
+  "validation_execution_count": 0,
+  "tuning_after_validation_allowed": false,
+  "validation_execution_permanently_skipped_for_this_revision": true,
+  "fresh_v5_test_created": false,
+  "selected_config": "gemini-3.1-flash-lite",
+  "development_selection_sha256": "fdd56f50e9f9d9435ffd0aa9c00614043d65ca55cc9602e3c864437b90834ece"
+}

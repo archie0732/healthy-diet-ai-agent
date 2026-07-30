@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-011",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "fd79f2c43b05aaa7bdd07c5a4f2564daabab93f51219dbbcb26a07c86727f93b",
+  "response_sha256": "9da6e47b8f11b97d106c5c0ed4f6f546b7f44fb5533314710fd902a105971728",
+  "prediction": {
+    "retention_status": "REPLACES_OR_CONFLICTS",
+    "old_unique_information": "The inclusion of fat-free, low-fat, and lactose-free dairy options, as well as fortified soy beverages.",
+    "confidence": 0.9,
+    "rationale": "The current passage explicitly promotes full-fat dairy, which contradicts the focus on fat-free and low-fat versions in the old passage. Additionally, the current passage serves as an updated dietary guideline that displaces the previous recommendations for specific types of dairy products.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 927,
+  "usage_metadata": {
+    "promptTokenCount": 503,
+    "candidatesTokenCount": 124,
+    "totalTokenCount": 627,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 503
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

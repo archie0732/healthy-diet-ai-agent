@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-015",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "387e1c4f8f90acd05dec90d39d88308265472c918bf4886c035366b7ec359b7b",
+  "response_sha256": "64a7d51fa228ab6c26caa18d11cc4f269bead6186e9aaca17f1c4540d5a834e4",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage covers all the core instructions of the OLD passage: avoiding alcohol during pregnancy, not increasing alcohol intake, and the general recommendation to limit consumption for health. The OLD passage's mention of calories and legal drinking age is general knowledge and does not provide a distinct, necessary safety constraint or implementation detail not superseded by the CURRENT guidance."
+  },
+  "latency_ms": 3444,
+  "usage_metadata": {
+    "promptTokenCount": 370,
+    "candidatesTokenCount": 92,
+    "totalTokenCount": 462,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 370
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

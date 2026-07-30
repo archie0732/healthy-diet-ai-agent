@@ -1,0 +1,67 @@
+{
+  "schema_version": "v5-r2.11-development-status-2",
+  "status": "development_gate_failed_locked",
+  "recorded_at": "2026-07-26T00:00:00.000+08:00",
+  "development_only": true,
+  "promotion_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_10_rerun_allowed": false,
+  "owner_approval": {
+    "approved_record_count": 56,
+    "remaining_51_owner_statement": "核准全部 51 筆",
+    "remaining_51_review_packet_sha256": "a55d8c38edef2f4ae3e3d9280d3fb545df6fbaff6d9187083db299a809db3b15",
+    "retrieval_outcomes_observed_at_approval": false
+  },
+  "frozen_development_ledger": {
+    "path": "data/configs/v5_r2_11_frozen_development/development.frozen.jsonl",
+    "sha256": "7e4e7696d268a833befbf4bb3732f837a7ce9ed7fbcc1c7d15bb056f981cd537",
+    "record_count": 56,
+    "stratum_counts": {
+      "conditional_merge": 16,
+      "compatible_history": 16,
+      "current_only": 12,
+      "hard_negative_current": 12
+    },
+    "validator_error_count": 0,
+    "excluded_prior_lineage_count": 64
+  },
+  "execution": {
+    "retrieval_execution_count": 1,
+    "execution_guard_status": "development_gate_failed_locked",
+    "query_count": 56,
+    "system_count": 11,
+    "raw_query_system_row_count": 616,
+    "shared_candidate_pool_identity": true,
+    "external_model_api_used": false,
+    "judgments_read_after_all_retrieval_calls": true
+  },
+  "result": {
+    "selected_system": "implicit_merge_r0.2_g0.5",
+    "gate_checks_passed": 7,
+    "gate_checks_failed": 1,
+    "failed_gate": "required_candidate_micro_recall_at_20_at_least_0_90",
+    "required_candidate_micro_recall_at_20": 0.8863636363636364,
+    "paired_mean_required_recall_at_3_difference": 0.0625,
+    "paired_bootstrap_95_interval": [
+      0.017857142857142856,
+      0.11607142857142858
+    ],
+    "paired_exact_sign_test_two_sided_p": 0.03125
+  },
+  "audit": {
+    "status": "audit_pass",
+    "retrieval_rerun_performed": false,
+    "r2_10_archive_checksum_entries_verified": 22,
+    "r2_10_archive_checksum_entry_count": 22,
+    "path": "results/v5/r2_11_development/AUDIT.json",
+    "sha256": "5a9328c1313c4711894f964938467b295c4ee2acc1366dd62d8460d6905b26b4"
+  },
+  "artifacts": {
+    "frozen_manifest_sha256": "f0b356204b2d6bc044991677eb8d8caa38c9350ef072e37b902625ddf27abaa8",
+    "execution_guard_sha256": "f09cc93e7d54c2d889fd521d884cf8e77ffce2738f4351ffd58b5aa66ac7663e",
+    "raw_retrieval_results_sha256": "a788e5851d476545c9fce2d3acaa368f3fcf6530382a12f50bef1039cbd59113",
+    "development_result_sha256": "b7aff9d078776cef6c24c865fe316bd8989f9b276558b4672bd2d09e84e56d7b"
+  },
+  "claim_boundary": "No retrieval promotion; R2.11 remains Development-only."
+}

@@ -1,0 +1,61 @@
+{
+  "status": "verified_fresh_test_retrieval",
+  "records": 40,
+  "raw_rows": 80,
+  "candidate_pool_equality_verified": true,
+  "metrics_independently_recomputed": true,
+  "checksums_verified": true,
+  "execution_count": 1,
+  "tuning_allowed": false,
+  "full_fresh_retrieval_gate_passed": false,
+  "unsafe_or_deprecated_oracle_queries": [
+    {
+      "query_id": "v4fresh-008",
+      "stratum": "current_only",
+      "question": "Which specific refined carbohydrates are highlighted for significant reduction in 2025-2030?",
+      "retrieved_chunk_ids": [
+        "v4fresh-cand-pair-v4-new-008-new",
+        "v4fresh-cand-pair-v4-new-008-old",
+        "v4fresh-cand-pair-v4-new-040-new"
+      ],
+      "deprecated_hits": [
+        "v4fresh-cand-pair-v4-new-008-old"
+      ],
+      "forbidden_hits": []
+    },
+    {
+      "query_id": "v4fresh-036",
+      "stratum": "hard_negative",
+      "question": "Is 100% fruit juice recommended without restriction in 2025-2030 as it was in older guidelines?",
+      "retrieved_chunk_ids": [
+        "v4fresh-cand-pair-v4-new-066-new",
+        "v4fresh-cand-pair-v4-new-066-old",
+        "v4fresh-cand-pair-v4-new-006-new"
+      ],
+      "deprecated_hits": [
+        "v4fresh-cand-pair-v4-new-066-old"
+      ],
+      "forbidden_hits": [
+        "v4fresh-cand-pair-v4-new-066-old"
+      ]
+    },
+    {
+      "query_id": "v4fresh-040",
+      "stratum": "hard_negative",
+      "question": "Should lactating women restrict caloric intake to pre-pregnancy levels while breastfeeding in 2025-2030?",
+      "retrieved_chunk_ids": [
+        "v4fresh-cand-pair-v4-new-078-new",
+        "v4fresh-cand-pair-v4-new-078-old",
+        "v4fresh-cand-pair-v4-new-051-new"
+      ],
+      "deprecated_hits": [
+        "v4fresh-cand-pair-v4-new-078-old"
+      ],
+      "forbidden_hits": [
+        "v4fresh-cand-pair-v4-new-078-old"
+      ]
+    }
+  ],
+  "claim_decision": "overall_superiority_claim_rejected; retained-history coverage benefit only, with fresh-test safety regression",
+  "failures": []
+}

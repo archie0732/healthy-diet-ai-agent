@@ -1,5 +1,6 @@
 import { CorpusChunk } from '../corpus/types';
 import { SYSTEM_ANSWER_PROMPT, getAnswerUserPrompt, PROMPT_VERSION_V3 } from './prompt';
+import { buildCitationSafeFallback, validateAnswerCitations } from './citation_validator';
 
 export interface GenerationMetadata {
   prompt_version: string;
@@ -41,7 +42,8 @@ export class AnswerGenerator {
     const startTime = Date.now();
     const userPrompt = getAnswerUserPrompt(question, retrievedChunks);
     const retrievedChunkIds = retrievedChunks.map(c => c.chunk_id);
-    const hasApiKey = !!(process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY);
+    const hasApiKey = !!(process.env.GEMINI_AI_API || process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY);
+    let fallbackReason = hasApiKey ? 'API request failed' : 'API key missing';
 
     if (hasApiKey) {
       try {
@@ -56,6 +58,12 @@ export class AnswerGenerator {
         const promptTokens = usage.prompt_tokens || Math.ceil(userPrompt.length / 4);
         const completionTokens = usage.completion_tokens || Math.ceil(text.length / 4);
         const totalTokens = promptTokens + completionTokens;
+
+        const citationValidation = validateAnswerCitations(text, retrievedChunkIds);
+        if (!citationValidation.valid) {
+          fallbackReason = `invalid_citation_contract: invalid_tokens=${citationValidation.invalidCitationTokens.join(',') || 'none'}; uncited_segments=${citationValidation.uncitedMaterialSegments.length}`;
+          throw new Error(fallbackReason);
+        }
 
         // Estimated cost for standard flash tier ($0.075 / 1M prompt, $0.30 / 1M output)
         const estimatedCost = (promptTokens * 0.075 + completionTokens * 0.30) / 1_000_000;
@@ -79,15 +87,13 @@ export class AnswerGenerator {
           retrieved_chunk_ids: retrievedChunkIds
         };
       } catch (err: any) {
+        if (!String(err.message).startsWith('invalid_citation_contract:')) fallbackReason = `API request failed: ${err.message}`;
         console.warn(`Answer generation API call failed, falling back to local builder: ${err.message}`);
       }
     }
 
-    // Deterministic offline summary builder fallback
-    const summaryLines = retrievedChunks.map(c => 
-      `According to the guideline [${c.chunk_id}], it states that: ${c.text.trim().substring(0, 150)}...`
-    );
-    const answer = `Based on the provided evidence:\n${summaryLines.join('\n')}\n(Exceptions apply for specific target groups if mentioned in the context).`;
+    // Deterministic, extractive fallback with exact retrieved chunk IDs only.
+    const answer = buildCitationSafeFallback(retrievedChunks);
     const latencyMs = Date.now() - startTime;
     const promptTokens = Math.ceil(userPrompt.length / 4);
     const completionTokens = Math.ceil(answer.length / 4);
@@ -107,7 +113,7 @@ export class AnswerGenerator {
           total_tokens: promptTokens + completionTokens
         },
         estimated_cost_usd: 0,
-        reason: 'API key missing or request failed'
+        reason: fallbackReason
       },
       retrieved_chunk_ids: retrievedChunkIds
     };
@@ -121,8 +127,9 @@ async function callLLMApi(
   temperature: number,
   maxTokens: number
 ): Promise<{ text: string; usage: { prompt_tokens: number; completion_tokens: number } }> {
-  if (process.env.GEMINI_API_KEY) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`;
+  const geminiApiKey = process.env.GEMINI_AI_API || process.env.GEMINI_API_KEY;
+  if (geminiApiKey) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiApiKey}`;
     const payload = {
       systemInstruction: { parts: [{ text: systemInstruction }] },
       contents: [{ parts: [{ text: prompt }] }],
@@ -165,4 +172,3 @@ async function callLLMApi(
   }
   throw new Error('No API Key configured');
 }
-

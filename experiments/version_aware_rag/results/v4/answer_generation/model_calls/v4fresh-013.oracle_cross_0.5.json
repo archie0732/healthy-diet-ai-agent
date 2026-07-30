@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-013",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "c6e36f36d5f2db0d0fb5e079c1c0567daabac6d6377cc1d727da90a8dfcb2673",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-052-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-052-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugars-Less than 10% of calories per day\r\nstarting at age 2. Avoid foods and beverages with\r\nadded sugars for those younger than age 2.\r\n* Saturated fat-Less than 10% of calories per day\r\nstarting at age 2.\r\n* The National Academies recommends that trans fat and dietary cholesterol consumption to be as low as possible without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnant.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-022-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\nQUESTION\n\nHow does the 2025–2030 advice for groups that should avoid alcohol qualify the earlier 2020 moderation framework?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "0b4549ba0bed7f052b42868acee14444f3fdf61414a4bc3db5134c018c873da3",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-052-new",
+    "v4fresh-cand-pair-v4-new-052-old",
+    "v4fresh-cand-pair-v4-new-022-new"
+  ],
+  "answer": "*   Question: How does the 2025–2030 advice for groups that should avoid alcohol qualify the earlier 2020 moderation framework?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030):\n        *   \"Consume less alcohol for better overall health.\"\n        *   \"People who should completely avoid alcohol include pregnant women, people who are recovering from alcohol use disorder or are unable to control the amount they drink, and people taking medications or with medical conditions that can interact with alcohol.\"\n        *   \"For those with a family history of alcoholism, be mindful of alcohol consumption and associated addictive behaviors.\"\n    *   Passage 2 (dga-2020, 2020-2025):\n        *   \"Adults of legal drinking age can choose not to drink or to drink in moderation by limiting intake to 2 drinks or less in a day for men and 1 drink or less in a day for women, when alcohol is consumed.\"\n        *   \"Drinking less is better for health than drinking more.\"\n        *   \"There are some adults who should not drink alcohol, such as women who are pregnant.\"\n    *   Passage 3 (dga-2025, 2025-2030): Duplicate of Passage 1.\n\n    *   2020 Framework: Moderation for adults of legal drinking age (2 drinks/day for men, 1 for women) [v4fresh-cand-pair-v4-new-052-old]. Mentions some adults should not drink, specifically citing pregnant women [v4fresh-cand-pair-v4-new-052-old].\n    *   2025-2030 Advice: Expands the list of people who should completely avoid alcohol to include pregnant women, people recovering from alcohol use disorder, people unable to control the amount they drink, and people with medical conditions or taking medications that interact with alcohol [v4fresh-cand-pair-v4-new-052-new]. It also advises those with a family history of alcoholism to be mindful of consumption and addictive behaviors [v4fresh-cand-pair-v4-new-052-new].\n\n    *   The 2020 framework focused on moderation for legal-age adults (1-2 drinks/day) and noted pregnant women should not drink [v4fresh-cand-pair-v4-new-052-old].\n    *   The 2025-2030 advice specifies that complete avoidance is necessary for pregnant women, people recovering from alcohol use disorder, those unable to control their intake, and individuals with medical conditions or medications that interact with alcohol [v4fresh-cand-pair-v4-new-052-new].\n    *   Additionally, the 2025-2030 advice suggests mindfulness regarding consumption and addictive behaviors for those with a family history of alcoholism [v4fresh-cand-pair-v4-new-052-new].The 2020 moderation framework stated that adults of legal drinking age could choose not to drink or limit intake to 1 drink or less per day for women and 2 drinks or less per day for men, noting that some adults, such as pregnant women, should not drink [v4fresh-cand-pair-v4-new-052-old]. The 2025–2030 advice expands the groups who should completely avoid alcohol to include:\n* pregnant women [v4fresh-cand-pair-v4-new-052-new];\n* people recovering from alcohol use disorder or those unable to control the amount they drink [v4fresh-cand-pair-v4-new-052-new];\n* people with medical conditions or taking medications that can interact with alcohol [v4fresh-cand-pair-v4-new-052-new].\n\nAdditionally, the 2025–2030 advice specifies that individuals with a family history of alcoholism should be mindful of associated addictive behaviors and alcohol consumption [v4fresh-cand-pair-v4-new-052-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "18dad572f367bb939ba04371cfff464c287ca58a5e1bba5c3f71c94d3664481b",
+    "response_sha256": "ac050f6274648ded528d04d51b260297259327a1b0411f09e1e2e8901aea6611",
+    "latency_ms": 29093,
+    "usage_metadata": {
+      "promptTokenCount": 1125,
+      "candidatesTokenCount": 249,
+      "totalTokenCount": 2131,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1125
+        }
+      ],
+      "thoughtsTokenCount": 757,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the 2025–2030 advice for groups that should avoid alcohol qualify the earlier 2020 moderation framework?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, 2025-2030):\n        *   \"Consume less alcohol for better overall health.\"\n        *   \"People who should completely avoid alcohol include pregnant women, people who are recovering from alcohol use disorder or are unable to control the amount they drink, and people taking medications or with medical conditions that can interact with alcohol.\"\n        *   \"For those with a family history of alcoholism, be mindful of alcohol consumption and associated addictive behaviors.\"\n    *   Passage 2 (dga-2020, 2020-2025):\n        *   \"Adults of legal drinking age can choose not to drink or to drink in moderation by limiting intake to 2 drinks or less in a day for men and 1 drink or less in a day for women, when alcohol is consumed.\"\n        *   \"Drinking less is better for health than drinking more.\"\n        *   \"There are some adults who should not drink alcohol, such as women who are pregnant.\"\n    *   Passage 3 (dga-2025, 2025-2030): Duplicate of Passage 1.\n\n    *   2020 Framework: Moderation for adults of legal drinking age (2 drinks/day for men, 1 for women) [v4fresh-cand-pair-v4-new-052-old]. Mentions some adults should not drink, specifically citing pregnant women [v4fresh-cand-pair-v4-new-052-old].\n    *   2025-2030 Advice: Expands the list of people who should completely avoid alcohol to include pregnant women, people recovering from alcohol use disorder, people unable to control the amount they drink, and people with medical conditions or taking medications that interact with alcohol [v4fresh-cand-pair-v4-new-052-new]. It also advises those with a family history of alcoholism to be mindful of consumption and addictive behaviors [v4fresh-cand-pair-v4-new-052-new].\n\n    *   The 2020 framework focused on moderation for legal-age adults (1-2 drinks/day) and noted pregnant women should not drink [v4fresh-cand-pair-v4-new-052-old].\n    *   The 2025-2030 advice specifies that complete avoidance is necessary for pregnant women, people recovering from alcohol use disorder, those unable to control their intake, and individuals with medical conditions or medications that interact with alcohol [v4fresh-cand-pair-v4-new-052-new].\n    *   Additionally, the 2025-2030 advice suggests mindfulness regarding consumption and addictive behaviors for those with a family history of alcoholism [v4fresh-cand-pair-v4-new-052-new].",
+                "thought": true
+              },
+              {
+                "text": "The 2020 moderation framework stated that adults of legal drinking age could choose not to drink or limit intake to 1 drink or less per day for women and 2 drinks or less per day for men, noting that some adults, such as pregnant women, should not drink [v4fresh-cand-pair-v4-new-052-old]. The 2025–2030 advice expands the groups who should completely avoid alcohol to include:\n* pregnant women [v4fresh-cand-pair-v4-new-052-new];\n* people recovering from alcohol use disorder or those unable to control the amount they drink [v4fresh-cand-pair-v4-new-052-new];\n* people with medical conditions or taking medications that can interact with alcohol [v4fresh-cand-pair-v4-new-052-new].\n\nAdditionally, the 2025–2030 advice specifies that individuals with a family history of alcoholism should be mindful of associated addictive behaviors and alcohol consumption [v4fresh-cand-pair-v4-new-052-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1125,
+        "candidatesTokenCount": 249,
+        "totalTokenCount": 2131,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1125
+          }
+        ],
+        "thoughtsTokenCount": 757,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "oHtgavOJL4jAvr0PyJ-koAQ"
+    }
+  }
+}

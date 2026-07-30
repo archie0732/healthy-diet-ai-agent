@@ -1,0 +1,13 @@
+{
+  "status": "blocked_no_safe_r2_action_detector",
+  "split_manifest_sha256": "e31a7cff488af87019174ce66c7aee7d1835cfc0c5e05889a3094134239af55f",
+  "development_selection_complete": true,
+  "validation_execution_count": 0,
+  "tuning_after_validation_allowed": false,
+  "fresh_v5_test_created": false,
+  "derived_from_r2_before_any_validation_execution": true,
+  "development_prompt_revision": "v5-r2-action-v2",
+  "preregistered_minimum_pair_preserve_recall": 0.5,
+  "selected_config": null,
+  "development_selection_sha256": "257f519f56a33872765ddbb738c0fe8bc61ef167f9c82608f7b73a120eef7e57"
+}

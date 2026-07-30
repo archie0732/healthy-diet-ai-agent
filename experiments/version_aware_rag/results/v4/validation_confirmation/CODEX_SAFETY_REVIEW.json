@@ -1,0 +1,30 @@
+{
+  "status": "codex_validation_safety_review_complete_provisional",
+  "reviewer_type": "ai_primary_reviewer_not_independent_human",
+  "counts": {
+    "citation_safe": 33,
+    "neither": 7,
+    "stale": 0,
+    "forbidden": 0
+  },
+  "source_ledger_sha256": "3ebc8b09363ee90469482acb341851e85695c9daac656066353401862068d414",
+  "reviewed_ledger_sha256": "3ec8447f741cbda28247abb88b9f9cd64caa12187535edb781fc1497b9d6d1bf",
+  "provisional_safety_metrics": {
+    "recency": {
+      "query_count": 8,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    },
+    "oracle_cross_0_5": {
+      "query_count": 8,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    }
+  },
+  "provisional_safety_gate_passed": true,
+  "owner_signoff_required": true
+}

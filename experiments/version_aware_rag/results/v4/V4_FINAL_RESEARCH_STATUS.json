@@ -1,0 +1,202 @@
+{
+  "status": "v4_automated_execution_complete_blinded_human_review_pending",
+  "research_hypothesis_decision": "overall_version_aware_superiority_rejected_on_fresh_test_safety_gate",
+  "supported_finding": "Oracle lineage expansion improved conditional-merge, compatible-history, and retained-evidence retrieval across development, validation, and fresh test, but introduced deprecated/forbidden hits on the fresh test.",
+  "development_gate_passed": true,
+  "validation_gate_passed": true,
+  "fresh_retrieval_gate_passed": false,
+  "fresh_metrics": {
+    "recency": {
+      "all": {
+        "query_count": 40,
+        "required_micro_recall_at_3": 0.116667,
+        "current_required_micro_recall_at_3": 0.175,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "current_only": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.1,
+        "current_required_micro_recall_at_3": 0.1,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "conditional_merge": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.05,
+        "current_required_micro_recall_at_3": 0.1,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "compatible_history": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.15,
+        "current_required_micro_recall_at_3": 0.3,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "hard_negative": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.2,
+        "current_required_micro_recall_at_3": 0.2,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      }
+    },
+    "oracle": {
+      "all": {
+        "query_count": 40,
+        "required_micro_recall_at_3": 0.333333,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0.2,
+        "deprecated_hit_rate_at_3": 0.025,
+        "forbidden_hit_rate_at_3": 0.016667
+      },
+      "current_only": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.4,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0.033333,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "conditional_merge": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.3,
+        "current_required_micro_recall_at_3": 0.5,
+        "retained_required_micro_recall_at_3": 0.1,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "compatible_history": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.3,
+        "current_required_micro_recall_at_3": 0.3,
+        "retained_required_micro_recall_at_3": 0.3,
+        "deprecated_hit_rate_at_3": 0,
+        "forbidden_hit_rate_at_3": 0
+      },
+      "hard_negative": {
+        "query_count": 10,
+        "required_micro_recall_at_3": 0.4,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0,
+        "deprecated_hit_rate_at_3": 0.066667,
+        "forbidden_hit_rate_at_3": 0.066667
+      }
+    }
+  },
+  "fresh_safety_failures": [
+    "v4fresh-008",
+    "v4fresh-036",
+    "v4fresh-040"
+  ],
+  "predicted_graph": {
+    "claim_status": "post_test_diagnostic_only",
+    "accuracy": 0.3,
+    "macro_f1": 0.196486,
+    "predicted_retrieval_status": "not_run_structurally_identical_under_frozen_edge-existence-only_runner",
+    "relation_type_ignored_by_frozen_runner": true
+  },
+  "answer_generation": {
+    "answer_count": 120,
+    "audit_status": "verified_answer_generation_and_blinding",
+    "automatic_proxy_summary": {
+      "append_only": {
+        "answer_count": 40,
+        "mean_required_citation_recall": 0.025,
+        "answers_with_all_required_current_cited": 1,
+        "retained_applicable_answers": 20,
+        "answers_with_all_required_retained_cited": 0,
+        "invalid_citation_count": 75,
+        "forbidden_citation_count": 0,
+        "deprecated_citation_count": 0
+      },
+      "recency": {
+        "answer_count": 40,
+        "mean_required_citation_recall": 0.025,
+        "answers_with_all_required_current_cited": 1,
+        "retained_applicable_answers": 20,
+        "answers_with_all_required_retained_cited": 0,
+        "invalid_citation_count": 75,
+        "forbidden_citation_count": 0,
+        "deprecated_citation_count": 0
+      },
+      "oracle_cross_0.5": {
+        "answer_count": 40,
+        "mean_required_citation_recall": 0.2625,
+        "answers_with_all_required_current_cited": 11,
+        "retained_applicable_answers": 20,
+        "answers_with_all_required_retained_cited": 4,
+        "invalid_citation_count": 78,
+        "forbidden_citation_count": 1,
+        "deprecated_citation_count": 1
+      }
+    },
+    "independent_human_evaluation_complete": false,
+    "publication_grade_answer_claim_allowed": false
+  },
+  "guards": {
+    "test_execution_count": 1,
+    "tuning_allowed": false
+  },
+  "next_required_action": "Complete blinded ratings using two independent evaluators and adjudication. Project-owner/Codex review may be reported only as provisional workflow evidence.",
+  "claim_boundaries": [
+    "Do not claim overall superiority to Recency.",
+    "Do not claim deployment readiness.",
+    "Do not treat automatic citation proxy as human answer quality.",
+    "Do not repair or rerun the frozen fresh test.",
+    "A future V5 may implement relation-type-aware expansion/filtering and must use a new held-out test."
+  ],
+  "artifact_checksums": {
+    "development_gate": {
+      "path": "results/v4/dev_model_selection/DEVELOPMENT_PROMOTION_GATE.json",
+      "sha256": "8d043fbb2d5e5b1c408501843afea2732a083917931e792068308c45435b27b3"
+    },
+    "validation": {
+      "path": "results/v4/validation_confirmation/VALIDATION_CONFIRMATION.json",
+      "sha256": "8e0b69e87be67643c27eecbdbd10937ca137994f7312425948909306456a8720"
+    },
+    "validation_audit": {
+      "path": "results/v4/validation_confirmation/VALIDATION_CONFIRMATION_AUDIT.json",
+      "sha256": "0f65cec40eb9473b41f167a4a91141485443941bd2f37fc42e8c1aefdd344885"
+    },
+    "fresh_result": {
+      "path": "results/v4/fresh_test_retrieval/FRESH_TEST_RETRIEVAL_RESULT.json",
+      "sha256": "908eff8e9389811d7dc29d51d93f975cae6975785b0e0f6c249a324b765e7c6a"
+    },
+    "fresh_audit": {
+      "path": "results/v4/fresh_test_retrieval/FRESH_TEST_RETRIEVAL_AUDIT.json",
+      "sha256": "5d6f7ea63caec092fec67b1c13b2e11aa9de66d760d73c3a732ade62b3d49354"
+    },
+    "predicted": {
+      "path": "results/v4/predicted_graph_posttest/PREDICTED_GRAPH_EVALUATION.json",
+      "sha256": "6766bc0de9207b306d3a18f235601358a70d74173158b17b7cfd17bddc6304ad"
+    },
+    "answers": {
+      "path": "results/v4/answer_generation/ANSWER_GENERATION_MANIFEST.json",
+      "sha256": "d9fac0d0d03906b40fb1c4fbfbbbbe654c96c53f4de143431e0bc70575d35f35"
+    },
+    "answer_audit": {
+      "path": "results/v4/answer_generation/ANSWER_GENERATION_AUDIT.json",
+      "sha256": "524c8ae17b158e2db960f009f5e1c8e1f392bdd358df111129cbb64ab75cf2f2"
+    },
+    "proxy": {
+      "path": "results/v4/answer_generation/AUTOMATIC_GOLD_CITATION_PROXY.json",
+      "sha256": "4a613fb2500c2f78395dffd435842b1d6f7c2a51c4ed259f07e1803aca3162a2"
+    },
+    "guard": {
+      "path": "data/configs/v4_fresh_test_frozen/FRESH_TEST_GUARD.json",
+      "sha256": "c44988ecb888c6108e2060021ddf1318b0854957496b9abe0ebfed1059f52f6d"
+    },
+    "source_catalog": {
+      "path": "SOURCE_CATALOG.md",
+      "sha256": "933b6cdcead7a7731c7eea99fd1295c4a88a64827e10bcee71d32114c0658d60"
+    }
+  }
+}

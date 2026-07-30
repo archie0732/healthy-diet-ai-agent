@@ -1,0 +1,100 @@
+{
+  "status": "validation_executed_once",
+  "selected_config": "fail_closed_consensus_0.8",
+  "validation_execution_count": 1,
+  "tuning_after_validation": false,
+  "preregistered_gate": {
+    "zero_false_safe_expansion": false,
+    "pair_preserving_precision_one": false,
+    "pair_preserving_recall_at_least_half": false,
+    "zero_invalid_outputs": true
+  },
+  "full_validation_gate_passed": false,
+  "metrics": {
+    "query_count": 5,
+    "accuracy": 0.2,
+    "false_safe_expansion_count": 1,
+    "pair_preserving_precision": 0,
+    "pair_preserving_recall": 0,
+    "invalid_output_count": 0
+  },
+  "development_selection_sha256": "785040bc1277d47489830006ca591f7b191c7bfa18f71bcc42d04fa796c906a4",
+  "validation_input_sha256": "068faacb76c0cd2e5fbe77ef37f3c438f78c3056dc73f3d0d6f99225ec067cd6",
+  "predictions": [
+    {
+      "pair_id": "v5claim-006",
+      "gold": "duplicate",
+      "predicted": "conditional_difference",
+      "gemma": {
+        "relation_type": "conditional_difference",
+        "confidence": 1,
+        "rationale": "The NEW passage adds a specific age applicability ('starting at age 2'), creating a conditional difference in scope compared to the general OLD passage."
+      },
+      "gemini": {
+        "relation_type": "conditional_difference",
+        "confidence": 1,
+        "rationale": "The NEW passage explicitly defines the applicability for the population by adding 'starting at age 2', whereas the OLD passage was broad and lacked this age-specific constraint."
+      }
+    },
+    {
+      "pair_id": "v5claim-010",
+      "gold": "superseded",
+      "predicted": "conflicting",
+      "gemma": {
+        "relation_type": "superseded",
+        "confidence": 1,
+        "rationale": "The NEW passage replaces the specific daily drink limits ('2 drinks or less in a day for men and 1 drink or less in a day for women') with a more general recommendation to 'Consume less alcohol for better overall health' and expands the list of people who should avoid alcohol."
+      },
+      "gemini": {
+        "relation_type": "superseded",
+        "confidence": 0.95,
+        "rationale": "The NEW passage expands upon the population that should avoid alcohol, adding 'people who are recovering from alcohol use disorder', 'people who are unable to control the amount they drink', 'people taking medications', and those with 'medical conditions' to the existing category of 'pregnant women', effectively updating the recommendation."
+      }
+    },
+    {
+      "pair_id": "v5claim-012",
+      "gold": "conflicting",
+      "predicted": "conflicting",
+      "gemma": {
+        "relation_type": "superseded",
+        "confidence": 0.9,
+        "rationale": "The OLD passage provides general evidence-based associations between added sugars/sweeteners and health risks, whereas the NEW passage replaces these generalities with specific, actionable quantitative limits (e.g., 'no more than 10 grams of added sugars' per meal) and explicit directives to 'Avoid' or 'Limit' these substances."
+      },
+      "gemini": {
+        "relation_type": "conflicting",
+        "confidence": 0.95,
+        "rationale": "The OLD passage states that FDA-approved high-intensity sweeteners 'have been determined to be safe for the general population', whereas the NEW passage explicitly advises to 'Limit foods and beverages that include... low-calorie non-nutritive sweeteners' and asserts that 'no amount of... non-nutritive sweeteners is recommended or considered part of a healthy or nutritious diet'."
+      }
+    },
+    {
+      "pair_id": "v5claim-015",
+      "gold": "conditional_difference",
+      "predicted": "conflicting",
+      "gemma": {
+        "relation_type": "superseded",
+        "confidence": 1,
+        "rationale": "The NEW passage updates the general recommendation against increasing alcohol intake ('not recommended that individuals begin drinking or drink more') to a more specific directive to 'Consume less alcohol for better overall health' and expands the list of people who should avoid alcohol."
+      },
+      "gemini": {
+        "relation_type": "superseded",
+        "confidence": 0.95,
+        "rationale": "The NEW passage updates and expands the guidance on alcohol consumption, incorporating more specific cautionary groups (e.g., people recovering from alcohol use disorder, family history of alcoholism) while replacing the OLD passage's general phrasing with direct, actionable dietary recommendations."
+      }
+    },
+    {
+      "pair_id": "v5claim-018",
+      "gold": "complementary",
+      "predicted": "conflicting",
+      "gemma": {
+        "relation_type": "superseded",
+        "confidence": 0.9,
+        "rationale": "The NEW passage replaces the general categories of vegetables and grains from the OLD passage with specific daily serving goals ('Vegetables: 3 servings per day', 'Fruits: 2 servings per day') and more detailed preparation guidelines."
+      },
+      "gemini": {
+        "relation_type": "complementary",
+        "confidence": 0.9,
+        "rationale": "The NEW passage adds specific serving goals, preparation advice, and guidance on juice consumption, while the OLD passage provides broad dietary categories that remain compatible with these new additions."
+      }
+    }
+  ]
+}

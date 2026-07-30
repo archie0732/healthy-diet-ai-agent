@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-003",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "1853bedce9d285375153f61cae949dc92c0b0a6eeb685cf8384a0c045f3a5596",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-064-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nan\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-064-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=About Meats & Poultry\r\nMeat, also known as red meat, includes all forms of beef, pork, lamb, veal, goat, and non-\r\nbird game (e. g. , venison, bison, and elk). Poultry includes all forms of chicken, turkey, duck,\r\ngeese, guineas, and game birds (e. g. , quail and pheasant). Meats and poultry vary in fat\r\ncontent and include both fresh and processed forms. Lean meats and poultry contain less\r\nthan 10 g of fat, 4. 5 g or less of saturated fats, and less than 95 mg of cholesterol per 100 g\r\nand per labeled serving size (e. g. , 95% lean ground beef, pork tenderloin, and skinless\r\nchicken or turkey breast). Processed meats and processed poultry (e. g. , sausages, luncheon\r\nmeats, bacon, and beef jerky) are products preserved by smoking, curing, salting, and/or\r\nthe addition of chemical preservatives. Strong evidence from mostly prospective cohort studies but also randomized controlled trials has shown\r\nthat eating patterns that include lower intake of meats as well as processed meats and processed poultry\r\nare associated with reduced risk of CVD in adults. Moderate evidence indicates that these eating patterns\r\nare associated with reduced risk of obesity, type 2 diabetes, and some types of cancer in adults. As\r\ndescribed earlier, eating patterns consist of multiple, interacting food components, and the relationships\r\nto health exist for the\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-005-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements\n\nQUESTION\n\nAre red meats included in recommended animal protein sources in 2025-2030?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "599a6457b53451364aa373695e206f33742c5229eac1939d6b1c0545a3999953",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-064-new",
+    "v4fresh-cand-pair-v4-new-064-old",
+    "v4fresh-cand-pair-v4-new-005-new"
+  ],
+  "answer": "*   Question: \"Are red meats included in recommended animal protein sources in 2025-2030?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030): Mentions \"Consume a variety of protein foods from animal sources, including eggs, poultry, seafood, and red meat...\"\n    *   Passage 2 (dga-2015, edition 2015-2020): Discusses red meat, poultry, and health risks (CVD, obesity, etc.). Not relevant to the 2025-2030 recommendation specifically, though it defines red meat.\n    *   Passage 3 (dga-2025, edition 2025-2030): Identical text to Passage 1. Mentions \"Consume a variety of protein foods from animal sources, including eggs, poultry, seafood, and red meat...\"\n\n    *   The 2025-2030 edition (dga-2025) recommends consuming a variety of protein foods from animal sources, which includes red meat [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes (specifically for the 2025-2030 edition).Yes, for the 2025-2030 edition, red meat is included as one of the animal sources from which to consume a variety of protein foods [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "a0874cc41d3c3db61c4918e0025ad4e796079102a796bce59f761e03b85e0b86",
+    "response_sha256": "bcbde53b18ced2b5e62845c6df809af31fc95140c7d4fd9a1cc2489da1a16837",
+    "latency_ms": 15440,
+    "usage_metadata": {
+      "promptTokenCount": 1160,
+      "candidatesTokenCount": 75,
+      "totalTokenCount": 1661,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1160
+        }
+      ],
+      "thoughtsTokenCount": 426,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: \"Are red meats included in recommended animal protein sources in 2025-2030?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030): Mentions \"Consume a variety of protein foods from animal sources, including eggs, poultry, seafood, and red meat...\"\n    *   Passage 2 (dga-2015, edition 2015-2020): Discusses red meat, poultry, and health risks (CVD, obesity, etc.). Not relevant to the 2025-2030 recommendation specifically, though it defines red meat.\n    *   Passage 3 (dga-2025, edition 2025-2030): Identical text to Passage 1. Mentions \"Consume a variety of protein foods from animal sources, including eggs, poultry, seafood, and red meat...\"\n\n    *   The 2025-2030 edition (dga-2025) recommends consuming a variety of protein foods from animal sources, which includes red meat [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].\n\n    *   Concise? Yes.\n    *   Fully cited? Yes.\n    *   Only from supplied passages? Yes.\n    *   Preserve boundaries? Yes (specifically for the 2025-2030 edition).",
+                "thought": true
+              },
+              {
+                "text": "Yes, for the 2025-2030 edition, red meat is included as one of the animal sources from which to consume a variety of protein foods [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1160,
+        "candidatesTokenCount": 75,
+        "totalTokenCount": 1661,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1160
+          }
+        ],
+        "thoughtsTokenCount": 426,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "tnlgavDxFpyj9tMP3YneqAU"
+    }
+  }
+}

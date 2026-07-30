@@ -1,0 +1,18 @@
+import { createHash } from 'node:crypto';
+import { readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+const EXP = path.join(process.cwd(), 'experiments/version_aware_rag');
+const DIR = path.join(EXP, 'data/configs/v4_fresh_test_frozen');
+const guardPath = path.join(DIR, 'FRESH_TEST_GUARD.json');
+const amendmentPath = path.join(EXP, 'FRESH_TEST_DESIGN_AMENDMENT_02.md');
+const draftPath = path.join(EXP, 'data/annotations_v4/fresh_test_draft/fresh_test_ledger.jsonl');
+const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex');
+const [guardText, amendmentText, draftText] = await Promise.all([readFile(guardPath, 'utf8'), readFile(amendmentPath, 'utf8'), readFile(draftPath, 'utf8')]);
+const guard = JSON.parse(guardText);
+if (guard.final_test_created || guard.test_retrieval_execution_count_completed !== 0 || guard.status !== 'fresh_test_draft_created_review_required') throw new Error('Semantic amendment requires an unexecuted review draft.');
+if (sha256(draftText) !== guard.draft_ledger_sha256) throw new Error('Superseded draft checksum mismatch.');
+const record = { status: 'frozen_pretest_semantic_amendment', amendment_id: 'FRESH_TEST_DESIGN_AMENDMENT_02', amendment_sha256: sha256(amendmentText), superseded_draft_ledger_sha256: sha256(draftText), outcome_data_available_when_recorded: false, policy_model_prompt_or_endpoint_change: false };
+const recordText = `${JSON.stringify(record, null, 2)}\n`;
+await writeFile(path.join(DIR, 'FRESH_TEST_DESIGN_AMENDMENT_02.json'), recordText, 'utf8');
+await writeFile(guardPath, `${JSON.stringify({ ...guard, status: 'fresh_test_semantic_revision_unlocked', semantic_amendment_sha256: sha256(recordText) }, null, 2)}\n`, 'utf8');
+console.log(JSON.stringify(record, null, 2));

@@ -1,0 +1,96 @@
+{
+  "schema_version": "v5-r2.16-confirmation-result-1",
+  "status": "development_confirmation_gate_failed",
+  "development_only": true,
+  "tested_variant": "pair_score_g2.0_top6_anchor",
+  "baseline_variant": "pair_score_g0.5",
+  "no_forced_pair_quota": true,
+  "retrieval_execution_count": 1,
+  "all_retrieval_calls_completed_before_judgment_read": true,
+  "judgment_file_read_count": 1,
+  "summaries": [
+    {
+      "variant": "pair_score_g0.5",
+      "required_micro_recall_at_20": 0.8076923076923077,
+      "strata": {
+        "conditional_merge": {
+          "query_count": 10,
+          "required_micro_recall_at_3": 0.35,
+          "both_evidence_coverage": 0.1,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "query_count": 10,
+          "required_micro_recall_at_3": 0.25,
+          "both_evidence_coverage": 0,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    },
+    {
+      "variant": "pair_score_g2.0_top6_anchor",
+      "required_micro_recall_at_20": 0.8076923076923077,
+      "strata": {
+        "conditional_merge": {
+          "query_count": 10,
+          "required_micro_recall_at_3": 0.45,
+          "both_evidence_coverage": 0.3,
+          "unsafe_top3_hit_rate": 0
+        },
+        "compatible_history": {
+          "query_count": 10,
+          "required_micro_recall_at_3": 0.3,
+          "both_evidence_coverage": 0.1,
+          "unsafe_top3_hit_rate": 0
+        },
+        "current_only": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        },
+        "hard_negative_current": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "unsafe_top3_hit_rate": 0
+        }
+      }
+    }
+  ],
+  "combined_implicit_both_evidence_coverage": {
+    "baseline": 0.05,
+    "repaired": 0.2
+  },
+  "overall_unsafe_top3_hit_rate": {
+    "baseline": 0,
+    "repaired": 0
+  },
+  "hard_constraints": {
+    "required_candidate_micro_recall_at_20_at_least_0_90": false,
+    "current_only_required_micro_recall_at_3_noninferior": true,
+    "hard_negative_required_micro_recall_at_3_noninferior": true,
+    "unsafe_top3_hit_rate_not_increased": true,
+    "ordered_pool_and_execution_integrity": true
+  },
+  "hard_eligible": false,
+  "strict_improvement_checks": {
+    "conditional_merge_required_micro_recall_at_3_strictly_improves": true,
+    "compatible_history_required_micro_recall_at_3_strictly_improves": true,
+    "implicit_both_evidence_coverage_strictly_improves": true
+  },
+  "gate_passed": false,
+  "claim_boundary": "No promotion; R2.16 remains Development-only."
+}

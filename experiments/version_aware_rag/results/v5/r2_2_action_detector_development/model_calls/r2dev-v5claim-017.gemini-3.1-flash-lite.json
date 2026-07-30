@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-017",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "a9adc4d8bf14c02b2f8157d81eac2814d2da36318a2bf4805443c5d63bcc49a1",
+  "response_sha256": "18d680c2925358fe2d2cf353ce22fd9f78d8064471bfd3c10e9dc2fa42965305",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides an exhaustive list of protein sources that fully subsumes the specific examples (meats, poultry, eggs, seafood, beans, peas, lentils, nuts, seeds, and soy) listed in the OLD passage.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 906,
+  "usage_metadata": {
+    "promptTokenCount": 566,
+    "candidatesTokenCount": 89,
+    "totalTokenCount": 655,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 566
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

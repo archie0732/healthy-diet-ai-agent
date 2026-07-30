@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-001",
+  "system": "recency",
+  "input_sha256": "cae02698a25812cdb1126006bb7a1a4b84ff6e6b204138d88c567cd52f944453",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-064-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nan\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-005-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-014-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking\n\nQUESTION\n\nWhat is the recommended daily protein intake target per kg of body weight in 2025-2030?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "f7ce92c08c097b2933971bb49bcb939d4b828b581762e5b06cb3b5878cbdf26b",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-064-new",
+    "v4fresh-cand-pair-v4-new-005-new",
+    "v4fresh-cand-pair-v4-new-014-new"
+  ],
+  "answer": "*   Question: What is the recommended daily protein intake target per kg of body weight in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-064-new): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your an\" (text cuts off).\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-005-new): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your individual caloric requirements\".\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-014-new): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your individual caloric requirements.\"\n\n    *   The target is 1.2-1.6 grams of protein per kilogram of body weight per day [v4fresh-cand-pair-v4-new-064-new, v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new].\n    *   This should be adjusted as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new].\n\n    *   Concise answer.\n    *   Fully cited.\n    *   Preserve boundaries.For 2025-2030, protein serving goals are 1.2-1.6 grams of protein per kilogram of body weight per day [v4fresh-cand-pair-v4-new-064-new, v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new], which should be adjusted as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "1fc4b428c5ae28bf0fb0f2fb1d1f217884028d8172780931bf6539c20d527acb",
+    "response_sha256": "7b8f6e74f7c009ac6729114e7200e57971aad55263711fc09f139430a9c9da90",
+    "latency_ms": 17620,
+    "usage_metadata": {
+      "promptTokenCount": 1110,
+      "candidatesTokenCount": 142,
+      "totalTokenCount": 1711,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1110
+        }
+      ],
+      "thoughtsTokenCount": 459,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: What is the recommended daily protein intake target per kg of body weight in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-064-new): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your an\" (text cuts off).\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-005-new): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your individual caloric requirements\".\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-014-new): Mentions \"Protein serving goals: 1.2-1.6 grams of protein per kilogram of body weight per day, adjusting as needed based on your individual caloric requirements.\"\n\n    *   The target is 1.2-1.6 grams of protein per kilogram of body weight per day [v4fresh-cand-pair-v4-new-064-new, v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new].\n    *   This should be adjusted as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new].\n\n    *   Concise answer.\n    *   Fully cited.\n    *   Preserve boundaries.",
+                "thought": true
+              },
+              {
+                "text": "For 2025-2030, protein serving goals are 1.2-1.6 grams of protein per kilogram of body weight per day [v4fresh-cand-pair-v4-new-064-new, v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new], which should be adjusted as needed based on individual caloric requirements [v4fresh-cand-pair-v4-new-005-new, v4fresh-cand-pair-v4-new-014-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1110,
+        "candidatesTokenCount": 142,
+        "totalTokenCount": 1711,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1110
+          }
+        ],
+        "thoughtsTokenCount": 459,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "S3lgaq-WAcqH1e8Pk8qPsAM"
+    }
+  }
+}

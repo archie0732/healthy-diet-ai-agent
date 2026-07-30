@@ -1,0 +1,87 @@
+{
+  "status": "verified_predicted_graph_posttest_diagnostic",
+  "claim_status": "post_test_diagnostic_only",
+  "records": 40,
+  "accuracy": 0.3,
+  "macro_f1": 0.196486,
+  "per_class": {
+    "duplicate": {
+      "support": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1": 0
+    },
+    "superseded": {
+      "support": 10,
+      "precision": 0.2,
+      "recall": 0.1,
+      "f1": 0.133333
+    },
+    "conflicting": {
+      "support": 10,
+      "precision": 0.333333,
+      "recall": 0.2,
+      "f1": 0.25
+    },
+    "conditional_difference": {
+      "support": 10,
+      "precision": 0.5,
+      "recall": 0.1,
+      "f1": 0.166667
+    },
+    "complementary": {
+      "support": 10,
+      "precision": 0.296296,
+      "recall": 0.8,
+      "f1": 0.432432
+    }
+  },
+  "confusion_matrix": {
+    "duplicate": {
+      "duplicate": 0,
+      "superseded": 0,
+      "conflicting": 0,
+      "conditional_difference": 0,
+      "complementary": 0
+    },
+    "superseded": {
+      "duplicate": 0,
+      "superseded": 1,
+      "conflicting": 2,
+      "conditional_difference": 0,
+      "complementary": 7
+    },
+    "conflicting": {
+      "duplicate": 0,
+      "superseded": 1,
+      "conflicting": 2,
+      "conditional_difference": 1,
+      "complementary": 6
+    },
+    "conditional_difference": {
+      "duplicate": 0,
+      "superseded": 3,
+      "conflicting": 0,
+      "conditional_difference": 1,
+      "complementary": 6
+    },
+    "complementary": {
+      "duplicate": 0,
+      "superseded": 0,
+      "conflicting": 2,
+      "conditional_difference": 0,
+      "complementary": 8
+    }
+  },
+  "invalid_output_count": 0,
+  "latency_ms": {
+    "mean": 3307.675,
+    "median": 3148,
+    "p95": 6016
+  },
+  "prediction_input_excluded_oracle_and_judgments": true,
+  "frozen_runner_relation_type_ignored": true,
+  "edge_endpoint_identity_count": 40,
+  "predicted_retrieval_execution_status": "not_run_structurally_identical_under_frozen_edge-existence-only_runner",
+  "limitation": "The frozen retrieval implementation uses edge existence/endpoints but not predicted relation type. A predicted retrieval run would duplicate Oracle candidate expansion and ranking, so no Oracle-to-Predicted deployment gap is identifiable in this experiment."
+}

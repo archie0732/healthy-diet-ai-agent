@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-025",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "7cefacb2fadfece74278f055e257cc702469fed65598a027a59074e611a3ef55",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-064-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nan\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-064-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=About Meats & Poultry\r\nMeat, also known as red meat, includes all forms of beef, pork, lamb, veal, goat, and non-\r\nbird game (e. g. , venison, bison, and elk). Poultry includes all forms of chicken, turkey, duck,\r\ngeese, guineas, and game birds (e. g. , quail and pheasant). Meats and poultry vary in fat\r\ncontent and include both fresh and processed forms. Lean meats and poultry contain less\r\nthan 10 g of fat, 4. 5 g or less of saturated fats, and less than 95 mg of cholesterol per 100 g\r\nand per labeled serving size (e. g. , 95% lean ground beef, pork tenderloin, and skinless\r\nchicken or turkey breast). Processed meats and processed poultry (e. g. , sausages, luncheon\r\nmeats, bacon, and beef jerky) are products preserved by smoking, curing, salting, and/or\r\nthe addition of chemical preservatives. Strong evidence from mostly prospective cohort studies but also randomized controlled trials has shown\r\nthat eating patterns that include lower intake of meats as well as processed meats and processed poultry\r\nare associated with reduced risk of CVD in adults. Moderate evidence indicates that these eating patterns\r\nare associated with reduced risk of obesity, type 2 diabetes, and some types of cancer in adults. As\r\ndescribed earlier, eating patterns consist of multiple, interacting food components, and the relationships\r\nto health exist for the\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-005-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements\n\nQUESTION\n\nHow does portion size awareness complement calorie limit adherence across guidelines?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "0e0fb5d944585fe1c8bc76c81d2c17fb5f596304e1c0d08affa5e100d5c52c9d",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-064-new",
+    "v4fresh-cand-pair-v4-new-064-old",
+    "v4fresh-cand-pair-v4-new-005-new"
+  ],
+  "answer": "*   Question: \"How does portion size awareness complement calorie limit adherence across guidelines?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (dga-2025): Mentions \"The calories you need depend on your age, sex, height, weight, and level of physical activity\" and \"Pay attention to portion sizes, particularly for foods and beverages higher in calories.\"\n    *   Passage 2 (dga-2015): Discusses meats, poultry, lean meats, processed meats, and their association with CVD, obesity, type 2 diabetes, and cancer in adults. No mention of portion size awareness or calorie limit adherence in the provided text.\n    *   Passage 3 (dga-2025): Identical text to Passage 1 regarding calories and portion sizes.\n\n    *   The 2025-2030 guidelines (dga-2025) state that calorie needs are dependent on an individual's weight, height, sex, age, and level of physical activity [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].\n    *   To complement this, the guidelines advise paying attention to portion sizes, especially for beverages and foods that are higher in calories [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].\n    *   Passage 2 (dga-2015) does not provide information on portion size awareness or calorie limit adherence.\n\n    *   Ensure citations are exact.\n    *   Ensure no outside knowledge.\n    *   Ensure concise delivery.According to the 2025-2030 guidelines, calorie needs are determined by an individual's level of physical activity, weight, height, sex, and age [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new]. Portion size awareness complements this by requiring attention to portion sizes, specifically for beverages and foods that are higher in calories [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "d4ff33cb5738fcacd1f0c17569f28d3173d6efe090ce8473fcea5f64e9d522f5",
+    "response_sha256": "2ea19044efb5d241498b1780f9e2f3ad6c2954a20419c1118f6de47d89697fae",
+    "latency_ms": 17473,
+    "usage_metadata": {
+      "promptTokenCount": 1151,
+      "candidatesTokenCount": 139,
+      "totalTokenCount": 1749,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1151
+        }
+      ],
+      "thoughtsTokenCount": 459,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: \"How does portion size awareness complement calorie limit adherence across guidelines?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (dga-2025): Mentions \"The calories you need depend on your age, sex, height, weight, and level of physical activity\" and \"Pay attention to portion sizes, particularly for foods and beverages higher in calories.\"\n    *   Passage 2 (dga-2015): Discusses meats, poultry, lean meats, processed meats, and their association with CVD, obesity, type 2 diabetes, and cancer in adults. No mention of portion size awareness or calorie limit adherence in the provided text.\n    *   Passage 3 (dga-2025): Identical text to Passage 1 regarding calories and portion sizes.\n\n    *   The 2025-2030 guidelines (dga-2025) state that calorie needs are dependent on an individual's weight, height, sex, age, and level of physical activity [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].\n    *   To complement this, the guidelines advise paying attention to portion sizes, especially for beverages and foods that are higher in calories [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new].\n    *   Passage 2 (dga-2015) does not provide information on portion size awareness or calorie limit adherence.\n\n    *   Ensure citations are exact.\n    *   Ensure no outside knowledge.\n    *   Ensure concise delivery.",
+                "thought": true
+              },
+              {
+                "text": "According to the 2025-2030 guidelines, calorie needs are determined by an individual's level of physical activity, weight, height, sex, and age [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new]. Portion size awareness complements this by requiring attention to portion sizes, specifically for beverages and foods that are higher in calories [v4fresh-cand-pair-v4-new-064-new], [v4fresh-cand-pair-v4-new-005-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1151,
+        "candidatesTokenCount": 139,
+        "totalTokenCount": 1749,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1151
+          }
+        ],
+        "thoughtsTokenCount": 459,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "zX5gasK0LanQ1e8Pl4ng2AM"
+    }
+  }
+}

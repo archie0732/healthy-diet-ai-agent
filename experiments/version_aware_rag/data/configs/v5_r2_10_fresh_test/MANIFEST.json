@@ -1,0 +1,19 @@
+{
+  "schema_version": "v5-r2.10-fresh-test-manifest-1",
+  "status": "fresh_test_frozen_after_checksum_bound_owner_signoff",
+  "frozen_policy_sha256": "4491f19fd3de101022c81e1f5cde8669a4a82ed0d172b11e5627f853a4fd5835",
+  "owner_signoff_sha256": "e3e0dcb5666ff317e06053f47fc0816de5461cd239800af8a766d3814c868961",
+  "approved_ledger_sha256": "983a17fe72e1dd7b3cb04a4c767d509f6fdc70d7ac5cd2acafbf334ef530fd02",
+  "retrieval_inputs_sha256": "771ac065159c0a2f33c0c51aed65c4009dbc7aefa0f6880cdbde4b8104401b04",
+  "judgments_sealed_sha256": "2847db6c058e9dc97f6f6bec7e72149378a41fb5c705e2c1c6e32b35897aaaa4",
+  "query_count": 16,
+  "corpus_item_count": 32,
+  "strata_counts": {
+    "explicit_history": 4,
+    "conditional_merge": 4,
+    "current_only": 4,
+    "hard_negative_current": 4
+  },
+  "external_model_api_used": false,
+  "fresh_test_execution_count": 0
+}

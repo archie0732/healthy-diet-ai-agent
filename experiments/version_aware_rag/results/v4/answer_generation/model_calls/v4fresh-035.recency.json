@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-035",
+  "system": "recency",
+  "input_sha256": "a4cb45a8eee5899f8ec47f2a092490250ff09cd9f60426248c0835442555d781",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-013-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-061-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-058-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\nQUESTION\n\nIs a daily 10% calorie cap the only added sugar restriction in 2025-2030, or is there a per-meal limit?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "5271ab90e3baa74b406af7bec576d7821f1317e6e5a1373db4091b3625320c49",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-013-new",
+    "v4fresh-cand-pair-v4-new-061-new",
+    "v4fresh-cand-pair-v4-new-058-new"
+  ],
+  "answer": "*   Question: Is a daily 10% calorie cap the only added sugar restriction in 2025-2030, or is there a per-meal limit?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-013-new): Mentions \"one meal should contain no more than 10 grams of added sugars.\" Mentions snack food limits based on FDA \"Healthy\" claim limits (grain snacks $\\le$ 5g per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g per 2/3 cup equivalent).\n    *   Passage 2 (v4fresh-cand-pair-v4-new-061-new): Mentions \"one meal should contain no more than 10 grams of added sugars.\" Mentions snack food limits based on FDA \"Healthy\" claim limits (grain snacks $\\le$ 5g per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g per 2/3 cup equivalent).\n    *   Passage 3 (v4fresh-cand-pair-v4-new-058-new): Mentions \"one meal should contain no more than 10 grams of added sugars.\" Mentions snack food limits based on FDA \"Healthy\" claim limits (grain snacks $\\le$ 5g per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g per 2/3 cup equivalent).\n\n    *   Daily 10% calorie cap: Not mentioned in any of the provided passages.\n    *   Per-meal limit: Yes, \"one meal should contain no more than 10 grams of added sugars\" [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Other restrictions: Snack food limits following FDA \"Healthy\" claim limits, specifically:\n        *   Grain snacks (e.g., crackers): $\\le$ 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n        *   Dairy snacks (e.g., yogurt): $\\le$ 2.5 grams of added sugar per 2/3 cup equivalent [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n\n    *   The provided text does not mention a daily 10% calorie cap.\n    *   It does specify a per-meal limit: one meal should contain no more than 10 grams of added sugars [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Additionally, snack food limits should follow FDA \"Healthy\" claim limits, such as no more than 5 grams of added sugar per 3/4 ounce whole-grain equivalent for grain snacks (e.g., crackers) and no more than 2.5 grams of added sugar per 2/3 cup equivalent for dairy snacks (e.g., yogurt) [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].The provided text does not mention a daily 10% calorie cap; however, it specifies that one meal should contain no more than 10 grams of added sugars [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-05",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "607bbd1f6a3f8f041bc1bbd5ff85c5c40ced532fc75af0702046fc83b02c8378",
+    "response_sha256": "a7fde0ec5aa6779c6bcde2082005900f7e97e2885ad41f97d503d2014c63a1fe",
+    "latency_ms": 32779,
+    "usage_metadata": {
+      "promptTokenCount": 1410,
+      "candidatesTokenCount": 88,
+      "totalTokenCount": 2430,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1410
+        }
+      ],
+      "thoughtsTokenCount": 932,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: Is a daily 10% calorie cap the only added sugar restriction in 2025-2030, or is there a per-meal limit?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-013-new): Mentions \"one meal should contain no more than 10 grams of added sugars.\" Mentions snack food limits based on FDA \"Healthy\" claim limits (grain snacks $\\le$ 5g per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g per 2/3 cup equivalent).\n    *   Passage 2 (v4fresh-cand-pair-v4-new-061-new): Mentions \"one meal should contain no more than 10 grams of added sugars.\" Mentions snack food limits based on FDA \"Healthy\" claim limits (grain snacks $\\le$ 5g per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g per 2/3 cup equivalent).\n    *   Passage 3 (v4fresh-cand-pair-v4-new-058-new): Mentions \"one meal should contain no more than 10 grams of added sugars.\" Mentions snack food limits based on FDA \"Healthy\" claim limits (grain snacks $\\le$ 5g per 3/4 oz whole-grain equivalent; dairy snacks $\\le$ 2.5g per 2/3 cup equivalent).\n\n    *   Daily 10% calorie cap: Not mentioned in any of the provided passages.\n    *   Per-meal limit: Yes, \"one meal should contain no more than 10 grams of added sugars\" [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Other restrictions: Snack food limits following FDA \"Healthy\" claim limits, specifically:\n        *   Grain snacks (e.g., crackers): $\\le$ 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n        *   Dairy snacks (e.g., yogurt): $\\le$ 2.5 grams of added sugar per 2/3 cup equivalent [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n\n    *   The provided text does not mention a daily 10% calorie cap.\n    *   It does specify a per-meal limit: one meal should contain no more than 10 grams of added sugars [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].\n    *   Additionally, snack food limits should follow FDA \"Healthy\" claim limits, such as no more than 5 grams of added sugar per 3/4 ounce whole-grain equivalent for grain snacks (e.g., crackers) and no more than 2.5 grams of added sugar per 2/3 cup equivalent for dairy snacks (e.g., yogurt) [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-058-new].",
+                "thought": true
+              },
+              {
+                "text": "The provided text does not mention a daily 10% calorie cap; however, it specifies that one meal should contain no more than 10 grams of added sugars [v4fresh-cand-pair-v4-new-013-new, v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-05"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "MAX_TOKENS",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1410,
+        "candidatesTokenCount": 88,
+        "totalTokenCount": 2430,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1410
+          }
+        ],
+        "thoughtsTokenCount": 932,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "EYFgapuoHOHN1e8PvICL8AM"
+    }
+  }
+}

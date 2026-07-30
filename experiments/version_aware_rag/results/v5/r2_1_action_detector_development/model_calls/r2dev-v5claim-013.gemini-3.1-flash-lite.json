@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-013",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "a3d3e227de98c72764a2ab44ed86e2a4a32d97a611ec3205880df614a6278b29",
+  "response_sha256": "107f0d453c2891a381de835d68e89e71b03c46a9913e387fef510f079f88a304",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a specific cautionary threshold for children under 14 that is not explicitly addressed in the CURRENT passage, making it necessary to preserve for that specific population."
+  },
+  "latency_ms": 808,
+  "usage_metadata": {
+    "promptTokenCount": 412,
+    "candidatesTokenCount": 68,
+    "totalTokenCount": 480,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 412
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

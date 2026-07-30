@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "7ca8af5e2a8227da0326cd5b0a919d5593cd62f3e17e7d0e3cb582736b3aee32",
+  "response_sha256": "f951e58ea5bcee0da1c4f9d9f2e9c35a84f58e4575e36d93fb7c319409609a2c",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides foundational definitions of concepts like 'nutrient-dense' and 'variety', while the NEW passage provides actionable, specific serving goals and dietary recommendations that utilize those concepts without contradicting them."
+  },
+  "latency_ms": 969,
+  "usage_metadata": {
+    "promptTokenCount": 1025,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 1095,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1025
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

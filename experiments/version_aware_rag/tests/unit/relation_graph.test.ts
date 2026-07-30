@@ -12,13 +12,14 @@ describe("relation graph", () => {
       pair_id: "pair-1",
       old_chunk_id: "c-old",
       new_chunk_id: "c-new",
-      lineage_id: "lineage-sodium" // triggers conditional exception for highly active
+      lineage_id: "lineage-sodium"
     };
 
     const annotation = {
       pair_id: "pair-1",
       relation_type: "conditional_difference",
       policy_label: "retain",
+      applies_to_populations: ["highly active"],
       rationale: "retained for active individuals",
       annotator_id: "tester"
     };

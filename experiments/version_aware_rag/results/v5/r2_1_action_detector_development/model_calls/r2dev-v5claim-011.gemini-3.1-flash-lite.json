@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-011",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "fbe3362305d2f435f4c7ff3de5641138eb69f267568f28b752fc43adc76d59e0",
+  "response_sha256": "f09a54d7323839714e4be5205fb12e53627d25d1ae81d229182e19d1a5ecb446",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides updated, more specific guidance on dairy consumption including fat content preferences and serving goals, effectively superseding the general list of dairy types provided in the OLD passage."
+  },
+  "latency_ms": 778,
+  "usage_metadata": {
+    "promptTokenCount": 446,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 516,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 446
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

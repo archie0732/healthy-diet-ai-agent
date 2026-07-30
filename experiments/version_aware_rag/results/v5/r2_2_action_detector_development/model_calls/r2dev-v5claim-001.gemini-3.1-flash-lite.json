@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-001",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "0c1aaaa243c041a2072a51f4a1853373b100bb3f54b5c6be0a835df025843edc",
+  "response_sha256": "38605626ec484aacc48d435d257bb014e88ef33fe504ae8d9d1708abbf740fde",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The CURRENT passage conveys the exact same requirement as the OLD passage, with the only change being a minor grammatical adjustment from 'whole grains' to 'whole grain', which does not alter the meaning.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 817,
+  "usage_metadata": {
+    "promptTokenCount": 401,
+    "candidatesTokenCount": 84,
+    "totalTokenCount": 485,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 401
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

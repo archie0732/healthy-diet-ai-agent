@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-018",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "c67a27830deea4ff1cdbf1886b795a0b1d83a79be4004b0a4867f11e08bb90d6",
+  "response_sha256": "befd2a303d7c0f562f958d05853ba695ea4b3301fb4dd7db061b052dfa746753",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "The classification of vegetables into specific categories (dark green; red and orange; beans, peas, and lentils; starchy; and other).",
+    "confidence": 0.9,
+    "rationale": "The CURRENT passage provides a more updated, practical approach to consuming the same nutritional categories established in the OLD passage. While the classification list is not repeated, the core recommendation to eat a variety of vegetables and fruits remains the same, effectively subsuming the intent of the previous dietary guideline.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 1082,
+  "usage_metadata": {
+    "promptTokenCount": 601,
+    "candidatesTokenCount": 128,
+    "totalTokenCount": 729,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 601
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

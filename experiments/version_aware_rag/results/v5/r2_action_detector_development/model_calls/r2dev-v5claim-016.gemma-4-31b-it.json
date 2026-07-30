@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-016",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "0aad9100018dc5c7dae7abdb5ecb4eaa0b3200de88c7e0abe1c5a4295710e7a5",
+  "response_sha256": "4cda68de5361639feca887d9011eb7143797455fa5f5133b2b089a33d766aecb",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "OLD provides a general framework for all individuals and cultural customization, while CURRENT focuses specifically on adapting guidelines for those with chronic diseases."
+  },
+  "latency_ms": 2272,
+  "usage_metadata": {
+    "promptTokenCount": 352,
+    "candidatesTokenCount": 57,
+    "totalTokenCount": 409,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 352
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

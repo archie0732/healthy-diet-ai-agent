@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-006",
+  "system": "recency",
+  "input_sha256": "80ec2927d3882fb732cbafada33d48aa2ff05fabb69b7a9b4b6c3da06a38f02b",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-066-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and fruits. consumed in limited portions or diluted\r\nwith water.\r\n+ Eat whole vegetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-006-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and fruits. consumed in limited portions or diluted\r\nwith water.\r\n+ Eat whole vegetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-031-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Eat Vegetables & Fruits Throughout the Day\r\n+ Eat a variety of colorful, nutrient-dense + 100% fruit or vegetable juice should be\r\nvegetables and fruits. consumed in limited portions or diluted\r\nwith water.\r\n+ Eat whole vegetables and fruits in their\r\noriginal form. Wash thoroughly prior to + Vegetables and fruits serving goals for\r\neating raw or cooking. a 2,000-calorie dietary pattern, adjusting as\r\nneeded based on your individual\r\n+ Frozen, dried, or canned vegetables or fruits\r\ncaloric requirements:\r\nwith no or very limited added sugars can\r\nalso be good options. - Vegetables: 3 servings per day\r\n+ If preferred, flavor with salt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole g\n\nQUESTION\n\nHow does the 2025-2030 guideline recommend consuming 100% fruit or vegetable juice?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "8ec32b038feabecd0f66c085f7d8200f155f388a12dc02068098f31acbad6826",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-066-new",
+    "v4fresh-cand-pair-v4-new-006-new",
+    "v4fresh-cand-pair-v4-new-031-new"
+  ],
+  "answer": "*   Question: How does the 2025-2030 guideline recommend consuming 100% fruit or vegetable juice?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-066-new): \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-006-new): \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\"\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-031-new): \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\"\n\n    *   The recommendation is that 100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\n\n    *   The 2025-2030 guideline recommends that 100% fruit or vegetable juice be consumed in limited portions or diluted with water [v4fresh-cand-pair-v4-new-066-new, v4fresh-cand-pair-v4-new-006-new, v4fresh-cand-pair-v4-new-031-new].The 2025-2030 guideline recommends that 100% fruit or vegetable juice be consumed in limited portions or diluted with water [v4fresh-cand-pair-v4-new-066-new, v4fresh-cand-pair-v4-new-006-new, v4fresh-cand-pair-v4-new-031-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "5f0ebb809edc19c4bea90ca826a7838f1ed444abf8a57c4aaaea8787e583d49f",
+    "response_sha256": "018e94d2e80546f0edb7ddedd508b848ee6ae93a45619a122a3ade5dc70cd6ed",
+    "latency_ms": 13746,
+    "usage_metadata": {
+      "promptTokenCount": 1213,
+      "candidatesTokenCount": 90,
+      "totalTokenCount": 1675,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1213
+        }
+      ],
+      "thoughtsTokenCount": 372,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the 2025-2030 guideline recommend consuming 100% fruit or vegetable juice?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-066-new): \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-006-new): \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\"\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-031-new): \"100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\"\n\n    *   The recommendation is that 100% fruit or vegetable juice should be consumed in limited portions or diluted with water.\n\n    *   The 2025-2030 guideline recommends that 100% fruit or vegetable juice be consumed in limited portions or diluted with water [v4fresh-cand-pair-v4-new-066-new, v4fresh-cand-pair-v4-new-006-new, v4fresh-cand-pair-v4-new-031-new].",
+                "thought": true
+              },
+              {
+                "text": "The 2025-2030 guideline recommends that 100% fruit or vegetable juice be consumed in limited portions or diluted with water [v4fresh-cand-pair-v4-new-066-new, v4fresh-cand-pair-v4-new-006-new, v4fresh-cand-pair-v4-new-031-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1213,
+        "candidatesTokenCount": 90,
+        "totalTokenCount": 1675,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1213
+          }
+        ],
+        "thoughtsTokenCount": 372,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "NHpgaqn2C9uyvr0PjaXrkQM"
+    }
+  }
+}

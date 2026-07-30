@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-51-pass-0-df0a0dd2|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "b28f1ca13d704bda79421705ee9b318e017a3178dd6f432cbeb13694216ef7c1",
+  "response_sha256": "3931f5242cf57df23fb694d368cca971c7570002f59a63aacd4b12cc9b2a73bd",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The OLD passage discusses the 2010 Dietary Guidelines' limit of 300 mg per day for dietary cholesterol and notes its removal in 2015. The NEW passage explicitly updates this by stating, 'No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.'"
+  },
+  "latency_ms": 3136,
+  "usage_metadata": {
+    "promptTokenCount": 1030,
+    "candidatesTokenCount": 83,
+    "totalTokenCount": 1113,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1030
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

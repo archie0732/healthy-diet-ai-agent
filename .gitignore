@@ -15,3 +15,5 @@ docs/
 plans/
 raw_data/
 /experiments/version_aware_rag/data/raw/
+
+.codex_doc_review_tanet_v1/

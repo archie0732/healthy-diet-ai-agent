@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-015",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "16d19af830b37effb758ddaf9813ae439de2f7221c7455c002588ec00a075185",
+  "response_sha256": "cf32c0cfd7364d8382f4ac7d6fcf94c4b9d4868c85fbc312f5aab411e64e2995",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "Alcohol and calories in beverages vary and should be accounted for within the limits of healthy eating patterns; alcohol should be consumed only by adults of legal drinking age.",
+    "confidence": 1,
+    "rationale": "The OLD passage contains specific guidance on accounting for alcohol calories within healthy eating patterns and the legal drinking age requirement, neither of which are mentioned in the CURRENT passage.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 3440,
+  "usage_metadata": {
+    "promptTokenCount": 543,
+    "candidatesTokenCount": 96,
+    "totalTokenCount": 639,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 543
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

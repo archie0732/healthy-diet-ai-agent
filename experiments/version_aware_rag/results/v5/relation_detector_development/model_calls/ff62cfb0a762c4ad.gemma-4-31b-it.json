@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2020-page-14-pass-0-1816571f|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "90544150b0f9159370fe60240c64df7723d94f46e79a11780a94fb90c3fcfbb6",
+  "response_sha256": "629bcd86539f744f2e8d39f30682201d7af77fe31a50a196da5d9a37399e4b44",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage lists specific dietary components of public health concern and their food sources (Calcium, Potassium, Fiber, Vitamin D), while the NEW passage provides general dietary guidelines on calories, protein, dairy, and gut health. They provide distinct, compatible information without overlapping claims."
+  },
+  "latency_ms": 3350,
+  "usage_metadata": {
+    "promptTokenCount": 711,
+    "candidatesTokenCount": 85,
+    "totalTokenCount": 796,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 711
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

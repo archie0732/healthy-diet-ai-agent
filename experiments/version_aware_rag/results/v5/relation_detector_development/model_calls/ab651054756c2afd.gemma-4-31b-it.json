@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-16-pass-0-43cd7a56|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "a571cba186e0b12308cad8b2c8b094ba15a50261ae078abdab31da3cceccbc3e",
+  "response_sha256": "d1950d181023bddf7f8f7df9d997cbbcb6a9e7a44164fbf697e0b2dcb8e01b00",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 1,
+    "rationale": "The OLD passage provides definitions for terms like 'Eating Pattern' and 'Nutrient Dense', while the NEW passage provides specific dietary recommendations (e.g., 'Prioritize high-quality, nutrient-dense protein foods'). The two passages serve different purposes—one is a glossary and the other is a set of actionable guidelines—and are simultaneously applicable."
+  },
+  "latency_ms": 3720,
+  "usage_metadata": {
+    "promptTokenCount": 1006,
+    "candidatesTokenCount": 99,
+    "totalTokenCount": 1105,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1006
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

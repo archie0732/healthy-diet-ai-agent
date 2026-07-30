@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-007",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "5ffcce612776875ceb9f1bc6ad033cbb9ed402e5e0adae9137b783dceee250e6",
+  "response_sha256": "30cee5a0eaf27a99ef9fe7534318cb149ed4d3ce691b3839ad95b7bc96fc2a6d",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides more specific, updated quantitative limits for added sugars in snack foods and per meal that supersede the general 10% daily caloric threshold in the OLD passage."
+  },
+  "latency_ms": 809,
+  "usage_metadata": {
+    "promptTokenCount": 612,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 682,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 612
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

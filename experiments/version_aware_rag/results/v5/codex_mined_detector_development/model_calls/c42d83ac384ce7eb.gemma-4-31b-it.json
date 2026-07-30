@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-014",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "97dc8e2f43e5448c89ff6c9ca11bec120354fd15aa90505f21b08e7a654e4088",
+  "response_sha256": "aef918cf47b5023b4b307c179782a5ac8c4822392ed717f2e0be65290c9d5ed6",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage explicitly changes applicability by adding age-specific conditions: 'starting at age 2' and 'Avoid foods and beverages with added sugars for those younger than age 2.'"
+  },
+  "latency_ms": 2740,
+  "usage_metadata": {
+    "promptTokenCount": 243,
+    "candidatesTokenCount": 59,
+    "totalTokenCount": 302,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 243
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

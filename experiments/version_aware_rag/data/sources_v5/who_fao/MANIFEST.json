@@ -1,0 +1,46 @@
+{
+  "schema_version": "v5-who-fao-source-manifest-1",
+  "retrieved_at": "2026-07-22",
+  "documents": [
+    {
+      "document_id": "who-fao-trs-916-2003-frontmatter",
+      "title": "Diet, nutrition and the prevention of chronic diseases: WHO Technical Report Series 916",
+      "official_catalog_url": "https://www.fao.org/4/AC911E/AC911E00.htm",
+      "official_pdf_url": "https://www.fao.org/docrep/pdf/005/ac911e/ac911e00.pdf",
+      "who_record_url": "https://iris.who.int/bitstream/handle/10665/42665/WHO_TRS_916.pdf?sequence=1",
+      "local_path": "experiments/version_aware_rag/data/sources_v5/who_fao/WHO_FAO_TRS_916_2003.pdf",
+      "sha256": "15fa91f16301099b6c982c46f1362f8b17a9276efcf49db1dde8d709f457bc0f",
+      "byte_length": 766877,
+      "page_count": 11,
+      "pdf_header_verified": true,
+      "status": "official_frontmatter_part"
+    },
+    {
+      "document_id": "who-fao-trs-916-2003-part2",
+      "title": "Diet, nutrition and the prevention of chronic diseases: population nutrient goals and later chapters",
+      "official_catalog_url": "https://www.fao.org/4/AC911E/AC911E00.htm",
+      "official_pdf_url": "https://www.fao.org/docrep/pdf/005/ac911e/ac911e02.pdf",
+      "who_record_url": "https://iris.who.int/bitstream/handle/10665/42665/WHO_TRS_916.pdf?sequence=1",
+      "local_path": "experiments/version_aware_rag/data/sources_v5/who_fao/WHO_FAO_TRS_916_2003_part2.pdf",
+      "sha256": "f7d8b51b455f4853354b1b86339797da689426f440bc3fa62304eaa4b3d29429",
+      "byte_length": 405106,
+      "page_count": 93,
+      "pdf_header_verified": true,
+      "visually_verified_pages": [3, 36],
+      "printed_pages": [56, 89],
+      "status": "official_evidence_source"
+    }
+  ],
+  "rejected_downloads": [
+    {
+      "local_path": "experiments/version_aware_rag/data/sources_v5/who/WHO_TRS_916_2003.iris-shell-error.html",
+      "byte_length": 755,
+      "reason": "WHO IRIS URL returned an HTML application shell, not a PDF"
+    },
+    {
+      "local_path": "experiments/version_aware_rag/data/sources_v5/who/WHO_TRS_916_2003.legacy-404-error.html",
+      "byte_length": 243857,
+      "reason": "Legacy WHO URL returned the WHO 404 HTML page, not a PDF"
+    }
+  ]
+}

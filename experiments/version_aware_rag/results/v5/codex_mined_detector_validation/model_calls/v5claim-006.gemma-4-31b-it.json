@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-006",
+  "model_id": "gemma-4-31b-it",
+  "request_sha256": "b3cf7792d8f7be14aaf702cf97a59bdba0d7eb3ab24655b06100df90c1b0589f",
+  "response_sha256": "0ab0326f78e716bb1dd8c0e3667e422c79bf473eea65786366350658a6121d02",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage adds a specific age applicability ('starting at age 2'), creating a conditional difference in scope compared to the general OLD passage."
+  },
+  "latency_ms": 2456,
+  "usage_metadata": {
+    "promptTokenCount": 224,
+    "candidatesTokenCount": 60,
+    "totalTokenCount": 284,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 224
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

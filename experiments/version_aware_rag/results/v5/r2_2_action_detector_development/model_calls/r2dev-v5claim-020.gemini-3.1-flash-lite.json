@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-020",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "50f919fd287ffb75ba17c737445c81be97746a73150507e3e2d6b176542a8a86",
+  "response_sha256": "a34d024a0859e37d69e9743dbe79d1e244843dc4533e82ec15864655396bf5d2",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The recommendation to exclusively feed infants human milk for the first 6 months of life and the instruction to use iron-fortified formula when human milk is unavailable.",
+    "confidence": 1,
+    "rationale": "The CURRENT passage focuses exclusively on vitamin D supplementation and starting complementary foods, failing to address the primary nutrition guidelines regarding exclusive breastfeeding and the use of iron-fortified formula as a substitute for human milk.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 1167,
+  "usage_metadata": {
+    "promptTokenCount": 542,
+    "candidatesTokenCount": 117,
+    "totalTokenCount": 659,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 542
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

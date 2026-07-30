@@ -1,0 +1,22 @@
+{
+  "schema_version": "v5-r2.12-confirmation-audit-1",
+  "status": "audit_pass",
+  "development_only": true,
+  "retrieval_rerun_performed": false,
+  "retrieval_execution_count": 1,
+  "raw_row_count": 64,
+  "baseline_required_recall_at_20": 0.9615384615384616,
+  "repaired_required_recall_at_20": 0.9807692307692307,
+  "gate_checks_passed": 5,
+  "gate_checks_failed": 3,
+  "gate_passed": false,
+  "promotion_allowed": false,
+  "r2_11_execution_count_preserved": 1,
+  "artifact_sha256": {
+    "frozen_manifest": "31deea1d80cb114f300ce4e4ea7ed8583a3f274ae42ae09707e4f804aaf40ecb",
+    "execution_guard": "87577f7e28bc86a1da237f931c78051838b7367948c6f06297222f2af40da9c6",
+    "raw_results": "f2f4e4b912a3476ef06ef07424d75a043364ea2338fcbb3e0f2adf5846eca030",
+    "confirmation_result": "a1ee6bfdec4af447746bf98bef7ff43d701f39df40831c901db89074bc01d640"
+  },
+  "failures": []
+}

@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "b398402789787749970101e6d0940b72fc413c3997d941b1f1a6a065664ecbea",
+  "response_sha256": "cee989185a97376bc2d72ae5d8b9a7aa90f74321a0e0643ac24be09276c022bd",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.85,
+    "rationale": "The OLD passage establishes definitions for foundational dietary concepts such as \"Eating Pattern,\" \"Nutrient Dense,\" and \"Variety,\" while the NEW passage provides specific actionable recommendations and daily serving goals that apply these concepts."
+  },
+  "latency_ms": 15830,
+  "usage_metadata": {
+    "promptTokenCount": 1025,
+    "candidatesTokenCount": 73,
+    "totalTokenCount": 1765,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1025
+      }
+    ],
+    "thoughtsTokenCount": 667,
+    "serviceTier": "standard"
+  }
+}

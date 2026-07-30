@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-014",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "d02b60c2fffd049715940602d445872ebcbc1b5789a018aecf1bf8332dd77244",
+  "response_sha256": "49f90c840ad7c83a6d1589a955bcbacde9f596d69081e0b80306dfd637f54667",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage introduces a specific age-based exception, stating 'Avoid foods and beverages with added sugars for those younger than age 2', which creates a new condition for the applicability of the 10% limit."
+  },
+  "latency_ms": 808,
+  "usage_metadata": {
+    "promptTokenCount": 243,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 317,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 243
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

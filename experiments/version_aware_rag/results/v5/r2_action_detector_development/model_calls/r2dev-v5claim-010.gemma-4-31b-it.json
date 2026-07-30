@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-010",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "8c7d34e97e71fd6c581bd92c77543e4540c3fddfd6ab6746c60e7315330fcc44",
+  "response_sha256": "872e47663d081040f3d5015bf6c181e3dc008d6349e19fbf95cdc09c54810ab4",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage updates the guidance on alcohol consumption, covering the general principle of drinking less for health and the groups who should avoid alcohol. While it omits the specific drink counts (2 for men, 1 for women), it provides a more comprehensive set of contraindications (medications, medical conditions, family history, addiction recovery) that effectively replaces the general advice in the OLD passage."
+  },
+  "latency_ms": 3946,
+  "usage_metadata": {
+    "promptTokenCount": 374,
+    "candidatesTokenCount": 110,
+    "totalTokenCount": 484,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 374
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

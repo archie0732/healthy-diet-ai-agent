@@ -1,0 +1,17 @@
+{
+  "status": "verified_answer_generation_and_blinding",
+  "query_count": 40,
+  "answer_count": 120,
+  "model_call_count": 120,
+  "systems": [
+    "append_only",
+    "recency",
+    "oracle_cross_0.5"
+  ],
+  "blind_packet_leakage_terms": [],
+  "automatic_proxy_status": "automatic_gold_citation_proxy_complete",
+  "independent_human_evaluation_complete": false,
+  "publication_grade_answer_claim_allowed": false,
+  "checksummed_artifact_count": 131,
+  "failures": []
+}

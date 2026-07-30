@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-038",
+  "input_sha256": "5f507aa3731e89c0281306a5829733120189b09ffa2204fc428a1757d66d273d",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nThe\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\nNEW PASSAGE\nBreastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium. dietary intake or absorption is insufficient, fortified\r\n12\r\nTo meet these needs, they should prioritize foods or supplements may be needed under\r\nnutrient-dense foods such as dairy, meats, seafood, medical supervision.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "aa96b15355bb60137ed2462d7bb06b772de4c19ef34efca26ceb12a66e3ac23d",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage provides general dietary guidelines for all life stages, while the new passage provides specific dietary recommendations for breastfeeding women and older adults, adding detail to the general guidance."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "e6abd25fb27fc13cea0faeca4f460034708509a5f0ede8669e931402cdd63d09",
+    "response_sha256": "4f1b5a6fb9c1e042b0906b279f6be991eefa58ebfded59d2975dba0601cf11b4",
+    "latency_ms": 7927,
+    "usage_metadata": {
+      "promptTokenCount": 378,
+      "candidatesTokenCount": 57,
+      "totalTokenCount": 435,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 378
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.9, \"rationale\": \"The old passage provides general dietary guidelines for all life stages, while the new passage provides specific dietary recommendations for breastfeeding women and older adults, adding detail to the general guidance.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 378,
+        "candidatesTokenCount": 57,
+        "totalTokenCount": 435,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 378
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "mnhgauT1FKvBvr0PlqWDgAQ"
+    }
+  }
+}

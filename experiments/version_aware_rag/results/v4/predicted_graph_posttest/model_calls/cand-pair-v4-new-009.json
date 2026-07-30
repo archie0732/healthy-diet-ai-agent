@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-009",
+  "input_sha256": "bfe1a3cf82bae0d8231ae0a849018cc629b4bb77e746c926cd131aec44e1b8ca",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nKey Recommendations provide further guidance on how individuals can follow the five Guidelines. The Dietary Guidelines' Key\r\nRecommendations for healthy eating patterns should be applied in their entirety, given the interconnected relationship that each dietary\r\ncomponent can have with others. Key\r\nRecommendations:\r\nConsume a healthy eating pattern that accounts for all foods and beverages within\r\nan appropriate calorie level. A healthy eating pattern includes:[1]\r\n* A variety of vegetables from all of the subgroups-dark green, red and orange, legumes (beans and peas), starchy,\r\nand other\r\n* Fruits, especially whole fruits\r\n* Grains, at least half of which are whole grains\r\n* Fat-free or low-fat dairy, including milk, yogurt, cheese, and/or fortified soy beverages\r\n* A variety of protein foods, including seafood, lean meats and poultry, eggs, legumes (beans and peas), and nuts,\r\nseeds, and soy products\r\n* Oils\r\nA healthy eating pattern limits:\r\n* Saturated fats and trans fats, added sugars, and sodium\r\nKey Recommendations that are quantitative are provided for several components of the diet that should\r\nbe limited. These components are of particular public health concern in the United States, and the specified\r\nlimits can help individuals achieve healthy eating patterns within calorie limits:\r\n* Consume less than 10 percent of calories per day from added sugars[2]\r\n* Consume less than 10 percent of calo\n\nNEW PASSAGE\nLimit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "9d2aeddf61f473944b3302300805d501477e84fe0d51857c42b235ab95857816",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The old passage provides a general quantitative limit for added sugars (less than 10% of calories per day), whereas the new passage provides much more specific and restrictive limits (no more than 10 grams per meal and specific gram limits for snacks), effectively replacing the general percentage-based guidance with more stringent, concrete constraints."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "eda1ca269c9b5f7bc5dadb2c6cc418068424cca18d0710bf2b89e861fc461b84",
+    "response_sha256": "7250d366aac1ca0f4d2f415af01fcbab837684482327baf42d13e76c7b30e9c0",
+    "latency_ms": 3591,
+    "usage_metadata": {
+      "promptTokenCount": 826,
+      "candidatesTokenCount": 97,
+      "totalTokenCount": 923,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 826
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"superseded\",\n  \"confidence\": 0.9,\n  \"rationale\": \"The old passage provides a general quantitative limit for added sugars (less than 10% of calories per day), whereas the new passage provides much more specific and restrictive limits (no more than 10 grams per meal and specific gram limits for snacks), effectively replacing the general percentage-based guidance with more stringent, concrete constraints.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 826,
+        "candidatesTokenCount": 97,
+        "totalTokenCount": 923,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 826
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "VnhgaqTKC6-_vr0P-uaWsQM"
+    }
+  }
+}

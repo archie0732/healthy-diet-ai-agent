@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-035",
+  "input_sha256": "1f396fe64c930c04c15cc456d1f4eaa73187954084cbd042a8fb67f89ab86640",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nnd have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\nNEW PASSAGE\nt, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "5865b756cc8322c83c41458b972883f103fa3229f48b58a8018e9651c06d0920",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.8,
+    "rationale": "The old passage provides a general framework for a healthy dietary pattern across food groups, while the new passage provides specific quantitative goals (e.g., 2 servings of fruit, 2-4 servings of whole grains) and more detailed guidance on fats and processed foods."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "9dcae5587ea71a3173e1f84ef20a21f0cceb9aa4e07344a076e8914e528ad71d",
+    "response_sha256": "8ad4c7cba5d77307813fa0719924525fdc6e0f4449777930d238465aa56d0cac",
+    "latency_ms": 4155,
+    "usage_metadata": {
+      "promptTokenCount": 542,
+      "candidatesTokenCount": 77,
+      "totalTokenCount": 619,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 542
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.8, \"rationale\": \"The old passage provides a general framework for a healthy dietary pattern across food groups, while the new passage provides specific quantitative goals (e.g., 2 servings of fruit, 2-4 servings of whole grains) and more detailed guidance on fats and processed foods.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 542,
+        "candidatesTokenCount": 77,
+        "totalTokenCount": 619,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 542
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "jHhgavzaJujhvr0PweHB6QM"
+    }
+  }
+}

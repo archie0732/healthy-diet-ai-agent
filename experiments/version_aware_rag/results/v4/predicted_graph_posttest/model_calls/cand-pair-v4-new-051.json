@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-051",
+  "input_sha256": "eb83bcea0d4cb461759d6adc8d6281295b5f3c64507cfb3e4a1d0d2776b6a3e6",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nting\r\n* Vegetables of all types-dark green; red and orange;\r\ncomponents and have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\nNEW PASSAGE\nne health to achieve peak bone mass and peak\r\noptimal health during this period, including bone strength is essential. Additionally, following\r\nreducing risk of the onset or progression of the Dietary Guidelines can support reproductive\r\nchronic disease and supporting other aspects of health for both women and men-with special\r\nhealth. The brain continues to mature during young emphasis on healthy fats, iron, and folate for\r\nadulthood. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequ\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "c9c8309a1b1a55dbbe85609d3ae83c3a4025769129c6fc9da214a1f820503c1e",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 1,
+    "rationale": "The old passage describes general healthy dietary patterns for the general population, while the new passage provides specific nutritional requirements and recommendations for specific life stages and populations (young adults, pregnant women, lactating women, and older adults)."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "c9963264a3ec459d255010e0ec3f0011a1481ffd0e61fbee46bcdfaf84886284",
+    "response_sha256": "6b8cc5e3e6158e6ce1814e0ca910d06cfe7c3e6defca23f899bec18f4d733297",
+    "latency_ms": 2709,
+    "usage_metadata": {
+      "promptTokenCount": 657,
+      "candidatesTokenCount": 65,
+      "totalTokenCount": 722,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 657
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 1, \"rationale\": \"The old passage describes general healthy dietary patterns for the general population, while the new passage provides specific nutritional requirements and recommendations for specific life stages and populations (young adults, pregnant women, lactating women, and older adults).\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 657,
+        "candidatesTokenCount": 65,
+        "totalTokenCount": 722,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 657
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "Z3hgapKfLMzY1e8Ps9aI8AM"
+    }
+  }
+}

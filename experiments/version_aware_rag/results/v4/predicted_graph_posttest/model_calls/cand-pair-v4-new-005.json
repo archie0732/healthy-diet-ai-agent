@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-005",
+  "input_sha256": "0e127d921843d780f73051d4433b4def0adcc6a25ac2a231a9b800b6823d4bbf",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nThe\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\nNEW PASSAGE\nEat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "7f25eb0f8860e265756d4660258772f8337a2299760027cc76610c9fe7f1c675",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage provides general dietary guidelines (nutrient density, limiting sugars/fats), while the new passage provides specific, actionable details on calorie needs, hydration, and protein intake goals."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "dfb2cf84b939b2f7c993c71d31c302f9c3691921bd6321de4ff625a2fd52dbea",
+    "response_sha256": "e04e8094a4fccb559ba9fb5a37eb3cb6a0570188069b50c6bf92590b631202ff",
+    "latency_ms": 2626,
+    "usage_metadata": {
+      "promptTokenCount": 453,
+      "candidatesTokenCount": 60,
+      "totalTokenCount": 513,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 453
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.9, \"rationale\": \"The old passage provides general dietary guidelines (nutrient density, limiting sugars/fats), while the new passage provides specific, actionable details on calorie needs, hydration, and protein intake goals.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 453,
+        "candidatesTokenCount": 60,
+        "totalTokenCount": 513,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 453
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "Snhgavz_EMqH1e8Pk8qPsAM"
+    }
+  }
+}

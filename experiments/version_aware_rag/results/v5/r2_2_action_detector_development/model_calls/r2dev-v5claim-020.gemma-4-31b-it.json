@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-020",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "e77657aadc7757771b93239ec6fb755207d6f9291a317ade65f4b257d9b5f5ee",
+  "response_sha256": "ad3b52e276152f07cb8462bcb54accc0dd3b65cf645d3d4dfa7732344e4bcdf0",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The recommendation to exclusively feed infants human milk for the first 6 months and continue through the first year, and the use of iron-fortified infant formula as an alternative during the first year.",
+    "confidence": 1,
+    "rationale": "The OLD passage provides specific feeding guidelines (exclusive human milk for 6 months, continuation through 1 year, and iron-fortified formula as an alternative), whereas the CURRENT passage focuses on vitamin D supplementation and the introduction of nutrient-dense foods, without restating the milk/formula feeding duration or exclusivity rules.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 4939,
+  "usage_metadata": {
+    "promptTokenCount": 542,
+    "candidatesTokenCount": 135,
+    "totalTokenCount": 677,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 542
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

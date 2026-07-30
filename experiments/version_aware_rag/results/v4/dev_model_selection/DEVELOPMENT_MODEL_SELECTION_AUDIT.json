@@ -1,0 +1,26 @@
+{
+  "status": "verified_development_cross_complete",
+  "development_records": 16,
+  "systems": [
+    "recency",
+    "oracle_lineage",
+    "oracle_embedding_0.25",
+    "oracle_cross_0.25",
+    "oracle_embedding_0.5",
+    "oracle_cross_0.5",
+    "oracle_embedding_0.75",
+    "oracle_cross_0.75",
+    "oracle_embedding_1",
+    "oracle_cross_1"
+  ],
+  "raw_rows": 160,
+  "validation_query_overlap": 0,
+  "shared_candidate_pool_checks_passed": true,
+  "independently_recomputed_metrics": true,
+  "selected_candidate": "oracle_cross_0.5",
+  "full_promotion_gate_passed": false,
+  "blockers": [
+    "missing_query_level_stale_and_forbidden_labels"
+  ],
+  "failures": []
+}

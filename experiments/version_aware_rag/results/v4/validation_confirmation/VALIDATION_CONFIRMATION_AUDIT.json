@@ -1,0 +1,14 @@
+{
+  "status": "verified_validation_confirmation",
+  "validation_records": 8,
+  "raw_rows": 16,
+  "approved_safety_rows": 40,
+  "candidate_pool_equality_verified": true,
+  "metrics_independently_recomputed": true,
+  "artifact_checksums_verified": true,
+  "full_validation_promotion_gate_passed": true,
+  "validation_rerun_allowed": false,
+  "fresh_test_read_allowed": false,
+  "protocol_deviation": "One validation record was exposed during a pre-freeze format inspection after development selection; no validation scores were generated and no frozen parameter changed.",
+  "failures": []
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "v5-r2.18-candidate-failure-attribution-guard-1",
+  "status": "diagnostic_complete_locked",
+  "manifest_sha256": "e5b2ae8f5d78c8669700622f72387c893f965ec28cd55b7d1d02b2b53990d4f7",
+  "execution_count": 1,
+  "judgments_read_only_after_all_candidate_pools": true,
+  "r2_16_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "promotion_allowed": false,
+  "raw_results_sha256": "cc11d2b76a8cc3c451bd092638e05476fca4031c24dc615b62b9f485241d2e33",
+  "diagnostic_result_sha256": "97a0437f21e905b15663fb638851437cbcae20b819e1a5b230a5f8ed3b68375e",
+  "selected_diagnostic_variant": null
+}

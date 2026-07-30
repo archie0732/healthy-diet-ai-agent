@@ -1,0 +1,17 @@
+{
+  "schema_version": "v5-r2.16-annotation-authoring-plan-manifest-1",
+  "status": "authoring_plan_frozen_before_query_authoring",
+  "record_count": 32,
+  "stratum_counts": {
+    "conditional_merge": 10,
+    "compatible_history": 10,
+    "current_only": 6,
+    "hard_negative_current": 6
+  },
+  "candidate_groups_sha256": "74518b70d58af5017ee4e0527cc6adfb22b09c6c1d65a71332ca74bdbf532928",
+  "candidate_group_manifest_sha256": "fb81dd33a40907296b2a1cabf80319c1184408ae11299cf1b74586e6b1bba35f",
+  "semantic_review_sha256": "3de96cdd3d7c58785c218a267af0282a06265fc1ccb9d18d820e1e1fd2a89ca3",
+  "semantic_review_manifest_sha256": "c533b4c0d157ba1843196a5f5025a07611271fb0aa3ca6a400a64ec53823480f",
+  "authoring_plan_sha256": "e81a88d830ca3257c250e52dba11b98f1f6ed622daa6fcd765b634b28bc4ff74",
+  "retrieval_allowed": false
+}

@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-016",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "2989cd153fcf0421e6cfb19c8d14897fdb2554b5c63fd7c1c0b7a237516f32cc",
+  "response_sha256": "a85344dcb80819fb375548ec6c5ed0e42fc385ff6446333df2ed474fff9a5c29",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 0.95,
+    "rationale": "The NEW passage builds upon the general framework of the OLD by explicitly specifying that individuals with certain chronic conditions like 'cardiovascular disease, obesity, and type 2 diabetes' may experience improved outcomes with a 'lower carbohydrate diet', effectively creating a specific clinical exception or adaptation to the general guideline."
+  },
+  "latency_ms": 810,
+  "usage_metadata": {
+    "promptTokenCount": 332,
+    "candidatesTokenCount": 91,
+    "totalTokenCount": 423,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 332
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

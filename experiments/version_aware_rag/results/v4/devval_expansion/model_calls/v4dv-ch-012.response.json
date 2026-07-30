@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-012",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "9e35f0b13ce2c72d3b6ccf949af51120610f9778f85e8602dbff35556a0d2e6a",
+    "response_sha256": "6d08a5ba2f82ac111103a69195c66e8651aabb88e2000f715bdb46bc0b4e26eb",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 6131,
+    "usage": {
+      "promptTokenCount": 725,
+      "candidatesTokenCount": 301,
+      "totalTokenCount": 2203,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 725
+        }
+      ],
+      "thoughtsTokenCount": 1177,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:29:22.295Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For adults and children, what specific carbohydrate sources does the WHO recommend to replace saturated fatty acids to reduce cardiovascular disease risk, and how do these recommended carbohydrates differ from the 'free sugars' that must be restricted to less than 10% of total energy intake to prevent dental caries and weight gain?\",\n  \"target_population\": [\n    \"adults\",\n    \"children\"\n  ],\n  \"conditions\": [\n    \"cardiovascular diseases\",\n    \"dental caries\",\n    \"increased body weight\",\n    \"all-cause mortality\"\n  ],\n  \"draft_rationale\": \"To fully answer this query, the user must integrate information from both provided passages. The 2023 SFA guideline (Passage 1) states that saturated fatty acids should be replaced with carbohydrates from foods containing naturally occurring dietary fibre, such as whole grains, vegetables, fruits, and pulses, to reduce CVD risk. The 2015 sugars guideline (Passage 2) defines 'free sugars' (monosaccharides and disaccharides added to foods/beverages, plus sugars naturally present in honey, syrups, fruit juices, and fruit juice concentrates) and details the recommendation to restrict them to less than 10% of total energy intake to prevent dental caries and weight gain. Combining both passages allows the user to distinguish the recommended high-quality carbohydrates from the restricted free sugars.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 725,
+      "candidatesTokenCount": 301,
+      "totalTokenCount": 2203,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 725
+        }
+      ],
+      "thoughtsTokenCount": 1177,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "zh9fas2dJZi9vr0P1NmGqQ4"
+  }
+}

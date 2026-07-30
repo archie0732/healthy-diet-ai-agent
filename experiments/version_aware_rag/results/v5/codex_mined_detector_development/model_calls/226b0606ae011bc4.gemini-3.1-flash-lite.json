@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-009",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "23773400596e5f12777a06ae49ec0aa6d58ead8f3e223a47d743e4c1b1d2c7c9",
+  "response_sha256": "f7f76cea8f85d6b9789d877b7ce2d1152b295b4e0f1f0f2df53b0814f3cca355",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The NEW passage updates the recommended duration and type of milk feeding (breastfeeding up to 2 years or beyond vs. 1 year, and transitioning to whole milk at 12 months), effectively replacing the OLD passage's general recommendations for the first year."
+  },
+  "latency_ms": 840,
+  "usage_metadata": {
+    "promptTokenCount": 435,
+    "candidatesTokenCount": 85,
+    "totalTokenCount": 520,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 435
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

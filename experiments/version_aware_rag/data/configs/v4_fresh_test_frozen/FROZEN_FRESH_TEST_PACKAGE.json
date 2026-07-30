@@ -1,0 +1,119 @@
+{
+  "status": "frozen_before_fresh_test_creation",
+  "frozen_at": "2026-07-22",
+  "retrieval": {
+    "systems": [
+      "recency",
+      "oracle_cross_0.5"
+    ],
+    "candidate_budget": 20,
+    "top_k": 3,
+    "recency_lambda": 0.75,
+    "relation_boost": 0.35,
+    "propagation_factor": 0.9,
+    "pair_coverage_selection": true,
+    "semantic_alpha": 0.5
+  },
+  "reranker": {
+    "model_id": "gemma-4-31b-it",
+    "descriptor_sha256": "4541abb7e8b2fc18125b16d39e641d36c0f41d937f10053763706b45311e81bf",
+    "api_version": "v1beta",
+    "temperature": 0,
+    "thinking_level": "not_applicable",
+    "output_schema": "scores_only_v1",
+    "max_output_tokens": 2048
+  },
+  "answer_generator": {
+    "model_id": "gemma-4-31b-it",
+    "temperature": 0,
+    "max_output_tokens": 1024,
+    "prompt_version": "v4.0.0-frozen-2026-07-22",
+    "prompt_source_sha256": "b5e5e9a11cb16a4085c5d5db307d7771d97384370f01d906c08d7ae53bc60b7f"
+  },
+  "test_construction": {
+    "record_count": 40,
+    "strata": [
+      "current_only",
+      "conditional_merge",
+      "compatible_history",
+      "hard_negative"
+    ],
+    "records_per_stratum": 10,
+    "selection": "Lexicographically first ten test-eligible v4_new candidate pairs with unique leakage_group_id per stratum.",
+    "v3_held_out_query_reuse_allowed": false
+  },
+  "retrieval_endpoints": [
+    "conditional_merge_required_micro_recall_at_3",
+    "compatible_history_required_micro_recall_at_3",
+    "retained_required_micro_recall_at_3",
+    "current_only_deprecated_or_forbidden_hit_rate_at_3",
+    "hard_negative_forbidden_hit_rate_at_3"
+  ],
+  "answer_endpoints": [
+    "version_grounded_answer_correctness",
+    "conditional_boundary_preservation",
+    "completeness",
+    "citation_entailment",
+    "unsupported_claim",
+    "appropriate_abstention"
+  ],
+  "claim_boundary": "Oracle retrieval results measure attainable policy value, not deployability. Publication-grade answer claims require independent blinded human evaluation.",
+  "input_checksums": {
+    "validation_config": {
+      "path": "data/configs/v4_validation_frozen/FROZEN_VALIDATION_CONFIG.json",
+      "sha256": "64920da581dd215d6febfc88b9ddc78f74d4317661386270d3ced6c3e175b2fe"
+    },
+    "validation_manifest": {
+      "path": "data/configs/v4_validation_frozen/FREEZE_MANIFEST.json",
+      "sha256": "c6d08894be36b68fbb313665d2eba51f9f0481f3f0f409fc72f2c9a06762deb5"
+    },
+    "validation_result": {
+      "path": "results/v4/validation_confirmation/VALIDATION_CONFIRMATION.json",
+      "sha256": "8e0b69e87be67643c27eecbdbd10937ca137994f7312425948909306456a8720"
+    },
+    "validation_audit": {
+      "path": "results/v4/validation_confirmation/VALIDATION_CONFIRMATION_AUDIT.json",
+      "sha256": "0f65cec40eb9473b41f167a4a91141485443941bd2f37fc42e8c1aefdd344885"
+    },
+    "model_registry": {
+      "path": "results/v4/dev_model_selection/model_registry.gemma-4-31b-it.json",
+      "sha256": "7127619b72d410cf7715a7ce5478898c5464904dd48d113876eb65ddec800b39"
+    },
+    "candidate_inventory": {
+      "path": "data/annotations_v4/candidate_relation_pairs_v4.jsonl",
+      "sha256": "b149db5124d1f5df807f404489f3ecb1afccf3481db550a75a0a01d72b77f7a0"
+    },
+    "corpus_v3": {
+      "path": "data/corpus_v3/chunks.jsonl",
+      "sha256": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7"
+    },
+    "corpus_devval": {
+      "path": "data/corpus_v4_devval_draft/chunks.jsonl",
+      "sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2"
+    },
+    "bm25_source": {
+      "path": "src/retrieval/bm25.ts",
+      "sha256": "7ef745075a87ac3ab7ebad391b14361f490fd324f9e613e890f597f51f71a05c"
+    },
+    "recency_source": {
+      "path": "src/retrieval/recency.ts",
+      "sha256": "46626d6ef03d0010e803e5f4b5f561c9eef2c3287813397fa05640eb183f633c"
+    },
+    "fixed_pool_source": {
+      "path": "src/retrieval/fixed_candidate_pool.ts",
+      "sha256": "eeca7c45ef0e4a4ac97ac86cb3a7e726464bbf49fcdbee83a8c75783979af6b0"
+    },
+    "reranker_client_source": {
+      "path": "src/retrieval/gemini_rerank_client.ts",
+      "sha256": "91cffb3de2617e520445dc312b7a183b25e05bbd0adc8ac6031e09277e32b6fb"
+    },
+    "answer_prompt_source": {
+      "path": "src/generation/v4_frozen_prompt.ts",
+      "sha256": "b5e5e9a11cb16a4085c5d5db307d7771d97384370f01d906c08d7ae53bc60b7f"
+    },
+    "protocol": {
+      "path": "V4_FRESH_TEST_PROTOCOL.md",
+      "sha256": "69193bb17502e59e0568466343181fa73990d1439dcb88522057a40c094f4980"
+    }
+  }
+}

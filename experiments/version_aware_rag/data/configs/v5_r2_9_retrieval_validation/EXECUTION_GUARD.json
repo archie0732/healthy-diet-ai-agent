@@ -1,0 +1,11 @@
+{
+  "status": "r2_9_validation_passed_locked_scope_limited",
+  "manifest_sha256": "090f3cf86452d92832b3b31f029bd24e01bc67aadf476627aa82d04bff39d826",
+  "validation_execution_count": 1,
+  "judgments_may_be_read_only_after_all_retrieval_calls": true,
+  "tuning_after_validation_allowed": false,
+  "external_model_api_allowed": false,
+  "fresh_v5_test_created": false,
+  "validation_result_sha256": "8e047b0f34a2fb0c051c9fd1bda9280ecdd16eede87bb0b40a6c224b9f778520",
+  "raw_retrieval_sha256": "ac5ac3fa4ed7c0720f7954b40e75d9dbd7d2b152639b7c645a14457ee72b0b59"
+}

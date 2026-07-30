@@ -1,0 +1,33 @@
+{
+  "schema_version": "v5-r2.14-confirmation-provisional-manifest-1",
+  "status": "codex_provisional_owner_review_required",
+  "provisional_record_count": 32,
+  "stratum_counts": {
+    "conditional_merge": 10,
+    "compatible_history": 10,
+    "current_only": 6,
+    "hard_negative_current": 6
+  },
+  "minimum_counts_satisfied": true,
+  "validator_error_count": 0,
+  "freeze_blockers": [
+    {
+      "type": "ReviewStatus",
+      "id": "ledger",
+      "message": "32 records are not project_owner_approved."
+    }
+  ],
+  "forbidden_lineage_count": 152,
+  "forbidden_required_evidence_count": 140,
+  "required_evidence_overlap_count": 0,
+  "candidate_group_manifest_sha256": "fb19b24da32e3e37653392f7e9050bceed6b20673705cbf240344f8f73c2faf3",
+  "candidate_group_review_manifest_sha256": "51a2eb056e73b6c198cc0926146be54ac8234eaa5ea2d6426b0ca6f8bcbf71a0",
+  "candidate_group_semantic_review_sha256": "a6083c37fad2f21b897529a724ba458984950f3690372d2700684b540861173a",
+  "provisional_annotations_sha256": "77b121be6a761b495631ce8972846691416079134e1cbc021021a5c0f40fabbf",
+  "owner_review_packet_path": "R2_14_CONFIRMATION_OWNER_REVIEW_PACKET.md",
+  "owner_review_packet_sha256": "0510bb955233517c873bbe9671dd8fff73412c1729ca08427f1970214f896a26",
+  "project_owner_approval_required": true,
+  "retrieval_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false
+}

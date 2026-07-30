@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-44-pass-2-e613acec|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "6b52d6f740bf7d0450caff6b2a8dae68b21b7e48ad4cb57b330aba13f1b2cc2c",
+  "response_sha256": "86789f4673349b1e8c41b89297089e61c5f6fd0b25ca15b7d9a8c0ecfd911aad",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage focuses on protein sources (meats, poultry, eggs) and the role of dietary oils, while the NEW passage focuses on limiting highly processed foods, added sugars, and refined carbohydrates. They address different dietary components and can be applied simultaneously."
+  },
+  "latency_ms": 2951,
+  "usage_metadata": {
+    "promptTokenCount": 1056,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 1130,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1056
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

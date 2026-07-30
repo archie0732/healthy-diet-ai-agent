@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-038",
+  "system": "recency",
+  "input_sha256": "d85ff4d0ecdf3481dfa5ef66275ba0677924e3b773bf8e0b28de5fecd7b80127",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-008-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=d on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-070-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=d on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-017-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=ood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nQUESTION\n\nAre butter and beef tallow excluded from recommended cooking fats in 2025-2030 as they were in 2020?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "f077bd0265dc31aa31e1d7936f6e5d7f127b27e866988eb339f626dc7997ddac",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-008-new",
+    "v4fresh-cand-pair-v4-new-070-new",
+    "v4fresh-cand-pair-v4-new-017-new"
+  ],
+  "answer": "*   Question: Are butter and beef tallow excluded from recommended cooking fats in 2025-2030 as they were in 2020?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-008-new): Mentions \"When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-070-new): Same text as Passage 1.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-017-new): Same text as Passage 1 regarding cooking fats.\n\n    *   The provided text is from the `dga-2025` document, edition `2025-2030`.\n    *   It states that when adding fats to meals or cooking, oils with essential fatty acids (like olive oil) should be prioritized, but \"Other options can include butter or beef tallow\" [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new].\n    *   The provided text contains no information about recommendations from 2020.\n\n    *   Address the 2025-2030 recommendation: Butter and beef tallow are listed as options for cooking or adding fats to meals, although oils with essential fatty acids (such as olive oil) should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new].\n    *   Address the 2020 comparison: The provided text does not mention 2020 recommendations.\n\n    *   \"In the 2025-2030 edition, butter and beef tallow are listed as options when cooking with or adding fats to meals, though oils with essential fatty acids, such as olive oil, should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new]. The provided text does not contain information regarding recommendations from 2020.\"For the 2025-2030 edition, butter and beef tallow are listed as options when adding fats to meals or cooking, although oils with essential fatty acids, such as olive oil, should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new]. The provided text does not contain information regarding recommendations from 2020.",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "00391b1cfca0c0c7380ddfb8556e9acb4f7fcc37232adf0c77a4a1e3b282c501",
+    "response_sha256": "f6f515f8f1279570122ec742653596ac00c28407d6905bf04684b5276f127e0d",
+    "latency_ms": 22489,
+    "usage_metadata": {
+      "promptTokenCount": 968,
+      "candidatesTokenCount": 119,
+      "totalTokenCount": 1735,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 968
+        }
+      ],
+      "thoughtsTokenCount": 648,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: Are butter and beef tallow excluded from recommended cooking fats in 2025-2030 as they were in 2020?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-008-new): Mentions \"When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-070-new): Same text as Passage 1.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-017-new): Same text as Passage 1 regarding cooking fats.\n\n    *   The provided text is from the `dga-2025` document, edition `2025-2030`.\n    *   It states that when adding fats to meals or cooking, oils with essential fatty acids (like olive oil) should be prioritized, but \"Other options can include butter or beef tallow\" [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new].\n    *   The provided text contains no information about recommendations from 2020.\n\n    *   Address the 2025-2030 recommendation: Butter and beef tallow are listed as options for cooking or adding fats to meals, although oils with essential fatty acids (such as olive oil) should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new].\n    *   Address the 2020 comparison: The provided text does not mention 2020 recommendations.\n\n    *   \"In the 2025-2030 edition, butter and beef tallow are listed as options when cooking with or adding fats to meals, though oils with essential fatty acids, such as olive oil, should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new]. The provided text does not contain information regarding recommendations from 2020.\"",
+                "thought": true
+              },
+              {
+                "text": "For the 2025-2030 edition, butter and beef tallow are listed as options when adding fats to meals or cooking, although oils with essential fatty acids, such as olive oil, should be prioritized [v4fresh-cand-pair-v4-new-008-new, v4fresh-cand-pair-v4-new-070-new, v4fresh-cand-pair-v4-new-017-new]. The provided text does not contain information regarding recommendations from 2020."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 968,
+        "candidatesTokenCount": 119,
+        "totalTokenCount": 1735,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 968
+          }
+        ],
+        "thoughtsTokenCount": 648,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "yYFgaqHwNNCivr0PzYn4iAQ"
+    }
+  }
+}

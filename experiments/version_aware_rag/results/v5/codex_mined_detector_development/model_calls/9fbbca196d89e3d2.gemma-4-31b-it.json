@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-019",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "b46e754d6a8baf76be077892144aafa0a6a5a3290041e2aa36fce4368ac921e4",
+  "response_sha256": "a23fea8f04a0f50b682fc035f1ee24ba2128259428a3829ed15f9fd049a18746",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides a general requirement ('at least half of which are whole grain'), while the NEW passage replaces this with specific serving goals ('2-4 servings per day') and a directive to 'Significantly reduce' refined carbohydrates."
+  },
+  "latency_ms": 2656,
+  "usage_metadata": {
+    "promptTokenCount": 275,
+    "candidatesTokenCount": 70,
+    "totalTokenCount": 345,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 275
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

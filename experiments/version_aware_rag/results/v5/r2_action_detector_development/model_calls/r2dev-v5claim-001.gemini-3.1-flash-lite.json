@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-001",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "d32a363670422a261380e357b4ab8c2fa4599001f59bad43bc6725825356544c",
+  "response_sha256": "fc2a93f0037ab689c0afb3cdd4c9c4de12e591fd1fd0cb04d20ab3446008db7c",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The passages are identical in meaning and instruction, with only a minor variation in singular versus plural phrasing."
+  },
+  "latency_ms": 874,
+  "usage_metadata": {
+    "promptTokenCount": 228,
+    "candidatesTokenCount": 54,
+    "totalTokenCount": 282,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 228
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-021",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "4ea75bf8ec4b5dd234d4cb1e32451cf0a5cae41f36e1a18a96272cfdd7ea0bba",
+  "response_sha256": "59d5b7adc58751fd146c448d29105e1d84ddb4c01b6ed9eba0f89730120b5fa4",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.95,
+    "rationale": "The OLD passage provides quantitative dietary limits for added sugars, while the CURRENT passage provides instructional guidance on identifying added sugars on labels. These are complementary, non-conflicting pieces of evidence."
+  },
+  "latency_ms": 791,
+  "usage_metadata": {
+    "promptTokenCount": 409,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 481,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 409
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

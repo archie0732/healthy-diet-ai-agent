@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-009",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "247d7c9fe060b608da281adddee2330fb81279ffc7e81a29149b879e401308fa",
+  "response_sha256": "21267d5549d5eb04e116803c9661e5c66c3ffbf4547a303880c432ba59cf5673",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides updated and more comprehensive guidance on infant feeding, including the duration of breastfeeding and the transition to whole milk, which effectively supersedes the simpler instructions in the OLD passage."
+  },
+  "latency_ms": 725,
+  "usage_metadata": {
+    "promptTokenCount": 571,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 643,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 571
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

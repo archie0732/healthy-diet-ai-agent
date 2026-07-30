@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-018",
+  "model_id": "gemma-4-31b-it",
+  "request_sha256": "6d3e59d2bfe9d90e0254485b1be304f65a8c0b44d63ff7307cbb4232f2b221ee",
+  "response_sha256": "5b7b4d17177ad9611ceaba3ebeb4d2d2b6c65e8899338f61700c4f40a89e2595",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The NEW passage replaces the general categories of vegetables and grains from the OLD passage with specific daily serving goals ('Vegetables: 3 servings per day', 'Fruits: 2 servings per day') and more detailed preparation guidelines."
+  },
+  "latency_ms": 2957,
+  "usage_metadata": {
+    "promptTokenCount": 408,
+    "candidatesTokenCount": 78,
+    "totalTokenCount": 486,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 408
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

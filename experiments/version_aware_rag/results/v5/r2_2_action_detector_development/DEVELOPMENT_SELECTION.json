@@ -1,0 +1,254 @@
+{
+  "status": "blocked_no_safe_r2_action_detector",
+  "development_only": true,
+  "validation_labels_read": false,
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "prompt_mode": "decomposed_v3",
+  "system_prompt": "Analyze whether an OLD guideline passage contains evidence that must still be retrieved when a CURRENT passage is available. Use passage content only; never use IDs, dates, labels, or hidden judgments.\n\nFirst identify the concrete obligation, threshold, population scope, exception, implementation method, or safety constraint in OLD that is not stated in CURRENT. Then classify CURRENT's effect on OLD as exactly one status:\n- RETAINS_DISTINCT: OLD contains a distinct compatible constraint that CURRENT neither restates nor displaces.\n- ADDS_SCOPE_OR_EXCEPTION: CURRENT explicitly adds a population boundary, condition, or exception while OLD remains necessary to state the general rule.\n- DUPLICATES: CURRENT materially restates or subsumes OLD, even if it is more detailed.\n- REPLACES_OR_CONFLICTS: CURRENT explicitly replaces, changes, or contradicts OLD.\n- UNCERTAIN: the passages do not clearly establish continued applicability.\n\nAbstract examples (not drawn from evaluation judgments):\n- Same threshold and scope in both passages -> DUPLICATES.\n- CURRENT says it replaces OLD -> REPLACES_OR_CONFLICTS.\n- OLD gives a quantitative ceiling; CURRENT only gives a compatible implementation method -> RETAINS_DISTINCT.\n- OLD gives a general rule; CURRENT adds a population exception not present in OLD -> ADDS_SCOPE_OR_EXCEPTION.\n- Same food advice rephrased with extra examples -> DUPLICATES.\n\nReturn JSON only. Do not directly choose the retrieval action; a fixed policy will map RETAINS_DISTINCT and ADDS_SCOPE_OR_EXCEPTION to preserve, and all other statuses to block.",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "configs": {
+    "gemma-4-31b-it": {
+      "type": "single_model",
+      "models": [
+        "gemma-4-31b-it"
+      ],
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.7272727272727273,
+        "false_preserve_count": 3,
+        "pair_preserve_precision": 0.7272727272727273,
+        "pair_preserve_recall": 0.7272727272727273,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 8,
+            "BLOCK_RETAINED": 3
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 3,
+            "BLOCK_RETAINED": 8
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "PAIR_PRESERVE",
+        "r2dev-v5claim-011": "PAIR_PRESERVE",
+        "r2dev-v5claim-012": "PAIR_PRESERVE",
+        "r2dev-v5claim-013": "PAIR_PRESERVE",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "PAIR_PRESERVE",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "PAIR_PRESERVE",
+        "r2dev-v5claim-019": "PAIR_PRESERVE",
+        "r2dev-v5claim-020": "PAIR_PRESERVE",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "PAIR_PRESERVE"
+      }
+    },
+    "gemini-3.1-flash-lite": {
+      "type": "single_model",
+      "models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.6363636363636364,
+        "false_preserve_count": 3,
+        "pair_preserve_precision": 0.6666666666666666,
+        "pair_preserve_recall": 0.5454545454545454,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 6,
+            "BLOCK_RETAINED": 5
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 3,
+            "BLOCK_RETAINED": 8
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "PAIR_PRESERVE",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "PAIR_PRESERVE",
+        "r2dev-v5claim-010": "PAIR_PRESERVE",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "PAIR_PRESERVE",
+        "r2dev-v5claim-013": "PAIR_PRESERVE",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "PAIR_PRESERVE",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "PAIR_PRESERVE"
+      }
+    },
+    "fail_closed_consensus_0.7": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.7,
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.6363636363636364,
+        "false_preserve_count": 2,
+        "pair_preserve_precision": 0.7142857142857143,
+        "pair_preserve_recall": 0.45454545454545453,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 5,
+            "BLOCK_RETAINED": 6
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "PAIR_PRESERVE",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "PAIR_PRESERVE",
+        "r2dev-v5claim-013": "PAIR_PRESERVE",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "PAIR_PRESERVE",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "PAIR_PRESERVE"
+      }
+    },
+    "fail_closed_consensus_0.8": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.8,
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.6363636363636364,
+        "false_preserve_count": 2,
+        "pair_preserve_precision": 0.7142857142857143,
+        "pair_preserve_recall": 0.45454545454545453,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 5,
+            "BLOCK_RETAINED": 6
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "PAIR_PRESERVE",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "PAIR_PRESERVE",
+        "r2dev-v5claim-013": "PAIR_PRESERVE",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "PAIR_PRESERVE",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "PAIR_PRESERVE"
+      }
+    },
+    "fail_closed_consensus_0.9": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.9,
+      "metrics": {
+        "query_count": 22,
+        "accuracy": 0.6363636363636364,
+        "false_preserve_count": 2,
+        "pair_preserve_precision": 0.7142857142857143,
+        "pair_preserve_recall": 0.45454545454545453,
+        "confusion_matrix": {
+          "PAIR_PRESERVE": {
+            "PAIR_PRESERVE": 5,
+            "BLOCK_RETAINED": 6
+          },
+          "BLOCK_RETAINED": {
+            "PAIR_PRESERVE": 2,
+            "BLOCK_RETAINED": 9
+          }
+        }
+      },
+      "predictions": {
+        "r2dev-v5claim-001": "BLOCK_RETAINED",
+        "r2dev-v5claim-002": "BLOCK_RETAINED",
+        "r2dev-v5claim-003": "BLOCK_RETAINED",
+        "r2dev-v5claim-004": "BLOCK_RETAINED",
+        "r2dev-v5claim-005": "BLOCK_RETAINED",
+        "r2dev-v5claim-006": "BLOCK_RETAINED",
+        "r2dev-v5claim-007": "BLOCK_RETAINED",
+        "r2dev-v5claim-008": "BLOCK_RETAINED",
+        "r2dev-v5claim-009": "BLOCK_RETAINED",
+        "r2dev-v5claim-010": "PAIR_PRESERVE",
+        "r2dev-v5claim-011": "BLOCK_RETAINED",
+        "r2dev-v5claim-012": "PAIR_PRESERVE",
+        "r2dev-v5claim-013": "PAIR_PRESERVE",
+        "r2dev-v5claim-014": "BLOCK_RETAINED",
+        "r2dev-v5claim-015": "BLOCK_RETAINED",
+        "r2dev-v5claim-016": "PAIR_PRESERVE",
+        "r2dev-v5claim-017": "BLOCK_RETAINED",
+        "r2dev-v5claim-018": "BLOCK_RETAINED",
+        "r2dev-v5claim-019": "BLOCK_RETAINED",
+        "r2dev-v5claim-020": "PAIR_PRESERVE",
+        "r2dev-v5claim-021": "PAIR_PRESERVE",
+        "r2dev-v5claim-022": "PAIR_PRESERVE"
+      }
+    }
+  },
+  "selection_rule": "false_preserve_count=0, pair_preserve_precision=1, and pair-preserve recall>=0.5; maximize pair-preserve recall, then accuracy",
+  "selected_config": null
+}

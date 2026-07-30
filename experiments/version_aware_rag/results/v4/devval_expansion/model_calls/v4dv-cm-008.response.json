@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-008",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "04df9f2c1e6a84fd3dadcfba049cd361a3450b7fca1cb6d32cb307c87a1d984b",
+    "response_sha256": "201793790a38970490c07ad0208df5ccd0504447aa3a8a6da6eac59549c020d5",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 14307,
+    "usage": {
+      "promptTokenCount": 879,
+      "candidatesTokenCount": 270,
+      "totalTokenCount": 2107,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 879
+        }
+      ],
+      "thoughtsTokenCount": 958,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:23:51.904Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For individuals with pre-existing diabetes who are advised that they can reduce their free sugars intake without using non-sugar sweeteners (NSS), what are the specific dietary recommendations and associated health outcomes of reducing free sugars intake according to the guidelines?\",\n  \"target_population\": [\n    \"individuals with pre-existing diabetes\"\n  ],\n  \"conditions\": [\n    \"pre-existing diabetes\",\n    \"free-sugar reduction\",\n    \"non-sugar sweeteners (NSS) exclusion\"\n  ],\n  \"draft_rationale\": \"To answer this query, information must be merged from both passages. The current evidence (who-nss-2023) establishes that the NSS guideline recommendations do not apply to individuals with pre-existing diabetes due to scope exclusions, but notes that individuals with diabetes can still reduce free sugars intake without using NSS. To find the actual recommendations and health outcomes of reducing free sugars, we must refer to the retained evidence (who-sugars-2015), which states that decreasing free sugars is associated with parallel changes in body weight and recommends limiting free sugars intake to less than 10% (and conditionally less than 5%) of total energy intake to reduce the risk of dental caries.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 879,
+      "candidatesTokenCount": 270,
+      "totalTokenCount": 2107,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 879
+        }
+      ],
+      "thoughtsTokenCount": 958,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "S_ReaqOQEKrd1e8P2ubImAw"
+  }
+}

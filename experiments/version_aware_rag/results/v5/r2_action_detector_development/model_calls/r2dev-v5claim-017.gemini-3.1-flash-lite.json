@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-017",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "c0d95ceb957e8f7f17ab77c65d9fce8710463a82462ea3f165f8fdce538ed985",
+  "response_sha256": "881c60e709d04794aab5fb51abf215eb1b56438bd195792a7d0e1d6e53dbc2ac",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a comprehensive list of protein food sources that encompasses all items mentioned in the OLD passage, rendering the latter redundant."
+  },
+  "latency_ms": 783,
+  "usage_metadata": {
+    "promptTokenCount": 393,
+    "candidatesTokenCount": 58,
+    "totalTokenCount": 451,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 393
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

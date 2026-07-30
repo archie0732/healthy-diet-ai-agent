@@ -1,0 +1,14 @@
+{
+  "schema_version": "v5-r2.21-lexical-weighted-rrf-guard-1",
+  "status": "diagnostic_complete_locked",
+  "manifest_sha256": "cc780747e73df8275291c23d61d7808a9ea51d6a5bfbc016ba5a56838b3c233f",
+  "execution_count": 1,
+  "judgments_read_only_after_all_embeddings_pools_and_top3": true,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "promotion_allowed": false,
+  "raw_results_sha256": "16412253256f29d5158a2add60ce9a514db6d2190e1692af02241f51293b66f2",
+  "embedding_integrity_sha256": "5bde74268c7e94b9bae14cc5e49defa41c196fa7e1b70ed8466ad8c2cc513c62",
+  "diagnostic_result_sha256": "1b23ec0d445a915fa37ed64ea3a8ea8d96c4c7218ca6f7f95614f45f85cbcfa1",
+  "selected_diagnostic_variant": null
+}

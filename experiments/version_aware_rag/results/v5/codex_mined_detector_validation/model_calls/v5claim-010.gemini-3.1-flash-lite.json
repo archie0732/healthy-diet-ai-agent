@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-010",
+  "model_id": "gemini-3.1-flash-lite",
+  "request_sha256": "179e17104ae5ad34740fd0ae499be0770c835d09ebf9e5a3b9c50cebab825575",
+  "response_sha256": "64a976f3a0e31c0a50727f34c69ce2e0c1e1e68fbbd46337a39bf62baac0df75",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The NEW passage expands upon the population that should avoid alcohol, adding 'people who are recovering from alcohol use disorder', 'people who are unable to control the amount they drink', 'people taking medications', and those with 'medical conditions' to the existing category of 'pregnant women', effectively updating the recommendation."
+  },
+  "latency_ms": 965,
+  "usage_metadata": {
+    "promptTokenCount": 354,
+    "candidatesTokenCount": 93,
+    "totalTokenCount": 447,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 354
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

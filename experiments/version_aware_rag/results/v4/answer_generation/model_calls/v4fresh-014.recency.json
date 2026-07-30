@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-014",
+  "system": "recency",
+  "input_sha256": "30b18976d42f1bc415b9ad98125f33e7664f244447c923bb4cf40860bf1dc8c4",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-053-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-019-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=tes. If you have a chronic disease, your health care professional to identify and adopt\r\ntalk with your health care professional to see if you a diet that is appropriate for you and your health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-073-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=tes. If you have a chronic disease, your health care professional to identify and adopt\r\ntalk with your health care professional to see if you a diet that is appropriate for you and your health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\nQUESTION\n\nHow should the 2020 general sodium guidance be combined with the 2025–2030 age-specific sodium limits for children aged 1–3, 4–8, and 9–13?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "3f56b94fc4e46f07ee7aa97fe7dd238ecd1ccb755bcd4dfab36794dfd2694133",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-053-new",
+    "v4fresh-cand-pair-v4-new-019-new",
+    "v4fresh-cand-pair-v4-new-073-new"
+  ],
+  "answer": "*   Question: How should the 2020 general sodium guidance be combined with the 2025–2030 age-specific sodium limits for children aged 1–3, 4–8, and 9–13?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-053-new): Discusses Vegetarians & Vegans, whole foods, protein sources, processed foods, nutrient gaps (vitamins A, D, E, B6, B12, etc.).\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-019-new): Same content as Passage 1.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-073-new): Same content as Passage 1.\n\n    *   The provided passages discuss dietary guidance for vegetarians and vegans.\n    *   There is no mention of \"2020 general sodium guidance\".\n    *   There is no mention of \"2025–2030 age-specific sodium limits\".\n    *   There is no mention of children aged 1–3, 4–8, or 9–13.\n    *   There is no mention of sodium limits in general, other than a mention to limit processed foods that can include \"salt\" [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n\n    *   The supplied evidence is insufficient to answer the question.The supplied evidence does not contain information regarding 2020 general sodium guidance or 2025–2030 age-specific sodium limits for children aged 1–3, 4–8, and 9–13.",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "9c965c84e0b5f14d60286e86343ba5a2eca7d5133bcac569992b02dd8bea2abb",
+    "response_sha256": "6be93268bf1071018b62fa22657a8500d5c67a448d3d4c5754919a71697cca0d",
+    "latency_ms": 15032,
+    "usage_metadata": {
+      "promptTokenCount": 1307,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 1812,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1307
+        }
+      ],
+      "thoughtsTokenCount": 453,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How should the 2020 general sodium guidance be combined with the 2025–2030 age-specific sodium limits for children aged 1–3, 4–8, and 9–13?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every material factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-053-new): Discusses Vegetarians & Vegans, whole foods, protein sources, processed foods, nutrient gaps (vitamins A, D, E, B6, B12, etc.).\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-019-new): Same content as Passage 1.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-073-new): Same content as Passage 1.\n\n    *   The provided passages discuss dietary guidance for vegetarians and vegans.\n    *   There is no mention of \"2020 general sodium guidance\".\n    *   There is no mention of \"2025–2030 age-specific sodium limits\".\n    *   There is no mention of children aged 1–3, 4–8, or 9–13.\n    *   There is no mention of sodium limits in general, other than a mention to limit processed foods that can include \"salt\" [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n\n    *   The supplied evidence is insufficient to answer the question.",
+                "thought": true
+              },
+              {
+                "text": "The supplied evidence does not contain information regarding 2020 general sodium guidance or 2025–2030 age-specific sodium limits for children aged 1–3, 4–8, and 9–13."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1307,
+        "candidatesTokenCount": 52,
+        "totalTokenCount": 1812,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1307
+          }
+        ],
+        "thoughtsTokenCount": 453,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "zHtgauKkMszY1e8Ps9aI8AM"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "r2_7_validation_confirmed_scope_limited_locked",
+  "split_manifest_sha256": "fb86792af37586a21666451737ba73a46934302ed4f06843895139be5af98f03",
+  "pre_model_gold_audit_complete": true,
+  "development_selection_complete": true,
+  "validation_execution_count": 1,
+  "external_model_api_allowed": false,
+  "tuning_after_validation_allowed": false,
+  "fresh_v5_test_created": false,
+  "selected_config": "explicit_temporal_history_intent_v1",
+  "development_selection_sha256": "08e9eb452352471a96d86eb71aa27675b09085ca6d092da203db1c0e7fe07024",
+  "validation_result_sha256": "8638a7c2e723fc32f25919d968596db07808df93945503d8d84979af4dfab29a"
+}

@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-040",
+  "system": "recency",
+  "input_sha256": "0b2f3049c21e34be9474052fa0861c79da92eb945e7b66a514c9bb077e8c6ad9",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-048-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-078-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-028-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=isk of the onset or progression of the Dietary Guidelines can support reproductive\r\nchronic disease and supporting other aspects of health for both women and men-with special\r\nhealth. The brain continues to mature during young emphasis on healthy fats, iron, and folate for\r\nadulthood. While the most significant increases in women and healthy fats and protein for men. bone density occur during adolescence, optimizing\r\nPregnant Women\r\n+ Pregnancy increases nutrient needs to support dairy, and low-mercury omega-3-rich\r\nmaternal health and fetal growth, with iron, folate, seafood (e. g. , salmon, sardines, trout). and iodine as top priorities. + Women should talk to their health care\r\n+ Pregnant women should consume diverse nutrient- professional about taking a daily prenatal\r\ndense foods, including iron-rich meats, folate-rich vitamin during pregnancy. greens and legumes, choline-rich eggs, calcium-rich\r\nLactating Women\r\n+ Lactation increases energy and nutrient needs eggs, and dairy; omega-3-rich seafood; folate-rich\r\nto support milk production and maternal health. legumes; and vitamin A-rich vegetables. Breastfeeding women should consume a wide\r\n+ Women should talk to their health care professional\r\nvariety of nutrient-dense foods, including vitamin\r\nabout whether dietary supplements may be needed\r\nB -rich protein sources such as meats, poultry,\r\nwhile breastfeeding. 12\r\nOlder Adults\r\n+ Some older adults need fewer calories but still eggs, legumes, and whole plant foods (vegetables\r\nrequire equal or greater amounts of key nutrients and fruits, whole grains, nuts, and seeds). When\r\nsuch as protein, vitamin B , vitamin D, and calcium.\n\nQUESTION\n\nShould lactating women restrict caloric intake to pre-pregnancy levels while breastfeeding in 2025-2030?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "e890667cf99fb79930ff12d75a05f2b17acf66b104a081e2537383c7c2e4d211",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-048-new",
+    "v4fresh-cand-pair-v4-new-078-new",
+    "v4fresh-cand-pair-v4-new-028-new"
+  ],
+  "answer": "*   Question: Should lactating women restrict caloric intake to pre-pregnancy levels while breastfeeding in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-048-new): Mentions \"Lactation increases energy and nutrient needs to support milk production and maternal health.\"\n    *   Passage 2 (v4fresh-cand-pair-v4-new-078-new): Same as Passage 1.\n    *   Passage 3 (v4fresh-cand-pair-v4-new-028-new): Same as Passage 1.\n\n    *   The provided text states that lactation *increases* energy and nutrient needs to support maternal health and milk production [v4fresh-cand-pair-v4-new-048-new, v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-028-new].\n    *   The text does *not* mention restricting caloric intake to pre-pregnancy levels. In fact, it explicitly says needs increase.\n\n    *   The provided evidence does not state that lactating women should restrict caloric intake to pre-pregnancy levels; rather, it states that lactation increases energy and nutrient needs to support maternal health and milk production [v4fresh-cand-pair-v4-new-048-new, v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-028-new].The provided evidence does not state that lactating women should restrict caloric intake to pre-pregnancy levels; instead, it notes that lactation increases energy and nutrient needs to support maternal health and milk production [v4fresh-cand-pair-v4-new-048-new, v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-028-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "adba2ee7be473235c4368ca4dca068082b826297d6b2fa56e908461c1ea8f2b3",
+    "response_sha256": "687d128a35d8351a91f5c8fc9b9065d017d8d53593603ad5d3b0763ea39603d2",
+    "latency_ms": 15009,
+    "usage_metadata": {
+      "promptTokenCount": 1334,
+      "candidatesTokenCount": 96,
+      "totalTokenCount": 1848,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1334
+        }
+      ],
+      "thoughtsTokenCount": 418,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: Should lactating women restrict caloric intake to pre-pregnancy levels while breastfeeding in 2025-2030?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-048-new): Mentions \"Lactation increases energy and nutrient needs to support milk production and maternal health.\"\n    *   Passage 2 (v4fresh-cand-pair-v4-new-078-new): Same as Passage 1.\n    *   Passage 3 (v4fresh-cand-pair-v4-new-028-new): Same as Passage 1.\n\n    *   The provided text states that lactation *increases* energy and nutrient needs to support maternal health and milk production [v4fresh-cand-pair-v4-new-048-new, v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-028-new].\n    *   The text does *not* mention restricting caloric intake to pre-pregnancy levels. In fact, it explicitly says needs increase.\n\n    *   The provided evidence does not state that lactating women should restrict caloric intake to pre-pregnancy levels; rather, it states that lactation increases energy and nutrient needs to support maternal health and milk production [v4fresh-cand-pair-v4-new-048-new, v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-028-new].",
+                "thought": true
+              },
+              {
+                "text": "The provided evidence does not state that lactating women should restrict caloric intake to pre-pregnancy levels; instead, it notes that lactation increases energy and nutrient needs to support maternal health and milk production [v4fresh-cand-pair-v4-new-048-new, v4fresh-cand-pair-v4-new-078-new, v4fresh-cand-pair-v4-new-028-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1334,
+        "candidatesTokenCount": 96,
+        "totalTokenCount": 1848,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1334
+          }
+        ],
+        "thoughtsTokenCount": 418,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "NIJgarfQOdWTvr0PuZLV4AM"
+    }
+  }
+}

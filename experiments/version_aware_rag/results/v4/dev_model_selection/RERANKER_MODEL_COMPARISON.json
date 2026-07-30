@@ -1,0 +1,57 @@
+{
+  "status": "development_cross_encoder_comparison",
+  "selected_complete_model": "gemma-4-31b-it",
+  "selected_mode": "oracle_cross_0.5",
+  "models": {
+    "gemma_4_31b_it": {
+      "model_id": "gemma-4-31b-it",
+      "completed_queries": 16,
+      "expected_queries": 16,
+      "complete": true,
+      "latency_ms": {
+        "mean": 53159,
+        "median": 38903,
+        "p95": 101096,
+        "min": 31894,
+        "max": 101096
+      },
+      "repair_query_count": 8,
+      "artifact_files": [
+        "v4dv-ch-001.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-002.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-003.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-004.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-005.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-006.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-007.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-ch-008.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-001.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-002.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-003.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-004.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-005.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-006.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-007.gemma-4-31b-it.cross_encoder.json",
+        "v4dv-cm-008.gemma-4-31b-it.cross_encoder.json"
+      ]
+    },
+    "gemini_3_5_flash": {
+      "model_id": "gemini-3.5-flash",
+      "completed_queries": 1,
+      "expected_queries": 16,
+      "complete": false,
+      "latency_ms": {
+        "mean": 267257,
+        "median": 267257,
+        "p95": 267257,
+        "min": 267257,
+        "max": 267257
+      },
+      "repair_query_count": 0,
+      "artifact_files": [
+        "v4dv-cm-001.gemini-3.5-flash.cross_encoder.json"
+      ]
+    }
+  },
+  "gemini_limitation": "Gemini 3.5 Flash full run was stopped because long-request latency and rolling quota made the 16-query run impractical. Partial calls are not used for model selection."
+}

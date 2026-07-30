@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-010",
+  "input_sha256": "e0a344d986060e7b85650876b7248baf6c0d330c94a7af6dd21e240347f4845e",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nThe\r\nFollow a healthy dietary\r\nGuidelines\r\npattern at every life stage.\r\nCustomize and\r\nenjoy nutrient-\r\ndense food and\r\nbeverage choices\r\nto reflect personal\r\npreferences,\r\ncultural traditions,\r\nand budgetary\r\nLimit foods considerations.\r\nand beverages\r\nhigher in\r\nadded sugars,\r\nsaturated fat, and\r\nsodium, and limit\r\nalcoholic\r\nbeverages.\r\nFocus on meeting food group needs with\r\nnutrient-dense foods and beverages, and\r\nstay within calorie limits.\n\nNEW PASSAGE\ndy to begin eating food:\r\n- Sits up alone or with support\r\n- Can control their head and neck\r\n- Tries to grasp small objects, such as toys or food\r\n- Brings objects to their mouth\r\n- Opens their mouth when food is offered\r\n- Moves food from the front to the back of their tongue to swallow\r\n- Swallows food instead of pushing it back out onto their chin\r\n+ Parents and caregivers can encourage healthy eating by offering new foods multiple times-it may take 8 to\r\n10 exposures before a young child is willing to try a new food-and by modeling healthy eating behaviors.\r\nMiddle Childhood (5-10 Years)\r\n+ Focus on whole, nutrient-dense foods such as + Avoid caffeinated beverages.\r\nprotein foods, dairy, vegetables, fruits, healthy\r\n+ No amount of added sugars is recommended.\r\nfats, and whole grains.\r\n+ Make cooking meals fun and a regular part of\r\n+ Full-fat dairy products are important for children\r\nthe household's routine.\r\nto help meet energy needs and support brain\r\ndevelopment.\r\nAdolescence (11-18 Years)\r\n+ Adolescence is a rapid growth period with energy drinks and avoiding highly processed\r\nincreased needs for energy, protein, calcium, and foods. When access to nutrient-rich foods is\r\niron-especially for girls due to menstruation. limited, fortified foods or supplements may be\r\nAdequate calcium and vitamin D are vital for peak needed under medical guidance.\r\nbone mass.\r\n+ Encourage adolescents to become active\r\n+ Adolescents should eat nutrient-dense foods such participants in food shopping and cooking so they\r\nas dairy, leafy greens, and iron-rich animal foods, learn how to make healthy food choices for\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "17e40e521a537a8a3660f2b4959559884aa911d0450e05f4d64db0c453a69810",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 1,
+    "rationale": "The old passage provides general dietary guidelines for all life stages, while the new passage provides specific, age-appropriate dietary recommendations for infants, middle childhood, and adolescence."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "54a953005e89a3d7b3c45e182d7dfcc37a5ff9505ecc0972414a2afafa0c8ce1",
+    "response_sha256": "5039d6a65b723521f0a0a0910accb378e8c37d464615fd5a6f55bbc618a2de51",
+    "latency_ms": 2361,
+    "usage_metadata": {
+      "promptTokenCount": 598,
+      "candidatesTokenCount": 54,
+      "totalTokenCount": 652,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 598
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 1, \"rationale\": \"The old passage provides general dietary guidelines for all life stages, while the new passage provides specific, age-appropriate dietary recommendations for infants, middle childhood, and adolescence.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 598,
+        "candidatesTokenCount": 54,
+        "totalTokenCount": 652,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 598
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "WXhgapeNL-6b1e8PqpLl2AE"
+    }
+  }
+}

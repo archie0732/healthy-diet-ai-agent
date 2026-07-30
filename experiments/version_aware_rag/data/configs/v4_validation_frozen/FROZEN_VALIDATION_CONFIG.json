@@ -1,0 +1,82 @@
+{
+  "status": "frozen_for_single_validation_confirmation",
+  "frozen_at": "2026-07-22",
+  "selected_system": "oracle_cross_0.5",
+  "top_k": 3,
+  "candidate_budget": 20,
+  "recency_lambda": 0.75,
+  "policy": {
+    "relation_boost": 0.35,
+    "propagation_factor": 0.9,
+    "pair_coverage_selection": true,
+    "semantic_alpha": 0.5
+  },
+  "cross_encoder": {
+    "model_id": "gemma-4-31b-it",
+    "descriptor_sha256": "4541abb7e8b2fc18125b16d39e641d36c0f41d937f10053763706b45311e81bf",
+    "api_version": "v1beta",
+    "temperature": 0,
+    "thinking_level": "not_applicable",
+    "output_schema": "scores_only_v1",
+    "max_output_tokens": 2048
+  },
+  "prompt_contract": "GeminiRerankClient.crossEncode scores_only_v1 as frozen in source code.",
+  "relation_source": "Global oracle edges constructed from all project-owner-approved dev/validation current-retained pairs; no query-ID lookup is permitted during retrieval.",
+  "endpoints": [
+    "conditional_merge_required_micro_recall_at_3",
+    "compatible_history_required_micro_recall_at_3",
+    "retained_required_micro_recall_at_3",
+    "stale_forbidden_hit_rate_at_3"
+  ],
+  "validation_rule": "Run once with no grid search or parameter changes. Validation failure cannot trigger retuning.",
+  "checksums": {
+    "development_split_sha256": "dbc90de18d95ee757e3941305868d133ec7b4233d5ee0386b341ad7eb885a378",
+    "sealed_validation_split_sha256": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+    "development_metrics_sha256": "85d6340dba056ee2326e21dd2e60fd2cceaff21fe52ea93ecb06fce3ec389724",
+    "development_raw_sha256": "66c6735bd676a28431c2525cebf1388af8ec2b4cb3a15584f9578d1d2bc80eaa",
+    "model_registry_sha256": "7127619b72d410cf7715a7ce5478898c5464904dd48d113876eb65ddec800b39",
+    "approved_safety_ledger_sha256": "ef454b9d8dedc590d5140c10e9e9e21151fea6347083a59d47b59e280763ee7e"
+  },
+  "development_gate": {
+    "status": "development_promotion_gate_passed",
+    "selected_candidate": "oracle_cross_0.5",
+    "effectiveness": {
+      "conditional_merge": {
+        "recency": 0.125,
+        "selected": 0.6875
+      },
+      "compatible_history": {
+        "recency": 0.25,
+        "selected": 0.75
+      },
+      "retained_history": {
+        "recency": 0,
+        "selected": 0.6875
+      }
+    },
+    "safety": {
+      "recency": {
+        "query_count": 16,
+        "stale_chunk_hit_rate_at_3": 0,
+        "forbidden_chunk_hit_rate_at_3": 0,
+        "stale_or_forbidden_hit_rate_at_3": 0,
+        "stale_or_forbidden_query_rate_at_3": 0
+      },
+      "selected": {
+        "query_count": 16,
+        "stale_chunk_hit_rate_at_3": 0,
+        "forbidden_chunk_hit_rate_at_3": 0,
+        "stale_or_forbidden_hit_rate_at_3": 0,
+        "stale_or_forbidden_query_rate_at_3": 0
+      }
+    },
+    "gate": {
+      "conditional_merge_noninferiority": true,
+      "compatible_history_noninferiority": true,
+      "retained_history_strict_improvement": true,
+      "stale_forbidden_nonincrease": true
+    },
+    "full_promotion_gate_passed": true,
+    "validation_execution_allowed": true
+  }
+}

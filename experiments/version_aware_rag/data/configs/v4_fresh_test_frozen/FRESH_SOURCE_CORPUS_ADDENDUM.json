@@ -1,0 +1,8 @@
+{
+  "status": "fresh_test_source_corpus_addendum_frozen_before_final_test_creation",
+  "base_frozen_package_sha256": "c30f464414d70ef816abda548ef8e90e1d7196adc0df3ce51f65ae63eef21917",
+  "source_window_manifest_sha256": "5bb184ce09235a4d546e3c5ad3525322a498cd5ef8ae3f9c8f52582405eea4c0",
+  "chunks_sha256": "78f2fb0d3b77514cd8c7c930840b9b3dcd828f07f77b5389ebb8b6a321b2a088",
+  "provenance_sha256": "c12a9d7e7ef7b297da72d04a8e1f5c2c53ba2917e74401a4f9b745a6b61a5b05",
+  "policy_or_endpoint_change": false
+}

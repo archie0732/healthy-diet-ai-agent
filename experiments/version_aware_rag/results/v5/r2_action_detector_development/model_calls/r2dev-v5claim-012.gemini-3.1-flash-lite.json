@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-012",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "071edee5903a3eebf210ebc91198f7cd6733e5c9984624ca88858601b7fc4bb4",
+  "response_sha256": "0f7ff7025c52c26cd82d2d5d0187d6cb6898926becd2a0539d5640dfa9781a5b",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 0.95,
+    "rationale": "The CURRENT passage provides updated, more prescriptive guidance on added sugars and sweeteners, effectively superseding the OLD passage's general observations on safety and association."
+  },
+  "latency_ms": 877,
+  "usage_metadata": {
+    "promptTokenCount": 911,
+    "candidatesTokenCount": 65,
+    "totalTokenCount": 976,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 911
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-030",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "ac81788baac3f622642c8e56cca1d5ba68da1a73f2d9e85690bca9e68dbde134",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-040-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=eats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-040-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=Guideline 3: Focus on meeting food group needs\r\nwith nutrient-dense foods and beverages,\r\nand stay within calorie limits.\r\nThe core elements that make up a healthy dietary pattern\r\nNutrient-dense foods provide vitamins,\r\ninclude:\r\nminerals, and other health-promoting\r\n* Vegetables of all types-dark green; red and orange;\r\ncomponents and have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-069-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nQUESTION\n\nHow does the emphasis on fiber-rich whole grains align between 2020 and 2025 guidelines?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "e36e188808284b11237dedd16bf35592d85c2b02c178493e9d9aa43cb47a5261",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-040-new",
+    "v4fresh-cand-pair-v4-new-040-old",
+    "v4fresh-cand-pair-v4-new-069-new"
+  ],
+  "answer": "*   Question: How does the emphasis on fiber-rich whole grains align between 2020 and 2025 guidelines?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030):\n        *   \"Prioritize fiber-rich whole grains.\"\n        *   \"Whole grains serving goals: 2-4 servings per day, adjusting as needed based on your individual caloric requirements.\"\n        *   \"Significantly reduce the consumption of highly processed, refined carbohydrates, such as white bread, ready-to-eat or packaged breakfast options, flour tortillas, and crackers.\"\n    *   Passage 2 (dga-2020, edition 2020-2025):\n        *   \"Grains, at least half of which are whole grain\" are listed as a core element of a healthy dietary pattern.\n    *   Passage 3 (dga-2025, edition 2025-2030):\n        *   Same as Passage 1 regarding whole grains.\n\n    *   2020-2025 Guidelines: Core elements of a healthy dietary pattern include grains, with at least half being whole grain [v4fresh-cand-pair-v4-new-040-old].\n    *   2025-2030 Guidelines: Fiber-rich whole grains should be prioritized, with serving goals of 2-4 servings per day (adjusted for individual caloric requirements) [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new]. Additionally, there is a recommendation to significantly reduce the consumption of highly processed, refined carbohydrates like crackers, flour tortillas, white bread, and ready-to-eat or packaged breakfast options [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new].\n\n    *   Ensure citations are exact.\n    *   Ensure no outside knowledge.\n    *   Ensure concise delivery.The emphasis on whole grains in the guidelines is as follows:\n\n*   **2020-2025 Guidelines:** Grains are a core element of a healthy dietary pattern, with at least half of them being whole grain [v4fresh-cand-pair-v4-new-040-old].\n*   **2025-2030 Guidelines:** Fiber-rich whole grains should be prioritized, with serving goals of 2-4 servings per day, adjusted based on individual caloric requirements [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new]. These guidelines also recommend significantly reducing the consumption of refined, highly processed carbohydrates, including crackers, flour tortillas, white bread, and packaged or ready-to-eat breakfast options [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "c35267787ab484355ef7d6155f0c1c1b65ebc45d41c45de1314b3b802fedaf7d",
+    "response_sha256": "4ca457e5051d9f31679d0f7b120a8a9842a744e941170963ede9128094a59637",
+    "latency_ms": 22536,
+    "usage_metadata": {
+      "promptTokenCount": 1093,
+      "candidatesTokenCount": 223,
+      "totalTokenCount": 1868,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1093
+        }
+      ],
+      "thoughtsTokenCount": 552,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the emphasis on fiber-rich whole grains align between 2020 and 2025 guidelines?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (dga-2025, edition 2025-2030):\n        *   \"Prioritize fiber-rich whole grains.\"\n        *   \"Whole grains serving goals: 2-4 servings per day, adjusting as needed based on your individual caloric requirements.\"\n        *   \"Significantly reduce the consumption of highly processed, refined carbohydrates, such as white bread, ready-to-eat or packaged breakfast options, flour tortillas, and crackers.\"\n    *   Passage 2 (dga-2020, edition 2020-2025):\n        *   \"Grains, at least half of which are whole grain\" are listed as a core element of a healthy dietary pattern.\n    *   Passage 3 (dga-2025, edition 2025-2030):\n        *   Same as Passage 1 regarding whole grains.\n\n    *   2020-2025 Guidelines: Core elements of a healthy dietary pattern include grains, with at least half being whole grain [v4fresh-cand-pair-v4-new-040-old].\n    *   2025-2030 Guidelines: Fiber-rich whole grains should be prioritized, with serving goals of 2-4 servings per day (adjusted for individual caloric requirements) [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new]. Additionally, there is a recommendation to significantly reduce the consumption of highly processed, refined carbohydrates like crackers, flour tortillas, white bread, and ready-to-eat or packaged breakfast options [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new].\n\n    *   Ensure citations are exact.\n    *   Ensure no outside knowledge.\n    *   Ensure concise delivery.",
+                "thought": true
+              },
+              {
+                "text": "The emphasis on whole grains in the guidelines is as follows:\n\n*   **2020-2025 Guidelines:** Grains are a core element of a healthy dietary pattern, with at least half of them being whole grain [v4fresh-cand-pair-v4-new-040-old].\n*   **2025-2030 Guidelines:** Fiber-rich whole grains should be prioritized, with serving goals of 2-4 servings per day, adjusted based on individual caloric requirements [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new]. These guidelines also recommend significantly reducing the consumption of refined, highly processed carbohydrates, including crackers, flour tortillas, white bread, and packaged or ready-to-eat breakfast options [v4fresh-cand-pair-v4-new-040-new], [v4fresh-cand-pair-v4-new-069-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1093,
+        "candidatesTokenCount": 223,
+        "totalTokenCount": 1868,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1093
+          }
+        ],
+        "thoughtsTokenCount": 552,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "xX9gar-vDaSRosUP_Pv0qQM"
+    }
+  }
+}

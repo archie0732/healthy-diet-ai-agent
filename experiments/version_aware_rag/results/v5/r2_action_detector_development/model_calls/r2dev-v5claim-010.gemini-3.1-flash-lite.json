@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-010",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "06b85d327dba0014828af90ab4db2088f9794fcddd60f7fb585c8e053ee6e0a0",
+  "response_sha256": "bffb0a7273986d471c9c5f086e099184b780ee15547decd8436b1ec7ee46a765",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The current passage updates and expands upon the guidelines provided in the old passage, covering the same population groups and recommendations while providing more comprehensive guidance."
+  },
+  "latency_ms": 786,
+  "usage_metadata": {
+    "promptTokenCount": 374,
+    "candidatesTokenCount": 54,
+    "totalTokenCount": 428,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 374
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

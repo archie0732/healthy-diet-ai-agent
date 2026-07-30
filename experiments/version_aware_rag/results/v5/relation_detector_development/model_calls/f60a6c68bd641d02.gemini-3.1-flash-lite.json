@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-0-8effd6bb|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "1f9371067b12fe977fb0a7830b47a00980340f42fdb4a4bb3595322282c979e6",
+  "response_sha256": "20616dcd60da02046f5d85fb9f000fe3c02c5d181d6eb898d8027ee452f81519",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 1,
+    "rationale": "The OLD passage sets a threshold for added sugars at 'less than 10 percent of calories per day,' whereas the NEW passage establishes a significantly more restrictive standard: 'one meal should contain no more than 10 grams of added sugars' and specifies granular limits for snack categories."
+  },
+  "latency_ms": 871,
+  "usage_metadata": {
+    "promptTokenCount": 1024,
+    "candidatesTokenCount": 86,
+    "totalTokenCount": 1110,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1024
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

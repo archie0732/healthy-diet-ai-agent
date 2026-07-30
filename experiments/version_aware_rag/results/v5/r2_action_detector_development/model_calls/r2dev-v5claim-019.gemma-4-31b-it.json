@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-019",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "504a003ce460b44e7bf9b55d47ec65fd735cae79e2ec21048618fb962b106b9c",
+  "response_sha256": "47f83f1240fca174cd7e8d8c8379cebfefba751556b56ebd81b0c7dd770a85a0",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more detailed and updated instruction to prioritize fiber-rich whole grains and reduce refined carbohydrates, which encompasses and replaces the general requirement that at least half of grains be whole grain."
+  },
+  "latency_ms": 3086,
+  "usage_metadata": {
+    "promptTokenCount": 295,
+    "candidatesTokenCount": 71,
+    "totalTokenCount": 366,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 295
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

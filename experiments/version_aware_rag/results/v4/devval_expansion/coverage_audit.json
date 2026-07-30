@@ -1,0 +1,22 @@
+{
+  "status": "draft_expansion_ready_for_human_review",
+  "generated_at": "2026-07-21T07:46:40.351Z",
+  "counts": {
+    "source_documents": 8,
+    "source_chunks": 1392,
+    "drafts": 24,
+    "development": 16,
+    "validation": 8,
+    "conditional_merge_groups": 12,
+    "compatible_history_groups": 12,
+    "fresh_test_overlap_chunks": 0
+  },
+  "checksums": {
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "ledger_sha256": "07a1b763c2dc9e0c4238307ecbc11e1d2dfef095bff63f9e56054a0ef7cf9abb",
+    "model_manifest_sha256": "7ef0aa25d763c21e6afe245a7853a00d5a1cbf283f9962025c374cb379c71578"
+  },
+  "promotion_blocked": true,
+  "promotion_block_reason": "All 24 records are model-assisted drafts with review_status=needs_user_review. Validation and promotion gates must not run until adjudication is complete.",
+  "failures": []
+}

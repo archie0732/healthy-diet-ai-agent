@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-010",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "42c69d3738151ad10ce7ced962559812cf16eaee917f80275bd28cab78d7931f",
+    "response_sha256": "7782f0ab1bc258db5d3852092451b4083cde9ca1612d330b80e24d3c4e8a7b09",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 4946,
+    "usage": {
+      "promptTokenCount": 714,
+      "candidatesTokenCount": 250,
+      "totalTokenCount": 1961,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 714
+        }
+      ],
+      "thoughtsTokenCount": 997,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:29:10.807Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For pediatric populations (children and adolescents), what are the WHO's specific age-based recommendations for daily dietary fibre intake, and how should the recommended adult potassium intake of 90 mmol/day be adjusted for children to control blood pressure?\",\n  \"target_population\": [\n    \"children\",\n    \"adolescents\",\n    \"pediatric populations\"\n  ],\n  \"conditions\": [\n    \"elevated blood pressure\",\n    \"hypertension\",\n    \"general dietary health\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must synthesize information from two different guidelines. First, they need the 2023 carbohydrate guidance to state the specific dietary fibre recommendations for children (15 g/day for 2-5 years, 21 g/day for 6-9 years, and 25 g/day for 10+ years). Second, they need the 2012 retained potassium guidance to explain that the adult potassium recommendation of 90 mmol/day must be adjusted downward for children based on their energy requirements relative to adults to control blood pressure.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 714,
+      "candidatesTokenCount": 250,
+      "totalTokenCount": 1961,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 714
+        }
+      ],
+      "thoughtsTokenCount": 997,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "xB9fatDbEYWk1e8Pov7XmA8"
+  }
+}

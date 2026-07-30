@@ -1,0 +1,18 @@
+{
+  "schema_version": "v5-r2.19-neural-hybrid-guard-1",
+  "status": "diagnostic_complete_locked",
+  "manifest_sha256": "92d6489f41a51d5a2e178b26c86bdf1f68b5a73e9de0b206aa608d96b0038cac",
+  "execution_count": 1,
+  "judgments_read_only_after_all_embeddings_and_candidate_pools": true,
+  "remote_model_loading_allowed": false,
+  "blocked_postinstall_scripts_executed": false,
+  "r2_16_rerun_allowed": false,
+  "top3_reranking_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "promotion_allowed": false,
+  "raw_results_sha256": "cb90a90c15319b6c802530e099410313e98a2990077c15281fa6f0e145ba499d",
+  "embedding_integrity_sha256": "b0944f04ae654d80114e16d970d8db7e4728e54e2af309ad1278f015a9ba927d",
+  "diagnostic_result_sha256": "d8b5a634d518cd9f97e87f0800500c8258e0599edca4a9dea24b55eb294f452e",
+  "selected_diagnostic_variant": "bm25_minilm_rrf_k60_top20"
+}

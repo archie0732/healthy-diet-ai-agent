@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-054",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "257500bd15963f99408aec9e8407fd014b2421758de78e695d952c83aacbbf39",
+  "response_sha256": "8b101d374e49ffe3ed41f5020a367b93a101c167b519543e949efd0586b90bd5",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general dietary advice across life stages, while the NEW excerpt provides specific instructions for infant feeding practices. They address different scopes and do not conflict or supersede one another."
+  },
+  "latency_ms": 978,
+  "usage_metadata": {
+    "promptTokenCount": 288,
+    "candidatesTokenCount": 75,
+    "totalTokenCount": 363,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 288
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

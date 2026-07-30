@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-004",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "c0ea4ebcbff7416929dc5e01f39abb1adf02a8cd8bc50e1a8ea70773e05f2255",
+    "response_sha256": "01fb7c0fa557f4ee6b04adba76c7852bddbec770e8fd147370ceafb97a9bf7cf",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 18069,
+    "usage": {
+      "promptTokenCount": 882,
+      "candidatesTokenCount": 305,
+      "totalTokenCount": 2222,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 882
+        }
+      ],
+      "thoughtsTokenCount": 1035,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:26:45.925Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For the general adult population without kidney impairments, why do health guidelines emphasize that natural, unrefined food sources should remain the primary way to obtain potassium even when potassium-containing salt substitutes (LSSS) or other formulated products are available, and what cardiovascular conditions are associated with insufficient potassium intake?\",\n  \"target_population\": [\n    \"Adults in general populations, excluding individuals with kidney impairments or conditions compromising potassium excretion (such as those taking potassium-sparing diuretics or potassium supplements)\"\n  ],\n  \"conditions\": [\n    \"Hypertension\",\n    \"Cardiovascular diseases\",\n    \"Stroke\",\n    \"Kidney disease\"\n  ],\n  \"draft_rationale\": \"To answer this query, both passages are necessary. The 2025 passage (Current Evidence) establishes that for the general adult population (excluding those with kidney impairments), foods that naturally contain potassium (such as beans, peas, nuts, and green vegetables) should be the primary sources of dietary potassium when seeking to increase intake, even when discussing the implementation of low-sodium salt substitutes (LSSS). The 2012 passage (Retained Evidence) supports this by stating that most individuals can replace needed potassium through unrefined food consumption (like fruits and vegetables) without needing supplements or specially formulated products, and it provides the clinical context that reduced potassium consumption is associated with hypertension, cardiovascular diseases, and an increased risk of stroke.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 882,
+      "candidatesTokenCount": 305,
+      "totalTokenCount": 2222,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 882
+        }
+      ],
+      "thoughtsTokenCount": 1035,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "9_ReaqadL9vbvr0P-NjOoQw"
+  }
+}

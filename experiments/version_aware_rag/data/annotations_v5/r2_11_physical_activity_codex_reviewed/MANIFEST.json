@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.11-codex-reviewed-physical-activity-manifest-1",
+  "status": "codex_provisional_owner_review_required",
+  "reviewed_candidate_count": 8,
+  "accepted_provisional_count": 5,
+  "rejected_count": 3,
+  "semantic_review_sha256": "be0021e85f8b993816412b00a8766279d74307b8c6791d66bd05b8484a81866c",
+  "provisional_annotations_sha256": "addc5ee2b8b7e3d076ee7e7e7932ac6886162d177395bcfd3f2c29e430271267",
+  "validation_error_count": 0,
+  "project_owner_approval_required": true,
+  "retrieval_allowed": false
+}

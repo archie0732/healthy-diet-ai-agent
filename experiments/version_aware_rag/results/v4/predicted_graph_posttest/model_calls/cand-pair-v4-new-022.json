@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-022",
+  "input_sha256": "7042d6fe5c82ba4a87e8afacca8af47a476a60ca441d6c8aaf3cd65e3f9e7710",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nGuideline 4: Limit foods and beverages higher in\r\nadded sugars, saturated fat, and sodium,\r\nand limit alcoholic beverages.\r\nLimits are:\r\n* Added sugars-Less than 10% of calories per day\r\nstarting at age 2. Avoid foods and beverages with\r\nadded sugars for those younger than age 2.\r\n* Saturated fat-Less than 10% of calories per day\r\nstarting at age 2.\r\n* The National Academies recommends that trans fat and dietary cholesterol consumption to be as low as possible without compromising the nutritional adequacy of the diet. The Dietary Guidelines does not establish a quantitative limit for dietary cholesterol.\r\nsugars, saturated fat, or sodium- * Sodium-Less than 2,300 milligrams per day-and even\r\nless for children younger than age 14.\r\nor for alcoholic beverages.\r\n* Alcoholic beverages-Adults of legal drinking age can\r\nchoose not to drink or to drink in moderation by limiting\r\nintake to 2 drinks or less in a day for men and\r\n1 drink or less in a day for women, when alcohol is\r\nconsumed. Drinking less is better for health than\r\ndrinking more. There are some adults who should not\r\ndrink alcohol, such as women who are pregnant.\n\nNEW PASSAGE\nLimit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "79153c2c48f60989105c9000f4759dfa16db715019933d124464723b2ffa6f25",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The new passage provides more specific, granular details (e.g., age-specific sodium limits and specific groups who should avoid alcohol) that expand upon the general limits established in the old passage without contradicting them."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "1a2ec78453ddc1088bd066b6107b81b045370428b67e4fc6cf22cd1ca52a7077",
+    "response_sha256": "17c46fde9e984dfcd1f8a8b722f63dd7a360f58051b8c00a2dfe52541b5602fa",
+    "latency_ms": 2895,
+    "usage_metadata": {
+      "promptTokenCount": 616,
+      "candidatesTokenCount": 73,
+      "totalTokenCount": 689,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 616
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": " {\n  \"relation_type\": \"complementary\",\n  \"confidence\": 0.9,\n  \"rationale\": \"The new passage provides more specific, granular details (e.g., age-specific sodium limits and specific groups who should avoid alcohol) that expand upon the general limits established in the old passage without contradicting them.\"\n}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 616,
+        "candidatesTokenCount": 73,
+        "totalTokenCount": 689,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 616
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "fHhgau7ZK_Pc1e8Pq8ip2AM"
+    }
+  }
+}

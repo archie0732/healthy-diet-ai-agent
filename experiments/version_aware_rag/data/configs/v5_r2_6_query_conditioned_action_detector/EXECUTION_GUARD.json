@@ -1,0 +1,17 @@
+{
+  "status": "blocked_no_safe_query_conditioned_detector",
+  "split_manifest_sha256": "6249b71ae0ebd66d0f1547af6acbcccb76d58fae529a88cef36733a69366489c",
+  "development_selection_complete": true,
+  "validation_execution_count": 0,
+  "external_model_api_allowed": false,
+  "tuning_after_validation_allowed": false,
+  "fresh_v5_test_created": false,
+  "selected_config": null,
+  "development_selection_sha256": "7c776a434dcd7cf5ec9eb060c055b18aad27cce5a88c7480b5a4e9cf2f59beff",
+  "development_iteration": 2,
+  "iteration_1_status": "blocked_no_safe_query_conditioned_detector",
+  "iteration_1_development_selection_sha256": "c08d4d79f61dc284f6834b1e3de57ec85e1e0f92a52b7af2e4941e7885770ff8",
+  "post_selection_label_audit_status": "two_development_labels_require_revision",
+  "promotion_prohibited": true,
+  "promotion_prohibition_reason": "Query-conditioned gold was audited after Development predictions were observed; retroactive relabeling cannot unlock Validation."
+}

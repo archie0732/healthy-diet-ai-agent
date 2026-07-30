@@ -1,0 +1,31 @@
+{
+  "schema_version": "v5-r2.11-development-audit-1",
+  "status": "audit_pass",
+  "audited_at": "2026-07-26T00:00:00.000+08:00",
+  "development_only": true,
+  "retrieval_rerun_performed": false,
+  "raw_row_count": 616,
+  "query_count": 56,
+  "system_count": 11,
+  "unique_query_system_pair_count": 616,
+  "owner_approved_record_count": 56,
+  "shared_candidate_pool_identity": true,
+  "selected_system": "implicit_merge_r0.2_g0.5",
+  "selected_required_candidate_micro_recall_at_20": 0.8863636363636364,
+  "gate_checks_passed": 7,
+  "gate_checks_failed": 1,
+  "gate_passed": false,
+  "promotion_allowed": false,
+  "execution_guard_status": "development_gate_failed_locked",
+  "retrieval_execution_count": 1,
+  "r2_10_archive_checksum_entries_verified": 22,
+  "r2_10_archive_checksum_entry_count": 22,
+  "artifact_sha256": {
+    "frozen_manifest": "f0b356204b2d6bc044991677eb8d8caa38c9350ef072e37b902625ddf27abaa8",
+    "execution_guard": "f09cc93e7d54c2d889fd521d884cf8e77ffce2738f4351ffd58b5aa66ac7663e",
+    "runner": "6b663360bf7dc3d52b645fa88046522501ebe65ef979541926fe7b7caac62861",
+    "raw_retrieval_results": "a788e5851d476545c9fce2d3acaa368f3fcf6530382a12f50bef1039cbd59113",
+    "development_result": "b7aff9d078776cef6c24c865fe316bd8989f9b276558b4672bd2d09e84e56d7b"
+  },
+  "failures": []
+}

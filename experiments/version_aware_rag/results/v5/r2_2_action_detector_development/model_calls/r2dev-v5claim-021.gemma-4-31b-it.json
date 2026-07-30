@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-021",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "2af18e83a679310b1b82cead834aaef4de23dabc8df8c5bcf4d7b2502ef6d4e3",
+  "response_sha256": "ea7160f6c5a07e1f826ac32efd6d95cf266aeaa41ef0779344b1561a95a159ec",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "Added sugars should be less than 10% of calories per day starting at age 2, and avoided entirely for those younger than age 2.",
+    "confidence": 1,
+    "rationale": "The OLD passage provides specific quantitative limits and age-based constraints for added sugar intake, whereas the CURRENT passage only provides guidance on how to identify added sugars on labels and distinguishes them from naturally occurring sugars.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 6198,
+  "usage_metadata": {
+    "promptTokenCount": 582,
+    "candidatesTokenCount": 104,
+    "totalTokenCount": 686,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 582
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

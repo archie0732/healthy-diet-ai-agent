@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-44-pass-0-b82f56fd|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "92da39d93d1a70cff51807b013957258937b249d49558062c1eeede9c7ddaf48",
+  "response_sha256": "531255f86bbd95439d2a66ad4e722a5a46bcaa315b44164d7187fae7a1e2db4b",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The OLD passage provides detailed definitions and clinical associations regarding the consumption of lean versus processed meats to manage disease risk, whereas the NEW passage provides updated, prescriptive guidance on preparation and intake ('Consume meat with no or limited added sugars, refined carbohydrates or starches, or chemical additives') that replaces the previous general health-based characterization of meats."
+  },
+  "latency_ms": 964,
+  "usage_metadata": {
+    "promptTokenCount": 1005,
+    "candidatesTokenCount": 100,
+    "totalTokenCount": 1105,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1005
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

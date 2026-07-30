@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-017",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "179ee903983451d94f35de9765c2255ff1659ae39d217cf2248cdfe1406fbc8b",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-053-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-053-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=Key Recommendations provide further guidance on how individuals can follow the five Guidelines. The Dietary Guidelines' Key\r\nRecommendations for healthy eating patterns should be applied in their entirety, given the interconnected relationship that each dietary\r\ncomponent can have with others. Key\r\nRecommendations:\r\nConsume a healthy eating pattern that accounts for all foods and beverages within\r\nan appropriate calorie level. A healthy eating pattern includes:[1]\r\n* A variety of vegetables from all of the subgroups-dark green, red and orange, legumes (beans and peas), starchy,\r\nand other\r\n* Fruits, especially whole fruits\r\n* Grains, at least half of which are whole grains\r\n* Fat-free or low-fat dairy, including milk, yogurt, cheese, and/or fortified soy beverages\r\n* A variety of protein foods, including seafood, lean meats and poultry, eggs, legumes (beans and peas), and nuts,\r\nseeds, and soy products\r\n* Oils\r\nA healthy eating pattern limits:\r\n* Saturated fats and trans fats, added sugars, and sodium\r\nKey Recommendations that are quantitative are provided for several components of the diet that should\r\nbe limited. These components are of particular public health concern in the United States, and the specified\r\nlimits can help individuals achieve healthy eating patterns within calorie limits:\r\n* Consume less than 10 percent of calories per day from added sugars[2]\r\n* Consume less than 10 perc\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-060-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=hydrate diet. Work with\r\nand type 2 diabetes. If you have a chronic disease, your health care professional to identify and adopt\r\ntalk with your health care professional to see if you a diet that is appropriate for you and your health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\nQUESTION\n\nHow do the retained healthy-eating pattern and the 2025–2030 targeted supplementation advice combine for pure vegans versus general vegetarians?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "eb86f2e68a604e403e092f856647be366751821feb7aa5cc6cf04c667fd75698",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-053-new",
+    "v4fresh-cand-pair-v4-new-053-old",
+    "v4fresh-cand-pair-v4-new-060-new"
+  ],
+  "answer": "*   Question: How do the retained healthy-eating pattern and the 2025–2030 targeted supplementation advice combine for pure vegans versus general vegetarians?\n    *   Constraints: Answer only from supplied passages, exact [chunk_id] citations, preserve boundaries, no outside knowledge.\n\n    *   Passage 1 (dga-2025): Advice for Vegetarians & Vegans.\n        *   Consume variety of whole foods, especially protein-rich foods (dairy, eggs, beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh).\n        *   Limit highly processed vegan/vegetarian foods (added fats, sugars, salt).\n        *   Prioritize targeted supplementation, diversify plant protein sources for amino acid balance, and enhance mineral bioavailability.\n        *   Nutrient gaps:\n            *   Vegetarian diets: often fall short in vitamins D and E, choline, and iron.\n            *   Vegan diets: show broader shortfalls in vitamins A, D, E, B6, B12; riboflavin; niacin; choline; calcium; iron; magnesium; phosphorus; potassium; zinc; and iodine.\n        *   Monitor nutrient status periodically, especially for iron, vitamin B12, vitamin D, calcium, and iodine.\n    *   Passage 2 (dga-2015): General healthy eating pattern.\n        *   Includes: variety of vegetables, fruits (especially whole), grains (half whole), fat-free/low-fat dairy (including fortified soy beverages), variety of protein foods (seafood, lean meats, poultry, eggs, legumes, nuts, seeds, soy products), and oils.\n        *   Limits: Saturated/trans fats, added sugars, sodium.\n    *   Passage 3 (dga-2025): Same as Passage 1.\n\n    *   *General Healthy Eating Pattern (from dga-2015):* Includes vegetables, fruits, grains, fat-free/low-fat dairy (or fortified soy beverages), protein foods (including legumes, nuts, seeds, soy products), and oils, while limiting saturated/trans fats, added sugars, and sodium [v4fresh-cand-pair-v4-new-053-old].\n    *   *2025-2030 Advice for Vegetarians & Vegans:*\n        *   Both should consume a variety of whole foods, particularly protein-rich ones like beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Both should significantly limit highly processed vegan or vegetarian foods containing added fats, sugars, and salt [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Both should prioritize targeted supplementation, diversify plant protein sources for amino acid balance, and enhance mineral bioavailability [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Both should periodically monitor nutrient status, specifically for calcium, iodine, vitamin D, vitamin B12, and iron [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n    *   *Comparison (Vegans vs. Vegetarians):*\n        *   Vegetarian diets often fall short in iron, choline, and vitamins D and E [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Vegan diets show broader shortfalls, including vitamins A, D, E, B6, B12, riboflavin, niacin, choline, calcium, iron, magnesium, phosphorus, potassium, zinc, and iodine [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n\n    *   Ensure citations are exact.\n    *   Ensure distinction between vegan and vegetarian nutrient gaps is clear.\n    *   Combine the general pattern (2015) with the specific 2025-2030 advice.For both vegetarians and vegans, the healthy eating pattern involves consuming a variety of vegetables, fruits (especially whole), grains (at least half whole), oils, and protein foods—including legumes (",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "296b1bd9c95a91c9568a566446f49bf969852245dd91db118c7fa9cfadd70f22",
+    "response_sha256": "b1afe6bded00fbfa9946242cb98739b7152dba1903134e1dffca83ac64f668d9",
+    "latency_ms": 29210,
+    "usage_metadata": {
+      "promptTokenCount": 1285,
+      "candidatesTokenCount": 38,
+      "totalTokenCount": 2305,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1285
+        }
+      ],
+      "thoughtsTokenCount": 982,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How do the retained healthy-eating pattern and the 2025–2030 targeted supplementation advice combine for pure vegans versus general vegetarians?\n    *   Constraints: Answer only from supplied passages, exact [chunk_id] citations, preserve boundaries, no outside knowledge.\n\n    *   Passage 1 (dga-2025): Advice for Vegetarians & Vegans.\n        *   Consume variety of whole foods, especially protein-rich foods (dairy, eggs, beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh).\n        *   Limit highly processed vegan/vegetarian foods (added fats, sugars, salt).\n        *   Prioritize targeted supplementation, diversify plant protein sources for amino acid balance, and enhance mineral bioavailability.\n        *   Nutrient gaps:\n            *   Vegetarian diets: often fall short in vitamins D and E, choline, and iron.\n            *   Vegan diets: show broader shortfalls in vitamins A, D, E, B6, B12; riboflavin; niacin; choline; calcium; iron; magnesium; phosphorus; potassium; zinc; and iodine.\n        *   Monitor nutrient status periodically, especially for iron, vitamin B12, vitamin D, calcium, and iodine.\n    *   Passage 2 (dga-2015): General healthy eating pattern.\n        *   Includes: variety of vegetables, fruits (especially whole), grains (half whole), fat-free/low-fat dairy (including fortified soy beverages), variety of protein foods (seafood, lean meats, poultry, eggs, legumes, nuts, seeds, soy products), and oils.\n        *   Limits: Saturated/trans fats, added sugars, sodium.\n    *   Passage 3 (dga-2025): Same as Passage 1.\n\n    *   *General Healthy Eating Pattern (from dga-2015):* Includes vegetables, fruits, grains, fat-free/low-fat dairy (or fortified soy beverages), protein foods (including legumes, nuts, seeds, soy products), and oils, while limiting saturated/trans fats, added sugars, and sodium [v4fresh-cand-pair-v4-new-053-old].\n    *   *2025-2030 Advice for Vegetarians & Vegans:*\n        *   Both should consume a variety of whole foods, particularly protein-rich ones like beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Both should significantly limit highly processed vegan or vegetarian foods containing added fats, sugars, and salt [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Both should prioritize targeted supplementation, diversify plant protein sources for amino acid balance, and enhance mineral bioavailability [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Both should periodically monitor nutrient status, specifically for calcium, iodine, vitamin D, vitamin B12, and iron [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n    *   *Comparison (Vegans vs. Vegetarians):*\n        *   Vegetarian diets often fall short in iron, choline, and vitamins D and E [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n        *   Vegan diets show broader shortfalls, including vitamins A, D, E, B6, B12, riboflavin, niacin, choline, calcium, iron, magnesium, phosphorus, potassium, zinc, and iodine [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-060-new].\n\n    *   Ensure citations are exact.\n    *   Ensure distinction between vegan and vegetarian nutrient gaps is clear.\n    *   Combine the general pattern (2015) with the specific 2025-2030 advice.",
+                "thought": true
+              },
+              {
+                "text": "For both vegetarians and vegans, the healthy eating pattern involves consuming a variety of vegetables, fruits (especially whole), grains (at least half whole), oils, and protein foods—including legumes ("
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "MAX_TOKENS",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1285,
+        "candidatesTokenCount": 38,
+        "totalTokenCount": 2305,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1285
+          }
+        ],
+        "thoughtsTokenCount": 982,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "wXxgaoryJYmyvr0Pm_-GmQM"
+    }
+  }
+}

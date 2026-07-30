@@ -1,0 +1,188 @@
+{
+  "status": "blocked_no_safe_local_detector",
+  "development_only": true,
+  "validation_file_read": false,
+  "external_model_api_used": false,
+  "feature_contract": "old_text_and_current_text_only",
+  "forbidden_runtime_features": [
+    "pair_id",
+    "topic",
+    "relation_type",
+    "action_label",
+    "judgments",
+    "validation_data"
+  ],
+  "evaluation": "leave_one_out_out_of_fold",
+  "development_count": 22,
+  "positive_count": 6,
+  "negative_count": 16,
+  "gate": "false_preserve_count=0, precision=1, recall>=0.5",
+  "selected_config": null,
+  "best_zero_false_preserve_config": {
+    "l2": 0.01,
+    "positive_weight": 1,
+    "threshold": 0.9337150694988228,
+    "metrics": {
+      "true_preserve": 0,
+      "false_preserve_count": 0,
+      "true_block": 16,
+      "missed_preserve": 6,
+      "accuracy": 0.7272727272727273,
+      "pair_preserve_precision": 0,
+      "pair_preserve_recall": 0
+    }
+  },
+  "feature_names": [
+    "bias",
+    "token_jaccard",
+    "old_token_coverage",
+    "current_length_ratio",
+    "numeric_overlap",
+    "old_only_numeric",
+    "current_only_numeric",
+    "current_scope_cues",
+    "current_exception_cues",
+    "current_replacement_cues",
+    "current_detail_cues",
+    "old_general_rule_cues",
+    "old_quantitative_cues",
+    "current_quantitative_cues",
+    "modal_overlap",
+    "lexical_conflict_cues"
+  ],
+  "frozen_model": null,
+  "out_of_fold_predictions": [
+    {
+      "pair_id": "r2.4dev-v5claim-001",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.12531856630457208,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-002",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.0012734870565655264,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-003",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.13123310337235014,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-004",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.02151812683652174,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-005",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.04100036494777362,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-006",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.04100036494777362,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-007",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.4958492962105399,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-008",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.000021663239126437973,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-009",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.7669300442242126,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-010",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.38160481692644355,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-011",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.9337150684988228,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-012",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.0736450343676041,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-013",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.053472130611175075,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-014",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.24910947438030961,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-015",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.0070304277748432465,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-016",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.8850828504933282,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-017",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.854020333517552,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-018",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.18035348577214458,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-019",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.5365543064485124,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-020",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.10890389245104608,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-021",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.002467799751783449,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.4dev-v5claim-022",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.8679064953451145,
+      "predicted": "BLOCK_RETAINED"
+    }
+  ]
+}

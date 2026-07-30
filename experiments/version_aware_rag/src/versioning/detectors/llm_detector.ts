@@ -45,7 +45,7 @@ export class LLMDetector implements RelationDetector {
       return cached;
     }
 
-    const hasApiKey = !!(process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY);
+    const hasApiKey = !!(process.env.GEMINI_AI_API || process.env.GEMINI_API_KEY || process.env.OPENAI_API_KEY);
 
     if (!hasApiKey) {
       const fallbackRes = await this.fallback.classify(input);
@@ -179,8 +179,9 @@ async function callLLMApi(
   prompt: string,
   temperature: number
 ): Promise<{ text: string; promptTokens?: number; completionTokens?: number }> {
-  if (process.env.GEMINI_API_KEY) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`;
+  const geminiApiKey = process.env.GEMINI_AI_API || process.env.GEMINI_API_KEY;
+  if (geminiApiKey) {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiApiKey}`;
     const payload = {
       systemInstruction: { parts: [{ text: systemInstruction }] },
       contents: [{ parts: [{ text: prompt }] }],
@@ -228,4 +229,3 @@ async function callLLMApi(
   }
   throw new Error('No API Key configured');
 }
-

@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-006",
+  "model_id": "gemini-3.1-flash-lite",
+  "request_sha256": "e91abe0c4074a07352ab0652f8848122a1682339edd0c9120cdcea87f58ddba3",
+  "response_sha256": "5d848620d950dcccc8a7a07ad27c6dc18288fc7064bb0ed4730f191aa2eccdd8",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage explicitly defines the applicability for the population by adding 'starting at age 2', whereas the OLD passage was broad and lacked this age-specific constraint."
+  },
+  "latency_ms": 793,
+  "usage_metadata": {
+    "promptTokenCount": 224,
+    "candidatesTokenCount": 63,
+    "totalTokenCount": 287,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 224
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

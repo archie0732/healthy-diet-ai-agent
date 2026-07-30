@@ -1,0 +1,40 @@
+{
+  "schema_version": "v5-r2.15-compatible-selectivity-frozen-manifest-1",
+  "status": "diagnostic_frozen_unlocked",
+  "development_only": true,
+  "outcome_exposed_r2_14_data": true,
+  "trace_count": 32,
+  "variants": [
+    "pair_score_g2.0",
+    "pair_score_g2.0_base_gate_0.25",
+    "pair_score_g2.0_base_gate_0.50",
+    "pair_score_g2.0_top6_anchor",
+    "pair_score_g2.0_top10_anchor"
+  ],
+  "parameters": {
+    "recency_weight": 0.2,
+    "pair_signal_weight": 2,
+    "forced_pair_quota": false,
+    "base_gate_thresholds": [
+      0.25,
+      0.5
+    ],
+    "anchor_ranks": [
+      6,
+      10
+    ]
+  },
+  "runtime_trace_sha256": "fdb8b3faed1e50345537a03727ce315c9ad2f7e9ad646f3952e6901c4e1b6fe9",
+  "r2_14_raw_results_sha256": "873c5e07ae0370ec4878eee2006e46036278d02a5860122bc36cdd3262b0563b",
+  "r2_14_result_sha256": "2cadd7d37abeb70808acc8583a10ec44d49387ff7e4c05ea4b47072db9ffc2c3",
+  "r2_14_guard_sha256": "556b4e72b94ae6425e892ced39dbeab7eff64324e3ef7ab117768fed61c0e5e0",
+  "r2_14_queries_sha256": "aadf1084d104c1034f6a4c32e72023c51f119e8959d3c075cdf6b6946ee02263",
+  "r2_14_corpus_sha256": "d886361cca4037c41946ebf224ebb0bef78220a2ccc213cc5cbef2d78c3ae1ff",
+  "r2_14_judgments_sha256": "5f03ea8c69896e0ecf17d305c2b6463c049fd0d239d5bdb0d05a981bb1c7cc73",
+  "protocol_sha256": "06945a42a26fe270035df93f52593fbb1aa254ae0950c998bc963a322a353f86",
+  "runner_sha256": "decf1e65aa5c720bb07fce458087b792e6253aa504745cbc189cb3d0bbfcca1f",
+  "retrieval_calls_allowed": false,
+  "r2_14_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false
+}

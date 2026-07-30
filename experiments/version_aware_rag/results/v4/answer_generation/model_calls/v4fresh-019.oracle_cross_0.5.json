@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-019",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "a5eeb40b4e5526cf5bc100368658d739fb97bb3a7afc1459d9767d0a77d493a5",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-061-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Highly Processed Foods, Added Sugars,\r\n& Refined Carbohydrates\r\n+ Avoid highly processed packaged, prepared, + While no amount of added sugars or\r\nready-to-eat, or other foods that are salty or non-nutritive sweeteners is recommended\r\nsweet, such as chips, cookies, and candy or considered part of a healthy or nutritious\r\nthat have added sugars and sodium (salt). diet, one meal should contain no more than\r\nInstead, prioritize nutrient-dense foods and 10 grams of added sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-061-old\ndocument=dga-2015\nedition=2015-2020\npublished_at=2015-12-01\ntext=s from added sugars do not exceed\r\nexamining eating patterns and health. Strong appropriate AMDR. The human body uses\r\n10 percent per day, total carbohydrate\r\nevidence from mostly prospective cohort some saturated fats for physiological and\r\nintake remains within the AMDR, and\r\nstudies but also randomized controlled structural functions, but it makes more than\r\ntotal calorie intake remains within limits. trials has shown that eating patterns that enough to meet those needs. Individuals\r\ninclude lower intake of sources of added It should be noted that replacing added 2 years and older therefore have no\r\nsugars are associated with reduced risk sugars with high-intensity sweeteners may dietary requirement for saturated fats.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-033-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=sugars.\r\nhome-prepared meals. When dining out,\r\n+ When selecting snack foods, added sugar\r\nchoose nutrient-dense options.\r\nlimits should follow FDA \"Healthy\" claim\r\n+ Limit foods and beverages that include limits. For example, grain snacks (e.g.,\r\nartificial flavors, petroleum-based dyes, crackers) should not exceed 5 grams of\r\nartificial preservatives, and low-calorie added sugar per 3/4 ounce whole-grain\r\nnon-nutritive sweeteners. equivalent, and dairy snacks (e.g., yogurt)\r\nshould not exceed 2.5 grams of added sugar\r\n+ Avoid sugar-sweetened beverages, such\r\nper ⅔ cup equivalent.\r\nas sodas, fruit drinks, and energy drinks.\r\nAdded Sugars\r\n+ To help identify sources of added sugars, look for ingredients that include the word\r\n\"sugar\" or \"syrup\" or end in \"-ose.\"\r\n+ Added sugars may appear on ingredient labels under many different names, including\r\nhigh-fructose corn syrup, agave syrup, corn syrup, rice syrup, fructose, glucose,\r\ndextrose, sucrose, cane sugar, beet sugar, turbinado sugar, maltose, lactose, fruit\r\njuice concentrate, honey, and molasses. Examples of non-nutritive sweeteners include\r\naspartame, sucralose, saccharin, xylitol, and acesulfame K.\r\n+ Some foods and drinks, such as fruits and plain milk, have naturally occurring sugars.\r\nThe sugars in these foods are not considered added sugars.\n\nQUESTION\n\nHow do the retained daily added-sugar baseline and the 2025–2030 per-snack limit combine for grain snacks such as crackers?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "671f199ad2cbaca69d4f1a49213fc237531836fba35d519b27fd1310e51e480f",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-061-new",
+    "v4fresh-cand-pair-v4-new-061-old",
+    "v4fresh-cand-pair-v4-new-033-new"
+  ],
+  "answer": "*   Question: How do the retained daily added-sugar baseline and the 2025–2030 per-snack limit combine for grain snacks such as crackers?\n    *   Constraints: Answer only from supplied passages, use exact [chunk_id] citations, preserve boundaries, no outside knowledge.\n\n    *   Passage 1 (dga-2025): Mentions limiting highly processed foods and added sugars. Specifically, for grain snacks (e.g., crackers), they \"should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent\" [v4fresh-cand-pair-v4-new-061-new].\n    *   Passage 2 (dga-2015): Mentions that \"eating patterns that include lower intake of sources of added sugars are associated with reduced risk\" and that \"calories from added sugars do not exceed 10 percent per day\" [v4fresh-cand-pair-v4-new-061-old].\n    *   Passage 3 (dga-2025): Repeats the grain snack limit: \"grain snacks (e.g., crackers) should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent\" [v4fresh-cand-pair-v4-new-033-new].\n\n    *   Daily baseline (from dga-2015): Calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n    *   Per-snack limit (from dga-2025): Grain snacks like crackers should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].\n\n    *   The user asks how they \"combine\". The provided text does not explicitly state a \"combination\" formula or a specific interaction between the 10% daily limit and the per-snack limit, other than both being guidelines for limiting added sugars.\n    *   I must report both pieces of evidence as they appear in the text.\n\n    *   Daily baseline: 10 percent per day for calories from added sugars [v4fresh-cand-pair-v4-new-061-old].\n    *   Grain snack limit: No more than 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].Based on the provided text, the guidelines for added sugars are as follows:\n\n*   **Daily Baseline:** Calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n*   **2025–2030 Per-Snack Limit:** Grain snacks, such as crackers, should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "08bdceb0f4ef883f79ff0c06092dd0aeb404aa5dfdfd7f6d7e4872b1966aba6a",
+    "response_sha256": "d249f793bf54d183b11b05b118edb43d4a56856dcb2f8fc2e77a198b0544f500",
+    "latency_ms": 21542,
+    "usage_metadata": {
+      "promptTokenCount": 1140,
+      "candidatesTokenCount": 139,
+      "totalTokenCount": 1881,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1140
+        }
+      ],
+      "thoughtsTokenCount": 602,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How do the retained daily added-sugar baseline and the 2025–2030 per-snack limit combine for grain snacks such as crackers?\n    *   Constraints: Answer only from supplied passages, use exact [chunk_id] citations, preserve boundaries, no outside knowledge.\n\n    *   Passage 1 (dga-2025): Mentions limiting highly processed foods and added sugars. Specifically, for grain snacks (e.g., crackers), they \"should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent\" [v4fresh-cand-pair-v4-new-061-new].\n    *   Passage 2 (dga-2015): Mentions that \"eating patterns that include lower intake of sources of added sugars are associated with reduced risk\" and that \"calories from added sugars do not exceed 10 percent per day\" [v4fresh-cand-pair-v4-new-061-old].\n    *   Passage 3 (dga-2025): Repeats the grain snack limit: \"grain snacks (e.g., crackers) should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent\" [v4fresh-cand-pair-v4-new-033-new].\n\n    *   Daily baseline (from dga-2015): Calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n    *   Per-snack limit (from dga-2025): Grain snacks like crackers should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].\n\n    *   The user asks how they \"combine\". The provided text does not explicitly state a \"combination\" formula or a specific interaction between the 10% daily limit and the per-snack limit, other than both being guidelines for limiting added sugars.\n    *   I must report both pieces of evidence as they appear in the text.\n\n    *   Daily baseline: 10 percent per day for calories from added sugars [v4fresh-cand-pair-v4-new-061-old].\n    *   Grain snack limit: No more than 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new].",
+                "thought": true
+              },
+              {
+                "text": "Based on the provided text, the guidelines for added sugars are as follows:\n\n*   **Daily Baseline:** Calories from added sugars should not exceed 10 percent per day [v4fresh-cand-pair-v4-new-061-old].\n*   **2025–2030 Per-Snack Limit:** Grain snacks, such as crackers, should not exceed 5 grams of added sugar per 3/4 ounce whole-grain equivalent [v4fresh-cand-pair-v4-new-061-new, v4fresh-cand-pair-v4-new-033-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1140,
+        "candidatesTokenCount": 139,
+        "totalTokenCount": 1881,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1140
+          }
+        ],
+        "thoughtsTokenCount": 602,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "an1gauChJfPc1e8Pq8ip2AM"
+    }
+  }
+}

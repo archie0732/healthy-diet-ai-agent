@@ -1,0 +1,13 @@
+{
+  "schema_version": "v5-r2.17-candidate-recall-diagnostic-guard-1",
+  "status": "diagnostic_complete_locked",
+  "manifest_sha256": "46e800032bfb388200b1c1236bb57580ae58df3c4b296811f241391c8cb4643c",
+  "execution_count": 1,
+  "judgments_read_only_after_all_candidate_pools": true,
+  "r2_16_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "raw_results_sha256": "4592022e2de03e49e7e262a5fdee80d382c1f2938e6fcb6ea870636aba640290",
+  "diagnostic_result_sha256": "baf4fc85e043dc59e9092cd874ba52a2bc94e090be85d9a68721d0c73c638f9a",
+  "selected_diagnostic_variant": null
+}

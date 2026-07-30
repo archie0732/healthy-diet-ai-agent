@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-014",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "b6360de4a2db335a64589feddf762fec77758a3867fd2d3848c98eef1a2eb663",
+  "response_sha256": "deb6211ce9e1183fe6154bf4776e70744bf3716ff0abdcf8a3b7eddb5fe15671",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage fully encompasses the content of the OLD passage while adding a specific, more restrictive age-based constraint, effectively replacing the broader instruction."
+  },
+  "latency_ms": 791,
+  "usage_metadata": {
+    "promptTokenCount": 263,
+    "candidatesTokenCount": 61,
+    "totalTokenCount": 324,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 263
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

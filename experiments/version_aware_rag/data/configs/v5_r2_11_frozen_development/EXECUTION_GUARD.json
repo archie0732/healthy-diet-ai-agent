@@ -1,0 +1,13 @@
+{
+  "schema_version": "v5-r2.11-development-execution-guard-1",
+  "status": "development_gate_failed_locked",
+  "manifest_sha256": "f0b356204b2d6bc044991677eb8d8caa38c9350ef072e37b902625ddf27abaa8",
+  "retrieval_execution_count": 1,
+  "judgments_may_be_read_only_after_all_retrieval_calls": true,
+  "external_model_api_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_10_rerun_allowed": false,
+  "raw_retrieval_sha256": "a788e5851d476545c9fce2d3acaa368f3fcf6530382a12f50bef1039cbd59113",
+  "development_result_sha256": "b7aff9d078776cef6c24c865fe316bd8989f9b276558b4672bd2d09e84e56d7b"
+}

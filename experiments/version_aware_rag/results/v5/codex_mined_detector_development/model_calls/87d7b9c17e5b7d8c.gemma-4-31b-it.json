@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-013",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "e1e3ab5ff15c4fbe80b265d2b5ecb65ab2ca20a699fbbc542fa39514e2e15f85",
+  "response_sha256": "803b4aac9234c40ea1c31ea2c48dc7825896a37b58d7da9caf51c72beef5b663",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage explicitly changes applicability by adding a condition for 'Highly active individuals' who 'may benefit from increased sodium intake', while maintaining the 2,300 mg limit for the general population ages 14 and above."
+  },
+  "latency_ms": 2837,
+  "usage_metadata": {
+    "promptTokenCount": 276,
+    "candidatesTokenCount": 69,
+    "totalTokenCount": 345,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 276
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

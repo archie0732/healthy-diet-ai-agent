@@ -1,0 +1,10 @@
+{
+  "status": "development_only_prompt_revision",
+  "parent_config": "v5_r2_action_detector",
+  "reason": "R2 development pair-preserve recall was 0.1818, below the minimum useful recall of 0.5.",
+  "validation_execution_count_at_derivation": 0,
+  "validation_artifact_changed": false,
+  "validation_labels_used_for_revision": false,
+  "revision": "Added abstract action examples not drawn from dataset judgments; tightened development eligibility to recall >= 0.5 while retaining precision=1 and zero false preserve.",
+  "fresh_v5_test_created": false
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-022",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "8b691345fccace949929215c89c4db614c2bfb8812092a74953beedb178f7ba5",
+  "response_sha256": "cd924471a0ab120d091c7a37c8767fbfcc339d1a81ecfdb2addf4c3f282fce1c",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "OLD provides specific nutritional requirements (iron and zinc) and specific restrictions (added sugars and sodium) that are not mentioned in the CURRENT passage, which focuses more on vitamin D, formula transition, and general nutrient density."
+  },
+  "latency_ms": 6764,
+  "usage_metadata": {
+    "promptTokenCount": 557,
+    "candidatesTokenCount": 69,
+    "totalTokenCount": 626,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 557
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

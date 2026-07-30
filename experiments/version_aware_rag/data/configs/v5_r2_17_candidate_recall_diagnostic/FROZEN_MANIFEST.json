@@ -1,0 +1,47 @@
+{
+  "schema_version": "v5-r2.17-candidate-recall-diagnostic-manifest-1",
+  "status": "diagnostic_frozen_unlocked",
+  "development_only": true,
+  "outcome_exposed_r2_16_data": true,
+  "seed_counts": [
+    8,
+    10,
+    12,
+    14
+  ],
+  "parameters": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "pool_size": 20
+  },
+  "inputs": {
+    "protocol": {
+      "path": "R2_17_CANDIDATE_RECALL_DIAGNOSTIC_PROTOCOL.md",
+      "sha256": "bb03f8bf5903f1a873b46316b7378e503a6b370859bed7f2c09a803ac2bdd9b7"
+    },
+    "runner": {
+      "path": "scripts/v5/run_r2_17_candidate_recall_diagnostic.ts",
+      "sha256": "f65f5b67e83e1b352f0b26db00ed6eeb5431eec6eab101ecfeba69ed3acb1550"
+    },
+    "queries": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/runtime_queries.role_neutral.jsonl",
+      "sha256": "748d881a97fff759ad6316f08d24c5c4de48af832f9309be6d0e9186fac7de75"
+    },
+    "corpus": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/candidate_corpus.role_neutral.jsonl",
+      "sha256": "72ccfa113102b1b92a6ced97497f7cbc92bb387b9375ecbdd95b20556142da18"
+    },
+    "judgments": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/judgments.sealed.jsonl",
+      "sha256": "ba3c62f761e92dcbe836eb60ae43849640b44a9858d6adda09f2b62b91988b36"
+    },
+    "r216_guard": {
+      "path": "data/configs/v5_r2_16_frozen_confirmation/EXECUTION_GUARD.json",
+      "sha256": "82998939ad1f4ae19b646c62ba1e559dc2ff27f09a64433cd1cfb90a1d973156"
+    }
+  },
+  "r2_16_execution_count_before_diagnostic": 1,
+  "r2_16_rerun_allowed": false,
+  "validation_allowed": false,
+  "fresh_test_allowed": false
+}

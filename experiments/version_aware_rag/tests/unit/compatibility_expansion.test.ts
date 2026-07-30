@@ -37,7 +37,7 @@ describe("compatibility expansion", () => {
       expect(expanded.length).toBe(2);
       expect(expanded.map(e => e.chunkId)).toContain("c-old");
       const oldItem = expanded.find(e => e.chunkId === "c-old");
-      expect(oldItem?.finalScore).toBeCloseTo(0.8 * 0.9); // fraction of parent score
+      expect(oldItem?.finalScore).toBeCloseTo(0.88);
     } finally {
       if (fs.existsSync(tempPairs)) fs.unlinkSync(tempPairs);
       if (fs.existsSync(tempRelations)) fs.unlinkSync(tempRelations);

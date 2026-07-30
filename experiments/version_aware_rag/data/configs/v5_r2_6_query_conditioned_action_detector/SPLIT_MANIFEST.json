@@ -1,0 +1,26 @@
+{
+  "schema_version": "v5-r2.6-query-conditioned-1",
+  "status": "query_conditioned_split_frozen_before_model_selection",
+  "endpoint": "query_plus_atomic_old_plus_atomic_current_to_binary_action",
+  "source_pool_sha256": "568ec8c399c9f93355fa41742f0dba5b1715661549b277dd8d6661de36892c55",
+  "development_count": 30,
+  "validation_count": 12,
+  "development_distribution": {
+    "PAIR_PRESERVE": 11,
+    "BLOCK_RETAINED": 19
+  },
+  "validation_distribution": {
+    "PAIR_PRESERVE": 6,
+    "BLOCK_RETAINED": 6
+  },
+  "development_lineage_count": 30,
+  "validation_lineage_count": 12,
+  "lineage_overlap_count": 0,
+  "development_sha256": "d534f69a7d06fbb86355918928121fb8b30fbc61fb3620ab20328912f0447fa1",
+  "validation_sealed_sha256": "28f52031e0ca1559416392a5b65a39103bf9466df18a6f8325c56daac579fef2",
+  "external_model_api_used": false,
+  "validation_execution_count": 0,
+  "validation_limitation": "These lineages appeared in prior pair-only Development exploration. They are held out only for the materially new query-conditioned endpoint and are not pristine held-out evidence.",
+  "old_pair_only_validation_superseded_unexecuted": true,
+  "fresh_v5_test_created": false
+}

@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-007",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "81f91d5b6e0ab15e116705904ac0d26e1a87aa79d82ad998ee35070e2a9303ac",
+  "response_sha256": "32014ffd178f2508a1ff4c92947d0525c81f33455d481eee81e712d1017536b7",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The OLD passage recommends 'Less than 10% of calories per day' for added sugars, whereas the NEW passage replaces this general percentage with specific gram-based limits per meal ('no more than 10 grams of added sugars') and per snack ('5 grams' or '2.5 grams')."
+  },
+  "latency_ms": 3218,
+  "usage_metadata": {
+    "promptTokenCount": 476,
+    "candidatesTokenCount": 83,
+    "totalTokenCount": 559,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 476
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

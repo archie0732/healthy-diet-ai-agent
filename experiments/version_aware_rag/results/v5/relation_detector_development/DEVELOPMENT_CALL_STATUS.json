@@ -1,0 +1,96 @@
+{
+  "status": "development_calls_incomplete_provider_unavailable",
+  "requested_models": [
+    "gemma-4-31b-it"
+  ],
+  "completed_call_count": 21,
+  "required_call_count": 42,
+  "missing_calls": [
+    {
+      "endpoint_key": "dga-2015-page-14-pass-0-45535101|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-15-pass-0-8effd6bb|dga-2025-page-3-pass-0-ba481231",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-15-pass-0-8effd6bb|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-15-pass-1-e32ddd46|dga-2025-page-6-pass-0-765dd278",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-16-pass-0-43cd7a56|dga-2025-page-3-pass-0-ba481231",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-3-pass-0-ba481231",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-4-pass-0-567ec170",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-34-pass-1-14bfc3a3|dga-2025-page-6-pass-0-765dd278",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-34-pass-2-53bc6202|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-34-pass-3-392b8763|dga-2025-page-6-pass-0-765dd278",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-44-pass-0-b82f56fd|dga-2025-page-3-pass-0-ba481231",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-44-pass-2-e613acec|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-50-pass-1-6bfa09f8|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-50-pass-2-28e6e56b|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-51-pass-0-df0a0dd2|dga-2025-page-4-pass-0-567ec170",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-51-pass-1-e263007a|dga-2025-page-4-pass-0-567ec170",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2015-page-53-pass-0-44ecc419|dga-2025-page-4-pass-0-567ec170",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2020-page-11-pass-0-913a1860|dga-2025-page-5-pass-0-99883976",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2020-page-14-pass-0-1816571f|dga-2025-page-3-pass-0-ba481231",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2020-page-16-pass-0-5be4fdc2|dga-2025-page-4-pass-0-567ec170",
+      "model_id": "gemini-3.5-flash"
+    },
+    {
+      "endpoint_key": "dga-2020-page-19-pass-0-ce63b99c|dga-2025-page-4-pass-0-567ec170",
+      "model_id": "gemini-3.5-flash"
+    }
+  ],
+  "validation_labels_read": false,
+  "fresh_v4_data_read": false
+}

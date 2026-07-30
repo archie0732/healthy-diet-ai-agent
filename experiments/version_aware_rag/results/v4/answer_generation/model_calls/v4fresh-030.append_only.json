@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-030",
+  "system": "append_only",
+  "input_sha256": "7c78ba0c987e909a349999b44785100ddbe1d41ade3394a469a4b7d4fb2f5d95",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-040-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=eats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-069-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-008-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=d on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nQUESTION\n\nHow does the emphasis on fiber-rich whole grains align between 2020 and 2025 guidelines?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "4d10dc33057f903cdc43fdd2f947b07f71ddc17ed44eb933a110c4ffc1cef904",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-040-new",
+    "v4fresh-cand-pair-v4-new-069-new",
+    "v4fresh-cand-pair-v4-new-008-new"
+  ],
+  "answer": "*   Question: \"How does the emphasis on fiber-rich whole grains align between 2020 and 2025 guidelines?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-040-new): Mentions \"Prioritize fiber-rich whole grains\" and \"Whole grains serving goals: 2-4 servings per day, adjusting as needed based on your individual caloric requirements.\" It also mentions reducing highly processed, refined carbohydrates. Document is `dga-2025`, edition `2025-2030`.\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-069-new): Same text as Passage 1 regarding whole grains. Document is `dga-2025`, edition `2025-2030`.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-008-new): Same text as Passage 1 regarding whole grains. Document is `dga-2025`, edition `2025-2030`.\n\n    *   The provided passages only contain information from the `dga-2025` (edition 2025-2030).\n    *   There is no information provided regarding \"2020 guidelines\".\n\n    *   Since the evidence is insufficient to compare 2020 and 2025 guidelines (because 2020 guidelines are missing), I must explicitly qualify or abstain.The provided text contains information regarding the 2025-2030 guidelines, which prioritize fiber-rich whole grains with serving goals of 2-4 servings per day, adjusted based on individual caloric requirements [v4fresh-cand-pair-v4-new-040-new, v4fresh-cand-pair-v4-new-069-new, v4fresh-cand-pair-v4-new-008-new]. However, the supplied evidence is insufficient to determine how this aligns with 2020 guidelines, as no information regarding 2020 guidelines was provided.",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "d4719e72310e14ddab9bc0459a0b99c22cd5fe416e165ef7bd9ae596d69a32f0",
+    "response_sha256": "efecba22ef8bb913b7168b549e30d7dee3acdc9c89af98b728d1de800a4fbcd2",
+    "latency_ms": 16144,
+    "usage_metadata": {
+      "promptTokenCount": 1016,
+      "candidatesTokenCount": 135,
+      "totalTokenCount": 1563,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1016
+        }
+      ],
+      "thoughtsTokenCount": 412,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: \"How does the emphasis on fiber-rich whole grains align between 2020 and 2025 guidelines?\"\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-040-new): Mentions \"Prioritize fiber-rich whole grains\" and \"Whole grains serving goals: 2-4 servings per day, adjusting as needed based on your individual caloric requirements.\" It also mentions reducing highly processed, refined carbohydrates. Document is `dga-2025`, edition `2025-2030`.\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-069-new): Same text as Passage 1 regarding whole grains. Document is `dga-2025`, edition `2025-2030`.\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-008-new): Same text as Passage 1 regarding whole grains. Document is `dga-2025`, edition `2025-2030`.\n\n    *   The provided passages only contain information from the `dga-2025` (edition 2025-2030).\n    *   There is no information provided regarding \"2020 guidelines\".\n\n    *   Since the evidence is insufficient to compare 2020 and 2025 guidelines (because 2020 guidelines are missing), I must explicitly qualify or abstain.",
+                "thought": true
+              },
+              {
+                "text": "The provided text contains information regarding the 2025-2030 guidelines, which prioritize fiber-rich whole grains with serving goals of 2-4 servings per day, adjusted based on individual caloric requirements [v4fresh-cand-pair-v4-new-040-new, v4fresh-cand-pair-v4-new-069-new, v4fresh-cand-pair-v4-new-008-new]. However, the supplied evidence is insufficient to determine how this aligns with 2020 guidelines, as no information regarding 2020 guidelines was provided."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1016,
+        "candidatesTokenCount": 135,
+        "totalTokenCount": 1563,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1016
+          }
+        ],
+        "thoughtsTokenCount": 412,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "pH9gasL7Lf2dvr0PqerSoQM"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "v5-r2.12-candidate-diagnostic-manifest-1",
+  "status": "diagnostic_frozen_unlocked",
+  "frozen_at": "2026-07-26T00:00:00.000+08:00",
+  "development_only": true,
+  "outcome_exposed_r2_11_data": true,
+  "promotion_evidence_allowed": false,
+  "variants": [
+    "whole_query_bm25",
+    "clause_rrf_k60",
+    "bm25_group_expand_seed14",
+    "clause_rrf_group_expand_seed14"
+  ],
+  "parameters": {
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "pool_size": 20,
+    "rrf_k": 60,
+    "group_seed_count": 14,
+    "minimum_clause_token_count": 3
+  },
+  "inputs": {
+    "protocol": {
+      "path": "R2_12_CANDIDATE_RECALL_REPAIR_PROTOCOL.md",
+      "sha256": "341ee9e8bb925a498579adf9b92cb1d0bfbe76e333ace623531ec7f7a165ef9f"
+    },
+    "runner": {
+      "path": "scripts/v5/run_r2_12_candidate_diagnostic.ts",
+      "sha256": "0f1ebe7880c7ba671541e12521abbd87b6f8428e3adbdfdca61a53ec13b669ee"
+    },
+    "queries": {
+      "path": "data/configs/v5_r2_11_frozen_development/runtime_queries.role_neutral.jsonl",
+      "sha256": "606633a0cba9d66ebbca3ebf55e057e1930b04914d92b534dadd5f68c608912a"
+    },
+    "corpus": {
+      "path": "data/configs/v5_r2_11_frozen_development/candidate_corpus.role_neutral.jsonl",
+      "sha256": "a84535b3fd06da7c086760d530bb40ad94314e2da017401abb5dca34a4541417"
+    },
+    "judgments": {
+      "path": "data/configs/v5_r2_11_frozen_development/judgments.sealed.jsonl",
+      "sha256": "5caa216782ad3d4fd88b9d446fd104d5789e68ec596d499f5b36fc69ddd9cb3d"
+    },
+    "r211_manifest": {
+      "path": "data/configs/v5_r2_11_frozen_development/FROZEN_MANIFEST.json",
+      "sha256": "f0b356204b2d6bc044991677eb8d8caa38c9350ef072e37b902625ddf27abaa8"
+    },
+    "r211_guard": {
+      "path": "data/configs/v5_r2_11_frozen_development/EXECUTION_GUARD.json",
+      "sha256": "f09cc93e7d54c2d889fd521d884cf8e77ffce2738f4351ffd58b5aa66ac7663e"
+    }
+  },
+  "r2_11_retrieval_execution_count_before_diagnostic": 1,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_10_rerun_allowed": false
+}

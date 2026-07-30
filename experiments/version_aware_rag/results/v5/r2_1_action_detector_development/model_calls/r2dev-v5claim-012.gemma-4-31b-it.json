@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-012",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "8e0adcfdce20f4430e9f1062fbbd7d183777d7d057e9d5159e2ea020c2685ff8",
+  "response_sha256": "a9c140cb43de671c525c1d1bef21a89cde225414d661f16552379bfd8914ecd5",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "OLD contains critical evidence regarding the reduction of CVD risk and cholesterol levels when replacing saturated fats with unsaturated fats, which is entirely absent from CURRENT."
+  },
+  "latency_ms": 2414,
+  "usage_metadata": {
+    "promptTokenCount": 1027,
+    "candidatesTokenCount": 54,
+    "totalTokenCount": 1081,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1027
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

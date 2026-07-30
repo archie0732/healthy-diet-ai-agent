@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-007",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "ea4c31f9b1f7a5d9b45e38004e4c34b53161e061be4b74ae264e0b21af0c2cfe",
+  "response_sha256": "9e09d5030e65493d6999dcf8f641def85ad0089fd0889d943aa5ce4634029699",
+  "prediction": {
+    "retention_status": "REPLACES_OR_CONFLICTS",
+    "old_unique_information": "Added sugars should be less than 10% of calories per day starting at age 2, and avoided entirely for those younger than age 2.",
+    "confidence": 1,
+    "rationale": "The OLD passage provides a percentage-based daily calorie limit (10%) and a specific age-based restriction (under age 2). The CURRENT passage replaces this with a per-meal gram limit (10g) and references FDA 'Healthy' claim limits for snacks, fundamentally changing the method of measurement and the specific constraints.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 5375,
+  "usage_metadata": {
+    "promptTokenCount": 669,
+    "candidatesTokenCount": 143,
+    "totalTokenCount": 812,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 669
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

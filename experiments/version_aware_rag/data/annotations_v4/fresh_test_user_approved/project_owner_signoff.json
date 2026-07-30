@@ -1,0 +1,17 @@
+{
+  "status": "project_owner_approved_fresh_test",
+  "owner_statement": "全部同意",
+  "owner_signoff_date": "2026-07-22",
+  "scope": "All 40 Codex-reviewed fresh-test queries, evidence judgments, safety labels, and recorded pre-outcome amendments.",
+  "limitation": "Project-owner workflow signoff is not independent blinded or clinical review.",
+  "source_reviewed_ledger_sha256": "67ef971c701b76618d5dfd0c2b4302afd30a7ebe4b769b5b8e811364d786e84c",
+  "approved_ledger_sha256": "dfa963cea17a60dcc4a974eafd26417e93166100e70428f1d784b40a4df09bdf",
+  "source_corpus_sha256": "78f2fb0d3b77514cd8c7c930840b9b3dcd828f07f77b5389ebb8b6a321b2a088",
+  "record_count": 40,
+  "strata": {
+    "current_only": 10,
+    "conditional_merge": 10,
+    "compatible_history": 10,
+    "hard_negative": 10
+  }
+}

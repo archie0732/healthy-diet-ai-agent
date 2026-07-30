@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-ch-008",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "eeb78f62f5ded0475f1442cb777cade372ba08c486529aef425a622db8c5efea",
+    "response_sha256": "10df73c694e83150ef483cb861489c8ccef102bc6afb579ae78ab35e20359bc6",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 5322,
+    "usage": {
+      "promptTokenCount": 739,
+      "candidatesTokenCount": 293,
+      "totalTokenCount": 1977,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 739
+        }
+      ],
+      "thoughtsTokenCount": 945,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T07:29:00.323Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"For adults and children aiming for weight control, how does the WHO define the \\\"free sugars\\\" that should be reduced to less than 10% of total energy intake, and why are low-calorie sugars and sugar alcohols (polyols) excluded from the guidelines for non-nutritive sweeteners (NSS)?\",\n  \"target_population\": [\n    \"adults\",\n    \"children\"\n  ],\n  \"conditions\": [\n    \"overweight\",\n    \"obesity\",\n    \"unhealthy weight gain\"\n  ],\n  \"draft_rationale\": \"To answer this query, information must be integrated from both the 2015 sugars guideline and the 2023 non-nutritive sweeteners (NSS) guideline. The 2015 guideline provides the definition of 'free sugars' (monosaccharides and disaccharides added to foods and beverages by manufacturers, cooks, or consumers, as well as sugars naturally present in honey, syrups, fruit juices, and fruit juice concentrates) and the recommendation to reduce them to less than 10% of total energy intake. The 2023 guideline explains that low-calorie sugars and sugar alcohols (polyols) are excluded from the NSS recommendations because they are sugars or sugar derivatives that contain calories, distinguishing them from non-nutritive sweeteners.\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 739,
+      "candidatesTokenCount": 293,
+      "totalTokenCount": 1977,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 739
+        }
+      ],
+      "thoughtsTokenCount": 945,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "uR9fav_LHImjvr0Pv8LbqAs"
+  }
+}

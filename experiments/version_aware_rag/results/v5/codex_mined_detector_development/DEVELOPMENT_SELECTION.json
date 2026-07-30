@@ -1,0 +1,303 @@
+{
+  "status": "development_detector_selected",
+  "development_only": true,
+  "validation_labels_read": false,
+  "fresh_v4_data_read": false,
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt": "You classify the semantic relation between an OLD and NEW guideline passage. Use only passage content, never IDs. Follow this decision order:\n1. duplicate: materially the same claims and scope.\n2. conditional_difference: both remain valid because the NEW passage explicitly changes applicability for a population, condition, setting, or exception.\n3. conflicting: both address the same claim/scope and cannot both be true.\n4. superseded: NEW replaces or updates the same claim, threshold, or recommendation.\n5. complementary: both are simultaneously applicable and contribute distinct compatible information.\nDo not use complementary merely because passages share a topic. If the passages do not clearly authorize retaining OLD alongside NEW, prefer superseded or conflicting. Return JSON only.",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "configs": {
+    "gemma-4-31b-it": {
+      "type": "single_model",
+      "models": [
+        "gemma-4-31b-it"
+      ],
+      "metrics": {
+        "accuracy": 0.5882352941176471,
+        "macro_f1": 0.4924242424242424,
+        "false_safe_expansion_count": 1,
+        "pair_preserving_precision": 0.8333333333333334,
+        "pair_preserving_recall": 0.625,
+        "per_class": {
+          "duplicate": {
+            "precision": 1,
+            "recall": 0.6,
+            "f1": 0.7499999999999999
+          },
+          "superseded": {
+            "precision": 0.375,
+            "recall": 1,
+            "f1": 0.5454545454545454
+          },
+          "conflicting": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "conditional_difference": {
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "f1": 0.6666666666666666
+          },
+          "complementary": {
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "f1": 0.5
+          }
+        },
+        "confusion_matrix": {
+          "duplicate": {
+            "duplicate": 3,
+            "superseded": 1,
+            "conflicting": 0,
+            "conditional_difference": 1,
+            "complementary": 0
+          },
+          "superseded": {
+            "duplicate": 0,
+            "superseded": 3,
+            "conflicting": 0,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "conflicting": {
+            "duplicate": 0,
+            "superseded": 1,
+            "conflicting": 0,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "conditional_difference": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 0,
+            "conditional_difference": 2,
+            "complementary": 1
+          },
+          "complementary": {
+            "duplicate": 0,
+            "superseded": 3,
+            "conflicting": 0,
+            "conditional_difference": 0,
+            "complementary": 2
+          }
+        }
+      },
+      "predictions": {
+        "v5claim-001": "duplicate",
+        "v5claim-002": "superseded",
+        "v5claim-003": "duplicate",
+        "v5claim-004": "duplicate",
+        "v5claim-005": "conditional_difference",
+        "v5claim-007": "superseded",
+        "v5claim-008": "superseded",
+        "v5claim-009": "superseded",
+        "v5claim-011": "superseded",
+        "v5claim-013": "conditional_difference",
+        "v5claim-014": "conditional_difference",
+        "v5claim-016": "complementary",
+        "v5claim-017": "superseded",
+        "v5claim-019": "superseded",
+        "v5claim-020": "superseded",
+        "v5claim-021": "complementary",
+        "v5claim-022": "complementary"
+      }
+    },
+    "gemini-3.1-flash-lite": {
+      "type": "single_model",
+      "models": [
+        "gemini-3.1-flash-lite"
+      ],
+      "metrics": {
+        "accuracy": 0.7058823529411765,
+        "macro_f1": 0.7523809523809525,
+        "false_safe_expansion_count": 1,
+        "pair_preserving_precision": 0.8333333333333334,
+        "pair_preserving_recall": 0.625,
+        "per_class": {
+          "duplicate": {
+            "precision": 1,
+            "recall": 0.8,
+            "f1": 0.888888888888889
+          },
+          "superseded": {
+            "precision": 0.3333333333333333,
+            "recall": 0.6666666666666666,
+            "f1": 0.4444444444444444
+          },
+          "conflicting": {
+            "precision": 1,
+            "recall": 1,
+            "f1": 1
+          },
+          "conditional_difference": {
+            "precision": 0.75,
+            "recall": 1,
+            "f1": 0.8571428571428571
+          },
+          "complementary": {
+            "precision": 1,
+            "recall": 0.4,
+            "f1": 0.5714285714285715
+          }
+        },
+        "confusion_matrix": {
+          "duplicate": {
+            "duplicate": 4,
+            "superseded": 1,
+            "conflicting": 0,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "superseded": {
+            "duplicate": 0,
+            "superseded": 2,
+            "conflicting": 0,
+            "conditional_difference": 1,
+            "complementary": 0
+          },
+          "conflicting": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 1,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "conditional_difference": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 0,
+            "conditional_difference": 3,
+            "complementary": 0
+          },
+          "complementary": {
+            "duplicate": 0,
+            "superseded": 3,
+            "conflicting": 0,
+            "conditional_difference": 0,
+            "complementary": 2
+          }
+        }
+      },
+      "predictions": {
+        "v5claim-001": "duplicate",
+        "v5claim-002": "superseded",
+        "v5claim-003": "duplicate",
+        "v5claim-004": "duplicate",
+        "v5claim-005": "duplicate",
+        "v5claim-007": "superseded",
+        "v5claim-008": "conditional_difference",
+        "v5claim-009": "superseded",
+        "v5claim-011": "conflicting",
+        "v5claim-013": "conditional_difference",
+        "v5claim-014": "conditional_difference",
+        "v5claim-016": "conditional_difference",
+        "v5claim-017": "superseded",
+        "v5claim-019": "superseded",
+        "v5claim-020": "superseded",
+        "v5claim-021": "complementary",
+        "v5claim-022": "complementary"
+      }
+    },
+    "fail_closed_consensus_0.8": {
+      "type": "fail_closed_consensus",
+      "models": [
+        "gemma-4-31b-it",
+        "gemini-3.1-flash-lite"
+      ],
+      "confidence_threshold": 0.8,
+      "metrics": {
+        "accuracy": 0.29411764705882354,
+        "macro_f1": 0.3028571428571429,
+        "false_safe_expansion_count": 0,
+        "pair_preserving_precision": 1,
+        "pair_preserving_recall": 0.5,
+        "per_class": {
+          "duplicate": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "superseded": {
+            "precision": 0,
+            "recall": 0,
+            "f1": 0
+          },
+          "conflicting": {
+            "precision": 0.07692307692307693,
+            "recall": 1,
+            "f1": 0.14285714285714288
+          },
+          "conditional_difference": {
+            "precision": 1,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "complementary": {
+            "precision": 1,
+            "recall": 0.4,
+            "f1": 0.5714285714285715
+          }
+        },
+        "confusion_matrix": {
+          "duplicate": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 5,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "superseded": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 3,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "conflicting": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 1,
+            "conditional_difference": 0,
+            "complementary": 0
+          },
+          "conditional_difference": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 1,
+            "conditional_difference": 2,
+            "complementary": 0
+          },
+          "complementary": {
+            "duplicate": 0,
+            "superseded": 0,
+            "conflicting": 3,
+            "conditional_difference": 0,
+            "complementary": 2
+          }
+        }
+      },
+      "predictions": {
+        "v5claim-001": "conflicting",
+        "v5claim-002": "conflicting",
+        "v5claim-003": "conflicting",
+        "v5claim-004": "conflicting",
+        "v5claim-005": "conflicting",
+        "v5claim-007": "conflicting",
+        "v5claim-008": "conflicting",
+        "v5claim-009": "conflicting",
+        "v5claim-011": "conflicting",
+        "v5claim-013": "conditional_difference",
+        "v5claim-014": "conditional_difference",
+        "v5claim-016": "conflicting",
+        "v5claim-017": "conflicting",
+        "v5claim-019": "conflicting",
+        "v5claim-020": "conflicting",
+        "v5claim-021": "complementary",
+        "v5claim-022": "complementary"
+      }
+    }
+  },
+  "selection_rule": "false_safe_expansion_count=0 and pair_preserving_precision>=0.8; maximize pair-preserving recall, then macro-F1",
+  "selected_config": "fail_closed_consensus_0.8"
+}

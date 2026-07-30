@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-017",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "8309412fcb886191c2acf7d5297968811f9123219617e63d8af214dc59c2aa60",
+  "response_sha256": "f76324aca9883c4c64ff30cf141a0be8a3b5e6d5e28a1e329f56b26b6e2534a9",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more comprehensive and updated list of protein sources and adds specific nutritional goals, effectively replacing the general list in the OLD passage."
+  },
+  "latency_ms": 3085,
+  "usage_metadata": {
+    "promptTokenCount": 393,
+    "candidatesTokenCount": 61,
+    "totalTokenCount": 454,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 393
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

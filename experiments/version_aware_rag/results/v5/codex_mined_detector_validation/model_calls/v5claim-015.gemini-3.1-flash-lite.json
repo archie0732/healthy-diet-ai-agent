@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-015",
+  "model_id": "gemini-3.1-flash-lite",
+  "request_sha256": "58823e673ebd84f120bafe618e54da1330baf801a9c6ca01d58bccf4b9524370",
+  "response_sha256": "768b2f13f2fcb3a9dabb617805d3438253e379f9798ca557fa66cbe0a186cec9",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The NEW passage updates and expands the guidance on alcohol consumption, incorporating more specific cautionary groups (e.g., people recovering from alcohol use disorder, family history of alcoholism) while replacing the OLD passage's general phrasing with direct, actionable dietary recommendations."
+  },
+  "latency_ms": 956,
+  "usage_metadata": {
+    "promptTokenCount": 350,
+    "candidatesTokenCount": 82,
+    "totalTokenCount": 432,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 350
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-064",
+  "input_sha256": "417ca8509ebfec1f112c117863ab74f681f1e439596aa764a6450f1f57c0cc92",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nAbout Meats & Poultry\r\nMeat, also known as red meat, includes all forms of beef, pork, lamb, veal, goat, and non-\r\nbird game (e. g. , venison, bison, and elk). Poultry includes all forms of chicken, turkey, duck,\r\ngeese, guineas, and game birds (e. g. , quail and pheasant). Meats and poultry vary in fat\r\ncontent and include both fresh and processed forms. Lean meats and poultry contain less\r\nthan 10 g of fat, 4. 5 g or less of saturated fats, and less than 95 mg of cholesterol per 100 g\r\nand per labeled serving size (e. g. , 95% lean ground beef, pork tenderloin, and skinless\r\nchicken or turkey breast). Processed meats and processed poultry (e. g. , sausages, luncheon\r\nmeats, bacon, and beef jerky) are products preserved by smoking, curing, salting, and/or\r\nthe addition of chemical preservatives. Strong evidence from mostly prospective cohort studies but also randomized controlled trials has shown\r\nthat eating patterns that include lower intake of meats as well as processed meats and processed poultry\r\nare associated with reduced risk of CVD in adults. Moderate evidence indicates that these eating patterns\r\nare associated with reduced risk of obesity, type 2 diabetes, and some types of cancer in adults. As\r\ndescribed earlier, eating patterns consist of multiple, interacting food components, and the relationships\r\nto health exist for the\n\nNEW PASSAGE\nEat the Right Amount for You\r\n+ The calories you need depend on your + Hydration is a key factor in overall health.\r\nage, sex, height, weight, and level of Choose water (still or sparkling) and\r\nphysical activity. unsweetened beverages.\r\n+ Pay attention to portion sizes, particularly\r\nfor foods and beverages higher in calories.\r\nPrioritize Protein Foods at Every Meal\r\n+ Prioritize high-quality, nutrient-dense protein + Consume meat with no or limited added\r\nfoods as part of a healthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nan\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "4b6afbd83c14d4e0f95483480eb38bf0d10fca07e30a489c4bf64760a186dceb",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The old passage defines meats and poultry and discusses their association with CVD and other diseases, while the new passage provides actionable dietary recommendations on protein intake, portion sizes, and preparation methods. They provide different but related information about meat and protein consumption."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "9052e8c7832e3e238c350b0de454958ef0db62485a8defb5252dd919e4a8477f",
+    "response_sha256": "dda8e4e735ac4431943415f5c29f2fa86e5aeaa24ae31500b2f9a1758e082b3d",
+    "latency_ms": 2823,
+    "usage_metadata": {
+      "promptTokenCount": 654,
+      "candidatesTokenCount": 71,
+      "totalTokenCount": 725,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 654
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"complementary\", \"confidence\": 0.9, \"rationale\": \"The old passage defines meats and poultry and discusses their association with CVD and other diseases, while the new passage provides actionable dietary recommendations on protein intake, portion sizes, and preparation methods. They provide different but related information about meat and protein consumption.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 654,
+        "candidatesTokenCount": 71,
+        "totalTokenCount": 725,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 654
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "rHhgar6EGsnI1e8P98fO2QM"
+    }
+  }
+}

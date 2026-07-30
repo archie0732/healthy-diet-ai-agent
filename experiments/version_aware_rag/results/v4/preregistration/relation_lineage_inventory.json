@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-28T05:02:46.237Z",
+    "corpus_version": "corpus_v3",
+    "total_chunks": 583,
+    "total_relation_pairs_v3_existing": 51,
+    "total_candidate_pairs_v4_new": 80,
+    "total_queries_v3": 40,
+    "total_judgments_v3": 40,
+    "stratum_mapping_v3_to_v4": {
+      "v3_stratum_name": "newer_irrelevant",
+      "v4_stratum_name": "hard_negative",
+      "equivalence_description": "In v3, the 4th stratum was named newer_irrelevant. In v4 (Plan 08), it is named hard_negative. Both refer to evidence with high lexical similarity carrying stale versions, invalid populations, or inapplicable conditions."
+    }
+  },
+  "chunk_inventory": {
+    "edition_distribution": {
+      "2015-2020": 514,
+      "2020-2025": 56,
+      "2025-2030": 13
+    },
+    "topic_coverage_dynamic": {
+      "no_topic": {
+        "2015-2020": 201,
+        "2020-2025": 38,
+        "2025-2030": 1
+      },
+      "lineage-alcohol": {
+        "2015-2020": 80,
+        "2020-2025": 5,
+        "2025-2030": 3
+      },
+      "lineage-veg-fruits": {
+        "2015-2020": 143,
+        "2020-2025": 10,
+        "2025-2030": 10
+      },
+      "lineage-protein": {
+        "2015-2020": 155,
+        "2020-2025": 4,
+        "2025-2030": 10
+      },
+      "lineage-whole-grains": {
+        "2015-2020": 54,
+        "2020-2025": 3,
+        "2025-2030": 8
+      },
+      "lineage-sugars": {
+        "2015-2020": 92,
+        "2020-2025": 6,
+        "2025-2030": 7
+      },
+      "lineage-sodium": {
+        "2015-2020": 70,
+        "2020-2025": 5,
+        "2025-2030": 6
+      },
+      "lineage-processed-foods": {
+        "2015-2020": 40,
+        "2020-2025": 3,
+        "2025-2030": 8
+      },
+      "lineage-dairy": {
+        "2015-2020": 122,
+        "2020-2025": 5,
+        "2025-2030": 11
+      },
+      "lineage-cholesterol": {
+        "2015-2020": 31,
+        "2020-2025": 2,
+        "2025-2030": 1
+      },
+      "lineage-sweeteners": {
+        "2015-2020": 12,
+        "2025-2030": 1
+      }
+    },
+    "lineage_id_coverage_audit": {
+      "null_lineage_count": 478,
+      "null_lineage_rate": 0.8199,
+      "lineage_gap_2025_chunks": "13 / 13 chunks in dga-2025 have lineage_id === null in frozen corpus",
+      "lineage_id_counts": {
+        "null_lineage": {
+          "2015-2020": 415,
+          "2020-2025": 50,
+          "2025-2030": 13
+        },
+        "lineage-sugars": {
+          "2015-2020": 6,
+          "2020-2025": 1
+        },
+        "lineage-alcohol": {
+          "2015-2020": 21,
+          "2020-2025": 1
+        },
+        "lineage-cholesterol": {
+          "2015-2020": 6
+        },
+        "lineage-veg-fruits": {
+          "2015-2020": 24,
+          "2020-2025": 3
+        },
+        "lineage-sodium": {
+          "2015-2020": 8
+        },
+        "lineage-dairy": {
+          "2015-2020": 14
+        },
+        "lineage-whole-grains": {
+          "2015-2020": 6,
+          "2020-2025": 1
+        },
+        "lineage-protein": {
+          "2015-2020": 14
+        }
+      }
+    }
+  },
+  "relation_pair_inventory": {
+    "v3_existing_pairs_count": 51,
+    "v4_new_pairs_count": 80,
+    "relation_type_distribution": {
+      "superseded": 18,
+      "conflicting": 9,
+      "complementary": 16,
+      "conditional_difference": 5,
+      "duplicate": 3
+    },
+    "policy_label_distribution": {
+      "deprecated": 27,
+      "retain": 24
+    },
+    "pairs_by_lineage": {
+      "lineage-dairy": 5,
+      "lineage-protein": 6,
+      "lineage-sugars": 6,
+      "lineage-sweeteners": 6,
+      "lineage-cholesterol": 5,
+      "lineage-alcohol": 5,
+      "lineage-whole-grains": 5,
+      "lineage-sodium": 6,
+      "lineage-veg-fruits": 5,
+      "lineage-processed-foods": 2
+    }
+  },
+  "query_coverage_audit": {
+    "queries_by_stratum": {
+      "current_only": 10,
+      "compatible_history": 10,
+      "conditional_merge": 10,
+      "newer_irrelevant": 10
+    },
+    "covered_relation_pairs_count": 36,
+    "uncovered_relation_pairs_count": 15,
+    "uncovered_pair_ids": [
+      "pair-v3-014",
+      "pair-v3-029",
+      "pair-v3-031",
+      "pair-v3-033",
+      "pair-v3-037",
+      "pair-v3-038",
+      "pair-v3-039",
+      "pair-v3-041",
+      "pair-v3-043",
+      "pair-v3-044",
+      "pair-v3-047",
+      "pair-v3-048",
+      "pair-v3-049",
+      "pair-v3-050",
+      "pair-v3-051"
+    ],
+    "covered_populations": {
+      "general": 34,
+      "highly active": 1,
+      "older adults": 2,
+      "toddlers": 1,
+      "adolescents": 1,
+      "vegetarians": 1,
+      "pregnant": 1,
+      "children": 1
+    },
+    "uncovered_populations": [
+      "infants (0-6 months, 6-12 months)",
+      "lactating women",
+      "young adults (18-24 years)",
+      "individuals with chronic disease / CVD / diabetes",
+      "vegans (distinct from vegetarians)"
+    ],
+    "covered_conditions": {
+      "active sweat loss": 1
+    },
+    "uncovered_conditions": [
+      "severe eczema / high peanut allergy risk",
+      "family history of alcoholism / medication interaction",
+      "snack food FDA healthy added sugar limit criteria",
+      "children age-specific sodium limits (1-3, 4-8, 9-13 yrs)",
+      "caffeine avoidance in middle childhood (5-10 yrs)",
+      "cooking oil priorities (butter/tallow/olive oil vs seed oils)"
+    ]
+  },
+  "dynamic_capacity_analysis": {
+    "candidate_relation_pairs_count": 131,
+    "total_supported_candidate_query_intents": 80,
+    "v3_existing_pairs_count": 51,
+    "v4_new_candidate_pairs_count": 80,
+    "total_new_test_eligible_query_intents": 80,
+    "stratum_capacity_breakdown": {
+      "current_only": 20,
+      "compatible_history": 20,
+      "conditional_merge": 20,
+      "hard_negative": 20
+    },
+    "stratum_fresh_test_leakage_groups_count": {
+      "current_only": 20,
+      "compatible_history": 20,
+      "conditional_merge": 20,
+      "hard_negative": 20
+    },
+    "target_new_queries_needed": 80,
+    "requires_new_pdfs": false,
+    "requires_new_relation_annotations": true,
+    "audit_status": "VERIFIED: Existing corpus (583 chunks) is sufficient. Derived 80 new test-eligible candidate query intents from 80 v4_new candidate pairs (>= 80). No new PDFs required; proceed to Relation Annotation."
+  }
+}

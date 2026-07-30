@@ -1,0 +1,15 @@
+{
+  "status": "fresh_test_executed_once_passed_locked",
+  "frozen_policy_sha256": "4491f19fd3de101022c81e1f5cde8669a4a82ed0d172b11e5627f853a4fd5835",
+  "fresh_test_constructed": true,
+  "owner_signoff_recorded": true,
+  "fresh_test_execution_count": 1,
+  "tuning_allowed": false,
+  "external_model_api_allowed": false,
+  "draft_manifest_sha256": "0c39bd8edcf3f40bea0d8c8ca875754cfc05dddd4dcfd39e139ed0e0f4c38cf6",
+  "review_packet_file_sha256": "7415e15733f2cf56109e88a297044c10d2343af277002b78942f4d66f0e485a2",
+  "owner_signoff_statement": "同意全部，checksum b3923d62ba18fed6ed70b21cfe80819885768c378ce5afa0e1846c54c7d69ca3",
+  "owner_signoff_sha256": "e3e0dcb5666ff317e06053f47fc0816de5461cd239800af8a766d3814c868961",
+  "retrieval_result_exists": true,
+  "fresh_test_result_sha256": "1c4e4aa7593222437fc7ee28585ccfa6c8a24f3e43e8b9ceabed9020d1618b7a"
+}

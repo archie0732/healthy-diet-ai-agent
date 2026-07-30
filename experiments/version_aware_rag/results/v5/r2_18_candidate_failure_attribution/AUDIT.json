@@ -1,0 +1,31 @@
+{
+  "schema_version": "v5-r2.18-candidate-failure-attribution-audit-1",
+  "status": "audit_pass",
+  "diagnostic_execution_count": 1,
+  "r2_16_rerun_performed": false,
+  "raw_row_count": 128,
+  "ordered_pool_integrity": 1,
+  "required_micro_recall_at_20": {
+    "bm25_seed12_control": 0.8461538461538461,
+    "bm25_seed12_iterative_closure": 0.8461538461538461,
+    "clause_rrf_seed12_iterative_closure": 0.8269230769230769,
+    "hybrid_rank_fusion_seed12_iterative_closure": 0.8269230769230769
+  },
+  "iterative_closure_changes_vs_control": [
+    {
+      "query_id": "r2.16-confirm-cm-sugars-nss-long-term",
+      "hit_delta": -1
+    },
+    {
+      "query_id": "r2.16-confirm-ch-micronutrient-fat-context",
+      "hit_delta": 1
+    }
+  ],
+  "attribution": "Fixed-size group closure exchanged one recovered hit for one displaced hit; clause and hybrid lexical fusion reduced total recall.",
+  "selected_diagnostic_variant": null,
+  "new_confirmation_required": false,
+  "new_official_source_capacity_required_before_next_confirmation": true,
+  "semantic_or_dense_retrieval_research_required": true,
+  "promotion_allowed": false,
+  "failures": []
+}

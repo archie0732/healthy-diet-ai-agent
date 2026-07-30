@@ -1,0 +1,11 @@
+{
+  "schema_version": "v5-r2.16-confirmation-owner-signoff-1",
+  "status": "checksum_bound_project_owner_approved",
+  "approved_at": "2026-07-27",
+  "owner_statement": "核准全部 32 筆",
+  "approved_record_count": 32,
+  "review_packet_sha256": "b940e48401a849cef494345712c4b4c93b387d74d6d93ceb4b23c1e14d0bb0e1",
+  "provisional_annotations_sha256": "6983a757cb5d24c5aa0307f24068994aaa91bab039f9a1b29183203603117c28",
+  "approved_annotations_sha256": "64776a1bfef9591172b20dc7ff79e0ee29d2040feff9f0f45908115e5b581888",
+  "retrieval_outcomes_observed": false
+}

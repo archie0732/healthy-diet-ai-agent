@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "90e22e02bb6b3ef29378cb2148d080f93480633ab858b0b976d61dd2d2d3bc34",
+  "response_sha256": "ee8e1aa3d976896af951185264e1a15a53a7ae5562e0aead17d4cd49ee05ac26",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage provides formal definitions of key dietary concepts (Eating Pattern, Nutrient Dense, Variety), whereas the NEW passage provides actionable recommendations and targets for specific food groups and gut health. The passages provide distinct information that can be used simultaneously."
+  },
+  "latency_ms": 784,
+  "usage_metadata": {
+    "promptTokenCount": 1048,
+    "candidatesTokenCount": 78,
+    "totalTokenCount": 1126,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1048
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

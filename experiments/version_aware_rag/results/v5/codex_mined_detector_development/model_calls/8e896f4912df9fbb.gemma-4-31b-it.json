@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-004",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "de89e5242472b871e0b2ad6ee8976c63a449745c8f6d329a2f225356132dfeb3",
+  "response_sha256": "5ecf0d430777d3ec6954138701732f87527d8c54642d4b9adabd2d54a3911682",
+  "prediction": {
+    "relation_type": "duplicate",
+    "confidence": 1,
+    "rationale": "Both passages specify the same limits for alcohol consumption: 'up to one drink per day for women and up to two drinks per day for men' in the OLD and '2 drinks or less in a day for men and 1 drink or less in a day for women' in the NEW."
+  },
+  "latency_ms": 3162,
+  "usage_metadata": {
+    "promptTokenCount": 289,
+    "candidatesTokenCount": 79,
+    "totalTokenCount": 368,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 289
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

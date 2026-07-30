@@ -1,0 +1,61 @@
+{
+  "pair_id": "cand-pair-v4-new-063",
+  "input_sha256": "67d509fd293e889b365d7e88f302552cf963ea9446acbe47659e8a9ecf689900",
+  "detector_freeze_sha256": "240434c546c9b7d90ec16c876ec05f92efffac2c02737dcee601e4121dc2766b",
+  "prompt": "OLD PASSAGE\nGuideline 3: Focus on meeting food group needs\r\nwith nutrient-dense foods and beverages,\r\nand stay within calorie limits.\r\nThe core elements that make up a healthy dietary pattern\r\nNutrient-dense foods provide vitamins,\r\ninclude:\r\nminerals, and other health-promoting\r\n* Vegetables of all types-dark green; red and orange;\r\ncomponents and have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\nNEW PASSAGE\nealthy dietary pattern. sugars, refined carbohydrates or starches,\r\nor chemical additives. If preferred, flavor\r\n+ Consume a variety of protein foods from\r\nwith salt, spices, and herbs.\r\nanimal sources, including eggs, poultry,\r\nseafood, and red meat, as well as a variety + Protein serving goals: 1.2-1.6 grams of\r\nof plant-sourced protein foods, including protein per kilogram of body weight per\r\nbeans, peas, lentils, legumes, nuts, seeds, day, adjusting as needed based on your\r\nand soy. individual caloric requirements.\r\n+ Swap deep-fried cooking methods with\r\nbaked, broiled, roasted, stir-fried, or grilled\r\ncooking methods.\r\nConsume Dairy\r\n+ When consuming dairy, include full-fat dairy + Dairy serving goals: 3 servings per day\r\nwith no added sugars. Dairy is an excellent as part of a 2,000-calorie dietary pattern,\r\nsource of protein, healthy fats, vitamins, and adjusting as needed based on your\r\nminerals. individual caloric requirements.\r\nGut Health\r\n+ Your gut contains trillions of bacteria and other microorganisms called the microbiome.\r\nA healthy diet supports a well-balanced microbiome and healthy digestion. Highly\r\nprocessed foods can disrupt this balance, while vegetables, fruits, fermented\r\nfoods (e.g., sauerkraut, kimchi, kefir, miso), and high-fiber foods support a diverse\r\nmicrobiome, which may be beneficial for health.\n\nReturn relation_type, confidence from 0 to 1, and concise rationale.",
+  "prompt_sha256": "0348d4b616d888d46231841384cd7c3699a81de6c74da8c73b5adb10ed3487c5",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.9,
+    "rationale": "The old passage recommends fat-free or low-fat dairy, whereas the new passage explicitly recommends including full-fat dairy with no added sugars."
+  },
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "0734b8c8d38fdaf65c00e16d31affd3c8e8b4e9cc0ef8245dc473e8c00b6b086",
+    "response_sha256": "03e8038151e82f78fe9e9c68af0a9e8b4b385cb66bc95db682d3a0fbf138387d",
+    "latency_ms": 2304,
+    "usage_metadata": {
+      "promptTokenCount": 689,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 741,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 689
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "{\"relation_type\": \"conflicting\", \"confidence\": 0.9, \"rationale\": \"The old passage recommends fat-free or low-fat dairy, whereas the new passage explicitly recommends including full-fat dairy with no added sugars.\"}"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 689,
+        "candidatesTokenCount": 52,
+        "totalTokenCount": 741,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 689
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "qnhgavz1B6PT1e8PytKL4AM"
+    }
+  }
+}

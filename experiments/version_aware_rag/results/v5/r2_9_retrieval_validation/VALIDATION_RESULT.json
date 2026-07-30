@@ -1,0 +1,69 @@
+{
+  "schema_version": "v5-r2.9-one-shot-validation-result-1",
+  "status": "one_shot_validation_passed_scope_limited",
+  "validation_execution_count": 1,
+  "tuning_after_validation_allowed": false,
+  "external_model_api_used": false,
+  "all_retrieval_calls_completed_before_judgment_read": true,
+  "judgment_file_read_count": 1,
+  "frozen_policy": {
+    "candidate_pool_size": 20,
+    "top_k": 3,
+    "recency_lambda": 0.75,
+    "history_pair_boost": 0.75
+  },
+  "summaries": [
+    {
+      "system": "recency_lambda_0.75",
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "PAIR_PRESERVE": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.3333333333333333,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0
+        },
+        "BLOCK_RETAINED": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0
+        }
+      }
+    },
+    {
+      "system": "version_aware_explicit_history_pair",
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "PAIR_PRESERVE": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.75,
+          "both_evidence_coverage": 0.6666666666666666,
+          "deprecated_old_hit_rate": 0
+        },
+        "BLOCK_RETAINED": {
+          "query_count": 6,
+          "required_micro_recall_at_3": 0.8333333333333334,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0
+        }
+      }
+    }
+  ],
+  "gate_checks": {
+    "pair_required_micro_recall_strictly_improves": true,
+    "pair_both_evidence_coverage_strictly_improves": true,
+    "block_required_micro_recall_noninferior": true,
+    "block_deprecated_old_hit_rate_not_increased": true,
+    "required_candidate_micro_recall_at_20_at_least_0_90": true,
+    "shared_candidate_pool_identity_100_percent": true
+  },
+  "gate_passed": true,
+  "promotion_scope": "explicit_historical_intent_retrieval_advantage",
+  "prohibited_claims": [
+    "overall Version-Aware superiority",
+    "fresh held-out V5 test evidence",
+    "implicit semantic conditional-merge superiority"
+  ],
+  "reviewer_limitation": "Validation was authored and pre-audited by Codex, not an independent blinded reviewer."
+}

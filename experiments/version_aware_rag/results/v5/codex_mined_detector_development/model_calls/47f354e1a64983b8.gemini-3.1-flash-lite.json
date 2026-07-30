@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-017",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "2d0f0c123fa970d0a4e48bfd5166ae9daba3c121daab2f7259bf90f9f133b3ff",
+  "response_sha256": "a0c59051c218b45923f277c69169cf70e8b58c798ebe3f5a10617b50a0852725",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.95,
+    "rationale": "The NEW passage replaces the general list of protein foods with specific recommendations, including explicit quantitative targets ('1.2-1.6 grams of protein per kilogram of body weight') and qualitative constraints ('no or limited added sugars') that were absent in the OLD passage."
+  },
+  "latency_ms": 813,
+  "usage_metadata": {
+    "promptTokenCount": 373,
+    "candidatesTokenCount": 85,
+    "totalTokenCount": 458,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 373
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

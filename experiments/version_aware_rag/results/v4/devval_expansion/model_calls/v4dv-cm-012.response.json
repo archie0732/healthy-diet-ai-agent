@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "draft_id": "v4dv-cm-012",
+    "model_id": "gemini-3.5-flash",
+    "endpoint": "v1beta/models/{model}:generateContent",
+    "temperature": 0,
+    "prompt_sha256": "35342009be6f30b0f30eff08d32080e94f743a634572325c1800f6d4f7d2825e",
+    "response_sha256": "5b4f41705fd026f764a3d0b0a99f11351e31c14c209ddc17c79870991a984ab3",
+    "corpus_sha256": "f118662affd58cf7ec4f939e584d8d111cbed3299304df286425c22b60b168d2",
+    "latency_ms": 13953,
+    "usage": {
+      "promptTokenCount": 836,
+      "candidatesTokenCount": 266,
+      "totalTokenCount": 2076,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 836
+        }
+      ],
+      "thoughtsTokenCount": 974,
+      "serviceTier": "standard"
+    },
+    "created_at": "2026-07-21T04:25:38.413Z"
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"query_text\": \"According to WHO guidelines, what are the specific age-adjusted daily dietary fibre intake recommendations for children and adolescents, and what methodology and baseline adult value should countries use to adjust potassium intake recommendations for paediatric populations?\",\n  \"target_population\": [\n    \"children\",\n    \"adolescents\",\n    \"paediatric population\"\n  ],\n  \"conditions\": [\n    \"age-adjusted dietary guidance\",\n    \"daily dietary fibre intake\",\n    \"potassium intake adjustment based on energy requirements\"\n  ],\n  \"draft_rationale\": \"To answer this query, the user must combine information from both documents. From the 2023 carbohydrate guideline, they need the specific age-bracketed fibre recommendations (15 g/day for 2-5 years, 21 g/day for 6-9 years, and 25 g/day for 10+ years). From the 2012 potassium guideline, they need the methodology for adjusting paediatric potassium intake (adjusting the adult minimum of 90 mmol/day based on energy requirements relative to adults aged 20-50 years, rather than body-weight, to avoid under-estimation during rapid growth).\"\n}",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 836,
+      "candidatesTokenCount": 266,
+      "totalTokenCount": 2076,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 836
+        }
+      ],
+      "thoughtsTokenCount": 974,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash",
+    "responseId": "tvReau3sB76yvr0Pwq6BiAw"
+  }
+}

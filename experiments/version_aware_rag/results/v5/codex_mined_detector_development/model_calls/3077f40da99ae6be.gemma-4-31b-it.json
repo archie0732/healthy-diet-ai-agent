@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-005",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "6a331a714b958cbf4a0e094fcb60bea0bfedb1db90404fc2b70998c3a8eaf388",
+  "response_sha256": "fe2cf0a761ce50329dcf45d0505d97f23690d3444bcff5cf02e11f35da35aae7",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 1,
+    "rationale": "The NEW passage introduces a specific age-based applicability ('starting at age 2'), whereas the OLD passage provided a general limit without age specification."
+  },
+  "latency_ms": 2444,
+  "usage_metadata": {
+    "promptTokenCount": 232,
+    "candidatesTokenCount": 61,
+    "totalTokenCount": 293,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 232
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

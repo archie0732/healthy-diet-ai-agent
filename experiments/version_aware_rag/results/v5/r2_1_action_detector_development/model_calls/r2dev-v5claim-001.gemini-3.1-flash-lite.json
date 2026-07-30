@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-001",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "aea3052b9e97f649c7d4e42147d9bef178ddc0d0ac754b21af519a9e91b3424f",
+  "response_sha256": "428e317cc92ef1d77c44196eebd10e09ee511659f2956b8c7f28fa654c4533ff",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The passages are identical in meaning and instruction, differing only in the pluralization of the word grain."
+  },
+  "latency_ms": 719,
+  "usage_metadata": {
+    "promptTokenCount": 344,
+    "candidatesTokenCount": 46,
+    "totalTokenCount": 390,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 344
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

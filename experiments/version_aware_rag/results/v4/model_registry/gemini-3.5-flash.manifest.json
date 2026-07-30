@@ -1,0 +1,24 @@
+{
+  "status": "verified",
+  "model_id": "gemini-3.5-flash",
+  "endpoint": "v1beta/models/{model}:generateContent",
+  "credential_source": "GEMINI_AI_API",
+  "temperature": 0,
+  "prompt_sha256": "775a61d9f41e965e92bf824a51c19ffc778c9c6a194869a2571438c643ab8bb6",
+  "response_sha256": "e9741c5d8b5e9665f8fbfffa7a277cd034fb99aeea85cd40feb3b1a322e303f0",
+  "corpus_sha256": "ee4f1c5bddb6b7f255aa4cd497614812bb1933e545c4f0dc3e45986b3a624af7",
+  "latency_ms": 611,
+  "usage": {
+    "promptTokenCount": 5,
+    "totalTokenCount": 10,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5
+      }
+    ],
+    "thoughtsTokenCount": 5,
+    "serviceTier": "standard"
+  },
+  "verified_at": "2026-07-20T10:09:49.123Z"
+}

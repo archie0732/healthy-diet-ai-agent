@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-004",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "6353b76dec622a496d155581cfbfd45d65e26ab88866def78922c962ad97ce17",
+  "response_sha256": "701bede9554f81fc240d94d98dd4c05d5d3d988c8822a648b1b1b97c7df20041",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The CURRENT passage conveys the same moderate intake limits for men and women and the same population constraint regarding legal drinking age, subsuming the information provided in the OLD passage.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 753,
+  "usage_metadata": {
+    "promptTokenCount": 482,
+    "candidatesTokenCount": 76,
+    "totalTokenCount": 558,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 482
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

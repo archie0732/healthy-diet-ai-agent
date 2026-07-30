@@ -1,0 +1,12 @@
+{
+  "invalidated_at": "2026-07-20T15:25:00.000Z",
+  "status": "invalidated",
+  "revision": 1,
+  "reasons": [
+    "synthetic trace generation in diagnostic scripts",
+    "unauthorized traceSplit() execution on test split",
+    "counterfactual misconfiguration (shared identical ablation configs and non-standard recency lambda)",
+    "split query mislabeling (q-032, q-039 labeled as validation instead of test post-hoc)"
+  ],
+  "action": "All previous diagnosis artifacts in this directory are invalidated and being overwritten by Revision 1."
+}

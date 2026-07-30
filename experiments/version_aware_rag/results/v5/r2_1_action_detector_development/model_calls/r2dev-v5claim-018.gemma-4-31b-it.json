@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-018",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "bbe4583d1950fb5fef05ab45e7998fceaed1595b92fd18a8f7b7994e3d127cb5",
+  "response_sha256": "cfb6165ba86caac7ab209b9bea278e070dc748f986961e7d9e7ded77f7445491",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "OLD provides specific categories of vegetables (dark green, red/orange, beans/peas/lentils, starchy) and a requirement for grains (at least half whole grain), neither of which are mentioned in CURRENT."
+  },
+  "latency_ms": 3606,
+  "usage_metadata": {
+    "promptTokenCount": 544,
+    "candidatesTokenCount": 78,
+    "totalTokenCount": 622,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 544
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-025",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "d5d03b7c682633e9f567ec48918688a8549976ce52c5f7f5b3acf32de3548068",
+  "response_sha256": "dd1f50209bab80a3dbfa61c0623844aefaab87db586a9775bf79f39d875d4d5d",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt provides general healthy dietary patterns for all life stages, while the NEW excerpt provides specific, distinct clinical recommendations for infant feeding and the introduction of allergenic foods."
+  },
+  "latency_ms": 793,
+  "usage_metadata": {
+    "promptTokenCount": 292,
+    "candidatesTokenCount": 73,
+    "totalTokenCount": 365,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 292
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

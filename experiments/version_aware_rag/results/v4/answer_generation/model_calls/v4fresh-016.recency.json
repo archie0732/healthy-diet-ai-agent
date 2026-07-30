@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-016",
+  "system": "recency",
+  "input_sha256": "6b37dc9ab3ecbec50273f06df081545045669bb7b81902c29e2506afc0087ceb",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-044-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-022-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-043-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=Limit Alcoholic Beverages\r\n+ Consume less alcohol for better amount they drink, and people taking\r\noverall health. medications or with medical conditions\r\nthat can interact with alcohol. For those\r\n+ People who should completely avoid\r\nwith a family history of alcoholism, be\r\nalcohol include pregnant women, people\r\nmindful of alcohol consumption and\r\nwho are recovering from alcohol use\r\nassociated addictive behaviors.\r\ndisorder or are unable to control the\r\nSodium\r\n+ Sodium and electrolytes are essential for hydration. The general population, ages 14 and\r\nabove, should consume less than 2,300 mg per day of sodium. Highly active individuals\r\nmay benefit from increased sodium intake to offset sweat losses.\r\n+ For children, the recommendations vary by age:\r\n- Ages 1-3: less than 1,200 mg per day\r\n- Ages 4-8: less than 1,500 mg per day\r\n- Ages 9-13: less than 1,800 mg per day\r\n+ Highly processed foods that are high in sodium should be avoided.\n\nQUESTION\n\nHow does the 2025–2030 exception for highly active people qualify the retained general 2,300 mg daily sodium cap?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "01924ce102916df0120f9cdf66c85a9597ec4a8ff85cda37c7fa1fb4161ef8ae",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-044-new",
+    "v4fresh-cand-pair-v4-new-022-new",
+    "v4fresh-cand-pair-v4-new-043-new"
+  ],
+  "answer": "*   Question: How does the 2025–2030 exception for highly active people qualify the retained general 2,300 mg daily sodium cap?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-044-new): Mentions sodium. General population (ages 14+) should consume < 2,300 mg/day. Highly active individuals may benefit from increased sodium intake to offset sweat losses.\n    *   Passage 2 (v4fresh-cand-pair-v4-new-022-new): Same text as Passage 1 regarding sodium.\n    *   Passage 3 (v4fresh-cand-pair-v4-new-043-new): Same text as Passage 1 regarding sodium.\n\n    *   General cap: < 2,300 mg per day for the general population, ages 14 and above [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].\n    *   Exception for highly active people: They may benefit from increased sodium intake to offset sweat losses [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].\n\n    *   The general population aged 14 and above is advised to consume less than 2,300 mg of sodium per day [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new]. However, highly active individuals may benefit from increased sodium intake to offset losses from sweat [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].For the general population ages 14 and above, the recommendation is to consume less than 2,300 mg of sodium per day [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new]. This is qualified by the note that highly active individuals may benefit from increased sodium intake to offset sweat losses [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "656ceb3e1237138c2b0cc171e22f667e438d042768da92e9274e9ef0d96fe40f",
+    "response_sha256": "2bfeca13caeb9296cb81c97c383cc66308ded90a61a69707639446f9835cad17",
+    "latency_ms": 21542,
+    "usage_metadata": {
+      "promptTokenCount": 1082,
+      "candidatesTokenCount": 165,
+      "totalTokenCount": 1815,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1082
+        }
+      ],
+      "thoughtsTokenCount": 568,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the 2025–2030 exception for highly active people qualify the retained general 2,300 mg daily sodium cap?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1 (v4fresh-cand-pair-v4-new-044-new): Mentions sodium. General population (ages 14+) should consume < 2,300 mg/day. Highly active individuals may benefit from increased sodium intake to offset sweat losses.\n    *   Passage 2 (v4fresh-cand-pair-v4-new-022-new): Same text as Passage 1 regarding sodium.\n    *   Passage 3 (v4fresh-cand-pair-v4-new-043-new): Same text as Passage 1 regarding sodium.\n\n    *   General cap: < 2,300 mg per day for the general population, ages 14 and above [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].\n    *   Exception for highly active people: They may benefit from increased sodium intake to offset sweat losses [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].\n\n    *   The general population aged 14 and above is advised to consume less than 2,300 mg of sodium per day [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new]. However, highly active individuals may benefit from increased sodium intake to offset losses from sweat [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new].",
+                "thought": true
+              },
+              {
+                "text": "For the general population ages 14 and above, the recommendation is to consume less than 2,300 mg of sodium per day [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new]. This is qualified by the note that highly active individuals may benefit from increased sodium intake to offset sweat losses [v4fresh-cand-pair-v4-new-044-new, v4fresh-cand-pair-v4-new-022-new, v4fresh-cand-pair-v4-new-043-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1082,
+        "candidatesTokenCount": 165,
+        "totalTokenCount": 1815,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1082
+          }
+        ],
+        "thoughtsTokenCount": 568,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "YHxgatCjAtqzvr0P-4mB6QM"
+    }
+  }
+}

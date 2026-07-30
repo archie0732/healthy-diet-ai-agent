@@ -1,0 +1,17 @@
+{
+  "schema_version": "v5-r2.6-query-conditioned-development-label-audit-1",
+  "status": "r2_6_invalid_for_promotion_requires_pre_model_gold_rebuild",
+  "input_count": 30,
+  "accepted_count": 28,
+  "revised_count": 2,
+  "revised_pair_ids": [
+    "r2.6-v5claim-013",
+    "r2.6-v5claim-016"
+  ],
+  "endpoint": "Preserve OLD only when it contains an operative claim needed to answer QUERY that is not fully supplied, displaced, or contradicted by CURRENT.",
+  "timing": "post_development_iteration_2_error_analysis",
+  "consequence": "Do not relabel and reuse the observed R2.6 predictions for promotion. Build a pre-audited replacement Development set before any further detector selection.",
+  "validation_file_read": false,
+  "validation_execution_count": 0,
+  "external_model_api_used": false
+}

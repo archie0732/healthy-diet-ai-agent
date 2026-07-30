@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-51-pass-1-e263007a|dga-2025-page-4-pass-0-567ec170",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "b071daf17ab2e0ccd8a0b5edf3d85197c323ca19b131568a4f31934c7436e36f",
+  "response_sha256": "f2bc10fd43e6d7d3402f4bdaf05896dae52f7b16eebe1cca44ba7b341a2fe359",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The OLD passage advises to 'eat as little dietary cholesterol as possible' and limits it within specific food patterns, whereas the NEW passage explicitly states, 'No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.'"
+  },
+  "latency_ms": 63001,
+  "usage_metadata": {
+    "promptTokenCount": 1010,
+    "candidatesTokenCount": 77,
+    "totalTokenCount": 1087,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1010
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

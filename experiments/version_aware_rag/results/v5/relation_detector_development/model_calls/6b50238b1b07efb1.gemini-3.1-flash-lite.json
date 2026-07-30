@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "dga-2015-page-44-pass-2-e613acec|dga-2025-page-5-pass-0-99883976",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "1715f597128e9d23a2b46b6744343b9c02ae8885d0a16fd44536ebea1d57d274",
+  "response_sha256": "a4954379ccb3c654fcca4b8827c53456b76d49b36bdc3418ae0accac6f3a0972",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The OLD passage allows for the consumption of processed meats and poultry as long as nutrient limits are maintained, whereas the NEW passage explicitly directs the reader to 'Avoid highly processed packaged, prepared, ready-to-eat, or other foods' that contain added sodium, shifting from a conditional allowance to an avoidance recommendation."
+  },
+  "latency_ms": 1048,
+  "usage_metadata": {
+    "promptTokenCount": 1056,
+    "candidatesTokenCount": 93,
+    "totalTokenCount": 1149,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1056
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

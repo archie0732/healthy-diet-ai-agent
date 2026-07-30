@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-012",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "647b60fef285d01acf008974a807a37a67d492431efcfa399c24f4d0bd392e82",
+  "response_sha256": "5e00e57b7f605588789ec2202d872ee065cad4a3e51a086b3cc68fe910d8c722",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "OLD provides critical evidence-based health outcomes (CVD risk, obesity, diabetes, cancer) and specific guidance on replacing saturated fats with unsaturated fats, which is entirely absent from the CURRENT passage's focus on food selection and sugar limits."
+  },
+  "latency_ms": 2905,
+  "usage_metadata": {
+    "promptTokenCount": 911,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 985,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 911
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-015",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "a6e590cc24de4391a2acceb1bfcb8a952304216ef8a2b24b133564c510d9cf54",
+  "response_sha256": "69e2b69dac6b99aaa6c80c5f272f9ee348db69feae4be971910299ceb517571d",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage covers all the core instructions of the OLD passage: the recommendation to limit alcohol for health, the restriction for pregnant women, and the caution for those with medical conditions/addictions. The OLD passage's mention of calories and legal drinking age is general knowledge and does not provide a distinct, necessary safety constraint or implementation detail not superseded by the CURRENT guidance to limit or avoid alcohol."
+  },
+  "latency_ms": 7606,
+  "usage_metadata": {
+    "promptTokenCount": 486,
+    "candidatesTokenCount": 103,
+    "totalTokenCount": 589,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 486
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

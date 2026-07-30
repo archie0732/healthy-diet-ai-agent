@@ -1,0 +1,66 @@
+{
+  "query_id": "v4fresh-017",
+  "system": "append_only",
+  "input_sha256": "6ac128c9e0af1e104c401493c72fb3ce5e74350880df20766a0191fdf1d351d6",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-053-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-019-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=tes. If you have a chronic disease, your health care professional to identify and adopt\r\ntalk with your health care professional to see if you a diet that is appropriate for you and your health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-073-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=tes. If you have a chronic disease, your health care professional to identify and adopt\r\ntalk with your health care professional to see if you a diet that is appropriate for you and your health\r\nneed to adapt the Dietary Guidelines to meet your condition.\r\nspecific needs.\r\nVegetarians & Vegans\r\n+ Consume a variety of whole foods, especially show broader shortfalls in vitamins A, D, E, B ,\r\n6\r\nprotein-rich foods, such as dairy, eggs, beans, peas, and B ; riboflavin; niacin; choline; calcium; iron;\r\n12\r\nlentils, legumes, nuts, seeds, tofu, or tempeh. magnesium; phosphorus; potassium; zinc; and\r\nprotein. Monitor nutrient status periodically,\r\n+ Significantly limit highly processed vegan or\r\nespecially for iron, vitamin B , vitamin D, calcium,\r\nvegetarian foods that can include added fats,\r\n12\r\nand iodine.\r\nsugars, and salt.\r\n+ To avoid nutrient gaps, prioritize targeted\r\n+ Pay careful attention to potential nutrient gaps\r\nsupplementation, diversify plant protein sources\r\nwhen consuming a vegetarian or vegan diet.\r\nfor amino acid balance, and enhance mineral\r\nVegetarian diets often fall short in vitamins D\r\nbioavailability through food preparation techniques.\r\nand E, choline, and iron, whereas vegan diets\r\nJanuary 2026 Dietary Guidelines for Americans, 2025-2030 | 9\n\nQUESTION\n\nHow do the retained healthy-eating pattern and the 2025–2030 targeted supplementation advice combine for pure vegans versus general vegetarians?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "7c31c6d4156c6cd807e62a7c472e878266d7636562b19e9be8c377cc09fd7535",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-053-new",
+    "v4fresh-cand-pair-v4-new-019-new",
+    "v4fresh-cand-pair-v4-new-073-new"
+  ],
+  "answer": "*   Question: How do the retained healthy-eating pattern and the 2025–2030 targeted supplementation advice combine for pure vegans versus general vegetarians?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1, 2, and 3 are identical in content regarding \"Vegetarians & Vegans\".\n    *   Healthy-eating pattern (general for both):\n        *   Consume a variety of whole foods, especially protein-rich foods (dairy, eggs, beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh) [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Significantly limit highly processed vegan or vegetarian foods containing added fats, sugars, and salt [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Diversify plant protein sources for amino acid balance and enhance mineral bioavailability through food preparation techniques [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n    *   Targeted supplementation/nutrient gaps:\n        *   General advice: Pay careful attention to potential nutrient gaps and prioritize targeted supplementation [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Vegetarian diets: Often fall short in iron, choline, and vitamins D and E [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Vegan diets: Show broader shortfalls in vitamins A, D, E, B6, B12; riboflavin; niacin; choline; calcium; iron; magnesium; phosphorus; potassium; zinc; and iodine [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Monitoring: Monitor nutrient status periodically, especially for calcium, vitamin D, vitamin B12, and iron [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n\n    *   Combine the general eating pattern with the specific nutrient gaps for each group.\n\n    *   *General Pattern (Both):* Consume a variety of whole foods (especially protein-rich ones like beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh), limit highly processed vegan/vegetarian foods with added salt, sugars, and fats, diversify plant protein for amino acid balance, and use food preparation techniques to enhance mineral bioavailability [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n    *   *Vegetarians:* Supplementation and attention should target gaps often found in vegetarian diets: iron, choline, and vitamins D and E [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n    *   *Vegans:* Supplementation and attention should target broader shortfalls including vitamins A, D, E, B6, B12, riboflavin,",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "86695203da19d806b278c4c0f0f878e0bc1848ceed786ef45495962d5e08ab36",
+    "response_sha256": "b123b6d8e478fb619a55e4e2a0532810b1145370de72d57e1c83071f79ce3c0d",
+    "latency_ms": 29211,
+    "usage_metadata": {
+      "promptTokenCount": 1288,
+      "totalTokenCount": 2309,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1288
+        }
+      ],
+      "thoughtsTokenCount": 1021,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How do the retained healthy-eating pattern and the 2025–2030 targeted supplementation advice combine for pure vegans versus general vegetarians?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: No outside knowledge.\n\n    *   Passage 1, 2, and 3 are identical in content regarding \"Vegetarians & Vegans\".\n    *   Healthy-eating pattern (general for both):\n        *   Consume a variety of whole foods, especially protein-rich foods (dairy, eggs, beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh) [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Significantly limit highly processed vegan or vegetarian foods containing added fats, sugars, and salt [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Diversify plant protein sources for amino acid balance and enhance mineral bioavailability through food preparation techniques [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n    *   Targeted supplementation/nutrient gaps:\n        *   General advice: Pay careful attention to potential nutrient gaps and prioritize targeted supplementation [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Vegetarian diets: Often fall short in iron, choline, and vitamins D and E [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Vegan diets: Show broader shortfalls in vitamins A, D, E, B6, B12; riboflavin; niacin; choline; calcium; iron; magnesium; phosphorus; potassium; zinc; and iodine [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n        *   Monitoring: Monitor nutrient status periodically, especially for calcium, vitamin D, vitamin B12, and iron [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n\n    *   Combine the general eating pattern with the specific nutrient gaps for each group.\n\n    *   *General Pattern (Both):* Consume a variety of whole foods (especially protein-rich ones like beans, peas, lentils, legumes, nuts, seeds, tofu, or tempeh), limit highly processed vegan/vegetarian foods with added salt, sugars, and fats, diversify plant protein for amino acid balance, and use food preparation techniques to enhance mineral bioavailability [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n    *   *Vegetarians:* Supplementation and attention should target gaps often found in vegetarian diets: iron, choline, and vitamins D and E [v4fresh-cand-pair-v4-new-053-new, v4fresh-cand-pair-v4-new-019-new, v4fresh-cand-pair-v4-new-073-new].\n    *   *Vegans:* Supplementation and attention should target broader shortfalls including vitamins A, D, E, B6, B12, riboflavin,",
+                "thought": true
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "MAX_TOKENS",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1288,
+        "totalTokenCount": 2309,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1288
+          }
+        ],
+        "thoughtsTokenCount": 1021,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "h3xgavOZLP67vr0Pqem22AM"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "status": "blocked_no_safe_local_detector",
+  "development_only": true,
+  "validation_file_read": false,
+  "external_model_api_used": false,
+  "feature_contract": "old_text_and_current_text_only",
+  "forbidden_runtime_features": [
+    "pair_id",
+    "topic",
+    "relation_type",
+    "action_label",
+    "judgments",
+    "validation_data"
+  ],
+  "evaluation": "leave_one_out_out_of_fold",
+  "development_count": 22,
+  "positive_count": 6,
+  "negative_count": 16,
+  "gate": "false_preserve_count=0, precision=1, recall>=0.5",
+  "selected_config": null,
+  "best_zero_false_preserve_config": {
+    "l2": 0.01,
+    "positive_weight": 1,
+    "threshold": 0.916744396944875,
+    "metrics": {
+      "true_preserve": 2,
+      "false_preserve_count": 0,
+      "true_block": 16,
+      "missed_preserve": 4,
+      "accuracy": 0.8181818181818182,
+      "pair_preserve_precision": 1,
+      "pair_preserve_recall": 0.3333333333333333
+    }
+  },
+  "feature_names": [
+    "bias",
+    "token_jaccard",
+    "old_token_coverage",
+    "current_length_ratio",
+    "numeric_overlap",
+    "old_only_numeric",
+    "current_only_numeric",
+    "current_scope_cues",
+    "current_exception_cues",
+    "current_replacement_cues",
+    "current_detail_cues",
+    "old_general_rule_cues",
+    "old_quantitative_cues",
+    "current_quantitative_cues",
+    "modal_overlap",
+    "lexical_conflict_cues"
+  ],
+  "frozen_model": null,
+  "out_of_fold_predictions": [
+    {
+      "pair_id": "r2.3dev-v5claim-001",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.004769958049294772,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-002",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.0018273732955084623,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-003",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.011355407065485735,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-004",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.7582948508504065,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-005",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.016267474611783312,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-006",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.025630695134218003,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-007",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.06170445679698972,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-008",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.003752877559472179,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-009",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.010983772414455481,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-010",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.2556000859955976,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-011",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.916744395944875,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-012",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.057820429230234546,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-013",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.047342567748440874,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-014",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.003009647187365311,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-015",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.017181947708397087,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-016",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.9994850605274745,
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-017",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.42711807347513053,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-018",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.19816558905999593,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-019",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.9321174392285042,
+      "predicted": "PAIR_PRESERVE"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-020",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.09285540856451037,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-021",
+      "gold": "PAIR_PRESERVE",
+      "score": 0.14614384041265716,
+      "predicted": "BLOCK_RETAINED"
+    },
+    {
+      "pair_id": "r2.3dev-v5claim-022",
+      "gold": "BLOCK_RETAINED",
+      "score": 0.18775530630200912,
+      "predicted": "BLOCK_RETAINED"
+    }
+  ]
+}

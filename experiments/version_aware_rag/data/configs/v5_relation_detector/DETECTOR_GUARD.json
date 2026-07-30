@@ -1,0 +1,11 @@
+{
+  "status": "blocked_no_safe_detector",
+  "split_manifest_sha256": "d38db7852a6568bb44fba5a25de972335571cba552bd1d39dad61c2d007dacc2",
+  "validation_sealed_sha256": "384b9fef304a66ed49ebec5409749fad05c6eadaa2acbb0327e98a2622c5b434",
+  "development_selection_complete": true,
+  "validation_execution_count": 0,
+  "fresh_v4_data_allowed": false,
+  "tuning_after_validation_allowed": false,
+  "selected_config": null,
+  "development_selection_sha256": "68772ec0a8a851f3cc96d1ae0e562ab0393a052d44493def457b011353ff2d2f"
+}

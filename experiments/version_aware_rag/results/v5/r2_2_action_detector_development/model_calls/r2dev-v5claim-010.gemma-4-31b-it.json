@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-010",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "6956f90fa17f2f84a091b7c5c6792db67cf9826de4c5cf40efa28a16bb40f590",
+  "response_sha256": "00c07cf5dcc59ae8f0c87647fd1a52ba4b97dd9fb98b3140ccaa5871372c4ef4",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "Specific daily drink limits for men (2 drinks or less) and 2 drinks or less in a day for women (1 drink or less).",
+    "confidence": 1,
+    "rationale": "The OLD passage provides specific quantitative thresholds for moderate drinking (2 drinks for men, 1 for women), whereas the CURRENT passage only provides general advice to consume less alcohol without specifying these limits.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 3590,
+  "usage_metadata": {
+    "promptTokenCount": 547,
+    "candidatesTokenCount": 101,
+    "totalTokenCount": 648,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 547
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

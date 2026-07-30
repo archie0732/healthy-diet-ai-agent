@@ -1,0 +1,60 @@
+{
+  "schema_version": "v5-r2.17-candidate-recall-diagnostic-result-1",
+  "status": "diagnostic_complete_no_eligible_repair",
+  "development_only": true,
+  "outcome_exposed_r2_16_data": true,
+  "r2_16_rerun_performed": false,
+  "top3_reranking_performed": false,
+  "all_candidate_pools_completed_before_judgment_read": true,
+  "judgment_read_count": 1,
+  "summaries": [
+    {
+      "variant": "bm25_group_expand_seed8",
+      "seed_count": 8,
+      "required_micro_recall_at_20": 0.8461538461538461,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.75,
+        "compatible_history": 0.95,
+        "current_only": 0.6666666666666666,
+        "hard_negative_current": 1
+      }
+    },
+    {
+      "variant": "bm25_group_expand_seed10",
+      "seed_count": 10,
+      "required_micro_recall_at_20": 0.8269230769230769,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.7,
+        "compatible_history": 0.95,
+        "current_only": 0.6666666666666666,
+        "hard_negative_current": 1
+      }
+    },
+    {
+      "variant": "bm25_group_expand_seed12",
+      "seed_count": 12,
+      "required_micro_recall_at_20": 0.8461538461538461,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.8,
+        "compatible_history": 0.9,
+        "current_only": 0.6666666666666666,
+        "hard_negative_current": 1
+      }
+    },
+    {
+      "variant": "bm25_group_expand_seed14",
+      "seed_count": 14,
+      "required_micro_recall_at_20": 0.8076923076923077,
+      "stratum_recall_at_20": {
+        "conditional_merge": 0.8,
+        "compatible_history": 0.8,
+        "current_only": 0.6666666666666666,
+        "hard_negative_current": 1
+      }
+    }
+  ],
+  "eligible_variants": [],
+  "selected_diagnostic_variant": null,
+  "confirmation_required": false,
+  "promotion_evidence": false
+}

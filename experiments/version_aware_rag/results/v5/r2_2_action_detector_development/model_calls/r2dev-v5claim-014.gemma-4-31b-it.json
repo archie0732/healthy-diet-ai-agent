@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-014",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "bae4325311ebff3d7b7698d18e2962afa077e9e2a94bdd454dc0a91bebc1c31c",
+  "response_sha256": "de6709b65031a4cea1d0b1ccd7dc8495041539b9de142f121a87c0b6a7898506",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The current passage materially restates the old passage's limit of less than 10% of calories per day from added sugars, while adding specific age-based guidance.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 3004,
+  "usage_metadata": {
+    "promptTokenCount": 436,
+    "candidatesTokenCount": 78,
+    "totalTokenCount": 514,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 436
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

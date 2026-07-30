@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-012",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "56831532b9a3af0691b8dc9641c899b5c0eae771341bb43fc9ea7ae72db4e320",
+  "response_sha256": "7590fcadbffb1868f45513c19f143e51301f6bddd8b628d5b8d45ba15c9d2ae4",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The old passage identifies high-intensity sweeteners as safe for the general population based on FDA approval and notes that replacing added sugars with them may reduce calorie intake in the short-term.",
+    "confidence": 0.9,
+    "rationale": "The current passage focuses on strict limits and specific thresholds for added sugars and non-nutritive sweeteners, whereas the old passage provides a safety assessment and a potential, albeit cautious, functional benefit of those sweeteners that is not addressed in the current text.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 1304,
+  "usage_metadata": {
+    "promptTokenCount": 1084,
+    "candidatesTokenCount": 131,
+    "totalTokenCount": 1215,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1084
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

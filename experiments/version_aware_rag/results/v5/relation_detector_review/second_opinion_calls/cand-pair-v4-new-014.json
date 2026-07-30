@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-014",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "802923787218b6973c6cfcbd15759ef8cfa280998c33b40e2d4853c65f05e318",
+  "response_sha256": "e6fc53a1ef15dc863ac8769f7156301d46040ee2cf98d7f7511489213eaeeccb",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD excerpt focuses on general dietary patterns and limiting specific substances, while the NEW excerpt provides distinct guidance on caloric intake, hydration, and protein prioritization. They provide compatible, additive information rather than modifying or contradicting each other."
+  },
+  "latency_ms": 1161,
+  "usage_metadata": {
+    "promptTokenCount": 260,
+    "candidatesTokenCount": 83,
+    "totalTokenCount": 343,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 260
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

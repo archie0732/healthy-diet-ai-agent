@@ -1,0 +1,26 @@
+{
+  "schema_version": "v5-r2.19-neural-hybrid-audit-1",
+  "status": "audit_pass",
+  "diagnostic_execution_count": 1,
+  "initialization_failures_before_execution": 1,
+  "initialization_failure_judgment_reads": 0,
+  "r2_16_rerun_performed": false,
+  "top3_reranking_performed": false,
+  "raw_row_count": 128,
+  "ordered_pool_integrity": 1,
+  "embedding_integrity": 1,
+  "required_micro_recall_at_20": {
+    "bm25_seed12_control": 0.8461538461538461,
+    "minilm_q8_dense_top20": 0.9423076923076923,
+    "bm25_minilm_rrf_k60_top20": 0.9615384615384616,
+    "bm25_minilm_rrf_k60_iterative_closure": 0.9423076923076923
+  },
+  "selected_diagnostic_variant": "bm25_minilm_rrf_k60_top20",
+  "new_source_document_count": 4,
+  "new_source_chunk_count": 1694,
+  "new_lineage_disjoint_confirmation_required": true,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "promotion_allowed": false,
+  "failures": []
+}

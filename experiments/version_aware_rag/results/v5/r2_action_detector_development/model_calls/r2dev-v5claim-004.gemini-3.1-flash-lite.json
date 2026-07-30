@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-004",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "75fd803b05a894cc622cc54436114acf77d5857d7c897f209e267fe3e35f726e",
+  "response_sha256": "c09f3216cefb21825e547ed63149f1c79014b8e7c4ff856588e81b15ca0ac204",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The current passage provides an updated, comprehensive guideline on alcohol consumption that materially duplicates the advice in the old passage, making the old passage redundant."
+  },
+  "latency_ms": 705,
+  "usage_metadata": {
+    "promptTokenCount": 309,
+    "candidatesTokenCount": 60,
+    "totalTokenCount": 369,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 309
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

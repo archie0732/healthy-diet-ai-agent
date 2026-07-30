@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-005",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 1,
+  "thinking_level": "minimal",
+  "request_sha256": "f43e87f248b7e730a6bf2e0e858ad75e7d8e153ee533e96d89bf9033ca565b71",
+  "response_sha256": "78342be70f8ac5e72f79f87929ddde7cdf01b1c65df6502dc4ba2b608d7c23cc",
+  "prediction": {
+    "relation_type": "duplicate",
+    "confidence": 0.95,
+    "rationale": "Both passages state the identical recommendation of less than 10 percent of calories per day from added sugars, with the NEW passage merely providing additional context regarding the starting age."
+  },
+  "latency_ms": 851,
+  "usage_metadata": {
+    "promptTokenCount": 232,
+    "candidatesTokenCount": 57,
+    "totalTokenCount": 289,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 232
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

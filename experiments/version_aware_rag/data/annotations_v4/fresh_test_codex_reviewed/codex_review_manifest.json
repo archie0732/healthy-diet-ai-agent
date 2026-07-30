@@ -1,0 +1,13 @@
+{
+  "status": "codex_review_complete_project_owner_required",
+  "record_count": 40,
+  "reviewed_ledger_sha256": "67ef971c701b76618d5dfd0c2b4302afd30a7ebe4b769b5b8e811364d786e84c",
+  "source_draft_sha256": "ac10c3226cd9e7073ef45de4444f2a02ff26fd741dfbc83280edcea14833a698",
+  "amendments": [
+    "01",
+    "02",
+    "03"
+  ],
+  "retrieval_execution_count": 0,
+  "limitation": "Not independent blinded or clinical review."
+}

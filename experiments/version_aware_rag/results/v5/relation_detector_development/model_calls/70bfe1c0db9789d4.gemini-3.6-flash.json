@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-31-pass-1-9f16d289|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "73cc1a8ed4230e4b7625d4a5a1d2cbfdf6004b94345e6d1f1bb749cb2276ec4b",
+  "response_sha256": "a736763c949da35cec5a4785f7a314b247792a833ac76b824d1114f77cd79018",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.85,
+    "rationale": "The NEW passage updates dietary guidance by explicitly recommending 'full-fat dairy with no added sugars', directly replacing the OLD passage's definition of nutrient-dense foods which specified 'fat-free and low-fat dairy products' and 'little or no solid fats'."
+  },
+  "latency_ms": 22541,
+  "usage_metadata": {
+    "promptTokenCount": 1048,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 1797,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1048
+      }
+    ],
+    "thoughtsTokenCount": 677,
+    "serviceTier": "standard"
+  }
+}

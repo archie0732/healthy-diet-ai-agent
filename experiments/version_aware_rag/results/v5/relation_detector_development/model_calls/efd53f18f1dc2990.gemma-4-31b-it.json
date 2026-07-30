@@ -1,0 +1,26 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-0-8effd6bb|dga-2025-page-3-pass-0-ba481231",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "6dffe240df16f9658b912a745ff2899920b547b299be7ccc0ecfe5b4a9280719",
+  "response_sha256": "88fce4644c56966724a065bb6e46976e178698b760e44bfce5c04f4fa0a79512",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 0.9,
+    "rationale": "The NEW passage updates and replaces several key recommendations from the OLD passage. Specifically, it changes the dairy recommendation from 'Fat-free or low-fat dairy' to 'include full-fat dairy with no added sugars' and introduces specific quantitative protein goals (1.2-1.6 g/kg) and dairy goals (3 servings) that replace the general guidance in the OLD passage."
+  },
+  "latency_ms": 4155,
+  "usage_metadata": {
+    "promptTokenCount": 1008,
+    "candidatesTokenCount": 110,
+    "totalTokenCount": 1118,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1008
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

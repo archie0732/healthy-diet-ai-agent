@@ -1,0 +1,26 @@
+{
+  "status": "split_frozen_before_detector_calls",
+  "split_unit": "connected_component_of_atomic_evidence_sha256",
+  "development_count": 17,
+  "validation_count": 5,
+  "development_distribution": {
+    "duplicate": 5,
+    "superseded": 3,
+    "conflicting": 1,
+    "conditional_difference": 3,
+    "complementary": 5
+  },
+  "validation_distribution": {
+    "duplicate": 1,
+    "superseded": 1,
+    "conflicting": 1,
+    "conditional_difference": 1,
+    "complementary": 1
+  },
+  "evidence_hash_overlap_count": 0,
+  "input_sha256": "a2b9a346291fd48baf73b8113310ba280c0bef796b86a8e82c535d3bbc2ce790",
+  "development_sha256": "38a1e650788b1b3b87ca107582192ca4814e433d2ec722c763aebb1b30f93fda",
+  "validation_sealed_sha256": "068faacb76c0cd2e5fbe77ef37f3c438f78c3056dc73f3d0d6f99225ec067cd6",
+  "validation_labels_must_not_be_read_during_development_selection": true,
+  "reviewer_provenance": "codex-gpt5-primary-reviewer_not_independent_human"
+}

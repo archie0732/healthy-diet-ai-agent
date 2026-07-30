@@ -1,0 +1,25 @@
+{
+  "schema_version": "v5-r2.9-retrieval-validation-1",
+  "status": "new_validation_frozen_before_retrieval",
+  "r2_8_frozen_result_sha256": "d37d67897f4bc5fb16c595832b2b2f24b7933719efd3b893fc4922bc95f3c227",
+  "r2_8_frozen_policy": {
+    "candidate_pool_size": 20,
+    "top_k": 3,
+    "recency_lambda": 0.75,
+    "history_pair_boost": 0.75
+  },
+  "protocol_sha256": "5a86e1187b98b9004b819d122d7bcb45350132c94e23e94a5c8d5e9c7141c4aa",
+  "query_count": 12,
+  "corpus_item_count": 24,
+  "distribution": {
+    "PAIR_PRESERVE": 6,
+    "BLOCK_RETAINED": 6
+  },
+  "retrieval_inputs_sha256": "5fc3af9ed2e99e1681c050c37cfddc4d8c4dff219901c174ff7fd40e6699b1a4",
+  "judgments_sealed_sha256": "2915ef0e4f5cef345f4787ad1e757edc5be2cbfa13af1b378b78111ea1895187",
+  "pre_model_audit_sha256": "25ad63408fee52c4e467f01fc6a88c119bb93986088b2c527454f38886563b9b",
+  "prior_current_chunk_collision_count": 0,
+  "external_model_api_used": false,
+  "validation_execution_count": 0,
+  "fresh_v5_test_created": false
+}

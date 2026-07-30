@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-010",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "98197394d839e84e602a39de23b29c5a0825ca0636cf65b3c1b48fa3887eac96",
+  "response_sha256": "5b165a122bc40f2a4c267bfc521fe51b602660c31db758203bb4a1020c237811",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "OLD provides specific quantitative limits for moderate drinking (2 drinks for men, 1 for women), which are entirely absent from the CURRENT passage."
+  },
+  "latency_ms": 2599,
+  "usage_metadata": {
+    "promptTokenCount": 490,
+    "candidatesTokenCount": 60,
+    "totalTokenCount": 550,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 490
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

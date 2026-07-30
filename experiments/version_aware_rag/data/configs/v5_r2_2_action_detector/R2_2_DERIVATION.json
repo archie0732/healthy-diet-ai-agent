@@ -1,0 +1,11 @@
+{
+  "status": "final_development_only_prompt_revision",
+  "parent_config": "v5_r2_1_action_detector",
+  "reason": "R2.1 could not simultaneously achieve zero false preserve and pair-preserve recall >= 0.5.",
+  "validation_execution_count_at_derivation": 0,
+  "validation_artifact_changed": false,
+  "validation_labels_used_for_revision": false,
+  "revision": "Decompose the semantic decision into old unique information and a five-value retention status, then map status to action deterministically.",
+  "stop_rule": "If no development configuration passes, do not execute validation and stop detector tuning for this cycle.",
+  "fresh_v5_test_created": false
+}

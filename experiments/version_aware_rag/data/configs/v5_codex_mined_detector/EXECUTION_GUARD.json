@@ -1,0 +1,11 @@
+{
+  "status": "validation_failed_no_retuning",
+  "split_manifest_sha256": "ed2edee4d92017fe38669c0b904fe8d7074e476829a57b51ff0ff9d7e5e398fc",
+  "development_selection_complete": true,
+  "validation_execution_count": 1,
+  "tuning_after_validation_allowed": false,
+  "fresh_v5_test_created": false,
+  "selected_config": "fail_closed_consensus_0.8",
+  "development_selection_sha256": "785040bc1277d47489830006ca591f7b191c7bfa18f71bcc42d04fa796c906a4",
+  "validation_result_sha256": "710691345d3e7ced4307a8a94397cd3830218ade7e6071ea246ceecadb7996bb"
+}

@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-003",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "f598eb50c1efbb8a3cf2282ae109f2508e3e35dec779f5bce153b287621720d1",
+  "response_sha256": "325d4e31a81f6c9c7f58181d684332fdc5e2c2806e1944d1bef3652b8972f32d",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides a more comprehensive and updated list of protein food categories, rendering the OLD passage redundant as it covers the same scope without providing unique, non-overlapping information."
+  },
+  "latency_ms": 778,
+  "usage_metadata": {
+    "promptTokenCount": 271,
+    "candidatesTokenCount": 61,
+    "totalTokenCount": 332,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 271
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "v5-r2.13-top3-diagnostic-guard-1",
+  "status": "top3_diagnostic_complete_locked",
+  "manifest_sha256": "594856e14cc622811fec0ad8315c3d1fc85484c96ce612119fa707cfdfff522a",
+  "execution_count": 1,
+  "judgments_after_all_top3_only": true,
+  "validation_allowed": false,
+  "fresh_test_allowed": false,
+  "r2_12_rerun_allowed": false,
+  "raw_results_sha256": "41f745fc8840089055cabb93abc8903ecd9b2bb67ff6bca8d23a691a80c158b2",
+  "diagnostic_result_sha256": "e463209b575106a9031b04e81f293799e091eac468e4a3bbbcf98e70a1a71f5c"
+}

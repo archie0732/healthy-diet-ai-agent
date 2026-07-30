@@ -1,0 +1,27 @@
+{
+  "endpoint_key": "dga-2015-page-15-pass-1-e32ddd46|dga-2025-page-6-pass-0-765dd278",
+  "model_id": "gemini-3.6-flash",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "request_sha256": "ebbd68af58df77aca0db7b88092a79163a127602c59003527c48722be46c2730",
+  "response_sha256": "08ef1c2f58833ed782d50e1918d15ec3ea695bd1cc242d89e66dd59d611b828c",
+  "prediction": {
+    "relation_type": "conditional_difference",
+    "confidence": 0.85,
+    "rationale": "The NEW passage refines the general daily sodium limit (< 2,300 mg) from the OLD passage by introducing explicit conditional applicability based on activity level (\"Highly active individuals may benefit from increased sodium intake\") and age subgroups (e.g., ages 1-3, 4-8, 9-13, and 14+)."
+  },
+  "latency_ms": 3970,
+  "usage_metadata": {
+    "promptTokenCount": 820,
+    "candidatesTokenCount": 94,
+    "totalTokenCount": 1418,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 820
+      }
+    ],
+    "thoughtsTokenCount": 504,
+    "serviceTier": "standard"
+  }
+}

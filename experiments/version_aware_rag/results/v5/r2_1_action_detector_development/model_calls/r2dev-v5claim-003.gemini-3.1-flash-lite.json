@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-003",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "5554fdeac1ca75ccf49aa85aec734ebafc4285bb6b29e080db7799a96ca80f71",
+  "response_sha256": "6c7f8fe4772baa78fa26aa16449ef5e63783445400254cbcd3c0d64da5518478",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides an updated and more comprehensive list that effectively encompasses all the items listed in the OLD passage, rendering the OLD passage redundant."
+  },
+  "latency_ms": 805,
+  "usage_metadata": {
+    "promptTokenCount": 387,
+    "candidatesTokenCount": 54,
+    "totalTokenCount": 441,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 387
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

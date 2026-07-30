@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-009",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "265ed6205903b981b565b596c920ed984b86ce137986e5648b7c08f78003138c",
+  "response_sha256": "95aa7d3df6682e42e6ac6d3e86f03027562363c4d5a521b07ecc6851d2f9587f",
+  "prediction": {
+    "action_label": "BLOCK_RETAINED",
+    "confidence": 1,
+    "rationale": "The CURRENT passage provides updated and more specific guidance on the duration of breastfeeding (2 years or beyond vs. at least 1 year) and the transition to whole milk at 12 months, effectively replacing the general feeding instructions in the OLD passage."
+  },
+  "latency_ms": 2969,
+  "usage_metadata": {
+    "promptTokenCount": 571,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 645,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 571
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "candidate_pair_id": "cand-pair-v4-new-012",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-independent-relation-review-v1",
+  "system_prompt_sha256": "35740b8f350f4c8bf86536a275c3a35806f83a57c63ec6f00865eebc24db140c",
+  "request_sha256": "2882c67290fae0053af4dc730e879ccbff3c6c77790ddfa0167081086eef1ad1",
+  "response_sha256": "4e1ec1a220e5298d037652d9019c0e5a9ea470ed6935e59451f8decaa7af43ab",
+  "prediction": {
+    "relation_type": "conflicting",
+    "confidence": 0.9,
+    "reviewable": true,
+    "rationale": "The OLD guideline specifies a percentage-based limit for added sugars (less than 10%), whereas the NEW excerpt introduces specific, lower quantitative limits (e.g., 5g or 10g thresholds) for certain food items, creating a conflict in the definition of the limit for the same category of nutrient."
+  },
+  "latency_ms": 959,
+  "usage_metadata": {
+    "promptTokenCount": 315,
+    "candidatesTokenCount": 104,
+    "totalTokenCount": 419,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 315
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

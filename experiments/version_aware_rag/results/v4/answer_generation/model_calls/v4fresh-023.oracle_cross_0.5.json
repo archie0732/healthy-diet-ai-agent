@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-023",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "aff40f964372b2fcc797ffbdcf42cee69d8f51274928beb899fae398ad3e7f84",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-035-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=t, spices, - Fruits: 2 servings per day\r\nand herbs.\r\nIncorporate Healthy Fats\r\n+ Healthy fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-035-old\ndocument=dga-2020\nedition=2020-2025\npublished_at=2020-12-01\ntext=nd have no or little added\r\nbeans, peas, and lentils; starchy; and other vegetables\r\nsugars, saturated fat, and sodium.\r\n* Fruits, especially whole fruit\r\n* Grains, at least half of which are whole grain\r\nA healthy dietary pattern consists of\r\n* Dairy, including fat-free or low-fat milk, yogurt, and\r\nnutrient-dense forms of foods and\r\ncheese, and/or lactose-free versions and fortified soy\r\nbeverages across all food groups, in\r\nbeverages and yogurt as alternatives\r\nrecommended amounts, and within\r\n* Protein foods, including lean meats, poultry, and eggs;\r\ncalorie limits. seafood; beans, peas, and lentils; and nuts, seeds, and soy\r\nproducts\r\n* Oils, including vegetable oils and oils in food, such as\r\nseafood and nuts\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-069-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=fats are plentiful in many whole foods, such as meats, poultry, eggs, omega-3-rich seafood, nuts, seeds, full-fat dairy, olives, and avocados. No quantitative limits are placed on dietary cholesterol, placing emphasis on whole foods instead.\r\n+ In general, saturated fat consumption\r\nshould not exceed 10% of total daily\r\ncalories. Significantly limiting highly\r\nprocessed foods will help meet this goal.\r\nMore high-quality research is needed to determine which types of dietary fats best support long-term health.\r\n+ When cooking with or adding fats to meals, prioritize oils with essential fatty acids, such as olive oil. Other options can include butter or beef tallow.\r\nFocus on Whole Grains\r\n+ Prioritize fiber-rich whole grains. + Whole grains serving goals: 2-4 servings\r\nper day, adjusting as needed based on your\r\n+ Significantly reduce the consumption of\r\nindividual caloric requirements.\r\nhighly processed, refined carbohydrates,\r\nsuch as white bread, ready-to-eat or\r\npackaged breakfast options, flour tortillas,\r\nand crackers.\n\nQUESTION\n\nWhat is the consistent saturated fat calorie limit maintained across both 2020 and 2025 editions?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "1f71756eeb0a94b7e9afa3a532fac0a69dfad5083c76c35e163b4c6c207a57c6",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-035-new",
+    "v4fresh-cand-pair-v4-new-035-old",
+    "v4fresh-cand-pair-v4-new-069-new"
+  ],
+  "answer": "*   Question: What is the consistent saturated fat calorie limit maintained across both 2020 and 2025 editions?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025): \"In general, saturated fat consumption should not exceed 10% of total daily calories.\" [chunk_id=v4fresh-cand-pair-v4-new-035-new]\n    *   Passage 2 (dga-2020): Mentions \"saturated fat\" in the context of \"no or little added sugars, saturated fat, and sodium,\" but does *not* provide a specific calorie limit. [chunk_id=v4fresh-cand-pair-v4-new-035-old]\n    *   Passage 3 (dga-2025): \"In general, saturated fat consumption should not exceed 10% of total daily calories.\" [chunk_id=v4fresh-cand-pair-v4-new-069-new]\n\n    *   The 2025 edition (Passages 1 and 3) specifies a limit of 10% of total daily calories for saturated fat.\n    *   The 2020 edition (Passage 2) mentions saturated fat but does not provide a quantitative calorie limit.\n    *   Therefore, there is no \"consistent\" limit provided across *both* editions in the supplied text.\n\n    *   The provided evidence is insufficient to identify a consistent saturated fat calorie limit across both editions, as the 2020 edition does not specify a quantitative limit [chunk_id=v4fresh-cand-pair-v4-new-035-old], although the 2025 edition states that saturated fat consumption should generally not exceed 10% of total daily calories [chunk_id=v4fresh-cand-pair-v4-new-035-new, chunk_id=v4fresh-cand-pair-v4-new-069-new].The supplied evidence is insufficient to identify a consistent saturated fat calorie limit across both editions; while the 2025 edition states that saturated fat consumption should generally not exceed 10% of total daily calories [chunk_id=v4fresh-cand-pair-v4-new-035-new, chunk_id=v4fresh-cand-pair-v4-new-069-new], the 2020 edition does not provide a quantitative calorie limit [chunk_id=v4fresh-cand-pair-v4-new-035-old].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "6ffff4c7eb34ba0ae3c398a25d538b70f38f42bf95cf29ec3881adc278a2aa0b",
+    "response_sha256": "9f64db7337a4da477977ec746a67ffb5aff4b6d87f31bdb20e1813d1f3623734",
+    "latency_ms": 18851,
+    "usage_metadata": {
+      "promptTokenCount": 1045,
+      "candidatesTokenCount": 127,
+      "totalTokenCount": 1690,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1045
+        }
+      ],
+      "thoughtsTokenCount": 518,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: What is the consistent saturated fat calorie limit maintained across both 2020 and 2025 editions?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve boundaries (population, age, etc.).\n    *   Constraint: Do not assume newer evidence supersedes older evidence.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (dga-2025): \"In general, saturated fat consumption should not exceed 10% of total daily calories.\" [chunk_id=v4fresh-cand-pair-v4-new-035-new]\n    *   Passage 2 (dga-2020): Mentions \"saturated fat\" in the context of \"no or little added sugars, saturated fat, and sodium,\" but does *not* provide a specific calorie limit. [chunk_id=v4fresh-cand-pair-v4-new-035-old]\n    *   Passage 3 (dga-2025): \"In general, saturated fat consumption should not exceed 10% of total daily calories.\" [chunk_id=v4fresh-cand-pair-v4-new-069-new]\n\n    *   The 2025 edition (Passages 1 and 3) specifies a limit of 10% of total daily calories for saturated fat.\n    *   The 2020 edition (Passage 2) mentions saturated fat but does not provide a quantitative calorie limit.\n    *   Therefore, there is no \"consistent\" limit provided across *both* editions in the supplied text.\n\n    *   The provided evidence is insufficient to identify a consistent saturated fat calorie limit across both editions, as the 2020 edition does not specify a quantitative limit [chunk_id=v4fresh-cand-pair-v4-new-035-old], although the 2025 edition states that saturated fat consumption should generally not exceed 10% of total daily calories [chunk_id=v4fresh-cand-pair-v4-new-035-new, chunk_id=v4fresh-cand-pair-v4-new-069-new].",
+                "thought": true
+              },
+              {
+                "text": "The supplied evidence is insufficient to identify a consistent saturated fat calorie limit across both editions; while the 2025 edition states that saturated fat consumption should generally not exceed 10% of total daily calories [chunk_id=v4fresh-cand-pair-v4-new-035-new, chunk_id=v4fresh-cand-pair-v4-new-069-new], the 2020 edition does not provide a quantitative calorie limit [chunk_id=v4fresh-cand-pair-v4-new-035-old]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1045,
+        "candidatesTokenCount": 127,
+        "totalTokenCount": 1690,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1045
+          }
+        ],
+        "thoughtsTokenCount": 518,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "ZX5gavGtCu-T1e8PgOuUuAM"
+    }
+  }
+}

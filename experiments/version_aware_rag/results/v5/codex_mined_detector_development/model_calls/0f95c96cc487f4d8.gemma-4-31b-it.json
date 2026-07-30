@@ -1,0 +1,28 @@
+{
+  "endpoint_key": "v5claim-022",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-relation-decision-v1",
+  "system_prompt_sha256": "4550b39047e49dc9eb1f13f74653c4a652216045e5f238b74ef357053d6f9c96",
+  "temperature": 0,
+  "thinking_level": "not_applicable",
+  "request_sha256": "8b4ac2c99f9d6f740ae2497e11c4505104e57faa0817cc77710f85afeab06d09",
+  "response_sha256": "8021fd7f995caf778d6c99bd1c803c0aa66523f45e5a6360d619773286a7d615",
+  "prediction": {
+    "relation_type": "complementary",
+    "confidence": 0.9,
+    "rationale": "The OLD passage focuses on the timing and composition of complementary foods (iron, zinc, avoiding sugar/sodium), while the NEW passage adds specific examples of allergenic foods (nut butters, eggs, etc.), guidance on vitamin D supplementation, and the transition from formula to whole milk. Both sets of instructions are simultaneously applicable and provide distinct, compatible information."
+  },
+  "latency_ms": 3752,
+  "usage_metadata": {
+    "promptTokenCount": 421,
+    "candidatesTokenCount": 102,
+    "totalTokenCount": 523,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 421
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

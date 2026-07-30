@@ -1,0 +1,137 @@
+{
+  "schema_version": "v5-r2.19-source-manifest-1",
+  "status": "draft_source_corpus_not_gold",
+  "created_at": "2026-07-28T00:00:00.000+08:00",
+  "retrieved_at": "2026-07-28",
+  "development_only": true,
+  "held_out_test_eligible": false,
+  "extraction": {
+    "package": "pdf-parse",
+    "version": "2.4.5",
+    "max_chars": 1800,
+    "overlap_chars": 200
+  },
+  "documents": [
+    {
+      "document_id": "who-potassium-adverse-effects-review-2012",
+      "file_name": "who_potassium_adverse_effects_review_2012.pdf",
+      "title": "Effect of increased potassium intake on blood pressure, renal function, blood lipids and other potential adverse effects",
+      "published_at": "2012-04-12",
+      "edition": "2012",
+      "official_record_url": "https://www.who.int/publications/i/item/9789241504881",
+      "official_pdf_url": "https://iris.who.int/server/api/core/bitstreams/e8f65240-5330-4b79-a390-46226bb4e37e/content",
+      "license": "WHO publication; all rights reserved on official record",
+      "expected_page_count": 122,
+      "visually_verified_pdf_pages": [
+        10
+      ],
+      "capacity_topics": [
+        "potassium",
+        "renal_function",
+        "adverse_effects"
+      ],
+      "local_path": "experiments/version_aware_rag/data/sources_v5/r2_19/who_potassium_adverse_effects_review_2012.pdf",
+      "retrieved_at": "2026-07-28",
+      "sha256": "4cc28dd30ed5336d2d81c43a0be672d3601b1abbbeabf1ff914c2297f916fc27",
+      "byte_length": 1565991,
+      "pdf_page_count": 122,
+      "extracted_characters": 250477,
+      "pdf_header_verified": true,
+      "text_extraction_verified": true,
+      "visual_verification_completed": true,
+      "status": "draft_r2_19_development_source"
+    },
+    {
+      "document_id": "who-potassium-drinking-water-background-2009",
+      "file_name": "who_potassium_drinking_water_background.pdf",
+      "title": "Potassium in drinking-water: background document for development of WHO Guidelines for Drinking-water Quality",
+      "published_at": "2009-01-01",
+      "edition": "2009",
+      "official_record_url": "https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/chemical-hazards-in-drinking-water",
+      "official_pdf_url": "https://cdn.who.int/media/docs/default-source/wash-documents/wash-chemicals/potassium-background.pdf?sfvrsn=4542eda3_4",
+      "license": "WHO publication; verify reuse terms on official record",
+      "expected_page_count": 12,
+      "visually_verified_pdf_pages": [
+        10
+      ],
+      "capacity_topics": [
+        "potassium",
+        "hyperkalaemia",
+        "renal_impairment",
+        "medication_interaction"
+      ],
+      "local_path": "experiments/version_aware_rag/data/sources_v5/r2_19/who_potassium_drinking_water_background.pdf",
+      "retrieved_at": "2026-07-28",
+      "sha256": "56ec5f7924f9d50c201717dcfa613d387694b4901c6eab5d43ae4fab090ce584",
+      "byte_length": 97098,
+      "pdf_page_count": 12,
+      "extracted_characters": 26488,
+      "pdf_header_verified": true,
+      "text_extraction_verified": true,
+      "visual_verification_completed": true,
+      "status": "draft_r2_19_development_source"
+    },
+    {
+      "document_id": "who-nss-systematic-review-2022",
+      "file_name": "who_nss_systematic_review_2022.pdf",
+      "title": "Health effects of the use of non-sugar sweeteners: a systematic review and meta-analysis",
+      "published_at": "2022-04-12",
+      "edition": "2022",
+      "official_record_url": "https://www.who.int/publications/i/item/9789240046429",
+      "official_pdf_url": "https://iris.who.int/server/api/core/bitstreams/cc660df6-e1b1-4a31-b918-42e8c7fe5701/content",
+      "license": "WHO publication; verify reuse terms on official record",
+      "expected_page_count": 210,
+      "visually_verified_pdf_pages": [
+        56
+      ],
+      "capacity_topics": [
+        "non_sugar_sweeteners",
+        "short_term_evidence",
+        "long_term_evidence"
+      ],
+      "local_path": "experiments/version_aware_rag/data/sources_v5/r2_19/who_nss_systematic_review_2022.pdf",
+      "retrieved_at": "2026-07-28",
+      "sha256": "186f2b103e5feeff8f326da361df4eab63d72f4e7cefcfbedabfd55e225ad675",
+      "byte_length": 11429280,
+      "pdf_page_count": 210,
+      "extracted_characters": 442739,
+      "pdf_header_verified": true,
+      "text_extraction_verified": true,
+      "visual_verification_completed": true,
+      "status": "draft_r2_19_development_source"
+    },
+    {
+      "document_id": "who-physical-activity-web-annex-2020",
+      "file_name": "who_physical_activity_web_annex_2020.pdf",
+      "title": "WHO guidelines on physical activity and sedentary behaviour: Web Annex. Evidence profiles",
+      "published_at": "2020-11-25",
+      "edition": "2020",
+      "official_record_url": "https://iris.who.int/handle/10665/336657",
+      "official_pdf_url": "https://iris.who.int/server/api/core/bitstreams/2e41f4b8-b47f-4e46-824a-a0b5b3b7000e/content",
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "expected_page_count": 535,
+      "visually_verified_pdf_pages": [
+        468
+      ],
+      "capacity_topics": [
+        "physical_activity",
+        "chronic_conditions",
+        "disability",
+        "pregnancy"
+      ],
+      "local_path": "experiments/version_aware_rag/data/sources_v5/r2_19/who_physical_activity_web_annex_2020.pdf",
+      "retrieved_at": "2026-07-28",
+      "sha256": "08f0775d0440bb63c764b83c72ed55448abbbdedc62ad277d85df7cbdea5490a",
+      "byte_length": 4846463,
+      "pdf_page_count": 535,
+      "extracted_characters": 1315650,
+      "pdf_header_verified": true,
+      "text_extraction_verified": true,
+      "visual_verification_completed": true,
+      "status": "draft_r2_19_development_source"
+    }
+  ],
+  "document_count": 4,
+  "chunk_count": 1694,
+  "chunks_sha256": "726d80ddb970b949398530fd2e6980c611e18cf83cbe4b5a9e3e07cfc471bb08"
+}

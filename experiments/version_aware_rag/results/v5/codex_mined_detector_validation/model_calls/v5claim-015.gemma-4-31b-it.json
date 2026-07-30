@@ -1,0 +1,24 @@
+{
+  "pair_id": "v5claim-015",
+  "model_id": "gemma-4-31b-it",
+  "request_sha256": "e2c4df3b29daf75d62c217a0c1335ede1a63a88382cc98d1531893764c65b685",
+  "response_sha256": "461802f44bbbd78e021943e950c6ae1ddda1c6d7a733d939b1f7223c47ffca08",
+  "prediction": {
+    "relation_type": "superseded",
+    "confidence": 1,
+    "rationale": "The NEW passage updates the general recommendation against increasing alcohol intake ('not recommended that individuals begin drinking or drink more') to a more specific directive to 'Consume less alcohol for better overall health' and expands the list of people who should avoid alcohol."
+  },
+  "latency_ms": 2999,
+  "usage_metadata": {
+    "promptTokenCount": 350,
+    "candidatesTokenCount": 79,
+    "totalTokenCount": 429,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 350
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

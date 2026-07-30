@@ -1,0 +1,71 @@
+{
+  "query_id": "v4fresh-011",
+  "system": "oracle_cross_0.5",
+  "input_sha256": "6ee6888451e3ce8a392851cf8e1a252f22a769519fe4c2f4d9ce033accd50979",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v4.0.0-frozen-2026-07-22",
+  "system_prompt_sha256": "a42c04828afb837800a7a15652c3ce7356a524271ae183ba6fa3335194bc20e6",
+  "user_prompt": "EVIDENCE\n\nPASSAGE 1\nchunk_id=v4fresh-cand-pair-v4-new-037-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=t of added sugars is recommended.\r\nfats, and whole grains.\r\n+ Make cooking meals fun and a regular part of\r\n+ Full-fat dairy products are important for children\r\nthe household's routine.\r\nto help meet energy needs and support brain\r\ndevelopment.\r\nAdolescence (11-18 Years)\r\n+ Adolescence is a rapid growth period with energy drinks and avoiding highly processed\r\nincreased needs for energy, protein, calcium, and foods. When access to nutrient-rich foods is\r\niron-especially for girls due to menstruation. limited, fortified foods or supplements may be\r\nAdequate calcium and vitamin D are vital for peak needed under medical guidance.\r\nbone mass.\r\n+ Encourage adolescents to become active\r\n+ Adolescents should eat nutrient-dense foods such participants in food shopping and cooking so they\r\nas dairy, leafy greens, and iron-rich animal foods, learn how to make healthy food choices for life.\r\nwhile significantly limiting sugary drinks and\n\n---\n\nPASSAGE 2\nchunk_id=v4fresh-cand-pair-v4-new-076-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=ng behaviors.\r\nMiddle Childhood (5-10 Years)\r\n+ Focus on whole, nutrient-dense foods such as + Avoid caffeinated beverages.\r\nprotein foods, dairy, vegetables, fruits, healthy\r\n+ No amount of added sugars is recommended.\r\nfats, and whole grains.\r\n+ Make cooking meals fun and a regular part of\r\n+ Full-fat dairy products are important for children\r\nthe household's routine.\r\nto help meet energy needs and support brain\r\ndevelopment.\r\nAdolescence (11-18 Years)\r\n+ Adolescence is a rapid growth period with energy drinks and avoiding highly processed\r\nincreased needs for energy, protein, calcium, and foods. When access to nutrient-rich foods is\r\niron-especially for girls due to menstruation. limited, fortified foods or supplements may be\r\nAdequate calcium and vitamin D are vital for peak needed under medical guidance.\r\nbone mass.\r\n+ Encourage adolescents to become active\r\n+ Adolescents should eat nutrient-dense foods such participants in food shopping and cooking so they\r\nas dairy, leafy greens, and iron-rich animal foods, learn how to make healthy food choices for life.\r\nwhile significantly limiting sugary drinks and\n\n---\n\nPASSAGE 3\nchunk_id=v4fresh-cand-pair-v4-new-041-new\ndocument=dga-2025\nedition=2025-2030\npublished_at=2026-01-01\ntext=when food is offered\r\n- Moves food from the front to the back of their tongue to swallow\r\n- Swallows food instead of pushing it back out onto their chin\r\n+ Parents and caregivers can encourage healthy eating by offering new foods multiple times-it may take 8 to\r\n10 exposures before a young child is willing to try a new food-and by modeling healthy eating behaviors.\r\nMiddle Childhood (5-10 Years)\r\n+ Focus on whole, nutrient-dense foods such as + Avoid caffeinated beverages.\r\nprotein foods, dairy, vegetables, fruits, healthy\r\n+ No amount of added sugars is recommended.\r\nfats, and whole grains.\r\n+ Make cooking meals fun and a regular part of\r\n+ Full-fat dairy products are important for children\r\nthe household's routine.\r\nto help meet energy needs and support brain\r\ndevelopment.\r\nAdolescence (11-18 Years)\r\n+ Adolescence is a rapid growth period with energy drinks and avoiding highly processed\r\nincreased needs for energy, protein, calcium, and foods. When access to nutrient-rich foods is\r\niron-especially for girls due to menstruation. limited, fortified foods or supplements may be\r\nAdequate calcium and vitamin D are vital for peak needed under medical guidance.\r\nbone mass.\r\n+ Encourage adolescents to become active\r\n+ Adolescents should eat nutrient-dense foods such participants in food shopping and cooking so they\r\nas dairy, leafy greens, and iron-rich animal foods, learn how to make healthy food choices for life.\r\nwhile significantly limiting sugary drinks and\n\nQUESTION\n\nHow does the 2025–2030 full-fat dairy guidance for children aged 5–10 differ from or qualify the dairy pattern described in the 2020 guideline?\n\nProvide a concise, fully cited answer.",
+  "user_prompt_sha256": "57956a7046a19e7703bb0252c684040b4c938a20d7f2e3f39a3010842f40b989",
+  "retrieved_chunk_ids": [
+    "v4fresh-cand-pair-v4-new-037-new",
+    "v4fresh-cand-pair-v4-new-076-new",
+    "v4fresh-cand-pair-v4-new-041-new"
+  ],
+  "answer": "*   Question: How does the 2025–2030 full-fat dairy guidance for children aged 5–10 differ from or qualify the dairy pattern described in the 2020 guideline?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-037-new): Mentions \"Middle Childhood (5-10 Years)\" and \"Full-fat dairy products are important for children to help meet energy needs and support brain development.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-076-new): Mentions \"Middle Childhood (5-10 Years)\" and \"Full-fat dairy products are important for children to help meet energy needs and support brain development.\"\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-041-new): Mentions \"Middle Childhood (5-10 Years)\" and \"Full-fat dairy products are important for children to help meet energy needs and support brain development.\"\n\n    *   The provided text contains guidance for the 2025-2030 edition (dga-2025).\n    *   The provided text *does not* contain any information regarding the 2020 guideline.\n\n    *   Since the supplied evidence does not mention the 2020 guideline, I cannot explain how the 2025-2030 guidance differs from or qualifies it.\n    *   I must explicitly qualify or abstain based on the instructions: \"If the supplied evidence is insufficient or conflicts without a supported resolution, explicitly qualify or abstain.\"The provided text does not contain information regarding the 2020 guideline; therefore, it is not possible to determine how the 2025–2030 guidance differs from or qualifies that previous version. The supplied evidence only states that for children in middle childhood (5–10 years), full-fat dairy products are important to support brain development and help meet energy needs [v4fresh-cand-pair-v4-new-037-new], [v4fresh-cand-pair-v4-new-076-new], [v4fresh-cand-pair-v4-new-041-new].",
+  "trace": {
+    "model_id": "gemma-4-31b-it",
+    "endpoint": "v1beta/models/gemma-4-31b-it:generateContent",
+    "request_sha256": "43998a396efbbfa3947eb572a1ef4bee5fe7901b232a07fa3873936fb5b5f36e",
+    "response_sha256": "cde1c5b9e1607010594711a81d4ae3a55fc2e24705e629509b9263cb4d4d4bf8",
+    "latency_ms": 16996,
+    "usage_metadata": {
+      "promptTokenCount": 1200,
+      "candidatesTokenCount": 139,
+      "totalTokenCount": 1775,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1200
+        }
+      ],
+      "thoughtsTokenCount": 436,
+      "serviceTier": "standard"
+    },
+    "raw_response": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "*   Question: How does the 2025–2030 full-fat dairy guidance for children aged 5–10 differ from or qualify the dairy pattern described in the 2020 guideline?\n    *   Constraint: Answer only from supplied passages.\n    *   Constraint: Every factual claim must end with exact [chunk_id] citations.\n    *   Constraint: Preserve population, age, health-condition, version, and uncertainty boundaries.\n    *   Constraint: Do not use outside knowledge.\n\n    *   Passage 1 (chunk_id=v4fresh-cand-pair-v4-new-037-new): Mentions \"Middle Childhood (5-10 Years)\" and \"Full-fat dairy products are important for children to help meet energy needs and support brain development.\"\n    *   Passage 2 (chunk_id=v4fresh-cand-pair-v4-new-076-new): Mentions \"Middle Childhood (5-10 Years)\" and \"Full-fat dairy products are important for children to help meet energy needs and support brain development.\"\n    *   Passage 3 (chunk_id=v4fresh-cand-pair-v4-new-041-new): Mentions \"Middle Childhood (5-10 Years)\" and \"Full-fat dairy products are important for children to help meet energy needs and support brain development.\"\n\n    *   The provided text contains guidance for the 2025-2030 edition (dga-2025).\n    *   The provided text *does not* contain any information regarding the 2020 guideline.\n\n    *   Since the supplied evidence does not mention the 2020 guideline, I cannot explain how the 2025-2030 guidance differs from or qualifies it.\n    *   I must explicitly qualify or abstain based on the instructions: \"If the supplied evidence is insufficient or conflicts without a supported resolution, explicitly qualify or abstain.\"",
+                "thought": true
+              },
+              {
+                "text": "The provided text does not contain information regarding the 2020 guideline; therefore, it is not possible to determine how the 2025–2030 guidance differs from or qualifies that previous version. The supplied evidence only states that for children in middle childhood (5–10 years), full-fat dairy products are important to support brain development and help meet energy needs [v4fresh-cand-pair-v4-new-037-new], [v4fresh-cand-pair-v4-new-076-new], [v4fresh-cand-pair-v4-new-041-new]."
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1200,
+        "candidatesTokenCount": 139,
+        "totalTokenCount": 1775,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1200
+          }
+        ],
+        "thoughtsTokenCount": 436,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemma-4-31b-it",
+      "responseId": "OntgaufiC9TDvr0Ps6y42AM"
+    }
+  }
+}

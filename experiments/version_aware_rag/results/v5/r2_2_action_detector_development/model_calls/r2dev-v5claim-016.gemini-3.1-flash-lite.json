@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-016",
+  "model_id": "gemini-3.1-flash-lite",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "f58a4b7cf1ab82641154f4721bf1915bef45c73667cb42b8863f97d26a45da79",
+  "response_sha256": "8b44dc10fdfa8ab3c3474442c22ac8bf666577328a63fc2f1e150d2928025cf2",
+  "prediction": {
+    "retention_status": "RETAINS_DISTINCT",
+    "old_unique_information": "The principle that a healthy dietary pattern provides benefits to all individuals regardless of race, ethnicity, or health status, and that the guidelines are designed to be customized to individual foodways and cultural preferences.",
+    "confidence": 1,
+    "rationale": "The CURRENT passage focuses exclusively on medical advice for managing chronic conditions via low-carbohydrate diets, while the OLD passage establishes the foundational, universal applicability of the guidelines across diverse demographics and cultural foodways, which is not addressed in the new content.",
+    "action_label": "PAIR_PRESERVE"
+  },
+  "latency_ms": 1047,
+  "usage_metadata": {
+    "promptTokenCount": 525,
+    "candidatesTokenCount": 132,
+    "totalTokenCount": 657,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 525
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

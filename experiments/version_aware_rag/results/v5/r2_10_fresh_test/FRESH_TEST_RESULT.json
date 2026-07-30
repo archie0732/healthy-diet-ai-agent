@@ -1,0 +1,103 @@
+{
+  "schema_version": "v5-r2.10-one-shot-fresh-test-result-1",
+  "status": "fresh_test_passed_scope_limited",
+  "fresh_test_execution_count": 1,
+  "tuning_after_fresh_test_allowed": false,
+  "external_model_api_used": false,
+  "all_retrieval_calls_completed_before_judgment_read": true,
+  "judgment_file_read_count": 1,
+  "frozen_policy_sha256": "4491f19fd3de101022c81e1f5cde8669a4a82ed0d172b11e5627f853a4fd5835",
+  "owner_signoff_sha256": "e3e0dcb5666ff317e06053f47fc0816de5461cd239800af8a766d3814c868961",
+  "summaries": [
+    {
+      "system": "recency_lambda_0.75",
+      "overall_required_micro_recall_at_3": 0.625,
+      "overall_deprecated_old_hit_rate": 0,
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "explicit_history": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 0.375,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "conditional_merge": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "current_only": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "hard_negative_current": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        }
+      }
+    },
+    {
+      "system": "version_aware_explicit_history_pair",
+      "overall_required_micro_recall_at_3": 0.8333333333333334,
+      "overall_deprecated_old_hit_rate": 0,
+      "required_candidate_micro_recall_at_20": 1,
+      "strata": {
+        "explicit_history": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": 1,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "conditional_merge": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 0.5,
+          "both_evidence_coverage": 0,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "current_only": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        },
+        "hard_negative_current": {
+          "query_count": 4,
+          "required_micro_recall_at_3": 1,
+          "both_evidence_coverage": null,
+          "deprecated_old_hit_rate": 0,
+          "required_candidate_micro_recall_at_20": 1
+        }
+      }
+    }
+  ],
+  "gate_checks": {
+    "explicit_history_required_micro_recall_strictly_improves": true,
+    "explicit_history_both_evidence_coverage_strictly_improves": true,
+    "conditional_merge_required_micro_recall_noninferior": true,
+    "current_only_required_micro_recall_noninferior": true,
+    "hard_negative_required_micro_recall_noninferior": true,
+    "deprecated_old_hit_rate_not_increased": true,
+    "required_candidate_micro_recall_at_20_at_least_0_90": true,
+    "shared_candidate_pool_identity_100_percent": true
+  },
+  "gate_passed": true,
+  "promotion_scope": "fresh_held_out_explicit_historical_intent_retrieval_advantage",
+  "prohibited_claims": [
+    "overall Version-Aware superiority across all query types",
+    "implicit semantic conditional-merge superiority",
+    "answer-level superiority"
+  ],
+  "reviewer_limitation": "The project owner approved the packet, but review was not independent blinded or clinical review."
+}

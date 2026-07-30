@@ -1,0 +1,28 @@
+{
+  "pair_id": "r2dev-v5claim-006",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v3-decomposed",
+  "system_prompt_sha256": "88bd7cb0475a2d48c889495cdb9a2232cd546d52a61792185dce4d0d9c7f5016",
+  "request_sha256": "c188f49710dd0f0a4704d2004de6ecbf54964e2391ef3e4e26c11f5a756b5519",
+  "response_sha256": "d065d97e217b7c88eec58f2427d6f7f67e1f51cb5e614c2a26ea0a091da85ee0",
+  "prediction": {
+    "retention_status": "DUPLICATES",
+    "old_unique_information": "none",
+    "confidence": 1,
+    "rationale": "The current passage materially restates the same quantitative threshold (less than 10% of calories per day) for saturated fats as the old passage.",
+    "action_label": "BLOCK_RETAINED"
+  },
+  "latency_ms": 3864,
+  "usage_metadata": {
+    "promptTokenCount": 417,
+    "candidatesTokenCount": 73,
+    "totalTokenCount": 490,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 417
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

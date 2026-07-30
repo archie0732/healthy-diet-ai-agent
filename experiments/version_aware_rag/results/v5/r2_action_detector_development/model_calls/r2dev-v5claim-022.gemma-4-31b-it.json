@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-022",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v1",
+  "system_prompt_sha256": "1d68873f4a47dc7c9bc7e1f4f78d06a006e60b8db5051032c12ac0552418e078",
+  "request_sha256": "327c112b4996562074272793e9392bf2abbf54c4eab7292f2b88ec955a7d5ad9",
+  "response_sha256": "4227eec9a6a1dc7c7aa3a8cb4d44667a92326e0617e6b1c444817eb29ba3c1c3",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 0.9,
+    "rationale": "The OLD passage contains specific nutritional requirements (iron and zinc) and dietary restrictions (added sugars and sodium) that are not mentioned in the CURRENT passage, which focuses more on allergen introduction and vitamin D."
+  },
+  "latency_ms": 2886,
+  "usage_metadata": {
+    "promptTokenCount": 441,
+    "candidatesTokenCount": 66,
+    "totalTokenCount": 507,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 441
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "project_owner_signoff_verified",
+  "counts": {
+    "records": 24,
+    "development": 16,
+    "validation_sealed": 8
+  },
+  "approved_ledger_sha256": "7dbc7db4a4672050e9662c2911059d6535f91a3cd2865ceaaa97ce4c855b7f96",
+  "development_evaluation_allowed": true,
+  "validation_execution_allowed_now": false,
+  "promotion_allowed": false,
+  "fresh_test_allowed": false,
+  "failures": []
+}

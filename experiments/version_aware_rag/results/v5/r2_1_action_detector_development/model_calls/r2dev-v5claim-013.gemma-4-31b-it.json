@@ -1,0 +1,26 @@
+{
+  "pair_id": "r2dev-v5claim-013",
+  "model_id": "gemma-4-31b-it",
+  "prompt_version": "v5-r2-action-v2",
+  "system_prompt_sha256": "ce77b4c73529b07dcafb2087021f84735089c843c0b9a0584e58c9cc36c8f9ac",
+  "request_sha256": "d276ed1df276dc7e8a7ad629c3eba97967973b0f18c7c6effc4e9c18eebb2098",
+  "response_sha256": "1fc2079e103cd6cd06cb525fffdf847f7d09b391a2b5c6b4906b6f9c1ddfd551",
+  "prediction": {
+    "action_label": "PAIR_PRESERVE",
+    "confidence": 1,
+    "rationale": "OLD provides a specific sodium limit for children younger than 14, which is not addressed in CURRENT, while CURRENT provides a guideline for adults and highly active individuals."
+  },
+  "latency_ms": 2456,
+  "usage_metadata": {
+    "promptTokenCount": 412,
+    "candidatesTokenCount": 57,
+    "totalTokenCount": 469,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 412
+      }
+    ],
+    "serviceTier": "standard"
+  }
+}

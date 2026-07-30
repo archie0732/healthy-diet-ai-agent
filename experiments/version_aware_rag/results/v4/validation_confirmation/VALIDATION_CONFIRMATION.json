@@ -1,0 +1,78 @@
+{
+  "status": "validation_effectiveness_confirmation_complete",
+  "validation_run_number": 1,
+  "tuning_after_validation": false,
+  "protocol_deviation": "One validation record was exposed during a pre-freeze format inspection after development selection; no validation scores were generated and no frozen parameter changed.",
+  "frozen_config_sha256": "64920da581dd215d6febfc88b9ddc78f74d4317661386270d3ced6c3e175b2fe",
+  "validation_split_sha256": "43c6d15ba1d5df05b6e8580b683b5d40a8e71e8cf08c7d4a575aea73f5afadc4",
+  "metrics": {
+    "recency": {
+      "all": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.166667,
+        "current_required_micro_recall_at_3": 0.3,
+        "retained_required_micro_recall_at_3": 0
+      },
+      "conditional_merge": {
+        "query_count": 4,
+        "required_micro_recall_at_3": 0.222222,
+        "current_required_micro_recall_at_3": 0.4,
+        "retained_required_micro_recall_at_3": 0
+      },
+      "compatible_history": {
+        "query_count": 4,
+        "required_micro_recall_at_3": 0.111111,
+        "current_required_micro_recall_at_3": 0.2,
+        "retained_required_micro_recall_at_3": 0
+      }
+    },
+    "oracle_cross_0.5": {
+      "all": {
+        "query_count": 8,
+        "required_micro_recall_at_3": 0.666667,
+        "current_required_micro_recall_at_3": 0.7,
+        "retained_required_micro_recall_at_3": 0.625
+      },
+      "conditional_merge": {
+        "query_count": 4,
+        "required_micro_recall_at_3": 0.555556,
+        "current_required_micro_recall_at_3": 0.6,
+        "retained_required_micro_recall_at_3": 0.5
+      },
+      "compatible_history": {
+        "query_count": 4,
+        "required_micro_recall_at_3": 0.777778,
+        "current_required_micro_recall_at_3": 0.8,
+        "retained_required_micro_recall_at_3": 0.75
+      }
+    }
+  },
+  "effectiveness_gate": {
+    "conditional_merge_noninferiority": true,
+    "compatible_history_noninferiority": true,
+    "retained_history_strict_improvement": true
+  },
+  "effectiveness_gate_passed": true,
+  "safety_gate_status": "project_owner_approved_pass",
+  "full_validation_promotion_gate_passed": true,
+  "provisional_safety_metrics": {
+    "recency": {
+      "query_count": 8,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    },
+    "oracle_cross_0_5": {
+      "query_count": 8,
+      "stale_chunk_hit_rate_at_3": 0,
+      "forbidden_chunk_hit_rate_at_3": 0,
+      "stale_or_forbidden_hit_rate_at_3": 0,
+      "stale_or_forbidden_query_rate_at_3": 0
+    }
+  },
+  "safety_gate_passed": true,
+  "validation_safety_approved_ledger_sha256": "7b3eed864ebeb5fff5cab0375665cec1beff6843c350033c6abdad689be54370",
+  "independent_blinded_or_clinical_review": false,
+  "fresh_test_execution_allowed": false
+}
