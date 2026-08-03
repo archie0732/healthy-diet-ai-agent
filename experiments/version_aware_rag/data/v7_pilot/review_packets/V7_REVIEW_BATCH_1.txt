@@ -1,0 +1,341 @@
+V7 ISOLATED QUERY-CONTRACT REVIEW PACKET
+
+RECORD 1
+{
+  "query_id": "v7q-eh-001",
+  "query_text": "Compare WHO's earlier and operative criteria for children with wasting or nutritional oedema to exit nutritional treatment.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-b5-2013-2023",
+  "lineage_id": "v6lin-wasting-child-exit-b5",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "1.5",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "2013 recommendation 1.5 allowed discharge when either weight-for-height/length was at least -2 Z-score or MUAC was at least 125 mm, together with no oedema for at least 2 weeks. The same anthropometric indicator used for diagnosis was to be used to confirm recovery. Percentage weight gain was not an exit criterion.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "B5",
+        "pdf_page_number": 90
+      },
+      "structured_text_description": "2023 recommendation B5 requires all exit conditions: WHZ/WLZ at least -2 SD and MUAC at least 125 mm for at least 2 consecutive visits, plus no nutritional oedema for at least 2 consecutive visits. Percentage and absolute weight gain are not exit criteria, and relevant longer-term medical or social support referrals must also be addressed.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly calls B5 an update to 2013 recommendation 1.5.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 2
+{
+  "query_id": "v7q-eh-002",
+  "query_text": "How did the scope and design of WHO's food-marketing policy recommendation change from the earlier version to the operative guideline?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-food-marketing-comprehensive-2010-2023",
+  "lineage_id": "v6lin-food-marketing-comprehensive-scope",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2010",
+        "recommendation_id": "RECOMMENDATION 3",
+        "pdf_page_number": 8
+      },
+      "structured_text_description": "The 2010 recommendation allowed Member States to choose either a stepwise or a comprehensive approach to reduce children's exposure to, and the persuasive power of, marketing for foods high in saturated fat, trans fat, free sugars, or salt.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "sufficiently comprehensive",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires policies to be sufficiently comprehensive to minimize migration of marketing to unrestricted media, spaces, or age groups, and to restrict marketing's persuasive power.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation calls for sufficiently comprehensive coverage to minimize marketing migration, whereas the 2010 recommendation allowed either stepwise or comprehensive approaches.",
+  "visual_source_verification": "The older stepwise-or-comprehensive option and current sufficiently-comprehensive migration-control bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 3
+{
+  "query_id": "v7q-eh-003",
+  "query_text": "Compare the earlier and operative WHO haemoglobin cutoffs used to define any anaemia in children aged 6-23 months.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-hb-child-6-23-any-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-any-anaemia-cutoff",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table used one category for children aged 6-59 months and defined anaemia as haemoglobin below 110 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 2",
+        "pdf_page_number": 12
+      },
+      "structured_text_description": "The 2024 table separates children aged 6-23 months and defines anaemia as haemoglobin below 105 g/L. The normative statement identifies this population as having a modified cutoff.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "Normative statement 1.a explicitly identifies children 6-23 months as the population whose existing anaemia cutoff was modified; Table 2 sets the updated cutoff at <105 g/L, compared with the 2011 all-children 6-59-month cutoff of <110 g/L.",
+  "visual_source_verification": "The older 6-59-month cutoff and the updated 6-23-month cutoff, including the explicit modification statement, are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 4
+{
+  "query_id": "v7q-eh-004",
+  "query_text": "How did WHO's mild-anaemia haemoglobin range for children aged 6-23 months change between versions?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-hb-child-6-23-mild-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-mild-anaemia-range",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table defined mild anaemia for children aged 6-59 months as haemoglobin 100-109 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 3",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2024 table defines mild anaemia for children aged 6-23 months as haemoglobin 95-104 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "Table 3 applies the updated cutoff to children 6-23 months and defines mild anaemia as 95-104 g/L, compared with 100-109 g/L for children 6-59 months in the 2011 Table 1.",
+  "visual_source_verification": "The older and current mild-anaemia ranges and their population labels are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 5
+{
+  "query_id": "v7q-eh-005",
+  "query_text": "Contrast WHO's earlier and operative moderate-anaemia haemoglobin ranges for children aged 6-23 months.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-hb-child-6-23-moderate-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-moderate-anaemia-range",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table defined moderate anaemia for children aged 6-59 months as haemoglobin 70-99 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 3",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2024 table defines moderate anaemia for children aged 6-23 months as haemoglobin 70-94 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "Table 3 applies the updated cutoff to children 6-23 months and defines moderate anaemia as 70-94 g/L, compared with 70-99 g/L for children 6-59 months in the 2011 Table 1.",
+  "visual_source_verification": "The older and current moderate-anaemia ranges and their population labels are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 6
+{
+  "query_id": "v7q-eh-006",
+  "query_text": "What changed between WHO's earlier and operative moderate-anaemia haemoglobin ranges for the second trimester of pregnancy?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-hb-pregnancy-t2-moderate-2011-2024",
+  "lineage_id": "v6lin-hb-pregnancy-second-trimester-moderate-anaemia-range",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table used a pregnancy-wide moderate-anaemia range of haemoglobin 70-99 g/L without a distinct second-trimester range.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 3",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2024 table defines moderate anaemia in the second trimester of pregnancy as haemoglobin 70-94 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2024 Table 3 defines moderate anaemia in the second trimester as 70-94 g/L, compared with the 2011 pregnancy-wide moderate range of 70-99 g/L.",
+  "visual_source_verification": "The older pregnancy-wide and current second-trimester moderate-anaemia ranges are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 7
+{
+  "query_id": "v7q-eh-007",
+  "query_text": "How did WHO's recommendation on multiple micronutrient supplements in pregnancy change from the earlier guideline to the operative update?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-anc-mms-2016-2020",
+  "lineage_id": "v6lin-anc-multiple-micronutrient-supplements",
+  "relation_type": "supersedes",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_care_2016",
+        "recommendation_id": "A.6",
+        "pdf_page_number": 14
+      },
+      "structured_text_description": "The 2016 antenatal-care guideline did not recommend multiple micronutrient supplementation for pregnant women to improve maternal and perinatal outcomes.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_mms_update_2020",
+        "recommendation_id": "MMS",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2020 update recommends antenatal multiple micronutrient supplements containing iron and folic acid only in the context of rigorous research, and explicitly states that it updates and supersedes the 2016 recommendation.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The recommendation states that it updates and supersedes the 2016 recommendation and changed from not recommended to recommended in rigorous research.",
+  "visual_source_verification": "The visible recommendation states the change in direction and supersession.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 8
+{
+  "query_id": "v7q-eh-008",
+  "query_text": "Compare WHO's earlier and operative positions on vitamin D supplementation during pregnancy.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-anc-vitamin-d-2016-2020",
+  "lineage_id": "v6lin-anc-vitamin-d",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_care_2016",
+        "recommendation_id": "A.9",
+        "pdf_page_number": 14
+      },
+      "structured_text_description": "The 2016 antenatal-care guideline did not recommend vitamin D supplementation for pregnant women to improve maternal and perinatal outcomes.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_vitamin_d_update_2020",
+        "recommendation_id": "vitamin_d",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2020 update still does not recommend oral vitamin D supplementation for all pregnant women. It states that the 2016 recommendation is not altered; supplementation at the recommended nutrient intake may be considered when vitamin D deficiency is suspected.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The update explicitly says it updates and does not alter the 2016 recommendation.",
+  "visual_source_verification": "The visible update explicitly says the recommendation is not altered.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 9
+{
+  "query_id": "v7q-eh-009",
+  "query_text": "Did WHO's position on zinc supplementation during pregnancy change between the earlier and operative guidance?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-anc-zinc-2016-2021",
+  "lineage_id": "v6lin-anc-zinc",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_care_2016",
+        "recommendation_id": "A.5",
+        "pdf_page_number": 14
+      },
+      "structured_text_description": "The 2016 antenatal-care guideline recommended zinc supplementation during pregnancy only in the context of rigorous research.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_zinc_update_2021",
+        "recommendation_id": "zinc",
+        "pdf_page_number": 9
+      },
+      "structured_text_description": "The 2021 update retains the 2016 position: zinc is not recommended as routine antenatal care and is recommended only in the context of rigorous research.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The remarks explicitly say the GDG retained the 2016 recommendation.",
+  "visual_source_verification": "The visible remarks explicitly retain the 2016 recommendation.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 10
+{
+  "query_id": "v7q-eh-010",
+  "query_text": "How did the protected age range in WHO food-marketing guidance change from the earlier to the operative version?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-food-marketing-all-ages-2010-2023",
+  "lineage_id": "v6lin-food-marketing-all-child-ages",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2010",
+        "recommendation_id": "RECOMMENDATION 4",
+        "pdf_page_number": 9
+      },
+      "structured_text_description": "The 2010 guidance required Member States to define policy components, including the age group covered, according to national circumstances; it did not fix one universal protected age range.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "protect children of all ages",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires food-marketing policies to protect children of all ages. Its remarks define children as people below age 18 unless applicable law sets majority earlier.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation fixes protection for children of all ages rather than leaving the restricted age group as a nationally defined policy component.",
+  "visual_source_verification": "The older nationally defined age component and current all-ages bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}

@@ -1,0 +1,13 @@
+{
+  "candidate_order_valid": true,
+  "imported_at_utc": "2026-08-01T10:18:46.247638+00:00",
+  "judgment_count": 6,
+  "model_metadata_raw": "GPT-5; session identifier not visible",
+  "normalized_review_sha256": "ff3c869f27b6e8cf5b80a9a74386e9beefa861cc01338eae4f1866b0b1a2239e",
+  "packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "preserved_raw_response_sha256": "ced27dbce1b8314d0d8fc0b5871175de0e5ad5760eddaedaa31f47b51b2eab78",
+  "provider": "chatgpt",
+  "schema_valid": true,
+  "schema_version": "v6-external-relation-review-manifest-1",
+  "source_raw_response_sha256": "ced27dbce1b8314d0d8fc0b5871175de0e5ad5760eddaedaa31f47b51b2eab78"
+}

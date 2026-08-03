@@ -1,0 +1,35 @@
+V7 ISOLATED QUERY-CONTRACT DELTA REVIEW
+
+RECORD 1
+{
+  "query_id": "v7q-eh-001",
+  "query_text": "Compare WHO's earlier and operative criteria for children with wasting or nutritional oedema to exit nutritional treatment.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-b5-2013-2023",
+  "lineage_id": "v6lin-wasting-child-exit-b5",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "1.5",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "2013 recommendation 1.5 allowed discharge when either weight-for-height/length was at least -2 Z-score or MUAC was at least 125 mm, together with no oedema for at least 2 weeks. The same anthropometric indicator used for diagnosis was to be used to confirm recovery. Percentage weight gain was not an exit criterion.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "B5",
+        "pdf_page_number": 90
+      },
+      "structured_text_description": "2023 recommendation B5 requires all exit conditions: WHZ/WLZ at least -2 SD and MUAC at least 125 mm for at least 2 consecutive visits, plus no nutritional oedema for at least 2 consecutive visits. Percentage and absolute weight gain are not exit criteria, and relevant longer-term medical or social support referrals must also be addressed.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly calls B5 an update to 2013 recommendation 1.5.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}

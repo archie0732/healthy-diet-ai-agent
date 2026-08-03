@@ -1,0 +1,95 @@
+{
+  "all_main_strata_target_24_feasible": false,
+  "candidate_count": 6,
+  "candidate_source_sha256": "301ef767cbb175584d0c59f480e45e3574de6b0a76f73031c6e691a35519fe07",
+  "review_hashes": {
+    "chatgpt": "ff3c869f27b6e8cf5b80a9a74386e9beefa861cc01338eae4f1866b0b1a2239e",
+    "codex": "19877e1fec0ec751f874c0dab8342e48e19b3799ef346b62646b060244b03ead",
+    "gemini": "de14ba036c0645de213c0045e2a6dd05a4dd32dcbe296309e85ea0fd6d66d539"
+  },
+  "reviewer_strict_isolation": {
+    "chatgpt": true,
+    "codex": true,
+    "gemini": true
+  },
+  "reviewers_missing": [],
+  "reviewers_not_strictly_eligible": [],
+  "reviewers_present": [
+    "chatgpt",
+    "codex",
+    "gemini"
+  ],
+  "schema_version": "v6-relation-review-agreement-1",
+  "status": "complete",
+  "structured_disagreement_candidate_count": 0,
+  "structured_disagreements": [],
+  "unanimous_pass_capacity": {
+    "conditional_merge": {
+      "family_counts": {
+        "haemoglobin_cutoffs_for_anaemia": 6
+      },
+      "minimum_20": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 5,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 6,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "current_only": {
+      "family_counts": {},
+      "minimum_20": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 0,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 0,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "explicit_history": {
+      "family_counts": {
+        "haemoglobin_cutoffs_for_anaemia": 6
+      },
+      "minimum_20": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 5,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 6,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "hard_negative_current": {
+      "family_counts": {
+        "haemoglobin_cutoffs_for_anaemia": 6
+      },
+      "minimum_20": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 5,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": false,
+        "maximum_selectable_under_cap": 6,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    }
+  },
+  "warning": "Final three-model source-grounded consensus; unanimous means ChatGPT, Gemini, and Codex all pass the item. This is AI triangulation, not human or expert consensus."
+}

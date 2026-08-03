@@ -1,0 +1,21 @@
+{
+  "approved_relation_count": 71,
+  "current_only_node_count": 22,
+  "endpoint_method_distribution": {
+    "exact_normalized_anchor": 115,
+    "fuzzy_anchor_and_relation_basis": 5
+  },
+  "fresh_retrieval_allowed": false,
+  "input_sha256": {
+    "frozen_chunks": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a",
+    "relation_candidates": "301ef767cbb175584d0c59f480e45e3574de6b0a76f73031c6e691a35519fe07",
+    "relation_consensus": "607e946334ed51cfe8734461c3456c9cabe5fb971cddab5b6a0e1210e7fce05b"
+  },
+  "low_confidence_count": 0,
+  "low_confidence_items": [],
+  "output_sha256": "9db4dfd123634b95d3e2c2526bbb8623ebc7b9ece963fed5b440312021d550d3",
+  "pairing_relation_count": 49,
+  "resolved_endpoint_count": 120,
+  "schema_version": "v6-runtime-chunk-relations-audit-1",
+  "status": "pass"
+}

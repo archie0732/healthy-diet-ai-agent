@@ -1,0 +1,9 @@
+{
+  "correction": "Deduplicate required evidence by document_id and pdf_page_number.",
+  "gold_sha256": "174b2ace10c646edccfff2f6fb4d7c3b7a461bf54f067156b5f377dc925b8577",
+  "packet_sha256": "6a1e52edb7e046f940967b48ef8c5e8eb75dc71d513228bcf7793bacd44d65ad",
+  "prompt_sha256": "f062eaa353e7f6196f9ed1e3ea17cf3ca267a7baba03598e0821100f8cae0e0f",
+  "query_sha256": "7f35774098f1dea9e001b8117bca63e426a164a72401282a792d489602140897",
+  "record_count": 25,
+  "schema_version": "v6-query-review-delta-manifest-1"
+}

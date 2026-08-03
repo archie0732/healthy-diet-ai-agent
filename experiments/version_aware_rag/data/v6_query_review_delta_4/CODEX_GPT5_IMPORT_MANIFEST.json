@@ -1,0 +1,16 @@
+{
+  "eligible_count": 4,
+  "eligible_flags_consistent": true,
+  "fresh_retrieval_allowed": false,
+  "imported_at_utc": "2026-08-01T13:30:11.229999+00:00",
+  "metadata": "MODEL_METADATA: Codex (GPT-5); session_id=019fbd29-b7ae-7a43-930e-65b062c3fdda",
+  "normalized_review_sha256": "7245e27895acf039e03c35e6bd4c3538b1100d73930e30e327ba124bb162c51c",
+  "packet_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+  "preserved_raw_sha256": "dbb0954cc13cd477932504c21252913c70adbec958db4fb738cd602659c3a041",
+  "query_ids_in_exact_packet_order": true,
+  "record_count": 4,
+  "reviewer_label": "codex_gpt5",
+  "schema_valid": true,
+  "schema_version": "v6-query-review-delta-import-manifest-1",
+  "source_response_sha256": "dbb0954cc13cd477932504c21252913c70adbec958db4fb738cd602659c3a041"
+}

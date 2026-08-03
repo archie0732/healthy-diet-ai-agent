@@ -1,0 +1,17 @@
+{
+  "schema_version": "v6-review-isolation-audit-1",
+  "provider": "chatgpt",
+  "model_metadata_raw": "GPT-5; session identifier not visible",
+  "content_validation": "pass",
+  "strict_isolation_compliance": "pass_with_limited_telemetry",
+  "usable_as_final_isolated_judge": true,
+  "observations": [
+    "The supplied ChatGPT single-input artifact contains only the frozen prompt, output schema, and six v3 delta packet records; it contains no prior reviewer output.",
+    "The response contains six schema-valid judgments in exact frozen packet order and one final model-metadata line.",
+    "All six candidate identifiers match the haemoglobin-only delta packet.",
+    "The ChatGPT session identifier and full session telemetry were not visible, so isolation is supported by the single-input artifact and user-executed clean-session procedure."
+  ],
+  "single_input_sha256": "433afc3617411a983cc9f404a3daaeaf5bd1cd6b48e2b4a35d7d17c173f162cf",
+  "packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "normalized_review_sha256": "ff3c869f27b6e8cf5b80a9a74386e9beefa861cc01338eae4f1866b0b1a2239e"
+}

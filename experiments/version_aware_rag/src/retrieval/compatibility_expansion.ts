@@ -25,7 +25,7 @@ export function expandCompatibleChunks(
     const relations = graph.getRelationsForChunk(seed.chunkId);
     
     for (const rel of relations) {
-      if (rel.confidence < 0.7) continue;
+      if (rel.confidence < graph.getConfidenceThreshold()) continue;
 
       if (rel.relationType !== 'complementary' && rel.relationType !== 'conditional_difference') {
         continue;

@@ -1,0 +1,50 @@
+{
+  "all_constraints_pass": true,
+  "allocation_count": 96,
+  "allocation_sha256": "fd1172836742119d5461e3c79279f1c11b99209c973c13dbc5b88132a55b8e85",
+  "archived_allocation_sha256": "6511fb106b8cd6e284ae3d67d8ff1e34d41e2cf152778bd21c3dc6ff89a82c1f",
+  "design_change": "conditional_merge removed after evidence-necessity adjudication; 24 records redistributed 8/8/8",
+  "family_counts_by_stratum": {
+    "current_only": {
+      "antenatal_nutrition": 6,
+      "fiscal_policies_for_healthy_diets": 3,
+      "food_marketing_to_children": 1,
+      "haemoglobin_cutoffs_for_anaemia": 3,
+      "school_food_environment": 3,
+      "wasting_and_nutritional_oedema": 6,
+      "who_europe_infant_food_nppm": 3,
+      "who_europe_nutrient_profile_model": 7
+    },
+    "explicit_history": {
+      "antenatal_nutrition": 3,
+      "food_marketing_to_children": 3,
+      "haemoglobin_cutoffs_for_anaemia": 2,
+      "hiv_and_infant_feeding": 2,
+      "wasting_and_nutritional_oedema": 6,
+      "who_europe_infant_food_nppm": 8,
+      "who_europe_nutrient_profile_model": 8
+    },
+    "hard_negative_current": {
+      "antenatal_nutrition": 1,
+      "food_marketing_to_children": 4,
+      "haemoglobin_cutoffs_for_anaemia": 6,
+      "hiv_and_infant_feeding": 1,
+      "wasting_and_nutritional_oedema": 6,
+      "who_europe_infant_food_nppm": 6,
+      "who_europe_nutrient_profile_model": 8
+    }
+  },
+  "fresh_retrieval_allowed": false,
+  "lineages_used_twice": 29,
+  "maximum_family_count_per_stratum": 8,
+  "maximum_queries_per_lineage": 2,
+  "schema_version": "v6-query-allocation-manifest-2",
+  "stratum_counts": {
+    "current_only": 32,
+    "explicit_history": 32,
+    "hard_negative_current": 32
+  },
+  "unique_lineage_count": 67,
+  "within_stratum_candidate_duplicates": 0,
+  "within_stratum_lineage_duplicates": 0
+}

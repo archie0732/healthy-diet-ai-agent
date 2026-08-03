@@ -1,0 +1,30 @@
+{
+  "all_reviews_complete": true,
+  "artifact_sha256": {
+    "fresh_runner": "0af0f1d6f7aabbfe1d62d679c2b0aa138c4388a67e3f81759cb9bc9131b366dc",
+    "frozen_chunks": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a",
+    "retrieval_core": "399075866c4b50a9012c6dbdf8278c962fec7084ebf809585ec63cc4a097c3a7",
+    "review_1": "07e6c58b82c50a7903757630072db4918e2fd137f5a0e2409e3e3672317ff021",
+    "review_2": "4ce12ac899d3f22e5d77c66c939650447f4346caa54196ac19ddf123de6a776a",
+    "review_3": "efc7b9347dfbd02c8196dfe3b9e652de4899e6ab12fc81aec63b02e41a5960ea",
+    "runtime_relations": "6d54cd6493b43ed7d3071a045e759de912eb35753aecf3a168737579313b9fc4",
+    "sealed_gold": "34945029e04b73efe1b3277d0211d456c8d090a527c71257f82b61ec990a4b54",
+    "sealed_queries": "116bf19a077e3898575385152b0108ae33b5ee7c3393c4bc461de3fdf2935864"
+  },
+  "query_count": 40,
+  "retrieval": {
+    "candidate_generator": "shared_relation_enriched",
+    "candidate_pool_size": 20,
+    "output_k": 3,
+    "pair_boost": 0.5,
+    "recency_lambda": 0.75,
+    "recency_year_range": [
+      2005,
+      2026
+    ],
+    "reserved_relation_pairs": 2
+  },
+  "review_count": 3,
+  "schema_version": "v7-pilot-final-seal-1",
+  "status": "sealed_ready_for_single_execution"
+}

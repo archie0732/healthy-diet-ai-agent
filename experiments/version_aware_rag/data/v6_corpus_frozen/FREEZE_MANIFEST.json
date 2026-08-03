@@ -1,0 +1,28 @@
+{
+  "chunk_count": 3535,
+  "document_count": 20,
+  "freeze_scope": "official_source_manifest_page_bounded_chunks_page_map_and_chunk_level_gold",
+  "fresh_retrieval_allowed": false,
+  "frozen_at_utc": "2026-08-01T14:35:46.315156+00:00",
+  "frozen_corpus_sha256": {
+    "chunking_spec.json": "b7039ef1509b618f8a5f4aa2bd18557ba60b34974f50951ac65bda62f7c0e2af",
+    "chunks.jsonl": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a",
+    "corpus_audit.json": "0c188b4dbc0b7da9c9d78949d24e366d96e0dfea4593222f167d3763b8e7aac6",
+    "page_to_chunks.jsonl": "d9410d90ffd15cc8119fa12951ec1878bf5bafb05b5b088fd0934a7f574ccfdc",
+    "source_manifest.json": "bea09b075ceda7fa6d5943a013eb00e4417d2afaa9f9c0363a3c6125ac05ab20"
+  },
+  "input_sha256": {
+    "chunk_level_gold_draft": "3e671a9569fc42b65c3017361e5f0a3fa543f50275469b90793444a858d8cb12",
+    "medium_resolution_audit": "107fd488e423fc64de3a2bf39dcb173dd2af0dfd9c5c3fc2e250f229b23d9695",
+    "medium_resolution_audit_manifest": "5a2d17bf7b983c66a69356c539e77fe67e4bc9cf4c1aed128b40b5bcefa01cd5",
+    "query_page_gold_seal_manifest": "92585b990c493152d414029978a1d16e15ec4d3e7ad88993776882e924b3e8a9",
+    "resolution_audit": "6e7175156592572430fe54a886b606f86086aa1982597d4984c87ed2218d9587",
+    "resolution_ledger": "e7f3900d3ab48b6d810235e7545ed53e1b205e34eee8609f913731369a820a48"
+  },
+  "next_required_gate": "systems_A_through_F_router_invariants_devval_and_policy_freeze",
+  "page_count": 1601,
+  "query_count": 96,
+  "required_evidence_group_count": 133,
+  "schema_version": "v6-chunk-corpus-freeze-manifest-1",
+  "sealed_chunk_level_gold_sha256": "48188c89a8072f3526a47ee6d435427397ff02d322c038fb148c950c34115642"
+}

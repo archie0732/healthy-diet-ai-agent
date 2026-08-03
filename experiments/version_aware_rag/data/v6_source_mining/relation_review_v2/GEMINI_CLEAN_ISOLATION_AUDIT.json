@@ -1,0 +1,14 @@
+{
+  "schema_version": "v6-review-isolation-audit-1",
+  "provider": "gemini",
+  "antigravity_run_id": "32076dcd-9b20-4a1a-b018-05344a66706a",
+  "content_validation": "pass",
+  "strict_isolation_compliance": "pass",
+  "usable_as_final_isolated_judge": true,
+  "observations": [
+    "The Antigravity run identifier and scratch task differ from all earlier Gemini attempts.",
+    "The transcript records extraction and review of the three clean ZIP inputs in the new task scratch area.",
+    "No repository path, prior relation_review directory, prior reviewer output, or web source is accessed in the transcript.",
+    "The response contains 66 schema-valid judgments in exact frozen packet order and one final model-metadata line."
+  ]
+}

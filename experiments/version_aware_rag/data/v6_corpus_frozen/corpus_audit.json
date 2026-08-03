@@ -1,0 +1,18 @@
+{
+  "chunk_count": 3535,
+  "chunking_spec_sha256": "b7039ef1509b618f8a5f4aa2bd18557ba60b34974f50951ac65bda62f7c0e2af",
+  "chunks_sha256": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a",
+  "document_count": 20,
+  "empty_page_count": 39,
+  "errors": [],
+  "fresh_retrieval_allowed": false,
+  "maximum_chunk_words": 279,
+  "minimum_chunk_words": 1,
+  "nonempty_page_count": 1562,
+  "page_count": 1601,
+  "page_to_chunks_sha256": "d9410d90ffd15cc8119fa12951ec1878bf5bafb05b5b088fd0934a7f574ccfdc",
+  "schema_version": "v6-corpus-draft-audit-1",
+  "source_manifest_sha256": "bea09b075ceda7fa6d5943a013eb00e4417d2afaa9f9c0363a3c6125ac05ab20",
+  "status": "pass",
+  "upstream_index_sha256_matches_summary": true
+}

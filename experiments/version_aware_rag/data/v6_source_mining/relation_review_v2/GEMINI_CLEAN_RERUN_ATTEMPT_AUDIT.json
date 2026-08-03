@@ -1,0 +1,14 @@
+{
+  "schema_version": "v6-review-rerun-attempt-audit-1",
+  "provider": "gemini",
+  "content_validation": "pass",
+  "strict_isolation_compliance": "fail",
+  "counts_as_new_independent_pass": false,
+  "attempt_transcript_sha256": "5513f36501b0b9b3d0c8dc18c8e66aaa051baf811a7124a775e7da23d98d9cb7",
+  "extracted_response_sha256": "fa1dda249fc48d21bd5d9ac5096f735d8492670cfbefb3aeb679b7fea5ff0013",
+  "prior_imported_response_sha256": "fa1dda249fc48d21bd5d9ac5096f735d8492670cfbefb3aeb679b7fea5ff0013",
+  "byte_identical_to_prior_import": true,
+  "antigravity_run_id": "051e84bf-9f8c-4c38-b005-a197d511a4b4",
+  "reason": "The attempted rerun used the same Antigravity run/task identifier and scratch context as the earlier non-isolated run. Its 66 judgments and metadata are byte-identical to the prior imported response, so it is not an independent clean rerun.",
+  "required_resolution": "Create a genuinely new Antigravity task with a different run identifier and no inherited conversation or repository workspace context, then use only GEMINI_CLEAN_INPUT_ONLY.zip."
+}

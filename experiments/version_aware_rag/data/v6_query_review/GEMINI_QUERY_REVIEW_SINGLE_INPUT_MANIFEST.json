@@ -1,0 +1,8 @@
+{
+  "contains_other_reviewer_outputs": false,
+  "frozen_packet_sha256": "a77eceb604d9e2e395d51a3d8425e2dcdc3767ba000983fb2dfbbcee3af16807",
+  "provider": "gemini",
+  "record_count": 96,
+  "schema_version": "v6-query-review-single-input-manifest-1",
+  "single_input_sha256": "9b6efde7773a056bb8bb2575b2f0a927bb850b8ba3fe8d97c86508d4f5d5ceb1"
+}

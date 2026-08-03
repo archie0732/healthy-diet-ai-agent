@@ -1,0 +1,14 @@
+{
+  "schema_version": "v6-isolation-audit-1",
+  "provider": "gemini",
+  "status": "wrong_packet",
+  "eligible_for_consensus": false,
+  "model_metadata_raw": "Gemini 3.5 Flash (Medium) | a4e2255d-78f7-4226-a0ad-d6089dc700a0",
+  "transcript_evidence_sha256": "7b60a2562c5c007fff54b1bfa2c4a30d18d44095facf2d89cba64f9f5b773668",
+  "observed_input": "relation_review_v2/GEMINI_CLEAN_INPUT_ONLY.zip",
+  "observed_record_count": 66,
+  "required_input_packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "required_record_count": 6,
+  "reason": "The run appears independent but reviewed the frozen v2 packet rather than the v3 delta packet. Its judgments cannot be mapped to the six new haemoglobin candidates.",
+  "artifact_policy": "Do not import or use this output in v3 delta agreement, consensus, allocation, or reporting."
+}

@@ -1,0 +1,351 @@
+V7 ISOLATED QUERY-CONTRACT REVIEW PACKET
+
+RECORD 1
+{
+  "query_id": "v7q-hn-001",
+  "query_text": "Under WHO guidance now in force, when should infants under 6 months with wasting or nutritional oedema be admitted for inpatient care?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-wasting-a2-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-admission-a2",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A2",
+        "pdf_page_number": 54
+      },
+      "structured_text_description": "The 2023 A2 recommendation automatically refers and admits infants under 6 months at risk of poor growth when they have an IMCI danger sign, a severe acute medical problem, nutritional oedema, or recent weight loss. Other listed concerns, including less acute or longer-term medical problems and specified growth concerns, trigger an in-depth assessment and clinical judgment rather than automatic admission.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.1",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2013 recommendation admitted infants under 6 months with severe acute malnutrition for inpatient care when they had a serious clinical condition or medical complication, or recent weight loss or failure to gain weight, among its listed criteria.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The rationale explicitly calls A2 a major update to 2013 recommendation 8.1.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 2
+{
+  "query_id": "v7q-hn-002",
+  "query_text": "What is WHO's operative position on multiple micronutrient supplementation during pregnancy?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-anc-mms-2016-2020",
+  "lineage_id": "v6lin-anc-multiple-micronutrient-supplements",
+  "relation_type": "supersedes",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_mms_update_2020",
+        "recommendation_id": "MMS",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2020 update recommends antenatal multiple micronutrient supplements containing iron and folic acid only in the context of rigorous research, and explicitly states that it updates and supersedes the 2016 recommendation.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_care_2016",
+        "recommendation_id": "A.6",
+        "pdf_page_number": 14
+      },
+      "structured_text_description": "The 2016 antenatal-care guideline did not recommend multiple micronutrient supplementation for pregnant women to improve maternal and perinatal outcomes.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The recommendation states that it updates and supersedes the 2016 recommendation and changed from not recommended to recommended in rigorous research.",
+  "visual_source_verification": "The visible recommendation states the change in direction and supersession.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 3
+{
+  "query_id": "v7q-hn-003",
+  "query_text": "Under operative WHO guidance, what implementation status applies to policies restricting food marketing to children?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-food-marketing-mandatory-2010-2023",
+  "lineage_id": "v6lin-food-marketing-mandatory-policy",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "be mandatory",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires policies restricting food marketing to children to be mandatory.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2010",
+        "recommendation_id": "RECOMMENDATION 7",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2010 guidance allowed statutory, self-regulatory, voluntary, or co-regulatory policy approaches, provided the selected approach operated within a framework designed to achieve the policy objective.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation requires a mandatory policy where the 2010 material allowed statutory, self-regulatory, voluntary, or co-regulatory approaches.",
+  "visual_source_verification": "The 2010 range of implementation instruments, 2023 builds-on statement, and current mandatory-policy bullet are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 4
+{
+  "query_id": "v7q-hn-004",
+  "query_text": "Under the operative WHO guideline, what ages must food-marketing policies protect?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-food-marketing-all-ages-2010-2023",
+  "lineage_id": "v6lin-food-marketing-all-child-ages",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "protect children of all ages",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires food-marketing policies to protect children of all ages. Its remarks define children as people below age 18 unless applicable law sets majority earlier.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2010",
+        "recommendation_id": "RECOMMENDATION 4",
+        "pdf_page_number": 9
+      },
+      "structured_text_description": "The 2010 guidance required Member States to define policy components, including the age group covered, according to national circumstances; it did not fix one universal protected age range.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation fixes protection for children of all ages rather than leaving the restricted age group as a nationally defined policy component.",
+  "visual_source_verification": "The older nationally defined age component and current all-ages bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 5
+{
+  "query_id": "v7q-hn-005",
+  "query_text": "Under operative WHO guidance, when can an infant under 6 months be transferred from inpatient to outpatient care?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-wasting-a3-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-transfer-a3",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A3",
+        "pdf_page_number": 60
+      },
+      "structured_text_description": "The 2023 A3 recommendation requires no danger signs for 48 hours, resolved acute medical problems, resolving nutritional oedema, good appetite, satisfactory documented weight gain for 2-3 days, attempted referral for longer-term problems, routine interventions or follow-up plans, and caregiver linkage to follow-up support.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.5",
+        "pdf_page_number": 15
+      },
+      "structured_text_description": "The 2013 recommendation allowed transfer of admitted infants under 6 months to outpatient care after medical complications and oedema resolved, appetite and clinical condition were good, satisfactory weight gain continued for at least 3 days, routine interventions were checked, and follow-up support was linked.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The rationale explicitly calls A3 an update to 2013 recommendation 8.5.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 6
+{
+  "query_id": "v7q-hn-006",
+  "query_text": "What follow-up does operative WHO guidance recommend for infants under 6 months with wasting or nutritional oedema?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-wasting-a4-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-followup-a4",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A4",
+        "pdf_page_number": 64
+      },
+      "structured_text_description": "The 2023 A4 recommendation covers the broader group of infants under 6 months at risk of poor growth. Outpatient visit frequency may be reduced after effective feeding and sustained weight gain over 2 consecutive weekly visits, but follow-up continues until assessment at 6 months determines whether further follow-up or referral is required.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.6",
+        "pdf_page_number": 15
+      },
+      "structured_text_description": "The 2013 recommendation allowed infants under 6 months to be discharged from all care when feeding effectively, gaining adequate weight, and having weight-for-length at least -2 Z-score.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The rationale explicitly calls A4 an update to 2013 recommendation 8.6 and describes a broader population.",
+  "visual_source_verification": "The current recommendation and update rationale appear together and match the cited older recommendation.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 7
+{
+  "query_id": "v7q-hn-007",
+  "query_text": "What haemoglobin cutoff currently defines anaemia in children aged 6-23 months?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-hb-child-6-23-any-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-any-anaemia-cutoff",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 2",
+        "pdf_page_number": 12
+      },
+      "structured_text_description": "The 2024 table separates children aged 6-23 months and defines anaemia as haemoglobin below 105 g/L. The normative statement identifies this population as having a modified cutoff.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table used one category for children aged 6-59 months and defined anaemia as haemoglobin below 110 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "Normative statement 1.a explicitly identifies children 6-23 months as the population whose existing anaemia cutoff was modified; Table 2 sets the updated cutoff at <105 g/L, compared with the 2011 all-children 6-59-month cutoff of <110 g/L.",
+  "visual_source_verification": "The older 6-59-month cutoff and the updated 6-23-month cutoff, including the explicit modification statement, are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 8
+{
+  "query_id": "v7q-hn-008",
+  "query_text": "What haemoglobin range currently defines mild anaemia in children aged 6-23 months?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-hb-child-6-23-mild-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-mild-anaemia-range",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 3",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2024 table defines mild anaemia for children aged 6-23 months as haemoglobin 95-104 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table defined mild anaemia for children aged 6-59 months as haemoglobin 100-109 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "Table 3 applies the updated cutoff to children 6-23 months and defines mild anaemia as 95-104 g/L, compared with 100-109 g/L for children 6-59 months in the 2011 Table 1.",
+  "visual_source_verification": "The older and current mild-anaemia ranges and their population labels are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 9
+{
+  "query_id": "v7q-hn-009",
+  "query_text": "Under operative WHO guidance, when can children aged 6-59 months transfer from inpatient to outpatient care?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-wasting-b3-2013-2023",
+  "lineage_id": "v6lin-wasting-child-transfer-b3",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "B3",
+        "pdf_page_number": 85
+      },
+      "structured_text_description": "The 2023 B3 recommendation requires no danger signs for 24-48 hours, sufficient resolution of the admitting medical problems, no ongoing weight loss where applicable, resolving oedema below grade +++, good appetite, and attempted referral for longer-term problems. It continues to reject specific anthropometric transfer thresholds.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "1.4",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2013 recommendation allowed transfer from inpatient to outpatient care when medical complications and oedema were resolving and the child had good appetite and was clinically well and alert; transfer was based on clinical condition, not a specific anthropometric threshold.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The rationale explicitly calls B3 an update to 2013 recommendation 1.4.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 10
+{
+  "query_id": "v7q-hn-010",
+  "query_text": "Under operative WHO guidance, when may children aged 6-59 months exit nutritional treatment?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-wasting-b5-2013-2023",
+  "lineage_id": "v6lin-wasting-child-exit-b5",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "B5",
+        "pdf_page_number": 90
+      },
+      "structured_text_description": "2023 recommendation B5 requires all exit conditions: WHZ/WLZ at least -2 SD and MUAC at least 125 mm for at least 2 consecutive visits, plus no nutritional oedema for at least 2 consecutive visits. Percentage and absolute weight gain are not exit criteria, and relevant longer-term medical or social support referrals must also be addressed.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "1.5",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "2013 recommendation 1.5 allowed discharge when either weight-for-height/length was at least -2 Z-score or MUAC was at least 125 mm, together with no oedema for at least 2 weeks. The same anthropometric indicator used for diagnosis was to be used to confirm recovery. Percentage weight gain was not an exit criterion.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "The rationale explicitly calls B5 an update to 2013 recommendation 1.5.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}

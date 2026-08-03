@@ -1,0 +1,19 @@
+{
+  "audit_sha256": "8d8f3285f7c131f6e3d0d515d6c859560b545db29073644793962dbd5f921002",
+  "candidate_count": 62,
+  "candidate_source_sha256": "c8c34ad8e0ed5045d162f4912cc524aa025c792673c487259ed683723c0baeed",
+  "created_at_utc": "2026-08-01T08:22:04.986686+00:00",
+  "invalidation_reason": "Preflight rubric check found that unaudited new or compatible evidence had been provisionally counted as hard-negative capacity. Candidate mining resumed before any reviewer output was collected.",
+  "output_schema_sha256": "ce8bc5c467f0ccf7f4b409951fbbd7a299a35d0600aab586726e047f22dea70c",
+  "packet_sha256": "7a8c6a0da576f23433902f3bfc40c00b65304c92e588e557ede353247ccca1f7",
+  "prohibited_inputs": [
+    "router code",
+    "retrieval scores or rankings",
+    "system identity",
+    "other reviewer judgments",
+    "test outcomes"
+  ],
+  "prompt_sha256": "932f60c3516339b4a324ec2cf1c52664b6e1387ed3df489906e55ed60cbf09d7",
+  "schema_version": "v6-blind-relation-review-manifest-1",
+  "status": "invalidated_preflight_not_for_review"
+}

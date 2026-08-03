@@ -81,6 +81,15 @@ export class RelationGraph {
   }
 
   /**
+   * The confidence threshold this graph was constructed with, so callers
+   * (e.g. compatibility expansion) apply the same cutoff instead of a
+   * separately hardcoded value.
+   */
+  public getConfidenceThreshold(): number {
+    return this.confidenceThreshold;
+  }
+
+  /**
    * Returns the active policy state for a chunk under the query context.
    */
   public getPolicyState(

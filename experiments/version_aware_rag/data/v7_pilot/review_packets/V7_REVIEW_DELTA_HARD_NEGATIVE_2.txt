@@ -1,0 +1,71 @@
+V7 ISOLATED QUERY-CONTRACT DELTA REVIEW
+
+RECORD 1
+{
+  "query_id": "v7q-hn-007",
+  "query_text": "What haemoglobin cutoff currently defines anaemia in children aged 6-23 months?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-hb-child-6-23-any-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-any-anaemia-cutoff",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 2",
+        "pdf_page_number": 12
+      },
+      "structured_text_description": "The 2024 table separates children aged 6-23 months and defines anaemia as haemoglobin below 105 g/L. The normative statement identifies this population as having a modified cutoff.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table used one category for children aged 6-59 months and defined anaemia as haemoglobin below 110 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "Normative statement 1.a explicitly identifies children 6-23 months as the population whose existing anaemia cutoff was modified; Table 2 sets the updated cutoff at <105 g/L, compared with the 2011 all-children 6-59-month cutoff of <110 g/L.",
+  "visual_source_verification": "The older 6-59-month cutoff and the updated 6-23-month cutoff, including the explicit modification statement, are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 2
+{
+  "query_id": "v7q-hn-008",
+  "query_text": "What haemoglobin range currently defines mild anaemia in children aged 6-23 months?",
+  "proposed_stratum": "hard_negative_current",
+  "candidate_id": "v6rel-hb-child-6-23-mild-2011-2024",
+  "lineage_id": "v6lin-hb-child-6-23-mild-anaemia-range",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2024",
+        "recommendation_id": "Table 3",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2024 table defines mild anaemia for children aged 6-23 months as haemoglobin 95-104 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_haemoglobin_cutoffs_2011",
+        "recommendation_id": "Table 1",
+        "pdf_page_number": 3
+      },
+      "structured_text_description": "The 2011 table defined mild anaemia for children aged 6-59 months as haemoglobin 100-109 g/L.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "structured_relation_support": "Table 3 applies the updated cutoff to children 6-23 months and defines mild anaemia as 95-104 g/L, compared with 100-109 g/L for children 6-59 months in the 2011 Table 1.",
+  "visual_source_verification": "The older and current mild-anaemia ranges and their population labels are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}

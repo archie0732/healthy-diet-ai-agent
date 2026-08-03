@@ -1,0 +1,17 @@
+{
+  "candidate_order_valid": true,
+  "extracted_at_utc": "2026-08-01T09:10:39.636154+00:00",
+  "extracted_response_sha256": "fa1dda249fc48d21bd5d9ac5096f735d8492670cfbefb3aeb679b7fea5ff0013",
+  "extraction_rule": "Exact stripped source lines that parse as JSON objects containing candidate_id, followed by the sole MODEL_METADATA line; values unchanged.",
+  "first_judgment_source_line": 82,
+  "judgment_count": 66,
+  "last_judgment_source_line": 147,
+  "metadata_source_line": 148,
+  "packet_sha256": "a84952b4054d8a476cc06abe243b3f015ebe4b732fe86ab0abc17ad930701e29",
+  "preserved_transcript_sha256": "c7921a81620edfbff36caa34dd9efbfd7d731ace22f9ed2a2720fb6979e4b50c",
+  "provider": "gemini",
+  "schema_version": "v6-antigravity-extraction-manifest-1",
+  "source_attachment_path": "C:\\Users\\kille\\.codex\\attachments\\7ddbb5f0-5c07-478d-830f-743a0bc73995\\pasted-text.txt",
+  "source_attachment_sha256": "c7921a81620edfbff36caa34dd9efbfd7d731ace22f9ed2a2720fb6979e4b50c",
+  "transcript_line_count": 148
+}

@@ -1,0 +1,14 @@
+{
+  "external_model_api_allowed": false,
+  "fresh_test_execution_count": 1,
+  "frozen_policy_sha256": "2b43a609c11a47d9cd7cadfdf4d1c572b930ef5ba4eb9d314c009b445ec03947",
+  "judgments_may_be_read_by_runner": false,
+  "maximum_fresh_test_execution_count": 1,
+  "owner_continuation_authorization": "User instructed Codex to continue and complete the registered plan on 2026-08-01.",
+  "raw_output_exists": false,
+  "raw_output_sha256": "01be0f06f2cfe37de16a3792518e4c76af67e7426480e35db77ec5ab4cade5d7",
+  "run_manifest_sha256": "fd135b13274ee3f9d3ddd58f953750a2b81deacc18439bce723fbfb3a7d5a294",
+  "schema_version": "v6-fresh-test-guard-1",
+  "status": "fresh_test_executed_once_raw_output_locked",
+  "tuning_allowed": false
+}

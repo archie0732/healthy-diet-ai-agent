@@ -1,0 +1,16 @@
+{
+  "eligible_count": 4,
+  "eligible_flags_consistent": true,
+  "fresh_retrieval_allowed": false,
+  "imported_at_utc": "2026-08-01T14:03:19.146535+00:00",
+  "metadata": "MODEL_METADATA: GPT-5.6 Thinking",
+  "normalized_review_sha256": "711f4fe09129d6e5984d22a2ffdb30a9b3bbb7534e425481755d370f51ee2b5f",
+  "packet_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+  "preserved_raw_sha256": "fe1a6bec741d17bc557bb675daad1ccbf979f6c4d1a977ec4b1fd11bc819f0e9",
+  "query_ids_in_exact_packet_order": true,
+  "record_count": 4,
+  "reviewer_label": "gpt_5_6_final",
+  "schema_valid": true,
+  "schema_version": "v6-query-review-delta-import-manifest-1",
+  "source_response_sha256": "fe1a6bec741d17bc557bb675daad1ccbf979f6c4d1a977ec4b1fd11bc819f0e9"
+}

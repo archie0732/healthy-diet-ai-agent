@@ -1,0 +1,30 @@
+{
+  "fresh_retrieval_allowed": false,
+  "gold_contract_count": 96,
+  "input_sha256": {
+    "allocation_manifest": "4fb2d011b12b337880ff015b2d6faa1d2dcc2fc21f132392ad948d7be78593fa",
+    "allocation_plan": "fd1172836742119d5461e3c79279f1c11b99209c973c13dbc5b88132a55b8e85",
+    "final_review_coverage_audit": "469898ab8ef2b1e8c00b3c620cf7fcbf07a7ac5cc1fbd7f38ec099370d21fe75",
+    "final_review_coverage_ledger": "2da25cce40df8602daa055bae3f16108efda806543a1aca5e6d18958764378a0",
+    "final_review_packet": "407d485153ffe5bc98385e36a472860fd856038abe3298f15228f21272b8d0a0",
+    "gold_contract_drafts": "19845cfcb1e629b91979c68bab37f742f10daaed591b51d45aa6930c6e012f7b",
+    "query_drafts": "eb8ff0d2e8b2d8389c5b70fe15f7e3babccb6f5833d0f92575571fc4da21f6b3",
+    "structural_audit": "7646c61bb32addb1d6ef6f69384836373c210a41214cfaf29301770790d33000"
+  },
+  "minimum_matching_isolated_passes_per_query": 3,
+  "next_required_gate": "corpus_and_chunk_freeze_then_page_to_chunk_gold_resolution",
+  "output_sha256": {
+    "query_consensus_ledger": "15bfd490e73af495997f68d15955918655bba283b12c40f730c5d20b9304730b",
+    "sealed_page_level_gold_contracts": "f5a4b80ed83d8d23d75dad9fd0b0a4e8988fbb2042ad279739a9bc93e60329e3",
+    "sealed_queries": "79679b0f06ae4439bee26b65e9c8921b85cb99f80c73076e470e21e60b9fcb25"
+  },
+  "query_count": 96,
+  "schema_version": "v6-query-gold-seal-manifest-1",
+  "seal_scope": "query_text_and_page_level_gold_contracts_only",
+  "sealed_at_utc": "2026-08-01T14:21:21.603120+00:00",
+  "stratum_counts": {
+    "current_only": 32,
+    "explicit_history": 32,
+    "hard_negative_current": 32
+  }
+}

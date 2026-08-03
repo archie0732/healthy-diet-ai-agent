@@ -1,0 +1,117 @@
+{
+  "coverage_ledger_sha256": "2da25cce40df8602daa055bae3f16108efda806543a1aca5e6d18958764378a0",
+  "final_packet_sha256": "407d485153ffe5bc98385e36a472860fd856038abe3298f15228f21272b8d0a0",
+  "fresh_retrieval_allowed": false,
+  "fully_covered_query_count": 96,
+  "passing_review_count_distribution": {
+    "3": 92,
+    "5": 4
+  },
+  "query_contracts_sealable": true,
+  "query_count": 96,
+  "required_passing_reviews_per_query": 3,
+  "review_gap_query_count": 0,
+  "review_gap_query_ids": [],
+  "runs": [
+    {
+      "directory": "v6_query_review_v2",
+      "matching_final_contract_count": 63,
+      "packet_sha256": "31ece82ddb04a4b686529cd95d4447fb80f7a35b76969e835612af6259b35e4f",
+      "passing_final_contract_count": 63,
+      "review_file": "CODEX_QUERY_REVIEW.jsonl",
+      "review_identity": "codex_initial",
+      "review_sha256": "75a6d15b6a4faa7e9ba80d28e4e73e089e6c7c41bffda377376928d797ba0a04"
+    },
+    {
+      "directory": "v6_query_review_v2",
+      "matching_final_contract_count": 63,
+      "packet_sha256": "31ece82ddb04a4b686529cd95d4447fb80f7a35b76969e835612af6259b35e4f",
+      "passing_final_contract_count": 63,
+      "review_file": "GEMINI_QUERY_REVIEW_MERGED.jsonl",
+      "review_identity": "gemini_v2_merged",
+      "review_sha256": "557a84335a4ca8cbb3a30921ed34589841d27b9df196a2161625c480f3afacdd"
+    },
+    {
+      "directory": "v6_query_review_v2",
+      "matching_final_contract_count": 63,
+      "packet_sha256": "31ece82ddb04a4b686529cd95d4447fb80f7a35b76969e835612af6259b35e4f",
+      "passing_final_contract_count": 63,
+      "review_file": "CODEX_GPT5_ADJUDICATOR_QUERY_REVIEW.jsonl",
+      "review_identity": "codex_session_019fbd29",
+      "review_sha256": "efc692baf932248546937c08fc8aa4bc77a5bf086a9f0100447ceb6fc062a27e"
+    },
+    {
+      "directory": "v6_query_review_delta_26",
+      "matching_final_contract_count": 14,
+      "packet_sha256": "1ad5e80bfc2fdb611ad75701d6e4c15c6cf50b5e0c9295e91655f8cfa20e5a6b",
+      "passing_final_contract_count": 14,
+      "review_file": "GEMINI_QUERY_REVIEW.jsonl",
+      "review_identity": "gemini_delta26",
+      "review_sha256": "902bc4050067cbc25710f58c7a9989e880e4945ca97f1f721c57c5ea1ecc505f"
+    },
+    {
+      "directory": "v6_query_review_delta_26",
+      "matching_final_contract_count": 14,
+      "packet_sha256": "1ad5e80bfc2fdb611ad75701d6e4c15c6cf50b5e0c9295e91655f8cfa20e5a6b",
+      "passing_final_contract_count": 14,
+      "review_file": "GPT_5_6_THINKING_QUERY_REVIEW.jsonl",
+      "review_identity": "gpt56_delta26",
+      "review_sha256": "7a32e28fad56f05ddffa1a8d5ae1ab1fa9819fcfdeb769ba33d7092a936f59db"
+    },
+    {
+      "directory": "v6_query_review_delta_23",
+      "matching_final_contract_count": 19,
+      "packet_sha256": "3b1bdd0580689e2aee53b3cd776323e6df7572f591ebe29d0530cc3566d9d024",
+      "passing_final_contract_count": 19,
+      "review_file": "GEMINI_QUERY_REVIEW.jsonl",
+      "review_identity": "gemini_delta23",
+      "review_sha256": "d3943ef6469e21de6799732190cabc415d7e0b2616e6affed0cf59db905247ed"
+    },
+    {
+      "directory": "v6_query_review_delta_23",
+      "matching_final_contract_count": 19,
+      "packet_sha256": "3b1bdd0580689e2aee53b3cd776323e6df7572f591ebe29d0530cc3566d9d024",
+      "passing_final_contract_count": 19,
+      "review_file": "GPT_5_6_THINKING_QUERY_REVIEW.jsonl",
+      "review_identity": "gpt56_delta23",
+      "review_sha256": "5dcd469d579a86ed125168ded05f4123c689dad0f15fd3a4375761978831d83e"
+    },
+    {
+      "directory": "v6_query_review_delta_4",
+      "matching_final_contract_count": 4,
+      "packet_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+      "passing_final_contract_count": 4,
+      "review_file": "GEMINI_QUERY_REVIEW.jsonl",
+      "review_identity": "gemini_delta4",
+      "review_sha256": "cd48a1bcc5ede7178fa34c68950191c37dfa5e8d86912216775534ccda05f09a"
+    },
+    {
+      "directory": "v6_query_review_delta_4",
+      "matching_final_contract_count": 4,
+      "packet_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+      "passing_final_contract_count": 4,
+      "review_file": "CODEX_GPT5_QUERY_REVIEW.jsonl",
+      "review_identity": "codex_session_019fbd29",
+      "review_sha256": "7245e27895acf039e03c35e6bd4c3538b1100d73930e30e327ba124bb162c51c"
+    },
+    {
+      "directory": "v6_query_review_delta_4",
+      "matching_final_contract_count": 4,
+      "packet_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+      "passing_final_contract_count": 4,
+      "review_file": "GPT_5_6_FINAL_QUERY_REVIEW.jsonl",
+      "review_identity": "gpt56_final",
+      "review_sha256": "711f4fe09129d6e5984d22a2ffdb30a9b3bbb7534e425481755d370f51ee2b5f"
+    },
+    {
+      "directory": "v6_query_review_final_gap_33",
+      "matching_final_contract_count": 33,
+      "packet_sha256": "f4ad898d1c71a04f162b6782aeb792fd1bb75670ed9b9bc0d1fd491c177dc4a4",
+      "passing_final_contract_count": 33,
+      "review_file": "GPT_5_6_GAP_FINAL_QUERY_REVIEW.jsonl",
+      "review_identity": "gpt56_gap_final",
+      "review_sha256": "7a17dbeee69c7f242a0a5546a8559d16f775d4434a8c4884637fae72aabb1dd9"
+    }
+  ],
+  "schema_version": "v6-final-review-coverage-audit-1"
+}

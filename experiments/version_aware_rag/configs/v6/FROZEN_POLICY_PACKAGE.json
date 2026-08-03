@@ -1,0 +1,90 @@
+{
+  "artifact_sha256": {
+    "corpus_freeze_manifest": "97b681514db1fb4f0096af4896bbca7dfefd0a16dfac12a912a5ad6f28c26214",
+    "evaluator": "f9e68435661cf1b12bb91d5d486a991e5677b7a498749e98ac2c5b0f9878ae60",
+    "fresh_runner": "63badebeab92d942d4edc30ec0382e3d04412ac1977c31ab6d8b3547dc10ca77",
+    "frozen_chunks": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a",
+    "invariant_tests": "c448af6eaf5696f78de5940aa04ceace6746bb5b77ca73208c811ec89d59d377",
+    "pair_boost_sensitivity": "6719e6911967746c1886900e686a6245d09297c2c633b5df2e8bf1d622ef460e",
+    "retrieval_core": "e1989ebc6f8f3f5c33e9988768f4425853cb1d0d6aeb70b19da64711b3b5f68d",
+    "runtime_relation_manifest": "e8d200bb6579a6b04e7cb35e1b95621713db1f76d92256636699e66fc963ae10",
+    "sealed_chunk_gold": "48188c89a8072f3526a47ee6d435427397ff02d322c038fb148c950c34115642",
+    "sealed_queries": "79679b0f06ae4439bee26b65e9c8921b85cb99f80c73076e470e21e60b9fcb25",
+    "sealed_runtime_relations": "c3b1f760a80385b50090028a329aee2549c364c28b665fef9e9e51333b5adbe1"
+  },
+  "external_model_api_allowed": false,
+  "fresh_test_execution_count": 0,
+  "frozen_at_utc": "2026-08-01T14:43:58.884501+00:00",
+  "metrics": {
+    "mrr_definition": "reciprocal rank of first chunk belonging to any required evidence group",
+    "ndcg_definition": "binary required-chunk relevance with ideal count equal to number of required groups",
+    "primary": "per-query required-evidence-group Recall@3 E minus B in explicit_history",
+    "required_group_rule": "one page-level evidence unit remains one denominator group; hit if any acceptable chunk is retrieved",
+    "secondary": [
+      "macro and micro Recall@1/3/5",
+      "both-evidence coverage@3",
+      "candidate Recall@5/10/20",
+      "MRR",
+      "nDCG@3",
+      "router precision/recall/F1",
+      "unsafe query-hit and slot-hit rates"
+    ]
+  },
+  "research_scope": "retrieval_stage_evidence_selection_only",
+  "retrieval": {
+    "bm25_b": 0.75,
+    "bm25_k1": 1.2,
+    "candidate_pairing": "in-pool only; no out-of-pool expansion",
+    "candidate_pool_size": 20,
+    "history_pair_boost": 0.5,
+    "mate_gate": "strictly positive raw BM25 and present in shared candidate pool",
+    "minimum_pair_mate_raw_bm25": 0.0,
+    "pair_boost_selection_source": "prior opened V5 development and validation only",
+    "pair_seed": "highest raw BM25 candidate",
+    "primary_output_k": 3,
+    "recency_lambda": 0.75,
+    "recency_normalization": "min-max publication year within the shared top-20 candidate pool",
+    "robustness_output_k": [
+      1,
+      5
+    ],
+    "tie_break": "ascending chunk_id",
+    "tokenization": "lowercase ASCII alphanumeric regex with frozen stopword set"
+  },
+  "router": {
+    "id": "explicit_temporal_history_intent_v1_reused_without_v6_tuning",
+    "patterns": [
+      "\\b2003\\b",
+      "\\bhistorical(?:ly)?\\b",
+      "\\bprevious(?:ly)?\\b",
+      "\\bearlier\\b",
+      "\\bformerly\\b",
+      "\\bhow did\\b.{0,100}\\bchange\\b",
+      "\\bfrom\\b.{0,100}\\bto (?:the )?current\\b"
+    ]
+  },
+  "schema_version": "v6-frozen-policy-package-1",
+  "statistics": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260801,
+    "confidence_interval": "lineage-clustered paired bootstrap percentile 95%",
+    "positive_claim_rule": "effect > 0, p < 0.05, and CI lower bound > 0",
+    "primary_test": "two-sided exact paired sign-flip permutation using dynamic programming",
+    "safety_noninferiority_margin_absolute": 0.05,
+    "safety_strata": [
+      "current_only",
+      "hard_negative_current"
+    ],
+    "unique_forbidden_tolerance": 0
+  },
+  "status": "frozen_before_confirmatory_retrieval",
+  "systems": {
+    "A": "BM25 base_norm",
+    "B": "BM25 base_norm plus recency",
+    "C": "if explicit-history disable recency; otherwise B",
+    "D": "always-on in-pool seed-lineage pairing on top of B",
+    "E": "if explicit-history disable recency and apply in-pool seed-lineage pairing; otherwise B",
+    "F": "E without pair boost; definitionally identical to C"
+  },
+  "tuning_after_freeze_allowed": false
+}

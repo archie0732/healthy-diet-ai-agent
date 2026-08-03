@@ -1,0 +1,31 @@
+{
+  "chunk_level_gold_sealable": true,
+  "confidence_distribution": {
+    "high": 326,
+    "medium": 21
+  },
+  "errors": [],
+  "fresh_retrieval_allowed": false,
+  "input_sha256": {
+    "chunks": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a",
+    "page_level_gold": "f5a4b80ed83d8d23d75dad9fd0b0a4e8988fbb2042ad279739a9bc93e60329e3",
+    "review_packet": "407d485153ffe5bc98385e36a472860fd856038abe3298f15228f21272b8d0a0",
+    "sealed_queries": "79679b0f06ae4439bee26b65e9c8921b85cb99f80c73076e470e21e60b9fcb25"
+  },
+  "low_confidence_count": 0,
+  "low_confidence_items": [],
+  "method_distribution": {
+    "fuzzy_recommendation_tokens_plus_context": 13,
+    "normalized_recommendation_anchor_plus_context": 326,
+    "query_and_construction_basis_context_for_unlabeled_rationale_page": 8
+  },
+  "output_sha256": {
+    "chunk_level_gold_draft": "3e671a9569fc42b65c3017361e5f0a3fa543f50275469b90793444a858d8cb12",
+    "resolution_ledger": "e7f3900d3ab48b6d810235e7545ed53e1b205e34eee8609f913731369a820a48"
+  },
+  "query_count": 96,
+  "required_evidence_group_count": 133,
+  "resolution_record_count": 347,
+  "schema_version": "v6-page-to-chunk-resolution-audit-1",
+  "status": "pass_with_review_required"
+}

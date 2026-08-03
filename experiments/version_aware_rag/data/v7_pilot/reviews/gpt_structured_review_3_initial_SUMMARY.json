@@ -1,0 +1,10 @@
+{
+  "reviewer": "gpt_structured_review_3_initial",
+  "model_metadata": "MODEL_METADATA: GPT-5.6 Thinking; session or run identifier not visible",
+  "record_count": 40,
+  "eligible_count": 38,
+  "ineligible_query_ids": [
+    "v7q-hn-007",
+    "v7q-hn-008"
+  ]
+}

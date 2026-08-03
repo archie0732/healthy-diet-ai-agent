@@ -1,0 +1,13 @@
+{
+  "candidate_order_valid": true,
+  "imported_at_utc": "2026-08-01T09:22:02.390210+00:00",
+  "judgment_count": 66,
+  "model_metadata_raw": "Gemini 3.5 Flash, Antigravity run 32076dcd-9b20-4a1a-b018-05344a66706a",
+  "normalized_review_sha256": "d2beada17807631651b816f41d5d30fe8b814f8c3fcc4e5ef6e889bee5afa8f2",
+  "packet_sha256": "a84952b4054d8a476cc06abe243b3f015ebe4b732fe86ab0abc17ad930701e29",
+  "preserved_raw_response_sha256": "3d545fae84372635cb9d32895cce02693854989b9180509c32a5e6382f947fcf",
+  "provider": "gemini",
+  "schema_valid": true,
+  "schema_version": "v6-external-relation-review-manifest-1",
+  "source_raw_response_sha256": "3d545fae84372635cb9d32895cce02693854989b9180509c32a5e6382f947fcf"
+}

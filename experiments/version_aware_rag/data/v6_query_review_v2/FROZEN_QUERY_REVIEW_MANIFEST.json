@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-08-01T11:38:13.862744+00:00",
+  "gold_sha256": "174b2ace10c646edccfff2f6fb4d7c3b7a461bf54f067156b5f377dc925b8577",
+  "packet_sha256": "31ece82ddb04a4b686529cd95d4447fb80f7a35b76969e835612af6259b35e4f",
+  "prohibited_inputs": [
+    "router rules",
+    "retrieval outputs",
+    "boost values",
+    "system identity",
+    "other reviewer outputs"
+  ],
+  "prompt_sha256": "260fe17f622f2511ec95fc20db0e487cab5d0403a4301f658187443fbfa6f559",
+  "query_sha256": "7f35774098f1dea9e001b8117bca63e426a164a72401282a792d489602140897",
+  "record_count": 96,
+  "schema_sha256": "5a21e36a3c00ad4c5121a14c0178b624a14709f618910992b4f2d78740ee49b9",
+  "schema_version": "v6-query-review-manifest-1"
+}

@@ -1,0 +1,11 @@
+{
+  "boundary": "within_each_pdf_page_only",
+  "chunk_id_policy": "sha256(document_id,page_number,page_char_start,page_char_end,exact_text) first 20 hex",
+  "empty_page_policy": "retain_page_map_record_with_zero_chunks",
+  "final_window_policy": "extend_previous_window_to_page_end_if_remainder_below_minimum",
+  "max_words": 220,
+  "minimum_final_window_words": 60,
+  "overlap_words": 40,
+  "schema_version": "v6-chunking-spec-1",
+  "token_unit": "unicode_non_whitespace_regex_\\S+"
+}

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "all_frozen_hashes_match": true,
+    "guard_ready_and_unused": true,
+    "policy_matches_guard": true,
+    "raw_output_absent": true,
+    "runner_has_no_gold_path_reference": true,
+    "seven_invariant_tests_pass": true
+  },
+  "fresh_retrieval_allowed": true,
+  "hash_checks": {
+    "corpus_freeze_manifest": true,
+    "evaluator": true,
+    "fresh_runner": true,
+    "frozen_chunks": true,
+    "invariant_tests": true,
+    "pair_boost_sensitivity": true,
+    "retrieval_core": true,
+    "runtime_relation_manifest": true,
+    "sealed_chunk_gold": true,
+    "sealed_queries": true,
+    "sealed_runtime_relations": true
+  },
+  "schema_version": "v6-fresh-preflight-audit-1",
+  "status": "pass",
+  "test_output": "test_all_systems_share_exact_candidate_order (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_all_systems_share_exact_candidate_order) ... ok\ntest_c_and_f_are_definitionally_identical (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_c_and_f_are_definitionally_identical) ... ok\ntest_explicit_e_disables_recency_and_applies_pair_boost (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_explicit_e_disables_recency_and_applies_pair_boost) ... ok\ntest_router_is_frozen_v5_rule (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_router_is_frozen_v5_rule) ... ok\ntest_ties_break_by_chunk_id (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_ties_break_by_chunk_id) ... ok\ntest_untriggered_e_is_identical_to_b (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_untriggered_e_is_identical_to_b) ... ok\ntest_wrong_seed_does_not_boost_zero_score_mate (experiments.version_aware_rag.tests.unit.test_v6_retrieval_invariants.V6RetrievalInvariantTests.test_wrong_seed_does_not_boost_zero_score_mate) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK\n"
+}

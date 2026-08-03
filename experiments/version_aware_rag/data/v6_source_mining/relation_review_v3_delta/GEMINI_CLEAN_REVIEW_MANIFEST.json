@@ -1,0 +1,13 @@
+{
+  "candidate_order_valid": true,
+  "imported_at_utc": "2026-08-01T10:14:15.862120+00:00",
+  "judgment_count": 6,
+  "model_metadata_raw": "Gemini 3.5 Flash (Medium), Run ID: 54ebc3f5-e4b6-4c38-95e4-39b922eac7b7",
+  "normalized_review_sha256": "de14ba036c0645de213c0045e2a6dd05a4dd32dcbe296309e85ea0fd6d66d539",
+  "packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "preserved_raw_response_sha256": "6a1564f24e47f9d592eed729d095089f1a4881bdb3569bc1247d265b50614d5c",
+  "provider": "gemini",
+  "schema_valid": true,
+  "schema_version": "v6-external-relation-review-manifest-1",
+  "source_raw_response_sha256": "6a1564f24e47f9d592eed729d095089f1a4881bdb3569bc1247d265b50614d5c"
+}

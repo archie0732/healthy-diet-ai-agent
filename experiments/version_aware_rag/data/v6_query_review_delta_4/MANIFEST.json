@@ -1,0 +1,15 @@
+{
+  "attachment_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+  "fresh_retrieval_allowed": false,
+  "full_packet_sha256": "407d485153ffe5bc98385e36a472860fd856038abe3298f15228f21272b8d0a0",
+  "impacted_query_ids": [
+    "v6q-eh-009",
+    "v6q-eh-010",
+    "v6q-eh-013",
+    "v6q-eh-014"
+  ],
+  "prompt_mentions_filename_or_path": false,
+  "prompt_sha256": "60df33d0d698642d6de4bcaf741d0c29f8e243d296435aefeb519a6d27a8ca9e",
+  "record_count": 4,
+  "schema_version": "v6-query-review-delta-manifest-3"
+}

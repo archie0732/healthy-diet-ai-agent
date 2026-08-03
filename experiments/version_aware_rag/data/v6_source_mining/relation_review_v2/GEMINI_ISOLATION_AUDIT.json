@@ -1,0 +1,17 @@
+{
+  "schema_version": "v6-review-isolation-audit-1",
+  "provider": "gemini",
+  "antigravity_run_id": "051e84bf-9f8c-4c38-b005-a197d511a4b4",
+  "content_validation": "pass",
+  "strict_isolation_compliance": "fail",
+  "usable_as_provisional_sensitivity_review": true,
+  "usable_as_final_isolated_judge": false,
+  "observations": [
+    "The transcript records direct access to the repository copy of the packet instead of use limited to the three attached frozen inputs.",
+    "The transcript records listing relation_review_v2 and viewing GEMINI_ANTIGRAVITY_HANDOFF.md and FROZEN_MANIFEST.json.",
+    "The transcript also records access to the invalidated relation_review_v1 packet and manifest during orientation.",
+    "No transcript event shows CODEX_RAW_REVIEW.jsonl or CODEX_REVIEW_MANIFEST.json being opened.",
+    "No web browsing event is recorded."
+  ],
+  "required_resolution": "Repeat Gemini review in a clean Antigravity task with only the three frozen v2 input files available and without workspace/repository tools, or disclose and treat this run as non-isolated sensitivity evidence only."
+}

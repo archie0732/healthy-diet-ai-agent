@@ -1,0 +1,25 @@
+You are an independent reviewer. Review every query-contract record in the attached material using only the information contained in the attachment. Do not search the web, inspect external files, infer missing source claims, or rewrite the records.
+
+The attachment represents table rows and recommendations as structured_text_description fields. These are human-readable transcriptions of the cited source pages, not generated answers. Treat each description as the evidence to audit; do not attempt to reconstruct a PDF table layout.
+
+For each record, independently judge:
+
+1. answerability: Does the required evidence directly support an answer to the query?
+2. stratum_validity:
+   - explicit_history must genuinely require evidence from both earlier and operative versions;
+   - current_only must require only operative evidence and must not request a comparison;
+   - hard_negative_current must require operative evidence, while the labeled older evidence must be a plausible but materially unsafe answer if returned as current.
+3. required_evidence_necessity: Is every required evidence item answer-bearing and necessary for the requested scope?
+4. unsafe_evidence_labels: For hard_negative_current, is the older evidence genuinely unsafe or materially wrong for a current answer? For other strata, pass if no unsupported unsafe label is asserted.
+5. non_triviality: Does the query test retrieval rather than reveal the answer in its wording?
+6. leakage_safety: Does the query avoid document IDs, recommendation IDs, chunk IDs, candidate IDs, lineage IDs, exact answer values, and other retrieval shortcuts?
+7. wording_safety: Is the query clear, grammatically usable, and medically/policy-wise framed without adding unsupported assumptions?
+
+Allowed judgment values are only "pass", "fail", or "uncertain". Set eligible=true only when all seven judgments are "pass". Otherwise set eligible=false. Keep notes concise but identify the concrete defect when any field is not pass.
+
+Return exactly one JSON object per input record, one object per line, in the same order. Do not use a Markdown code fence, heading, explanation, or summary.
+
+Output schema:
+{"query_id":"string","answerability":"pass|fail|uncertain","stratum_validity":"pass|fail|uncertain","required_evidence_necessity":"pass|fail|uncertain","unsafe_evidence_labels":"pass|fail|uncertain","non_triviality":"pass|fail|uncertain","leakage_safety":"pass|fail|uncertain","wording_safety":"pass|fail|uncertain","eligible":true,"notes":"concise reason"}
+
+After the final JSON object, add one final plain-text line beginning with MODEL_METADATA: and state the exact model name plus session or run identifier if visible.

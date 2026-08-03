@@ -1,0 +1,17 @@
+{
+  "audit_sha256": "b37f2657153030dde93c0ba7ef72afab48c27d5867f1869fb4dbb336d6694ff4",
+  "candidate_count": 66,
+  "candidate_source_sha256": "7d5f12803761ed8cdcb79d2ef532c26a715ae9f89d1603d30a5c86dd5bc28197",
+  "created_at_utc": "2026-08-01T08:31:06.557411+00:00",
+  "output_schema_sha256": "ce8bc5c467f0ccf7f4b409951fbbd7a299a35d0600aab586726e047f22dea70c",
+  "packet_sha256": "a84952b4054d8a476cc06abe243b3f015ebe4b732fe86ab0abc17ad930701e29",
+  "prohibited_inputs": [
+    "router code",
+    "retrieval scores or rankings",
+    "system identity",
+    "other reviewer judgments",
+    "test outcomes"
+  ],
+  "prompt_sha256": "932f60c3516339b4a324ec2cf1c52664b6e1387ed3df489906e55ed60cbf09d7",
+  "schema_version": "v6-blind-relation-review-manifest-1"
+}

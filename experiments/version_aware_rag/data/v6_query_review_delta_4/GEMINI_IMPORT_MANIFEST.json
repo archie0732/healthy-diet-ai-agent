@@ -1,0 +1,16 @@
+{
+  "eligible_count": 4,
+  "eligible_flags_consistent": true,
+  "fresh_retrieval_allowed": false,
+  "imported_at_utc": "2026-08-01T13:22:07.162454+00:00",
+  "metadata": "MODEL_METADATA: Gemini 3.6 Flash (Medium) | Session 8c3ee7ec-0e45-4128-96b1-fb0715dbcd9d",
+  "normalized_review_sha256": "cd48a1bcc5ede7178fa34c68950191c37dfa5e8d86912216775534ccda05f09a",
+  "packet_sha256": "42efa1fc2fcd0fbeb1da34612346be2f93148bb893d0565c5a8c9bbe8740eece",
+  "preserved_raw_sha256": "3e2c7fd24b988d0a9e6839c45720fd5ff3a498c0214cc1b1a9e873fe58b62f7c",
+  "query_ids_in_exact_packet_order": true,
+  "record_count": 4,
+  "reviewer_label": "gemini",
+  "schema_valid": true,
+  "schema_version": "v6-query-review-delta-import-manifest-1",
+  "source_response_sha256": "3e2c7fd24b988d0a9e6839c45720fd5ff3a498c0214cc1b1a9e873fe58b62f7c"
+}

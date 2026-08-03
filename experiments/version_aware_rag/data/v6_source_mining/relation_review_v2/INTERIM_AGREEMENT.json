@@ -1,0 +1,389 @@
+{
+  "all_main_strata_target_24_feasible": true,
+  "candidate_count": 66,
+  "candidate_source_sha256": "7d5f12803761ed8cdcb79d2ef532c26a715ae9f89d1603d30a5c86dd5bc28197",
+  "review_hashes": {
+    "chatgpt": "2d08bd2174f954ceac66c29e0ee76032694c534f19f3871165ad78a8af60d3fd",
+    "codex": "ccdd7478fa43485471c8601b2ccc4831e3677fa2a1056c89ff402d3cde04d7c6",
+    "gemini": "d2beada17807631651b816f41d5d30fe8b814f8c3fcc4e5ef6e889bee5afa8f2"
+  },
+  "reviewer_strict_isolation": {
+    "chatgpt": true,
+    "codex": true,
+    "gemini": true
+  },
+  "reviewers_missing": [],
+  "reviewers_not_strictly_eligible": [],
+  "reviewers_present": [
+    "chatgpt",
+    "codex",
+    "gemini"
+  ],
+  "schema_version": "v6-relation-review-agreement-1",
+  "status": "complete",
+  "structured_disagreement_candidate_count": 27,
+  "structured_disagreements": [
+    {
+      "candidate_id": "v6rel-wasting-a7-2013-2023",
+      "fields": {
+        "stratum:compatible_history": {
+          "chatgpt": "pass",
+          "codex": "pass",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-vitamin-d-2016-2020",
+      "fields": {
+        "stratum:conditional_merge": {
+          "chatgpt": "pass",
+          "codex": "pass",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-zinc-2016-2021",
+      "fields": {
+        "stratum:conditional_merge": {
+          "chatgpt": "pass",
+          "codex": "pass",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-wasting-b7-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-wasting-b8-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-wasting-b17-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-wasting-c4-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-school-food-provision-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-school-nutrition-standards-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-school-nudging-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-hiv-feeding-support-2010-2016",
+      "fields": {
+        "stratum:conditional_merge": {
+          "chatgpt": "pass",
+          "codex": "pass",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-fiscal-ssb-tax-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-fiscal-unhealthy-food-tax-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-fiscal-healthy-food-subsidy-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-infant-nppm-vegetable-purees-2019-2022",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "pass",
+          "codex": "fail",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-infant-nppm-cheese-meals-2019-2022",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "pass",
+          "codex": "fail",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-infant-nppm-protein-not-first-2019-2022",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "pass",
+          "codex": "fail",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-infant-nppm-protein-first-2019-2022",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "pass",
+          "codex": "fail",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-healthy-eating-activity-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-nutrition-education-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-balanced-energy-protein-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-high-protein-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-daily-iron-folate-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-intermittent-iron-folate-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-calcium-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-vitamin-a-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    },
+    {
+      "candidate_id": "v6rel-anc-caffeine-current",
+      "fields": {
+        "stratum:hard_negative_current": {
+          "chatgpt": "fail",
+          "codex": "uncertain",
+          "gemini": "fail"
+        }
+      }
+    }
+  ],
+  "unanimous_pass_capacity": {
+    "conditional_merge": {
+      "family_counts": {
+        "antenatal_nutrition": 1,
+        "food_marketing_to_children": 5,
+        "hiv_and_infant_feeding": 1,
+        "wasting_and_nutritional_oedema": 7,
+        "who_europe_infant_food_nppm": 6,
+        "who_europe_nutrient_profile_model": 17
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 22,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 25,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "current_only": {
+      "family_counts": {
+        "antenatal_nutrition": 11,
+        "fiscal_policies_for_healthy_diets": 3,
+        "food_marketing_to_children": 4,
+        "school_food_environment": 3,
+        "wasting_and_nutritional_oedema": 7,
+        "who_europe_infant_food_nppm": 6,
+        "who_europe_nutrient_profile_model": 6
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 30,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 34,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "explicit_history": {
+      "family_counts": {
+        "antenatal_nutrition": 3,
+        "food_marketing_to_children": 5,
+        "hiv_and_infant_feeding": 2,
+        "wasting_and_nutritional_oedema": 7,
+        "who_europe_infant_food_nppm": 10,
+        "who_europe_nutrient_profile_model": 17
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 25,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 28,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "hard_negative_current": {
+      "family_counts": {
+        "antenatal_nutrition": 1,
+        "food_marketing_to_children": 4,
+        "hiv_and_infant_feeding": 1,
+        "wasting_and_nutritional_oedema": 6,
+        "who_europe_infant_food_nppm": 6,
+        "who_europe_nutrient_profile_model": 6
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 21,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 24,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    }
+  },
+  "warning": "Unanimous means all reviewer files currently loaded. This is not final three-model consensus until ChatGPT, Gemini, and Codex are all present and each pass satisfies strict isolation."
+}

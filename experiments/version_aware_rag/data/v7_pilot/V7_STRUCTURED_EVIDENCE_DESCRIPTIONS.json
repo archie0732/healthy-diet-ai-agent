@@ -1,0 +1,82 @@
+{
+  "v6rel-wasting-b5-2013-2023": {
+    "older": "2013 recommendation 1.5 allowed discharge when either weight-for-height/length was at least -2 Z-score or MUAC was at least 125 mm, together with no oedema for at least 2 weeks. The same anthropometric indicator used for diagnosis was to be used to confirm recovery. Percentage weight gain was not an exit criterion.",
+    "current": "2023 recommendation B5 requires all exit conditions: WHZ/WLZ at least -2 SD and MUAC at least 125 mm for at least 2 consecutive visits, plus no nutritional oedema for at least 2 consecutive visits. Percentage and absolute weight gain are not exit criteria, and relevant longer-term medical or social support referrals must also be addressed."
+  },
+  "v6rel-food-marketing-comprehensive-2010-2023": {
+    "older": "The 2010 recommendation allowed Member States to choose either a stepwise or a comprehensive approach to reduce children's exposure to, and the persuasive power of, marketing for foods high in saturated fat, trans fat, free sugars, or salt.",
+    "current": "The 2023 recommendation requires policies to be sufficiently comprehensive to minimize migration of marketing to unrestricted media, spaces, or age groups, and to restrict marketing's persuasive power."
+  },
+  "v6rel-hb-child-6-23-any-2011-2024": {
+    "older": "The 2011 table used one category for children aged 6-59 months and defined anaemia as haemoglobin below 110 g/L.",
+    "current": "The 2024 table separates children aged 6-23 months and defines anaemia as haemoglobin below 105 g/L. The normative statement identifies this population as having a modified cutoff."
+  },
+  "v6rel-hb-child-6-23-mild-2011-2024": {
+    "older": "The 2011 table defined mild anaemia for children aged 6-59 months as haemoglobin 100-109 g/L.",
+    "current": "The 2024 table defines mild anaemia for children aged 6-23 months as haemoglobin 95-104 g/L."
+  },
+  "v6rel-hb-child-6-23-moderate-2011-2024": {
+    "older": "The 2011 table defined moderate anaemia for children aged 6-59 months as haemoglobin 70-99 g/L.",
+    "current": "The 2024 table defines moderate anaemia for children aged 6-23 months as haemoglobin 70-94 g/L."
+  },
+  "v6rel-hb-pregnancy-t2-moderate-2011-2024": {
+    "older": "The 2011 table used a pregnancy-wide moderate-anaemia range of haemoglobin 70-99 g/L without a distinct second-trimester range.",
+    "current": "The 2024 table defines moderate anaemia in the second trimester of pregnancy as haemoglobin 70-94 g/L."
+  },
+  "v6rel-anc-mms-2016-2020": {
+    "older": "The 2016 antenatal-care guideline did not recommend multiple micronutrient supplementation for pregnant women to improve maternal and perinatal outcomes.",
+    "current": "The 2020 update recommends antenatal multiple micronutrient supplements containing iron and folic acid only in the context of rigorous research, and explicitly states that it updates and supersedes the 2016 recommendation."
+  },
+  "v6rel-anc-vitamin-d-2016-2020": {
+    "older": "The 2016 antenatal-care guideline did not recommend vitamin D supplementation for pregnant women to improve maternal and perinatal outcomes.",
+    "current": "The 2020 update still does not recommend oral vitamin D supplementation for all pregnant women. It states that the 2016 recommendation is not altered; supplementation at the recommended nutrient intake may be considered when vitamin D deficiency is suspected."
+  },
+  "v6rel-anc-zinc-2016-2021": {
+    "older": "The 2016 antenatal-care guideline recommended zinc supplementation during pregnancy only in the context of rigorous research.",
+    "current": "The 2021 update retains the 2016 position: zinc is not recommended as routine antenatal care and is recommended only in the context of rigorous research."
+  },
+  "v6rel-food-marketing-all-ages-2010-2023": {
+    "older": "The 2010 guidance required Member States to define policy components, including the age group covered, according to national circumstances; it did not fix one universal protected age range.",
+    "current": "The 2023 recommendation requires food-marketing policies to protect children of all ages. Its remarks define children as people below age 18 unless applicable law sets majority earlier."
+  },
+  "v6rel-food-marketing-government-npm-2010-2023": {
+    "older": "The 2010 guidance required governments to set clear policy definitions but allowed different ways to distinguish foods covered by restrictions, including existing or newly developed approaches.",
+    "current": "The 2023 recommendation specifically requires a government-led nutrient-profile model to classify foods restricted from marketing."
+  },
+  "v6rel-food-marketing-mandatory-2010-2023": {
+    "older": "The 2010 guidance allowed statutory, self-regulatory, voluntary, or co-regulatory policy approaches, provided the selected approach operated within a framework designed to achieve the policy objective.",
+    "current": "The 2023 recommendation requires policies restricting food marketing to children to be mandatory."
+  },
+  "v6rel-hiv-breastfeeding-duration-2010-2016": {
+    "older": "The 2010 recommendation advised mothers living with HIV to exclusively breastfeed for 6 months, introduce complementary foods, and continue breastfeeding for the first 12 months; stopping was conditional on an adequate and safe diet without breast milk.",
+    "current": "The 2016 recommendation advises breastfeeding for at least 12 months and permits continuation to 24 months or beyond while the mother receives support for antiretroviral-therapy adherence. It explicitly updates the duration component while retaining the earlier feeding-practice and stopping components."
+  },
+  "v6rel-hiv-feeding-support-2010-2016": {
+    "older": "The 2010 guidance presented support for mothers living with HIV as a guiding principle, including counselling and services to support the nationally recommended infant-feeding practice.",
+    "current": "The 2016 guideline makes this a formal strong recommendation: national and local authorities should coordinate and implement breastfeeding-support services in health facilities, workplaces, communities, and homes for women living with HIV."
+  },
+  "v6rel-wasting-a2-2013-2023": {
+    "older": "The 2013 recommendation admitted infants under 6 months with severe acute malnutrition for inpatient care when they had a serious clinical condition or medical complication, or recent weight loss or failure to gain weight, among its listed criteria.",
+    "current": "The 2023 A2 recommendation automatically refers and admits infants under 6 months at risk of poor growth when they have an IMCI danger sign, a severe acute medical problem, nutritional oedema, or recent weight loss. Other listed concerns, including less acute or longer-term medical problems and specified growth concerns, trigger an in-depth assessment and clinical judgment rather than automatic admission."
+  },
+  "v6rel-wasting-a3-2013-2023": {
+    "older": "The 2013 recommendation allowed transfer of admitted infants under 6 months to outpatient care after medical complications and oedema resolved, appetite and clinical condition were good, satisfactory weight gain continued for at least 3 days, routine interventions were checked, and follow-up support was linked.",
+    "current": "The 2023 A3 recommendation requires no danger signs for 48 hours, resolved acute medical problems, resolving nutritional oedema, good appetite, satisfactory documented weight gain for 2-3 days, attempted referral for longer-term problems, routine interventions or follow-up plans, and caregiver linkage to follow-up support."
+  },
+  "v6rel-wasting-a4-2013-2023": {
+    "older": "The 2013 recommendation allowed infants under 6 months to be discharged from all care when feeding effectively, gaining adequate weight, and having weight-for-length at least -2 Z-score.",
+    "current": "The 2023 A4 recommendation covers the broader group of infants under 6 months at risk of poor growth. Outpatient visit frequency may be reduced after effective feeding and sustained weight gain over 2 consecutive weekly visits, but follow-up continues until assessment at 6 months determines whether further follow-up or referral is required."
+  },
+  "v6rel-wasting-a7-2013-2023": {
+    "older": "The 2013 recommendation stated that admitted infants under 6 months with severe acute malnutrition should not receive undiluted F-100 at any time because of renal solute load and hypernatraemic-dehydration risk.",
+    "current": "The 2023 A7 recommendation prohibits full-strength F-100 when the infant is clinically unstable or has diarrhoea, dehydration, or nutritional oedema. Other breastfeeding, relactation, wet-nursing, and supplementary-feed components are retained."
+  },
+  "v6rel-wasting-b2-2013-2023": {
+    "older": "The 2013 recommendation admitted children with severe acute malnutrition as inpatients for medical complications, severe oedema, poor appetite, or IMCI danger signs; clinically well children with appetite were treated as outpatients.",
+    "current": "The 2023 B2 recommendation retains automatic inpatient referral for danger signs, acute medical problems, severe nutritional oedema, or poor appetite in children aged 6-59 months. It adds an in-depth-assessment pathway for other concerns such as less acute or longer-term medical problems, failure to improve in outpatient care, or previous severe-wasting episodes."
+  },
+  "v6rel-wasting-b3-2013-2023": {
+    "older": "The 2013 recommendation allowed transfer from inpatient to outpatient care when medical complications and oedema were resolving and the child had good appetite and was clinically well and alert; transfer was based on clinical condition, not a specific anthropometric threshold.",
+    "current": "The 2023 B3 recommendation requires no danger signs for 24-48 hours, sufficient resolution of the admitting medical problems, no ongoing weight loss where applicable, resolving oedema below grade +++, good appetite, and attempted referral for longer-term problems. It continues to reject specific anthropometric transfer thresholds."
+  }
+}

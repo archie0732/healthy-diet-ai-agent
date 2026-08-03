@@ -1,0 +1,308 @@
+{
+  "candidate_values": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5
+  ],
+  "development_validation_only": true,
+  "fresh_retrieval_allowed": false,
+  "input_sha256": {
+    "development_MANIFEST.json": "f46f05b29b2a7d5235b536c2657f5b67548da311ed3446661b2165cfd157b8e0",
+    "development_judgments.sealed.jsonl": "d1caed6c4bc22b6467a240c5c82464e881aa48787ac65cebc95aa6dcf2302dad",
+    "development_retrieval_inputs.jsonl": "727318e46aedce02ad9836ca67fb6d8b282cf9e3cebff9f0af211260260ac286",
+    "validation_MANIFEST.json": "090f3cf86452d92832b3b31f029bd24e01bc67aadf476627aa82d04bff39d826",
+    "validation_judgments.sealed.jsonl": "2915ef0e4f5cef345f4787ad1e757edc5be2cbfa13af1b378b78111ea1895187",
+    "validation_retrieval_inputs.jsonl": "5fc3af9ed2e99e1681c050c37cfddc4d8c4dff219901c174ff7fd40e6699b1a4"
+  },
+  "results": [
+    {
+      "effectiveness_selection_score": 2.166666666666667,
+      "eligible_under_safety_constraints": true,
+      "pair_boost": 0.0,
+      "splits": {
+        "development": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.75,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.375,
+            "proposed_both_evidence_coverage": 0.5,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          }
+        },
+        "validation": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.8333333333333334,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.8333333333333334,
+            "query_count": 6
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.3333333333333333,
+            "proposed_both_evidence_coverage": 0.3333333333333333,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.5833333333333334,
+            "query_count": 6
+          }
+        }
+      }
+    },
+    {
+      "effectiveness_selection_score": 2.9791666666666665,
+      "eligible_under_safety_constraints": true,
+      "pair_boost": 0.25,
+      "splits": {
+        "development": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.75,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.375,
+            "proposed_both_evidence_coverage": 0.875,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.9375,
+            "query_count": 8
+          }
+        },
+        "validation": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.8333333333333334,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.8333333333333334,
+            "query_count": 6
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.3333333333333333,
+            "proposed_both_evidence_coverage": 0.5,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.6666666666666666,
+            "query_count": 6
+          }
+        }
+      }
+    },
+    {
+      "effectiveness_selection_score": 3.2291666666666665,
+      "eligible_under_safety_constraints": true,
+      "pair_boost": 0.5,
+      "splits": {
+        "development": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.75,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.375,
+            "proposed_both_evidence_coverage": 0.875,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.9375,
+            "query_count": 8
+          }
+        },
+        "validation": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.8333333333333334,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.8333333333333334,
+            "query_count": 6
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.3333333333333333,
+            "proposed_both_evidence_coverage": 0.6666666666666666,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 6
+          }
+        }
+      }
+    },
+    {
+      "effectiveness_selection_score": 3.2291666666666665,
+      "eligible_under_safety_constraints": true,
+      "pair_boost": 0.75,
+      "splits": {
+        "development": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.75,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.375,
+            "proposed_both_evidence_coverage": 0.875,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.9375,
+            "query_count": 8
+          }
+        },
+        "validation": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.8333333333333334,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.8333333333333334,
+            "query_count": 6
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.3333333333333333,
+            "proposed_both_evidence_coverage": 0.6666666666666666,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 6
+          }
+        }
+      }
+    },
+    {
+      "effectiveness_selection_score": 3.2291666666666665,
+      "eligible_under_safety_constraints": true,
+      "pair_boost": 1.0,
+      "splits": {
+        "development": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.75,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.375,
+            "proposed_both_evidence_coverage": 0.875,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.9375,
+            "query_count": 8
+          }
+        },
+        "validation": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.8333333333333334,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.8333333333333334,
+            "query_count": 6
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.3333333333333333,
+            "proposed_both_evidence_coverage": 0.6666666666666666,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 6
+          }
+        }
+      }
+    },
+    {
+      "effectiveness_selection_score": 3.2291666666666665,
+      "eligible_under_safety_constraints": true,
+      "pair_boost": 1.5,
+      "splits": {
+        "development": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.75,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 8
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.375,
+            "proposed_both_evidence_coverage": 0.875,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.9375,
+            "query_count": 8
+          }
+        },
+        "validation": {
+          "BLOCK_RETAINED": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.8333333333333334,
+            "proposed_both_evidence_coverage": 0.0,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.8333333333333334,
+            "query_count": 6
+          },
+          "PAIR_PRESERVE": {
+            "baseline_both_evidence_coverage": 0.0,
+            "baseline_deprecated_hit_rate": 0.0,
+            "baseline_required_micro_recall_at_3": 0.3333333333333333,
+            "proposed_both_evidence_coverage": 0.6666666666666666,
+            "proposed_deprecated_hit_rate": 0.0,
+            "proposed_required_micro_recall_at_3": 0.75,
+            "query_count": 6
+          }
+        }
+      }
+    }
+  ],
+  "schema_version": "v6-prior-devval-pair-boost-sensitivity-1",
+  "selected_pair_boost": 0.5,
+  "selection_rule": "maximize summed PAIR_PRESERVE required micro Recall@3 plus both-evidence coverage across prior development and validation, subject to BLOCK_RETAINED recall noninferiority and no deprecated-hit increase; ties choose smallest boost",
+  "v6_confirmatory_queries_or_gold_read": false
+}

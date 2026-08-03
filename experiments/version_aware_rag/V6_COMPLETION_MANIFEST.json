@@ -1,0 +1,17 @@
+{
+  "answer_bridge_executed": false,
+  "answer_bridge_reason": "No positive retrieval gain to bridge; AI-only answer evaluation would not rescue the confirmatory retrieval claim.",
+  "artifact_checksums_sha256": "2334f2b7951f0a1a6ed230d0222a689567b9717e9dbb608b1101f8cfecc1b0bd",
+  "candidate_required_micro_recall_at_20": 0.48120300751879697,
+  "finalized_at_utc": "2026-08-01T14:49:12.352880+00:00",
+  "fresh_test_execution_count": 1,
+  "independent_recomputation_status": "pass",
+  "primary_mean_E_minus_B": -0.03125,
+  "primary_p_value": 0.5,
+  "query_count": 96,
+  "raw_record_count": 576,
+  "schema_version": "v6-core-study-completion-manifest-1",
+  "status": "core_retrieval_complete_negative_candidate_limited_result",
+  "system_count": 6,
+  "tuning_or_rerun_allowed": false
+}

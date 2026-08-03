@@ -1,0 +1,20 @@
+{
+  "required": [
+    "query_id",
+    "answerability",
+    "stratum_validity",
+    "required_evidence_necessity",
+    "unsafe_evidence_labels",
+    "non_triviality",
+    "leakage_safety",
+    "wording_safety",
+    "eligible",
+    "notes"
+  ],
+  "judgment_values": [
+    "pass",
+    "fail",
+    "uncertain"
+  ],
+  "additional_fields_allowed": false
+}

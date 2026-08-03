@@ -1,0 +1,19 @@
+{
+  "schema_version": "v7-pilot-review-packet-freeze-1",
+  "status": "superseded_by_four_query_leakage_adjudication_pending_delta_reviews",
+  "packet_revision": "v3_structured_text_descriptions_no_flattened_tables",
+  "artifact_sha256": {
+    "review_packet_all_40": "f8cebd2e1be7a1c86f2bcef2b168ce9bb38e7dcf65e785db5c2473db1e1c8b09",
+    "isolated_review_prompt": "eee661c6d3ab93f7026f1d5869f6de34f492c52d089b3bb6ca259612222d3da1",
+    "structured_evidence_descriptions": "14c38b7536a3b7093dd2c6a577b5b5c4c36ffb05e9fa224bcde99f97e6431e2f",
+    "query_drafts": "683a5fcbc2950e1992a02531df07877247c9d17c52824d7cc64927298f1a45a0",
+    "gold_contract_drafts": "b57504f7d8284f1ac83af310f9e929e062a2e9ffe2a97b9abb3b41afb560967e"
+  },
+  "valid_review_1": {
+    "reviewer": "Gemini 3.6 Flash (Medium)",
+    "record_count": 40,
+    "eligible_count": 40
+  },
+  "remaining_required_isolated_reviews": 2,
+  "retrieval_allowed": false
+}

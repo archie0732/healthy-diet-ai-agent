@@ -1,0 +1,137 @@
+{
+  "schema_version": "v6-source-capacity-audit-1",
+  "generated_at": "2026-08-01T07:20:17.136Z",
+  "exclusion_basis": {
+    "excluded_query_records": 398,
+    "used_lineages": 342,
+    "used_chunks": 860,
+    "used_claims": 488,
+    "used_source_pages": 232
+  },
+  "inventory_summary": {
+    "v4_candidate_relation_pairs": {
+      "record_count": 131,
+      "unique_lineage_count": 90,
+      "no_exclusion_overlap_count": 12,
+      "semantically_reviewed_no_overlap_count": 12,
+      "predesignated_test_eligible_no_overlap_count": 12,
+      "overlap_reason_counts": {
+        "used_lineage": 40,
+        "used_chunk": 118,
+        "used_claim": 0,
+        "used_source_page": 0
+      }
+    },
+    "v5_relation_detector_review": {
+      "record_count": 40,
+      "unique_lineage_count": 40,
+      "no_exclusion_overlap_count": 12,
+      "semantically_reviewed_no_overlap_count": 0,
+      "predesignated_test_eligible_no_overlap_count": 0,
+      "overlap_reason_counts": {
+        "used_lineage": 0,
+        "used_chunk": 28,
+        "used_claim": 0,
+        "used_source_page": 0
+      }
+    },
+    "v5_codex_mined_reviewed_pairs": {
+      "record_count": 22,
+      "unique_lineage_count": 22,
+      "no_exclusion_overlap_count": 22,
+      "semantically_reviewed_no_overlap_count": 22,
+      "predesignated_test_eligible_no_overlap_count": 0,
+      "overlap_reason_counts": {
+        "used_lineage": 0,
+        "used_chunk": 0,
+        "used_claim": 0,
+        "used_source_page": 0
+      }
+    }
+  },
+  "aggregate": {
+    "candidate_record_count": 193,
+    "structurally_available_record_count": 46,
+    "reviewed_available_record_count": 34,
+    "predesignated_test_eligible_available_record_count": 12,
+    "structurally_available_unique_lineage_count": 34
+  },
+  "existing_stratum_capacity": {
+    "current_only": 1,
+    "compatible_history": 5,
+    "conditional_merge": 4,
+    "hard_negative": 2
+  },
+  "corpora": [
+    {
+      "path": "data/corpus_v4_devval_draft/source_manifest.json",
+      "schema_version": "v4-devval-source-manifest-1",
+      "document_count": 8,
+      "chunk_count": 1392,
+      "held_out_test_eligible": false,
+      "development_only": false,
+      "document_ids": [
+        "who-potassium-2012",
+        "who-sodium-2012",
+        "who-sugars-2015",
+        "who-nss-2023",
+        "who-carbohydrate-2023",
+        "who-total-fat-2023",
+        "who-sat-trans-fat-2023",
+        "who-lsss-2025"
+      ],
+      "sha256": "7faa7d2d1a62bfa17ccd9209a5e46110fd4fce55a64d5cd31befaac436f58c5d"
+    },
+    {
+      "path": "data/corpus_v5_r2_11_draft/source_manifest.json",
+      "schema_version": "v5-r2.11-source-manifest-1",
+      "document_count": 4,
+      "chunk_count": 744,
+      "held_out_test_eligible": false,
+      "development_only": true,
+      "document_ids": [
+        "who-physical-activity-2010",
+        "who-physical-activity-2020",
+        "who-complementary-feeding-2023",
+        "who-fao-trs-916-2003-part2"
+      ],
+      "sha256": "6ebd75cda45aba48c1e83db295bdf430d602c699ad533aa0883fa08797571204"
+    },
+    {
+      "path": "data/corpus_v5_r2_19_draft/source_manifest.json",
+      "schema_version": "v5-r2.19-source-manifest-1",
+      "document_count": 4,
+      "chunk_count": 1694,
+      "held_out_test_eligible": false,
+      "development_only": true,
+      "document_ids": [
+        "who-potassium-adverse-effects-review-2012",
+        "who-potassium-drinking-water-background-2009",
+        "who-nss-systematic-review-2022",
+        "who-physical-activity-web-annex-2020"
+      ],
+      "sha256": "53df925370ad043cde47c91bfafc6874f245cd4b870c2742b9fe2564ac6e285e"
+    }
+  ],
+  "gate": {
+    "target_query_count": 96,
+    "minimum_query_count": 80,
+    "minimum_unique_lineages": 60,
+    "minimum_per_stratum": 20,
+    "structurally_available_unique_lineages": 34,
+    "explicit_stratum_capacity_from_existing_inventory": {
+      "current_only": 1,
+      "compatible_history": 5,
+      "conditional_merge": 4,
+      "hard_negative": 2
+    },
+    "pass": false,
+    "decision": "FAIL_PHASE_2_ENTRY: existing inventories do not establish at least 60 unused, semantically reviewed, held-out-eligible lineages with at least 20 candidates in each required stratum."
+  },
+  "next_action": [
+    "Acquire and freeze additional official predecessor/current guideline pairs in underrepresented topic families.",
+    "Mine new atomic relation candidates without exposing router keywords or retrieval outcomes.",
+    "Allocate new candidates to the four V6 strata only after source-grounded AI review.",
+    "Re-run this capacity audit; do not generate the sealed test until all per-stratum and unique-lineage gates pass."
+  ]
+}

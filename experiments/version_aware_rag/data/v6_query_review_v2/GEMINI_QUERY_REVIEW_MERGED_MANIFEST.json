@@ -1,0 +1,15 @@
+{
+  "base_attachment_sha256": "fe5eebfbeeed19b6d4e6a0f94205dddd90014f0403b33b3001f0b6c12dea2224",
+  "base_model_metadata": "Gemini 3.6 Flash | session-9e4b689f-a2d1-4a87-a3bb-26fe7aab393f",
+  "base_record_count": 96,
+  "correction": "Replaced only the 25 V1 failures after page-level required-evidence deduplication.",
+  "delta_attachment_sha256": "c962f089a5dd075a63e937ea0b74a98062c46492a6b2a0e74fa3790b459393ae",
+  "delta_model_metadata": "Gemini 3.6 Flash (Medium) | f1626b9c-5c9e-44d2-b5da-67b525fea848",
+  "delta_raw_response_sha256": "5cc89f2dcb076c340471fde07ab01f238f1e08226da5eb9065ae7fff6164540b",
+  "delta_record_count": 25,
+  "eligible_count": 96,
+  "merged_record_count": 96,
+  "merged_review_sha256": "557a84335a4ca8cbb3a30921ed34589841d27b9df196a2161625c480f3afacdd",
+  "retained_base_record_count": 71,
+  "schema_version": "v6-gemini-query-review-merged-manifest-1"
+}

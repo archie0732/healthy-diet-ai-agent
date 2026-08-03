@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "current_support": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ]
+    },
+    "eligible": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "older_support": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain",
+        "not_applicable"
+      ]
+    },
+    "relation_support": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ]
+    },
+    "stratum_judgments": {
+      "additionalProperties": {
+        "enum": [
+          "pass",
+          "fail",
+          "uncertain"
+        ]
+      },
+      "type": "object"
+    },
+    "unsupported_material_claim": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "candidate_id",
+    "older_support",
+    "current_support",
+    "relation_support",
+    "stratum_judgments",
+    "unsupported_material_claim",
+    "eligible",
+    "notes"
+  ],
+  "title": "V6 isolated AI relation review judgment",
+  "type": "object"
+}

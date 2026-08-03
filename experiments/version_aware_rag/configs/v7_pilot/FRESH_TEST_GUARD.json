@@ -1,0 +1,10 @@
+{
+  "final_seal_manifest_sha256": "43010d8dd7982328552c2cf585cdcb6b8e7ea8088cf37a68f2afe780764aa6d9",
+  "fresh_test_execution_count": 1,
+  "gold_read_by_runner_allowed": false,
+  "raw_output_sha256": "71f35f19a9a03c3d7ea5df2514f6cbd18db76c55e820cfeb4350aa15719c98da",
+  "retrieval_allowed": false,
+  "run_manifest_sha256": "c237c6582d7edc2c98a02cec0d7e4159fef452627ad930827789cfff3c9f75a8",
+  "schema_version": "v7-pilot-fresh-test-guard-2",
+  "status": "fresh_test_executed_once_raw_output_locked"
+}

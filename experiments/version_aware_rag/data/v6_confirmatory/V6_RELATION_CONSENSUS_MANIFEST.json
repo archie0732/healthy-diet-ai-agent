@@ -1,0 +1,29 @@
+{
+  "agreement_hashes": {
+    "relation_review_v2": "a8954118ac2129c189843cc88893675ab567c5553ceed630063048f5903ff773",
+    "relation_review_v3_delta": "f3db0ca629bcbff0bd1eda20dc60a2c72c773a00d5297014686172710d5efaeb"
+  },
+  "annotation_label": "AI-triangulated, source-grounded annotation",
+  "approved_candidate_count": 71,
+  "candidate_count": 72,
+  "candidate_source_sha256": "301ef767cbb175584d0c59f480e45e3574de6b0a76f73031c6e691a35519fe07",
+  "consensus_ledger_sha256": "607e946334ed51cfe8734461c3456c9cabe5fb971cddab5b6a0e1210e7fce05b",
+  "decision_rule": "All three reviewers must pass evidence and a stratum; no majority vote.",
+  "excluded_candidate_count": 1,
+  "human_or_expert_consensus": false,
+  "review_hashes_by_batch": {
+    "chatgpt": {
+      "relation_review_v2": "2d08bd2174f954ceac66c29e0ee76032694c534f19f3871165ad78a8af60d3fd",
+      "relation_review_v3_delta": "ff3c869f27b6e8cf5b80a9a74386e9beefa861cc01338eae4f1866b0b1a2239e"
+    },
+    "codex": {
+      "relation_review_v2": "ccdd7478fa43485471c8601b2ccc4831e3677fa2a1056c89ff402d3cde04d7c6",
+      "relation_review_v3_delta": "19877e1fec0ec751f874c0dab8342e48e19b3799ef346b62646b060244b03ead"
+    },
+    "gemini": {
+      "relation_review_v2": "d2beada17807631651b816f41d5d30fe8b814f8c3fcc4e5ef6e889bee5afa8f2",
+      "relation_review_v3_delta": "de14ba036c0645de213c0045e2a6dd05a4dd32dcbe296309e85ea0fd6d66d539"
+    }
+  },
+  "schema_version": "v6-relation-consensus-manifest-1"
+}

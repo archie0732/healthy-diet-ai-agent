@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-08-01T10:29:11.385078+00:00",
+  "eligible_count": 96,
+  "judgment_count": 96,
+  "other_reviewer_outputs_seen": false,
+  "packet_sha256": "a77eceb604d9e2e395d51a3d8425e2dcdc3767ba000983fb2dfbbcee3af16807",
+  "retrieval_outputs_seen": false,
+  "review_sha256": "75a6d15b6a4faa7e9ba80d28e4e73e089e6c7c41bffda377376928d797ba0a04",
+  "reviewer": "Codex (GPT-5 family; exact deployment identifier unavailable)",
+  "schema_version": "v6-codex-query-review-manifest-1"
+}

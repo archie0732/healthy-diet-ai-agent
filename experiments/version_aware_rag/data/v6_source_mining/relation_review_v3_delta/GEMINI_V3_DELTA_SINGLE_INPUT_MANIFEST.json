@@ -1,0 +1,15 @@
+{
+  "schema_version": "v6-gemini-single-input-manifest-1",
+  "record_count": 6,
+  "candidate_ids": [
+    "v6rel-hb-child-6-23-any-2011-2024",
+    "v6rel-hb-child-6-23-mild-2011-2024",
+    "v6rel-hb-child-6-23-moderate-2011-2024",
+    "v6rel-hb-pregnancy-t2-any-2011-2024",
+    "v6rel-hb-pregnancy-t2-mild-2011-2024",
+    "v6rel-hb-pregnancy-t2-moderate-2011-2024"
+  ],
+  "source_packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "single_input_sha256": "0b7af162f4a8f7652c1da0e5879d62d88f6a213bea2be790c84361f6bf4ab79e",
+  "contains_prior_reviewer_outputs": false
+}

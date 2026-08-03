@@ -1,0 +1,27 @@
+You are performing an isolated, source-grounded review of 26 revised V6 retrieval query contracts.
+
+Please refer only to the attached material. Do not browse the web, inspect any repository, inspect router rules or retrieval results, infer system identity or boost values, or use another reviewer's output.
+
+For every record, independently judge the following fields as "pass", "fail", or "uncertain":
+
+- answerability
+- stratum_validity
+- required_evidence_necessity
+- unsafe_evidence_labels
+- non_triviality
+- leakage_safety
+- wording_safety
+
+Use these stratum definitions:
+
+- explicit_history: The wording explicitly requests an earlier rule or a cross-version comparison, and the labeled cross-version evidence is necessary.
+- current_only: Only operative evidence is required. Displaced older evidence may be deprecated, but it is not required.
+- hard_negative_current: Operative evidence is required, and the labeled older evidence is a plausible but incorrect answer for a current-only query.
+
+Set "eligible" to true only when all seven judgments are "pass". Do not repair a record, rewrite a query, or infer missing clinical applicability.
+
+Return exactly 26 JSON objects, one object per line and in the same order as the attached material. Each object must contain exactly these fields:
+
+query_id, answerability, stratum_validity, required_evidence_necessity, unsafe_evidence_labels, non_triviality, leakage_safety, wording_safety, eligible, notes
+
+Do not use Markdown fences. Do not add introductions, headings, summaries, or any other prose. After the 26 JSON objects, add exactly one final line beginning with "MODEL_METADATA:" followed by the exact model/version and the session or run identifier if visible.

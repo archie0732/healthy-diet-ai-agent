@@ -1,0 +1,341 @@
+V7 ISOLATED QUERY-CONTRACT REVIEW PACKET
+
+RECORD 1
+{
+  "query_id": "v7q-eh-011",
+  "query_text": "Compare the earlier and operative WHO requirements for developing the nutrient-profile model used in food-marketing restrictions.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-food-marketing-government-npm-2010-2023",
+  "lineage_id": "v6lin-food-marketing-government-led-npm",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2010",
+        "recommendation_id": "RECOMMENDATION 4",
+        "pdf_page_number": 9
+      },
+      "structured_text_description": "The 2010 guidance required governments to set clear policy definitions but allowed different ways to distinguish foods covered by restrictions, including existing or newly developed approaches.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "government-led nutrient profile model",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation specifically requires a government-led nutrient-profile model to classify foods restricted from marketing.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation specifies a government-led nutrient profile model where the 2010 guidance allowed several ways to distinguish foods.",
+  "visual_source_verification": "The 2010 food-classification options and current government-led nutrient-profile-model bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 2
+{
+  "query_id": "v7q-eh-012",
+  "query_text": "How did WHO's position on voluntary versus mandatory food-marketing restrictions change between versions?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-food-marketing-mandatory-2010-2023",
+  "lineage_id": "v6lin-food-marketing-mandatory-policy",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2010",
+        "recommendation_id": "RECOMMENDATION 7",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2010 guidance allowed statutory, self-regulatory, voluntary, or co-regulatory policy approaches, provided the selected approach operated within a framework designed to achieve the policy objective.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "be mandatory",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires policies restricting food marketing to children to be mandatory.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation requires a mandatory policy where the 2010 material allowed statutory, self-regulatory, voluntary, or co-regulatory approaches.",
+  "visual_source_verification": "The 2010 range of implementation instruments, 2023 builds-on statement, and current mandatory-policy bullet are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 3
+{
+  "query_id": "v7q-eh-013",
+  "query_text": "Compare the earlier and operative WHO recommendations on breastfeeding duration for mothers living with HIV.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-hiv-breastfeeding-duration-2010-2016",
+  "lineage_id": "v6lin-hiv-breastfeeding-duration",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_hiv_infant_feeding_2010",
+        "recommendation_id": "Recommendation 2",
+        "pdf_page_number": 38
+      },
+      "structured_text_description": "The 2010 recommendation advised mothers living with HIV to exclusively breastfeed for 6 months, introduce complementary foods, and continue breastfeeding for the first 12 months; stopping was conditional on an adequate and safe diet without breast milk.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_hiv_infant_feeding_update_2016",
+        "recommendation_id": "RECOMMENDATION 1",
+        "pdf_page_number": 28
+      },
+      "structured_text_description": "The 2016 recommendation advises breastfeeding for at least 12 months and permits continuation to 24 months or beyond while the mother receives support for antiretroviral-therapy adherence. It explicitly updates the duration component while retaining the earlier feeding-practice and stopping components.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The current page explicitly says Recommendation 1 updates the duration component of the 2010 recommendation while other components remain valid.",
+  "visual_source_verification": "The 2010 duration recommendation, 2016 update statement, and current recommendation are legible and consistent.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 4
+{
+  "query_id": "v7q-eh-014",
+  "query_text": "How did WHO's recommendation on feeding support for mothers living with HIV change between the earlier and operative guidance?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-hiv-feeding-support-2010-2016",
+  "lineage_id": "v6lin-hiv-feeding-support-services",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_hiv_infant_feeding_2010",
+        "recommendation_id": "Providing services to specifically support mothers",
+        "pdf_page_number": 11
+      },
+      "structured_text_description": "The 2010 guidance presented support for mothers living with HIV as a guiding principle, including counselling and services to support the nationally recommended infant-feeding practice.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_hiv_infant_feeding_update_2016",
+        "recommendation_id": "RECOMMENDATION 2",
+        "pdf_page_number": 35
+      },
+      "structured_text_description": "The 2016 guideline makes this a formal strong recommendation: national and local authorities should coordinate and implement breastfeeding-support services in health facilities, workplaces, communities, and homes for women living with HIV.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The comparison table says the 2010 principle was updated to a formal recommendation and points to Recommendation 2 (2016).",
+  "visual_source_verification": "The earlier support principle, explicit formalization mapping, and 2016 recommendation are legible and semantically aligned.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 5
+{
+  "query_id": "v7q-eh-015",
+  "query_text": "How does the operative WHO recommendation for admitting infants under 6 months with wasting or nutritional oedema differ from the earlier recommendation?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-a2-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-admission-a2",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.1",
+        "pdf_page_number": 13
+      },
+      "structured_text_description": "The 2013 recommendation admitted infants under 6 months with severe acute malnutrition for inpatient care when they had a serious clinical condition or medical complication, or recent weight loss or failure to gain weight, among its listed criteria.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A2",
+        "pdf_page_number": 54
+      },
+      "structured_text_description": "The 2023 A2 recommendation automatically refers and admits infants under 6 months at risk of poor growth when they have an IMCI danger sign, a severe acute medical problem, nutritional oedema, or recent weight loss. Other listed concerns, including less acute or longer-term medical problems and specified growth concerns, trigger an in-depth assessment and clinical judgment rather than automatic admission.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly calls A2 a major update to 2013 recommendation 8.1.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 6
+{
+  "query_id": "v7q-eh-016",
+  "query_text": "Compare WHO's earlier and operative criteria for transferring infants under 6 months from inpatient to outpatient care.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-a3-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-transfer-a3",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.5",
+        "pdf_page_number": 15
+      },
+      "structured_text_description": "The 2013 recommendation allowed transfer of admitted infants under 6 months to outpatient care after medical complications and oedema resolved, appetite and clinical condition were good, satisfactory weight gain continued for at least 3 days, routine interventions were checked, and follow-up support was linked.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A3",
+        "pdf_page_number": 60
+      },
+      "structured_text_description": "The 2023 A3 recommendation requires no danger signs for 48 hours, resolved acute medical problems, resolving nutritional oedema, good appetite, satisfactory documented weight gain for 2-3 days, attempted referral for longer-term problems, routine interventions or follow-up plans, and caregiver linkage to follow-up support.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly calls A3 an update to 2013 recommendation 8.5.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 7
+{
+  "query_id": "v7q-eh-017",
+  "query_text": "How did WHO's follow-up recommendation for infants under 6 months with wasting or nutritional oedema change between versions?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-a4-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-followup-a4",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.6",
+        "pdf_page_number": 15
+      },
+      "structured_text_description": "The 2013 recommendation allowed infants under 6 months to be discharged from all care when feeding effectively, gaining adequate weight, and having weight-for-length at least -2 Z-score.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A4",
+        "pdf_page_number": 64
+      },
+      "structured_text_description": "The 2023 A4 recommendation covers the broader group of infants under 6 months at risk of poor growth. Outpatient visit frequency may be reduced after effective feeding and sustained weight gain over 2 consecutive weekly visits, but follow-up continues until assessment at 6 months determines whether further follow-up or referral is required.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly calls A4 an update to 2013 recommendation 8.6 and describes a broader population.",
+  "visual_source_verification": "The current recommendation and update rationale appear together and match the cited older recommendation.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 8
+{
+  "query_id": "v7q-eh-018",
+  "query_text": "Compare the earlier and operative WHO recommendations on supplemental milk for infants under 6 months with wasting or nutritional oedema.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-a7-2013-2023",
+  "lineage_id": "v6lin-wasting-infant-supplemental-milk-a7",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "8.4",
+        "pdf_page_number": 14
+      },
+      "structured_text_description": "The 2013 recommendation stated that admitted infants under 6 months with severe acute malnutrition should not receive undiluted F-100 at any time because of renal solute load and hypernatraemic-dehydration risk.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "A7",
+        "pdf_page_number": 71
+      },
+      "structured_text_description": "The 2023 A7 recommendation prohibits full-strength F-100 when the infant is clinically unstable or has diarrhoea, dehydration, or nutritional oedema. Other breastfeeding, relactation, wet-nursing, and supplementary-feed components are retained.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The remarks state that part c updates 2013 recommendation 8.4 while parts a, b, d, and e stand.",
+  "visual_source_verification": "The page clearly identifies the part-c update and retained components.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 9
+{
+  "query_id": "v7q-eh-019",
+  "query_text": "How did WHO's admission criteria for children aged 6-59 months with wasting or nutritional oedema change between versions?",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-b2-2013-2023",
+  "lineage_id": "v6lin-wasting-child-admission-b2",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "1.3",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2013 recommendation admitted children with severe acute malnutrition as inpatients for medical complications, severe oedema, poor appetite, or IMCI danger signs; clinically well children with appetite were treated as outpatients.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "B2",
+        "pdf_page_number": 79
+      },
+      "structured_text_description": "The 2023 B2 recommendation retains automatic inpatient referral for danger signs, acute medical problems, severe nutritional oedema, or poor appetite in children aged 6-59 months. It adds an in-depth-assessment pathway for other concerns such as less acute or longer-term medical problems, failure to improve in outpatient care, or previous severe-wasting episodes.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly says B2 updates recommendation 1.3 and incorporates recommendation 2.1.",
+  "visual_source_verification": "The current rationale explicitly maps B2 to 1.3 and incorporates 2.1.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 10
+{
+  "query_id": "v7q-eh-020",
+  "query_text": "Compare WHO's earlier and operative criteria for transferring children aged 6-59 months from inpatient to outpatient care.",
+  "proposed_stratum": "explicit_history",
+  "candidate_id": "v6rel-wasting-b3-2013-2023",
+  "lineage_id": "v6lin-wasting-child-transfer-b3",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_severe_acute_malnutrition_2013",
+        "recommendation_id": "1.4",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2013 recommendation allowed transfer from inpatient to outpatient care when medical complications and oedema were resolving and the child had good appetite and was clinically well and alert; transfer was based on clinical condition, not a specific anthropometric threshold.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    },
+    {
+      "source_ref": {
+        "document_id": "who_wasting_nutritional_oedema_2023",
+        "recommendation_id": "B3",
+        "pdf_page_number": 85
+      },
+      "structured_text_description": "The 2023 B3 recommendation requires no danger signs for 24-48 hours, sufficient resolution of the admitting medical problems, no ongoing weight loss where applicable, resolving oedema below grade +++, good appetite, and attempted referral for longer-term problems. It continues to reject specific anthropometric transfer thresholds.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The rationale explicitly calls B3 an update to 2013 recommendation 1.4.",
+  "visual_source_verification": "Recommendation and explicit update rationale are legible and page references match.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}

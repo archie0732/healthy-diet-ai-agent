@@ -1,0 +1,172 @@
+{
+  "base_structural_gate_pass": true,
+  "candidate_count": 72,
+  "candidate_file_sha256": "301ef767cbb175584d0c59f480e45e3574de6b0a76f73031c6e691a35519fe07",
+  "candidate_stratum_counts_nonexclusive": {
+    "compatible_history": 8,
+    "conditional_merge": 46,
+    "current_only": 40,
+    "explicit_history": 50,
+    "hard_negative_current": 53
+  },
+  "direct_lineage_collision_count": 0,
+  "direct_lineage_collisions": [],
+  "eligibility_warning": "Structural gate only. It does not establish semantic novelty, unanimous AI approval, stratum eligibility, or final test eligibility.",
+  "exclusion_ledger_sha256": "0ea4b9d314114b44b5486ceffd71f77d43316553d49212fac9e83d209460258b",
+  "failed_visual_review_count": 0,
+  "failed_visual_reviews": [],
+  "family_counts": {
+    "antenatal_nutrition": 12,
+    "fiscal_policies_for_healthy_diets": 3,
+    "food_marketing_to_children": 5,
+    "haemoglobin_cutoffs_for_anaemia": 6,
+    "hiv_and_infant_feeding": 2,
+    "school_food_environment": 3,
+    "wasting_and_nutritional_oedema": 14,
+    "who_europe_infant_food_nppm": 10,
+    "who_europe_nutrient_profile_model": 17
+  },
+  "gate_pass": true,
+  "hard_negative_semantic_preflight_rejection_count": 23,
+  "hard_negative_semantic_preflight_rejections": [
+    "v6rel-anc-balanced-energy-protein-current",
+    "v6rel-anc-caffeine-current",
+    "v6rel-anc-calcium-current",
+    "v6rel-anc-daily-iron-folate-current",
+    "v6rel-anc-healthy-eating-activity-current",
+    "v6rel-anc-high-protein-current",
+    "v6rel-anc-intermittent-iron-folate-current",
+    "v6rel-anc-nutrition-education-current",
+    "v6rel-anc-vitamin-a-current",
+    "v6rel-fiscal-healthy-food-subsidy-current",
+    "v6rel-fiscal-ssb-tax-current",
+    "v6rel-fiscal-unhealthy-food-tax-current",
+    "v6rel-infant-nppm-cheese-meals-2019-2022",
+    "v6rel-infant-nppm-protein-first-2019-2022",
+    "v6rel-infant-nppm-protein-not-first-2019-2022",
+    "v6rel-infant-nppm-vegetable-purees-2019-2022",
+    "v6rel-school-food-provision-current",
+    "v6rel-school-nudging-current",
+    "v6rel-school-nutrition-standards-current",
+    "v6rel-wasting-b17-current",
+    "v6rel-wasting-b7-current",
+    "v6rel-wasting-b8-current",
+    "v6rel-wasting-c4-current"
+  ],
+  "missing_page_reference_count": 0,
+  "missing_page_references": [],
+  "missing_visual_review_count": 0,
+  "missing_visual_reviews": [],
+  "page_index_sha256": "b543056fe8a9804dd3e9af335997a955f1b6972b50fa37eac900583799f7ed95",
+  "recommendation_token_warning_count": 0,
+  "recommendation_token_warnings": [],
+  "referenced_documents_already_named_in_exclusion_ledger": [],
+  "relation_type_counts": {
+    "compatible_with": 7,
+    "current_only": 22,
+    "supersedes": 1,
+    "updates": 42
+  },
+  "review_status_counts": {
+    "needs_isolated_ai_review": 62,
+    "needs_visual_and_isolated_ai_review": 10
+  },
+  "schema_version": "v6-relation-candidate-audit-1",
+  "topic_capacity_gate_pass": true,
+  "topic_family_capacity": {
+    "conditional_merge": {
+      "family_counts": {
+        "antenatal_nutrition": 3,
+        "food_marketing_to_children": 5,
+        "haemoglobin_cutoffs_for_anaemia": 6,
+        "hiv_and_infant_feeding": 2,
+        "wasting_and_nutritional_oedema": 7,
+        "who_europe_infant_food_nppm": 6,
+        "who_europe_nutrient_profile_model": 17
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 30,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 34,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "current_only": {
+      "family_counts": {
+        "antenatal_nutrition": 11,
+        "fiscal_policies_for_healthy_diets": 3,
+        "food_marketing_to_children": 4,
+        "school_food_environment": 3,
+        "wasting_and_nutritional_oedema": 7,
+        "who_europe_infant_food_nppm": 6,
+        "who_europe_nutrient_profile_model": 6
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 30,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 34,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "explicit_history": {
+      "family_counts": {
+        "antenatal_nutrition": 3,
+        "food_marketing_to_children": 5,
+        "haemoglobin_cutoffs_for_anaemia": 6,
+        "hiv_and_infant_feeding": 2,
+        "wasting_and_nutritional_oedema": 7,
+        "who_europe_infant_food_nppm": 10,
+        "who_europe_nutrient_profile_model": 17
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 30,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 34,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    },
+    "hard_negative_current": {
+      "family_counts": {
+        "antenatal_nutrition": 1,
+        "food_marketing_to_children": 4,
+        "haemoglobin_cutoffs_for_anaemia": 6,
+        "hiv_and_infant_feeding": 1,
+        "wasting_and_nutritional_oedema": 6,
+        "who_europe_infant_food_nppm": 6,
+        "who_europe_nutrient_profile_model": 6
+      },
+      "minimum_20": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 26,
+        "per_family_cap": 5,
+        "requested_size": 20
+      },
+      "target_24": {
+        "feasible": true,
+        "maximum_selectable_under_cap": 30,
+        "per_family_cap": 6,
+        "requested_size": 24
+      }
+    }
+  },
+  "unique_lineage_count": 72,
+  "visual_review_ledger_sha256": "261f9b043cbcec80409bb2047dfdf26879c06c528a7cc262e1707c16e65af943"
+}

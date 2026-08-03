@@ -1,0 +1,16 @@
+{
+  "eligible_count": 19,
+  "eligible_flags_consistent": true,
+  "fresh_retrieval_allowed": false,
+  "imported_at_utc": "2026-08-01T13:15:21.563803+00:00",
+  "metadata": "MODEL_METADATA: GPT-5.6 Thinking; session or run identifier not visible",
+  "normalized_review_sha256": "5dcd469d579a86ed125168ded05f4123c689dad0f15fd3a4375761978831d83e",
+  "packet_sha256": "3b1bdd0580689e2aee53b3cd776323e6df7572f591ebe29d0530cc3566d9d024",
+  "preserved_raw_sha256": "10ed50ac6e642221af37b59eed5b1e3209650a547537a4f6eb506f660fd6c184",
+  "query_ids_in_exact_packet_order": true,
+  "record_count": 23,
+  "reviewer_label": "gpt_5_6_thinking",
+  "schema_valid": true,
+  "schema_version": "v6-query-review-delta-import-manifest-1",
+  "source_response_sha256": "10ed50ac6e642221af37b59eed5b1e3209650a547537a4f6eb506f660fd6c184"
+}

@@ -1,0 +1,9 @@
+{
+  "reviewer": "gemini_review_1_initial",
+  "model_metadata": "MODEL_METADATA: Gemini 3.6 Flash (Medium) | Session 8c3ee7ec-0e45-4128-96b1-fb0715dbcd9d",
+  "record_count": 40,
+  "eligible_count": 39,
+  "ineligible_query_ids": [
+    "v7q-eh-001"
+  ]
+}

@@ -1,12 +1,48 @@
+# Secrets and local environment
 .env
+.env.*
+!.env.example
+
+# Dependencies and local lockfile
 node_modules/
 bun.lock
-AGENT.md
+
+# Local AI-agent instructions, state, and worktrees
+/AGENT.md
+/AGENTS.md
+/CLAUDE.md
+/GEMINI.md
+/SKILL.md
+/.agents/
+/.codex/
+/.claude/
+/.gemini/
+/.cursor/
+/.continue/
+/.aider*
+/.worktrees/
+
+# Archives and hand-off bundles
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# Temporary files, caches, and logs
 .tmp*
+tmp/
+__pycache__/
+*.py[cod]
+*.log
+*.bak
+*.swp
+*.swo
+*~
 
-AGENT.md
-SKILL.md
-
+# Local/private project material
 knowledge_base/mohw_clarifications/
 knowledge_base/ingested_markdown/
 knowledge_base/graph/
@@ -16,6 +52,6 @@ plans/
 raw_data/
 /experiments/version_aware_rag/data/raw/
 
-.codex_doc_review_tanet_v1/
-.codex_doc_review_tanet_v1_full/
-.codex_doc_review_tanet_template/
+.codex_doc_review_tanet*/
+.codex-review/
+.tmp_tanet_review/

@@ -1,0 +1,150 @@
+{
+  "document_count": 20,
+  "documents": [
+    {
+      "document_id": "who_severe_acute_malnutrition_2013",
+      "extracted_character_count": 328970,
+      "nonempty_page_count": 122,
+      "page_count": 123,
+      "source_file": "who_severe_acute_malnutrition_2013.pdf"
+    },
+    {
+      "document_id": "who_wasting_nutritional_oedema_2023",
+      "extracted_character_count": 598705,
+      "nonempty_page_count": 206,
+      "page_count": 208,
+      "source_file": "who_wasting_nutritional_oedema_2023.pdf"
+    },
+    {
+      "document_id": "who_antenatal_care_2016",
+      "extracted_character_count": 563827,
+      "nonempty_page_count": 168,
+      "page_count": 172,
+      "source_file": "who_antenatal_care_2016.pdf"
+    },
+    {
+      "document_id": "who_antenatal_mms_update_2020",
+      "extracted_character_count": 126006,
+      "nonempty_page_count": 64,
+      "page_count": 68,
+      "source_file": "who_antenatal_mms_update_2020.pdf"
+    },
+    {
+      "document_id": "who_antenatal_vitamin_d_update_2020",
+      "extracted_character_count": 95642,
+      "nonempty_page_count": 43,
+      "page_count": 48,
+      "source_file": "who_antenatal_vitamin_d_update_2020.pdf"
+    },
+    {
+      "document_id": "who_antenatal_zinc_update_2021",
+      "extracted_character_count": 75410,
+      "nonempty_page_count": 38,
+      "page_count": 40,
+      "source_file": "who_antenatal_zinc_update_2021.pdf"
+    },
+    {
+      "document_id": "who_hiv_infant_feeding_update_2016",
+      "extracted_character_count": 184491,
+      "nonempty_page_count": 67,
+      "page_count": 68,
+      "source_file": "who_hiv_infant_feeding_update_2016.pdf"
+    },
+    {
+      "document_id": "who_school_food_environment_2026",
+      "extracted_character_count": 294385,
+      "nonempty_page_count": 104,
+      "page_count": 106,
+      "source_file": "who_school_food_environment_2026.pdf"
+    },
+    {
+      "document_id": "who_nonbreastfed_infant_feeding_2005",
+      "extracted_character_count": 74235,
+      "nonempty_page_count": 42,
+      "page_count": 42,
+      "source_file": "who_nonbreastfed_infant_feeding_2005.pdf"
+    },
+    {
+      "document_id": "who_hiv_infant_feeding_2010",
+      "extracted_character_count": 122542,
+      "nonempty_page_count": 55,
+      "page_count": 58,
+      "source_file": "who_hiv_infant_feeding_2010.pdf"
+    },
+    {
+      "document_id": "who_complementary_feeding_2023",
+      "extracted_character_count": 244936,
+      "nonempty_page_count": 92,
+      "page_count": 96,
+      "source_file": "who_complementary_feeding_2023.pdf"
+    },
+    {
+      "document_id": "who_food_marketing_children_2010",
+      "extracted_character_count": 41002,
+      "nonempty_page_count": 16,
+      "page_count": 16,
+      "source_file": "who_food_marketing_children_2010.pdf"
+    },
+    {
+      "document_id": "who_food_marketing_children_2023",
+      "extracted_character_count": 239266,
+      "nonempty_page_count": 85,
+      "page_count": 88,
+      "source_file": "who_food_marketing_children_2023.pdf"
+    },
+    {
+      "document_id": "who_fiscal_policies_healthy_diets_2024",
+      "extracted_character_count": 325901,
+      "nonempty_page_count": 118,
+      "page_count": 120,
+      "source_file": "who_fiscal_policies_healthy_diets_2024.pdf"
+    },
+    {
+      "document_id": "who_europe_nutrient_profile_2015",
+      "extracted_character_count": 30837,
+      "nonempty_page_count": 11,
+      "page_count": 11,
+      "source_file": "who_europe_nutrient_profile_2015.pdf"
+    },
+    {
+      "document_id": "who_europe_nutrient_profile_2023",
+      "extracted_character_count": 77686,
+      "nonempty_page_count": 37,
+      "page_count": 38,
+      "source_file": "who_europe_nutrient_profile_2023.pdf"
+    },
+    {
+      "document_id": "who_europe_infant_food_npm_2019",
+      "extracted_character_count": 455226,
+      "nonempty_page_count": 172,
+      "page_count": 172,
+      "source_file": "who_europe_infant_food_npm_2019.pdf"
+    },
+    {
+      "document_id": "who_europe_infant_food_nppm_2022",
+      "extracted_character_count": 103068,
+      "nonempty_page_count": 39,
+      "page_count": 42,
+      "source_file": "who_europe_infant_food_nppm_2022.pdf"
+    },
+    {
+      "document_id": "who_haemoglobin_cutoffs_2011",
+      "extracted_character_count": 17263,
+      "nonempty_page_count": 6,
+      "page_count": 6,
+      "source_file": "who_haemoglobin_cutoffs_2011.pdf"
+    },
+    {
+      "document_id": "who_haemoglobin_cutoffs_2024",
+      "extracted_character_count": 232901,
+      "nonempty_page_count": 77,
+      "page_count": 79,
+      "source_file": "who_haemoglobin_cutoffs_2024.pdf"
+    }
+  ],
+  "index_sha256": "b543056fe8a9804dd3e9af335997a955f1b6972b50fa37eac900583799f7ed95",
+  "manifest_sha256": "4687ccf31f6821aa5e637754b445328b5ce863acab854b954e09b7888d103f35",
+  "nonempty_page_record_count": 1562,
+  "page_record_count": 1601,
+  "schema_version": "v6-pdf-page-index-summary-1"
+}

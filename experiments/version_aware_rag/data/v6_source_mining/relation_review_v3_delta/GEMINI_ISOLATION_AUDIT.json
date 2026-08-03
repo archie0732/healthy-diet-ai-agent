@@ -1,0 +1,17 @@
+{
+  "schema_version": "v6-isolation-audit-1",
+  "provider": "gemini",
+  "status": "fail",
+  "eligible_for_consensus": false,
+  "model_metadata_raw": "Gemini 3.5 Flash (Medium), Antigravity Run 9b651dec-8688-4a22-94da-d02ab91aa3e6",
+  "packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "preserved_raw_response_sha256": "a1453c2acee9968f76f496602100dd868fad2a83dca33e23da20adad609e25bf",
+  "transcript_evidence_sha256": "a0f4b66f7e7a63ff024033de79752fd8fb39b13b25c17dcf2f2f4c72012b5b36",
+  "failure_reasons": [
+    "The Antigravity run inspected relation_review_v2 reviewer outputs before reviewing the v3 delta packet.",
+    "The Antigravity run explicitly viewed relation_review_v3_delta/CODEX_RAW_REVIEW.jsonl before producing the Gemini judgments.",
+    "The run therefore had access to another reviewer's judgments, violating the frozen isolation rule."
+  ],
+  "artifact_policy": "The response and import manifest are preserved for auditability but must not be used in agreement analysis, consensus adjudication, allocation, or reporting as an isolated review.",
+  "required_remediation": "Rerun the same frozen input-only packet in a new Antigravity task that has not opened this repository or any prior reviewer output."
+}

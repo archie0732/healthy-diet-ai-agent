@@ -1,0 +1,19 @@
+{
+  "conditional_temporal_leak_count": 0,
+  "errors": [],
+  "exact_normalized_duplicate_count": 0,
+  "fresh_retrieval_allowed": false,
+  "gold_contract_count": 96,
+  "gold_sha256": "19845cfcb1e629b91979c68bab37f742f10daaed591b51d45aa6930c6e012f7b",
+  "query_count": 96,
+  "query_sha256": "eb8ff0d2e8b2d8389c5b70fe15f7e3babccb6f5833d0f92575571fc4da21f6b3",
+  "schema_version": "v6-query-draft-audit-1",
+  "semantic_gate": "not_evaluated; requires isolated three-model review",
+  "status": "structural_pass",
+  "stratum_counts": {
+    "current_only": 32,
+    "explicit_history": 32,
+    "hard_negative_current": 32
+  },
+  "warnings": []
+}

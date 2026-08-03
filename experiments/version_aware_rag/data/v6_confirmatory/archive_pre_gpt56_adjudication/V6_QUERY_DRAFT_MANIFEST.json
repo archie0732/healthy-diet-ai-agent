@@ -1,0 +1,10 @@
+{
+  "allocation_sha256": "fd1172836742119d5461e3c79279f1c11b99209c973c13dbc5b88132a55b8e85",
+  "candidate_source_sha256": "301ef767cbb175584d0c59f480e45e3574de6b0a76f73031c6e691a35519fe07",
+  "fresh_retrieval_allowed": false,
+  "gold_contract_count": 96,
+  "gold_contract_draft_sha256": "9e14d305e956128f5eba311a5302082150390390f3ca45661c05de1f009f93c0",
+  "query_count": 96,
+  "query_draft_sha256": "0f1a5e0f7ed1be9afd16971d8bfbc1cb911c4a99be21d80c37edd4051cf71c5f",
+  "schema_version": "v6-query-draft-manifest-1"
+}

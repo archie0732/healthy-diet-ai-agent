@@ -1,0 +1,16 @@
+{
+  "schema_version": "v6-single-input-manifest-1",
+  "provider": "chatgpt",
+  "record_count": 6,
+  "candidate_ids": [
+    "v6rel-hb-child-6-23-any-2011-2024",
+    "v6rel-hb-child-6-23-mild-2011-2024",
+    "v6rel-hb-child-6-23-moderate-2011-2024",
+    "v6rel-hb-pregnancy-t2-any-2011-2024",
+    "v6rel-hb-pregnancy-t2-mild-2011-2024",
+    "v6rel-hb-pregnancy-t2-moderate-2011-2024"
+  ],
+  "source_packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "single_input_sha256": "433afc3617411a983cc9f404a3daaeaf5bd1cd6b48e2b4a35d7d17c173f162cf",
+  "contains_prior_reviewer_outputs": false
+}

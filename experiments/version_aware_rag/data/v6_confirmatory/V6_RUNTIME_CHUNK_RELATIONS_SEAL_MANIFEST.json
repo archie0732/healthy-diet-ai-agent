@@ -1,0 +1,13 @@
+{
+  "current_only_node_count": 22,
+  "fresh_retrieval_allowed": false,
+  "input_sha256": {
+    "audit": "d5c50a86c6725d2b1c0f733a7eb2833d4e672ce5da4b8fb1c0a2d8ae5c1cb4f9",
+    "draft": "9db4dfd123634b95d3e2c2526bbb8623ebc7b9ece963fed5b440312021d550d3"
+  },
+  "pairing_relation_count": 49,
+  "relation_count": 71,
+  "schema_version": "v6-runtime-chunk-relations-seal-manifest-1",
+  "sealed_at_utc": "2026-08-01T14:39:52.274487+00:00",
+  "sealed_relations_sha256": "c3b1f760a80385b50090028a329aee2549c364c28b665fef9e9e51333b5adbe1"
+}

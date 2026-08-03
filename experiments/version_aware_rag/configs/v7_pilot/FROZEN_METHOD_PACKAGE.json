@@ -1,0 +1,44 @@
+{
+  "schema_version": "v7-pilot-frozen-method-1",
+  "status": "frozen_before_v7_query_drafting",
+  "frozen_date": "2026-08-02",
+  "development_source": "V6-R opened-data diagnostic",
+  "confirmatory_scope": "40-query V7 pilot held-out evaluation",
+  "query_allocation": {
+    "explicit_history": 20,
+    "current_only": 10,
+    "hard_negative_current": 10
+  },
+  "retrieval": {
+    "candidate_generator": "shared_relation_enriched",
+    "candidate_pool_size": 20,
+    "reserved_relation_pairs": 2,
+    "output_k": 3,
+    "bm25_k1": 1.2,
+    "bm25_b": 0.75,
+    "recency_lambda": 0.75,
+    "recency_min_year": 2005,
+    "recency_max_year": 2026,
+    "pair_boost": 0.5,
+    "router_includes_former": true,
+    "relation_lookup": [
+      "auditable pre-query lineage identifiers and facets",
+      "auditable relation basis and source metadata",
+      "unicode NFKD normalization",
+      "simple plural normalization",
+      "order-sensitive bigrams",
+      "limited not/no/without disambiguation"
+    ]
+  },
+  "artifact_sha256": {
+    "retrieval_core": "399075866c4b50a9012c6dbdf8278c962fec7084ebf809585ec63cc4a097c3a7",
+    "runtime_relations": "6d54cd6493b43ed7d3071a045e759de912eb35753aecf3a168737579313b9fc4",
+    "frozen_chunks": "e3781e88cf73ea68283d3b918d9a0b800133739e879f6bdf7c6d7afc447d2d9a"
+  },
+  "prohibitions": [
+    "Do not change retrieval code, tokenizer, router, candidate K, pair reserve count, boost, or recency after V7 drafting begins.",
+    "Do not execute retrieval before query and gold review/sealing.",
+    "Do not read V7 gold in the one-time retrieval runner.",
+    "Do not rerun the same V7 pilot after outcomes are opened."
+  ]
+}

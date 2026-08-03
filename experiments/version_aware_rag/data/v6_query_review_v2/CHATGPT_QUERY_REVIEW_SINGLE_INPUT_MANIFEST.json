@@ -1,0 +1,8 @@
+{
+  "contains_other_reviewer_outputs": false,
+  "frozen_packet_sha256": "31ece82ddb04a4b686529cd95d4447fb80f7a35b76969e835612af6259b35e4f",
+  "provider": "chatgpt",
+  "record_count": 96,
+  "schema_version": "v6-query-review-single-input-manifest-1",
+  "single_input_sha256": "8c877c23cb3041129f6d89fd22680f994c506ce5ec8268d5bd34535da4e2b2d3"
+}

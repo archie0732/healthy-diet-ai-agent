@@ -1,0 +1,14 @@
+{
+  "executed_at_utc": "2026-08-02T06:48:20.730296+00:00",
+  "external_model_api_used": false,
+  "fresh_test_execution_count": 1,
+  "judgment_file_read_count": 0,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.11 (main, Jun  7 2025, 12:31:34)  [GCC UCRT 15.1.0 64 bit (AMD64)]",
+  "query_count": 40,
+  "raw_output_sha256": "71f35f19a9a03c3d7ea5df2514f6cbd18db76c55e820cfeb4350aa15719c98da",
+  "record_count": 240,
+  "schema_version": "v7-pilot-run-manifest-1",
+  "status": "single_use_raw_output_sealed",
+  "system_count": 6
+}

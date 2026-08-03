@@ -1,0 +1,18 @@
+{
+  "schema_version": "v6-review-isolation-audit-1",
+  "provider": "gemini",
+  "antigravity_run_id": "54ebc3f5-e4b6-4c38-95e4-39b922eac7b7",
+  "content_validation": "pass",
+  "strict_isolation_compliance": "pass_with_limited_telemetry",
+  "usable_as_final_isolated_judge": true,
+  "observations": [
+    "This is a new run identifier distinct from the two rejected attempts.",
+    "The supplied single-input artifact contains only the frozen prompt, output schema, and six v3 delta packet records; it contains no prior reviewer output.",
+    "The response contains six schema-valid judgments in exact frozen packet order and one final model-metadata line.",
+    "All six candidate identifiers match the haemoglobin-only delta packet.",
+    "A complete Antigravity action transcript was not supplied for this run, so isolation is supported by the single-input artifact and user-executed procedure rather than full session telemetry."
+  ],
+  "single_input_sha256": "0b7af162f4a8f7652c1da0e5879d62d88f6a213bea2be790c84361f6bf4ab79e",
+  "packet_sha256": "990bbcbf9efb030f8022eb60d508769a7eccedc4ab901486320149cd7bcfb3c3",
+  "normalized_review_sha256": "de14ba036c0645de213c0045e2a6dd05a4dd32dcbe296309e85ea0fd6d66d539"
+}

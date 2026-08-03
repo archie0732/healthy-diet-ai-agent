@@ -1,0 +1,1 @@
+MODEL_METADATA: GPT-5.6; session or run identifier not visible.

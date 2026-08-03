@@ -1,0 +1,28 @@
+{
+  "reviewer": "gpt_review_2_packet_v1_invalidated",
+  "model_metadata": "MODEL_METADATA: GPT-5; session or run identifier not visible",
+  "record_count": 40,
+  "eligible_count": 20,
+  "ineligible_query_ids": [
+    "v7q-eh-001",
+    "v7q-eh-002",
+    "v7q-eh-012",
+    "v7q-eh-013",
+    "v7q-eh-014",
+    "v7q-eh-015",
+    "v7q-eh-016",
+    "v7q-eh-017",
+    "v7q-eh-018",
+    "v7q-eh-019",
+    "v7q-eh-020",
+    "v7q-co-006",
+    "v7q-co-007",
+    "v7q-co-008",
+    "v7q-co-009",
+    "v7q-hn-001",
+    "v7q-hn-002",
+    "v7q-hn-007",
+    "v7q-hn-008",
+    "v7q-hn-009"
+  ]
+}

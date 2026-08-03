@@ -1,0 +1,11 @@
+{
+  "audit_sha256": "107fd488e423fc64de3a2bf39dcb173dd2af0dfd9c5c3fc2e250f229b23d9695",
+  "audited_at_utc": "2026-08-01T14:35:45.977386+00:00",
+  "fail_count": 0,
+  "fresh_retrieval_allowed": false,
+  "input_resolution_ledger_sha256": "e7f3900d3ab48b6d810235e7545ed53e1b205e34eee8609f913731369a820a48",
+  "pass_count": 11,
+  "reviewer": "Codex construction audit; not a clinician",
+  "schema_version": "v6-medium-resolution-codex-audit-manifest-1",
+  "unique_medium_mapping_count": 11
+}

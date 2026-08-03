@@ -1,0 +1,10 @@
+{
+  "schema_version": "v6-review-isolation-audit-1",
+  "provider": "chatgpt",
+  "model_metadata_raw": "GPT-5",
+  "content_validation": "pass",
+  "strict_isolation_compliance": "pass",
+  "usable_as_final_isolated_judge": true,
+  "evidence_basis": "User returned the output after being instructed to use a new ChatGPT conversation with only CHATGPT_CLEAN_INPUT_ONLY.zip. The returned artifact contains only the 66 requested judgments and model metadata, with no repository paths, tool transcript, retrieval result, or other-reviewer content.",
+  "limitation": "ChatGPT session/run telemetry was not available in the returned raw response, so clean-session compliance is based on the prescribed handoff and artifact-content audit rather than an independent session transcript."
+}

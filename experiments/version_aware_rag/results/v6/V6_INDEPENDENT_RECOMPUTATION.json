@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "candidate_recall_matches": true,
+    "counts_match": true,
+    "primary_mean_matches": true,
+    "safety_rates_match": true
+  },
+  "input_sha256": {
+    "gold": "48188c89a8072f3526a47ee6d435427397ff02d322c038fb148c950c34115642",
+    "published_result": "204938f1d0b0f255bbf7b60db6e2a3d28f46d5c412d7b939cb9b6a406f1d7289",
+    "raw": "01be0f06f2cfe37de16a3792518e4c76af67e7426480e35db77ec5ab4cade5d7"
+  },
+  "recomputed": {
+    "B_safety_unsafe_query_hit_rate": 0.0,
+    "E_safety_unsafe_query_hit_rate": 0.0,
+    "candidate_required_micro_recall_at_20": 0.48120300751879697,
+    "primary_improved": 0,
+    "primary_mean_E_minus_B": -0.03125,
+    "primary_regressed": 2,
+    "primary_tied": 30
+  },
+  "schema_version": "v6-independent-recomputation-1",
+  "status": "pass"
+}

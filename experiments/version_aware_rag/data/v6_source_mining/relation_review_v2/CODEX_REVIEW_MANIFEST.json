@@ -1,0 +1,15 @@
+{
+  "completed_at_utc": "2026-08-01T08:31:49.771379+00:00",
+  "frozen_manifest_sha256": "666ac48f4688909deb445ae1a74a65d9a9dd979aa355ea0862cab5aa25ee8fd7",
+  "hard_negative_fail_count": 4,
+  "hard_negative_pass_count": 24,
+  "hard_negative_uncertain_count": 19,
+  "judgment_count": 66,
+  "other_reviewer_outputs_seen": false,
+  "packet_sha256": "a84952b4054d8a476cc06abe243b3f015ebe4b732fe86ab0abc17ad930701e29",
+  "raw_review_sha256": "ccdd7478fa43485471c8601b2ccc4831e3677fa2a1056c89ff402d3cde04d7c6",
+  "retrieval_outputs_seen": false,
+  "review_mode": "isolated source-grounded pass over frozen packet",
+  "reviewer": "Codex (GPT-5 family; exact deployment identifier unavailable)",
+  "schema_version": "v6-codex-relation-review-manifest-1"
+}

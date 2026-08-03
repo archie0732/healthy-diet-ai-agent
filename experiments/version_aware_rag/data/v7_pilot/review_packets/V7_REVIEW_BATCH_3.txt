@@ -1,0 +1,251 @@
+V7 ISOLATED QUERY-CONTRACT REVIEW PACKET
+
+RECORD 1
+{
+  "query_id": "v7q-co-001",
+  "query_text": "What does WHO recommend regarding vitamin D supplementation during pregnancy?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-anc-vitamin-d-2016-2020",
+  "lineage_id": "v6lin-anc-vitamin-d",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_vitamin_d_update_2020",
+        "recommendation_id": "vitamin_d",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2020 update still does not recommend oral vitamin D supplementation for all pregnant women. It states that the 2016 recommendation is not altered; supplementation at the recommended nutrient intake may be considered when vitamin D deficiency is suspected.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The update explicitly says it updates and does not alter the 2016 recommendation.",
+  "visual_source_verification": "The visible update explicitly says the recommendation is not altered.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 2
+{
+  "query_id": "v7q-co-002",
+  "query_text": "What is WHO's recommendation on routine zinc supplementation during pregnancy?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-anc-zinc-2016-2021",
+  "lineage_id": "v6lin-anc-zinc",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_zinc_update_2021",
+        "recommendation_id": "zinc",
+        "pdf_page_number": 9
+      },
+      "structured_text_description": "The 2021 update retains the 2016 position: zinc is not recommended as routine antenatal care and is recommended only in the context of rigorous research.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The remarks explicitly say the GDG retained the 2016 recommendation.",
+  "visual_source_verification": "The visible remarks explicitly retain the 2016 recommendation.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 3
+{
+  "query_id": "v7q-co-003",
+  "query_text": "What implementation status does WHO require for policies restricting food marketing to children?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-food-marketing-mandatory-2010-2023",
+  "lineage_id": "v6lin-food-marketing-mandatory-policy",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "be mandatory",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires policies restricting food marketing to children to be mandatory.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation requires a mandatory policy where the 2010 material allowed statutory, self-regulatory, voluntary, or co-regulatory approaches.",
+  "visual_source_verification": "The 2010 range of implementation instruments, 2023 builds-on statement, and current mandatory-policy bullet are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 4
+{
+  "query_id": "v7q-co-004",
+  "query_text": "Which child age groups should be protected by WHO-recommended food-marketing restrictions?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-food-marketing-all-ages-2010-2023",
+  "lineage_id": "v6lin-food-marketing-all-child-ages",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "protect children of all ages",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires food-marketing policies to protect children of all ages. Its remarks define children as people below age 18 unless applicable law sets majority earlier.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation fixes protection for children of all ages rather than leaving the restricted age group as a nationally defined policy component.",
+  "visual_source_verification": "The older nationally defined age component and current all-ages bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 5
+{
+  "query_id": "v7q-co-005",
+  "query_text": "Who should lead development of the nutrient-profile model used in food-marketing restrictions?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-food-marketing-government-npm-2010-2023",
+  "lineage_id": "v6lin-food-marketing-government-led-npm",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "government-led nutrient profile model",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation specifically requires a government-led nutrient-profile model to classify foods restricted from marketing.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation specifies a government-led nutrient profile model where the 2010 guidance allowed several ways to distinguish foods.",
+  "visual_source_verification": "The 2010 food-classification options and current government-led nutrient-profile-model bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 6
+{
+  "query_id": "v7q-co-006",
+  "query_text": "What policy scope and design does WHO recommend for restricting food marketing to children?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-food-marketing-comprehensive-2010-2023",
+  "lineage_id": "v6lin-food-marketing-comprehensive-scope",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "sufficiently comprehensive",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires policies to be sufficiently comprehensive to minimize migration of marketing to unrestricted media, spaces, or age groups, and to restrict marketing's persuasive power.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation calls for sufficiently comprehensive coverage to minimize marketing migration, whereas the 2010 recommendation allowed either stepwise or comprehensive approaches.",
+  "visual_source_verification": "The older stepwise-or-comprehensive option and current sufficiently-comprehensive migration-control bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 7
+{
+  "query_id": "v7q-co-007",
+  "query_text": "Does WHO recommend routine vitamin D supplementation for all pregnant women?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-anc-vitamin-d-2016-2020",
+  "lineage_id": "v6lin-anc-vitamin-d",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_vitamin_d_update_2020",
+        "recommendation_id": "vitamin_d",
+        "pdf_page_number": 10
+      },
+      "structured_text_description": "The 2020 update still does not recommend oral vitamin D supplementation for all pregnant women. It states that the 2016 recommendation is not altered; supplementation at the recommended nutrient intake may be considered when vitamin D deficiency is suspected.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The update explicitly says it updates and does not alter the 2016 recommendation.",
+  "visual_source_verification": "The visible update explicitly says the recommendation is not altered.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 8
+{
+  "query_id": "v7q-co-008",
+  "query_text": "In what context does WHO recommend zinc supplementation during pregnancy?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-anc-zinc-2016-2021",
+  "lineage_id": "v6lin-anc-zinc",
+  "relation_type": "compatible_with",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_antenatal_zinc_update_2021",
+        "recommendation_id": "zinc",
+        "pdf_page_number": 9
+      },
+      "structured_text_description": "The 2021 update retains the 2016 position: zinc is not recommended as routine antenatal care and is recommended only in the context of rigorous research.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The remarks explicitly say the GDG retained the 2016 recommendation.",
+  "visual_source_verification": "The visible remarks explicitly retain the 2016 recommendation.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 9
+{
+  "query_id": "v7q-co-009",
+  "query_text": "What implementation status does WHO prescribe for policies restricting food marketing to children?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-food-marketing-mandatory-2010-2023",
+  "lineage_id": "v6lin-food-marketing-mandatory-policy",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "be mandatory",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires policies restricting food marketing to children to be mandatory.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation requires a mandatory policy where the 2010 material allowed statutory, self-regulatory, voluntary, or co-regulatory approaches.",
+  "visual_source_verification": "The 2010 range of implementation instruments, 2023 builds-on statement, and current mandatory-policy bullet are visually legible.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}
+
+RECORD 10
+{
+  "query_id": "v7q-co-010",
+  "query_text": "What age coverage does WHO prescribe for policies restricting food marketing to children?",
+  "proposed_stratum": "current_only",
+  "candidate_id": "v6rel-food-marketing-all-ages-2010-2023",
+  "lineage_id": "v6lin-food-marketing-all-child-ages",
+  "relation_type": "updates",
+  "required_evidence": [
+    {
+      "source_ref": {
+        "document_id": "who_food_marketing_children_2023",
+        "recommendation_id": "protect children of all ages",
+        "pdf_page_number": 39
+      },
+      "structured_text_description": "The 2023 recommendation requires food-marketing policies to protect children of all ages. Its remarks define children as people below age 18 unless applicable law sets majority earlier.",
+      "description_provenance": "human-readable transcription of the cited source table or recommendation; source pages visually verified before query construction"
+    }
+  ],
+  "deprecated_or_forbidden_evidence": [],
+  "structured_relation_support": "The 2023 guideline states that it builds on the 2010 set using a more recent evidence base; its recommendation fixes protection for children of all ages rather than leaving the restricted age group as a nationally defined policy component.",
+  "visual_source_verification": "The older nationally defined age component and current all-ages bullet are visually legible, with the builds-on statement checked.",
+  "review_packet_revision": "v3_structured_text_descriptions_no_flattened_tables"
+}

@@ -1,0 +1,15 @@
+{
+  "executed_at_utc": "2026-08-01T14:44:12.023224+00:00",
+  "external_model_api_used": false,
+  "fresh_test_execution_count": 1,
+  "frozen_policy_sha256": "2b43a609c11a47d9cd7cadfdf4d1c572b930ef5ba4eb9d314c009b445ec03947",
+  "judgment_file_read_count": 0,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.11 (main, Jun  7 2025, 12:31:34)  [GCC UCRT 15.1.0 64 bit (AMD64)]",
+  "query_count": 96,
+  "raw_output_sha256": "01be0f06f2cfe37de16a3792518e4c76af67e7426480e35db77ec5ab4cade5d7",
+  "record_count": 576,
+  "schema_version": "v6-raw-retrieval-run-manifest-1",
+  "status": "single_use_retrieval_complete_raw_output_sealed",
+  "system_count": 6
+}

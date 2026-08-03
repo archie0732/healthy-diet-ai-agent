@@ -1,0 +1,56 @@
+{
+  "E_pair_boost_activation_query_count": 0,
+  "E_pair_boost_activation_query_ids": [],
+  "analysis_scope": "descriptive_post_test_no_retuning_or_rerun",
+  "candidate_generation_is_primary_bottleneck": true,
+  "candidate_recall_at_20_by_family": {
+    "antenatal_nutrition": 0.8461538461538461,
+    "fiscal_policies_for_healthy_diets": 0.0,
+    "food_marketing_to_children": 0.2727272727272727,
+    "haemoglobin_cutoffs_for_anaemia": 0.7692307692307693,
+    "hiv_and_infant_feeding": 0.6,
+    "school_food_environment": 1.0,
+    "wasting_and_nutritional_oedema": 0.41379310344827586,
+    "who_europe_infant_food_nppm": 0.32,
+    "who_europe_nutrient_profile_model": 0.45161290322580644
+  },
+  "candidate_required_group_misses_by_stratum": {
+    "current_only": 13,
+    "explicit_history": 43,
+    "hard_negative_current": 13
+  },
+  "explicit_history_regressed_queries": [
+    {
+      "B_recall_at_3": 0.5,
+      "E_recall_at_3": 0.0,
+      "lineage_id": "v6lin-infant-nppm-cheese-meals",
+      "pair_boost_activated": false,
+      "query_id": "v6q-eh-015",
+      "required_count": 2,
+      "required_in_candidate_pool": 1,
+      "router_triggered": true
+    },
+    {
+      "B_recall_at_3": 0.5,
+      "E_recall_at_3": 0.0,
+      "lineage_id": "v6lin-infant-nppm-protein-first",
+      "pair_boost_activated": false,
+      "query_id": "v6q-eh-016",
+      "required_count": 2,
+      "required_in_candidate_pool": 1,
+      "router_triggered": true
+    }
+  ],
+  "input_sha256": {
+    "gold": "48188c89a8072f3526a47ee6d435427397ff02d322c038fb148c950c34115642",
+    "raw": "01be0f06f2cfe37de16a3792518e4c76af67e7426480e35db77ec5ab4cade5d7"
+  },
+  "router_false_negative_count": 4,
+  "router_false_negative_query_ids": [
+    "v6q-eh-005",
+    "v6q-eh-011",
+    "v6q-eh-017",
+    "v6q-eh-023"
+  ],
+  "schema_version": "v6-failure-attribution-1"
+}
