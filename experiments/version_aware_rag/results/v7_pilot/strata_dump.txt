@@ -1,0 +1,51 @@
+=== System A ===
+  current_only -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.3, 'micro_recall_at_3': 0.3, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+  explicit_history -> {'candidate_micro_recall_at_20': 0.9, 'macro_recall_at_3': 0.1, 'micro_recall_at_3': 0.1, 'query_count': 20, 'unsafe_query_hit_rate_at_3': 0.0}
+  hard_negative_current -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.5, 'micro_recall_at_3': 0.5, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.1}
+=== System B ===
+  current_only -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.3, 'micro_recall_at_3': 0.3, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+  explicit_history -> {'candidate_micro_recall_at_20': 0.9, 'macro_recall_at_3': 0.1, 'micro_recall_at_3': 0.1, 'query_count': 20, 'unsafe_query_hit_rate_at_3': 0.0}
+  hard_negative_current -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.5, 'micro_recall_at_3': 0.5, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+=== System C ===
+  current_only -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.3, 'micro_recall_at_3': 0.3, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+  explicit_history -> {'candidate_micro_recall_at_20': 0.9, 'macro_recall_at_3': 0.1, 'micro_recall_at_3': 0.1, 'query_count': 20, 'unsafe_query_hit_rate_at_3': 0.0}
+  hard_negative_current -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.5, 'micro_recall_at_3': 0.5, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+=== System D ===
+  current_only -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.9, 'micro_recall_at_3': 0.9, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+  explicit_history -> {'candidate_micro_recall_at_20': 0.9, 'macro_recall_at_3': 0.425, 'micro_recall_at_3': 0.425, 'query_count': 20, 'unsafe_query_hit_rate_at_3': 0.0}
+  hard_negative_current -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.8, 'micro_recall_at_3': 0.8, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.1}
+=== System E ===
+  current_only -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.3, 'micro_recall_at_3': 0.3, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+  explicit_history -> {'candidate_micro_recall_at_20': 0.9, 'macro_recall_at_3': 0.525, 'micro_recall_at_3': 0.525, 'query_count': 20, 'unsafe_query_hit_rate_at_3': 0.0}
+  hard_negative_current -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.5, 'micro_recall_at_3': 0.5, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+=== System F ===
+  current_only -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.3, 'micro_recall_at_3': 0.3, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+  explicit_history -> {'candidate_micro_recall_at_20': 0.9, 'macro_recall_at_3': 0.1, 'micro_recall_at_3': 0.1, 'query_count': 20, 'unsafe_query_hit_rate_at_3': 0.0}
+  hard_negative_current -> {'candidate_micro_recall_at_20': 1.0, 'macro_recall_at_3': 0.5, 'micro_recall_at_3': 0.5, 'query_count': 10, 'unsafe_query_hit_rate_at_3': 0.0}
+
+primary_effectiveness full:
+{
+  "comparison": "E_minus_B_explicit_history_macro_recall_at_3",
+  "exact_paired_sign_flip_p_value_two_sided": 0.000244140625,
+  "improved_tied_regressed": [
+    13,
+    7,
+    0
+  ],
+  "lineage_clustered_bootstrap_95_ci": [
+    0.275,
+    0.575
+  ],
+  "mean_paired_difference": 0.425,
+  "query_count": 20
+}
+
+safety full:
+{
+  "B_unsafe_query_hit_rate_at_3": 0.0,
+  "E_minus_B_unsafe": 0.0,
+  "E_unsafe_query_hit_rate_at_3": 0.0,
+  "noninferiority_margin": 0.05,
+  "noninferiority_pass": true,
+  "query_count": 20
+}
