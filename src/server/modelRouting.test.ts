@@ -1,8 +1,10 @@
 import { afterEach, describe, expect, test } from 'bun:test';
+import { AIMessage, HumanMessage } from '@langchain/core/messages';
 import {
   buildPreferredProviderOrder,
   isRetryableGoogleFailure,
   pickGoogleApiKey,
+  preserveToolCallExtraContent,
 } from './modelRouting';
 
 const savedEnv = {
@@ -93,5 +95,47 @@ describe('isRetryableGoogleFailure', () => {
     expect(isRetryableGoogleFailure(new Error('invalid api key'))).toBe(false);
     expect(isRetryableGoogleFailure(new Error('permission denied'))).toBe(false);
     expect(isRetryableGoogleFailure({ status: 400, message: 'invalid api key' })).toBe(false);
+  });
+});
+
+describe('preserveToolCallExtraContent', () => {
+  test('sends raw tool_calls with extra_content instead of rebuilt ones', () => {
+    const signed = new AIMessage({
+      content: '',
+      tool_calls: [{ id: 'call_1', name: 'search_knowledge_tool', args: { query: 'food' } }],
+      additional_kwargs: {
+        tool_calls: [
+          {
+            index: 0,
+            id: 'call_1',
+            type: 'function',
+            function: { name: 'search_knowledge_tool', arguments: '{"query":"food"}' },
+            extra_content: { google: { thought_signature: 'sig' } },
+          },
+        ],
+      },
+    });
+    const [patched] = preserveToolCallExtraContent([signed]);
+
+    expect((patched as AIMessage).tool_calls).toEqual([]);
+    expect((patched as AIMessage).additional_kwargs.tool_calls).toEqual([
+      {
+        id: 'call_1',
+        type: 'function',
+        function: { name: 'search_knowledge_tool', arguments: '{"query":"food"}' },
+        extra_content: { google: { thought_signature: 'sig' } },
+      },
+    ]);
+    expect(signed.tool_calls).toHaveLength(1);
+  });
+
+  test('leaves messages without extra_content untouched', () => {
+    const plain = new AIMessage({
+      content: '',
+      tool_calls: [{ id: 'call_1', name: 'search_knowledge_tool', args: {} }],
+    });
+    const human = new HumanMessage('hi');
+
+    expect(preserveToolCallExtraContent([plain, human])).toEqual([plain, human]);
   });
 });

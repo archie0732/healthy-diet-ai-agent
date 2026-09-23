@@ -27,6 +27,7 @@ import {
   createLocalChatModel,
   isRetryableGoogleFailure,
   pickGoogleApiKey,
+  preserveToolCallExtraContent,
   type ChatProvider,
 } from './modelRouting';
 import {
@@ -732,7 +733,7 @@ const callModel = async (state: typeof AgentState.State) => {
         : baseModel.bindTools(agentTools);
 
       emitRuntimeStatus(state.runtime_stream_id, `Provider ${provider}: stream opened`);
-      return modelWithTools.invoke([systemMessage, ...recentMessages]);
+      return modelWithTools.invoke([systemMessage, ...preserveToolCallExtraContent(recentMessages)]);
     },
   });
   return { messages: [response] };

@@ -1,4 +1,5 @@
 import { ChatOpenAI } from '@langchain/openai';
+import { AIMessage, type BaseMessage } from '@langchain/core/messages';
 import type { ChatModelSource } from './chatPayload';
 import { AI_API_URL } from './supabaseRuntime';
 import { LLM_TIMEOUT_MS } from './httpRuntime';
@@ -90,6 +91,45 @@ export const isRetryableGoogleFailure = (error: unknown): boolean => {
     text.includes('fetch failed')
   );
 };
+
+type RawToolCall = {
+  id?: string;
+  index?: number;
+  extra_content?: unknown;
+  [key: string]: unknown;
+};
+
+/**
+ * Gemini 3 models (e.g. gemini-flash-latest) return a thought_signature in
+ * tool_calls[].extra_content and reject the follow-up request with a bare 400
+ * if it is not echoed back. ChatOpenAI rebuilds tool_calls from
+ * AIMessage.tool_calls and drops extra_content, but it sends
+ * additional_kwargs.tool_calls verbatim when tool_calls is empty — so hand it
+ * a copy shaped that way. Graph state is left untouched.
+ */
+export const preserveToolCallExtraContent = <T>(messages: T[]): T[] =>
+  messages.map((message) => {
+    if (!AIMessage.isInstance(message)) return message;
+    const rawToolCalls = message.additional_kwargs?.tool_calls as RawToolCall[] | undefined;
+    if (!message.tool_calls?.length || !rawToolCalls?.some((call) => call.extra_content)) {
+      return message;
+    }
+
+    return new AIMessage({
+      content: message.content,
+      id: message.id,
+      name: message.name,
+      tool_calls: [],
+      additional_kwargs: {
+        ...message.additional_kwargs,
+        // `index` only exists on streamed chunks and is not a request field.
+        tool_calls: rawToolCalls.map(({ index: _index, ...call }) => call) as NonNullable<
+          AIMessage['additional_kwargs']['tool_calls']
+        >,
+      },
+      response_metadata: message.response_metadata,
+    }) as BaseMessage as T;
+  });
 
 export const createLocalChatModel = () =>
   new ChatOpenAI({
