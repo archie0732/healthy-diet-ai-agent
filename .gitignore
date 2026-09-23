@@ -3,9 +3,8 @@
 .env.*
 !.env.example
 
-# Dependencies and local lockfile
+# Dependencies (bun.lock is tracked: the Dockerfile needs it for a frozen install)
 node_modules/
-bun.lock
 
 # Local AI-agent instructions, state, and worktrees
 /AGENT.md

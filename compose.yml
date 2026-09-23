@@ -1,7 +1,10 @@
 services:
   healthy-diet-ai-agent:
+    build: .
     image: ${IMAGE_NAME:-ghcr.io/archie0732/healthy-diet-ai-agent:main}
-    pull_policy: always
+    # Default: build from source (no registry login needed).
+    # CI deploy sets AGENT_PULL_POLICY=always to use the image pushed to GHCR.
+    pull_policy: ${AGENT_PULL_POLICY:-build}
     container_name: healthy-diet-ai-agent
     restart: unless-stopped
     env_file:

@@ -133,6 +133,7 @@ jobs:
         shell: pwsh
         env:
           IMAGE_NAME: ${{ needs.build.outputs.image_ref }}
+          AGENT_PULL_POLICY: always
         run: |
           $ErrorActionPreference = 'Stop'
           $composeFile = Join-Path $env:DEPLOY_PATH 'compose.yml'
