@@ -12,9 +12,43 @@ services:
       SQLITE_DB_PATH: /app/data/healthy-diet-agent.db
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    # Not public: the API reaches it at http://healthy-diet-ai-agent:8001 on the
+    # compose network; the 127.0.0.1 binding only allows local debugging on the host.
+    expose:
+      - "8001"
     ports:
-      - "8001:8001"
+      - "127.0.0.1:8001:8001"
     volumes:
       - ./data:/app/data
       - ./knowledge_base:/app/knowledge_base
       - ./users_images:/app/users_images
+
+  # Rust API server; runs the Python YOLO predictor (services/yolo) as a subprocess.
+  healthy-diet-api:
+    build:
+      context: ./services
+      dockerfile: api/Dockerfile
+      target: final
+    image: healthy-diet-api:local
+    pull_policy: build
+    container_name: healthy-diet-api
+    restart: unless-stopped
+    depends_on:
+      - healthy-diet-ai-agent
+    env_file:
+      - ./services/api/.env
+    environment:
+      AGENT_API_URL: http://healthy-diet-ai-agent:8001
+      RUST_LOG: info,sqlx=warn,sqlx::query=off
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./services/data/uploads:/app/uploads
+      - ./services/data/yolo_results:/app/yolo_scripts/results
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0"]
+              capabilities: [gpu]

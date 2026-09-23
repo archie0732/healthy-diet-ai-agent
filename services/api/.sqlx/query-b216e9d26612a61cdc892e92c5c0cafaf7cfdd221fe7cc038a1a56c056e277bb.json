@@ -1,0 +1,28 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT question, ai_response FROM ai_consultations\n           WHERE user_id = $1 ORDER BY id DESC LIMIT 5",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "question",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "ai_response",
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false
+    ]
+  },
+  "hash": "b216e9d26612a61cdc892e92c5c0cafaf7cfdd221fe7cc038a1a56c056e277bb"
+}

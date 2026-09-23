@@ -1,0 +1,26 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT record_date::TEXT as date_str, visit_count\n        FROM daily_stats\n        WHERE record_date >= CURRENT_DATE - INTERVAL '29 days'\n        ORDER BY record_date ASC\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "date_str",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "visit_count",
+        "type_info": "Int4"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      null,
+      false
+    ]
+  },
+  "hash": "4efff257bc565faf4b8eb05d05ae239a073266c62290d963938ff02e72f2974e"
+}

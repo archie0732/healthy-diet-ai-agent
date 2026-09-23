@@ -48,6 +48,7 @@ knowledge_base/ingested_markdown/
 knowledge_base/graph/
 uploads/
 docs/
+!/services/api/docs/
 plans/
 raw_data/
 /experiments/version_aware_rag/data/raw/
@@ -55,3 +56,8 @@ raw_data/
 .codex_doc_review_tanet*/
 .codex-review/
 .tmp_tanet_review/
+
+# Merged services (Rust API + YOLO)
+services/api/target/
+services/yolo/results/
+services/data/

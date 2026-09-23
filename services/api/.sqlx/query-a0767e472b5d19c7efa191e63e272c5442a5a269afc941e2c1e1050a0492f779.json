@@ -1,0 +1,83 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        UPDATE users\n        SET\n            nickname = COALESCE($1, nickname),\n            height = COALESCE($2, height),\n            weight = COALESCE($3, weight),\n            age = COALESCE($4, age),\n            gender = COALESCE($5, gender),\n            taboo = COALESCE($6, taboo),\n            disease = COALESCE($7, disease)\n        WHERE id = $8\n        RETURNING id, email, nickname, avatar_url, height, weight, age, gender, taboo, disease\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid"
+      },
+      {
+        "ordinal": 1,
+        "name": "email",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "nickname",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "avatar_url",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 4,
+        "name": "height",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 5,
+        "name": "weight",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 6,
+        "name": "age",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 7,
+        "name": "gender",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 8,
+        "name": "taboo",
+        "type_info": "TextArray"
+      },
+      {
+        "ordinal": 9,
+        "name": "disease",
+        "type_info": "TextArray"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Float8",
+        "Float8",
+        "Float8",
+        "Varchar",
+        "TextArray",
+        "TextArray",
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "a0767e472b5d19c7efa191e63e272c5442a5a269afc941e2c1e1050a0492f779"
+}

@@ -1,0 +1,3219 @@
+openapi: 3.0.3
+info:
+  title: Healthy Diet API
+  version: 1.0.0
+  description: API specification synchronized with current Axum routes.
+servers:
+  - url: http://localhost:3000
+    description: Local development
+
+tags:
+  - name: System
+  - name: Authentication
+  - name: Users
+  - name: Diet
+  - name: Chat
+  - name: Knowledge
+  - name: Admin
+
+paths:
+  /:
+    get:
+      tags: [System]
+      summary: Root health text
+      operationId: root
+      responses:
+        '200':
+          description: Connect success message
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Connect Success!
+
+  /openapi.yml:
+    get:
+      tags: [System]
+      summary: Get OpenAPI YAML document
+      operationId: getOpenApiYaml
+      responses:
+        '200':
+          description: OpenAPI specification in YAML format
+          content:
+            application/yaml:
+              schema:
+                type: string
+
+  /ping:
+    get:
+      tags: [System]
+      summary: Root ping endpoint
+      description: Lightweight Rust liveness endpoint. This is separate from the downstream agent `/ping` JSON health route used internally by `/api/chat_check`.
+      operationId: rootPing
+      responses:
+        '200':
+          description: Meme-style ping text
+          content:
+            text/plain:
+              schema:
+                type: string
+
+  /api/ping:
+    get:
+      tags: [System]
+      summary: Ping server
+      operationId: ping
+      responses:
+        '200':
+          description: Meme-style ping text
+          content:
+            text/plain:
+              schema:
+                type: string
+
+  /api/health:
+    get:
+      tags: [System]
+      summary: Health check
+      operationId: healthCheck
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+  /api/gemma4/health:
+    get:
+      tags: [System]
+      summary: Check local Gemma4 service reachability
+      operationId: gemma4HealthCheck
+      responses:
+        '200':
+          description: Gemma4 service is reachable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Gemma4HealthResponse'
+        '503':
+          description: Gemma4 service is unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Gemma4HealthResponse'
+
+  /auth/discord/login:
+    get:
+      tags: [Authentication]
+      summary: Redirect to Discord OAuth login
+      operationId: discordLogin
+      responses:
+        '307':
+          description: Temporary redirect to Discord OAuth authorize URL
+
+  /auth/discord/callbck:
+    get:
+      tags: [Authentication]
+      summary: Discord OAuth callback
+      operationId: discordCallback
+      parameters:
+        - in: query
+          name: code
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: state
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Discord login result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiscordLoginResponse'
+
+  /auth/register:
+    post:
+      tags: [Authentication]
+      summary: Register account
+      operationId: register
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterPayload'
+      responses:
+        '200':
+          description: Register success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          description: Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '409':
+          description: Email already exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /auth/login:
+    post:
+      tags: [Authentication]
+      summary: Login
+      operationId: login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginPayload'
+      responses:
+        '200':
+          description: Login success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401':
+          description: Invalid email or password
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /auth/admin/login:
+    post:
+      tags: [Authentication]
+      summary: Login as admin/operator
+      operationId: adminLogin
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginPayload'
+      responses:
+        '200':
+          description: Admin login success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401':
+          description: Invalid email or password
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Authenticated user is not an admin
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/auth/refresh:
+    post:
+      tags: [Authentication]
+      summary: Refresh token
+      operationId: refreshToken
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenPayload'
+      responses:
+        '200':
+          description: New token pair
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401':
+          description: Invalid/expired refresh token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/user/profile:
+    get:
+      tags: [Users]
+      summary: Get profile
+      operationId: getProfile
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: User profile detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetailResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    put:
+      tags: [Users]
+      summary: Update profile
+      operationId: updateProfile
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfilePayload'
+      responses:
+        '200':
+          description: Updated profile
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetailResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Update failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/diet:
+    post:
+      tags: [Diet]
+      summary: Analyze diet image with YOLO and AI scoring
+      operationId: analyzeDiet
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [image]
+              properties:
+                image:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Analysis result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalorieResponse'
+        '400':
+          description: Invalid upload/image
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: YOLO/AI/server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/diet_record:
+    get:
+      tags: [Diet]
+      summary: Get latest diet records (max 30)
+      operationId: getDietRecords
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Diet records list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DietRecordResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/diet_image:
+    post:
+      tags: [Diet]
+      summary: Get analyzed image by record id
+      description: Requires bearer token.
+      operationId: getDietImage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ImageRequest'
+      responses:
+        '200':
+          description: Base64 image payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ImageResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Forbidden or record not owned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Image/record not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/record:
+    post:
+      tags: [System]
+      summary: Record a site visit for current date
+      operationId: recordVisit
+      responses:
+        '200':
+          description: Visit recorded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Visit recorded successfully
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/month_stats:
+    get:
+      tags: [System]
+      summary: Get daily visit counts of latest 30 days
+      operationId: getMonthStats
+      responses:
+        '200':
+          description: Daily stats
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DailyStatsResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/chat_check:
+    get:
+      tags: [Chat]
+      summary: Check downstream chat agent availability
+      description: Probes the configured downstream agent `/ping` route and reports whether proxy chat is currently reachable.
+      operationId: chatCheck
+      responses:
+        '200':
+          description: Agent is reachable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProxyChatCheckResponse'
+        '500':
+          description: Missing configuration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProxyChatCheckResponse'
+        '503':
+          description: Agent unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProxyChatCheckResponse'
+
+  /api/chat:
+    post:
+      tags: [Chat]
+      summary: Proxy chat request to agent service (SSE)
+      description: Rust-facing SSE endpoint for frontend clients. This route persists local room/history metadata, then forwards the request to the downstream agent route `/api/chat`.
+      operationId: chat
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AgentChatRequest'
+      responses:
+        '200':
+          description: Server-Sent Events stream
+          content:
+            text/event-stream:
+              schema:
+                type: string
+                example: "data: {\"type\":\"answer\",\"content\":\"...\"}\n\n"
+        '400':
+          description: Invalid image format/payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server or downstream error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/approve:
+    post:
+      tags: [Admin]
+      summary: Approve or reject downstream agent action
+      description: Completes approval workflows initiated by the downstream agent chat flow. This route proxies the agent route `/api/approve`.
+      operationId: approveAgent
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AgentApproveRequest'
+      responses:
+        '200':
+          description: Pass-through JSON from downstream service
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server/downstream error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/announcements/current:
+    get:
+      tags: [Knowledge]
+      summary: Get the latest published public announcement
+      operationId: getCurrentAnnouncement
+      responses:
+        '200':
+          description: Current published announcement
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrentAnnouncementResponse'
+        '404':
+          description: No published announcement
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/news/sync:
+    post:
+      tags: [Knowledge]
+      summary: Trigger downstream FDA news sync
+      description: Rust-facing proxy for the downstream agent route `/api/news/sync`.
+      operationId: newsSync
+      responses:
+        '200':
+          description: News sync result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewsSyncResponse'
+        '500':
+          description: Server configuration error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/news:
+    get:
+      tags: [Knowledge]
+      summary: Get paginated local news list
+      description: Rust-facing proxy for the downstream agent route `/api/news`.
+      operationId: listNews
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+        - in: query
+          name: pageSize
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 100
+      responses:
+        '200':
+          description: News list response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewsListResponse'
+        '500':
+          description: Server configuration error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/news/{id}:
+    get:
+      tags: [Knowledge]
+      summary: Get one local news article
+      description: Rust-facing proxy for the downstream agent route `/api/news/{id}`.
+      operationId: getNewsDetail
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: News detail response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewsDetailResponse'
+        '404':
+          description: News entry or file not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server configuration error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/news-files:
+    get:
+      tags: [Knowledge]
+      summary: List local news markdown files
+      description: Rust-facing proxy for the downstream agent route `/api/news-files`.
+      operationId: listNewsFiles
+      responses:
+        '200':
+          description: News file list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NewsFilesResponse'
+        '500':
+          description: Server configuration error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/rag/search:
+    get:
+      tags: [Knowledge]
+      summary: Search local knowledge corpus
+      description: GET proxy for the downstream agent route `/api/rag/search`.
+      operationId: ragSearchGet
+      parameters:
+        - in: query
+          name: query
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: top_k
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 12
+        - in: query
+          name: force_refresh
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: RAG search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagSearchResponse'
+        '500':
+          description: Server configuration error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    post:
+      tags: [Knowledge]
+      summary: Search local knowledge corpus with source filters
+      description: POST proxy for the downstream agent route `/api/rag/search`.
+      operationId: ragSearchPost
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RagSearchRequest'
+      responses:
+        '200':
+          description: RAG search results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagSearchResponse'
+        '400':
+          description: Invalid payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagSearchValidationError'
+        '500':
+          description: Server configuration error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/knowledge-graph/status:
+    get:
+      tags: [Knowledge]
+      summary: Get global knowledge graph readiness and counts
+      description: Public Rust-facing endpoint for frontend clients. This route proxies the downstream agent route `/api/graph/status` and returns global graph readiness plus aggregate counts.
+      operationId: knowledgeGraphStatus
+      responses:
+        '200':
+          description: Knowledge graph global status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphStatusResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/knowledge-graph/nodes:
+    get:
+      tags: [Knowledge]
+      summary: List knowledge graph nodes from the global graph cache
+      description: Public Rust-facing endpoint for frontend clients. This route proxies the downstream agent route `/api/graph/nodes`.
+      operationId: knowledgeGraphNodes
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 500
+            default: 100
+        - in: query
+          name: node_type
+          schema:
+            type: string
+        - in: query
+          name: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Knowledge graph node list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphNodesResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/knowledge-graph/query:
+    post:
+      tags: [Knowledge]
+      summary: Query a focused knowledge graph subgraph
+      description: Public Rust-facing endpoint for frontend clients. This route proxies the downstream agent route `/api/graph/search`.
+      operationId: knowledgeGraphQuery
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KnowledgeGraphQueryRequest'
+      responses:
+        '200':
+          description: Knowledge graph query result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphQueryResponse'
+        '400':
+          description: Invalid payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/knowledge-graph/nodes/{node_id}:
+    get:
+      tags: [Knowledge]
+      summary: Get one knowledge graph node with neighbors and evidence
+      description: Public Rust-facing endpoint for frontend clients. This route proxies the downstream agent route `/api/graph/nodes/{node_id}`.
+      operationId: knowledgeGraphNodeDetail
+      parameters:
+        - in: path
+          name: node_id
+          required: true
+          description: URL-encoded node identifier such as `food%3Abroccoli`
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Knowledge graph node detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphNodeDetailResponse'
+        '404':
+          description: Node not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/knowledge-graph/relations/{relation_id}/evidence:
+    get:
+      tags: [Knowledge]
+      summary: Get one relation with supporting evidence
+      description: Public Rust-facing endpoint for frontend clients. This route proxies the downstream agent route `/api/graph/relations/{relation_id}/evidence`.
+      operationId: knowledgeGraphRelationEvidence
+      parameters:
+        - in: path
+          name: relation_id
+          required: true
+          description: URL-encoded relation identifier such as `food%3Abroccoli%7Ccontains%7Cnutrient%3Afiber`
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Knowledge graph relation evidence
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphRelationEvidenceResponse'
+        '404':
+          description: Relation not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/me:
+    get:
+      tags: [Admin]
+      summary: Get current admin identity
+      operationId: adminMe
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Current admin profile
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/users:
+    get:
+      tags: [Admin]
+      summary: List admin-visible users
+      operationId: adminListUsers
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 200
+        - in: query
+          name: offset
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      responses:
+        '200':
+          description: User list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AdminUserListItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/users/{user_id}:
+    get:
+      tags: [Admin]
+      summary: Get one user detail for admin console
+      operationId: adminGetUserDetail
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: user_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: User detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetailResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/route-controls:
+    get:
+      tags: [Admin]
+      summary: List route control flags
+      operationId: adminListRouteControls
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Route control list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/RouteControlItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/route-controls/{route_key}:
+    patch:
+      tags: [Admin]
+      summary: Update one route control flag
+      operationId: adminUpdateRouteControl
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: route_key
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateRouteControlPayload'
+      responses:
+        '200':
+          description: Updated route control
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RouteControlItem'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/announcements:
+    get:
+      tags: [Admin]
+      summary: List announcements for admin console
+      operationId: adminListAnnouncements
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 200
+        - in: query
+          name: offset
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      responses:
+        '200':
+          description: Announcement list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AnnouncementItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    post:
+      tags: [Admin]
+      summary: Create announcement
+      operationId: adminCreateAnnouncement
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAnnouncementPayload'
+      responses:
+        '200':
+          description: Created announcement
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnnouncementItem'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/announcements/{id}:
+    patch:
+      tags: [Admin]
+      summary: Update announcement
+      operationId: adminUpdateAnnouncement
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateAnnouncementPayload'
+      responses:
+        '200':
+          description: Updated announcement
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnnouncementItem'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Announcement not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/announcements/{id}/publish:
+    post:
+      tags: [Admin]
+      summary: Publish announcement
+      operationId: adminPublishAnnouncement
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Published announcement
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnnouncementItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Announcement not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/announcements/{id}/archive:
+    post:
+      tags: [Admin]
+      summary: Archive announcement
+      operationId: adminArchiveAnnouncement
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Archived announcement
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnnouncementItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Admin access required
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Announcement not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/rag/documents:
+    get:
+      tags: [Admin]
+      summary: List RAG documents
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/rag/documents` and normalizes the downstream `{ items, total }` payload into a plain array.
+      operationId: adminListRagDocuments
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 200
+        - in: query
+          name: offset
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      responses:
+        '200':
+          description: RAG document list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/RagDocumentItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    post:
+      tags: [Admin]
+      summary: Upload RAG document
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route forwards a multipart upload to the downstream agent route `/api/rag/documents` and rewrites returned file URLs to Rust-admin paths.
+      operationId: adminUploadRagDocument
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  format: binary
+                embeddingModel:
+                  type: string
+                  nullable: true
+      responses:
+        '200':
+          description: Uploaded RAG document metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagDocumentItem'
+        '400':
+          description: Invalid upload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '413':
+          description: File too large
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/rag/documents/{document_id}:
+    get:
+      tags: [Admin]
+      summary: Get RAG document detail
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/rag/documents/{document_id}` and rewrites returned file URLs to Rust-admin paths.
+      operationId: adminGetRagDocument
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: RAG document detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagDocumentItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    delete:
+      tags: [Admin]
+      summary: Delete RAG document
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/rag/documents/{document_id}` and rewrites returned file URLs to Rust-admin paths.
+      operationId: adminDeleteRagDocument
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Deleted RAG document metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagDocumentItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/rag/documents/{document_id}/reindex:
+    post:
+      tags: [Admin]
+      summary: Requeue a RAG document for indexing
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/rag/documents/{document_id}/reindex` and rewrites returned file URLs to Rust-admin paths.
+      operationId: adminReindexRagDocument
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Requeued RAG document metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagDocumentItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/rag/documents/{document_id}/file:
+    get:
+      tags: [Admin]
+      summary: Open original RAG document file
+      description: Admin Rust-facing binary proxy for the downstream agent route `/api/rag/documents/{document_id}/file`.
+      operationId: adminGetRagDocumentFile
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Original file bytes
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+            text/plain:
+              schema:
+                type: string
+            text/markdown:
+              schema:
+                type: string
+            application/vnd.openxmlformats-officedocument.wordprocessingml.document:
+              schema:
+                type: string
+                format: binary
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /admin/rag/documents/{document_id}/preview:
+    get:
+      tags: [Admin]
+      summary: Preview RAG document content
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/rag/documents/{document_id}/preview` and rewrites returned file URLs to Rust-admin paths.
+      operationId: adminGetRagDocumentPreview
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Preview payload for frontend rendering
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagDocumentPreviewResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/admin/knowledge-graph/rebuild:
+    post:
+      tags: [Admin]
+      summary: Rebuild the global knowledge graph from current sources
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/graph/extract-all`. The request body may be omitted; when omitted, the backend forwards an empty object `{}`.
+      operationId: adminRebuildKnowledgeGraph
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KnowledgeGraphRebuildRequest'
+            examples:
+              default:
+                summary: Incremental rebuild
+                value: {}
+              force:
+                summary: Force full rebuild
+                value:
+                  force: true
+      responses:
+        '200':
+          description: Knowledge graph rebuild result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphRebuildResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/admin/knowledge-graph/documents/{document_id}:
+    get:
+      tags: [Admin]
+      summary: Get one extracted knowledge graph document
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/graph/documents/{document_id}`.
+      operationId: adminGetKnowledgeGraphDocument
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          description: Graph document identifier such as `doc-upload-1`
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Extracted knowledge graph document detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphDocumentDetailResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/admin/knowledge-graph/documents/{document_id}/extract:
+    post:
+      tags: [Admin]
+      summary: Extract or refresh one knowledge graph document
+      description: Admin Rust-facing endpoint for frontend/admin clients. This route proxies the downstream agent route `/api/graph/documents/{document_id}/extract`. The request body may be omitted; when omitted, the backend forwards an empty object `{}`.
+      operationId: adminExtractKnowledgeGraphDocument
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          description: Graph document identifier such as `doc-upload-1`
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KnowledgeGraphExtractRequest'
+      responses:
+        '200':
+          description: Extraction result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KnowledgeGraphExtractResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '502':
+          description: Downstream service unavailable or invalid response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/rag/sources/{document_id}/file:
+    get:
+      tags: [Knowledge]
+      summary: Open a RAG source file for end users
+      description: Public Rust-facing binary proxy for the downstream agent route `/api/rag/sources/{document_id}/file`.
+      operationId: getRagSourceFile
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Original file bytes
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+            text/plain:
+              schema:
+                type: string
+            text/markdown:
+              schema:
+                type: string
+            application/vnd.openxmlformats-officedocument.wordprocessingml.document:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/rag/sources/{document_id}/preview:
+    get:
+      tags: [Knowledge]
+      summary: Preview a RAG source for end users
+      description: Public Rust-facing endpoint for frontend clients. This route proxies the downstream agent route `/api/rag/sources/{document_id}/preview` and rewrites returned file URLs to Rust public-source paths.
+      operationId: getRagSourcePreview
+      parameters:
+        - in: path
+          name: document_id
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Preview payload for frontend rendering
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RagDocumentPreviewResponse'
+        '404':
+          description: Document not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/chat_rooms:
+    get:
+      tags: [Chat]
+      summary: Get chat room list
+      operationId: getChatRooms
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Chat rooms
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  rooms:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/RoomResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/chat_room_titles:
+    get:
+      tags: [Chat]
+      summary: Get chat room titles and summaries
+      operationId: getChatRoomTitles
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Chat room title list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  rooms:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ChatRoomTitleItem'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/room_history/{room_id}:
+    get:
+      tags: [Chat]
+      summary: Get room history messages
+      operationId: getRoomHistory
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: room_id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: History list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  history:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ChatMessage'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/room_history/{room_id}/index/{index}:
+    get:
+      tags: [Chat]
+      summary: Get specific room history detail by index
+      operationId: getRoomHistoryByIndex
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: room_id
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: index
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 0
+      responses:
+        '200':
+          description: History detail
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  detail:
+                    $ref: '#/components/schemas/RoomHistoryDetailResponse'
+        '400':
+          description: Invalid index
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Index out of range
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+
+    UserProfile:
+      type: object
+      required: [id, email, role]
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        nickname:
+          type: string
+          nullable: true
+        avatar_url:
+          type: string
+          nullable: true
+        role:
+          type: string
+          enum: [user, operator, super_admin]
+
+    AuthResponse:
+      type: object
+      required: [token, refreshToken, expiresIn, user]
+      properties:
+        token:
+          type: string
+        refreshToken:
+          type: string
+        expiresIn:
+          type: integer
+          format: int64
+        user:
+          $ref: '#/components/schemas/UserProfile'
+
+    RegisterPayload:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          minLength: 6
+        nickname:
+          type: string
+          minLength: 2
+          maxLength: 20
+          nullable: true
+        avatar_url:
+          type: string
+          nullable: true
+
+    LoginPayload:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+
+    RefreshTokenPayload:
+      type: object
+      required: [refreshToken]
+      properties:
+        refreshToken:
+          type: string
+
+    UserDetailResponse:
+      type: object
+      required: [id, email]
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        nickname:
+          type: string
+          nullable: true
+        avatarUrl:
+          type: string
+          nullable: true
+        height:
+          type: number
+          format: double
+          nullable: true
+        weight:
+          type: number
+          format: double
+          nullable: true
+        age:
+          type: number
+          format: double
+          nullable: true
+        gender:
+          type: string
+          nullable: true
+        taboo:
+          type: array
+          nullable: true
+          items:
+            type: string
+        disease:
+          type: array
+          nullable: true
+          items:
+            type: string
+
+    UpdateProfilePayload:
+      type: object
+      properties:
+        nickname:
+          type: string
+          nullable: true
+        height:
+          type: number
+          format: double
+          nullable: true
+        weight:
+          type: number
+          format: double
+          nullable: true
+        age:
+          type: number
+          format: double
+          nullable: true
+        gender:
+          type: string
+          nullable: true
+        taboo:
+          type: array
+          nullable: true
+          items:
+            type: string
+        disease:
+          type: array
+          nullable: true
+          items:
+            type: string
+
+    FoodItem:
+      type: object
+      required: [class, confidence, estimated_weight_g, calories]
+      properties:
+        class:
+          type: string
+        confidence:
+          type: number
+          format: double
+        estimated_weight_g:
+          type: number
+          format: double
+        calories:
+          type: number
+          format: double
+
+    CalorieResponse:
+      type: object
+      required: [message, total_calories, detected_items, ai_score, ai_comment]
+      properties:
+        message:
+          type: string
+        total_calories:
+          type: number
+          format: double
+        detected_items:
+          type: array
+          items:
+            $ref: '#/components/schemas/FoodItem'
+        image_base64:
+          type: string
+          nullable: true
+        ai_score:
+          type: integer
+        ai_comment:
+          type: string
+
+    DietRecordResponse:
+      type: object
+      required: [id, created_at, total_calories]
+      properties:
+        id:
+          type: string
+          format: uuid
+        created_at:
+          type: string
+        total_calories:
+          type: number
+          format: double
+        grain_calories:
+          type: number
+          format: double
+          nullable: true
+        grain_area:
+          type: number
+          format: double
+          nullable: true
+        protein_meat_calories:
+          type: number
+          format: double
+          nullable: true
+        protein_meat_area:
+          type: number
+          format: double
+          nullable: true
+        protein_bean_calories:
+          type: number
+          format: double
+          nullable: true
+        protein_bean_area:
+          type: number
+          format: double
+          nullable: true
+        vegetable_calories:
+          type: number
+          format: double
+          nullable: true
+        vegetable_area:
+          type: number
+          format: double
+          nullable: true
+        fruit_calories:
+          type: number
+          format: double
+          nullable: true
+        fruit_area:
+          type: number
+          format: double
+          nullable: true
+        dairy_calories:
+          type: number
+          format: double
+          nullable: true
+        dairy_area:
+          type: number
+          format: double
+          nullable: true
+        nuts_calories:
+          type: number
+          format: double
+          nullable: true
+        nuts_area:
+          type: number
+          format: double
+          nullable: true
+        ai_health_score:
+          type: integer
+          nullable: true
+        ai_evaluation:
+          type: string
+          nullable: true
+
+    ImageRequest:
+      type: object
+      required: [record_id]
+      properties:
+        record_id:
+          type: string
+          format: uuid
+
+    ImageResponse:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+        image_base64:
+          type: string
+          nullable: true
+        original_image_base64:
+          type: string
+          nullable: true
+
+    DailyStatsResponse:
+      type: object
+      required: [date, visit_count]
+      properties:
+        date:
+          type: string
+        visit_count:
+          type: integer
+
+    ProxyChatCheckResponse:
+      type: object
+      required: [pingUrl, pingOk, proxyChatAvailable]
+      properties:
+        pingUrl:
+          type: string
+        pingOk:
+          type: boolean
+        proxyChatAvailable:
+          type: boolean
+        pingStatusCode:
+          type: integer
+          nullable: true
+        pingResponse:
+          type: string
+          nullable: true
+
+    Gemma4HealthResponse:
+      type: object
+      required: [targetUrl, model, running, message]
+      properties:
+        targetUrl:
+          type: string
+        model:
+          type: string
+        running:
+          type: boolean
+        httpStatusCode:
+          type: integer
+          nullable: true
+        message:
+          type: string
+
+    CurrentAnnouncementResponse:
+      type: object
+      required: [id, title, content, publishedAt]
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        content:
+          type: string
+        publishedAt:
+          type: string
+          format: date-time
+
+    AdminUserListItem:
+      type: object
+      required: [id, email, role]
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        nickname:
+          type: string
+          nullable: true
+        avatarUrl:
+          type: string
+          nullable: true
+        role:
+          type: string
+          enum: [user, operator, super_admin]
+
+    RouteControlItem:
+      type: object
+      required: [routeKey, isEnabled, isProtected]
+      properties:
+        routeKey:
+          type: string
+        isEnabled:
+          type: boolean
+        reason:
+          type: string
+          nullable: true
+        isProtected:
+          type: boolean
+        updatedBy:
+          type: string
+          format: uuid
+          nullable: true
+        updatedAt:
+          type: string
+          format: date-time
+          nullable: true
+
+    UpdateRouteControlPayload:
+      type: object
+      required: [isEnabled]
+      properties:
+        isEnabled:
+          type: boolean
+        reason:
+          type: string
+          nullable: true
+
+    AnnouncementItem:
+      type: object
+      required: [id, title, content, status, createdBy, updatedBy, createdAt, updatedAt]
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        content:
+          type: string
+        status:
+          type: string
+          enum: [draft, published, archived]
+        publishedAt:
+          type: string
+          format: date-time
+          nullable: true
+        createdBy:
+          type: string
+          format: uuid
+        updatedBy:
+          type: string
+          format: uuid
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    CreateAnnouncementPayload:
+      type: object
+      required: [title, content]
+      properties:
+        title:
+          type: string
+        content:
+          type: string
+        status:
+          type: string
+          enum: [draft, published, archived]
+          nullable: true
+
+    UpdateAnnouncementPayload:
+      type: object
+      properties:
+        title:
+          type: string
+          nullable: true
+        content:
+          type: string
+          nullable: true
+        status:
+          type: string
+          enum: [draft, published, archived]
+          nullable: true
+
+    AgentChatRequest:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+        room_id:
+          type: string
+          format: uuid
+          nullable: true
+          description: Legacy room id field retained for backward compatibility.
+        thread_id:
+          type: string
+          nullable: true
+          description: Preferred conversation thread id provided by the frontend and forwarded directly to the downstream agent.
+        is_new_conversation:
+          type: boolean
+          nullable: true
+          description: Whether the frontend considers this request the first message of a new conversation.
+        user_context:
+          type: object
+          nullable: true
+          additionalProperties: true
+        image:
+          type: string
+          nullable: true
+          description: Absolute path, base64, or data URL image payload
+
+    AgentApproveRequest:
+      type: object
+      required: [approval_id, action]
+      properties:
+        approval_id:
+          type: string
+        action:
+          type: string
+          enum: [approve, reject]
+
+    RoomResponse:
+      type: object
+      required: [id, title]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        last_updated:
+          type: string
+          format: date-time
+          nullable: true
+
+    ChatMessage:
+      type: object
+      required: [role, content]
+      properties:
+        role:
+          type: string
+          example: user
+        content:
+          type: string
+        image_path:
+          type: string
+          nullable: true
+        image_base64:
+          type: string
+          nullable: true
+
+    ChatRoomTitleItem:
+      type: object
+      required: [roomId, title, summary]
+      properties:
+        roomId:
+          type: string
+        title:
+          type: string
+        summary:
+          oneOf:
+            - type: object
+              additionalProperties: true
+            - type: array
+              items:
+                type: object
+                additionalProperties: true
+        lastMessageAt:
+          type: string
+          format: date-time
+          nullable: true
+
+    RoomHistoryDetailResponse:
+      type: object
+      required: [id, roomId, userId, index]
+      properties:
+        id:
+          type: string
+          format: uuid
+        roomId:
+          type: string
+        userId:
+          type: string
+          format: uuid
+        index:
+          type: integer
+          format: int64
+        userMessage:
+          type: string
+          nullable: true
+        imagePath:
+          type: string
+          nullable: true
+        imageBase64:
+          type: string
+          nullable: true
+        aiAnalysisReport:
+          type: string
+          nullable: true
+        dietReport:
+          type: object
+          nullable: true
+          additionalProperties: true
+        title:
+          type: string
+          nullable: true
+        summary:
+          type: string
+          nullable: true
+        summaryUpdatedAt:
+          type: string
+          format: date-time
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+          nullable: true
+
+    RagDocumentItem:
+      type: object
+      required: [id, filename, mimeType, sizeBytes, status, createdAt, updatedAt, fileUrl, previewUrl]
+      properties:
+        id:
+          type: string
+          format: uuid
+        filename:
+          type: string
+        mimeType:
+          type: string
+        sizeBytes:
+          type: integer
+          format: int64
+        chunkCount:
+          type: integer
+          nullable: true
+        embeddingModel:
+          type: string
+          nullable: true
+        status:
+          type: string
+          enum: [uploaded, processing, ready, failed]
+        errorMessage:
+          type: string
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        fileUrl:
+          type: string
+        previewUrl:
+          type: string
+
+    RagDocumentPreviewResponse:
+      type: object
+      required: [documentId, filename, mimeType, previewKind, truncated, fileUrl, previewUrl]
+      properties:
+        documentId:
+          type: string
+          format: uuid
+        filename:
+          type: string
+        mimeType:
+          type: string
+        previewKind:
+          type: string
+          enum: [text, file]
+        content:
+          type: string
+          nullable: true
+        truncated:
+          type: boolean
+        fileUrl:
+          type: string
+        previewUrl:
+          type: string
+        message:
+          type: string
+          nullable: true
+
+    NewsSyncResponse:
+      type: object
+      required: [ok, total, newCount, updatedCount, generatedAt]
+      properties:
+        ok:
+          type: boolean
+        total:
+          type: integer
+          format: int64
+        newCount:
+          type: integer
+          format: int64
+        updatedCount:
+          type: integer
+          format: int64
+        generatedAt:
+          type: string
+          format: date-time
+
+    NewsListItem:
+      type: object
+      required: [id, title]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        publishedDate:
+          type: string
+          nullable: true
+
+    NewsListResponse:
+      type: object
+      required: [ok, page, pageSize, total, totalPages, items]
+      properties:
+        ok:
+          type: boolean
+        page:
+          type: integer
+          format: int64
+        pageSize:
+          type: integer
+          format: int64
+        total:
+          type: integer
+          format: int64
+        totalPages:
+          type: integer
+          format: int64
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/NewsListItem'
+
+    NewsDetailItem:
+      type: object
+      required: [id, title, sourceUrl, content]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        publishedDate:
+          type: string
+          nullable: true
+        sourceUrl:
+          type: string
+        content:
+          type: string
+
+    NewsDetailResponse:
+      type: object
+      required: [ok, item]
+      properties:
+        ok:
+          type: boolean
+        item:
+          $ref: '#/components/schemas/NewsDetailItem'
+
+    NewsFilesResponse:
+      type: object
+      required: [ok, files]
+      properties:
+        ok:
+          type: boolean
+        files:
+          type: array
+          items:
+            type: string
+
+    RagSearchRequest:
+      type: object
+      required: [query]
+      properties:
+        query:
+          type: string
+        top_k:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 12
+        source_types:
+          type: array
+          items:
+            type: string
+            enum: [nutrition_rules, mohw_news, uploaded_knowledge]
+        force_refresh:
+          type: boolean
+
+    RagSearchHit:
+      type: object
+      required: [id, source_type, title, source_path, score, snippet]
+      properties:
+        id:
+          type: string
+        source_type:
+          type: string
+        title:
+          type: string
+        source_path:
+          type: string
+        published_date:
+          type: string
+          nullable: true
+        score:
+          type: integer
+        snippet:
+          type: string
+
+    RagSearchResponse:
+      type: object
+      required: [ok, query, total_hits, hits]
+      properties:
+        ok:
+          type: boolean
+        query:
+          type: string
+        total_hits:
+          type: integer
+          format: int64
+        hits:
+          type: array
+          items:
+            $ref: '#/components/schemas/RagSearchHit'
+
+    RagSearchValidationError:
+      type: object
+      required: [ok, error, details]
+      properties:
+        ok:
+          type: boolean
+        error:
+          type: string
+        details:
+          type: object
+          properties:
+            formErrors:
+              type: array
+              items:
+                type: string
+            fieldErrors:
+              type: object
+              additionalProperties:
+                type: array
+                items:
+                  type: string
+
+    KnowledgeGraphSummary:
+      type: object
+      required: [document_count, node_count, edge_count, evidence_count, source_counts, generated_at]
+      properties:
+        document_count:
+          type: integer
+          format: int64
+        node_count:
+          type: integer
+          format: int64
+        edge_count:
+          type: integer
+          format: int64
+        evidence_count:
+          type: integer
+          format: int64
+        source_counts:
+          type: object
+          additionalProperties:
+            type: integer
+            format: int64
+        generated_at:
+          type: string
+          format: date-time
+
+    KnowledgeGraphStatusResponse:
+      type: object
+      required: [ok, ready, summary]
+      properties:
+        ok:
+          type: boolean
+        ready:
+          type: boolean
+        summary:
+          $ref: '#/components/schemas/KnowledgeGraphSummary'
+
+    KnowledgeGraphRebuildRequest:
+      type: object
+      description: Optional rebuild options. Omit the body or send `{}` for the default incremental rebuild behavior.
+      properties:
+        force:
+          type: boolean
+          description: When true, rebuild all discovered documents instead of only changed ones.
+
+    KnowledgeGraphRebuildResponse:
+      type: object
+      required: [ok, force, summary]
+      properties:
+        ok:
+          type: boolean
+        force:
+          type: boolean
+        summary:
+          $ref: '#/components/schemas/KnowledgeGraphSummary'
+
+    KnowledgeGraphQueryRequest:
+      type: object
+      required: [query]
+      properties:
+        query:
+          type: string
+        max_nodes:
+          type: integer
+          format: int64
+          minimum: 1
+        source_types:
+          type: array
+          items:
+            type: string
+            enum: [nutrition_rules, mohw_news, uploaded_knowledge]
+        document_ids:
+          type: array
+          items:
+            type: string
+
+    KnowledgeGraphNode:
+      type: object
+      required: [id, label, node_type, aliases, document_ids, source_types]
+      properties:
+        id:
+          type: string
+        label:
+          type: string
+        node_type:
+          type: string
+        aliases:
+          type: array
+          items:
+            type: string
+        document_ids:
+          type: array
+          items:
+            type: string
+        source_types:
+          type: array
+          items:
+            type: string
+
+    KnowledgeGraphEdge:
+      type: object
+      required: [id, source, target, relation_type, confidence, document_ids, evidence_ids]
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        target:
+          type: string
+        relation_type:
+          type: string
+        confidence:
+          type: number
+          format: double
+        document_ids:
+          type: array
+          items:
+            type: string
+        evidence_ids:
+          type: array
+          items:
+            type: string
+
+    KnowledgeGraphEvidence:
+      type: object
+      required: [id, edge_id, document_id, document_title, source_type, source_path, snippet]
+      properties:
+        id:
+          type: string
+        edge_id:
+          type: string
+        document_id:
+          type: string
+        document_title:
+          type: string
+        source_type:
+          type: string
+        source_path:
+          type: string
+        snippet:
+          type: string
+
+    KnowledgeGraphDocument:
+      type: object
+      required: [id, title, source_type, source_path, content_hash, extracted_at, node_ids, edge_ids, evidence_ids]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        source_type:
+          type: string
+        source_path:
+          type: string
+        content_hash:
+          type: string
+        extracted_at:
+          type: string
+        node_ids:
+          type: array
+          items:
+            type: string
+        edge_ids:
+          type: array
+          items:
+            type: string
+        evidence_ids:
+          type: array
+          items:
+            type: string
+
+    KnowledgeGraphQueryResponse:
+      type: object
+      required: [ok, query, nodes, edges, evidence, documents]
+      properties:
+        ok:
+          type: boolean
+        query:
+          type: string
+        nodes:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphNode'
+        edges:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEdge'
+        evidence:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEvidence'
+        documents:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphDocument'
+
+    KnowledgeGraphNodesResponse:
+      type: object
+      required: [ok, total, items]
+      properties:
+        ok:
+          type: boolean
+        total:
+          type: integer
+          format: int64
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphNode'
+
+    KnowledgeGraphNodeDetailResponse:
+      type: object
+      required: [ok, node, edges, neighbors, evidence]
+      properties:
+        ok:
+          type: boolean
+        node:
+          $ref: '#/components/schemas/KnowledgeGraphNode'
+        edges:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEdge'
+        neighbors:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphNode'
+        evidence:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEvidence'
+
+    KnowledgeGraphRelationEvidenceResponse:
+      type: object
+      required: [ok, relation, evidence]
+      properties:
+        ok:
+          type: boolean
+        relation:
+          $ref: '#/components/schemas/KnowledgeGraphEdge'
+        evidence:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEvidence'
+
+    KnowledgeGraphExtractRequest:
+      type: object
+      properties:
+        force:
+          type: boolean
+
+    KnowledgeGraphExtractResponse:
+      type: object
+      required: [ok, cached, document, nodes, edges, evidence]
+      properties:
+        ok:
+          type: boolean
+        cached:
+          type: boolean
+        document:
+          $ref: '#/components/schemas/KnowledgeGraphDocument'
+        nodes:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphNode'
+        edges:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEdge'
+        evidence:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEvidence'
+
+    KnowledgeGraphDocumentDetailResponse:
+      type: object
+      description: Rust currently forwards the upstream document detail JSON as-is.
+      properties:
+        ok:
+          type: boolean
+        document:
+          $ref: '#/components/schemas/KnowledgeGraphDocument'
+        nodes:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphNode'
+        edges:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEdge'
+        evidence:
+          type: array
+          items:
+            $ref: '#/components/schemas/KnowledgeGraphEvidence'
+
+    HealthResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          example: ok
+
+    DiscordUser:
+      type: object
+      required: [id, username, discriminator]
+      properties:
+        id:
+          type: string
+        username:
+          type: string
+        discriminator:
+          type: string
+        avatar:
+          type: string
+          nullable: true
+
+    DiscordLoginResponse:
+      type: object
+      required: [message, data]
+      properties:
+        message:
+          type: string
+        data:
+          $ref: '#/components/schemas/DiscordUser'

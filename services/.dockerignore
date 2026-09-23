@@ -1,0 +1,8 @@
+**/.env
+**/.git
+**/target
+**/__pycache__
+api/uploads
+api/docs
+yolo/results
+yolo/test_image

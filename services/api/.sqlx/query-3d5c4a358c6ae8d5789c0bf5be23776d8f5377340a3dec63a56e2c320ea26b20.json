@@ -1,0 +1,130 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT\n            id, created_at, total_calories,\n            grain_calories, grain_area,\n            protein_meat_calories, protein_meat_area,\n            protein_bean_calories, protein_bean_area,\n            vegetable_calories, vegetable_area,\n            fruit_calories, fruit_area,\n            dairy_calories, dairy_area,\n            nuts_calories, nuts_area,\n            ai_health_score, ai_evaluation\n        FROM diet_records\n        WHERE user_id = $1\n        ORDER BY created_at DESC\n        LIMIT 30\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid"
+      },
+      {
+        "ordinal": 1,
+        "name": "created_at",
+        "type_info": "Timestamptz"
+      },
+      {
+        "ordinal": 2,
+        "name": "total_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 3,
+        "name": "grain_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 4,
+        "name": "grain_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 5,
+        "name": "protein_meat_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 6,
+        "name": "protein_meat_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 7,
+        "name": "protein_bean_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 8,
+        "name": "protein_bean_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 9,
+        "name": "vegetable_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 10,
+        "name": "vegetable_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 11,
+        "name": "fruit_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 12,
+        "name": "fruit_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 13,
+        "name": "dairy_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 14,
+        "name": "dairy_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 15,
+        "name": "nuts_calories",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 16,
+        "name": "nuts_area",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 17,
+        "name": "ai_health_score",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 18,
+        "name": "ai_evaluation",
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "3d5c4a358c6ae8d5789c0bf5be23776d8f5377340a3dec63a56e2c320ea26b20"
+}

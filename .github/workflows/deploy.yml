@@ -124,6 +124,10 @@ jobs:
           if (-not (Test-Path -LiteralPath $envFile)) {
             Write-Error "Missing $envFile. Create it from .env.example on the host before deploying."
           }
+          $apiEnvFile = Join-Path $env:DEPLOY_PATH 'services\api\.env'
+          if (-not (Test-Path -LiteralPath $apiEnvFile)) {
+            Write-Error "Missing $apiEnvFile. Create it from services\api\.env.example on the host before deploying."
+          }
 
       - name: Pull and restart the service
         shell: pwsh

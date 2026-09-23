@@ -1,0 +1,40 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT id, question, ai_response, created_at\n         FROM ai_consultations\n         WHERE user_id = $1\n         ORDER BY created_at DESC\n         LIMIT 10",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid"
+      },
+      {
+        "ordinal": 1,
+        "name": "question",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "ai_response",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "created_at",
+        "type_info": "Timestamptz"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "45ca75c3b6295f6c44e9d191ca91e48a227dff5e8b83e96f7e6858cedc92b97a"
+}

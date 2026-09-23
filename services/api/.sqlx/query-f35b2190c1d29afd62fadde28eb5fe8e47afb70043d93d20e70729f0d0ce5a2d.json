@@ -1,0 +1,34 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT nickname, age, taboo FROM users WHERE id = $1",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "nickname",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "age",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 2,
+        "name": "taboo",
+        "type_info": "TextArray"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "f35b2190c1d29afd62fadde28eb5fe8e47afb70043d93d20e70729f0d0ce5a2d"
+}

@@ -17,3 +17,4 @@ users_images/**
 knowledge_base/uploads/**
 knowledge_base/ingested_markdown/**
 data/**
+services

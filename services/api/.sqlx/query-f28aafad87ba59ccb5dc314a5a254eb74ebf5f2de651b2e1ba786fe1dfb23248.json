@@ -1,0 +1,58 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT nickname, height, weight, age, gender, taboo, disease FROM users WHERE id = $1",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "nickname",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 1,
+        "name": "height",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 2,
+        "name": "weight",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 3,
+        "name": "age",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 4,
+        "name": "gender",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 5,
+        "name": "taboo",
+        "type_info": "TextArray"
+      },
+      {
+        "ordinal": 6,
+        "name": "disease",
+        "type_info": "TextArray"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "f28aafad87ba59ccb5dc314a5a254eb74ebf5f2de651b2e1ba786fe1dfb23248"
+}

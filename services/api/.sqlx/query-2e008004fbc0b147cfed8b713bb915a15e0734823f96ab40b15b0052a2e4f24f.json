@@ -1,0 +1,76 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT id, email, nickname, avatar_url, height, weight, age, gender, taboo, disease\n        FROM users WHERE id = $1\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Uuid"
+      },
+      {
+        "ordinal": 1,
+        "name": "email",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "nickname",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 3,
+        "name": "avatar_url",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 4,
+        "name": "height",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 5,
+        "name": "weight",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 6,
+        "name": "age",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 7,
+        "name": "gender",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 8,
+        "name": "taboo",
+        "type_info": "TextArray"
+      },
+      {
+        "ordinal": 9,
+        "name": "disease",
+        "type_info": "TextArray"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "2e008004fbc0b147cfed8b713bb915a15e0734823f96ab40b15b0052a2e4f24f"
+}
