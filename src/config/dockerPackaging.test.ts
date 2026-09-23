@@ -12,13 +12,25 @@ describe('Docker packaging', () => {
     expect(dockerfile).toMatch(/COPY\s+agent_config\.json\s+\.\/agent_config\.json/);
   });
 
-  test('compose deploys from a GHCR image instead of building locally', () => {
-    const composePath = path.join(ROOT_DIR, 'compose.yml');
-    const compose = readFileSync(composePath, 'utf8');
+  test('Dockerfile only copies files tracked in git', () => {
+    const dockerfile = readFileSync(path.join(ROOT_DIR, 'Dockerfile'), 'utf8');
+
+    // Root AGENT.md and docs/ are gitignored, so a fresh clone cannot build with them.
+    expect(dockerfile).not.toMatch(/COPY\s+AGENT\.md/);
+    expect(dockerfile).not.toMatch(/COPY\s+docs\s/);
+  });
+
+  test('compose builds the agent locally by default and pulls from GHCR in CI', () => {
+    const compose = readFileSync(path.join(ROOT_DIR, 'compose.yml'), 'utf8');
+    const workflow = readFileSync(
+      path.join(ROOT_DIR, '.github', 'workflows', 'deploy.yml'),
+      'utf8',
+    );
 
     expect(compose).toMatch(/image:\s+\$\{IMAGE_NAME:-ghcr\.io\/archie0732\/healthy-diet-ai-agent:main\}/);
-    expect(compose).toMatch(/pull_policy:\s+always/);
-    expect(compose).not.toMatch(/\n\s+build:\n/);
+    expect(compose).toMatch(/pull_policy:\s+\$\{AGENT_PULL_POLICY:-build\}/);
+    expect(compose).toMatch(/\n\s+build:\s+\.\s*\n/);
+    expect(workflow).toMatch(/AGENT_PULL_POLICY:\s+always/);
   });
 
   test('env example documents the deployment image override', () => {
