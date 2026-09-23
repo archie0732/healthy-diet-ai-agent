@@ -1,451 +1,310 @@
-# Healthy Diet AI Agent
+# Healthy Diet AI Agent — Version-Aware RAG for Evolving Nutrition Guidelines
 
 ![Bun](https://img.shields.io/badge/Bun-1.2%2B-f9f1e1?style=flat-square&logo=bun&logoColor=000000)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-blue?style=flat-square&logo=typescript&logoColor=white)
-![Express](https://img.shields.io/badge/Express-5-222222?style=flat-square&logo=express&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-Agent-green?style=flat-square)
-![SQLite](https://img.shields.io/badge/SQLite-Standalone-0f80cc?style=flat-square&logo=sqlite&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-Integration-3ecf8e?style=flat-square&logo=supabase&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ed?style=flat-square&logo=docker&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-Axum-orange?style=flat-square&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-YOLOv8-3776ab?style=flat-square&logo=python&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-Agent-green?style=flat-square)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ed?style=flat-square&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 English | [日本語](README_jp.md) | [繁體中文](README_zh.md)
 
-Healthy Diet AI Agent is a Bun + TypeScript backend for nutrition and healthy diet support. It features chat, food image analysis, RAG document knowledge retrieval, knowledge graph, and MOHW (Ministry of Health and Welfare) data synchronization.
+This repository contains a nutrition-advice AI agent and the research behind its retrieval layer. It is the **follow-up to our first paper**, whose system is the [PU-Hub/healthy-diet](https://github.com/PU-Hub/healthy-diet) project (a healthy-diet app with YOLO food recognition and LLM-based advice). The first work established the end-to-end application. This project focuses on one open problem we found while building it: **how a retrieval-augmented generation (RAG) system should handle health guidelines that change over time.**
+<!-- TODO: add the first paper's full citation (title, venue, year) here. -->
 
-This repository now supports two deployment modes:
+> **Research question.** When a knowledge base holds several versions of an official guideline, which evidence should a RAG system retrieve: the newest version, the older one, or both? And how do we show this without overstating the results?
 
-- Standalone mode: uses SQLite, runs independently via Docker, HTTP API, or terminal CLI
-- Integration mode: uses Supabase, maintaining the ability to integrate with the existing `health-diet-api` ecosystem
+---
 
-## Tech Stack
+## Table of Contents
 
-- Runtime: `Bun`
-- Language: `TypeScript`
-- HTTP Server: `Express`
-- Agent Framework: `LangChain`, `LangGraph`, `DeepAgents`
-- Storage: `SQLite` or `Supabase`
-- AI Integration: OpenAI-compatible API routing, with optional Google Gemini routing
-- Deployment: `Docker Compose`
+1. [Highlights](#1-highlights)
+2. [From the First Paper to This Project](#2-from-the-first-paper-to-this-project)
+3. [Research Problem](#3-research-problem)
+4. [Method: Conditional Version-Aware Retrieval](#4-method-conditional-version-aware-retrieval)
+5. [Evaluation Methodology](#5-evaluation-methodology)
+6. [Research Trajectory and Results](#6-research-trajectory-and-results)
+7. [What Makes This Project Distinctive](#7-what-makes-this-project-distinctive)
+8. [Limitations and Future Work](#8-limitations-and-future-work)
+9. [System Architecture](#9-system-architecture)
+10. [Deployment](#10-deployment)
+11. [Local Development](#11-local-development)
+12. [API Overview](#12-api-overview)
+13. [Repository Structure](#13-repository-structure)
+14. [Reproducing the Experiments](#14-reproducing-the-experiments)
 
-## Core Features
+---
 
-- Nutrition chat assistant for dietary advice, meal planning, and nutrition Q&A
-- Food image analysis workflow supporting meal understanding and nutrition-guided interactions
-- RAG document search and document management to organize and query nutrition knowledge documents
-- Version-Aware & Policy-Aware RAG evaluation engine for resolving multi-version dietary guideline temporal conflicts
-- PDF processing tool (`src/rag_clean/pdf_to_clean_markdown.py`) for converting official guideline PDFs into structured Markdown with prose tables
-- Knowledge graph extraction and search to establish structured health and diet knowledge relations
-- MOHW data sync pipeline for importing public clarification and reference content
-- Flexible deployment modes supporting SQLite, Supabase, HTTP API, and CLI
+## 1. Highlights
 
-## Planned Features
+- **Clear problem scope.** Standard RAG ranks by relevance, sometimes with a preference for newer documents. Neither can tell an old recommendation that was *replaced* from one that still applies to a *specific group of people*, or from one the user *explicitly asked to compare*. We model these cross-version relations directly.
+- **Conditional, not always-on.** Cross-version evidence pairing is turned on only when the query asks about history or a comparison. Every other query behaves exactly like the baseline, and this is guaranteed by design.
+- **Main result (V7 fresh held-out pilot, 40 unseen questions).** On explicit-history questions, Recall@3 improved by **+0.425** over BM25 + recency (95% CI [0.275, 0.575], exact sign-flip p = 0.00024). 13 questions improved, 7 tied, 0 got worse. There were **zero** unsafe (outdated) evidence hits on the control questions.
+- **Negative results reported.** An earlier 96-question confirmatory study (V6) found **no** improvement. We kept the result, traced the cause (the pairing step never fired), and fixed the method before running a new, unseen test. The failures and the recovery are both documented.
+- **Rigorous evaluation.** Parameters were frozen before test questions were written. Questions and gold labels were sealed with SHA-256 hashes. The retrieval runner never reads the gold labels, each fresh test can run only once, and a second, separately written program recomputed every metric.
+- **Deployable system.** The research sits inside a working application: a LangGraph agent (TypeScript/Bun), a Rust API server, and a YOLO food-recognition model. All three start with a single `docker compose up`.
 
-- Personalized dietary suggestions based on user profiles, preferences, and historical records
-- Enhanced multimodal meal analysis for richer food context understanding and grounded responses
-- Expanded admin and ingestion tooling for knowledge curation, review, and operations
-- Advanced multi-step agent workflows to improve retrieval, reasoning, and task automation
+---
 
-## Project Background
+## 2. From the First Paper to This Project
 
-This project was originally built to complement the following two projects:
+| | First paper — [PU-Hub/healthy-diet](https://github.com/PU-Hub/healthy-diet) | This project |
+|---|---|---|
+| Focus | End-to-end healthy-diet application | Retrieval quality of the AI advisor (RAG) |
+| Core technology | Rust API, YOLO food recognition, Gemini-based nutrition advice | LangGraph agent, versioned knowledge base, version-aware retrieval |
+| Main question | Can an app recognize meals and give nutrition advice? | Is the evidence behind that advice *current*, *applicable*, and *complete*? |
+| Evaluation | System functionality | Pre-registered, sealed, single-use held-out retrieval experiments |
 
-- [`PU-Hub/healthy-diet`](https://github.com/PU-Hub/healthy-diet) as the API-side project
-- [`archie0732/healthy-diet-web`](https://github.com/archie0732/healthy-diet-web) as the frontend Web project
+While building the first system, we found that grounding advice in official guidelines is not enough by itself. Guidelines are revised, such as the Dietary Guidelines for Americans 2015 → 2025 and WHO updates. A retriever can return a passage that sounds authoritative but has been replaced. This repository studies that failure. The components from the first project (the Rust API and the YOLO service) are now merged in under [`services/`](services/), so the whole system can be deployed together.
 
-As this repository started receiving more attention and views, the project's direction was adjusted. While keeping the ability to integrate with the original stack, we are gradually refactoring this repository into a standalone, independently deployable AI agent service.
+---
 
-## Highlights
+## 3. Research Problem
 
-- Switchable storage backend: `sqlite` or `supabase`
-- Policy-Aware & Version-Aware RAG framework with parameterizable retrieval rules
-- Automated PDF-to-Markdown conversion tool preserving table prose descriptions
-- Directly deployable independently, without relying on `health-diet-api`
-- Provides both HTTP API and terminal CLI
-- Docker default is standalone SQLite mode
-- Supports local knowledge base and uploaded document ingestion
-- Retains Supabase integration, suitable for reconnecting to the original project
+A versioned corpus produces several kinds of relations between passages from different editions:
 
-## Project Structure
+| Relation | Meaning | What retrieval should do |
+|---|---|---|
+| `superseded` / `deprecated` | A newer statement replaces an older one | Do not present the old statement as current guidance |
+| `compatible` / `complementary` | Both passages remain valid and add to each other | Keep both where useful |
+| `conditional_difference` | The answer depends on population or condition (e.g., pregnancy, infants) | Keep the passage that matches the user's condition |
+| explicit history request | The user asks "what changed?" or "what was the old advice?" | Retrieve **both** the historical and the current evidence |
 
-```
-.
-├── .agents/                    # Custom agent behavior rules / agent configuration
-├── agent_skills/               # Customized tool/skill modules for the agent
-├── data/                       # Local database files (SQLite DB stored here in Standalone mode)
-├── docs/                       # DB schemas and supplementary documents
-│   ├── sqlite/                 # SQLite database schema and sample data
-│   └── supabase/               # Supabase database configuration and scripts
-├── experiments/                # Experimental frameworks and benchmark suites
-│   └── version_aware_rag/      # Version-Aware & Policy-Aware RAG evaluation & config frozen suites
-├── knowledge_base/             # Ingested documents and RAG data source directories
-│   ├── ingested_markdown/      # Parsed markdown documents used for RAG
-│   ├── mohw_clarifications/    # Sync target for MOHW (Ministry of Health and Welfare) data
-│   ├── uploads/                # Temporary directory for uploaded source files
-│   └── NUTRITION_RULES.md      # Ground-truth guidelines for dietary analysis
-├── plans/                      # Research and execution planning documents
-├── raw_data/                   # Raw data files or scripts
-├── scripts/                    # Utility scripts (e.g. data preprocessing, backup)
-├── src/                        # Main source code directory
-│   ├── config/                 # App configurations (logger, env validators)
-│   ├── rag_clean/              # PDF processing & Markdown sanitization tools
-│   ├── server/                 # Business logic handlers and Agent implementation
-│   │   ├── agentRuntime.ts     # Core LangChain/LangGraph agent runtime setup
-│   │   ├── httpRuntime.ts      # HTTP server runtime bootstrap
-│   │   ├── knowledgeGraph.ts   # Knowledge Graph extraction and search engine
-│   │   ├── knowledgeIngestion.ts # Handles files uploading, parsing and embedding ingestion
-│   │   ├── mohwNews.ts         # MOHW data synchronization task
-│   │   └── ragDocuments.ts     # Document database crud and indexer routes
-│   ├── shared/                 # Shared configuration, hashing, and manifest modules
-│   ├── storage/                # Database abstraction layer (SQLite and Supabase adapters)
-│   │   ├── sqlite/             # SQLite connection and adapter logic
-│   │   └── supabase/           # Supabase client and database adapter logic
-│   ├── cli.ts                  # Entry point for the Command Line Interface
-│   ├── index.ts                # Entry point for the HTTP Express Server
-│   └── serverHandlers.ts       # Router controller handlers for server endpoints
-├── technical_docs/             # Architectural, design, and changelog documents
-├── agent_config.json           # Declarative behavior controls and default parameters for the agent
-├── compose.yml                 # Docker Compose configuration file
-└── package.json                # Project dependencies and runner script configurations
+Always preferring the newest document fails the last case. Keeping every version fails the first. The research question is **when** version relations should change what gets retrieved, and whether that can be done without adding outdated evidence to normal queries.
+
+---
+
+## 4. Method: Conditional Version-Aware Retrieval
+
+```mermaid
+flowchart LR
+    Q[User query] --> R{Temporal-intent router<br/>explicit history?}
+    Q --> P[Shared candidate pool<br/>BM25, Top-20]
+    R -- no --> B[Baseline B<br/>BM25 + recency]
+    R -- yes --> E[Version-aware E<br/>recency off<br/>+ lineage pairing]
+    P --> B
+    P --> E
+    L[(Auditable lineage graph<br/>cross-version relations)] --> E
+    B --> O[Top-3 evidence]
+    E --> O
 ```
 
-## Deployment Modes
+1. **Shared candidate pool.** Every system ranks the same Top-20 BM25 candidates, so any difference comes from the policy, not from different recall.
+2. **Temporal-intent router.** A rule-based detector decides whether the query explicitly asks for historical or cross-version information.
+3. **Lineage pairing.** For history queries, the highest-ranked passage is linked to its lineage, the chain of versions of the same recommendation. Its cross-version counterpart gets a fixed score boost (`pair_boost = 0.5`, with 2 reserved slots), so historical and current evidence can both reach the Top-3.
+4. **Recency as default.** All other queries use the recency-weighted baseline unchanged (`E ≡ B`). This is a design invariant (不變條件), and the experiments confirm the implementation keeps it.
 
-### 1. Standalone SQLite Mode
+To isolate the policy's effect, six systems are compared:
 
-Suitable for:
-- Self-hosting locally
-- Running directly with Docker
-- Using terminal prompts
-- Avoiding setting up Supabase upfront
+| System | Definition |
+|---|---|
+| A | BM25 |
+| B | BM25 + recency (**baseline**) |
+| C | Recency turned off for history queries, no pairing |
+| D | Lineage pairing on for **every** query |
+| E | Recency off **and** lineage pairing, for history queries only (**proposed**) |
+| F | E without the pair boost (identical to C by definition; used as an ablation check) |
 
-Characteristics:
-- `SUPABASE_URL` and `SUPABASE_SERVICE_KEY` are not required
-- SQLite schema is automatically bootstrapped on startup
-- Database path is configured via `SQLITE_DB_PATH`
+This study covers the **retrieval stage** only. Version errors start at evidence selection, so the generator is left out to avoid mixing policy effects with differences between LLMs. Whether better evidence leads to better answers is left for future work.
 
-### 2. Supabase Integration Mode
+---
 
-Suitable for:
-- Having an existing Supabase schema
-- Keeping the integration path with the original system
-- Using this agent as a service inside the existing system
+## 5. Evaluation Methodology
 
-Characteristics:
-- Preserves existing API routes
-- Chat history, user profiles, and document metadata are stored in Supabase
+The protocol is designed so that a positive result cannot come from data leakage (資料洩漏) or tuning on the test set:
 
-## Installation
+- **Freeze before writing questions.** Retrieval code, tokenizer, router, candidate K, boost, and recency λ are hashed and frozen ([`FROZEN_METHOD_PACKAGE.json`](experiments/version_aware_rag/configs/v7_pilot/FROZEN_METHOD_PACKAGE.json)) before any test question is drafted.
+- **Sealed gold labels.** Queries and gold labels (the correct evidence for each question) are sealed with SHA-256 manifests. The one-time retrieval runner has no access to the gold file.
+- **Single use.** A fresh-test guard prevents a second run once results are opened. After that, a test set may only be reused as *development* data.
+- **Independent recomputation.** A second, independently written evaluator recomputes every headline metric.
+- **Reported statistics.** Paired effect size, a 95% lineage-clustered bootstrap confidence interval, an exact paired sign-flip test, and counts of improved, tied, and regressed questions.
+- **Stated annotation provenance.** Each V7 question was checked by three isolated AI reviews and labelled *AI-triangulated, source-grounded*. An earlier 16-question set was reviewed by a nutritionist. The two are never merged or described as the same kind of expert validation.
 
-### Prerequisites
+---
 
-- Bun 1.2+
-- Node-compatible environment for Bun
-- Optional: Docker / Docker Compose
-- Optional: Supabase project for integration mode
-- Model endpoint compatible with the current agent configuration
+## 6. Research Trajectory and Results
 
-### Install
+The project went through several stages, including failed ones. Each stage changed the next design.
+
+| Stage | Data | Outcome | What we learned |
+|---|---|---|---|
+| **Early held-out** | 8 broad queries | Always-on version policy **below** the recency baseline (Recall@3 0.208 vs 0.583) | Applying version rules to every query hurts. The hypothesis was narrowed to *explicit-history* queries |
+| **V5 fresh pilot** (R2.10) | 16 queries, nutritionist-reviewed | Micro Recall@3 0.625 → 0.833. Explicit-history 0.375 → 1.000, joint historical+current coverage 0 → 1.0 | A promising direction, but only 4 explicit-history questions (p = 0.125) |
+| **R2.19–R2.21 ablations** | Development | BM25 + MiniLM hybrid raised candidate Recall@20 0.904 → 0.981, but current-only Recall@3 fell 1.00 → 0.83 | The pre-set promotion gate failed, so the hybrid was **not** adopted |
+| **V6 confirmatory** | 96 queries, 20 official PDFs, 1,601 pages, 3,535 chunks | E − B = **−0.031** (p = 0.5). Candidate Recall@20 only 0.48. Pairing activated on **0/32** history queries | Negative result. Root cause: passage-level seeds did not line up with the lineage endpoints, so pairing never ran |
+| **V7 fresh pilot** | 40 **new** queries (20 history, 10 current-only, 10 hard-negative) | E − B = **+0.425**, CI [0.275, 0.575], p = 0.00024, 13 / 7 / 0 | Once passages were properly linked to lineages, the conditional policy worked as intended |
+
+### V7 results by system (macro Recall@3)
+
+| System | Explicit history (n = 20) | Current only (n = 10) | Hard-negative current (n = 10) | Unsafe hit@3, hard-negative |
+|---|---:|---:|---:|---:|
+| A — BM25 | 0.100 | 0.300 | 0.500 | 0.10 |
+| B — BM25 + recency (baseline) | 0.100 | 0.300 | 0.500 | **0.00** |
+| C / F — recency off only | 0.100 | 0.300 | 0.500 | 0.00 |
+| D — always-on pairing | 0.425 | 0.900 | 0.800 | 0.10 |
+| **E — conditional pairing (proposed)** | **0.525** | 0.300 | 0.500 | **0.00** |
+
+What the table shows:
+
+- **Turning recency off does not help by itself.** C and F equal B, so E's gain comes from lineage pairing, not from removing the recency preference.
+- **Always-on pairing covers more evidence, but brings in outdated evidence.** D raises recall on control questions but returns replaced evidence on hard-negative questions (unsafe hit@3 = 0.10, versus 0 for B and E). This trade-off is why the router exists.
+- **The router and pairing both worked.** The router was perfect on history queries (20 TP / 0 FN / 0 FP), and pairing activated on 20/20 of them, compared with 0/32 in V6.
+
+Full results: [`results/v7_pilot/V7_PILOT_RESULTS.md`](experiments/version_aware_rag/results/v7_pilot/V7_PILOT_RESULTS.md).
+
+---
+
+## 7. What Makes This Project Distinctive
+
+1. **A new problem definition.** Most RAG work optimizes relevance, and temporal RAG usually treats time as a single ranking signal. We treat *version relations* (supersession, compatibility, conditional applicability) as separate knowledge that decides **whether** an older passage should be kept, dropped, or paired.
+2. **Selective activation with a safety guarantee.** Because of the router, the method can only change results for queries that ask about history or comparisons. All other queries are provably identical to the baseline. System D shows empirically why this matters.
+3. **Negative results used to improve the method.** The V6 failure was not hidden or re-tuned on the same data. It was diagnosed (candidate-pool limits, the gap between passages and lineages, router misses) and fixed. The fixed method was then tested on questions nobody had seen before.
+4. **Reproducible research infrastructure.** Frozen method packages, sealed gold labels, single-use test guards, checksum manifests, and an independent evaluator form a reusable protocol for evaluating RAG on changing knowledge bases.
+5. **Research inside a working system.** The work sits inside a deployable health application: agent, API, and vision model together. This keeps the research question tied to a real product need.
+
+---
+
+## 8. Limitations and Future Work
+
+These are stated plainly, because they define how far the claims go:
+
+- **Small scale.** V7 is a 40-question pilot over a controlled 32-chunk corpus. It is not a large benchmark.
+- **Retrieval stage only.** Answer correctness, citation entailment (whether a citation actually supports the claim), and user-level risk are not evaluated yet.
+- **AI-triangulated labels.** Three isolated AI reviews do not replace review by domain experts.
+- **Lineage selection is imperfect.** Pairing picked the correct lineage in 15 of 20 cases, and 2 of 20 history questions failed at candidate generation.
+- **Lineages are assumed known.** The method assumes an auditable version-relation graph already exists. Discovering it automatically is future work.
+- **Not yet in the live agent.** The chat agent in `src/` still uses a lightweight keyword retriever over the MOHW, uploaded-document, and nutrition-rule sources. The version-aware retriever lives in `experiments/`, and connecting it to the runtime is the next engineering step.
+
+**Next steps:** a V8 study with more documents, version chains of three or more editions, Chinese queries and paraphrase groups, and answer-level evaluation, each sealed before execution.
+
+---
+
+## 9. System Architecture
+
+```mermaid
+flowchart LR
+    U[Web / mobile client] -->|:3000| API[Rust API server<br/>Axum + SQLx]
+    API -->|subprocess| Y[YOLOv8 food recognition<br/>Python, CUDA]
+    API -->|HTTP, internal network| AG[AI agent<br/>Bun + LangGraph]
+    AG --> KB[(Knowledge base<br/>MOHW / FDA notices, guidelines,<br/>uploaded documents)]
+    AG --> LLM[LLM<br/>Gemini or local OpenAI-compatible]
+    API --> DB[(PostgreSQL / Supabase)]
+    AG --> ST[(SQLite or Supabase)]
+```
+
+| Component | Location | Stack | Role |
+|---|---|---|---|
+| AI agent | [`src/`](src/), [`agent_skills/`](agent_skills/) | Bun, TypeScript, LangGraph | Chat, tool use, RAG, knowledge graph, MOHW sync, profile-update approval |
+| API server | [`services/api/`](services/api/) | Rust, Axum, SQLx | Auth (JWT, Discord OAuth), diet records, chat rooms, gateway to the agent |
+| Food recognition | [`services/yolo/`](services/yolo/) | Python, Ultralytics YOLOv8 | Detects food items in meal photos; called by the API |
+| Research code | [`experiments/version_aware_rag/`](experiments/version_aware_rag/) | TypeScript, Python | Corpus building, retrieval policies, sealed evaluations |
+
+Agent features include streaming chat over Server-Sent Events, food-image analysis, nutrition calculation, web-page verification, an approval flow for profile updates, conversation summaries, and routing between Google and local models with automatic fallback.
+
+---
+
+## 10. Deployment
+
+The whole system (agent, Rust API, and YOLO) starts with a single Docker Compose command.
+
+**Requirements:** Docker with Compose v2, plus an NVIDIA GPU with the NVIDIA Container Toolkit for YOLO inference.
+
+```bash
+cp .env.example .env                           # agent settings
+cp services/api/.env.example services/api/.env # API settings: DATABASE_URL, JWT_SECRET, ...
+docker compose up -d --build
+```
+
+| Service | Port | Exposure |
+|---|---|---|
+| `healthy-diet-api` | `3000` | Public entry point |
+| `healthy-diet-ai-agent` | `8001` | Internal only (`127.0.0.1` on the host); the API reaches it at `http://healthy-diet-ai-agent:8001` |
+
+- **No GPU:** remove the `deploy:` block from `compose.yml` and set `YOLO_DEVICE=cpu` in `services/api/.env`.
+- **Continuous deployment:** a push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It tests the agent, builds and pushes its image to GHCR, and redeploys on a self-hosted runner.
+
+---
+
+## 11. Local Development
+
+The agent can run on its own using SQLite:
 
 ```bash
 bun install
-```
-
-### Create env file
-
-```bash
 cp .env.example .env
-```
-
-## Environment Variables
-
-Core runtime variables:
-
-- `PORT`
-- `AI_API_URL`
-- `STORAGE_BACKEND=sqlite|supabase`
-- `SQLITE_DB_PATH`
-- `CLI_USER_ID`
-- `CLI_THREAD_ID`
-
-Supabase variables for integration mode:
-
-- `SUPABASE_URL`
-- `SUPABASE_SERVICE_KEY`
-
-Google routing variables:
-
-- `GEMINI_AI_API`
-- `GEMINI_API_KEY`
-- `GOOGLE_CHAT_MODEL`
-- `GOOGLE_BASE_URL`
-
-Project-level agent behavior now lives in:
-
-- `agent_config.json`
-
-Background sync variables:
-
-- `MOHW_NEWS_SYNC_ENABLED`
-- `MOHW_NEWS_SYNC_INTERVAL_MINUTES`
-- `MOHW_NEWS_SYNC_RUN_ON_START`
-
-Config precedence:
-
-- `agent_config.json` provides the repository default behavior
-- Environment variables override those defaults for a specific deployment
-- `MOHW_NEWS_SYNC_ENABLED` overrides `agent_config.json` `features.mohw_enabled` when explicitly set
-
-## Standalone Local Usage
-
-Recommended `.env` configuration:
-
-```env
-PORT=8001
-AI_API_URL=http://127.0.0.1:8080/v1/
-STORAGE_BACKEND=sqlite
-SQLITE_DB_PATH=./data/healthy-diet-agent.db
-CLI_USER_ID=local-user
-CLI_THREAD_ID=local-thread
-```
-
-Start the HTTP server:
-
-```bash
-bun run start
-```
-
-Default URLs:
-
-- `http://localhost:8001`
-- Chat endpoint: `POST /api/chat`
-- Health check: `GET /ping`
-
-## Terminal CLI Usage
-
-Send a prompt directly in the terminal:
-
-```bash
-bun run cli -- --message "Analyze my lunch"
-```
-
-You can also specify user, thread, and model source:
-
-```bash
-bun run cli -- --message "Give me a low sugar dinner idea" --user-id demo-user --thread-id demo-thread --model-source auto
-```
-
-## Optional: Manual SQLite Initialization
-
-In general, manual schema setup is not required because the app automatically bootstraps the SQLite schema upon startup.
-
-If you want to manually create the database or pre-seed local testing data, you can use:
-
-- Schema: `docs/sqlite/schema.sql`
-- Sample Seed: `docs/sqlite/seed.sample.sql`
-
-If you have `sqlite3` installed in your environment:
-
-```bash
-sqlite3 ./data/healthy-diet-agent.db < docs/sqlite/schema.sql
-sqlite3 ./data/healthy-diet-agent.db < docs/sqlite/seed.sample.sql
-```
-
-`seed.sample.sql` is only a local development example. You can modify the user, chatroom, and dialogue data inside it before importing.
-
-## Docker Deployment
-
-The default Docker setup runs in standalone SQLite mode.
-
-```bash
-docker compose up --build
-```
-
-Default behavior:
-- `STORAGE_BACKEND=sqlite`
-- `SQLITE_DB_PATH=/app/data/healthy-diet-agent.db`
-- Persists SQLite data via `./data:/app/data`
-
-Common mounts:
-- `./data`
-- `./knowledge_base`
-- `./users_images`
-
-For automated production deployment using GitHub Actions, GHCR, and a self-hosted runner, see:
-
-- [docs/deployment-self-hosted-ghcr.md](docs/deployment-self-hosted-ghcr.md)
-
-## Integration with Supabase or Existing Projects
-
-To connect to an existing system, set:
-
-```env
-STORAGE_BACKEND=supabase
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SERVICE_KEY=your-service-role-key
-```
-
-Notes:
-- Existing API routes are preserved
-- Actual storage writes are routed through the shared storage layer
-- Suitable for integration with the existing `health-diet-api` or other Supabase-based architectures
-
-## Forking and Customizing for Other Advisors
-
-For common customization of agent roles and retrieval behaviors, you can do so without modifying the core runtime code.
-
-Recommended customization steps:
-
-1. Edit `agent_config.json`
-2. Replace `knowledge_base/AGENT.md`
-3. Replace or remove `knowledge_base/NUTRITION_RULES.md`
-4. Enable or disable `mohw_news` in `agent_config.json`
-5. Add your own custom knowledge files
-
-`agent_config.json` currently controls:
-
-- Agent prompt file locations
-- Default response styles
-- Enabled RAG sources
-- RAG search parameters
-- Default enablement of MOHW sync features
-
-Config precedence:
-
-- `agent_config.json` provides the repository default behavior
-- Environment variables override those defaults for a specific deployment
-- `MOHW_NEWS_SYNC_ENABLED` overrides `agent_config.json` `features.mohw_enabled` when explicitly set
-
-## API Overview
-
-### Chat
-
-- `POST /api/chat`
-- `POST /api/approve`
-- `POST /api/generate_title`
-- `GET /ping`
-
-### RAG and Knowledge
-
-- `GET /api/rag/search`
-- `POST /api/rag/search`
-- `GET /api/rag/documents`
-- `POST /api/rag/documents`
-- `GET /api/rag/documents/:document_id`
-- `DELETE /api/rag/documents/:document_id`
-- `POST /api/rag/documents/:document_id/reindex`
-- `GET /api/rag/documents/:document_id/file`
-- `GET /api/rag/documents/:document_id/preview`
-- `GET /api/rag/sources/:document_id/file`
-- `GET /api/rag/sources/:document_id/preview`
-
-### Knowledge Ingestion
-
-- `POST /api/admin/knowledge/upload`
-- `POST /api/admin/knowledge/ingest/:id`
-- `GET /api/admin/knowledge/jobs/:jobId`
-
-### Knowledge Graph
-
-- `POST /api/graph/extract-all`
-- `GET /api/graph/status`
-- `POST /api/graph/documents/:document_id/extract`
-- `GET /api/graph/documents/:document_id`
-- `POST /api/graph/search`
-- `GET /api/graph/nodes`
-- `GET /api/graph/nodes/:node_id`
-- `GET /api/graph/relations/:relation_id/evidence`
-
-### MOHW Sync
-
-- `POST /api/news/sync`
-- `GET /api/news`
-- `GET /api/news/:id`
-- `GET /api/news-files`
-
-## Local Data and Knowledge Paths
-
-- SQLite file: `data/healthy-diet-agent.db` or `SQLITE_DB_PATH`
-- User uploaded images: `users_images/`
-- Uploaded source files: `knowledge_base/uploads/`
-- Parsed markdown: `knowledge_base/ingested_markdown/`
-- Nutrition rules: `knowledge_base/NUTRITION_RULES.md`
-- MOHW data: `knowledge_base/mohw_clarifications/`
-
-## Testing
-
-Run focused tests:
-
-```bash
-bun test src/server/httpRuntime.test.ts src/storage/runtime.test.ts src/server/serverHandlers.test.ts src/server/dbTools.test.ts src/server/ragDocuments.test.ts src/cli.test.ts
-```
-
-Run all tests:
-
-```bash
+bun run start                                   # HTTP server on :8001
+bun run cli -- --message "Give me a low sugar dinner idea"
 bun test
 ```
 
-## Notes
+Key settings:
 
-- SQLite mode is the recommended default for self-hosting.
-- Supabase mode remains supported for integration scenarios.
-- Standalone mode does not require `health-diet-api`.
-- Regardless of the mode, the app still expects a working model endpoint through `AI_API_URL` or the configured Google route.
+| Variable | Purpose |
+|---|---|
+| `STORAGE_BACKEND` | `sqlite` (standalone) or `supabase` (integration) |
+| `AI_API_URL` | Local OpenAI-compatible model endpoint |
+| `GEMINI_AI_API`, `GOOGLE_CHAT_MODEL` | Google model routing |
+| `MOHW_NEWS_SYNC_*` | Background sync of MOHW / FDA fact-check notices |
 
-## Security and Failure Notes
+Default agent behavior (prompts, response style, enabled RAG sources, search parameters) lives in [`agent_config.json`](agent_config.json). Environment variables override it per deployment. To adapt the agent to another advisory domain, replace `knowledge_base/AGENT.md` and `knowledge_base/NUTRITION_RULES.md` and adjust `agent_config.json`. No runtime code changes are needed.
 
-- The RAG document management API now requires `X-Admin-User-Id` and `X-Admin-Role` (`admin` or `nutritionist`) headers.
-- A bare `Authorization` header is no longer considered sufficient for administrator privileges.
-- If `/api/chat` fails after creating the initial chat history row, the placeholder reply will be updated from `__PENDING__` to a `[FAILED] ...` marker.
+---
 
-## Related Docs
+## 12. API Overview
 
-- Chinese README: [README_zh.md](README_zh.md)
-- Japanese README: [README_jp.md](README_jp.md)
-- Technical Docs Directory: [technical_docs/](technical_docs/)
-- Change Log: [technical_docs/CHANGELOG.md](technical_docs/CHANGELOG.md)
-- Daily Planning Log: [technical_docs/DAILY_PLANNING_LOG.md](technical_docs/DAILY_PLANNING_LOG.md)
-- RAG Analysis Document (ZH): [technical_docs/RAG_AGENT_ANALYSIS_ZH.md](technical_docs/RAG_AGENT_ANALYSIS_ZH.md)
+| Area | Endpoints |
+|---|---|
+| Chat | `POST /api/chat` (SSE), `POST /api/approve`, `POST /api/generate_title`, `GET /ping` |
+| RAG documents | `GET/POST /api/rag/search`, `GET/POST /api/rag/documents`, `GET/DELETE /api/rag/documents/:id`, `POST /api/rag/documents/:id/reindex` |
+| Knowledge ingestion | `POST /api/admin/knowledge/upload`, `POST /api/admin/knowledge/ingest/:id`, `GET /api/admin/knowledge/jobs/:jobId` |
+| Knowledge graph | `POST /api/graph/extract-all`, `POST /api/graph/search`, `GET /api/graph/nodes/:id`, `GET /api/graph/relations/:id/evidence` |
+| MOHW sync | `POST /api/news/sync`, `GET /api/news`, `GET /api/news/:id` |
 
-## Version-Aware RAG R2.19
+The Rust API's endpoints are documented in [`services/api/openapi.yml`](services/api/openapi.yml). RAG document management requires the `X-Admin-User-Id` and `X-Admin-Role` (`admin` or `nutritionist`) headers.
 
-The Development-only R2.19 experiment adds four checksum-verified WHO source
-documents and an offline MiniLM q8 candidate retriever. On outcome-exposed
-R2.16 data, the frozen BM25-MiniLM reciprocal-rank fusion reached required
-Recall@20 of `0.9615`. This is diagnostic model selection only; a new
-lineage-disjoint, owner-approved confirmation is still required. See
-`experiments/version_aware_rag/V5_R2_19_NEURAL_HYBRID_DIAGNOSTIC_RESULT.md`.
+---
 
-## Version-Aware RAG R2.20
+## 13. Repository Structure
 
-R2.20 executed one new 32-record, lineage-disjoint Development confirmation for
-the R2.19-selected BM25-MiniLM RRF candidate generator and the R2.16
-Top-6-anchored pair reranker. Candidate Recall@20 reached `0.9808`, and all
-three strict improvements passed, but current-only Recall@3 decreased from
-`1.0000` to `0.8333`. The gate therefore failed and is locked at one
-execution. See
-`experiments/version_aware_rag/V5_R2_20_NEURAL_HYBRID_CONFIRMATION_RESULT.md`.
+```
+.
+├── src/                          # AI agent (Bun + TypeScript + LangGraph)
+│   ├── server/                   # Agent runtime, model routing, RAG, knowledge graph, MOHW sync
+│   ├── storage/                  # SQLite / Supabase adapters
+│   ├── rag_clean/                # PDF → clean Markdown (keeps tables as prose)
+│   ├── cli.ts, index.ts          # CLI and HTTP entry points
+│   └── serverHandlers.ts         # HTTP handlers
+├── agent_skills/                 # Agent tools: knowledge search, vision, nutrition, web checks
+├── knowledge_base/               # System prompt, nutrition rules, MOHW notices
+├── services/                     # Merged from PU-Hub/healthy-diet
+│   ├── api/                      # Rust API server + Dockerfile (bundles YOLO)
+│   └── yolo/                     # YOLOv8 predictor and trained models
+├── experiments/version_aware_rag/  # Research: protocols, sealed data, results, paper drafts
+├── technical_docs/               # Design notes and change log
+├── agent_config.json             # Declarative agent configuration
+├── compose.yml                   # One-command deployment
+└── Dockerfile                    # Agent image
+```
 
-## Version-Aware RAG R2.21
+---
 
-R2.21 tested lexical:dense RRF weights of 1:1, 2:1, and 3:1 on the
-outcome-exposed R2.20 Development data. None recovered the current-only
-noninferiority failure, so no repair was selected. Experimental work should
-now be reported as a bounded Development ablation rather than a promoted
-system. See `experiments/version_aware_rag/PAPER_HANDOFF_AFTER_R2_21.md`.
+## 14. Reproducing the Experiments
 
-## Version-Aware RAG R2.22
+Everything the experiments depend on is versioned under [`experiments/version_aware_rag/`](experiments/version_aware_rag/):
 
-R2.22 adds a checksum-frozen, A/B-order-blinded independent-context GPT-5.6
-review of all 32 R2.20 questions. It completed 32/32 judgments with no schema
-errors: 31/32 pairs were fully answerable, exact evidence-contract agreement
-was 19/32, and role-compatible agreement was 21/32. Agreement was perfect for
-the `current_only` and `hard_negative_current` contract strata but weaker for
-the two implicit dual-evidence strata. This is supplemental AI triangulation,
-not independent human or clinical review. See
-`experiments/version_aware_rag/V5_R2_22_GPT56_BLIND_REVIEW_RESULT.md`.
+- **Protocols and freeze reports:** `V*_PROTOCOL.md`, `*_FREEZE_REPORT*.md`, `configs/`
+- **Sealed queries and gold labels:** `data/`, verified by `ARTIFACT_CHECKSUMS.sha256`
+- **Runners and evaluators:** `scripts/v6/`, `scripts/v7/` (for example, `run_v7_fresh_retrieval.py`, `evaluate_v7_pilot.py`)
+- **Results:** `results/` (raw rows, per-stratum tables, figures)
+- **Stage reports:** `V7_PILOT_COMPLETION_AND_PAPER_UPDATE_ZH.md` and `V6_PHASE_3_PROGRESS_AND_PAPER_UPDATE_ZH.md` explain each design change and why it was made.
+
+The V7 fresh test has already run once and its guard is locked. Re-running it would only give development evidence, not new held-out evidence.
+
+A manuscript based on this work is in preparation.
+
+---
 
 ## License
 
-This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.
+MIT. See [LICENSE](LICENSE).
