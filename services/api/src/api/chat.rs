@@ -21,6 +21,7 @@ pub struct AgentChatRequest {
     pub is_new_conversation: Option<bool>,
     pub user_context: Option<serde_json::Value>,
     pub image: Option<String>,
+    pub model_source: Option<String>,
 }
 
 #[derive(Serialize)]
@@ -31,6 +32,49 @@ struct NodeAgentPayload {
     pub user_id: String,
     pub user_context: Option<serde_json::Value>,
     pub image: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub model_source: Option<String>,
+}
+
+/// Accumulates raw upstream bytes and yields only complete SSE frames.
+///
+/// A single network chunk can end in the middle of a frame (or in the middle of a
+/// multi-byte UTF-8 character), so frames must be reassembled before re-emitting.
+#[derive(Default)]
+struct SseFrameBuffer {
+    pending: Vec<u8>,
+}
+
+impl SseFrameBuffer {
+    fn push(&mut self, bytes: &[u8]) -> Vec<String> {
+        self.pending.extend_from_slice(bytes);
+        // Normalize CRLF so frame boundaries are always "\n\n".
+        if self.pending.contains(&b'\r') {
+            self.pending.retain(|b| *b != b'\r');
+        }
+
+        let mut frames = Vec::new();
+        while let Some(pos) = self.pending.windows(2).position(|w| w == b"\n\n") {
+            let frame: Vec<u8> = self.pending.drain(..pos + 2).collect();
+            frames.push(String::from_utf8_lossy(&frame).into_owned());
+        }
+        frames
+    }
+
+    fn finish(&mut self) -> Vec<String> {
+        if self.pending.is_empty() {
+            return Vec::new();
+        }
+        let rest = std::mem::take(&mut self.pending);
+        vec![String::from_utf8_lossy(&rest).into_owned()]
+    }
+}
+
+fn frames_to_events(frames: Vec<String>) -> Vec<Event> {
+    frames
+        .iter()
+        .flat_map(|frame| normalize_agent_sse_chunk(frame))
+        .collect()
 }
 
 struct ResolvedThreadContext {
@@ -198,6 +242,7 @@ pub async fn chat_handler(
         user_id: auth_user.user_id.to_string(),
         user_context: request.user_context,
         image: request.image,
+        model_source: request.model_source,
     };
 
     let node_api_base_url = env::var(ENVKey::AGENT_API_URL).map_err(|e| {
@@ -229,21 +274,33 @@ pub async fn chat_handler(
         )
     })?;
 
-    let stream = res
-        .bytes_stream()
-        .map(|chunk| match chunk {
-            Ok(bytes) => normalize_agent_sse_chunk(&String::from_utf8_lossy(&bytes))
-                .into_iter()
-                .map(Ok)
-                .collect::<Vec<_>>(),
-            Err(e) => {
-                error!("stream read failed: {:?}", e);
-                vec![Ok(Event::default()
-                    .event("error")
-                    .data(r#"{"type":"error","content":"Stream read failed"}"#))]
+    let upstream = Box::pin(res.bytes_stream());
+    let stream = futures::stream::unfold(
+        (upstream, SseFrameBuffer::default(), false),
+        |(mut upstream, mut buffer, finished)| async move {
+            if finished {
+                return None;
             }
-        })
-        .flat_map(futures::stream::iter);
+            match upstream.next().await {
+                Some(Ok(bytes)) => {
+                    let events = frames_to_events(buffer.push(&bytes));
+                    Some((events, (upstream, buffer, false)))
+                }
+                Some(Err(e)) => {
+                    error!("stream read failed: {:?}", e);
+                    let mut events = frames_to_events(buffer.finish());
+                    events.push(
+                        Event::default()
+                            .event("error")
+                            .data(r#"{"type":"error","content":"Stream read failed"}"#),
+                    );
+                    Some((events, (upstream, buffer, true)))
+                }
+                None => Some((frames_to_events(buffer.finish()), (upstream, buffer, true))),
+            }
+        },
+    )
+    .flat_map(|events| futures::stream::iter(events.into_iter().map(Ok::<Event, Infallible>)));
 
     Ok(Sse::new(stream).keep_alive(
         axum::response::sse::KeepAlive::new()
@@ -255,7 +312,8 @@ pub async fn chat_handler(
 #[cfg(test)]
 mod tests {
     use super::{
-        AgentChatRequest, NodeAgentPayload, normalize_agent_sse_chunk, resolve_thread_context,
+        AgentChatRequest, NodeAgentPayload, SseFrameBuffer, normalize_agent_sse_chunk,
+        resolve_thread_context,
     };
     use serde_json::json;
     use uuid::Uuid;
@@ -269,6 +327,7 @@ mod tests {
             user_id: Uuid::nil().to_string(),
             user_context: None,
             image: Some("data:image/png;base64,abc".to_string()),
+            model_source: None,
         };
 
         let json = serde_json::to_value(payload).expect("payload should serialize");
@@ -301,6 +360,7 @@ mod tests {
             is_new_conversation: Some(true),
             user_context: Some(json!({ "locale": "zh-TW" })),
             image: None,
+            model_source: None,
         };
 
         let resolved = resolve_thread_context(&request).expect("thread context should resolve");
@@ -319,6 +379,7 @@ mod tests {
             is_new_conversation: None,
             user_context: None,
             image: None,
+            model_source: None,
         };
 
         let resolved = resolve_thread_context(&request).expect("thread context should resolve");
@@ -336,6 +397,7 @@ mod tests {
             is_new_conversation: Some(true),
             user_context: None,
             image: None,
+            model_source: None,
         };
 
         assert!(resolve_thread_context(&request).is_err());
@@ -352,5 +414,32 @@ mod tests {
         assert!(debug.contains("event: status"));
         assert!(debug.contains("data: {\\\"type\\\":\\\"status\\\",\\\"content\\\":\\\"ok\\\"}"));
         assert!(!debug.contains("data: event: status"));
+    }
+
+    #[test]
+    fn sse_frame_buffer_reassembles_frames_split_across_chunks() {
+        let frame = "event: interrupt\ndata: {\"type\":\"interrupt\",\"content\":\"偵測到可更新的個人資料\",\"approval_id\":\"abc\"}\n\n";
+        let bytes = frame.as_bytes();
+        // Split inside a multi-byte UTF-8 character to mimic an arbitrary network boundary.
+        let split_at = frame.find("可").expect("marker present") + 1;
+
+        let mut buffer = SseFrameBuffer::default();
+        assert!(buffer.push(&bytes[..split_at]).is_empty());
+        let frames = buffer.push(&bytes[split_at..]);
+
+        assert_eq!(frames, vec![frame.to_string()]);
+        assert_eq!(normalize_agent_sse_chunk(&frames[0]).len(), 1);
+        assert!(buffer.finish().is_empty());
+    }
+
+    #[test]
+    fn sse_frame_buffer_emits_multiple_frames_and_flushes_tail() {
+        let mut buffer = SseFrameBuffer::default();
+        let frames = buffer.push(
+            b"event: text\r\ndata: {\"type\":\"text\"}\r\n\r\nevent: done\ndata: {\"type\":\"done\"}\n\nevent: tail\ndata: {}",
+        );
+        assert_eq!(frames.len(), 2);
+        assert!(frames[0].starts_with("event: text\ndata:"));
+        assert_eq!(buffer.finish(), vec!["event: tail\ndata: {}".to_string()]);
     }
 }
