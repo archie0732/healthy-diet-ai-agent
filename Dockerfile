@@ -11,6 +11,9 @@ COPY scripts ./scripts
 COPY agent_skills ./agent_skills
 COPY agent_config.json ./agent_config.json
 COPY knowledge_base ./knowledge_base
+# Frozen corpus + lineage relations for search_versioned_guidelines_tool (see agent_config.json).
+COPY experiments/version_aware_rag/data/v6_corpus_frozen/chunks.jsonl ./experiments/version_aware_rag/data/v6_corpus_frozen/chunks.jsonl
+COPY experiments/version_aware_rag/data/v6_repair_diagnostic/V6R_RUNTIME_RELATIONS.jsonl ./experiments/version_aware_rag/data/v6_repair_diagnostic/V6R_RUNTIME_RELATIONS.jsonl
 
 RUN mkdir -p users_images knowledge_base/uploads knowledge_base/ingested_markdown data
 

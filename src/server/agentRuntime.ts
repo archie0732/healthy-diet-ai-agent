@@ -7,6 +7,7 @@ import { MemorySaver, StateGraph, START, END, MessagesAnnotation, Annotation } f
 import { ToolNode } from '@langchain/langgraph/prebuilt';
 
 import { readKnowledgeTool, searchKnowledgeTool, updateKnowledgeTool } from '../../agent_skills/file_tools';
+import { searchVersionedGuidelinesTool } from '../../agent_skills/versioned_guidelines_tool';
 import { visionAnalyzerTool } from '../../agent_skills/vision_model';
 import { calculateNutritionTool } from '../../agent_skills/calc_tools';
 import { getChatHistoryTool } from '../../agent_skills/db_tools';
@@ -405,6 +406,7 @@ export const buildCapabilitiesSummary = ({
 
 const REGISTERED_CAPABILITY_TOOL_NAMES = [
   'search_knowledge_tool',
+  'search_versioned_guidelines_tool',
   'read_knowledge_tool',
   'update_knowledge_tool',
   'analyze_food_image',
@@ -491,6 +493,7 @@ const listCapabilitiesTool = tool(
 
 const agentTools = [
   searchKnowledgeTool,
+  searchVersionedGuidelinesTool,
   readKnowledgeTool,
   updateKnowledgeTool,
   visionAnalyzerTool,
@@ -680,6 +683,9 @@ const callModel = async (state: typeof AgentState.State) => {
     'When describing your capabilities, do not claim any feature that is not present in list_capabilities_tool output or explicit runtime instructions.',
     'For factual health/nutrition/food-safety claims, call search_knowledge_tool first, then answer with cited source_path values.',
     'When search_knowledge_tool returns relevant hits, prioritize those sources and mention uncertainty if evidence is weak.',
+    'For topics covered by official WHO guidelines (child wasting/malnutrition, pregnancy supplements, infant and complementary feeding, HIV and infant feeding, anaemia haemoglobin cutoffs, food marketing to children, nutrient profile models, school food, fiscal policies), also call search_versioned_guidelines_tool with an English query and cite document_id, published_year and pdf_page_number.',
+    'If the user asks what changed or what the old/previous advice was, write the search_versioned_guidelines_tool query with words like "previous" or "how did ... change", then explain both the older and the current evidence with their years.',
+    'Never present a search_versioned_guidelines_tool hit that has newer_version as current guidance; say it was later updated and prefer the newer edition.',
     'When dish_name and ingredients exist, summarize dish and estimated calories in plain text.',
     'If user asks whether a URL/page is valid/correct/reachable (e.g., 這個網頁是對的嗎), call check_web_page first, then answer based on status/final_url/title.',
     'If user message contains multiple URLs, verify only the first URL and clearly state that other URLs were ignored in this turn.',

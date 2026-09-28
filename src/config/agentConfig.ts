@@ -48,6 +48,16 @@ const rawAgentConfigSchema = z.object({
       path: ['default_top_k'],
     }),
   }),
+  version_aware_rag: z.object({
+    enabled: z.boolean(),
+    chunks_file: z.string().min(1),
+    relations_file: z.string().min(1),
+    default_top_k: z.number().int().positive(),
+    max_top_k: z.number().int().positive().max(20),
+  }).refine((rag) => rag.default_top_k <= rag.max_top_k, {
+    message: 'default_top_k must be less than or equal to max_top_k',
+    path: ['default_top_k'],
+  }).optional(),
 });
 
 export type RawAgentConfig = z.infer<typeof rawAgentConfigSchema>;
@@ -86,6 +96,13 @@ export type AgentConfig = {
       maxTopK: number;
     };
   };
+  versionAwareRag: {
+    enabled: boolean;
+    chunksFile: string;
+    relationsFile: string;
+    defaultTopK: number;
+    maxTopK: number;
+  } | null;
 };
 
 export const DEFAULT_AGENT_CONFIG_PATH = fileURLToPath(new URL('../../agent_config.json', import.meta.url));
@@ -140,6 +157,15 @@ export function resolveAgentConfig(rawConfig: RawAgentConfig, configDir: string)
         maxTopK: rawConfig.rag.search.max_top_k,
       },
     },
+    versionAwareRag: rawConfig.version_aware_rag
+      ? {
+          enabled: rawConfig.version_aware_rag.enabled,
+          chunksFile: resolvePathFromConfigDir(configDir, rawConfig.version_aware_rag.chunks_file),
+          relationsFile: resolvePathFromConfigDir(configDir, rawConfig.version_aware_rag.relations_file),
+          defaultTopK: rawConfig.version_aware_rag.default_top_k,
+          maxTopK: rawConfig.version_aware_rag.max_top_k,
+        }
+      : null,
   };
 }
 

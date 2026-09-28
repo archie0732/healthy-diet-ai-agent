@@ -35,5 +35,12 @@
       "default_top_k": 5,
       "max_top_k": 12
     }
+  },
+  "version_aware_rag": {
+    "enabled": true,
+    "chunks_file": "experiments/version_aware_rag/data/v6_corpus_frozen/chunks.jsonl",
+    "relations_file": "experiments/version_aware_rag/data/v6_repair_diagnostic/V6R_RUNTIME_RELATIONS.jsonl",
+    "default_top_k": 5,
+    "max_top_k": 10
   }
 }
